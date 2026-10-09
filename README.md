@@ -34,4 +34,4 @@ node skills/sprite-animation-production/scripts/check-sheet.mjs sprite.png 3 2 3
 
 ## 开发案例
 
-- [Dad-n-me：原设计还原、3D格斗与场景动画](docs/cases/dad-n-me-native-3d.md)：持续记录实测方法及未通过的手部修复方案，避免把技术通过当作美术完成。
+- [街霸奶蛙：原设计还原、3D格斗与场景动画](docs/cases/dad-n-me-native-3d.md)：持续记录实测方法及未通过的手部修复方案，避免把技术通过当作美术完成。
