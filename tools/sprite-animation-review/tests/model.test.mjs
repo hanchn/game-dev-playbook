@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {normalizeManifest,validateBounds,frameAt,advance,placement,exportConfig} from '../src/model.js';
+const raw={characters:[{id:'sample',path:'sample.png',grid:{columns:4,rows:2,frameWidth:64,frameHeight:64},playFrames:[0,1,2,4,5,6],fps:6,stride:100,previewSpeed:100}]};
+const cfg=normalizeManifest(raw).characters[0];
+test('explicit sequence omits unused atlas cells and closes loop',()=>{assert.equal(cfg.frames.length,8);assert.equal(frameAt(.5,cfg),4);assert.equal(frameAt(1,cfg),0);assert.equal(frameAt(-1/6,cfg),6);});
+test('pause and speed changes preserve phase rather than recomputing global time',()=>{assert.equal(advance(.5,.05,cfg,'time',0),.5);assert.ok(Math.abs(advance(.5,.05,cfg,'time',2)-.6)<1e-12);});
+test('distance simulation integrates cycles and limits background delta',()=>{assert.ok(Math.abs(advance(.2,10,cfg,'distance',1)-.25)<1e-12);});
+test('mirror changes offset sign, keeps vertical anchor',()=>{assert.deepEqual(placement({offsetX:4,offsetY:-3},2,true),{x:-8,y:-6});});
+test('reject out-of-bounds frames',()=>{assert.throws(()=>validateBounds(cfg,255,128),/越出/);validateBounds(cfg,256,128);});
+test('reject invalid playback identity',()=>{assert.throws(()=>normalizeManifest({characters:[{...raw.characters[0],playFrames:[8]}]}),/播放序列/);});
+test('reject duplicate ids and incompatible frame sizes',()=>{assert.throws(()=>normalizeManifest({characters:[raw.characters[0],raw.characters[0]]}),/唯一/);assert.throws(()=>normalizeManifest({characters:[{id:'a',path:'a.png',frames:[{x:0,y:0,width:64,height:64},{x:64,y:0,width:32,height:64}]}]}),/逻辑画布/);});
+test('export reorders complete canvases and preserves authored offsets and sequence',()=>{const edited={...cfg,frames:cfg.frames.map(f=>({...f,offsetX:3}))};const out=exportConfig(edited);assert.equal(out.frames[4].y,64);assert.equal(out.frames[4].offsetX,3);assert.deepEqual(out.playFrames,cfg.playFrames);assert.equal(out.path,'sample-review.png');});
+test('reject unsafe source paths and malformed grids',()=>{assert.throws(()=>normalizeManifest({characters:[{...raw.characters[0],path:'https://external.invalid/a.png'}]}),/本机/);assert.throws(()=>normalizeManifest({characters:[{...raw.characters[0],grid:{columns:0}}]}),/grid/);});

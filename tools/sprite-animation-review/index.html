@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>序列帧验收工具</title></head>
+<body>
+<header>
+  <h1>序列帧验收工具</h1>
+  <p>角色选择 · 慢放 · 暂停 · 逐帧 · 换向 · 完整帧网格</p>
+  <div class="controls">
+    <label>配置 JSON <input id="config" type="file" accept=".json,application/json"></label>
+    <label>本机图集 <input id="images" type="file" multiple accept="image/png,image/webp,image/jpeg,image/svg+xml"></label>
+    <button id="reload">载入配置与图片</button>
+  </div>
+  <div class="controls">
+    <label>角色 <select id="character"><option value="">全部角色</option></select></label>
+    <button id="pause">暂停</button><button id="prev">上一帧</button><button id="next">下一帧</button>
+    <button id="direction">向右</button>
+    <label>速度 <input id="speed" type="range" min="0" max="3" step="0.05" value="1"><output id="speed-value">1.00×</output></label>
+    <label>播放 <select id="mode"><option value="time">时间驱动（图鉴）</option><option value="distance">路程模拟（行走）</option></select></label>
+    <label>背景 <select id="background"><option value="dark">深色</option><option value="light">浅色</option></select></label>
+    <button id="export-png">导出 PNG</button><button id="export-json">导出配置</button>
+  </div>
+  <p id="status" role="status" aria-live="polite">正在加载技术示例…</p>
+  <div id="exports" aria-label="导出文件"></div>
+  <p class="notice">自动检查和预览不能替代游戏验收。示例仅用于测试工具，不是已验收的动物步态。</p>
+</header>
+<main id="review"></main>
+<script type="module" src="/src/main.js"></script>
+</body></html>
