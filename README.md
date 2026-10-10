@@ -36,4 +36,5 @@ node skills/sprite-animation-production/scripts/check-sheet.mjs sprite.png 3 2 3
 
 ## 开发案例
 
+- [胶囊森林：绘制 UI、飞行反馈与帧动画修复](docs/cases/capsule-forest-ui-motion.md)：地图高亮、切片雷达、边界反弹、坠毁结算与未通过的逃跑姿势记录。
 - [街霸奶蛙：原设计还原、3D格斗与场景动画](docs/cases/dad-n-me-native-3d.md)：持续记录实测方法及未通过的手部修复方案，避免把技术通过当作美术完成。
