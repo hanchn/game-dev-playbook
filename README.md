@@ -6,9 +6,11 @@
 
 1. 新游戏先读 [架构](docs/architecture.md) 和 [审美设计](docs/art-direction.md)。
 2. 按 [素材流水线](docs/asset-pipeline.md) 制作代表样本，并用 [场景素材矩阵](docs/scene-asset-matrix.md) 列清需要的图。
-3. 角色、动物、载具动画按 [序列帧规范](docs/sprite-animation.md) 和 [步态专项经验](docs/sprite-gait.md) 验证后再批量。
+3. 角色、动物、载具动画按 [序列帧规范](docs/sprite-animation.md) 制作；行走与逃跑按 [步态制作、修正与验收](docs/sprite-gait.md) 先验证近远侧换腿，再扩展批量。
 4. UI 按 [加载](docs/ui/loading.md)、[按钮](docs/ui/buttons.md)、[结算](docs/ui/settlement.md) 固定槽位制作，动态文字和数值独立。
 5. 问题先看 [排查表](docs/troubleshooting.md)，玩法状态与测试看 [模式](docs/gameplay-patterns.md)。
+
+修正“外侧腿一直迈、内侧腿不接替”时，直接查看 [步态排查表](docs/sprite-gait.md#1-先区分源动作与播放问题)；制作新动画时，按同一文档的相位、关键姿势、打包、播放与验收步骤执行，末尾附验收记录模板。
 
 ## 可复用 Skills
 
