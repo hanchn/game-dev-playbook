@@ -1,0 +1,80 @@
+{
+  "schema": "styled-game-map-export/v1",
+  "algorithm": "wangscape-top-two-registered-stochastic-textures-v2",
+  "style": "pixel",
+  "config": {
+    "seed": "漫游-2026",
+    "scale": 96,
+    "seaLevel": 0.45,
+    "roughness": 0.45,
+    "vegetation": 0.65
+  },
+  "region": {
+    "x": 224,
+    "y": -220,
+    "width": 32,
+    "height": 24
+  },
+  "pixelsPerTile": 32,
+  "outputDir": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel",
+  "width": 1024,
+  "height": 768,
+  "files": [
+    {
+      "name": "terrain.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel/terrain.png",
+      "bytes": 717294,
+      "sha256": "08f47623981979f2dfd8596f3ecbd1b9d4af33090aee50c95657fb8e6f323812"
+    },
+    {
+      "name": "decorations.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel/decorations.png",
+      "bytes": 275734,
+      "sha256": "8d04c3a5b392da11a5b08109b3ee1057f6564bcae0d490353e23e202033baf17"
+    },
+    {
+      "name": "scene.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel/scene.png",
+      "bytes": 919424,
+      "sha256": "74009cb3e7b3df7a0ac76d563b0439220c37e7e8ae3e0c4cc694a9fc84e393cd"
+    },
+    {
+      "name": "atlas.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel/atlas.png",
+      "bytes": 2342714,
+      "sha256": "a424d5b209042aee044a1365b35ab7b67bb61ff948efc39b97085816617048ec"
+    },
+    {
+      "name": "scene.json",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel/scene.json",
+      "bytes": 115211,
+      "sha256": "82c708a678f1b17af54d757128fe227b1c1bd07a17e3159de9e7182baf8948a0"
+    },
+    {
+      "name": "map.tmj",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel/map.tmj",
+      "bytes": 66742,
+      "sha256": "0168c9f6b25d0d3df891b72977d20c701683b9bc72f36e39fdf7126826518dbc"
+    },
+    {
+      "name": "source.json",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/pixel/source.json",
+      "bytes": 5945,
+      "sha256": "d753c08870747116ab571667777540c1a947d8a84e63c6626d371a5d0ee71b78"
+    }
+  ],
+  "status": "generated-candidate",
+  "visualStatus": "pending",
+  "engineImported": false,
+  "notes": [
+    "Tiled map contains actual terrain/decor PNG image layers and terrain/prop collision objects.",
+    "Map is generated from a seed, not real geographic elevation.",
+    "Terrain-only traversal analysis excludes prop colliders; validate actor navigation in the actual game."
+  ],
+  "codec": {
+    "package": "pngjs",
+    "implementation": "PNG.sync.read/write",
+    "runtime": "project node_modules or Codex bundled runtime",
+    "testedVersion": "7.0.0"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "createdAt": "2026-10-11T14:41:15.776Z",
+  "scope": "Dinosaur v5 parent browser observations before adaptive mesh optimization",
+  "asset": "dinosaur-side-v5",
+  "sources": {
+    "public/art/dinosaur-side-parts-v5.png": "2a3ab3e9fbc6463694c10bc42ae6585f8ab0391962accb25b11d360c1bc879ad",
+    "public/art/skins.json": "9e258d2f45fe97b2e9684dc9895c460afeb762965366691c57fdc1e682b78174",
+    "animal-rig.mjs": "ba0df7a5d51d59c53554450b33298169e40a0193a76854191cdd7e8c70f6d515",
+    "skin-renderer.mjs": "9aaede816a9d11c08bfb591483710446ddcb21fef4ba0527edfe3090b2f2e7e8",
+    "human-soft-skin.mjs": "9d1a5f8787ac294b8ad8e2f83bb8a0cc1eac6ddcdaf08539239b31b6b2b07ed5",
+    "strip-skin.mjs": "24deab7ec45ebe3a3e0027734c628e1c9fd33796a676adc2a6c4beb1d050225a"
+  },
+  "reviewed": [
+    {
+      "path": "dinosaur-v5-precision-neck-idle-01.png",
+      "scope": "idle neck/source ownership",
+      "result": "reviewed-local-fix",
+      "observation": "Prior stray dorsal spike removed by precise mask; entire animal not accepted"
+    },
+    {
+      "path": "dinosaur-v5-precision-neck-extend-05.png",
+      "scope": "neck positive bend",
+      "result": "reviewed-local-fix",
+      "observation": "No foreign body spike; continuous root behind body"
+    },
+    {
+      "path": "dinosaur-v5-precision-neck-extend-13-light.png",
+      "scope": "neck opposite bend on light background",
+      "result": "reviewed-local-fix",
+      "observation": "Root remains covered; no foreign body spike"
+    },
+    {
+      "path": "dinosaur-v5-precision-run-05.png",
+      "scope": "whole run at one phase",
+      "result": "defects-open",
+      "observation": "Both legs visible at this phase; tail-root sleeve outline still needs repair; not full-action visual pass"
+    }
+  ],
+  "performance": {
+    "svg": {
+      "measurements": [
+        {
+          "averageFps": 23.4,
+          "p95Ms": 66.7
+        },
+        {
+          "averageFps": 29.7,
+          "p95Ms": 34.2
+        }
+      ],
+      "scope": "IAB workbench cadence, run playback, includes scheduling; not isolated draw time",
+      "status": "below-60-fps-budget"
+    },
+    "canvasTrial": {
+      "averageFps": 13.1,
+      "p95Ms": 133.4,
+      "screenshot": "dinosaur-v5-canvas-run-05.png",
+      "status": "rejected-and-rolled-back",
+      "observation": "Canvas preview preserved source image but cadence worse; keep SVG path pending mesh optimization"
+    }
+  },
+  "visual": "defects-open",
+  "pending": [
+    "Tail root silhouette",
+    "Far-leg visibility over jump",
+    "Jaw source ownership",
+    "All-action visual/engine review",
+    "Horse and crocodile sequential repair",
+    "Queued new character art"
+  ]
+}

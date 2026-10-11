@@ -1,0 +1,46 @@
+{
+  "i": "02",
+  "prompt": "Edit this SINGLE animation PNG (reference1) using structural control reference2. Keep the original 1086×1448 canvas, camera, head/face shape, skin microtexture, vest/trouser/boot details, pose registration and BOTH leg positions pixel-consistent. Only correct the NEAR foreground arm: it currently swings too far back. Follow RED arm in image2: near shoulder upper arm slopes down-left to elbow near waist; forearm folds down-right and softly closed fist is next to hip, not behind hip. Hand near waist is an intermediate passing arm gesture. FAR background arm is BLUE in control: still reaches forward chest-height and independent fist must be separately visible. Two arms and two fists, natural same beige skin/clothes, no red/blue, no xray. Preserve near cargo-pocket leg extended backward down and far knee lifted forward with heel tucked; do not swap legs or change body/head. This is a targeted local arm correction, NOT another extended-back swing. Genuine alpha transparency, no background, no additional object, no source clipping, fixed full-body scale and margins. Face gaze and expression unchanged, no blink.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d05bda6d-dfab-4124-8582-2350eb1e16c7.png",
+  "tool": "image_gen.imagegen",
+  "generatedFileSha256": "34cc463004b675b34526b26eaf8202fb359aa6654ad1c1997956401ab1c40f17",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v8-phase-02.png",
+  "references": [
+    {
+      "role": "single-frame local correction target",
+      "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v7-phase-02.png",
+      "sha256": "2eb32b35d2039e6098153cb6bedf2d6ff3d86c3d6c008bb95eb9b81bc612de22"
+    },
+    {
+      "role": "single pose control",
+      "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-02.png",
+      "sha256": "706bc2a968aeca6888425022dcfc760813f358bfee924fc2c6afc7317384ddbc"
+    }
+  ],
+  "phase": 0.16666666666666666,
+  "actualPNGSize": [
+    1086,
+    1448
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      161,
+      64,
+      774,
+      1350
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "poseAdherence": "passing-arm-corrected-local-only",
+    "notes": "近拳已移到腰/髋旁形成passing，远拳前方清晰；定点生成同时使头、皮纹和画面比例偏移，原图注册仍不合格，不可当成像素局部修复通过。",
+    "reviewedAt": "2026-10-11T17:04:45.444Z"
+  },
+  "index": 2,
+  "file": "alien-run-single-v8-phase-02.png"
+}

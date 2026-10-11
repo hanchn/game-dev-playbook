@@ -1,0 +1,62 @@
+import {affine,clipPolygon,partitionSkinLayer,transform} from './human-soft-skin.mjs';
+// Experimental, source-locked equine neck mapping. Not enabled in production.
+// Normal distances are preserved; only the centerline follows a curved path.
+const projectionCaches=new Map(),geometryCaches=new Map();
+function boundedCache(cache,key,create){if(cache.has(key))return cache.get(key);const value=create();cache.set(key,value);if(cache.size>8)cache.delete(cache.keys().next().value);return value;}
+const clamp=x=>Math.max(0,Math.min(1,x));
+const smooth=x=>{x=clamp(x);return x*x*(3-2*x);};
+const add=(a,b)=>[a[0]+b[0],a[1]+b[1]],sub=(a,b)=>[a[0]-b[0],a[1]-b[1]],mul=(a,s)=>[a[0]*s,a[1]*s],dot=(a,b)=>a[0]*b[0]+a[1]*b[1],len=a=>Math.hypot(...a),unit=a=>mul(a,1/(len(a)||1)),normal=a=>[-a[1],a[0]],rotate=(p,a)=>[p[0]*Math.cos(a)-p[1]*Math.sin(a),p[0]*Math.sin(a)+p[1]*Math.cos(a)];
+function hermite(p0,p1,m0,m1,t){const t2=t*t,t3=t2*t;return add(add(mul(p0,2*t3-3*t2+1),mul(m0,t3-2*t2+t)),add(mul(p1,-2*t3+3*t2),mul(m1,t3-t2)));}
+function quadratic(p0,p1,p2,t){return add(add(mul(p0,(1-t)*(1-t)),mul(p1,2*(1-t)*t)),mul(p2,t*t));}
+function quadraticDerivative(p0,p1,p2,t){return add(mul(sub(p1,p0),2*(1-t)),mul(sub(p2,p1),2*t));}
+function derivative(p0,p1,m0,m1,t){return add(add(mul(p0,6*t*t-6*t),mul(m0,3*t*t-4*t+1)),add(mul(p1,-6*t*t+6*t),mul(m1,3*t*t-2*t)));}
+export function createEquineNeckPath({template,nodes,landmarks,rootTangentStrength=.6,endTangentStrength=.6,rootOrientation='body',faceGuard={start:.56,end:.69},samples=128}){
+ if(!template||!nodes?.head||!nodes?.neck||!nodes?.body||!landmarks||!['root','middle','join'].every(k=>Array.isArray(landmarks[k])&&landmarks[k].length===2&&landmarks[k].every(Number.isFinite)))throw Error('Equine neck requires current source template, nodes, and measured root/middle/join landmarks');
+ if(![template.x,template.y,template.w,template.h,nodes.head.x,nodes.head.y,nodes.neck.x,nodes.neck.y,nodes.head.angle??0,nodes.body.angle??0].every(Number.isFinite)||template.w<=0||template.h<=0)throw Error('Invalid neck source or node coordinates');
+ if(!Number.isInteger(samples)||samples<16||samples>1024||!Number.isFinite(faceGuard.start)||!Number.isFinite(faceGuard.end)||faceGuard.end<=faceGuard.start)throw Error('Invalid path sampling or face guard');
+ if(rootOrientation==='neck'&&(!nodes.neck.end||![nodes.neck.end.x,nodes.neck.end.y].every(Number.isFinite)))throw Error('Neck root orientation requires its actual endpoint');
+ if(!['body','neck'].includes(rootOrientation))throw Error('Invalid root orientation');
+ if(![rootTangentStrength,endTangentStrength].every(v=>Number.isFinite(v)&&v>=0&&v<=2))throw Error('Invalid neck tangent strength');
+ const local=uv=>[template.x+uv[0]*template.w,template.y+uv[1]*template.h],src=['root','middle','join'].map(k=>local(landmarks[k])),segments=[sub(src[1],src[0]),sub(src[2],src[1])],sourceAt=t=>quadratic(...src,t),sourceDerivative=t=>quadraticDerivative(...src,t),sourceTangent=t=>unit(sourceDerivative(t)),sourceTable=[{t:0,length:0}];let sourceLength=0,previous=src[0];for(let i=1;i<=samples;i++){const t=i/samples,p=sourceAt(t);sourceLength+=len(sub(p,previous));sourceTable.push({t,length:sourceLength});previous=p;}
+ if(segments.some(s=>len(s)<1e-6)||sourceLength<1e-6)throw Error('Degenerate neck centerline');
+ const angle=(nodes.head.angle??0)*Math.PI/180,bodyAngle=(nodes.body.angle??0)*Math.PI/180,rigid=p=>add([nodes.head.x,nodes.head.y],rotate(p,angle)),root=[nodes.neck.x,nodes.neck.y],join=rigid(src[2]),distance=len(sub(join,root)),rootDirection=rootOrientation==='neck'?unit(sub([nodes.neck.end.x,nodes.neck.end.y],root)):rotate(unit(segments[0]),bodyAngle),rootRotation=Math.atan2(rootDirection[1],rootDirection[0])-Math.atan2(segments[0][1],segments[0][0]),m0=mul(rootDirection,distance*rootTangentStrength),m1=mul(rotate(unit(segments[1]),angle),distance*endTangentStrength);
+ const table=[{t:0,length:0}],arcPoint=t=>hermite(root,join,m0,m1,t);let last=root,worldLength=0;for(let i=1;i<=samples;i++){const t=i/samples,p=arcPoint(t);worldLength+=len(sub(p,last));table.push({t,length:worldLength});last=p;}
+ const arcParameter=s=>{const target=clamp(s)*worldLength;let i=1;while(i<table.length-1&&table[i].length<target)i++;const a=table[i-1],b=table[i];return a.t+(b.t-a.t)*(target-a.length)/(b.length-a.length||1);};
+ const projectionCache=boundedCache(projectionCaches,JSON.stringify([template.x,template.y,template.w,template.h,landmarks,samples]),()=>new Map());
+ const project=p=>{const cacheKey=p.join(',');if(projectionCache.has(cacheKey))return projectionCache.get(cacheKey);let bestT=0,bestError=Infinity;for(let i=0;i<=32;i++){const t=i/32,error=len(sub(p,sourceAt(t)));if(error<bestError){bestT=t;bestError=error;}}const dd=mul(add(sub(src[2],src[1]),sub(src[0],src[1])),2);for(let i=0;i<8;i++){const c=sourceAt(bestT),d=sourceDerivative(bestT),den=dot(d,d)+dot(sub(c,p),dd);if(Math.abs(den)<1e-10)break;const next=clamp(bestT-dot(sub(c,p),d)/den);if(Math.abs(next-bestT)<1e-12){bestT=next;break;}bestT=next;}const center=sourceAt(bestT),direction=sourceTangent(bestT),d=dot(sub(p,center),normal(direction)),index=Math.min(samples-1,Math.floor(bestT*samples)),q=(bestT-sourceTable[index].t)*samples,sourceDistance=sourceTable[index].length+(sourceTable[index+1].length-sourceTable[index].length)*q,along=dot(sub(p,center),direction);let s=sourceDistance/sourceLength;if(bestT<1e-8&&along<0)s=along/sourceLength;if(bestT>1-1e-8&&along>0)s=1+along/sourceLength;const result=Object.freeze({s,d,t:bestT,normal:Object.freeze(normal(direction))});if(projectionCache.size<20000)projectionCache.set(cacheKey,result);return result;};
+ const map=uv=>{const p=local(uv),projection=project(p),s=projection.s;if(s>=1)return rigid(p);if(s<=0)return add(root,rotate(sub(p,src[0]),rootRotation));const t=arcParameter(s),center=arcPoint(t),n=normal(unit(derivative(root,join,m0,m1,t))),curved=add(center,mul(n,projection.d)),guard=smooth((uv[0]-faceGuard.start)/(faceGuard.end-faceGuard.start));return add(mul(curved,1-guard),mul(rigid(p),guard));};
+ return {map,rigid,rigidUv:uv=>rigid(local(uv)),sourceLocalToUv:p=>[(p[0]-template.x)/template.w,(p[1]-template.y)/template.h],project,sourceAt,sourceTangent,sourceCenterline:src,worldRoot:root,worldJoin:join,sourceLength,worldLength,centerlineScale:worldLength/sourceLength,arcPoint,tangent:t=>unit(derivative(root,join,m0,m1,t)),limitations:['Experimental source centerline landmarks require visual review.','Face guard blends only the source front boundary; no source pixels, normal widths, or skull scale are changed.','Longitudinal centerline stretch is reported explicitly, not hidden.']};
+}
+
+// Build an isolated Canvas/SVG command candidate. Caller must explicitly pass
+// it to drawCanvas; no production asset/skin/module is changed by this function.
+export function buildEquineNeckCommandCandidate(commandList,nodes,{landmarks,layerSplit,columns=40,rows=40,...pathOptions}){
+ const head=commandList.find(c=>c.id==='head'),neck=commandList.find(c=>c.id==='neck');
+ if(!head?.bind?.template||!neck||!layerSplit)throw Error('Candidate requires existing continuous head/neck commands and source layer split');
+ if(![columns,rows].every(x=>Number.isInteger(x)&&x>=2&&x<=96))throw Error('Invalid candidate mesh density');
+ const template=head.bind.template,mapper=createEquineNeckPath({template,nodes,landmarks,...pathOptions}),[rx,ry,rw,rh]=template.rect,mesh=[];
+ // Source tessellation, cap planes, and ownership are pose-independent.
+ // Keep the original equations and coordinates; cache only these immutable
+ // computations, then map and rasterize every actual pose afresh.
+ const geometryKey=JSON.stringify([template,landmarks,columns,rows,pathOptions.samples??128]);
+ const geometry=boundedCache(geometryCaches,geometryKey,()=>{const geometry=[];
+ for(let j=0;j<rows;j++)for(let i=0;i<columns;i++){
+  const points=[[i/columns,j/rows],[(i+1)/columns,j/rows],[(i+1)/columns,(j+1)/rows],[i/columns,(j+1)/rows]];
+  for(const indices of[[0,1,2],[0,2,3]]){
+   const uv=indices.map(k=>points[k]),original=uv.map(p=>[rx+p[0]*rw,ry+p[1]*rh]);let pieces=[original];
+   // The source root/junction caps separate rigid material from curved
+   // material. A triangle crossing this derivative boundary cannot represent
+   // both maps accurately; split at the exact source plane instead of hiding
+   // error by arbitrarily multiplying all rows.
+   for(const [endpoint,tangent]of [[mapper.sourceCenterline[0],mapper.sourceTangent(0)],[mapper.sourceCenterline[2],mapper.sourceTangent(1)]]){
+    const distance=p=>dot(sub([template.x+(p[0]-rx)/rw*template.w,template.y+(p[1]-ry)/rh*template.h],endpoint),tangent),next=[];
+    for(const polygon of pieces)for(const sign of[-1,1]){const cut=[];for(let k=0;k<polygon.length;k++){const p=polygon[k],q=polygon[(k+1)%polygon.length],dp=distance(p)*sign,dq=distance(q)*sign;if(dp>=-1e-9)cut.push(p);if((dp<0)!==(dq<0)){const f=dp/(dp-dq);cut.push(add(p,mul(sub(q,p),f)));}}if(cut.length>=3)next.push(cut);}pieces=next;
+   }
+   for(const poly of pieces)for(let k=1;k<poly.length-1;k++){const src=[poly[0],poly[k],poly[k+1]];if(Math.abs((src[1][0]-src[0][0])*(src[2][1]-src[0][1])-(src[1][1]-src[0][1])*(src[2][0]-src[0][0]))<1e-9)continue;const clipped=clipPolygon(template.clip,src);if(clipped.length<3)continue;geometry.push({src,clipped});}
+  }
+ }
+ return geometry;});
+ for(const {src,clipped}of geometry){const dst=src.map(p=>mapper.map([(p[0]-rx)/rw,(p[1]-ry)/rh])),matrix=affine(src,dst);mesh.push({src:src.map(p=>[...p]),dst,matrix,polygon:clipped.map(p=>transform(matrix,p))});}
+ const full={...head,cx:0,cy:0,angle:0,mesh,bind:undefined},list=commandList.map(c=>c===neck?{...partitionSkinLayer(full,layerSplit,'neck'),id:'neck',opacity:neck.opacity}:c===head?partitionSkinLayer(full,layerSplit,'head'):c);
+ return {list,mapper,metrics:{sourceLength:mapper.sourceLength,worldLength:mapper.worldLength,centerlineScale:mapper.centerlineScale,triangles:list.filter(c=>['head','neck'].includes(c.id)).reduce((s,c)=>s+c.mesh.length,0)}};
+}

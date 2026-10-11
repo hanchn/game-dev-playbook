@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {scanAtlas} from './scan-atlas.mjs';
+const dir=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../public/art'),skins={};
+const previous=JSON.parse(await fs.readFile(path.join(dir,'skins.json'),'utf8').catch(()=> '{}'));
+for(const id of ['human','chicken','dinosaur','horse','crocodile','centipede','spider','scorpion','snake','worm'])skins[id]=new RegExp(`^/art/${id}-side-parts-v\\d+\\.png$`).test(previous[id]?.atlas??'')?previous[id]:scanAtlas(path.join(dir,`${id}-parts-v1.png`));
+if(previous['human-alien'])skins['human-alien']=previous['human-alien'];
+await fs.writeFile(path.join(dir,'skins.json'),JSON.stringify(skins,null,2));
+console.log(Object.entries(skins).map(([id,s])=>`${id}: ${s.tiles.length} measured parts / alpha ${s.transparent}`).join('\n'));

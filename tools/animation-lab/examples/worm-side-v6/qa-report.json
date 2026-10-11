@@ -1,0 +1,37 @@
+{
+  "assetId": "worm-side-v6",
+  "source": "public/art/worm-side-parts-v5.png",
+  "sourceSha256": "8073dc0831f4ec0ddad3419990704ba0c85773a7e14b6f9dc26a132d085b34ec",
+  "technical": "49 focused tests passed, hydraulic volume proxy/materialUV/joint and other species regressions",
+  "visual": "partial",
+  "actualUI": {
+    "url": "/lab/worm",
+    "clip": "walk",
+    "phase": 0.25,
+    "zoom": 1.65,
+    "background": "dark",
+    "fade": false,
+    "file": "ui-walk-phase025-dark.png"
+  },
+  "reviewed": [
+    "walk-fixed-dark.png:16 frames",
+    "actualUI full assembly at phase .25"
+  ],
+  "remaining": [
+    "head tip shape not accepted as anatomically correct",
+    "ground friction/anchor progression not implemented",
+    "raise and burrow generated but not visually reviewed in this revision",
+    "skin cap/tail bending requires separate same-pose source review"
+  ],
+  "sourceBasis": [
+    "https://journals.biologists.com/jeb/article/217/11/1860/12150/Scaling-of-the-hydrostatic-skeleton-in-the"
+  ],
+  "modelAssumptions": {
+    "lengthAmplitudeWalk": 0.2,
+    "lengthAmplitudeRun": 0.26,
+    "contractionRatioMinimum": 0.78,
+    "waveCyclesAlongBody": 1.15,
+    "amplitudes": "animation choices, not measured specimen values",
+    "volumeProxy": "length * nominal diameter squared"
+  }
+}

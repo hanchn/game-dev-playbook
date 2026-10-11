@@ -1,0 +1,95 @@
+✔ 换皮肤后翻滚仍先双掌触地，靴底在触地准备阶段保持平放 (41.62575ms)
+✔ 外星人的衣孔有真实透明度及上层衣缘，独立运动默认保留装配遮挡 (54.718417ms)
+✔ 换皮肤保留骨架身份，独立头身比、轴点、抓握和接地轮廓随皮肤导出 (504.350584ms)
+✔ 真人比例检查区分头颅和带颈的整个贴图，避免小头与过宽躯干 (1.450333ms)
+✔ 鳄鱼前后腿的素材归属和折叠脚方向一致 (1.104209ms)
+✖ 鸡的收翅朝身后，头颈共用完整羽毛源而不叠加柱形颈 (6.386625ms)
+✔ 柔性角色沿前端切线运动，连续源身体的相邻UV没有跨素材跳变 (16.53075ms)
+✔ 蝎子步足不重复带爪的胫节，夹螯闭合时两指尖汇合 (1.583666ms)
+✔ 衣缘遮挡随躯干转动，与原衣片使用同一个源点位置 (29.472ms)
+✔ 团身后的滚动由衣服肩背和四肢承重，真人与大头皮肤不以头部作为地面支点 (423.433208ms)
+✔ 马的前腕链与后飞节链使用独立素材，骨长和下游连接在完整及单件动作保持 (25.47875ms)
+✔ chicken-hen-skin-v1.json preserves current measured ownership and source identity (341.9995ms)
+✔ chicken-performance-extras-v1.json preserves current measured ownership and source identity (117.415167ms)
+✔ chicken-crow-intermediates-v1.json preserves current measured ownership and source identity (155.675875ms)
+✔ crow source states keep eye, poll and root registration consistent at one material scale (2.149ms)
+✔ hen source cannot be described as an accepted rooster laying scene (2.008416ms)
+✔ registered hen uses complete female material and each foot native alpha support point (110.337875ms)
+✔ hen neck layer ownership changes without moving the rigid skull or native foot contacts (41.448083ms)
+✔ hen beak core reaches the actual floor during feeding and rises during recovery (54.868125ms)
+✔ hen leg material replacement leaves head, torso, feet and original neck recipe source-locked (8.557083ms)
+✔ rooster and hen only replace actual leg materials while the other fourteen source pieces remain byte-identical (533.660291ms)
+✔ rooster neck root partition preserves face mapping and all same-source ownership (40.21275ms)
+✔ a rooster asset cannot silently substitute for a laying hen (0.908708ms)
+✔ multiple chickens retain independent phases and stable identities (0.599417ms)
+✔ egg starts behind pelvis and persists once after recovery across repeated seeks (0.186583ms)
+✔ fight requires opposing actors; feather particles are seek-safe and recover (0.234792ms)
+✔ crow distinguishes beak opening from a whole head rotation and closes on recovery (0.103834ms)
+✔ walking to pecking inbetweens rotate bones without shortening them or separating joints (1.754709ms)
+✔ flock travel holds either stance foot for both facings and the actual render scale (8.182584ms)
+✔ stop transition pins the planted foot, idle does not slide home, and scene end holds (1.952834ms)
+✔ all 1–12 actors move and their source-bound silhouettes stay in the common fixed output frame (10362.279375ms)
+✔ fight has no unsupported recovery hop and eases wings into the held idle (0.358542ms)
+✔ flocks expose true female walking and pecking with stable mixed identities (0.425334ms)
+✔ delayed takeoff starts at the actual idle pose, pins its sole and has no boundary snap (39.921375ms)
+✔ performance requires real female material and two opposing fighting actors (0.824416ms)
+✔ unmodified poses preserve original leg solution exactly (1.217208ms)
+✔ sitting hen keeps both soles planted and bones intact at every transition sample (4.498ms)
+✔ registered open and closed heads hold the same eye in world space through neck lift (46.376916ms)
+✔ fighting hop preserves every bone and exposes no grounded foot during flight (2.716333ms)
+✔ all four mouth sources register one eye while preserving native source aspect (4.952041ms)
+✔ struck bird recoils independently and flight tucks both feet with continuous landing (0.518333ms)
+✔ human 生产动作和所有活动关节通过独立检查 (262.329458ms)
+✔ human 对错误步态、滑步、拉长、断环及静止腿拒收 (3.625708ms)
+✔ chicken 生产动作和所有活动关节通过独立检查 (12.752959ms)
+✔ chicken 对错误步态、滑步、拉长、断环及静止腿拒收 (3.579167ms)
+✔ dinosaur 生产动作和所有活动关节通过独立检查 (47.004875ms)
+✔ dinosaur 对错误步态、滑步、拉长、断环及静止腿拒收 (8.334542ms)
+✔ horse 生产动作和所有活动关节通过独立检查 (26.684542ms)
+✔ horse 对错误步态、滑步、拉长、断环及静止腿拒收 (5.535833ms)
+✔ crocodile 生产动作和所有活动关节通过独立检查 (20.898291ms)
+✔ crocodile 对错误步态、滑步、拉长、断环及静止腿拒收 (5.585667ms)
+✔ centipede 生产动作和所有活动关节通过独立检查 (343.704375ms)
+✔ centipede 对错误步态、滑步、拉长、断环及静止腿拒收 (28.211625ms)
+✔ snake 生产动作和所有活动关节通过独立检查 (39.59025ms)
+✔ snake 对错误步态、滑步、拉长、断环及静止腿拒收 (8.294667ms)
+✔ worm 生产动作和所有活动关节通过独立检查 (23.894875ms)
+✔ worm 对错误步态、滑步、拉长、断环及静止腿拒收 (4.607084ms)
+✔ spider 生产动作和所有活动关节通过独立检查 (387.670334ms)
+✔ spider 对错误步态、滑步、拉长、断环及静止腿拒收 (32.472708ms)
+✔ scorpion 生产动作和所有活动关节通过独立检查 (654.347375ms)
+✔ scorpion 对错误步态、滑步、拉长、断环及静止腿拒收 (44.020042ms)
+✔ 持续蒙皮三角形相邻边连续，急弯仍有有限变换 (19.341958ms)
+✔ 图集渲染骨段轴点对应骨骼位置，静态贴图不改变身体比例 (19.294875ms)
+✔ 物种专属复杂动作有实质位移并回位，单次时长正确 (35.165375ms)
+ℹ tests 64
+ℹ suites 0
+ℹ pass 63
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10489.800625
+
+✖ failing tests:
+
+test at test/art-binding.test.mjs:22:1
+✖ 鸡的收翅朝身后，头颈共用完整羽毛源而不叠加柱形颈 (6.386625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/art-binding.test.mjs:22:192)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

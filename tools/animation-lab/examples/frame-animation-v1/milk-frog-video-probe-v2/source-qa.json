@@ -1,0 +1,58 @@
+{
+  "tool": "rh-canvas / multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+  "prompt": "Generate a SINGLE continuous 4-second animation of the exact MILK FROG from IMAGE1. IMAGE1 is actual character identity/appearance only: yellow muscular biped, white belly, green eyes, pink hands and feet, cheerful open mouth, glossy 2D cartoon with bold black outlines. IMAGE2 is a four-panel MOTION GUIDE ONLY, never render its diagrams/colors/text into output. Its panels represent time0s,1s,2s,3s; at4s return to0s. RED chains are permanent foreground NEAR arm+leg, BLUE chains permanent background FAR arm+leg. Skin stays yellow/pink in final movie, no colored bands. ONE slower full run cycle over4 seconds, not several fast repeats. Fixed side/front angle of image1 facingRIGHT, fixed camera/scale/hip/groundline, flat white background, full character with10% margin on all four sides. No pan/zoom/turn. Permanent two arms/two legs, stable lengths, fingertips/toes preserve original same count and shapes. Near arm back when near leg forward/support at0s, near arm forward while near leg movesback and far knee rises at1s, near arm forward/fararmback while FAR legfrontsupport at2s, neararmback while NEAR kneerises at3s; interpolate every quarter with smooth loading, passing, toe-off, folded heel recovery, high knee, flight, landing. Both hands must separately move behind/past/infront of hip, both feet alternate contact. Maintain a small clear side offset between near/far appendages as they pass. Repair the prior failure: NEVER blend pink foot with yellow knee/hip or invent a pink vertical shin smear. Never blend two hands into a multi-finger blob at waist. Keep clean unbroken bold anatomical outlines and precise wrist/ankle connections. Allow natural body occlusion but two distinct hand silhouettes and two distinct foot silhouettes always persist, including passing. No motion blur, morphing hands, melting skin, changing fingers/toes, phantom parts, extra limbs or vanishing far limb. Keep face/eyes/smile/tongue identity fixed, gaze ahead, eyes open, no cyclic blink. End whole4-second shot at exact initial contact pose; no fade or endinghold. This is a true rendered cartoon animation video, not a motion diagram or atlas.",
+  "generatedFile": "tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v2/download/2109349526505267202-1.mp4",
+  "generatedFileSha256": "9174da4ed40c9d328bbe83fee9bf7c0db4e967aacdc670cbe783e22f4cc15d36",
+  "taskId": "2109349526505267202",
+  "requestSha256": "5b8e84d7c99a5b646685ddf701d4acbf2409612ecf47f36426825c5e9f72b06f",
+  "referenceSha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d",
+  "actualVideo": {
+    "codec": "h264",
+    "size": [
+      1024,
+      1024
+    ],
+    "frameCount": 107,
+    "durationSeconds": 4.458333,
+    "fps": 24
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "慢单周期中间姿势和手脚糊块有改善，但实际107帧绝大多数把红蓝控制线与圆点绘进黄色角色；source不能用。原白背景无alpha、安全10%与精确镜头/闭环仍未通过。",
+    "reviewedAllOriginalFrames": 107,
+    "evidence": [
+      "native-contact-1.png",
+      "native-contact-2.png",
+      "native-contact-3.png",
+      "native-contact-4.png"
+    ],
+    "observations": [
+      {
+        "frames": [
+          0,
+          5,
+          18,
+          27,
+          40,
+          53,
+          66,
+          79,
+          92,
+          104,
+          106
+        ],
+        "finding": "模型把redNEAR/blueFAR运动参考作为可见外观画入，尽管提示明确无颜色带；持续性指导泄漏，不能代码擦线后假称原图合格。"
+      },
+      {
+        "frames": [
+          0,
+          27,
+          53,
+          79,
+          106
+        ],
+        "finding": "动作约一个慢周期，有经过/抬膝和前后交换，原形变减轻；控制身份对齐和自然度仍须看实际源。"
+      }
+    ]
+  }
+}

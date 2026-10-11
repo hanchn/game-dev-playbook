@@ -1,0 +1,52 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Image1 is the single alien run phase75% frame to edit. Image2 is its pose control. Correct ONLY the permanent near/far LEG identities. Keep original canvas framing, head/eyes/face, torso/vest, both arm poses, exact two fist positions, lighting, materials and transparent background unchanged.\nImage2 RED leg is the foreground NEAR leg: hip→thigh goes FORWARD/RIGHT, near knee lifted high, shin points down, near boot forward and airborne. This FOREGROUND raised thigh must visibly carry the large outer cargo pocket. The shin and boot on the right/high-knee leg belong to that same NEAR leg.\nImage2 BLUE leg is the background FAR leg: hip→thigh extends BACK/LEFT, knee nearly extended, far boot trailing behind/left in air. That trailing far thigh is partly behind the near hip and MUST NOT show the large foreground outer cargo pocket. Right now image1 incorrectly puts the outer cargo pocket on the trailing/back leg, so the near/far legs don't exchange in the running cycle. Make nearest cargo-pocket-bearing leg the FORWARD HIGH-KNEE leg, and the far/smooth-sided leg the REAR EXTENDED leg. Two physically complete legs attached to the correct sides of the pelvis, no third legs or copied pockets on both thighs.\nBoth feet remain airborne like image2. Preserve the current hands: near fist higher at low chest, far fist lower at waist, both visible. Preserve large blue eye, beige speckled cranium and stable forward gaze. Strict right facing side profile. Full body remains within original fixed canvas with safe margins, no enlarging, recentering, cropping or camera changes. Detailed smooth 3D-rendered anatomy. Genuine alpha transparency, no guides/text or floor shadow.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-cb78eee0-9dd6-4bbe-9564-cb71d79cdcd5.png",
+  "generatedFileSha256": "a56f38d51ae7d8d654629ec22e9e45eececff4da3dd90699d09e815155fed3ba",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v6-phase-09.png",
+  "references": [
+    {
+      "role": "edit-target",
+      "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-09.png",
+      "sha256": "b53647ace820f0b6aeed774c5d5f79e6e927c53f81f1ec27bfaebaa3d8106662"
+    },
+    {
+      "role": "code-native-single-pose-control",
+      "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-09.png",
+      "sha256": "9e788ed73386476c29eedf9ef617b2046b1fe8333592b37cf354853123146c08"
+    }
+  ],
+  "phase": 0.75,
+  "actualPNGSize": [
+    1086,
+    1448
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      109,
+      62,
+      913,
+      1301
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "poseAdherence": "passed-local-only",
+    "notes": "phase09 v6修复后近大腿口袋位于抬高前腿，far后腿无大口袋，双拳可见；较phase00皮肤花纹/头部身份漂移未通过。",
+    "evidence": [
+      "all-frames-dark.png",
+      "all-frames-light.png",
+      "all-limb-zoom-1.png",
+      "all-limb-zoom-2.png",
+      "selected-faces.png"
+    ],
+    "reviewedAt": "2026-10-11T17:02:11.904Z"
+  },
+  "index": 9,
+  "file": "alien-run-single-v6-phase-09.png"
+}

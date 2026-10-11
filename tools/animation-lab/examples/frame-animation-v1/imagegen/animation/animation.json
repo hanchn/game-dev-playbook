@@ -1,0 +1,343 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "frame-animation",
+  "loop": true,
+  "durationMs": 1000,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1024,
+    "height": 512,
+    "cell": 256,
+    "columns": 4,
+    "rows": 2,
+    "padding": 12,
+    "sha256": "e0273295d345cb099555705aa78c07831af124ddff86264f525ae28da7f19b5a"
+  },
+  "provenance": {
+    "type": "imagegen",
+    "file": "jellyfish-original.png",
+    "sha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+    "grid": {
+      "columns": 4,
+      "rows": 2,
+      "count": 8
+    },
+    "verification": "generation receipt matches actual output SHA-256; receipt claim supplied by caller",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Asset type: game sprite animation sheet, 8 frames exactly. A single cute small blue jellyfish with a rounded translucent bell and six short curled tentacles, polished soft 3D game art. Show one complete pulse/swim cycle from relaxed bell through compressed bell then relaxed, chronological frame progression. Exactly four columns and two rows of equal sized cells on a genuinely transparent alpha background. Each cell contains exactly one whole jellyfish, identical scale, same face and tentacle count, same fixed center and camera, ample clear margins; no overlap between cells. Tentacles trail and flex as the bell pulses. Read left to right, top row then bottom row. No text, numbering, borders, lines, shadows crossing cells, or extra objects. Image aspect ratio 2:1 so each of the 8 cells is square. This is a bitmap frame animation, not a skeleton.",
+    "receipt": {
+      "format": "imagegen-frame-output",
+      "schemaVersion": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Asset type: game sprite animation sheet, 8 frames exactly. A single cute small blue jellyfish with a rounded translucent bell and six short curled tentacles, polished soft 3D game art. Show one complete pulse/swim cycle from relaxed bell through compressed bell then relaxed, chronological frame progression. Exactly four columns and two rows of equal sized cells on a genuinely transparent alpha background. Each cell contains exactly one whole jellyfish, identical scale, same face and tentacle count, same fixed center and camera, ample clear margins; no overlap between cells. Tentacles trail and flex as the bell pulses. Read left to right, top row then bottom row. No text, numbering, borders, lines, shadows crossing cells, or extra objects. Image aspect ratio 2:1 so each of the 8 cells is square. This is a bitmap frame animation, not a skeleton.",
+      "generatedFile": "jellyfish-original.png",
+      "generatedFileSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "generatedAt": "2026-10-11T15:15:57.241Z",
+      "transparent_background": true,
+      "layout": {
+        "columns": 4,
+        "rows": 2,
+        "count": 8
+      },
+      "visualQA": "failed",
+      "knownIssues": [
+        "Prompt requested six tentacles but visible silhouettes show four dominant tentacles; anatomy consistency requires a review.",
+        "Cell centers and silhouette size vary across the pulse; fixed-scale continuity has not passed."
+      ],
+      "sourceToolPath": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-dbe11029-db1e-4c15-9c45-2c1c7ad367b6.png"
+    }
+  },
+  "visualQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "jellyfish-original.png#1",
+      "timeMs": 0,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        0,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/001.png",
+      "pngSha256": "dbd1d61466363b28a19d2f94eeed67b4c3be6317f5ab6529744cb2c6f9e2eab0",
+      "sourceIndex": null,
+      "sourcePTS": null
+    },
+    {
+      "index": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "jellyfish-original.png#2",
+      "timeMs": 125,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        443,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/002.png",
+      "pngSha256": "222d7e6febe1231fd388029342381311a485eb9b9ec7c070a5aedc038b695958",
+      "sourceIndex": null,
+      "sourcePTS": null
+    },
+    {
+      "index": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "jellyfish-original.png#3",
+      "timeMs": 250,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        887,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/003.png",
+      "pngSha256": "02f50a481f390f89e548c13aa58e72e50d68869dc94bf5fdf9ea72a77d2cf90d",
+      "sourceIndex": null,
+      "sourcePTS": null
+    },
+    {
+      "index": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "jellyfish-original.png#4",
+      "timeMs": 375,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        1330,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/004.png",
+      "pngSha256": "a30fb2424824d4b2c0adbbd07bfef7bd4d424b161cd4d80346c74e3635ce8dc9",
+      "sourceIndex": null,
+      "sourcePTS": null
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "jellyfish-original.png#5",
+      "timeMs": 500,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        0,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/005.png",
+      "pngSha256": "53531ca12957301ccd40b4742470985ef2d7837dbf19752f0cf40c04a7826ba5",
+      "sourceIndex": null,
+      "sourcePTS": null
+    },
+    {
+      "index": 5,
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "jellyfish-original.png#6",
+      "timeMs": 625,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        443,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/006.png",
+      "pngSha256": "435c8ccc072dd3f14d8440177fe0cf95c8d4ec044e3b7702ee9a18a2b8f7eeb5",
+      "sourceIndex": null,
+      "sourcePTS": null
+    },
+    {
+      "index": 6,
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "jellyfish-original.png#7",
+      "timeMs": 750,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        887,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/007.png",
+      "pngSha256": "fa385352b3c9f08d5c71a346f36e04fa1e617e15162e63c295e763eb1d53c1c9",
+      "sourceIndex": null,
+      "sourcePTS": null
+    },
+    {
+      "index": 7,
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "jellyfish-original.png#8",
+      "timeMs": 875,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceRect": [
+        1330,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+      "file": "frames/008.png",
+      "pngSha256": "63e13e3e0f88ad895c382e487b471fd6c1a218f32eedbfbed3d205fc5a54fed8",
+      "sourceIndex": null,
+      "sourcePTS": null
+    }
+  ],
+  "createdAt": "2026-10-11T15:18:16.586Z"
+}

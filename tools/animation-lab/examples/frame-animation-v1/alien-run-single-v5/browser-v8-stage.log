@@ -1,0 +1,6 @@
+### Result
+{"url":"http://127.0.0.1:4317/frame-animation","notes":"远拳已移到腰旁形成passing，近拳前方清晰；定点生成同时使头、皮纹和画面比例偏移，原图注册仍不合格，不可当成像素局部修复通过。"}
+### Ran Playwright code
+```js
+await (async (page) => {await page.setViewportSize({width:1440,height:1500});for (const [i,bg,name] of [[2,"dark","phase02-dark"],[8,"light","phase08-light"]]){await page.locator("#scrub").fill(String(i));await page.locator("#scrub").dispatchEvent("input");await page.locator("#background").selectOption(bg);await page.evaluate(()=>window.scrollTo(0,0));await page.locator("#preview").screenshot({path:"/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-"+name+".png"});}return {url:page.url(),notes:await page.locator("#qa-notes").inputValue()};})(page);
+```

@@ -1,0 +1,122 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Asset type: actual rendered game frame-animation PNG atlas, NOT skeletal sprites.\nInput image 1 is IDENTITY only: preserve the exact beige speckled bald alien explorer, elongated very large cranium, huge blue eye, friendly small face, slim adult build, olive sleeveless utility vest, cream undershirt, brown belted cargo trousers with pockets and dark brown lace-up boots. Identity image happens to face left: FINAL must face RIGHT exactly as image 2.\nInput image 2 is an exact CHRONOLOGICAL POSE CONTROL SHEET. Re-render each of its TWELVE poses as the fully clothed detailed alien from image 1. Red limbs in image 2 are the near/camera-side arm and leg; blue limbs are the far-side arm and leg. These colors are guides only: final character has natural same clothing/skin colors and does NOT show red/blue bones, annotations, lines, circles or labels. Preserve which limb is in front. Do not replace all cells with the pose from image 1.\nExactly 4 columns × 3 rows of equal rectangular cells, 12 distinct chronological frames in row-major order. Entire sheet square 2048×2048, each cell portrait. Strict right-facing side view, fixed orthographic camera and constant scale. Same hip x position in each cell, same planted boot sole baseline 89.6% down each cell, gentle body bob only as guide. Large head always fully inside cell with margin, all hands/boots inside their own cell. Transparent background with genuine alpha. No ground shadows, grid, text or labels.\nFollow image 2 arm gestures EXACTLY, including the important backward near arm: Frames 1,2,12 near-side hand is BEHIND/LEFT of the hip vertical axis; frame3 hand passes hip; frames4,5,6,7,8,9 near-side hand is FORWARD/RIGHT of hip; frames10,11 hand returns through middle then backwards. The opposite far-side arm moves in the opposite direction. The NEAR shoulder-elbow-wrist chain must visibly change across every frame. Do not keep near fist in front across all twelve frames. Keep elbows naturally bent, hands softly closed, shoulder and wrist coherent. Near-arm swing opposes near-leg swing.\nFollow image 2 legs: 1 near-foot forward contact + far heel recovering; 2 near weight-load + far passing; 3 near toe-off + far high-knee; 4 both airborne with far knee forward; 5 far foot extends forward while near heel folds back; 6 far landing approach; 7 far-foot contact + near heel recovering; 8 far load + near passing; 9 far toe-off + near high-knee; 10 both airborne near knee forward; 11 near foot extends forward + far heel folds back; 12 near landing approach. The second half swaps which side supplies the support foot. Include ALL intermediate recovery/passing poses, not just alternating two extremes. Maintain two legs and two arms, no missing far limbs, feet never intersect cell borders.\nHigh quality detailed 3D character rendering, stable skin texture and clothing across frames, smooth natural anatomy and motion. Single seamless in-place running cycle at nine frames per second for 1.333 seconds. Frame12 is not duplicated frame1. Preserve the real full character; do not output the guide or a simplified stick model.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d3bbce4a-f09a-4c03-98ec-3ac3a73e3d04.png",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-controlled-v3.png",
+  "generatedFileSha256": "657f4a61889eeb3349b57759bc3293b5f77966f7574ea35bb813db5c7a9b2592",
+  "references": [
+    {
+      "role": "identity",
+      "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+      "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+    },
+    {
+      "role": "code-native-pose-control-only",
+      "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-controlled-v3/pose-control.png",
+      "sha256": "1cb65679d0c37a12f938b7dd86f70d2120261e379800b53ad1750ee0cde0579f"
+    }
+  ],
+  "grid": {
+    "columns": 4,
+    "rows": 3,
+    "count": 12
+  },
+  "actualPNGSize": [
+    1254,
+    1254
+  ],
+  "playback": {
+    "fps": 9,
+    "loop": true
+  },
+  "qa": {
+    "visual": "failed",
+    "observations": [
+      "近臂第2帧提前前摆，第4–12帧大多近臂保持前摆，未跟随控制图完整前后交换",
+      "第二半循环支撑侧未明确交换，多个腿姿重复"
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "NEAR contact / FAR recovery",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": -61.787426745917486
+      },
+      {
+        "index": 1,
+        "phase": "NEAR load / FAR passing",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": -23.85283180056544
+      },
+      {
+        "index": 2,
+        "phase": "NEAR toe off / FAR knee lift",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 25.767878676765008
+      },
+      {
+        "index": 3,
+        "phase": "Flight: NEAR folds / FAR high knee",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 66.74340152243906
+      },
+      {
+        "index": 4,
+        "phase": "Flight: NEAR recovery / FAR extends",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 90.3848675488507
+      },
+      {
+        "index": 5,
+        "phase": "FAR landing approach",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 102.61820360492516
+      },
+      {
+        "index": 6,
+        "phase": "FAR contact / NEAR recovery",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 104.97119292999105
+      },
+      {
+        "index": 7,
+        "phase": "FAR load / NEAR passing",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 102.61820360492516
+      },
+      {
+        "index": 8,
+        "phase": "FAR toe off / NEAR knee lift",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 90.3848675488507
+      },
+      {
+        "index": 9,
+        "phase": "Flight: FAR folds / NEAR high knee",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 66.74340152243906
+      },
+      {
+        "index": 10,
+        "phase": "Flight: FAR recovery / NEAR extends",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 25.767878676765008
+      },
+      {
+        "index": 11,
+        "phase": "NEAR landing approach",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": -23.85283180056544
+      }
+    ],
+    "edgeCorrection": {
+      "initialObservation": "raw transparent viewer shows colored fringes",
+      "retested": "actual deep/light Canvas composites do not show saturated red/yellow fringes; alpha>=24 red/yellow diagnostic count zero all12. Initial fringe conjecture withdrawn. Alpha>0 faint border pixels retained without source cleanup.",
+      "evidence": [
+        "v4-dark.png",
+        "v4-light.png",
+        "v4-pixel-review.json"
+      ]
+    }
+  }
+}

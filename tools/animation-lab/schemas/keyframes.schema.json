@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sprite-keyframes-v1",
+  "title": "Sprite keyframe timeline",
+  "type": "object",
+  "required": ["schema", "schemaVersion", "name", "asset", "clip", "duration", "loop", "easing", "frames"],
+  "properties": {
+    "schema": {"const":"sprite-keyframes"},
+    "schemaVersion": {"const":1},
+    "name": {"type":"string", "maxLength":150},
+    "asset": {"type":"object", "required":["species","skin","id","atlas"], "properties":{"species":{"type":"string"},"skin":{"type":["string","null"]},"id":{"type":"string"},"atlas":{"type":"string"}}},
+    "clip": {"type":"string"},
+    "duration": {"type":"number", "minimum":0.05, "maximum":120},
+    "loop": {"type":"boolean"},
+    "easing": {"$ref":"#/$defs/easing"},
+    "frames": {"type":"array", "minItems":2, "maxItems":256, "items":{"type":"object", "required":["id","time","easing","transforms"], "properties":{"id":{"type":"string"}, "time":{"type":"number","minimum":0,"maximum":1}, "easing":{"$ref":"#/$defs/easing"}, "transforms":{"type":"object", "additionalProperties":{"$ref":"#/$defs/transform"}}}}}
+  },
+  "$defs": {
+    "easing": {"enum":["linear","smooth","ease-in","ease-out","hold"]},
+    "transform": {"type":"object", "required":["x","y","angle"], "properties":{"x":{"type":"number"},"y":{"type":"number"},"angle":{"type":"number"},"length":{"type":"number","minimum":0,"maximum":500},"width":{"type":"number"},"visible":{"type":"boolean"},"spineBaseAngle":{"type":"number"},"spine":{"type":"object","required":["hip","lean","curvature","bodyS"],"properties":{"hip":{"type":"object","required":["x","y"],"properties":{"x":{"type":"number"},"y":{"type":"number"}}},"lean":{"type":"number"},"curvature":{"type":"number"},"bodyS":{"type":"number"}}}}}
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "terrain-3d-receipt/v1",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "moon",
+    "preset": "moonCraters",
+    "scale": 128,
+    "height": 24,
+    "waterLevel": -1,
+    "vegetation": 0.22
+  },
+  "region": {
+    "x": 4,
+    "z": 4,
+    "width": 3,
+    "depth": 3
+  },
+  "chunks": 9,
+  "props": 47,
+  "files": [
+    {
+      "path": "scene.glb",
+      "bytes": 2639628,
+      "sha256": "51265f16309e5c88b357b40e9b5b7725eadb9e5473ddf26e7a493a62cff26040"
+    },
+    {
+      "path": "textures/Diffuse.jpg",
+      "bytes": 660234,
+      "sha256": "653c407f1effd9df8ee9366c0f85b585770856121d8810efd11e54e8707a8031"
+    },
+    {
+      "path": "textures/nor_gl.jpg",
+      "bytes": 950962,
+      "sha256": "b77a9bacd0ff54adfab7c04960b226f57ab187f7a0966e624f15ecc45c5f8f24"
+    },
+    {
+      "path": "textures/arm.jpg",
+      "bytes": 165940,
+      "sha256": "41665bec9a56c7fb764e0e1fa09c46e1a334b3b64227ab5a0e5930c936d4f3a7"
+    },
+    {
+      "path": "models/rock_largeC.glb",
+      "bytes": 7004,
+      "sha256": "23aee8b727adeaf260207af3e0615dc69aa766c6d87de1d44cbc8c2711d74dd1"
+    },
+    {
+      "path": "models/rock_tallA.glb",
+      "bytes": 12072,
+      "sha256": "88250f236a3b75f8b55c1d8afb6af020f8a91b1e81f9fb51f7ef513420d45a2d"
+    },
+    {
+      "path": "models/rock_largeD.glb",
+      "bytes": 7992,
+      "sha256": "e4fefd8d8d7deab42be61bd222bcd088330012f0025789146b81f25a46095ffd"
+    },
+    {
+      "path": "scene.json",
+      "bytes": 54464,
+      "sha256": "eb693e55a38474caaced8f6048aae3dad7ff4377a5a0c7a4a476109cdeeac305"
+    }
+  ],
+  "sourceModels": [
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeC.glb",
+      "sha256": "23aee8b727adeaf260207af3e0615dc69aa766c6d87de1d44cbc8c2711d74dd1"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_tallA.glb",
+      "sha256": "88250f236a3b75f8b55c1d8afb6af020f8a91b1e81f9fb51f7ef513420d45a2d"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeD.glb",
+      "sha256": "e4fefd8d8d7deab42be61bd222bcd088330012f0025789146b81f25a46095ffd"
+    }
+  ],
+  "qa": {
+    "engineImported": false,
+    "visualAccepted": false,
+    "actorCollisionsVerified": false,
+    "realGeographicData": false
+  }
+}

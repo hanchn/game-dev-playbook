@@ -1,0 +1,253 @@
+{
+  "schema": "frame-animation-generation-receipt",
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "mode": "identity-preserve-framing-edit",
+  "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame squat animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+  "identityReference": {
+    "file": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+    "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+  },
+  "editReference": {
+    "file": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-1de924a5-49b8-40ec-8ef1-01b6526281d9.png",
+    "sha256": "6306d0991fd2a48132bdd42866e6808052be10d4fdda89da958a44821846556c"
+  },
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-e3e5cd41-1c34-4d52-acc2-b5946e130b1a.png",
+  "generatedFileSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+  "projectFile": "public/frame-animation-assets/alien-squat-v2.png",
+  "projectFileSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+  "image": {
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "count": 8,
+    "cellWidth": 443.5,
+    "cellHeight": 443.5,
+    "order": "row-major",
+    "requiresIntegerGridNormalization": true,
+    "boundaryPolicy": "floor(col*width/4),floor(row*height/2); final boundary=image dimensions"
+  },
+  "playback": {
+    "fps": 8,
+    "durationSeconds": 1,
+    "loop": false
+  },
+  "qa": {
+    "visual": "needs-registration-and-playback-review",
+    "frames": [
+      {
+        "index": 0,
+        "phase": "stand",
+        "alphaBoundsLocal": [
+          168,
+          102,
+          287,
+          433
+        ],
+        "marginLocal": {
+          "left": 168,
+          "top": 102,
+          "right": 156,
+          "bottom": 10
+        },
+        "cellRect": [
+          0,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "站姿脚并拢，远腿重叠，非双腿宽站姿",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 1,
+        "phase": "down-1",
+        "alphaBoundsLocal": [
+          155,
+          124,
+          343,
+          434
+        ],
+        "marginLocal": {
+          "left": 155,
+          "top": 124,
+          "right": 101,
+          "bottom": 9
+        },
+        "cellRect": [
+          443,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "浅蹲和伸臂阶段明确",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 2,
+        "phase": "down-2",
+        "alphaBoundsLocal": [
+          144,
+          161,
+          356,
+          433
+        ],
+        "marginLocal": {
+          "left": 144,
+          "top": 161,
+          "right": 87,
+          "bottom": 10
+        },
+        "cellRect": [
+          887,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "中蹲，大腿斜向接近水平",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 3,
+        "phase": "bottom-1",
+        "alphaBoundsLocal": [
+          148,
+          191,
+          353,
+          418
+        ],
+        "marginLocal": {
+          "left": 148,
+          "top": 191,
+          "right": 91,
+          "bottom": 25
+        },
+        "cellRect": [
+          1330,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "深蹲动作有，膝前移较多且脚位相对漂移",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 4,
+        "phase": "bottom-2",
+        "alphaBoundsLocal": [
+          147,
+          165,
+          366,
+          388
+        ],
+        "marginLocal": {
+          "left": 147,
+          "top": 165,
+          "right": 77,
+          "bottom": 56
+        },
+        "cellRect": [
+          0,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "底部hold姿势有但高度与frame4不同",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 5,
+        "phase": "up-2",
+        "alphaBoundsLocal": [
+          156,
+          111,
+          347,
+          407
+        ],
+        "marginLocal": {
+          "left": 156,
+          "top": 111,
+          "right": 97,
+          "bottom": 37
+        },
+        "cellRect": [
+          443,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "起身过渡清晰，但v2脚线与firstrow不同",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 6,
+        "phase": "up-1",
+        "alphaBoundsLocal": [
+          167,
+          82,
+          310,
+          407
+        ],
+        "marginLocal": {
+          "left": 167,
+          "top": 82,
+          "right": 133,
+          "bottom": 37
+        },
+        "cellRect": [
+          887,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "浅蹲返回，手臂下放",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 7,
+        "phase": "stand",
+        "alphaBoundsLocal": [
+          174,
+          90,
+          288,
+          407
+        ],
+        "marginLocal": {
+          "left": 174,
+          "top": 90,
+          "right": 156,
+          "bottom": 37
+        },
+        "cellRect": [
+          1330,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "站立恢复；不与frame1逐像素一致",
+        "status": "reviewed-with-open-registration-defect"
+      }
+    ],
+    "observations": [
+      "8阶段均可见，角色服装和朝向基本保持；逐帧视审已执行",
+      "v2留边明显改善且关节连续；仍有落脚基线、头部尺度和水平registration轻微偏移，未签收最终成片",
+      "工具黑底预览可见红黄细线；A>128红色筛查仅少量或零候选，不能仅凭预览证实source边缘污染，需真实深浅底播放验收。"
+    ],
+    "gameIntegrated": false,
+    "playbackReviewed": false,
+    "edgePixelScreening": {
+      "opaqueRedCandidates": 11,
+      "opaqueYellowCandidates": 0,
+      "criterion": "RGBA A>128 and saturated red/yellow heuristic; advisory not exact segmentation",
+      "interpretation": "少量颜色候选不能单独证明轮廓缺陷；工具黑底预览的红黄线可能为低alpha隐藏RGB，深浅底真实播放待查。"
+    }
+  }
+}

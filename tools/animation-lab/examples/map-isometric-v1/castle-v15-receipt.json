@@ -1,0 +1,318 @@
+{
+  "schema": "isometric-map-receipt/v1",
+  "algorithm": "kenney-2d-continuous-ground-planner4-worker-render-order-v15",
+  "config": {
+    "seed": "漫游-2026",
+    "scale": 256,
+    "seaLevel": 0.45,
+    "roughness": 0.45,
+    "vegetation": 0.65
+  },
+  "style": "settlement",
+  "region": {
+    "x": 24,
+    "y": 24,
+    "width": 32,
+    "height": 32
+  },
+  "files": [
+    {
+      "path": "sprites/00010acaebdc-painted-atlas-v1.png",
+      "bytes": 2863469,
+      "sha256": "00010acaebdc030e88a6789ce3c5b8e9dc163c9ed6208c9df90468eb83984208"
+    },
+    {
+      "path": "sprites/2bac85cdc769-Diffuse.jpg",
+      "bytes": 437891,
+      "sha256": "2bac85cdc76927fa7dc311037bbbc4dfa2633ea56eb0a24c9cabe163a68c9aa5"
+    },
+    {
+      "path": "sprites/c48731777960-landscapeTiles_067.png",
+      "bytes": 1471,
+      "sha256": "c48731777960773ae997a50bc3c32740e6adac112230d0a317416bb688d39fd9"
+    },
+    {
+      "path": "sprites/d709065bc17f-landscapeTiles_081.png",
+      "bytes": 987,
+      "sha256": "d709065bc17fe3f63b32fcf74eb69c420761bbfe05082399418d21e71f4b3120"
+    },
+    {
+      "path": "sprites/af85e5755093-tree_small-af85e5755093.png",
+      "bytes": 115906,
+      "sha256": "af85e5755093b0213c0a228cfd0c3f13ece1e573bd32589345fd4cae4f607e10"
+    },
+    {
+      "path": "sprites/8b8205b6ab5d-tree_oak-8b8205b6ab5d.png",
+      "bytes": 140055,
+      "sha256": "8b8205b6ab5d771c90a652a316372ae1632137a7f59d5b08e04188bd0909d0d8"
+    },
+    {
+      "path": "sprites/7031bb433582-buildingTiles_014.png",
+      "bytes": 9252,
+      "sha256": "7031bb43358202bf0f3fefebbf1eec530b7bbc18b6c3026e39329bc55e85f5ab"
+    },
+    {
+      "path": "sprites/5ed7188d50e9-buildingTiles_062.png",
+      "bytes": 2164,
+      "sha256": "5ed7188d50e9dd55d3df0b7273d2b31f8c39e1187f4993bef3d3c9b378fae5c6"
+    },
+    {
+      "path": "sprites/6322d9bff729-tree_pineTallA-6322d9bff729.png",
+      "bytes": 107012,
+      "sha256": "6322d9bff729120034e4cd248338365b448e645097cc0170eb03282238c230dc"
+    },
+    {
+      "path": "sprites/722674709c06-mushroom_redGroup-722674709c06.png",
+      "bytes": 109532,
+      "sha256": "722674709c069bbe0ae3c713ce9e33b57366bbb1832795d39c9131e6f9304fb1"
+    },
+    {
+      "path": "sprites/dd70d362a48b-tree_pineTallB-dd70d362a48b.png",
+      "bytes": 101249,
+      "sha256": "dd70d362a48bb9c76d938222a97bdfb74e36876336f0f51b4bedd2fdd8d47e25"
+    },
+    {
+      "path": "sprites/e572282e263e-castle-v3-e572282e263e.png",
+      "bytes": 462356,
+      "sha256": "e572282e263efcf269e3c403a8cbae1dfd4588e3e2f4047700abd7df3957bf24"
+    },
+    {
+      "path": "sprites/1f55600f546d-v3-module-0-1f55600f546d.png",
+      "bytes": 12578,
+      "sha256": "1f55600f546d679059e0f3c5f866d0b43001b467b7deabf0a30458d6764f07f3"
+    },
+    {
+      "path": "sprites/85af31ecfb42-v3-module-1-85af31ecfb42.png",
+      "bytes": 12877,
+      "sha256": "85af31ecfb4222d2d854c80f0c22b29b2ad4f6272b819e49e491a1ce7093bba0"
+    },
+    {
+      "path": "sprites/60a1bc8f5b1d-v3-module-2-60a1bc8f5b1d.png",
+      "bytes": 12564,
+      "sha256": "60a1bc8f5b1da547d30d18f531918137e29b1e5367127a3c503c54ab4f259e8c"
+    },
+    {
+      "path": "sprites/0c666728f0ad-v3-module-3-0c666728f0ad.png",
+      "bytes": 12950,
+      "sha256": "0c666728f0adf7fcc955399c140dd647646844e4a90f86e948a254051085f7f7"
+    },
+    {
+      "path": "sprites/94bf8f83ddb1-v3-module-4-94bf8f83ddb1.png",
+      "bytes": 13209,
+      "sha256": "94bf8f83ddb1adee7853c8338c654f4107df12a5eae499e759b8c1bb7b267d9e"
+    },
+    {
+      "path": "sprites/99c513b9c63d-v3-module-5-99c513b9c63d.png",
+      "bytes": 12849,
+      "sha256": "99c513b9c63d82174b71f185aad87c6b2d331a20463706c05637454e9edda97c"
+    },
+    {
+      "path": "sprites/88ae68fa8693-v3-module-6-88ae68fa8693.png",
+      "bytes": 12866,
+      "sha256": "88ae68fa8693a5a26bbd41a634760e41e817607ac8bd803e74122d193ade048c"
+    },
+    {
+      "path": "sprites/c961dd7734bd-v3-module-7-c961dd7734bd.png",
+      "bytes": 13058,
+      "sha256": "c961dd7734bd36a9237c8371d901a6838ba6c4a06a7f275f9a7c946a0a63a88e"
+    },
+    {
+      "path": "sprites/46044d168188-v3-module-8-46044d168188.png",
+      "bytes": 9097,
+      "sha256": "46044d16818814b04f7069fc5a432b29fd4f28a92efdf4bb55fd8d463bc4bd28"
+    },
+    {
+      "path": "sprites/6da98bbc9ef2-v3-module-9-6da98bbc9ef2.png",
+      "bytes": 12930,
+      "sha256": "6da98bbc9ef24ee604a078e84619ee1ccfcdc7606c4d719bf5ce060fb032b78a"
+    },
+    {
+      "path": "sprites/f12045e1a207-v3-module-10-f12045e1a207.png",
+      "bytes": 12783,
+      "sha256": "f12045e1a20781e2acaa0ee3200372cf2a011c6d5eb53dbe17f8866e3af9761d"
+    },
+    {
+      "path": "sprites/92360e5261fd-v3-module-11-92360e5261fd.png",
+      "bytes": 8718,
+      "sha256": "92360e5261fd61ed663c6d772136688640b47b86f7d3e07debf534c1df2f6218"
+    },
+    {
+      "path": "sprites/1dc0d148a59a-v3-module-12-1dc0d148a59a.png",
+      "bytes": 9904,
+      "sha256": "1dc0d148a59a1c8fce4bccaf33c4b5b03ebbe75bd8d69a1d22ce80ca6536d05d"
+    },
+    {
+      "path": "sprites/51281150bb15-v3-module-13-51281150bb15.png",
+      "bytes": 10078,
+      "sha256": "51281150bb15014abccf67ffcb7308e2ad3565c5730d34ab83b5a1db00b6adf9"
+    },
+    {
+      "path": "sprites/ba3e04f18b6b-v3-module-14-ba3e04f18b6b.png",
+      "bytes": 7026,
+      "sha256": "ba3e04f18b6b16ebf3180378877bd9cf0ae2ca8248c61dfeb65ae8dd56d01ac3"
+    },
+    {
+      "path": "sprites/f03053671b13-v3-module-15-f03053671b13.png",
+      "bytes": 10130,
+      "sha256": "f03053671b13fc7837c4a8933b70e2ebbb347134a8611d1149d1998f2b456421"
+    },
+    {
+      "path": "sprites/1b4b9328cea9-v3-module-16-1b4b9328cea9.png",
+      "bytes": 9943,
+      "sha256": "1b4b9328cea9483467831b09099160a3959650a9ac1756f9fd9fd8f1f3d2273f"
+    },
+    {
+      "path": "sprites/6cc729d440de-v3-module-17-6cc729d440de.png",
+      "bytes": 6956,
+      "sha256": "6cc729d440de58b719f1b2e90ec77a50d04291db4d7c9e049feaa16d9a999a5e"
+    },
+    {
+      "path": "sprites/c20724523cf6-v3-module-18-c20724523cf6.png",
+      "bytes": 22232,
+      "sha256": "c20724523cf6f54adfc1c5b361533b7f5e29922e908e724fa7a04f3c6af4b5c1"
+    },
+    {
+      "path": "sprites/182b71ca79de-v3-module-19-182b71ca79de.png",
+      "bytes": 22246,
+      "sha256": "182b71ca79defdd318beeb4624ef2c01af9ccb31da7242a4c896e5493a6821e8"
+    },
+    {
+      "path": "sprites/73be6d1ff576-v3-module-20-73be6d1ff576.png",
+      "bytes": 21116,
+      "sha256": "73be6d1ff576e556531ff3944bf354d939b7a6b870efdf445a78349a39bd991e"
+    },
+    {
+      "path": "sprites/06f8cb0c138f-v3-module-21-06f8cb0c138f.png",
+      "bytes": 23517,
+      "sha256": "06f8cb0c138f2863e87eff02a38a650f9ef0fcf38fe249a38d0a3b7925c09e94"
+    },
+    {
+      "path": "sprites/33c6a67cfef2-v3-module-22-33c6a67cfef2.png",
+      "bytes": 25623,
+      "sha256": "33c6a67cfef240597ce238776028bcf71abe558e1a6eedf7b9aa8e5e91909d00"
+    },
+    {
+      "path": "sprites/824d1009e6df-v3-module-23-824d1009e6df.png",
+      "bytes": 25040,
+      "sha256": "824d1009e6dfe188d7250d0c509d30c8087a902fb89639e4d73e4c69a295f788"
+    },
+    {
+      "path": "sprites/10c9b6c0df6a-v3-module-24-10c9b6c0df6a.png",
+      "bytes": 23444,
+      "sha256": "10c9b6c0df6aed656d2f3e4b5af052f3681e51999e83a2f379fe6965d1f6fe49"
+    },
+    {
+      "path": "sprites/10cb9b3628df-v3-module-25-10cb9b3628df.png",
+      "bytes": 25582,
+      "sha256": "10cb9b3628dfb69ce903b715262d1a2a4bb65a9fe5fc182786f136703453bfca"
+    },
+    {
+      "path": "sprites/ef9903c1d707-v3-module-26-ef9903c1d707.png",
+      "bytes": 25253,
+      "sha256": "ef9903c1d70732d9c5d22e63262607526e756c3cc571878d6b4812dcecdc5eed"
+    },
+    {
+      "path": "sprites/f861a051e00e-v3-module-27-f861a051e00e.png",
+      "bytes": 23741,
+      "sha256": "f861a051e00e6afadb970a575ddbb13ea4e54680de09413108587cf28441fdf3"
+    },
+    {
+      "path": "sprites/48ea52cee5ee-v3-module-28-48ea52cee5ee.png",
+      "bytes": 25795,
+      "sha256": "48ea52cee5eef73afa35291c62f2d69283a90e67051cd4a7604b291c7f216b4d"
+    },
+    {
+      "path": "sprites/2239f35d5fbd-v3-module-29-2239f35d5fbd.png",
+      "bytes": 25408,
+      "sha256": "2239f35d5fbd517445bf692f1dd26efc18a69264f00323d01e95b86e5283f0f1"
+    },
+    {
+      "path": "sprites/3cec4db106cf-v3-module-30-3cec4db106cf.png",
+      "bytes": 23488,
+      "sha256": "3cec4db106cfe015aa4c3d0354a92ee3ca07384c3c67ed5a32fdb84996b0574c"
+    },
+    {
+      "path": "sprites/17dc7bb1c80c-v3-module-31-17dc7bb1c80c.png",
+      "bytes": 23317,
+      "sha256": "17dc7bb1c80c7793442218c9cefb363655ebdce10aae02da8b047a670ed0fb89"
+    },
+    {
+      "path": "sprites/dbead659116c-v3-module-32-dbead659116c.png",
+      "bytes": 19150,
+      "sha256": "dbead659116c64c44ddda86cd8e0513454445a98224f22fd565dfe71bd62314b"
+    },
+    {
+      "path": "sprites/8cb5b4c48c69-rock_largeA-8cb5b4c48c69.png",
+      "bytes": 106421,
+      "sha256": "8cb5b4c48c6958b5ed2930793e42f3ed3ce8cf158381ab998295df2f2b53c5f5"
+    },
+    {
+      "path": "scene.png",
+      "bytes": 905841,
+      "sha256": "76373d5505439cf4c2d137aa8a6803a4b7916f0b74e75e316a21ade4e974f723"
+    },
+    {
+      "path": "scene.json",
+      "bytes": 514191,
+      "sha256": "db11e75247933b6b3be52cc34b16170d79d7a4b65073c2b04460c7d371144b52"
+    },
+    {
+      "path": "collision.json",
+      "bytes": 14975,
+      "sha256": "eedba978ddf51597e2069dcb0d52fc531c257c25af75d161e40c9bea0f67b73d"
+    },
+    {
+      "path": "map.tmj",
+      "bytes": 39373,
+      "sha256": "6222f45697c934651182b30af6efdfcb03d43f0155a204056eda7b97f3deeff7"
+    },
+    {
+      "path": "source-kenney-nature-kit.json",
+      "bytes": 639672,
+      "sha256": "8fd1b73584a76277766645ce685d08249e966a15d83a394a8ed32384bf63714c"
+    },
+    {
+      "path": "source-kenney-isometric-tiles-landscape.json",
+      "bytes": 23068,
+      "sha256": "1b1660f805b83e4bf794a1e217da4780899b7dba502c1ebb9b3f1d0edf035e0f"
+    },
+    {
+      "path": "source-kenney-isometric-tiles-buildings.json",
+      "bytes": 23266,
+      "sha256": "bd216d8447a17ab9cd0724f65f8520ef03e311989326face73fa0faf7fd36008"
+    },
+    {
+      "path": "source-kenney-hexagon-kit.json",
+      "bytes": 66261,
+      "sha256": "120531182913bf0fe99218a74a6d850cd7dd936c9608e10aad6ad4fff30f6581"
+    },
+    {
+      "path": "source-derived-isometric-castle.json",
+      "bytes": 4608,
+      "sha256": "8273167673dfc1d21d4a73721baea34287d7a965951024c2fa61e905c508c640"
+    },
+    {
+      "path": "source-derived-isometric-nature.json",
+      "bytes": 6293,
+      "sha256": "86290f06854ddefa1ec845bf1aae7704178d5891bbe3d962aa8023736179de3d"
+    },
+    {
+      "path": "source-polyhaven-pbr.json",
+      "bytes": 8149,
+      "sha256": "641a9841961f89d6d21f3c80f10d1e83cc440400ffa4327deee489b6a62e1fab"
+    },
+    {
+      "path": "source-generated-map-styles.json",
+      "bytes": 5945,
+      "sha256": "d753c08870747116ab571667777540c1a947d8a84e63c6626d371a5d0ee71b78"
+    }
+  ],
+  "qa": {
+    "visualAccepted": false,
+    "engineImported": false,
+    "tiledObjectAlignmentPending": true,
+    "castleSourcePreviewLowResolution": false,
+    "castleSpriteDerivedFromOriginalModels": true
+  },
+  "codec": "@napi-rs/canvas with PNG-signature pngjs decode; original source metadata bytes retained"
+}

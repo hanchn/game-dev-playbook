@@ -1,0 +1,82 @@
+{
+  "schema": "terrain-3d-receipt/v1",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "dunes",
+    "preset": "desertDunes",
+    "scale": 64,
+    "height": 24,
+    "waterLevel": 0.17,
+    "vegetation": 0.14
+  },
+  "region": {
+    "x": 2,
+    "z": -6,
+    "width": 3,
+    "depth": 3
+  },
+  "chunks": 9,
+  "props": 20,
+  "files": [
+    {
+      "path": "scene.glb",
+      "bytes": 3578804,
+      "sha256": "302bac3c792f55225b9fdc968f32d7a95593a4208b2a073584a4aeedc4df5ed3"
+    },
+    {
+      "path": "textures/Diffuse.jpg",
+      "bytes": 795227,
+      "sha256": "38829e669dc246e86b7ce94c4141485709988450b13f82cfc4bc6067dd69ed48"
+    },
+    {
+      "path": "textures/nor_gl.jpg",
+      "bytes": 1159620,
+      "sha256": "f2a4c48f31cd5ad5e2b0488e89c94d284c5a2acd4367bec49a5f48f832b7e3da"
+    },
+    {
+      "path": "textures/arm.jpg",
+      "bytes": 765219,
+      "sha256": "ae13c0de981ab78abc39e3bec6147a06448e0865f4162cd57d54ada411df0de7"
+    },
+    {
+      "path": "models/cactus_tall.glb",
+      "bytes": 9668,
+      "sha256": "d43a1aca5952e1f8a104d64a0edfec09c39f15102ca6bdc531460dd5a2c53d25"
+    },
+    {
+      "path": "models/rock_largeB.glb",
+      "bytes": 8560,
+      "sha256": "caa8b025833d4dabf6d98fe2e96cf2fbd886693ac990df0db75f9d827194374b"
+    },
+    {
+      "path": "models/tree_palm.glb",
+      "bytes": 13616,
+      "sha256": "27bbb23d26ed788d84de6df2f7fab0acc3fe0ff16c7d08cdcfa1fffcb11de324"
+    },
+    {
+      "path": "scene.json",
+      "bytes": 25486,
+      "sha256": "a866c67776d67bc08d9a6d133ceeed7641fa7a693d200f3b63c4a1bccbb27ca1"
+    }
+  ],
+  "sourceModels": [
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sha256": "d43a1aca5952e1f8a104d64a0edfec09c39f15102ca6bdc531460dd5a2c53d25"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sha256": "caa8b025833d4dabf6d98fe2e96cf2fbd886693ac990df0db75f9d827194374b"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+      "sha256": "27bbb23d26ed788d84de6df2f7fab0acc3fe0ff16c7d08cdcfa1fffcb11de324"
+    }
+  ],
+  "qa": {
+    "engineImported": false,
+    "visualAccepted": false,
+    "actorCollisionsVerified": false,
+    "realGeographicData": false
+  }
+}

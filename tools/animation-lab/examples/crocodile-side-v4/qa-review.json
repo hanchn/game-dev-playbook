@@ -1,0 +1,68 @@
+{
+  "schema": "character-art-review",
+  "assetId": "crocodile-side-v5",
+  "atlas": "/art/crocodile-side-parts-v4.png",
+  "sourceSha256": "784a85d0e0bd3639707f4d43f37cfb9abc6202c961c5ece03c001c3c3b7f65e5",
+  "baseline": {
+    "assetId": "crocodile-side-v3",
+    "atlas": "/art/crocodile-side-parts-v2.png",
+    "directory": "tools/animation-lab/examples/crocodile-side-v4/baseline"
+  },
+  "bindingIteration": {
+    "assetId": "crocodile-side-v4",
+    "atlas": "/art/crocodile-side-parts-v2.png",
+    "directory": "tools/animation-lab/examples/crocodile-side-v4/retest",
+    "tailRoot": "failed visible bright rounded source cap"
+  },
+  "sourceIteration": {
+    "assetId": "crocodile-side-v5",
+    "atlas": "/art/crocodile-side-parts-v4.png",
+    "directory": "tools/animation-lab/examples/crocodile-side-v4/retest-source-v4"
+  },
+  "visual": "failed-residual",
+  "reviewed": [
+    {
+      "clip": "idle",
+      "phases": "all16",
+      "background": "dark",
+      "observation": "上下颌闭合位置明显改善；尾根空隙和亮色cap明显改善，仍有少量scale/material边界"
+    },
+    {
+      "clip": "bite",
+      "phases": "all16",
+      "background": "dark",
+      "source": "bindingIteration",
+      "observation": "下颌不再伸出上颌过多，hinge可见；最终source迭代bite尚未view，不能继承通过"
+    },
+    {
+      "clip": "tail",
+      "phases": "all16",
+      "background": "light",
+      "observation": "源图局部repaint后尾根轮廓不断；纹理交接未签收，远近腿大多叠合需后续审查"
+    },
+    {
+      "clip": "roar",
+      "phases": "all16",
+      "background": "dark",
+      "observation": "开口上下jaw长度较匹配；末首闭口可见；颈部与躯干接缝仍应局部关节复测"
+    }
+  ],
+  "notReviewed": [
+    "final walk/run/swim PNG",
+    "single joint extreme closeups",
+    "actual browser normal/slow playback"
+  ],
+  "technical": "passed",
+  "fixes": [
+    "按源颌地标校准pivot [.15,.58]/distal [.93,.84]",
+    "jawroot[43,-37]，头部保持nativeaspect",
+    "tail根深入torso[-50,-37]，tile6 sourceRange [.86,.005] 避开切面",
+    "实际imagegen重绘bodyrear和tailroot局部material，保留旧源并重测alpha所有16regions"
+  ],
+  "newSource": {
+    "tool": "image_gen.imagegen",
+    "job": "tools/animation-lab/examples/crocodile-side-v4/source-generation-job.json",
+    "rawPixelsEdited": false
+  },
+  "status": "paused-for-horse-priority-by-parent"
+}

@@ -1,0 +1,42 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Generate ONE actual final milk-frog run sprite KEY50%, next in the same fixed-camera sequence. Reference1 is key0's exact identity/camera/style; Reference2 shows key25% with same foreground open hand; Reference3 is ONLY skeleton pose directions, no gray/red/blue dots or floor must appear in final sprite.\nKeep identical yellow muscular frog, white chest/belly/chin, green eyes, pink hands/feet, smooth black outlines and glossy2D highlights. Same face size, same joyful gaze/open-mouth/tongue, no new expression, costume or prop. Same square1254 canvas, head/shoulder/hip registration and scale as key0, source contacting sole baseline y1190, no independent character fit; all silhouette stays inside32px canvas margins.\nAt50% swap the leg-support side relative key0: BACKGROUND FAR leg now advances forward/right for contact, foot down at ground; FOREGROUND NEAR leg is folded back in recovery, pink foot lifted high behind hip/imageLEFT. Preserve both leg identities and two clean hip-knee-ankle chains, no coincident merged feet.\nArms are opposite their same-side thighs: foreground NEAR shoulder→elbow swings clearly FORWARD/right, elbow bent, relaxed OPEN pink hand in front of chest (same open near-hand shape as key25%). Background FAR upper arm swings BACK/left, curled pink fist behind waist (same far curled fist state as key25%). Exactly two arms; shoulders/elbows/wrists continuous, far hand visible. Do not exchange open vs curled hand between sides. No ghosts or duplicated anatomy.\nTransparent alpha background, no shadow/text/reference lines. Output a single polished clean frog sprite in this precise opposite support pose.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-31bae3ae-811f-407f-8f0c-130b49391553.png",
+  "generatedFileSha256": "11415a39d52d3910594ed0dc366c6e1a48f0c36b96d333f4600918f5c785825c",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+      "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+      "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-2.png",
+      "sha256": "2411a2b4302a697950d610eefdd359b5c4dfe5d60632f7604a11e700625ebcd8"
+    }
+  ],
+  "phase": 0.5,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      96,
+      89,
+      1098,
+      1135
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "FAILED permanent leg identity: copied key0 foreground thigh forward despite foreground arm forward; support side did not swap. Excluded from selected candidate."
+  }
+}

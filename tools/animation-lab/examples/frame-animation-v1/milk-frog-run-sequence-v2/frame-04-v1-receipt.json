@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "ONE clean actual inbetween milk-frog frame4/12,33.33%, FIRST FLIGHT after near-leg toeoff. Reference1 key25% is exact character/camera/material starting frame. Reference2 corrected key50% shows upcoming far contact/near folded recovery. Interpolate one-third of their limb pose while preserving foreground/background permanent identities, exact1254 square scale and same face/head size/white material shape.\nCRITICAL both feet AIRBORNE above fixedground y1192: foreground NEAR big thigh still BACK/LEFT; near knee flexes and its old low-left pink foot LIFTS up to about y1030 while curling back under it. BACKGROUND FAR thigh continues FORWARD/right and FAR knee starts to extend for future landing; far foot advances right/down but remains above ground around y1110. Near footleft, far footright, both clearly visible and unattached to ground. Do not keep the previous left support toe on y1192; this frame is truly aerial. Body may rise by only~10px with same camera/scale, no big jump/zoom.\nNear OPEN hand remains forward but begins backswing slightly, far CURLED hand behind begins coming forward slightly; same hand anatomy/near/far identity, never trade open/fist. Exactlytwoarms/twolegs, correct hip/knee/ankle connections/occlusion; near backward big thigh in front at hip, far forward small thigh behind.\nPreserve green-eye gaze and happy open mouth/tongue, all colors/textures/outlines, no blink or restyle. Full silhouette inside32px fixedmotionenvelope, no crop. Transparentalpha background, no floor/marks/shadow. Output only ONE genuine distinct flight pose.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba654e65-9bc9-41dd-8212-f7fb5432a6eb.png",
+  "generatedFileSha256": "56d7e074ba758d96d672866da707c085ebcba7ca005dbb711d535c4b54bf1cea",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+      "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+      "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+    }
+  ],
+  "phase": 1,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      249,
+      92,
+      954,
+      1027
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Both feet visibly airborne after near toeoff; foreground near recovery back, far forward extension."
+  }
+}

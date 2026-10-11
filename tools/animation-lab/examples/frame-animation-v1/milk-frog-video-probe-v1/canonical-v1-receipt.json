@@ -1,0 +1,36 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Reference image is the user's EXISTING milk frog RUN atlas, not six characters. Produce ONE single canonical transparent full-body game sprite of this EXACT yellow muscular humanoid milk frog, facing RIGHT, matching the original glossy yellow skin, very muscular shoulders/arms/thighs, WHITE chest/belly/chin, large GREEN eyes, pink humanlike frog hands and broad pink three-toed feet, thick BLACK cartoon outline and original cheerful open-mouth/tongue face. Preserve the original stylized 2D glossy cartoon identity, no photorealistic frog, no different character. Pose specifically the FIRST top-left run frame: foreground NEAR thigh is extended forwards/right and NEAR foot contacts the ground at y900; FAR leg extends backward/left with its toe just leaving ground; NEAR arm swings BACK/LEFT with open relaxed pink hand behind hip; FAR arm bends FORWARD/RIGHT with pink fist in front of chest. Exactly TWO arms and TWO legs, two clearly separate pink hands and feet. Use the first top-left atlas cell as identity and near/far pose reference, ignore all other atlas cells as characters. Fixed 1024x1024 square canvas, full body framed within x80..944,y70..900, ground anchor y900, fixed hip x500,y545. Large safe margins for future arm/leg swings. Reconstruct single sprite with genuine transparent alpha background; no grid, other poses, floor, shadow, words or labels. Do not copy the gray/brown sheet background. This is an independent native generated PNG frame, not a skeleton raster.\n",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e666e152-4a61-4317-b7f1-a4b03c6c3a72.png",
+  "generatedFileSha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d",
+  "actualPNGSize": [
+    1254,
+    1254
+  ],
+  "references": [
+    {
+      "role": "user-exact-milk-frog-identity-atlas",
+      "path": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+      "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3"
+    }
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      133,
+      72,
+      1072,
+      1128
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "not-reviewed",
+    "identity": "passed-local-only",
+    "notes": "实际单帧黄色肌肉白腹绿眼粉色手脚、粗黑线风格，2臂2腿可见，头手脚完整。仅单帧身份可见；连续跑步/相位/内侧/脸部尚未生成，不把canonical通过当动画通过。",
+    "reviewedAt": "2026-10-11T18:05:49.029Z"
+  }
+}

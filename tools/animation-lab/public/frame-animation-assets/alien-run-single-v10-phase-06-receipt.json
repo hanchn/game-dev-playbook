@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Supplied alien run frame is the edit target. Correct ONLY the front/right planted FAR boot position and ankle: the lowest sole currently y1403, bring this entire boot and immediate trouser cuff UP 28px and LEFT 12px, lowest sole should be y1375, reconnect lower shin naturally to ankle. Maintain exactly two boots, near foreground cargo-pocket leg stays bent backward and lifted. Preserve large cranium, eye, face, neck, olive vest, two swinging arms, hands, waist, other raised leg and boot, surface texture and all camera/framing unchanged. Original fixed portrait 1086×1448 transparent canvas, unchanged body registration and character scale. Do not independently fit, recenter, enlarge, shrink, restyle or change head. This is local foot groundline adjustment for chronological run frames. NO shadow, ground, text, extra appendage.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7446ca46-783e-4ba3-bc98-65b72865265e.png",
+  "generatedFileSha256": "e0cbe146fc8283bdd975ca2e72035e8f1d3aef1e43a7aba0589acdec060f1759",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v10-phase-06.png",
+  "references": [
+    {
+      "role": "precise-object-edit-target",
+      "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v9-phase-06.png",
+      "sha256": "ac22450458e18b4d04a89bbc183dcc9980f51478841f0bc120ef67e2fc95156c"
+    }
+  ],
+  "phase": 0.5,
+  "actualPNGSize": [
+    1086,
+    1448
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      119,
+      65,
+      920,
+      1333
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "源图编辑请求仅上移远侧支撑靴28px到1375基线，实际还需测量；新图前靴仍明显偏低，头脸/衣服也改变。不得凭提示成功假称脚底正确。",
+    "evidence": [
+      "v10-edit-inputs.json"
+    ],
+    "reviewedAt": "2026-10-11T17:58:17.890Z"
+  }
+}

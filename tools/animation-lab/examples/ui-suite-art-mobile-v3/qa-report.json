@@ -1,0 +1,299 @@
+{
+  "schema": "ui-art-mobile-layout-qa/v1",
+  "date": "2026-10-11T22:09:37.377447+00:00",
+  "scope": "current dinosaur brief at 740x360 safe insets [16,44,16,44], text 1.35; development tool preview, not playable game",
+  "layoutVersion": 3,
+  "sourceKit": "dinosaur-jade-amber-v2",
+  "sourceIdentity": [
+    {
+      "id": "button-primary-default",
+      "file": "sources/button-primary-default.png",
+      "sha256": "f17772e351d5412b7ea549bf19a5756b27333fe3ae14442c7deae7d031a0f2d6"
+    },
+    {
+      "id": "panel-modal",
+      "file": "sources/panel-modal.png",
+      "sha256": "09d001abaa73900c5df6d19e5f6cf42ddbdcdbd2e87e95262928b7425a5468fe"
+    },
+    {
+      "id": "button-secondary-default",
+      "file": "sources/button-secondary-default.png",
+      "sha256": "967021f9913e57a05b3ae51516c4e5808d38df3afd2c8d030a0185bf73d8c2ce"
+    },
+    {
+      "id": "control-round-default",
+      "file": "sources/control-round-default.png",
+      "sha256": "bdd793cb5d959beec76e0770795bc3896585ad684850a5e48867693a8580f841"
+    },
+    {
+      "id": "level-map",
+      "file": "sources/level-map.png",
+      "sha256": "27ee0225bef1fef210e389fa5503ec4a215ca3b53aeef493fe7b5ebfa304fba2"
+    },
+    {
+      "id": "gameplay-background",
+      "file": "sources/gameplay-background.png",
+      "sha256": "0f83a9e343bbb7befeb67e8962475b882eab6394c1cc7b44f87bc0f719bbba14"
+    },
+    {
+      "id": "button-secondary-pressed",
+      "file": "sources/button-secondary-pressed.png",
+      "sha256": "e7df028164c2d76afc96f611f7ca9b930ccb0c5ec85d1c88c514ebc4a51bfbf8"
+    },
+    {
+      "id": "control-round-pressed",
+      "file": "sources/control-round-pressed.png",
+      "sha256": "5d7863d65ceae913d88b7d0f3d00ad9025ca89312bfbd9bc8a63875f27ce5a5e"
+    },
+    {
+      "id": "button-primary-pressed",
+      "file": "sources/button-primary-pressed.png",
+      "sha256": "332f1e662f1bf1daa9ad96f54189a1de80f880df06ac3f427ebaf47e53b5485d"
+    },
+    {
+      "id": "success-emblem",
+      "file": "sources/success-emblem.png",
+      "sha256": "9bdb325a9f32a461067524a2b59124abbac7d71f99fc188798edaeed4725e676"
+    },
+    {
+      "id": "failure-emblem",
+      "file": "sources/failure-emblem.png",
+      "sha256": "2293a72181e5de67f027917ff16bd13057847f9a8ab5fbaf64f10dcb5f18a1f4"
+    },
+    {
+      "id": "menu-background",
+      "file": "sources/menu-background.png",
+      "sha256": "93e3841118290c6f5861820bcafc587b97d19680cba53fe7e2b933bc762e32b7"
+    }
+  ],
+  "implementationSha256": {
+    "ui-kit-planner.mjs": "6b26adb680e6e74df84409a7068c1191ce12f7d4046b8199d27c6848d456f1c5",
+    "public/ui-kit-solution.mjs": "ae29567f4a2ae626ba1fd306f0607e50daf0d36616f82ceadded50ed7832a2de",
+    "scripts/ui-kit-cli.mjs": "f379233f0b88b141879416e7478ef3066c5db6234a97c52c8df03284ad60748c"
+  },
+  "technical": {
+    "targeted": {
+      "pass": 30,
+      "fail": 0,
+      "log": "examples/ui-suite-art-mobile-v3/final-ui-regression.log"
+    },
+    "fullBeforeFinalGlyphAndKeyHandler": {
+      "pass": 313,
+      "fail": 0,
+      "log": "examples/ui-suite-art-mobile-v3/full-regression.log",
+      "scope": "historical same-turn full suite before final isolated vector glyph/key default prevention changes"
+    },
+    "geometry": "12 pages actual SVG action boxes min48, safe/disjoint at 740x360/1280x720/360x740"
+  },
+  "browserExport": {
+    "downloadPath": "/Users/lemon/Downloads/恐龙跃迁-complete-ui-art (3).zip",
+    "zipCrc": true,
+    "filesVerified": 111,
+    "mismatches": [],
+    "sourceCount": 12,
+    "sourceIdentityUnchanged": true,
+    "pageDimensions": {
+      "load-error": [
+        740,
+        360
+      ],
+      "playing": [
+        740,
+        360
+      ],
+      "settings": [
+        740,
+        360
+      ],
+      "home": [
+        740,
+        360
+      ],
+      "level-select": [
+        740,
+        360
+      ],
+      "tutorial": [
+        740,
+        360
+      ],
+      "pause": [
+        740,
+        360
+      ],
+      "success": [
+        740,
+        360
+      ],
+      "confirm-restart": [
+        740,
+        360
+      ],
+      "failure": [
+        740,
+        360
+      ],
+      "loading": [
+        740,
+        360
+      ],
+      "confirm-exit": [
+        740,
+        360
+      ]
+    },
+    "changedPagesFromVisuallyReviewedRetest": [
+      "playing",
+      "level-select",
+      "success"
+    ],
+    "keyboardFlow": {
+      "Space": "playing -> pause",
+      "Enter": "pause -> playing",
+      "scope": "tool preview only"
+    },
+    "singlePageDownloadPath": "/Users/lemon/Downloads/level-select-full-ui.png",
+    "singlePageSameBytes": true
+  },
+  "cliExport": {
+    "path": "examples/ui-suite-art-mobile-v3/cli-mobile-final",
+    "pageDimensions": [
+      740,
+      360
+    ],
+    "textScale": 1.35,
+    "receipt": "examples/ui-suite-art-mobile-v3/cli-mobile-final/production-receipt.json",
+    "status": "exported-native-sharp",
+    "filesVerified": 97,
+    "mismatches": [],
+    "sourceIdentityMatchesBrowser": true,
+    "states": 73
+  },
+  "pages": [
+    {
+      "id": "confirm-exit",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/confirm-exit.png",
+      "sha256": "6d5ae3ca121bad78d7ba0016a515675ca4bfd2d6b4c485a9f3255bb93cf3a011",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "confirm-restart",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/confirm-restart.png",
+      "sha256": "7d86e3908a77919df6fc700745a48452809f58ab640f1effe57aec61a23ea2f5",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "failure",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/failure.png",
+      "sha256": "55a0d46228c692e6db1fd0ab972569d39f3342ead246955554ecb383f42018f2",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "home",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/home.png",
+      "sha256": "597f9759bbd5be96439d304f17f411d7fd38049c66c0203b900d5972fa2a5d27",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "level-select",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/level-select.png",
+      "sha256": "51b6409dee20b8c936a2a038e7dd06ee9e61bcd7d180d5b294720ed7edad9127",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "load-error",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/load-error.png",
+      "sha256": "c7ba3e7dcc7ce600a14843c4ddaad56f4eaa63f9cb1870b391d07add33bfb25f",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "loading",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/loading.png",
+      "sha256": "619a60f75237af9292b830f9074d81ce896459a4499dc407bc28f462f697a2e3",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "pause",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/pause.png",
+      "sha256": "0fb1fc195c57e48fe83cc20907a58f90a9ba4cc8dbfef01ff25ef3fb70c1d9c1",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "playing",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/playing.png",
+      "sha256": "03fb90cd8c3734739f70c554a57ee55344ff3d5397caf9f708e7bd11ba07589a",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "settings",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/settings.png",
+      "sha256": "24dffd3cce2c414008191dbd20199c318c06be3829d9e197801a8a4cdb43dc8f",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "success",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/success.png",
+      "sha256": "8c1b15a433f0007e27196a8e29a917ea015b6c7124128a33c9a67487559437bd",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    },
+    {
+      "id": "tutorial",
+      "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/pages/tutorial.png",
+      "sha256": "b545a5ce7773cc5e2eb9349d73da805ae753b10fa293070fdb475a18149b33cc",
+      "method": "root actual native PNG review; unchanged final bytes traced to prior root native retest, changed pages explicitly re-viewed",
+      "status": "reviewed-current-brief-mobile-layout"
+    }
+  ],
+  "states": {
+    "count": 73,
+    "method": "root visually reviewed diagnostic contact sheet from actual final browser PNG, source PNG unmodified",
+    "path": "examples/ui-suite-art-mobile-v3/browser-mobile-final/states-inspection.png",
+    "status": "reviewed-derived-appearance",
+    "note": "12 actual imagegen source PNG; vector glyph and disabled/focus/selected are renderer recipes, not extra generated sources"
+  },
+  "toolFlows": [
+    "home -> settings -> home",
+    "playing -> pause -> settings -> pause -> playing",
+    "Space playing -> pause, Enter pause -> playing"
+  ],
+  "failedBeforeRetest": [
+    {
+      "evidence": "examples/ui-suite-art-mobile-v3/baseline",
+      "problem": "actual modal buttons ~30px tall despite plan48; scaled component label did not obey font enlargement",
+      "status": "fixed-rendered-boxes-and-outer-labels"
+    },
+    {
+      "evidence": "examples/ui-suite-art-mobile-v3/browser-mobile",
+      "problem": "home English caption overlapped enlarged title; return covered level01 label",
+      "status": "fixed-and-native-browser-export-retested"
+    },
+    {
+      "evidence": "examples/ui-suite-art-mobile-v3/states-inspection.png",
+      "problem": "lock and other glyphs used platform-dependent Unicode",
+      "status": "explicit-SVG-vector-glyphs-reviewed"
+    }
+  ],
+  "pending": [
+    "long arbitrary localized copy, long titles and content pagination",
+    "physical device touch/keyboard focus appearance",
+    "actual engine integration/state isolation/world freeze/gameplay collision and full gameplay loop"
+  ],
+  "gameIntegrated": false,
+  "productAcceptance": false,
+  "procedureValidation": {
+    "skill": "game-ui-suite",
+    "command": "uv run --with pyyaml python quick_validate.py skills/game-ui-suite",
+    "status": "valid"
+  }
+}

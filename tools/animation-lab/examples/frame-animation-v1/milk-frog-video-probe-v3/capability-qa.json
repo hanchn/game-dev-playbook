@@ -1,0 +1,22 @@
+{
+  "status": "not-submitted",
+  "attempt": "re-render actual v2 video with motion reference",
+  "actualFreeModels": [
+    "H3ref2va",
+    "H3ref2va-app"
+  ],
+  "observedSupportedInputs": [
+    "prompt",
+    "aspectRatio",
+    "resolution",
+    "duration",
+    "refImage1..9",
+    "refAudio1..3",
+    "audioMode"
+  ],
+  "blockingCapability": "No refVideo input on checked zero-cost models; uploaded video preparation is not a submitted generation task.",
+  "sourceVideo": "../milk-frog-video-probe-v2/download/2109349526505267202-1.mp4",
+  "submissionCount": 0,
+  "taskId": null,
+  "nextWorkflow": "Independent imagegen four-key clean poses with identity and single-pose guide"
+}

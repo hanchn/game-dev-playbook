@@ -1,0 +1,349 @@
+{
+  "schema": "equine-neck-path-browser-qa/v1",
+  "asset": "horse-side-v24",
+  "binding": 24,
+  "algorithm": "neck-path-v3",
+  "capturePipeline": "r4-identical-halves",
+  "productionChanged": false,
+  "gameIntegrated": false,
+  "technical": {
+    "coreTests": "5/5 passed",
+    "precision": {
+      "maxErrorRigPx": 0.07453020470331255,
+      "threshold": 0.25,
+      "triangles": 2548,
+      "budget": 4000
+    },
+    "uiSteps": "80/80 exact phase/pause passed",
+    "actualFramesExport": "5 packages × 32 PNG, source and PNG SHA matched",
+    "captureVsExport": "5 phase-zero candidate RGBA exact equality; original translated-canvas failure preserved",
+    "browserMovies": "10 real MediaRecorder movies; N+1 terminal hold frame count correct; nominal PTS jitter 24–64ms fails 20ms review target",
+    "fixedMovies": "10 actual PNG-based CFR review MP4; exact PNG count and maximum start PTS error 0.0000003334s; terminal duration quantizes to one frame"
+  },
+  "visual": "failed",
+  "actualContactSheetsViewed": [
+    "graze-0.25x-r4-capture/candidate-contact16.png",
+    "graze-1x-r4-capture/candidate-contact16.png",
+    "jump-0.25x-r4-capture/candidate-contact16.png",
+    "jump-1x-r4-capture/candidate-contact16.png",
+    "rear-0.25x-r4-capture/candidate-contact16.png",
+    "rear-1x-r4-capture/candidate-contact16.png",
+    "run-0.25x-r4-capture/candidate-contact16.png",
+    "run-1x-r4-capture/candidate-contact16.png",
+    "walk-0.25x-r4-capture/candidate-contact16.png",
+    "walk-1x-r4-capture/candidate-contact16.png"
+  ],
+  "codeRecords": [
+    {
+      "file": "equine-neck-path.mjs",
+      "snapshot": "equine-neck-path.mjs.r4-source.txt",
+      "sha256": "28c19603cd4ae8d4b09fa25c19d00ef828a2968926945491566eab2ec7e88bb8"
+    },
+    {
+      "file": "public/horse-neck-review.mjs",
+      "snapshot": "horse-neck-review.mjs.r4-source.txt",
+      "sha256": "d4a0d3e392d87deba162732f9d28a4ba302441b361747d41ac2933d73d18ef43"
+    },
+    {
+      "file": "public/horse-neck-review.html",
+      "snapshot": "horse-neck-review.html.r4-source.txt",
+      "sha256": "7f343d65bb1c5619f3584eeef8c048372c85054f1485b4a31e6ed01ba6d7da25"
+    },
+    {
+      "file": "public/horse-neck-review.css",
+      "snapshot": "horse-neck-review.css.r4-source.txt",
+      "sha256": "51f6fb02c9d8bb790c5f0666abb5bf07ccefd82e17ce42d65f6e8dd8010484d6"
+    }
+  ],
+  "observations": {
+    "graze": [
+      "Thin triangular sleeve reduces compared with production24.",
+      "Mane edge retains a step and throat is a solid block at intermediate lowering.",
+      "Forelegs fold deeply to lower the body; standing support does not match the observed real grazing reference."
+    ],
+    "walk": [
+      "Neck is continuous at moderate pose, but anatomy still requires refinement.",
+      "Near and far forelimbs remain too close, with rod-like lower segments and abrupt joint thickness."
+    ],
+    "run": [
+      "Neck path preserves skull identity; shoulders and hips remain raised modules.",
+      "Paired forelegs and abrupt wrist/hock transitions look mechanical."
+    ],
+    "jump": [
+      "Whole body rises with an almost standing leg configuration; collected limb phase remains weak.",
+      "Candidate neck is not a fix for body trajectory or limb anatomy."
+    ],
+    "rear": [
+      "Forelimb lower segments remain right-angled rods.",
+      "Shoulder/hip modules and limb force/readability remain unnatural."
+    ]
+  },
+  "rootReview": {
+    "file": "browser/graze-phase0467-light.png",
+    "status": "failed",
+    "notes": [
+      "Thin triangle improves locally.",
+      "Shoulder/hip bulges, abrupt lower-leg taper, thick trunk/short limbs still mechanical.",
+      "Grazing must keep credible standing support rather than bend forelegs to force muzzle contact."
+    ]
+  },
+  "reference": {
+    "page": "https://www.publicdomainpictures.net/en/view-image.php?image=131189&picture=horses",
+    "image": "https://www.publicdomainpictures.net/pictures/140000/velka/paarden-1444069161IIl.jpg",
+    "actuallyViewed": "Own Chrome reference tab screenshot, then tab closed.",
+    "observation": "Single real chestnut grazing example: forelimbs are extended supports, hocks mildly angled, neck lowers in a broad continuous curve. This is a pose reference, not a measured universal breed ratio."
+  },
+  "historicalFailures": [
+    "Initial normal graze preview 3FPS/P95 400ms.",
+    "Cached initial preview6FPS/P95 200ms; does not establish runtime frame budget.",
+    "Original run MediaRecorder8PNG yielded7 decoded frames.",
+    "Original single export vs translated combined-canvas edges differed by up to15 channel levels."
+  ],
+  "fixedMovieReceipts": [
+    {
+      "directory": "graze-0.25x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/graze-0.25x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "graze",
+      "speed": 0.25,
+      "fps": 12,
+      "requestedDuration": 8,
+      "encodedDuration": 8,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 96,
+      "expectedFrameCount": 96,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/graze-0.25x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "11f6459202dd546bb52e05f087d83228057d6280d7db556f32788d95d209a6bf",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "graze-1x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/graze-1x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "graze",
+      "speed": 1,
+      "fps": 12,
+      "requestedDuration": 2,
+      "encodedDuration": 2,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 24,
+      "expectedFrameCount": 24,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/graze-1x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "4f776783e64c3a850bef5a30391461d232916a91b157a247ab7ac0460c4d9414",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "jump-0.25x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/jump-0.25x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "jump",
+      "speed": 0.25,
+      "fps": 12,
+      "requestedDuration": 4.8,
+      "encodedDuration": 4.833333,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 58,
+      "expectedFrameCount": 58,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/jump-0.25x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "8bb7c8e3824c4eb534b44899155b1ecf1050f991b18c5ea794c0cfb112d99950",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "jump-1x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/jump-1x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "jump",
+      "speed": 1,
+      "fps": 12,
+      "requestedDuration": 1.2,
+      "encodedDuration": 1.25,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 15,
+      "expectedFrameCount": 15,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/jump-1x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "0dcf18670ff8935f03837789b58b5e7906029cc8ffbc31daf01f55978cbf6b9f",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "rear-0.25x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/rear-0.25x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "rear",
+      "speed": 0.25,
+      "fps": 12,
+      "requestedDuration": 6.4,
+      "encodedDuration": 6.416016,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 77,
+      "expectedFrameCount": 77,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/rear-0.25x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "c6a7468ad49281600c8afe66fc8d7e79ba3425617af00238976ce4b2719214fd",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "rear-1x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/rear-1x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "rear",
+      "speed": 1,
+      "fps": 12,
+      "requestedDuration": 1.6,
+      "encodedDuration": 1.666016,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 20,
+      "expectedFrameCount": 20,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/rear-1x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "34eb2b2b5460b385db747e2ea11d8bbe9a2238ec8834dd16ddbbe2e3632f1424",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "run-0.25x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/run-0.25x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "run",
+      "speed": 0.25,
+      "fps": 12,
+      "requestedDuration": 2.6,
+      "encodedDuration": 2.666667,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 32,
+      "expectedFrameCount": 32,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/run-0.25x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "a184b0788698fba83b54b988ac917f4433cd62a8249d58ce8ab1f3bdae90f403",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "run-1x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/run-1x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "run",
+      "speed": 1,
+      "fps": 12,
+      "requestedDuration": 0.65,
+      "encodedDuration": 0.666667,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 8,
+      "expectedFrameCount": 8,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/run-1x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "cb06ca3f155a514268019687745b808a8d4f4a995a7805f6e779232dece1ef33",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "walk-0.25x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/walk-0.25x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "walk",
+      "speed": 0.25,
+      "fps": 12,
+      "requestedDuration": 4,
+      "encodedDuration": 4,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 48,
+      "expectedFrameCount": 48,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/walk-0.25x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "32a17e4c5beefcd4ccc5d7842eaa509e487b6eeb58f575900df9b104ee021492",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    },
+    {
+      "directory": "walk-1x-r4-capture",
+      "schema": "equine-neck-fixed-encode/v1",
+      "inputCapture": "examples/horse-neck-path-v3/browser/walk-1x-r4-capture",
+      "captureRevision": "r4-identical-halves",
+      "asset": "horse-side-v24",
+      "algorithm": "neck-path-v3",
+      "clip": "walk",
+      "speed": 1,
+      "fps": 12,
+      "requestedDuration": 1,
+      "encodedDuration": 1,
+      "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+      "encodedFrameCount": 12,
+      "expectedFrameCount": 12,
+      "maxPTSErrorSeconds": 3.33333333379926e-07,
+      "output": "examples/horse-neck-path-v3/browser/walk-1x-r4-capture/fixed-12fps.mp4",
+      "outputSHA256": "b966ad876940ea10396c75389944fa1ad5f3904521200b9c9af2b0e1af972c03",
+      "technical": "passed",
+      "visual": "failed",
+      "gameIntegrated": false
+    }
+  ],
+  "pending": [
+    "Production default integration intentionally not applied.",
+    "Whole-horse source/anatomy/gait refinement remains required.",
+    "Stable realtime preview budget is not accepted.",
+    "Browser MediaRecorder PTS stability not accepted."
+  ],
+  "createdAt": "2026-10-11T22:28:12.785Z",
+  "previewPerformance": {
+    "status": "failed",
+    "scope": "Actual Chrome combined production24/candidatev3 Canvas preview; workspace/backdrop/UI overhead included, not game runtime benchmark",
+    "normalWalk": {
+      "fps": 6,
+      "p95Ms": 200.1,
+      "file": "browser/r4-walk-normal-performance.png"
+    },
+    "slowWalk": {
+      "speed": 0.25,
+      "fps": 7,
+      "p95Ms": 202.0,
+      "file": "browser/r4-walk-slow-performance.png"
+    },
+    "runtimeAccepted": false
+  },
+  "latestActualScreenshot": "browser/r4-graze-phase0467-light.png",
+  "latestScreenshotObservation": "At phase .4667 candidate neck thin triangle improves, but forelegs fold to force grazing contact, shoulder/hip bulges and leg proportions remain mechanical. Root independent review agrees visual failed."
+}

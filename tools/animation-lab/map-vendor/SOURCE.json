@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "source_project": "/Users/lemon/Desktop/game-asset-studio",
+  "source_commit": "391b9dc2941056831d7a1823ceb17fed8e10fcc4",
+  "observed_on": "2026-10-11",
+  "scope": "Read-only local source reuse; upstream service was not started or modified",
+  "versions": {
+    "alea": "1.0.1",
+    "simplex-noise": "4.0.3"
+  },
+  "files": [
+    {
+      "source_path": "node_modules/simplex-noise/dist/esm/simplex-noise.js",
+      "output": "simplex-noise.mjs",
+      "source_sha256": "64e571e6d28da06fdd230110b8ce242285e76137e7258938f3b68a0fd6ff8146",
+      "output_sha256": "64e571e6d28da06fdd230110b8ce242285e76137e7258938f3b68a0fd6ff8146",
+      "transform": "verbatim"
+    },
+    {
+      "source_path": "node_modules/simplex-noise/LICENSE",
+      "output": "simplex-noise.LICENSE",
+      "source_sha256": "01951c4f7d8e7ce92540c4f575a2aec39738b39d25a06a96059d82ed83fb594e",
+      "output_sha256": "01951c4f7d8e7ce92540c4f575a2aec39738b39d25a06a96059d82ed83fb594e",
+      "transform": "verbatim"
+    },
+    {
+      "source_path": "node_modules/alea/LICENSE",
+      "output": "alea.LICENSE",
+      "source_sha256": "601f2e3cceeabd63cde81e8f82a00414e47a6daf6056b3d9a95cbf2550076016",
+      "output_sha256": "601f2e3cceeabd63cde81e8f82a00414e47a6daf6056b3d9a95cbf2550076016",
+      "transform": "verbatim"
+    },
+    {
+      "source_path": "apps/web/data/map-environments/catalog.json",
+      "output": "environments.json",
+      "source_sha256": "ad997955b63e648eb6059d11c908ae6df56be7e3f07a34d2a41d0f0e36be4cd8",
+      "output_sha256": "ad997955b63e648eb6059d11c908ae6df56be7e3f07a34d2a41d0f0e36be4cd8",
+      "transform": "verbatim"
+    },
+    {
+      "source_path": "packages/map-schema/map.schema.json",
+      "output": "studio-map.schema.json",
+      "source_sha256": "26f25130f6e6ecb3f221cc3025baa1688a1af69fae740fb68ac21aa46df9928b",
+      "output_sha256": "26f25130f6e6ecb3f221cc3025baa1688a1af69fae740fb68ac21aa46df9928b",
+      "transform": "verbatim"
+    },
+    {
+      "source_path": "node_modules/alea/alea.js",
+      "output": "alea.mjs",
+      "source_sha256": "ff534a2e6cf5883ff490644299f8dce3dc1947e52be8455e6aa8eb45a7fa4f32",
+      "output_sha256": "4b7503825d88ba241b9d22364d27e84ca725dc7d4f800944230bac33ff7b58d3",
+      "transform": "UMD factory body to ES module; algorithm unchanged"
+    },
+    {
+      "source_path": "services/maps/service.py",
+      "output": "studio_world.py",
+      "source_sha256": "772b8850f540afa6ea675a1e859db6adf3efc1266a60e3b1f57c63a17c8e45a1",
+      "output_sha256": "2aaa72337f706006a709167c1060d241a05bbf4aed7e9be5687d817c6cd7847e",
+      "transform": "verbatim _unit_hash, _smooth_noise, _run_length, generate_world_chunk, world_chunk_to_tiled; local environment resolver replaces wider service imports"
+    }
+  ],
+  "limits": [
+    "Upstream Phaser preview is finite; no infinite streamer copied",
+    "Upstream environment plans are metadata, not completed gameplay",
+    "studio_world.py returns same upstream chunks; browser simplex profile is separate and not numerically equivalent"
+  ],
+  "license_metadata": "alea and simplex-noise MIT LICENSE files preserved; source project license not asserted"
+}

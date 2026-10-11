@@ -1,0 +1,32 @@
+✔ same seed produces identical geometry, layers, props and negative global samples (72.494209ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (53.370208ms)
+✔ three styles change actual geometry and model sets (51.429792ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (26.391667ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.540916ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.134625ms)
+✔ water and steep ground deny actual actor movement (0.093792ms)
+✔ object colliders reflect measured source model proportions (25.202833ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.695ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (67.294458ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (114.590584ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (216.428833ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (197.750625ms)
+✔ castle source modules form 33 unique layered parts, feature range limits avoid unbounded work (12.079041ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (15.54275ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.384917ms)
+✔ barren theme uses distinct bare-rock PBR, no water/buildings and gray object materials (21.203125ms)
+✔ actual source cave fixture faces downhill with flat entrance and a passable aperture (10.442916ms)
+✔ cave ground floor remains deterministic and continuous across adjacent negative chunks (64.834041ms)
+✔ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (15.336041ms)
+✔ native cave carve rejects crossing a stream instead of raising its channel (6.653ms)
+✔ stream ribbon rounded joints and smooth channel keep actual 1m mesh above-water holes closed (19.133083ms)
+✔ preview collision samples actual mesh triangles rather than a different bilinear surface (51.244042ms)
+✔ layered castle native bounds, stack continuity, complete gate and exported source layout (128.563083ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1269.486292

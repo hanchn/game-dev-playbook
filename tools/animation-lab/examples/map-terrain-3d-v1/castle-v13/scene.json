@@ -1,0 +1,3024 @@
+{
+  "schema": "styled-terrain-3d-export/v1",
+  "algorithm": "procedural-terrains-7452c2c-cpu-planner4-castle-scenes-v13",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "forest",
+    "preset": "rollingHills",
+    "scale": 128,
+    "height": 24,
+    "waterLevel": 0.22,
+    "vegetation": 0.65
+  },
+  "region": {
+    "x": 5,
+    "z": 2,
+    "width": 1,
+    "depth": 2
+  },
+  "resolution": 32,
+  "environmentBundle": {
+    "terrain": "forest_leaves_02",
+    "water": {
+      "color": "#315e59",
+      "roughness": 0.32,
+      "opacity": 0.87,
+      "waveScale": 2.4,
+      "waveStrength": 0.16,
+      "waveSpeed": 0.5
+    },
+    "lighting": {
+      "sky": "#a5bfcd",
+      "sun": "#fff0ce",
+      "intensity": 3,
+      "fogNear": 100,
+      "fogFar": 165
+    },
+    "models": [
+      "tree_pineTallA",
+      "tree_pineTallB",
+      "tree_oak",
+      "tree_simple",
+      "rock_largeA",
+      "rock_largeB"
+    ],
+    "assetStyle": "low-poly models + PBR ground"
+  },
+  "shader": {
+    "terrain": "global-continuous-triplanar-stochastic-pbr-v3",
+    "water": "world-continuous-theme-water-ripples-edgefade-v3",
+    "portableGlb": false,
+    "standardGlbUsesOriginalTextures": true
+  },
+  "chunkSize": 32,
+  "terrainFile": "scene.glb",
+  "props": [
+    {
+      "id": "33:13",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        166.47,
+        7.175168991088867,
+        65.12
+      ],
+      "yaw": 2.86,
+      "height": 0.87,
+      "collider": {
+        "id": "33:13",
+        "type": "conservative-cylinder",
+        "x": 166.47,
+        "z": 65.12,
+        "y": 7.175168991088867,
+        "height": 0.87,
+        "radius": 2.1491601335211694,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "35:13",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        177.73,
+        8.044514656066895,
+        67.85
+      ],
+      "yaw": 1.2,
+      "height": 6.24,
+      "collider": {
+        "id": "35:13",
+        "type": "conservative-cylinder",
+        "x": 177.73,
+        "z": 67.85,
+        "y": 8.044514656066895,
+        "height": 6.24,
+        "radius": 1.1224721943939782,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "35:14",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        176.79,
+        7.6148295402526855,
+        72.43
+      ],
+      "yaw": 4.58,
+      "height": 1.03,
+      "collider": {
+        "id": "35:14",
+        "type": "conservative-cylinder",
+        "x": 176.79,
+        "z": 72.43,
+        "y": 7.6148295402526855,
+        "height": 1.03,
+        "radius": 2.544407974168741,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "38:14",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        191.99,
+        7.811890602111816,
+        72.02
+      ],
+      "yaw": 0.25,
+      "height": 5.55,
+      "collider": {
+        "id": "38:14",
+        "type": "conservative-cylinder",
+        "x": 191.99,
+        "z": 72.02,
+        "y": 7.811890602111816,
+        "height": 5.55,
+        "radius": 0.7893525479779159,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "32:15",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        163.68,
+        5.814208984375,
+        75.24
+      ],
+      "yaw": 4.42,
+      "height": 5.04,
+      "collider": {
+        "id": "32:15",
+        "type": "conservative-cylinder",
+        "x": 163.68,
+        "z": 75.24,
+        "y": 5.814208984375,
+        "height": 5.04,
+        "radius": 0.9066121570105208,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "35:15",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        177.16,
+        7.109837055206299,
+        78.67
+      ],
+      "yaw": 4.51,
+      "height": 5.01,
+      "collider": {
+        "id": "35:15",
+        "type": "conservative-cylinder",
+        "x": 177.16,
+        "z": 78.67,
+        "y": 7.109837055206299,
+        "height": 5.01,
+        "radius": 1.9988325212651525,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "34:16",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        170.06,
+        6.040782928466797,
+        83.49
+      ],
+      "yaw": 2.5,
+      "height": 6.359999999999999,
+      "collider": {
+        "id": "34:16",
+        "type": "conservative-cylinder",
+        "x": 170.06,
+        "z": 83.49,
+        "y": 6.040782928466797,
+        "height": 6.359999999999999,
+        "radius": 0.9045553522773954,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "36:16",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        182.09,
+        7.296023845672607,
+        82.91
+      ],
+      "yaw": 2.45,
+      "height": 5.01,
+      "collider": {
+        "id": "36:16",
+        "type": "conservative-cylinder",
+        "x": 182.09,
+        "z": 82.91,
+        "y": 7.296023845672607,
+        "height": 5.01,
+        "radius": 0.9012156560759343,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "38:16",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        190.67,
+        7.442012786865234,
+        82.57
+      ],
+      "yaw": 1.18,
+      "height": 6.26,
+      "collider": {
+        "id": "38:16",
+        "type": "conservative-cylinder",
+        "x": 190.67,
+        "z": 82.57,
+        "y": 7.442012786865234,
+        "height": 6.26,
+        "radius": 1.1260698616837024,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "33:17",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        167.19,
+        5.907576560974121,
+        87.31
+      ],
+      "yaw": 4.53,
+      "height": 0.54,
+      "collider": {
+        "id": "33:17",
+        "type": "conservative-cylinder",
+        "x": 167.19,
+        "z": 87.31,
+        "y": 5.907576560974121,
+        "height": 0.54,
+        "radius": 1.3339614621855538,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "37:17",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        186.35,
+        6.763936519622803,
+        88.74
+      ],
+      "yaw": 0.24,
+      "height": 5.62,
+      "collider": {
+        "id": "37:17",
+        "type": "conservative-cylinder",
+        "x": 186.35,
+        "z": 88.74,
+        "y": 6.763936519622803,
+        "height": 5.62,
+        "radius": 0.7993083458803399,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "38:17",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        190.27,
+        7.225876808166504,
+        86.31
+      ],
+      "yaw": 2.49,
+      "height": 0.74,
+      "collider": {
+        "id": "38:17",
+        "type": "conservative-cylinder",
+        "x": 190.27,
+        "z": 86.31,
+        "y": 7.225876808166504,
+        "height": 0.74,
+        "radius": 1.8280212629950179,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "33:18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        166.32,
+        5.750382900238037,
+        91.75
+      ],
+      "yaw": 4.02,
+      "height": 0.75,
+      "collider": {
+        "id": "33:18",
+        "type": "conservative-cylinder",
+        "x": 166.32,
+        "z": 91.75,
+        "y": 5.750382900238037,
+        "height": 0.75,
+        "radius": 1.1090002443174822,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "34:18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        170.73,
+        6.2363080978393555,
+        93.84
+      ],
+      "yaw": 6.21,
+      "height": 4.85,
+      "collider": {
+        "id": "34:18",
+        "type": "conservative-cylinder",
+        "x": 170.73,
+        "z": 93.84,
+        "y": 6.2363080978393555,
+        "height": 4.85,
+        "radius": 1.9349975505261454,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "37:18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        186.46,
+        6.7321577072143555,
+        90.63
+      ],
+      "yaw": 0.67,
+      "height": 6.59,
+      "collider": {
+        "id": "37:18",
+        "type": "conservative-cylinder",
+        "x": 186.46,
+        "z": 90.63,
+        "y": 6.7321577072143555,
+        "height": 6.59,
+        "radius": 1.1854313719641532,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "36:19",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        182.64,
+        6.991690635681152,
+        96.68
+      ],
+      "yaw": 4.18,
+      "height": 0.67,
+      "collider": {
+        "id": "36:19",
+        "type": "conservative-cylinder",
+        "x": 182.64,
+        "z": 96.68,
+        "y": 6.991690635681152,
+        "height": 0.67,
+        "radius": 1.6551003327117055,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "32:20",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        163.66,
+        6.297642230987549,
+        101.27
+      ],
+      "yaw": 5.96,
+      "height": 5.62,
+      "collider": {
+        "id": "32:20",
+        "type": "conservative-cylinder",
+        "x": 163.66,
+        "z": 101.27,
+        "y": 6.297642230987549,
+        "height": 5.62,
+        "radius": 1.0018357812272929,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "32:21",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        163.01,
+        6.795695781707764,
+        107.54
+      ],
+      "yaw": 5.52,
+      "height": 5.279999999999999,
+      "collider": {
+        "id": "32:21",
+        "type": "conservative-cylinder",
+        "x": 163.01,
+        "z": 107.54,
+        "y": 6.795695781707764,
+        "height": 5.279999999999999,
+        "radius": 0.9412264990889869,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "38:21",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        191.78,
+        7.431549072265625,
+        107.82
+      ],
+      "yaw": 3.2,
+      "height": 6.4799999999999995,
+      "collider": {
+        "id": "38:21",
+        "type": "conservative-cylinder",
+        "x": 191.78,
+        "z": 107.82,
+        "y": 7.431549072265625,
+        "height": 6.4799999999999995,
+        "radius": 1.1656442018706694,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "38:23",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        191.74,
+        6.970533847808838,
+        118.07
+      ],
+      "yaw": 1.33,
+      "height": 0.74,
+      "collider": {
+        "id": "38:23",
+        "type": "conservative-cylinder",
+        "x": 191.74,
+        "z": 118.07,
+        "y": 6.970533847808838,
+        "height": 0.74,
+        "radius": 1.094213574393249,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "32:24",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        161.42,
+        7.039041042327881,
+        123.37
+      ],
+      "yaw": 5.14,
+      "height": 4.84,
+      "collider": {
+        "id": "32:24",
+        "type": "conservative-cylinder",
+        "x": 161.42,
+        "z": 123.37,
+        "y": 7.039041042327881,
+        "height": 4.84,
+        "radius": 0.8627909574982381,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "36:25",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        182.4,
+        6.784951686859131,
+        127.57
+      ],
+      "yaw": 0.84,
+      "height": 6.08,
+      "collider": {
+        "id": "36:25",
+        "type": "conservative-cylinder",
+        "x": 182.4,
+        "z": 127.57,
+        "y": 6.784951686859131,
+        "height": 6.08,
+        "radius": 1.0936908560761838,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:0",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        6.741613864898682,
+        106.95182704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:0",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:1",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        9.999469834136963,
+        106.95182704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:1",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 106.95182704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:2",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        13.257325803375245,
+        106.95182704777717
+      ],
+      "height": 4.3545596923828125,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:2",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 4.3545596923828125,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:3",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        6.741613864898682,
+        106.95182704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:3",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:4",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        9.999469834136963,
+        106.95182704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:4",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 106.95182704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:5",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        13.257325803375245,
+        106.95182704777717
+      ],
+      "height": 4.3545596923828125,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:5",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 4.3545596923828125,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:6",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        6.741613864898682,
+        121.69742704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:6",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:7",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        9.999469834136963,
+        121.69742704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:7",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 121.69742704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:8",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        13.257325803375245,
+        121.69742704777717
+      ],
+      "height": 0.9676800384521484,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:8",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 0.9676800384521484,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:9",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        6.741613864898682,
+        121.69742704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:9",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:10",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        9.999469834136963,
+        121.69742704777717
+      ],
+      "height": 3.2578559692382814,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:10",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 121.69742704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:11",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        13.257325803375245,
+        121.69742704777717
+      ],
+      "height": 0.9676800384521484,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:11",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 0.9676800384521484,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:12",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        175.4677638056755,
+        6.741613864898682,
+        121.69742704777717
+      ],
+      "height": 2.7924479736328123,
+      "yaw": 0,
+      "sceneRole": "gate-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:12",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 175.4677638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:13",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        175.4677638056755,
+        9.534061838531494,
+        121.69742704777717
+      ],
+      "height": 2.7924479736328123,
+      "yaw": 0,
+      "sceneRole": "gate-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:13",
+        "type": "compound-obb",
+        "radius": 1.8181582246041597,
+        "parts": [
+          {
+            "x": 175.4677638056755,
+            "z": 121.69742704777717,
+            "width": 2.5712640197753904,
+            "depth": 2.5712640197753904,
+            "yaw": 0
+          }
+        ],
+        "y": 9.534061838531494,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:14",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        175.4677638056755,
+        12.326509812164307,
+        121.69742704777717
+      ],
+      "height": 0.8294400329589843,
+      "yaw": 0,
+      "sceneRole": "gate-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:14",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 175.4677638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 12.326509812164307,
+        "height": 0.8294400329589843,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:15",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        183.7621638056755,
+        6.741613864898682,
+        121.69742704777717
+      ],
+      "height": 2.7924479736328123,
+      "yaw": 0,
+      "sceneRole": "gate-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:15",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 183.7621638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:16",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        183.7621638056755,
+        9.534061838531494,
+        121.69742704777717
+      ],
+      "height": 2.7924479736328123,
+      "yaw": 0,
+      "sceneRole": "gate-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:16",
+        "type": "compound-obb",
+        "radius": 1.8181582246041597,
+        "parts": [
+          {
+            "x": 183.7621638056755,
+            "z": 121.69742704777717,
+            "width": 2.5712640197753904,
+            "depth": 2.5712640197753904,
+            "yaw": 0
+          }
+        ],
+        "y": 9.534061838531494,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:17",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        183.7621638056755,
+        12.326509812164307,
+        121.69742704777717
+      ],
+      "height": 0.8294400329589843,
+      "yaw": 0,
+      "sceneRole": "gate-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:17",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 183.7621638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 12.326509812164307,
+        "height": 0.8294400329589843,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:18",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        179.6149638056755,
+        6.741613864898682,
+        112.13582704777717
+      ],
+      "height": 4.421375958251954,
+      "yaw": 0,
+      "sceneRole": "courtyard-keep:base",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:18",
+        "type": "compound-obb",
+        "radius": 3.0954306453222307,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 112.13582704777717,
+            "width": 4.3776,
+            "depth": 4.3776,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 4.421375958251954,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:19",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        179.6149638056755,
+        11.162989823150635,
+        112.13582704777717
+      ],
+      "height": 4.421375958251954,
+      "yaw": 0,
+      "sceneRole": "courtyard-keep:windows",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:19",
+        "type": "compound-obb",
+        "radius": 2.87875052228992,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 112.13582704777717,
+            "width": 4.071168031311036,
+            "depth": 4.071168031311036,
+            "yaw": 0
+          }
+        ],
+        "y": 11.162989823150635,
+        "height": 4.421375958251954,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:20",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        179.6149638056755,
+        15.584365781402589,
+        112.13582704777717
+      ],
+      "height": 5.9097595825195315,
+      "yaw": 0,
+      "sceneRole": "courtyard-keep:top",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:20",
+        "type": "compound-obb",
+        "radius": 3.0954306453222307,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 112.13582704777717,
+            "width": 4.3776,
+            "depth": 4.3776,
+            "yaw": 0
+          }
+        ],
+        "y": 15.584365781402589,
+        "height": 5.9097595825195315,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:21",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        174.6997638064435,
+        6.741613864898682,
+        106.95182704777717
+      ],
+      "height": 6.438911720762159,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:21",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 174.6997638064435,
+            "z": 106.95182704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:22",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        6.741613864898682,
+        109.40942704854517
+      ],
+      "height": 6.438911720762159,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:22",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 109.40942704854517,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:23",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        6.741613864898682,
+        109.40942704854517
+      ],
+      "height": 6.438911720762159,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:23",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 109.40942704854517,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:24",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        179.6149638056755,
+        6.741613864898682,
+        106.95182704777717
+      ],
+      "height": 6.438911720762159,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:24",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 106.95182704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:25",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        6.741613864898682,
+        114.32462704777717
+      ],
+      "height": 6.438911720762159,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:25",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 114.32462704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:26",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        6.741613864898682,
+        114.32462704777717
+      ],
+      "height": 6.438911720762159,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:26",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 114.32462704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:27",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        184.5301638049075,
+        6.741613864898682,
+        106.95182704777717
+      ],
+      "height": 6.438911720762159,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:27",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 184.5301638049075,
+            "z": 106.95182704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:28",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        172.2421638056755,
+        6.741613864898682,
+        119.23982704700917
+      ],
+      "height": 6.438911720762159,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:28",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 119.23982704700917,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:29",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        186.9877638056755,
+        6.741613864898682,
+        119.23982704700917
+      ],
+      "height": 6.438911720762159,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:29",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 119.23982704700917,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:30",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        174.6613638056755,
+        6.741613864898682,
+        121.69742704777717
+      ],
+      "height": 6.338303723144532,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "gate-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:30",
+        "type": "compound-obb",
+        "radius": 2.704747825583774,
+        "parts": [
+          {
+            "x": 174.6613638056755,
+            "z": 121.69742704777717,
+            "width": 2.419200000000126,
+            "depth": 4.8384,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.338303723144532,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:31",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        184.5685638056755,
+        6.741613864898682,
+        121.69742704777717
+      ],
+      "height": 6.338303723144532,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "gate-wall",
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:31",
+        "type": "compound-obb",
+        "radius": 2.704747825583774,
+        "parts": [
+          {
+            "x": 184.5685638056755,
+            "z": 121.69742704777717,
+            "width": 2.419200000000126,
+            "depth": 4.8384,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.338303723144532,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:0,0:0:castle-v2:32",
+      "featureId": "漫游-2026:0,0:0",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        179.6149638056755,
+        6.741613864898682,
+        121.69742704777717
+      ],
+      "height": 6.640127711078399,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "gate-arch",
+      "sourceScale": [
+        0.3,
+        1,
+        1
+      ],
+      "qa": {
+        "placement": {
+          "placement": "terrain-sampled",
+          "visual": "not-reviewed",
+          "samples": 25
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "漫游-2026:0,0:0:castle-v2:32",
+        "type": "compound-obb",
+        "parts": [
+          {
+            "x": 177.9929478056755,
+            "z": 121.69742704777717,
+            "width": 0.7603199999999999,
+            "depth": 1.8247679999999997,
+            "yaw": 1.5707963267948966
+          },
+          {
+            "x": 181.2369798056755,
+            "z": 121.69742704777717,
+            "width": 0.7603199999999999,
+            "depth": 1.8247679999999997,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "overheadBounds": {
+          "x": 179.6149638056755,
+          "z": 121.69742704777717,
+          "width": 0.7603199999999999,
+          "depth": 5.0687999999999995,
+          "yaw": 1.5707963267948966
+        },
+        "apertureHeight": 2.28096,
+        "apertureWidth": 1.419264,
+        "y": 6.741613864898682,
+        "height": 6.640127711078399,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false,
+        "qa": {
+          "sourceApertureAxis": "X",
+          "conservativeArchRectangle": true,
+          "sourceApertureMeasured": true
+        }
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "漫游-2026:0,0:0",
+      "type": "castle",
+      "position": {
+        "x": 179.6149638056755,
+        "z": 114.32462704777717
+      },
+      "footprint": {
+        "width": 23.04,
+        "depth": 23.04
+      },
+      "surfaceHeight": 6.741613731384278,
+      "status": "validated",
+      "validation": {
+        "placement": "terrain-sampled",
+        "visual": "not-reviewed",
+        "samples": 25
+      },
+      "collider": {
+        "type": "footprint",
+        "width": 23.04,
+        "depth": 23.04
+      }
+    }
+  ],
+  "materials": {
+    "sourcePack": "polyhaven-pbr",
+    "id": "forest_leaves_02",
+    "metersPerRepeat": 6
+  },
+  "collision": {
+    "terrain": "global NoiseStack + deterministic feature carve/foundation sampling",
+    "objects": [
+      {
+        "id": "33:13",
+        "type": "conservative-cylinder",
+        "x": 166.47,
+        "z": 65.12,
+        "y": 7.175168991088867,
+        "height": 0.87,
+        "radius": 2.1491601335211694,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "35:13",
+        "type": "conservative-cylinder",
+        "x": 177.73,
+        "z": 67.85,
+        "y": 8.044514656066895,
+        "height": 6.24,
+        "radius": 1.1224721943939782,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "35:14",
+        "type": "conservative-cylinder",
+        "x": 176.79,
+        "z": 72.43,
+        "y": 7.6148295402526855,
+        "height": 1.03,
+        "radius": 2.544407974168741,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "38:14",
+        "type": "conservative-cylinder",
+        "x": 191.99,
+        "z": 72.02,
+        "y": 7.811890602111816,
+        "height": 5.55,
+        "radius": 0.7893525479779159,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "32:15",
+        "type": "conservative-cylinder",
+        "x": 163.68,
+        "z": 75.24,
+        "y": 5.814208984375,
+        "height": 5.04,
+        "radius": 0.9066121570105208,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "35:15",
+        "type": "conservative-cylinder",
+        "x": 177.16,
+        "z": 78.67,
+        "y": 7.109837055206299,
+        "height": 5.01,
+        "radius": 1.9988325212651525,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "34:16",
+        "type": "conservative-cylinder",
+        "x": 170.06,
+        "z": 83.49,
+        "y": 6.040782928466797,
+        "height": 6.359999999999999,
+        "radius": 0.9045553522773954,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "36:16",
+        "type": "conservative-cylinder",
+        "x": 182.09,
+        "z": 82.91,
+        "y": 7.296023845672607,
+        "height": 5.01,
+        "radius": 0.9012156560759343,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "38:16",
+        "type": "conservative-cylinder",
+        "x": 190.67,
+        "z": 82.57,
+        "y": 7.442012786865234,
+        "height": 6.26,
+        "radius": 1.1260698616837024,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "33:17",
+        "type": "conservative-cylinder",
+        "x": 167.19,
+        "z": 87.31,
+        "y": 5.907576560974121,
+        "height": 0.54,
+        "radius": 1.3339614621855538,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "37:17",
+        "type": "conservative-cylinder",
+        "x": 186.35,
+        "z": 88.74,
+        "y": 6.763936519622803,
+        "height": 5.62,
+        "radius": 0.7993083458803399,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "38:17",
+        "type": "conservative-cylinder",
+        "x": 190.27,
+        "z": 86.31,
+        "y": 7.225876808166504,
+        "height": 0.74,
+        "radius": 1.8280212629950179,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "33:18",
+        "type": "conservative-cylinder",
+        "x": 166.32,
+        "z": 91.75,
+        "y": 5.750382900238037,
+        "height": 0.75,
+        "radius": 1.1090002443174822,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "34:18",
+        "type": "conservative-cylinder",
+        "x": 170.73,
+        "z": 93.84,
+        "y": 6.2363080978393555,
+        "height": 4.85,
+        "radius": 1.9349975505261454,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "37:18",
+        "type": "conservative-cylinder",
+        "x": 186.46,
+        "z": 90.63,
+        "y": 6.7321577072143555,
+        "height": 6.59,
+        "radius": 1.1854313719641532,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "36:19",
+        "type": "conservative-cylinder",
+        "x": 182.64,
+        "z": 96.68,
+        "y": 6.991690635681152,
+        "height": 0.67,
+        "radius": 1.6551003327117055,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "32:20",
+        "type": "conservative-cylinder",
+        "x": 163.66,
+        "z": 101.27,
+        "y": 6.297642230987549,
+        "height": 5.62,
+        "radius": 1.0018357812272929,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "32:21",
+        "type": "conservative-cylinder",
+        "x": 163.01,
+        "z": 107.54,
+        "y": 6.795695781707764,
+        "height": 5.279999999999999,
+        "radius": 0.9412264990889869,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "38:21",
+        "type": "conservative-cylinder",
+        "x": 191.78,
+        "z": 107.82,
+        "y": 7.431549072265625,
+        "height": 6.4799999999999995,
+        "radius": 1.1656442018706694,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "38:23",
+        "type": "conservative-cylinder",
+        "x": 191.74,
+        "z": 118.07,
+        "y": 6.970533847808838,
+        "height": 0.74,
+        "radius": 1.094213574393249,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "32:24",
+        "type": "conservative-cylinder",
+        "x": 161.42,
+        "z": 123.37,
+        "y": 7.039041042327881,
+        "height": 4.84,
+        "radius": 0.8627909574982381,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "36:25",
+        "type": "conservative-cylinder",
+        "x": 182.4,
+        "z": 127.57,
+        "y": 6.784951686859131,
+        "height": 6.08,
+        "radius": 1.0936908560761838,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:0",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:1",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 106.95182704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:2",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 4.3545596923828125,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:3",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:4",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 106.95182704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:5",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 106.95182704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 4.3545596923828125,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:6",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:7",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 121.69742704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:8",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 0.9676800384521484,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:9",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:10",
+        "type": "compound-obb",
+        "radius": 2.1211845953715196,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 121.69742704777717,
+            "width": 2.999808023071289,
+            "depth": 2.999808023071289,
+            "yaw": 0
+          }
+        ],
+        "y": 9.999469834136963,
+        "height": 3.2578559692382814,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:11",
+        "type": "compound-obb",
+        "radius": 2.2808436333953277,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 121.69742704777717,
+            "width": 3.2256,
+            "depth": 3.2256,
+            "yaw": 0
+          }
+        ],
+        "y": 13.257325803375245,
+        "height": 0.9676800384521484,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:12",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 175.4677638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:13",
+        "type": "compound-obb",
+        "radius": 1.8181582246041597,
+        "parts": [
+          {
+            "x": 175.4677638056755,
+            "z": 121.69742704777717,
+            "width": 2.5712640197753904,
+            "depth": 2.5712640197753904,
+            "yaw": 0
+          }
+        ],
+        "y": 9.534061838531494,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:14",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 175.4677638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 12.326509812164307,
+        "height": 0.8294400329589843,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:15",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 183.7621638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:16",
+        "type": "compound-obb",
+        "radius": 1.8181582246041597,
+        "parts": [
+          {
+            "x": 183.7621638056755,
+            "z": 121.69742704777717,
+            "width": 2.5712640197753904,
+            "depth": 2.5712640197753904,
+            "yaw": 0
+          }
+        ],
+        "y": 9.534061838531494,
+        "height": 2.7924479736328123,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:17",
+        "type": "compound-obb",
+        "radius": 1.9550088286245666,
+        "parts": [
+          {
+            "x": 183.7621638056755,
+            "z": 121.69742704777717,
+            "width": 2.7647999999999997,
+            "depth": 2.7647999999999997,
+            "yaw": 0
+          }
+        ],
+        "y": 12.326509812164307,
+        "height": 0.8294400329589843,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:18",
+        "type": "compound-obb",
+        "radius": 3.0954306453222307,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 112.13582704777717,
+            "width": 4.3776,
+            "depth": 4.3776,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 4.421375958251954,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:19",
+        "type": "compound-obb",
+        "radius": 2.87875052228992,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 112.13582704777717,
+            "width": 4.071168031311036,
+            "depth": 4.071168031311036,
+            "yaw": 0
+          }
+        ],
+        "y": 11.162989823150635,
+        "height": 4.421375958251954,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:20",
+        "type": "compound-obb",
+        "radius": 3.0954306453222307,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 112.13582704777717,
+            "width": 4.3776,
+            "depth": 4.3776,
+            "yaw": 0
+          }
+        ],
+        "y": 15.584365781402589,
+        "height": 5.9097595825195315,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:21",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 174.6997638064435,
+            "z": 106.95182704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:22",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 109.40942704854517,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:23",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 109.40942704854517,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:24",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 179.6149638056755,
+            "z": 106.95182704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:25",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 114.32462704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:26",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 114.32462704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:27",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 184.5301638049075,
+            "z": 106.95182704777717,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:28",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 172.2421638056755,
+            "z": 119.23982704700917,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:29",
+        "type": "compound-obb",
+        "radius": 2.7476803316104204,
+        "parts": [
+          {
+            "x": 186.9877638056755,
+            "z": 119.23982704700917,
+            "width": 2.457600000768128,
+            "depth": 4.915200001535999,
+            "yaw": 0
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.438911720762159,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:30",
+        "type": "compound-obb",
+        "radius": 2.704747825583774,
+        "parts": [
+          {
+            "x": 174.6613638056755,
+            "z": 121.69742704777717,
+            "width": 2.419200000000126,
+            "depth": 4.8384,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.338303723144532,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:31",
+        "type": "compound-obb",
+        "radius": 2.704747825583774,
+        "parts": [
+          {
+            "x": 184.5685638056755,
+            "z": 121.69742704777717,
+            "width": 2.419200000000126,
+            "depth": 4.8384,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 6.741613864898682,
+        "height": 6.338303723144532,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:0,0:0:castle-v2:32",
+        "type": "compound-obb",
+        "parts": [
+          {
+            "x": 177.9929478056755,
+            "z": 121.69742704777717,
+            "width": 0.7603199999999999,
+            "depth": 1.8247679999999997,
+            "yaw": 1.5707963267948966
+          },
+          {
+            "x": 181.2369798056755,
+            "z": 121.69742704777717,
+            "width": 0.7603199999999999,
+            "depth": 1.8247679999999997,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "overheadBounds": {
+          "x": 179.6149638056755,
+          "z": 121.69742704777717,
+          "width": 0.7603199999999999,
+          "depth": 5.0687999999999995,
+          "yaw": 1.5707963267948966
+        },
+        "apertureHeight": 2.28096,
+        "apertureWidth": 1.419264,
+        "y": 6.741613864898682,
+        "height": 6.640127711078399,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false,
+        "qa": {
+          "sourceApertureAxis": "X",
+          "conservativeArchRectangle": true,
+          "sourceApertureMeasured": true
+        }
+      }
+    ],
+    "sweepFunction": "sweepTerrainMotion",
+    "triangleMesh": false
+  },
+  "noiseStack": {
+    "version": 1,
+    "globalSeed": 925300048,
+    "normalizeOutput": false,
+    "outputMin": 0,
+    "outputMax": 1.35,
+    "layers": [
+      {
+        "id": "layer-0",
+        "name": "Base",
+        "enabled": true,
+        "type": "fbm",
+        "blendMode": "add",
+        "strength": 0.5,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 1,
+          "octaves": 4,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-1",
+        "name": "Soft Hills",
+        "enabled": true,
+        "type": "billow",
+        "blendMode": "add",
+        "strength": 0.25,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 2.2,
+          "octaves": 3,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-2",
+        "name": "Detail",
+        "enabled": true,
+        "type": "fbm",
+        "blendMode": "add",
+        "strength": 0.06,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 6,
+          "octaves": 3,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      }
+    ]
+  },
+  "source": "map-vendor/SOURCE-terrain-3d.json",
+  "qa": {
+    "engineImported": false,
+    "visualAccepted": false,
+    "actorCollisionsVerified": false,
+    "realGeographicData": false
+  }
+}

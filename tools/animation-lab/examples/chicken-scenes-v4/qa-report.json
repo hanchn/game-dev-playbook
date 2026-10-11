@@ -1,0 +1,762 @@
+{
+  "schemaVersion": 1,
+  "entry": "http://127.0.0.1:4317/lab/chicken-scene",
+  "updatedAt": "2026-10-11T19:44:43.506472+00:00",
+  "observedVersions": {
+    "choreography": 9,
+    "renderer": 6,
+    "rooster": "chicken-side-v4",
+    "hen": "chicken-hen-side-v6",
+    "scope": "最新混合鸡群UI；各旧电影版本以capture.json为准"
+  },
+  "camera": {
+    "canvas": [
+      1280,
+      720
+    ],
+    "fixed": true,
+    "frameFit": false
+  },
+  "technical": [
+    {
+      "path": "lay-capture-v1/validation.json",
+      "pngCount": 60,
+      "pngSHA": true,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 5,
+      "choreographyVersion": 7,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "61"
+          }
+        ],
+        "format": {
+          "duration": "4.993386"
+        }
+      },
+      "decodedVideo": {
+        "frames": 61,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.0554815357349538,
+          "max": 2.0151302083333333
+        },
+        "ptsMaxErrorSeconds": 0.008000000000000007,
+        "pts": [
+          0,
+          0.079,
+          0.172,
+          0.246,
+          0.338,
+          0.413,
+          0.495,
+          0.581,
+          0.663,
+          0.747,
+          0.839,
+          0.914,
+          1.006,
+          1.08,
+          1.171,
+          1.246,
+          1.34,
+          1.412,
+          1.507,
+          1.581,
+          1.671,
+          1.746,
+          1.84,
+          1.915,
+          2.006,
+          2.081,
+          2.173,
+          2.247,
+          2.341,
+          2.414,
+          2.505,
+          2.581,
+          2.673,
+          2.749,
+          2.841,
+          2.914,
+          3.007,
+          3.08,
+          3.174,
+          3.248,
+          3.338,
+          3.413,
+          3.505,
+          3.581,
+          3.672,
+          3.748,
+          3.84,
+          3.915,
+          4.005,
+          4.081,
+          4.173,
+          4.247,
+          4.339,
+          4.415,
+          4.508,
+          4.581,
+          4.673,
+          4.747,
+          4.84,
+          4.913,
+          4.993
+        ]
+      },
+      "visual": "failed",
+      "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+      "zipCRC": true,
+      "review": {
+        "source": "actual UI + entire source contact sheet",
+        "residual": [
+          "母鸡v5坐窝前胸孤立金黄鳞块、羽毛股件贴肉垫",
+          "新部件原始比例和完整动作还在复测"
+        ]
+      }
+    },
+    {
+      "path": "crow-capture-v1/validation.json",
+      "pngCount": 36,
+      "pngSHA": true,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 5,
+      "choreographyVersion": 7,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "37"
+          }
+        ],
+        "format": {
+          "duration": "3.001863"
+        }
+      },
+      "decodedVideo": {
+        "frames": 37,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.155204163853523,
+          "max": 1.9048433883101852
+        },
+        "ptsMaxErrorSeconds": 0.019000000000000017,
+        "pts": [
+          0,
+          0.083,
+          0.173,
+          0.251,
+          0.338,
+          0.419,
+          0.498,
+          0.582,
+          0.667,
+          0.769,
+          0.839,
+          0.919,
+          1.006,
+          1.087,
+          1.167,
+          1.252,
+          1.339,
+          1.419,
+          1.506,
+          1.587,
+          1.673,
+          1.753,
+          1.84,
+          1.92,
+          2.006,
+          2.084,
+          2.176,
+          2.253,
+          2.337,
+          2.419,
+          2.5,
+          2.586,
+          2.673,
+          2.753,
+          2.84,
+          2.92,
+          3.001
+        ]
+      },
+      "visual": "failed",
+      "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+      "zipCRC": true,
+      "review": {
+        "source": "actual UI + entire source contact sheet",
+        "residual": [
+          "独立四嘴型的颈长/羽毛细节略跳变",
+          "没有制作打鸣音效"
+        ]
+      }
+    },
+    {
+      "path": "fight-capture-v2/validation.json",
+      "pngCount": 48,
+      "pngSHA": true,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 5,
+      "choreographyVersion": 7,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "49"
+          }
+        ],
+        "format": {
+          "duration": "3.998762"
+        }
+      },
+      "decodedVideo": {
+        "frames": 49,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.275585560739776,
+          "max": 1.892394748263889
+        },
+        "ptsMaxErrorSeconds": 0.013666666666666605,
+        "pts": [
+          0,
+          0.084,
+          0.172,
+          0.254,
+          0.338,
+          0.424,
+          0.5,
+          0.583,
+          0.671,
+          0.754,
+          0.847,
+          0.92,
+          1.004,
+          1.088,
+          1.17,
+          1.253,
+          1.346,
+          1.42,
+          1.504,
+          1.584,
+          1.672,
+          1.754,
+          1.837,
+          1.92,
+          2.005,
+          2.087,
+          2.17,
+          2.254,
+          2.336,
+          2.419,
+          2.505,
+          2.586,
+          2.669,
+          2.753,
+          2.838,
+          2.919,
+          3.004,
+          3.087,
+          3.17,
+          3.256,
+          3.336,
+          3.42,
+          3.503,
+          3.587,
+          3.669,
+          3.753,
+          3.831,
+          3.92,
+          3.998
+        ]
+      },
+      "visual": "failed",
+      "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+      "zipCRC": true,
+      "review": {
+        "source": "actual UI + entire source contact sheet",
+        "residual": [
+          "腿根材质仍像零件拼接",
+          "真实爪击力度、羽毛材质尚未验收"
+        ]
+      }
+    },
+    {
+      "path": "lay-capture-v2/validation.json",
+      "pngCount": 60,
+      "pngSHA": true,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 5,
+      "choreographyVersion": 7,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "61"
+          }
+        ],
+        "format": {
+          "duration": "4.999801"
+        }
+      },
+      "decodedVideo": {
+        "frames": 61,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.0560190670814038,
+          "max": 2.014318214699074
+        },
+        "ptsMaxErrorSeconds": 0.007666666666667155,
+        "pts": [
+          0,
+          0.079,
+          0.173,
+          0.247,
+          0.336,
+          0.413,
+          0.497,
+          0.58,
+          0.673,
+          0.748,
+          0.839,
+          0.915,
+          1.005,
+          1.078,
+          1.172,
+          1.247,
+          1.339,
+          1.415,
+          1.506,
+          1.58,
+          1.672,
+          1.748,
+          1.839,
+          1.913,
+          2.005,
+          2.08,
+          2.172,
+          2.248,
+          2.339,
+          2.413,
+          2.506,
+          2.581,
+          2.672,
+          2.748,
+          2.841,
+          2.915,
+          3.003,
+          3.081,
+          3.166,
+          3.248,
+          3.338,
+          3.415,
+          3.506,
+          3.582,
+          3.672,
+          3.747,
+          3.837,
+          3.914,
+          4.006,
+          4.08,
+          4.168,
+          4.249,
+          4.341,
+          4.413,
+          4.506,
+          4.581,
+          4.672,
+          4.748,
+          4.839,
+          4.913,
+          4.999
+        ]
+      },
+      "visual": "failed",
+      "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+      "zipCRC": true,
+      "review": {
+        "source": "actual UI + entire source contact sheet",
+        "improvements": [
+          "母鸡坐窝的前胸孤立金黄鳞块与卵状股件已消除",
+          "起身后巢中单个蛋可见；其余14件保留旧source"
+        ],
+        "residual": [
+          "踝部金色结节和细长腿比例仍不自然"
+        ]
+      }
+    },
+    {
+      "path": "mixed-flock-capture-v1/validation.json",
+      "pngCount": 72,
+      "pngSHA": true,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 6,
+      "choreographyVersion": 8,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "73"
+          }
+        ],
+        "format": {
+          "duration": "5.990935"
+        }
+      },
+      "decodedVideo": {
+        "frames": 73,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.282775994446052,
+          "max": 2.3278993055555555
+        },
+        "ptsMaxErrorSeconds": 0.008000000000000007,
+        "pts": [
+          0,
+          0.08,
+          0.171,
+          0.246,
+          0.338,
+          0.414,
+          0.497,
+          0.579,
+          0.671,
+          0.749,
+          0.838,
+          0.914,
+          1.008,
+          1.079,
+          1.17,
+          1.247,
+          1.34,
+          1.415,
+          1.508,
+          1.581,
+          1.671,
+          1.75,
+          1.839,
+          1.916,
+          1.998,
+          2.081,
+          2.171,
+          2.249,
+          2.34,
+          2.413,
+          2.501,
+          2.584,
+          2.672,
+          2.748,
+          2.839,
+          2.914,
+          3.006,
+          3.082,
+          3.172,
+          3.247,
+          3.331,
+          3.416,
+          3.508,
+          3.58,
+          3.665,
+          3.749,
+          3.836,
+          3.914,
+          4.007,
+          4.081,
+          4.174,
+          4.248,
+          4.339,
+          4.413,
+          4.502,
+          4.582,
+          4.672,
+          4.749,
+          4.839,
+          4.915,
+          5.008,
+          5.08,
+          5.171,
+          5.248,
+          5.332,
+          5.414,
+          5.505,
+          5.582,
+          5.67,
+          5.747,
+          5.84,
+          5.916,
+          5.99
+        ]
+      },
+      "visual": "failed",
+      "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+      "zipCRC": true,
+      "review": {
+        "source": "actual UI + entire source contact sheet",
+        "improvements": [
+          "真实公鸡v4与母鸡v6同场，三只独立行走、啄食、抬头",
+          "固定1280×720及实际足底基准地面线"
+        ],
+        "residual": [
+          "首次起步idle到walk未过渡",
+          "母鸡踝部金色结节及腿比例仍需精修"
+        ]
+      }
+    },
+    {
+      "path": "mixed-flock-capture-v2/validation.json",
+      "pngCount": 72,
+      "pngSHA": true,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 6,
+      "choreographyVersion": 9,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "73"
+          }
+        ],
+        "format": {
+          "duration": "5.985484"
+        }
+      },
+      "decodedVideo": {
+        "frames": 73,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.2966333208751288,
+          "max": 2.2901613136574075
+        },
+        "ptsMaxErrorSeconds": 0.013333333333333641,
+        "pts": [
+          0,
+          0.082,
+          0.164,
+          0.246,
+          0.336,
+          0.414,
+          0.505,
+          0.583,
+          0.667,
+          0.748,
+          0.84,
+          0.915,
+          1.002,
+          1.083,
+          1.165,
+          1.247,
+          1.334,
+          1.416,
+          1.511,
+          1.583,
+          1.666,
+          1.749,
+          1.833,
+          1.916,
+          2.011,
+          2.081,
+          2.179,
+          2.249,
+          2.34,
+          2.416,
+          2.505,
+          2.583,
+          2.68,
+          2.746,
+          2.84,
+          2.911,
+          3.011,
+          3.082,
+          3.167,
+          3.249,
+          3.334,
+          3.415,
+          3.502,
+          3.581,
+          3.675,
+          3.748,
+          3.833,
+          3.915,
+          3.999,
+          4.082,
+          4.166,
+          4.249,
+          4.335,
+          4.416,
+          4.501,
+          4.582,
+          4.666,
+          4.749,
+          4.84,
+          4.916,
+          4.999,
+          5.082,
+          5.168,
+          5.245,
+          5.34,
+          5.416,
+          5.51,
+          5.579,
+          5.665,
+          5.749,
+          5.84,
+          5.917,
+          5.985
+        ]
+      },
+      "visual": "failed",
+      "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+      "zipCRC": true,
+      "review": {
+        "source": "actual UI, native video playback, entire 72-frame contact sheet",
+        "improvements": [
+          "首次起步有连续中间姿势且首支撑足底无边界突跳",
+          "公母角色及独立相位完整保留，导出画幅固定"
+        ],
+        "residual": [
+          "母鸡踝部金色结节与腿比例仍需精修",
+          "天然羽毛材质与关节轮廓仍需逐部件审核"
+        ]
+      }
+    }
+  ],
+  "visual": "failed",
+  "improvements": [
+    "腾空按原骨长IK收腿、落地恢复归零",
+    "受击方独立后撤及头颈收回",
+    "轮廓羽从接触颈部脱落，稳定事件ID和seek",
+    "删除没有后续攻击的第二悬空弹跳，扑翅两端过渡到idle",
+    "母鸡按部件使用额外源，保留其余14件旧映射与原始源字节",
+    "母鸡羽毛股件在躯干后层，不再折叠到前胸形成金黄残块",
+    "1–12只鸡可选全母鸡、全公鸡或混合群，显示实际足底地面基准",
+    "起步idle到walk补连续姿势，首支撑足按原始source地标保持接地，后续与停步继承起步offset"
+  ],
+  "reviewEvidence": [
+    "ui-fight-phase150-full.png",
+    "ui-fight-recorded-full.png",
+    "ui-hen-v5-phase150-full.png",
+    "lay-capture-v1/contact-sheet.png",
+    "crow-capture-v1/contact-sheet.png",
+    "fight-capture-v2/contact-sheet.png",
+    "ui-fight-v7-phase150-film-full.png",
+    "ui-hen-v6-phase325-full.png",
+    "ui-hen-v6-phase440-film-full.png",
+    "ui-mixed-v8-phase210-full.png",
+    "lay-capture-v2/contact-sheet.png",
+    "mixed-flock-capture-v1/contact-sheet.png",
+    "mixed-flock-capture-v2/contact-sheet.png",
+    "ui-mixed-v9-phase010-full.png",
+    "ui-mixed-v9-phase210-film-full.png"
+  ],
+  "tests": {
+    "count": 273,
+    "passed": 273,
+    "failed": 0,
+    "log": "full-regression.log",
+    "scope": "当时各source/recipe+核心/导出/地图/UI技术测试；后续任何改动另复测"
+  },
+  "codeSHA256": {
+    "chicken-scene-core.mjs": "c24786203b041af50c1c06852553f5fcc52e54590ce7853a84737bdd7ab036fa",
+    "chicken-scene-renderer.mjs": "ba63a0ca3b09e130bb1da7f56f31bfcc9b651a4cd856b1950e3bfc8e4af3f89f",
+    "skin-renderer.mjs": "47eb0a553ffd348bb4ed09046913bf9b8eec9093c81657226a7a6addb2233cde",
+    "public/chicken-scene.mjs": "ec6ac80e9e02f833bac25664f86e7a55e26fb0ee662fae85b6ed71830c9153db",
+    "public/app.mjs": "2964a4629113a555710cb7405b35edcfd7d69d70bb81139474fc9f0969f4a29d",
+    "server.mjs": "c06713d917f77ffbd1222d7cdbcf5a1b39b5681e5169e0a0117ab5e15f719d13"
+  },
+  "acceptance": "技术可用候选，仍需修已观察的美术缺陷，尚未全角色验收",
+  "normalVideoPlayback": {
+    "observed": true,
+    "actualVideo": [
+      1280,
+      720
+    ],
+    "durationSeconds": 3.998762,
+    "entry": "/lab/chicken-scene",
+    "scope": "fight-capture-v2/chicken-fight.webm"
+  },
+  "previousObservedVersions": {
+    "choreography": 7,
+    "renderer": 5,
+    "captureAssets": {
+      "lay-capture-v1": {
+        "rooster": "chicken-side-v4",
+        "hen": "chicken-hen-side-v5"
+      },
+      "crow-capture-v1": {
+        "rooster": "chicken-side-v4",
+        "hen": "chicken-hen-side-v5"
+      },
+      "fight-capture-v2": {
+        "rooster": "chicken-side-v4",
+        "hen": "chicken-hen-side-v5"
+      }
+    }
+  },
+  "subsequentTests": [
+    {
+      "count": 274,
+      "passed": 274,
+      "failed": 0,
+      "log": "full-regression-hen-v6.log",
+      "scope": "hen6/source与当时各模块全回归，先于新sex factory测试"
+    },
+    {
+      "count": 11,
+      "passed": 11,
+      "failed": 0,
+      "log": "mixed-flock-core-tests.log",
+      "scope": "编排8包括混合/全母鸡/全公鸡"
+    },
+    {
+      "count": 19,
+      "passed": 19,
+      "failed": 0,
+      "log": "start-transition-v9-retest.log",
+      "scope": "起步公母双朝向、接地、固定骨长、延迟边界、既有1–12安全框与场景渲染"
+    }
+  ],
+  "codeSHA256Scope": "编排7/渲染5首次报告时的历史快照，后续电影使用其capture不可变配置",
+  "normalVideoPlaybackFlock": {
+    "observed": true,
+    "actualVideo": [
+      1280,
+      720
+    ],
+    "durationSeconds": 5.985484,
+    "scope": "mixed-flock-capture-v2/chicken-flock.webm"
+  }
+}

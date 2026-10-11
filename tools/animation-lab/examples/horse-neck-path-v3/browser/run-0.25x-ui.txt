@@ -1,0 +1,69 @@
+- main:
+  - link "返回马动作库":
+    - /url: /lab/horse
+  - heading "马颈路径 · 诊断候选" [level=1]
+  - paragraph: horse-side-v24 · binding 24 · 4 实际 PNG 源 · neck-path-v3 未生产启用
+  - paragraph: 左侧：当前生产绑定。右侧：neck-path-v3 候选。生产默认未改变，美术仍未通过。
+  - text: 动作
+  - combobox "动作":
+    - option "低头吃草"
+    - option "行走"
+    - option "快跑" [selected]
+    - option "跳跃"
+    - option "扬前蹄"
+  - text: 速度
+  - combobox "速度":
+    - option "正常 1×"
+    - option "慢放 0.25×" [selected]
+  - text: 背景
+  - combobox "背景":
+    - option "浅色" [selected]
+    - option "深色"
+  - button "播放"
+  - button "回到起势"
+  - generic "生产与候选真实源图对比"
+  - generic: 动作相位
+  - slider "动作相位": "0"
+  - status: 0.000 / 0.650s · 相位 0.0000 · 2548 三角形
+  - generic "16 帧固定机位":
+    - button "关键帧 1 相位 0.0000" [pressed]:
+      - generic: 1 · 0.000
+    - button "关键帧 2 相位 0.0625":
+      - generic: 2 · 0.063
+    - button "关键帧 3 相位 0.1250":
+      - generic: 3 · 0.125
+    - button "关键帧 4 相位 0.1875":
+      - generic: 4 · 0.188
+    - button "关键帧 5 相位 0.2500":
+      - generic: 5 · 0.250
+    - button "关键帧 6 相位 0.3125":
+      - generic: 6 · 0.313
+    - button "关键帧 7 相位 0.3750":
+      - generic: 7 · 0.375
+    - button "关键帧 8 相位 0.4375":
+      - generic: 8 · 0.438
+    - button "关键帧 9 相位 0.5000":
+      - generic: 9 · 0.500
+    - button "关键帧 10 相位 0.5625":
+      - generic: 10 · 0.563
+    - button "关键帧 11 相位 0.6250":
+      - generic: 11 · 0.625
+    - button "关键帧 12 相位 0.6875":
+      - generic: 12 · 0.688
+    - button "关键帧 13 相位 0.7500":
+      - generic: 13 · 0.750
+    - button "关键帧 14 相位 0.8125":
+      - generic: 14 · 0.813
+    - button "关键帧 15 相位 0.8750":
+      - generic: 15 · 0.875
+    - button "关键帧 16 相位 0.9375":
+      - generic: 16 · 0.938
+  - button "导出当前对比 PNG"
+  - button "导出 16 帧对比包"
+  - button "拍摄一轮"
+  - status: 拍摄结束。需看真实电影、PNG并校验时序；美术仍未通过。
+  - heading "实际拍摄" [level=2]
+  - button "下载视频"
+  - button "下载视频与逐帧包" [active]
+  - paragraph: run · 0.25× · 32 PNG · 1024×420 · 12FPS · 生产默认保持 v24
+  - generic "素材和复测状态"

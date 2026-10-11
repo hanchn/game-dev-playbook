@@ -1,0 +1,8 @@
+file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/scripts/verify-scene-capture.mjs:22
+if(timestamps.length<manifest.frames.length){const failure={status:'failed',kind:'encoded-source-frames-missing',choreographyVersion:manifest.choreographyVersion,rendererVersion:manifest.rendererVersion,sourcePNGCount:manifest.frames.length,encodedVideoFrames:timestamps.length,sourceSHA:true,pngSHA:true,movieSHA:true,probe,receipt:manifest.receipt,notes:'requestFrame count is not encoded frame count; investigate render cost and browser frame coalescing before accepting the video.'};await fs.writeFile(path.join(out,'validation-failure.json'),JSON.stringify(failure,null,2));throw Error(`Video encoded ${timestamps.length} frames for ${manifest.frames.length} source PNGs; capture failed.`);}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^
+
+Error: Video encoded 37 frames for 72 source PNGs; capture failed.
+    at file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/scripts/verify-scene-capture.mjs:22:586
+
+Node.js v26.7.0

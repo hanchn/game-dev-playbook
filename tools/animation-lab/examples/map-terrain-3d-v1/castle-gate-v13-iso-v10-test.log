@@ -1,0 +1,44 @@
+✔ isometric projection/inverse preserves negative and fractional world coordinates (0.564917ms)
+✔ seeded overlapping windows share tiles and object identity/depth (68.111125ms)
+✔ style switches choose actual different sprite pools and water policies (45.965042ms)
+✔ disc motion blocks water tile and building without tunnelling (0.359625ms)
+✔ invalid regions and styles fail visibly (0.09925ms)
+✔ offline export has PNG, source hashes, copied sprite references and collision data (299.458042ms)
+✔ castle uses an original-model-derived native 1024px PNG with a measured ground anchor (37.704208ms)
+✔ isometric castle compound walls preserve the real source arch and shared window identity (52.842833ms)
+✔ derived vegetation references actual source pixels, uses varied geometry and aligned jittered colliders (60.0375ms)
+✔ continuous source ground uses identical negative world pixels across independently clipped regions (56.424583ms)
+✔ actual water atlas renders texture detail with stable negative-world pattern across independent river windows (124.587167ms)
+✔ 33 sprite modules use shared source layout and cropped pixels, with full export framing (235.210125ms)
+✔ same seed produces identical geometry, layers, props and negative global samples (77.53275ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (55.8945ms)
+✔ three styles change actual geometry and model sets (54.564666ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (27.411958ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.5505ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.142458ms)
+✔ water and steep ground deny actual actor movement (0.099833ms)
+✔ object colliders reflect measured source model proportions (26.535417ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.646541ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (66.13625ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (123.604625ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (228.743209ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (198.819875ms)
+✔ castle source modules form 33 unique layered parts, feature range limits avoid unbounded work (12.399375ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (17.525042ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.257958ms)
+✔ barren theme uses distinct bare-rock PBR, no water/buildings and gray object materials (21.232833ms)
+✔ actual source cave fixture faces downhill with flat entrance and a passable aperture (11.574209ms)
+✔ cave ground floor remains deterministic and continuous across adjacent negative chunks (71.207375ms)
+✔ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (25.889667ms)
+✔ native cave carve rejects crossing a stream instead of raising its channel (6.776125ms)
+✔ stream ribbon rounded joints and smooth channel keep actual 1m mesh above-water holes closed (19.293083ms)
+✔ preview collision samples actual mesh triangles rather than a different bilinear surface (55.584583ms)
+✔ layered castle native bounds, stack continuity, complete gate and exported source layout (130.16375ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1333.354333

@@ -1,0 +1,21 @@
+✔ same seed reproduces tiles independent of query order (2.038459ms)
+✔ negative coordinates use floor chunk coordinates with nonnegative local indices (0.099542ms)
+✔ adjacent chunks agree with direct global samples, including all shared boundaries (7.12275ms)
+✔ elevation and moisture have no discontinuity at chunk edges (1.826459ms)
+✔ cache never exceeds budget, evicts remote chunks, restores identical content (30.225ms)
+✔ parameter validation rejects invalid seeds, sizes, coordinates and cache budget (0.364792ms)
+✔ export schema includes stable row-major positions, traversal and resources (1.105125ms)
+✔ connectivity avoids row-wrap, picks safe spawn and rejects inaccessible spawn (0.343125ms)
+✔ biome and resource coverage across fixed seeds (148.558375ms)
+✔ tool entry point validates operation and emits independent versioned schemas (1.542084ms)
+✔ CLI invalid arguments and blocked regions return distinct machine-readable exit codes (140.885166ms)
+✔ vendored upstream Python chunks reproduce on return and Tiled uses negative origins (73.002833ms)
+✔ vendored source hashes are locked and upstream Python behavior is preserved (96.280084ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 568.229125

@@ -1,0 +1,50 @@
+{
+  "pngCount": 36,
+  "pngSHA": true,
+  "sourceSHA": true,
+  "movieSHA": true,
+  "rendererVersion": 6,
+  "choreographyVersion": 10,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 1280,
+        "height": 720,
+        "nb_read_frames": "37"
+      },
+      {
+        "codec_name": "opus",
+        "nb_read_frames": "45"
+      }
+    ],
+    "format": {
+      "duration": "2.999495"
+    }
+  },
+  "decodedVideo": {
+    "frames": 37,
+    "terminalHoldFrames": 1,
+    "rgbMAE": {
+      "mean": 1.2023468243634259,
+      "max": 1.9479065393518518
+    },
+    "ptsMaxErrorSeconds": 0.008000000000000007
+  },
+  "visual": "not-reviewed",
+  "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+  "audio": {
+    "sourceSHA": true,
+    "decodedSamples": 129600,
+    "measuredAudibleInterval": [
+      0.86,
+      2.4299999999999997
+    ],
+    "expectedCueStart": 0.8,
+    "expectedCueEnd": 2.7,
+    "peak": 0.2747938418918944,
+    "naturalSoundReview": "not-listened"
+  }
+}

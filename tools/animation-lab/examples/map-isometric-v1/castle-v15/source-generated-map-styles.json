@@ -1,0 +1,249 @@
+{
+  "schema": "map-scene-source/v1",
+  "upstream": {
+    "url": "https://github.com/Wangscape/Wangscape",
+    "commit": "b01cb310f97e33394c1c0fac23a7f40c34f632cf",
+    "license": "MIT",
+    "source": "Wangscape/tilegen/alpha/CalculatorTopTwo.cpp",
+    "retained": "map-vendor/wangscape/CalculatorTopTwo.cpp",
+    "sha256": "b557b759d447e4ae08167c8fdb33bcb50db8649c04ea9ce57b71a9c3043a3dd3",
+    "port": "map-vendor/wangscape-top-two.mjs",
+    "portSHA256": "fcdaa3bad1e12d069ed261dfee02ba1c0bcd5933caed2a8b919d6709f31ec783",
+    "scope": "Actual calculateTopTwoInfo + updateAlphasAux equivalent port; original epsilon, pair sorting and byte-share. No C++ GUI/libnoise/full Wangscape build claim."
+  },
+  "evaluated": [
+    {
+      "url": "https://github.com/tsoding/wang-tiles",
+      "commit": "0aebe3bb5d4ded4a163ed597b0cc7790177333e9",
+      "decision": "Not reused: finite rand/time edge-grid demo and X11 renderer are unsuitable for the seeded streamed top-down world."
+    }
+  ],
+  "terrainAlgorithmProvenance": "map-vendor/SOURCE.json",
+  "art": [
+    {
+      "id": "painted",
+      "name": "手绘森林",
+      "description": "温暖手绘草地、湖岸与树冠",
+      "pixelated": false,
+      "version": 1,
+      "atlas": "/map-styles/painted-atlas-v1.png",
+      "grid": {
+        "columns": 4,
+        "rows": 3
+      },
+      "terrainCells": [
+        "grass",
+        "earth",
+        "sand",
+        "ocean",
+        "water",
+        "rock",
+        "snow",
+        "marsh"
+      ],
+      "propCells": [
+        "tree",
+        "rock",
+        "shrub",
+        "cactus"
+      ],
+      "bytes": 2863469,
+      "sha256": "00010acaebdc030e88a6789ce3c5b8e9dc163c9ed6208c9df90468eb83984208",
+      "width": 1448,
+      "height": 1086,
+      "generatedBy": "built-in image_gen",
+      "promptPath": "public/map-styles/generation-prompts.json",
+      "visualStatus": "candidate-user-discovered-defects-fixed-pending-acceptance",
+      "registeredAtlas": {
+        "width": 1448,
+        "height": 1086,
+        "x": [
+          0,
+          374,
+          748,
+          1120,
+          1448
+        ],
+        "y": [
+          0,
+          362,
+          725,
+          1086
+        ]
+      }
+    },
+    {
+      "id": "pixel",
+      "name": "复古像素",
+      "description": "16-bit 地表、清晰像素轮廓",
+      "pixelated": true,
+      "version": 1,
+      "atlas": "/map-styles/pixel-atlas-v1.png",
+      "grid": {
+        "columns": 4,
+        "rows": 3
+      },
+      "terrainCells": [
+        "grass",
+        "earth",
+        "sand",
+        "ocean",
+        "water",
+        "rock",
+        "snow",
+        "marsh"
+      ],
+      "propCells": [
+        "tree",
+        "rock",
+        "shrub",
+        "cactus"
+      ],
+      "bytes": 2342714,
+      "sha256": "a424d5b209042aee044a1365b35ab7b67bb61ff948efc39b97085816617048ec",
+      "width": 1448,
+      "height": 1086,
+      "generatedBy": "built-in image_gen",
+      "promptPath": "public/map-styles/generation-prompts.json",
+      "visualStatus": "candidate-user-discovered-defects-fixed-pending-acceptance",
+      "registeredAtlas": {
+        "width": 1448,
+        "height": 1086,
+        "x": [
+          0,
+          374,
+          748,
+          1120,
+          1448
+        ],
+        "y": [
+          0,
+          373,
+          747,
+          1086
+        ]
+      }
+    },
+    {
+      "id": "scifi",
+      "name": "科幻荒原",
+      "description": "紫色苔原、晶体与发光菌群",
+      "pixelated": false,
+      "version": 1,
+      "atlas": "/map-styles/scifi-atlas-v1.png",
+      "grid": {
+        "columns": 4,
+        "rows": 3
+      },
+      "terrainCells": [
+        "grass",
+        "earth",
+        "sand",
+        "ocean",
+        "water",
+        "rock",
+        "snow",
+        "marsh"
+      ],
+      "propCells": [
+        "tree",
+        "rock",
+        "shrub",
+        "cactus"
+      ],
+      "bytes": 3203695,
+      "sha256": "15217e98a3fc7a8233ad566d70136522f58525db5ca6c86af647f22eacd99d31",
+      "width": 1448,
+      "height": 1086,
+      "generatedBy": "built-in image_gen",
+      "promptPath": "public/map-styles/generation-prompts.json",
+      "visualStatus": "candidate-user-discovered-defects-fixed-pending-acceptance",
+      "registeredAtlas": {
+        "width": 1448,
+        "height": 1086,
+        "x": [
+          0,
+          362,
+          725,
+          1086,
+          1448
+        ],
+        "y": [
+          0,
+          362,
+          723,
+          1086
+        ]
+      }
+    }
+  ],
+  "codec": {
+    "package": "pngjs",
+    "testedVersion": "7.0.0",
+    "source": "npm registry / Codex bundled runtime",
+    "scope": "Actual PNG decoding and encoding; atlas pixels unchanged on disk."
+  },
+  "presentationAlgorithm": "wangscape-top-two-registered-stochastic-textures-v2",
+  "atlasRegistration": {
+    "method": "Measured vertical RGB discontinuities and horizontal RGB/alpha discontinuities, then explicit per-style coordinates; never infer equal cell size from AI grid labels.",
+    "referenceSize": [
+      1448,
+      1086
+    ],
+    "boundaries": {
+      "painted": {
+        "width": 1448,
+        "height": 1086,
+        "x": [
+          0,
+          374,
+          748,
+          1120,
+          1448
+        ],
+        "y": [
+          0,
+          362,
+          725,
+          1086
+        ]
+      },
+      "pixel": {
+        "width": 1448,
+        "height": 1086,
+        "x": [
+          0,
+          374,
+          748,
+          1120,
+          1448
+        ],
+        "y": [
+          0,
+          373,
+          747,
+          1086
+        ]
+      },
+      "scifi": {
+        "width": 1448,
+        "height": 1086,
+        "x": [
+          0,
+          362,
+          725,
+          1086,
+          1448
+        ],
+        "y": [
+          0,
+          362,
+          723,
+          1086
+        ]
+      }
+    },
+    "terrainSamplingGuardPixels": 10,
+    "propSamplingGuardPixels": 6
+  }
+}

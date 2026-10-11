@@ -1,0 +1,880 @@
+{
+  "schema": "styled-terrain-3d-export/v1",
+  "algorithm": "procedural-terrains-7452c2c-cpu-rounded-stream-endpools-v8",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "dunes",
+    "preset": "desertDunes",
+    "scale": 64,
+    "height": 24,
+    "waterLevel": 0.17,
+    "vegetation": 0.14
+  },
+  "region": {
+    "x": 2,
+    "z": -6,
+    "width": 3,
+    "depth": 3
+  },
+  "resolution": 32,
+  "environmentBundle": {
+    "terrain": "sandy_gravel",
+    "water": {
+      "color": "#38b7aa",
+      "roughness": 0.14,
+      "opacity": 0.7,
+      "waveScale": 4,
+      "waveStrength": 0.055,
+      "waveSpeed": 0.22
+    },
+    "lighting": {
+      "sky": "#dcc7a3",
+      "sun": "#ffdea6",
+      "intensity": 3.1
+    },
+    "models": [
+      "tree_palm",
+      "cactus_tall",
+      "rock_largeB"
+    ],
+    "assetStyle": "oasis palms/cacti + sand PBR"
+  },
+  "shader": {
+    "terrain": "global-continuous-four-corner-pbr-v1",
+    "water": "world-continuous-theme-water-v1",
+    "portableGlb": false,
+    "standardGlbUsesOriginalTextures": true
+  },
+  "chunkSize": 32,
+  "terrainFile": "scene.glb",
+  "props": [
+    {
+      "id": "13:-35",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        66.21,
+        5.220012187957764,
+        -173.21
+      ],
+      "yaw": 4.5,
+      "height": 3.92,
+      "collider": {
+        "id": "13:-35",
+        "type": "conservative-cylinder",
+        "x": 66.21,
+        "z": -173.21,
+        "y": 5.220012187957764,
+        "height": 3.92,
+        "radius": 1.3629245362208346,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "14:-35",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        71.48,
+        4.5365095138549805,
+        -174.27
+      ],
+      "yaw": 5.58,
+      "height": 1.52,
+      "collider": {
+        "id": "14:-35",
+        "type": "conservative-cylinder",
+        "x": 71.48,
+        "z": -174.27,
+        "y": 4.5365095138549805,
+        "height": 1.52,
+        "radius": 2.247573828483431,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "28:-38",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        143.58,
+        4.29493522644043,
+        -187.18
+      ],
+      "yaw": 2.23,
+      "height": 3.4899999999999998,
+      "collider": {
+        "id": "28:-38",
+        "type": "conservative-cylinder",
+        "x": 143.58,
+        "z": -187.18,
+        "y": 4.29493522644043,
+        "height": 3.4899999999999998,
+        "radius": 1.213420059033345,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "30:-34",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        151.37,
+        4.41471004486084,
+        -167.4
+      ],
+      "yaw": 1.52,
+      "height": 3.38,
+      "collider": {
+        "id": "30:-34",
+        "type": "conservative-cylinder",
+        "x": 151.37,
+        "z": -167.4,
+        "y": 4.41471004486084,
+        "height": 3.38,
+        "radius": 1.1751747276598012,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "15:-31",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        78.26,
+        5.200342178344727,
+        -151.33
+      ],
+      "yaw": 1.63,
+      "height": 1.43,
+      "collider": {
+        "id": "15:-31",
+        "type": "conservative-cylinder",
+        "x": 78.26,
+        "z": -151.33,
+        "y": 5.200342178344727,
+        "height": 1.43,
+        "radius": 2.1144937991653325,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "16:-31",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        80.18,
+        5.147333145141602,
+        -151.32
+      ],
+      "yaw": 0.16,
+      "height": 1.16,
+      "collider": {
+        "id": "16:-31",
+        "type": "conservative-cylinder",
+        "x": 80.18,
+        "z": -151.32,
+        "y": 5.147333145141602,
+        "height": 1.16,
+        "radius": 1.715253711211039,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "18:-30",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        91.52,
+        4.948650360107422,
+        -146.35
+      ],
+      "yaw": 5.38,
+      "height": 3.92,
+      "collider": {
+        "id": "18:-30",
+        "type": "conservative-cylinder",
+        "x": 91.52,
+        "z": -146.35,
+        "y": 4.948650360107422,
+        "height": 3.92,
+        "radius": 1.3629245362208346,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "16:-29",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        80.3,
+        5.629666328430176,
+        -141.06
+      ],
+      "yaw": 2.52,
+      "height": 3.82,
+      "collider": {
+        "id": "16:-29",
+        "type": "conservative-cylinder",
+        "x": 80.3,
+        "z": -141.06,
+        "y": 5.629666328430176,
+        "height": 3.82,
+        "radius": 1.3281560531539764,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "19:-28",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        95.8,
+        5.025722980499268,
+        -138.61
+      ],
+      "yaw": 1.66,
+      "height": 1.7,
+      "collider": {
+        "id": "19:-28",
+        "type": "conservative-cylinder",
+        "x": 95.8,
+        "z": -138.61,
+        "y": 5.025722980499268,
+        "height": 1.7,
+        "radius": 2.5137338871196264,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "21:-30",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        105.74,
+        4.399312973022461,
+        -149.09
+      ],
+      "yaw": 5.27,
+      "height": 3.73,
+      "collider": {
+        "id": "21:-30",
+        "type": "conservative-cylinder",
+        "x": 105.74,
+        "z": -149.09,
+        "y": 4.399312973022461,
+        "height": 3.73,
+        "radius": 1.6976779826025907,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "21:-28",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        108.71,
+        4.721691131591797,
+        -138.07
+      ],
+      "yaw": 5.42,
+      "height": 3.36,
+      "collider": {
+        "id": "21:-28",
+        "type": "conservative-cylinder",
+        "x": 108.71,
+        "z": -138.07,
+        "y": 4.721691131591797,
+        "height": 3.36,
+        "radius": 1.5292756089932187,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "22:-28",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        113.55,
+        4.471437931060791,
+        -138.72
+      ],
+      "yaw": 3.8,
+      "height": 3.38,
+      "collider": {
+        "id": "22:-28",
+        "type": "conservative-cylinder",
+        "x": 113.55,
+        "z": -138.72,
+        "y": 4.471437931060791,
+        "height": 3.38,
+        "radius": 1.1751747276598012,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "23:-26",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        117.36,
+        4.987037181854248,
+        -128.61
+      ],
+      "yaw": 3.72,
+      "height": 4.22,
+      "collider": {
+        "id": "23:-26",
+        "type": "conservative-cylinder",
+        "x": 117.36,
+        "z": -128.61,
+        "y": 4.987037181854248,
+        "height": 4.22,
+        "radius": 1.4672299854214086,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "13:-22",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        67.95,
+        9.101585388183594,
+        -109.92
+      ],
+      "yaw": 4.85,
+      "height": 1.6400000000000001,
+      "collider": {
+        "id": "13:-22",
+        "type": "conservative-cylinder",
+        "x": 67.95,
+        "z": -109.92,
+        "y": 9.101585388183594,
+        "height": 1.6400000000000001,
+        "radius": 2.4250138675742283,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "16:-21",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        83.19,
+        9.668966293334961,
+        -103.24
+      ],
+      "yaw": 2.04,
+      "height": 3.3,
+      "collider": {
+        "id": "16:-21",
+        "type": "conservative-cylinder",
+        "x": 83.19,
+        "z": -103.24,
+        "y": 9.668966293334961,
+        "height": 3.3,
+        "radius": 1.5019671159754826,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "24:-23",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        123.66,
+        6.299828052520752,
+        -114
+      ],
+      "yaw": 4.23,
+      "height": 3.4099999999999997,
+      "collider": {
+        "id": "24:-23",
+        "type": "conservative-cylinder",
+        "x": 123.66,
+        "z": -114,
+        "y": 6.299828052520752,
+        "height": 3.4099999999999997,
+        "radius": 1.1856052725798585,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "23:-20",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        118.81,
+        8.982126235961914,
+        -98.25
+      ],
+      "yaw": 1.88,
+      "height": 3.58,
+      "collider": {
+        "id": "23:-20",
+        "type": "conservative-cylinder",
+        "x": 118.81,
+        "z": -98.25,
+        "y": 8.982126235961914,
+        "height": 3.58,
+        "radius": 1.6294067500582508,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "28:-22",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        140.92,
+        5.376801013946533,
+        -108.32
+      ],
+      "yaw": 6.07,
+      "height": 3.69,
+      "collider": {
+        "id": "28:-22",
+        "type": "conservative-cylinder",
+        "x": 140.92,
+        "z": -108.32,
+        "y": 5.376801013946533,
+        "height": 3.69,
+        "radius": 1.6794723205907667,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "30:-21",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        152.82,
+        4.734838485717773,
+        -104.26
+      ],
+      "yaw": 4.52,
+      "height": 3.94,
+      "collider": {
+        "id": "30:-21",
+        "type": "conservative-cylinder",
+        "x": 152.82,
+        "z": -104.26,
+        "y": 4.734838485717773,
+        "height": 3.94,
+        "radius": 1.369878232834206,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "26:-20",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        132.79,
+        7.177062511444092,
+        -99.07
+      ],
+      "yaw": 0.48,
+      "height": 1.74,
+      "collider": {
+        "id": "26:-20",
+        "type": "conservative-cylinder",
+        "x": 132.79,
+        "z": -99.07,
+        "y": 7.177062511444092,
+        "height": 1.74,
+        "radius": 2.5728805668165586,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "漫游-2026:0,-1:3",
+      "type": "hill",
+      "position": {
+        "x": 88.21826655864714,
+        "z": -91.45067736506462
+      },
+      "footprint": {
+        "width": 20.48,
+        "depth": 20.48
+      },
+      "surfaceHeight": 10.604290962219238,
+      "status": "validated",
+      "validation": {
+        "placement": "terrain-sampled",
+        "visual": "not-reviewed",
+        "samples": 1
+      },
+      "collider": null
+    }
+  ],
+  "materials": {
+    "sourcePack": "polyhaven-pbr",
+    "id": "sandy_gravel",
+    "metersPerRepeat": 5
+  },
+  "collision": {
+    "terrain": "global NoiseStack + deterministic feature carve/foundation sampling",
+    "objects": [
+      {
+        "id": "13:-35",
+        "type": "conservative-cylinder",
+        "x": 66.21,
+        "z": -173.21,
+        "y": 5.220012187957764,
+        "height": 3.92,
+        "radius": 1.3629245362208346,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "14:-35",
+        "type": "conservative-cylinder",
+        "x": 71.48,
+        "z": -174.27,
+        "y": 4.5365095138549805,
+        "height": 1.52,
+        "radius": 2.247573828483431,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "28:-38",
+        "type": "conservative-cylinder",
+        "x": 143.58,
+        "z": -187.18,
+        "y": 4.29493522644043,
+        "height": 3.4899999999999998,
+        "radius": 1.213420059033345,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "30:-34",
+        "type": "conservative-cylinder",
+        "x": 151.37,
+        "z": -167.4,
+        "y": 4.41471004486084,
+        "height": 3.38,
+        "radius": 1.1751747276598012,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "15:-31",
+        "type": "conservative-cylinder",
+        "x": 78.26,
+        "z": -151.33,
+        "y": 5.200342178344727,
+        "height": 1.43,
+        "radius": 2.1144937991653325,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "16:-31",
+        "type": "conservative-cylinder",
+        "x": 80.18,
+        "z": -151.32,
+        "y": 5.147333145141602,
+        "height": 1.16,
+        "radius": 1.715253711211039,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "18:-30",
+        "type": "conservative-cylinder",
+        "x": 91.52,
+        "z": -146.35,
+        "y": 4.948650360107422,
+        "height": 3.92,
+        "radius": 1.3629245362208346,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "16:-29",
+        "type": "conservative-cylinder",
+        "x": 80.3,
+        "z": -141.06,
+        "y": 5.629666328430176,
+        "height": 3.82,
+        "radius": 1.3281560531539764,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "19:-28",
+        "type": "conservative-cylinder",
+        "x": 95.8,
+        "z": -138.61,
+        "y": 5.025722980499268,
+        "height": 1.7,
+        "radius": 2.5137338871196264,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "21:-30",
+        "type": "conservative-cylinder",
+        "x": 105.74,
+        "z": -149.09,
+        "y": 4.399312973022461,
+        "height": 3.73,
+        "radius": 1.6976779826025907,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "21:-28",
+        "type": "conservative-cylinder",
+        "x": 108.71,
+        "z": -138.07,
+        "y": 4.721691131591797,
+        "height": 3.36,
+        "radius": 1.5292756089932187,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "22:-28",
+        "type": "conservative-cylinder",
+        "x": 113.55,
+        "z": -138.72,
+        "y": 4.471437931060791,
+        "height": 3.38,
+        "radius": 1.1751747276598012,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "23:-26",
+        "type": "conservative-cylinder",
+        "x": 117.36,
+        "z": -128.61,
+        "y": 4.987037181854248,
+        "height": 4.22,
+        "radius": 1.4672299854214086,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "13:-22",
+        "type": "conservative-cylinder",
+        "x": 67.95,
+        "z": -109.92,
+        "y": 9.101585388183594,
+        "height": 1.6400000000000001,
+        "radius": 2.4250138675742283,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "16:-21",
+        "type": "conservative-cylinder",
+        "x": 83.19,
+        "z": -103.24,
+        "y": 9.668966293334961,
+        "height": 3.3,
+        "radius": 1.5019671159754826,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "24:-23",
+        "type": "conservative-cylinder",
+        "x": 123.66,
+        "z": -114,
+        "y": 6.299828052520752,
+        "height": 3.4099999999999997,
+        "radius": 1.1856052725798585,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "23:-20",
+        "type": "conservative-cylinder",
+        "x": 118.81,
+        "z": -98.25,
+        "y": 8.982126235961914,
+        "height": 3.58,
+        "radius": 1.6294067500582508,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "28:-22",
+        "type": "conservative-cylinder",
+        "x": 140.92,
+        "z": -108.32,
+        "y": 5.376801013946533,
+        "height": 3.69,
+        "radius": 1.6794723205907667,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_palm.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "30:-21",
+        "type": "conservative-cylinder",
+        "x": 152.82,
+        "z": -104.26,
+        "y": 4.734838485717773,
+        "height": 3.94,
+        "radius": 1.369878232834206,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cactus_tall.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "26:-20",
+        "type": "conservative-cylinder",
+        "x": 132.79,
+        "z": -99.07,
+        "y": 7.177062511444092,
+        "height": 1.74,
+        "radius": 2.5728805668165586,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    ],
+    "sweepFunction": "sweepTerrainMotion",
+    "triangleMesh": false
+  },
+  "noiseStack": {
+    "version": 1,
+    "globalSeed": 925300048,
+    "normalizeOutput": false,
+    "outputMin": 0,
+    "outputMax": 1.35,
+    "layers": [
+      {
+        "id": "layer-0",
+        "name": "Base",
+        "enabled": true,
+        "type": "fbm",
+        "blendMode": "add",
+        "strength": 0.3,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 0.6,
+          "octaves": 3,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-1",
+        "name": "Dunes",
+        "enabled": true,
+        "type": "dune",
+        "blendMode": "add",
+        "strength": 0.35,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 1.4,
+          "windDir": 0.7,
+          "sharpness": 1.4,
+          "rippleScale": 4,
+          "rippleStrength": 0.12
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-2",
+        "name": "Grain",
+        "enabled": true,
+        "type": "white",
+        "blendMode": "add",
+        "strength": 0.02,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 10,
+          "smoothing": 1
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      }
+    ]
+  },
+  "source": "map-vendor/SOURCE-terrain-3d.json",
+  "qa": {
+    "engineImported": false,
+    "visualAccepted": false,
+    "actorCollisionsVerified": false,
+    "realGeographicData": false
+  }
+}

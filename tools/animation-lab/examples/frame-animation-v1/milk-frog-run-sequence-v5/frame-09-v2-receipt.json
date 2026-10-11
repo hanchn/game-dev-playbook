@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise localized edit of ONLY the NEAR foreground OPEN-HAND arm in this sprite. Keep same transparent1254canvas, fixed camera/scale, original exact head eyes face tongue torso BOTH legs (near high knee right, far toeoff left) and FAR curled-fist arm right unchanged. No recenter/rescale/wholebodymotion.\nThe NEAR arm now extends almost straight far left with palm x200; this jumps too far after previous passing palm650. Preserve the same shoulder(615,410) and NEAR upperarm swinging BACK toward LEFT, but bend its elbow so forearm does not fully extendback yet. Place elbow near(420,535), then forearm bends DOWN and slightlyFORWARD toward wrist(480,670), OPEN relaxed pink palm center roughly(430,740), entirely behind hipx700. Near upperarm remains clearlyback while near thigh is forward, NOT forwardarm copied. Keep full original muscular biceps and forearm volumes/lengths, shoulder-elbow-wrist smoothlyconnected; no shrinking a limb. Openfingers same identityshape, notclosedfist. Exactly2arms/2legs, erase previous farleft hand/forearm silhouette completely, no extra ghostarm. Same polished yellow highlights, white belly, black outlines and wristdots, unchanged artwork outside targetarm. Transparentbackground, no groundline/shadow/text/controls. Single sprite only.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-4f624191-89c4-4c9c-9893-f9ed8209c5f1.png",
+  "generatedFileSha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-09-v1.png",
+      "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+    }
+  ],
+  "phase": 0.75,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      246,
+      88,
+      935,
+      1114
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Near upperarm stillbackswing, elbow flexed and open palm behindhip atabout450 insteadof200; reduces8→9handjump, wholeartfailed."
+  }
+}

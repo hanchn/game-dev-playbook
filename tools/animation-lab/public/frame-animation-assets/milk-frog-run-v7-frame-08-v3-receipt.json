@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise localized edit ONLY of the FAR background CURLED-FIST arm (on image right) of this original sprite. Keep original1254x1254 transparentcanvas, fixedcamera/scale, exactoriginalheadeyesfacemouthtongue/bodywhitebelly/BOTHlegs/feet and NEAR foregroundOPEN arm crossingnearhighthigh unchanged. Permanent nearOPEN farCURLED. This is passing phase afterpreviousfarfistnear550725 and beforefrontpeaknear1100550. Originalfarfistalreadyatpeakx1080causesjump. Put FAR shoulder anatomicallybehindnearshoulder/torso, upperarm descends behindwhitebelly with elbow about(780,590); forearm bends gentlyFORWARD/UP toward wrist(865,625), same CURLEDpinkfistcenter about(915,605), lowestknuckle<y690. Mostupperarm partlyoccludedbybody, but wrist/forearm emergefromfrontedge near whitebellyx900,y650, continuousanatomicalattachment,nofloating detachedhand. Fistcenter must be about170pxcloserto body than old1070 and80pxdown. Keepfararmfullmuscularvolume/length(notthinshortlimb), same3roundedcurledknuckles. NEARopenpalm~650700 remains completely unchangedanddistinct; don'tchangetolefthandorcopynear. Exactnearforwardhighknee/farrecoverysupportandsole1202unchanged. Eraseoldfarfistrightsilhouette fully with no extraarm, sameyellowglosshighlights/blackoutlines/pinkwristdots, no restyle regions. Singletransparent originalcomposition sprite only, nofloor/shadow/text/control.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-4cc15e8b-24b4-4276-8b5a-58adba52f766.png",
+  "generatedFileSha256": "666685a34b062fe124664e0fb83216a64dec6b69eb1c70715253f71ba63d148e",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-08-v2.png",
+      "sha256": "2fb470bb97e1c8f7d5a2ac79684d72ef7f337b33bacac10ba3fb2c15276791c3"
+    }
+  ],
+  "phase": 0.6666666666666666,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      417,
+      85,
+      714,
+      1119
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Actual farfistmovesleftonly~90, requested915actual~995; stilltoo farfront. Wholeartfailed; trial notselected."
+  }
+}

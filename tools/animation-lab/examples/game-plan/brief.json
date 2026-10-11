@@ -1,0 +1,142 @@
+{
+  "title": "森林采集回合 · 规划示例",
+  "exampleOnly": true,
+  "engine": "Godot 2D",
+  "genre": "survival",
+  "platform": [
+    "desktop"
+  ],
+  "coreLoop": [
+    "外星人从营地进入森林",
+    "探索与收集木材",
+    "避开恐龙威胁",
+    "带木材返回营地结算"
+  ],
+  "objective": {
+    "description": "带回12份木材到营地",
+    "event": "quest.wood_delivered",
+    "condition": {
+      "inventoryWoodAtLeast": 12,
+      "sceneId": "camp"
+    }
+  },
+  "failure": {
+    "description": "氧气耗尽，结束本回合并可重试",
+    "event": "survival.oxygen_depleted",
+    "condition": {
+      "oxygenAtMost": 0
+    }
+  },
+  "current": {
+    "characters": [
+      {
+        "id": "alien",
+        "name": "外星探索者",
+        "role": "player",
+        "view": "side-right-orthographic",
+        "actions": [
+          "idle",
+          "walk",
+          "run",
+          "gather",
+          "interact"
+        ],
+        "availableActions": [
+          "idle",
+          "walk",
+          "run",
+          "jump",
+          "punch",
+          "squat",
+          "bend",
+          "roll",
+          "extend"
+        ],
+        "proportions": {
+          "sourceLocked": true,
+          "calibration": "current-source-required"
+        },
+        "visualStatus": "pending",
+        "assets": [
+          {
+            "id": "human-alien-v6",
+            "path": "public/art/human-alien-side-parts-v4.png",
+            "status": "existing-candidate",
+            "visualStatus": "pending",
+            "sourceVersion": 6
+          }
+        ]
+      },
+      {
+        "id": "dinosaur",
+        "name": "恐龙",
+        "role": "hazard",
+        "view": "side-right-orthographic",
+        "actions": [
+          "idle",
+          "walk",
+          "run",
+          "bite",
+          "roar"
+        ],
+        "availableActions": [
+          "idle",
+          "walk",
+          "run",
+          "jump",
+          "roar",
+          "bite",
+          "tail",
+          "extend"
+        ],
+        "proportions": {
+          "sourceLocked": true,
+          "calibration": "current-source-required"
+        },
+        "visualStatus": "pending",
+        "assets": [
+          {
+            "id": "dinosaur-side-v5",
+            "path": "public/art/dinosaur-side-parts-v5.png",
+            "status": "existing-candidate",
+            "visualStatus": "pending",
+            "sourceVersion": 5
+          }
+        ]
+      }
+    ],
+    "scenes": [
+      {
+        "id": "camp",
+        "name": "营地",
+        "purpose": "进入、交付木材和恢复回合",
+        "connections": [
+          {
+            "to": "forest",
+            "event": "player.exits_camp"
+          }
+        ]
+      },
+      {
+        "id": "forest",
+        "name": "森林",
+        "purpose": "采集与规避威胁",
+        "connections": [
+          {
+            "to": "camp",
+            "event": "player.returns_camp"
+          }
+        ]
+      }
+    ]
+  },
+  "entryScene": "camp",
+  "world": {
+    "mode": "finite",
+    "seed": "survival-01"
+  },
+  "source": {
+    "project": "game-dev-playbook",
+    "assets": "Existing source candidates; user has open visual defects, not approved game art."
+  }
+}

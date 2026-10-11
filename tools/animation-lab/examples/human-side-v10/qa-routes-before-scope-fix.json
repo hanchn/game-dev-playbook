@@ -1,0 +1,2091 @@
+{
+  "assetId": "human-side-v10",
+  "source": "/art/human-side-parts-v10.png",
+  "generatedAt": "2026-10-11T00:24:37.052Z",
+  "routes": [
+    {
+      "partId": "neck",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 颈部 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 9.92 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "neck",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 颈部 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 9.92 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "head",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 头部 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 7.51 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "head",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 头部 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 7.51 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-upper",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 近侧大腿 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 120.81 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-upper",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 近侧大腿 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 120.81 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-lower",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 近侧小腿 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 57.95 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-lower",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 近侧小腿 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 57.95 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-foot",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 近侧鞋与脚踝 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 9.92 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-foot",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 近侧鞋与脚踝 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": false,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 57.73 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": false,
+            "detail": "非选中配件变化 57.7255 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-0-upper",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 近侧上臂 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 134.17 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-0-upper",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 近侧上臂 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 86.68 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-0-lower",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 近侧前臂 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 53.92 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-0-lower",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 近侧前臂 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": false,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 86.68 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": false,
+            "detail": "非选中配件变化 56.5399 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-0-hand",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 近侧手 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 6.93 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-0-hand",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 近侧手 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": false,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 90.76 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": false,
+            "detail": "非选中配件变化 76.0474 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-upper",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 远侧大腿 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 120.81 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-upper",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 远侧大腿 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 120.81 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-lower",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 远侧小腿 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 57.95 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-lower",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 远侧小腿 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 57.95 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-foot",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 远侧鞋与脚踝 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 9.92 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-foot",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 远侧鞋与脚踝 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": false,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 57.73 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": false,
+            "detail": "非选中配件变化 57.7255 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-1-upper",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 远侧上臂 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 134.17 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-1-upper",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 远侧上臂 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 86.68 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-1-lower",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 远侧前臂 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 53.92 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-1-lower",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 远侧前臂 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": false,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 86.68 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": false,
+            "detail": "非选中配件变化 56.5399 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-1-hand",
+      "scope": "component",
+      "uiPath": "/lab → 人 → 零件 → 远侧手 → 单独测试 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 6.93 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": true,
+            "detail": "非选中配件变化 0.0000 px"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "arm-1-hand",
+      "scope": "subassembly",
+      "uiPath": "/lab → 人 → 零件 → 远侧手 → 局部组合 → 逐帧最大/最小弯曲",
+      "report": {
+        "passed": false,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 90.76 px"
+          },
+          {
+            "id": "isolation",
+            "label": "非选中肢体保持静止",
+            "passed": false,
+            "detail": "非选中配件变化 76.0474 px"
+          }
+        ],
+        "scope": "subassembly",
+        "clip": "extend",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "idle",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → idle → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "刚性骨长固定",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肢体连接连续",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "return",
+            "label": "回到动作起点",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "动作确实驱动关节",
+            "passed": true,
+            "detail": "1.65 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚踝不穿地",
+            "passed": true,
+            "detail": "0.0000 px"
+          }
+        ],
+        "clip": "idle",
+        "scope": "character",
+        "fault": "none",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "walk",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → walk → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段长度恒定",
+            "passed": true,
+            "detail": "最大误差 0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肘腕膝踝连接连续",
+            "passed": true,
+            "detail": "最大连接误差 0.0000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环连续",
+            "passed": true,
+            "detail": "最大接缝 0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "选中配件确实运动",
+            "passed": true,
+            "detail": "最大幅度 56.84 px"
+          },
+          {
+            "id": "support",
+            "label": "支撑脚不滑动",
+            "passed": true,
+            "detail": "世界坐标采样位移 0.0000 px"
+          },
+          {
+            "id": "phase",
+            "label": "两腿交替",
+            "passed": true,
+            "detail": "实测两腿相位相差半周期"
+          },
+          {
+            "id": "frozen",
+            "label": "两腿都有回摆",
+            "passed": true,
+            "detail": "最小脚端幅度 46.00 px"
+          }
+        ],
+        "scope": "character",
+        "clip": "walk",
+        "fault": "none",
+        "samples": 65,
+        "view": "side",
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "run",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → run → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "刚性骨长固定",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肢体连接连续",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "return",
+            "label": "回到动作起点",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "动作确实驱动关节",
+            "passed": true,
+            "detail": "58.06 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚踝不穿地",
+            "passed": true,
+            "detail": "0.0000 px"
+          }
+        ],
+        "clip": "run",
+        "scope": "character",
+        "fault": "none",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "jump",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → jump → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "刚性骨长固定",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肢体连接连续",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "return",
+            "label": "回到动作起点",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "动作确实驱动关节",
+            "passed": true,
+            "detail": "200.13 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚踝不穿地",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "air",
+            "label": "有起跳与落地",
+            "passed": true,
+            "detail": "腾空与落地分段"
+          }
+        ],
+        "clip": "jump",
+        "scope": "character",
+        "fault": "none",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "punch",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → punch → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "刚性骨长固定",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肢体连接连续",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "return",
+            "label": "回到动作起点",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "动作确实驱动关节",
+            "passed": true,
+            "detail": "58.35 px"
+          },
+          {
+            "id": "planted",
+            "label": "脚掌稳定支撑",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚踝不穿地",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "reach",
+            "label": "出拳有伸展距离",
+            "passed": true,
+            "detail": "76.45 px"
+          }
+        ],
+        "clip": "punch",
+        "scope": "character",
+        "fault": "none",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "squat",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → squat → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "刚性骨长固定",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肢体连接连续",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "return",
+            "label": "回到动作起点",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "动作确实驱动关节",
+            "passed": true,
+            "detail": "62.15 px"
+          },
+          {
+            "id": "planted",
+            "label": "脚掌稳定支撑",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚踝不穿地",
+            "passed": true,
+            "detail": "0.0000 px"
+          }
+        ],
+        "clip": "squat",
+        "scope": "character",
+        "fault": "none",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "bend",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → bend → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "刚性骨长固定",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肢体连接连续",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "return",
+            "label": "回到动作起点",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "动作确实驱动关节",
+            "passed": true,
+            "detail": "104.16 px"
+          },
+          {
+            "id": "planted",
+            "label": "脚掌稳定支撑",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚踝不穿地",
+            "passed": true,
+            "detail": "0.0000 px"
+          }
+        ],
+        "clip": "bend",
+        "scope": "character",
+        "fault": "none",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "roll",
+      "scope": "character",
+      "uiPath": "/lab → 人 → 完整角色 → roll → 逐帧/0.25×慢放 → 运行检查",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "刚性骨长固定",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "join",
+            "label": "肢体连接连续",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "return",
+            "label": "回到动作起点",
+            "passed": true,
+            "detail": "0.0000 px"
+          },
+          {
+            "id": "movement",
+            "label": "动作确实驱动关节",
+            "passed": true,
+            "detail": "200.09 px"
+          },
+          {
+            "id": "roll-ground",
+            "label": "翻滚按旋转后的贴图轮廓接地",
+            "passed": true,
+            "detail": "穿地 / 悬空误差 0.0000 px"
+          },
+          {
+            "id": "roll-tuck",
+            "label": "旋转前先收腿团身",
+            "passed": true,
+            "detail": "团身高度为直立 50%"
+          }
+        ],
+        "clip": "roll",
+        "scope": "character",
+        "fault": "none",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    }
+  ],
+  "textureAudit": {
+    "assetId": "human-side-v10",
+    "joints": [
+      {
+        "partId": "neck",
+        "parent": "body",
+        "samples": 65,
+        "minimumOverlapPixels": 15,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "head",
+        "parent": "neck",
+        "samples": 65,
+        "minimumOverlapPixels": 20,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "leg-0-upper",
+        "parent": "body",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "leg-0-lower",
+        "parent": "leg-0-upper",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "leg-0-foot",
+        "parent": "leg-0-lower",
+        "samples": 65,
+        "minimumOverlapPixels": 11,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "arm-0-upper",
+        "parent": "body",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "arm-0-lower",
+        "parent": "arm-0-upper",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "arm-0-hand",
+        "parent": "arm-0-lower",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "leg-1-upper",
+        "parent": "body",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "leg-1-lower",
+        "parent": "leg-1-upper",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "leg-1-foot",
+        "parent": "leg-1-lower",
+        "samples": 65,
+        "minimumOverlapPixels": 11,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "arm-1-upper",
+        "parent": "body",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "arm-1-lower",
+        "parent": "arm-1-upper",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      },
+      {
+        "partId": "arm-1-hand",
+        "parent": "arm-1-lower",
+        "samples": 65,
+        "minimumOverlapPixels": 25,
+        "centerCovered": true,
+        "passed": true
+      }
+    ],
+    "materials": [
+      {
+        "clip": "idle",
+        "hand": "relaxed",
+        "slot": 9,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "clip": "walk",
+        "hand": "relaxed",
+        "slot": 9,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "clip": "run",
+        "hand": "relaxed",
+        "slot": 9,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "clip": "jump",
+        "hand": "open",
+        "slot": 11,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          11
+        ],
+        "passed": true
+      },
+      {
+        "clip": "punch",
+        "hand": "fist",
+        "slot": 12,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          12
+        ],
+        "passed": true
+      },
+      {
+        "clip": "squat",
+        "hand": "open",
+        "slot": 11,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          11
+        ],
+        "passed": true
+      },
+      {
+        "clip": "bend",
+        "hand": "relaxed",
+        "slot": 9,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        "passed": true
+      },
+      {
+        "clip": "roll",
+        "hand": "fist",
+        "slot": 12,
+        "slots": [
+          0,
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          12
+        ],
+        "passed": true
+      }
+    ],
+    "occlusion": [
+      {
+        "id": "collar-over-neck",
+        "passed": true
+      },
+      {
+        "id": "leg-0-foot-under-cuff",
+        "passed": true
+      },
+      {
+        "id": "leg-1-foot-under-cuff",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "limitations": "Opaque overlap detects gaps, not contour bumps or color seams; bending screenshots still require visual review. Ankle overlap is sampled inside the cuff, 4px above the rotation center."
+  },
+  "technicalPassed": false,
+  "visual": "candidate-user-acceptance-pending",
+  "manualRequired": [
+    "源配件归属与解剖轮廓",
+    "接头两端弯曲时凸起和色差",
+    "完整动作逐帧自然度",
+    "游戏目标尺寸复核"
+  ]
+}

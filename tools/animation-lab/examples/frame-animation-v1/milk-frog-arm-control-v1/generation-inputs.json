@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen.imagegen",
+  "items": [
+    {
+      "index": 8,
+      "version": 5,
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-1e644f27-056e-43f8-b219-991704b5b15d.png",
+      "prompt": "Edit reference image 1, a single transparent-background native 1254x1254 frame of the SAME yellow muscular anthropomorphic milk frog running to image-right. Reference image 2 is a CODE-NATIVE ARM CONTROL ONLY for phase 8/12, not character art and not a color style. Correct ONLY the ENTIRE FAR (rear-layer) arm shoulder-to-elbow-to-wrist-to-curled-fist chain. The current pink curled fist far out to image-right is too early in the forward swing: remove that incorrect far fist and its old arm. Rebuild one connected, anatomically plausible muscular YELLOW far arm following the BLUE chain in reference 2, with NATURAL PINK fist, no blue/red lines or labels in output. The permanent FAR shoulder stays behind the near deltoid at source canvas approx (650,430), not relocated to the right belly or to a new torso socket. Upper arm slopes BACK and DOWN LEFT from shoulder to elbow approx (546,630). Then the bent forearm slopes DOWN RIGHT from that elbow to wrist approx (698,795). Elbow is moderately bent, about 70deg angle between upper-arm and forearm directions. The curled fist passes LOW near the hip axis, around x700/y800; it must NOT be a forward-extended fist around x1000/y660. A portion of the rear upper arm may naturally be occluded by the unchanged torso/near arm, but show a coherent visible elbow/forearm and same curled pink fist near the lower hip. Do not invent a third arm. This is an intermediate arm recovery/passing pose, not a front swing peak. Preserve the source's entire NEAR yellow arm and OPEN PINK PALM, head/green eyes/smile, white belly, shoulders except the rear socket correction, muscles/material/black outlines, BOTH legs and toes, their permanent near/far identity and exact pose. Preserve source camera/view/scale, native canvas framing, head size/position and every leg/foot location. Do not copy the gray torso/head diagram shapes. No shifts/scaling/fitting of the full character, no reframe, no new background, no text. Real transparency. Return ONLY one complete sprite frame.",
+      "refs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-arm-control-v1/control-08.png"
+      ],
+      "notes": [
+        "Whole far-arm control did remove early front fist, but actual elbow approx425,510 and curled fist505,665 remain extreme backswing, not control8 elbow546,630/wrist698,795. Not selected."
+      ]
+    },
+    {
+      "index": 8,
+      "version": 6,
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-686f2b59-3add-45f3-bbad-17e7e47b9ffd.png",
+      "prompt": "Use REFERENCE 1 as the EXACT FAR-ARM GEOMETRY priority; it is a code-native pose diagram, not final art. Edit the transparent yellow milk frog in REFERENCE 2. One single 1254x1254 frame. Correct only its whole far/rear curled-fist arm. The last result is STILL TOO FAR BACK: its visible rear elbow sits around (425,510) and fist around (505,665), making an extreme backswing instead of phase 8 passing. Replace that ENTIRE rear arm with the BLUE SHOULDER-ELBOW-WRIST chain of reference 1: shoulder pivot (650,430) behind the large foreground deltoid, upper arm running down-left to ELBOW (546,630), then forearm running diagonally DOWN-RIGHT to WRIST (698,795), a relaxed PINK CURLED FIST centered near (700,805). This is a large change of the whole arm's elbow and wrist, not a hand-only translation. The elbow must be LOWER and CLOSER TO THE BODY than the current extreme-back elbow. The fist must be LOWER by about 130px and FORWARD by about 190px from the current pink rear fist, near the lower-left belly/hip; it is just under the foreground open hand and before the raised front thigh. Far upper arm is hidden behind foreground deltoid and near upper arm where appropriate; show its yellow elbow and connected forearm and pink curled fist coherently. Do not attach the arm to a new point on the waist. Remove all old rear arm/fist pixels, no duplicated limb. Render the arm in the EXACT same natural YELLOW muscle/PINK fist/black-outline material as the source. No blue/red guides, no gray diagram shapes, no labels. STRICT INVARIANTS: keep the SAME near foreground arm and OPEN HAND, head/eyes/smile, torso/white belly, full BOTH legs and toes including raised leg and planted foot, pose, canvas/camera/scale/ground and alpha transparency. Do not rescale, crop, translate or alter face/body/feet. Only one clean natural character frame, no diagram.",
+      "refs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-arm-control-v1/control-08.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-1e644f27-056e-43f8-b219-991704b5b15d.png"
+      ],
+      "notes": [
+        "Repair fails permanent hand identity: near OPEN palm changed into rounded curled-looking fingers; far fist no longer separately visible. Whole-arm guide not followed. Not selected."
+      ]
+    }
+  ]
+}

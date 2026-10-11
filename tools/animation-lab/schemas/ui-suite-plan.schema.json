@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "game-ui-suite-plan-v1",
+  "title": "Codex complete game UI suite plan",
+  "type": "object",
+  "required": [
+    "schema",
+    "schemaVersion",
+    "brief",
+    "assumptions",
+    "tokens",
+    "screens",
+    "flow",
+    "hudBindings",
+    "components",
+    "assetManifest",
+    "qa",
+    "pipeline",
+    "engine",
+    "sourceScope"
+  ],
+  "properties": {
+    "schema": {
+      "const": "game-ui-suite-plan"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "brief": {
+      "$ref": "ui-suite-brief.schema.json"
+    },
+    "assumptions": {
+      "type": "array"
+    },
+    "tokens": {
+      "type": "object",
+      "required": [
+        "colors",
+        "font",
+        "spacing",
+        "radius",
+        "motion",
+        "layout"
+      ]
+    },
+    "screens": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "purpose",
+          "components",
+          "actions",
+          "layout",
+          "focus"
+        ]
+      }
+    },
+    "flow": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "event",
+          "to",
+          "mode",
+          "actionId"
+        ]
+      }
+    },
+    "hudBindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "event",
+          "update",
+          "screen"
+        ],
+        "properties": {
+          "update": {
+            "const": "event-driven"
+          }
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "size",
+          "states",
+          "textPolicy"
+        ],
+        "properties": {
+          "size": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 4096
+            }
+          },
+          "states": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "nineSlice": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "assetManifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "format",
+          "size",
+          "status",
+          "file",
+          "generator"
+        ],
+        "properties": {
+          "format": {
+            "enum": [
+              "svg",
+              "png"
+            ]
+          },
+          "status": {
+            "enum": [
+              "source-ready",
+              "reference-provided",
+              "planned",
+              "reviewed"
+            ]
+          }
+        }
+      }
+    },
+    "qa": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "scenario",
+          "expected",
+          "status"
+        ]
+      }
+    },
+    "pipeline": {
+      "type": "array",
+      "minItems": 1
+    },
+    "engine": {
+      "type": "object"
+    },
+    "sourceScope": {
+      "type": "object",
+      "required": [
+        "kind",
+        "gameImplemented",
+        "visual"
+      ],
+      "properties": {
+        "kind": {
+          "const": "codex-development-helper"
+        },
+        "gameImplemented": {
+          "const": false
+        },
+        "visual": {
+          "type": "string"
+        }
+      }
+    },
+    "gameplay": {
+      "type": "object",
+      "required": [
+        "objective",
+        "failure",
+        "conditionsExecuted"
+      ],
+      "properties": {
+        "objective": {
+          "type": "object",
+          "required": [
+            "description"
+          ]
+        },
+        "failure": {
+          "type": "object",
+          "required": [
+            "description"
+          ]
+        },
+        "conditionsExecuted": {
+          "const": false
+        }
+      }
+    }
+  }
+}

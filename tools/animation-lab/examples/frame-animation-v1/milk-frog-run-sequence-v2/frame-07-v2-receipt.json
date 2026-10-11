@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Local EDIT of reference1 frame7 only HAND STATES; all original leg geometry,body,head,camera1254square and materials remain as reference1. It accidentally swapped the permanent hands. Reference2 key0 shows correct hand identities.\nThe hand on IMAGE LEFT at source x405,y600 attached to the foreground NEAR shoulder/upperarm on left is the permanent NEAR hand. Replace its current curled FIST with the same relaxed OPEN pink four-digit hand from reference2; its wrist and armposition stay atleft/down-back. Do not move arm forward.\nThe hand on IMAGE RIGHT at x1000,y680 attached to the BACKGROUND FAR arm is the permanent FAR hand. Replace its current open palm with the same relaxed CURLED pink fist from reference2. Keep wrist/root at right/waist and preserve far arm/neararm occlusion; do not swap limbs.\nExactlytwoarms/twolegs; one open NEAR left-hand, one curled FAR right-hand. Keep existing near foreground recovery thigh/calf/foot and backgroundfar supportingleg SAME pose/shape, sole fixedsamebaseline. No finger ghosts or detachedpinkblobs. Same green-eyedface,gaze,scale/pose/shading/blackoutline/sourcepixelregistration. Transparentalpha, no crop/shadow/marks. OutputONE clean correctedframe with permanently correcthands.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3618ec19-3629-437f-b1de-0dea2a0d86e9.png",
+  "generatedFileSha256": "de05ef2d576c0b982b76fa9e061193ce6a213bffbf88135f03ba9c02b9827978",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-808abedb-aa4b-4511-878d-90c1b0fcc7ea.png",
+      "sha256": "3be6d8dc3bb606f3a81c1a9449ed8a2d0cec9348506533ab1206811629d9dcff"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+      "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+    }
+  ],
+  "phase": 1.75,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      233,
+      86,
+      874,
+      1104
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Hand states locally restored, still overly early extreme knee/arm transition."
+  }
+}

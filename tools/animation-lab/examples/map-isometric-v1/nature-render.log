@@ -1,0 +1,45 @@
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+02:39:06 | INFO: Data are loaded, start creating Blender stuff
+02:39:06 | INFO: Blender create Mesh node Mesh tree_pineTallA
+02:39:06 | INFO: glTF import finished in 0.00s
+/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/scripts/render-isometric-nature.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m.use_nodes:
+/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/scripts/render-isometric-nature.py:29: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.render.resolution_x=512;scene.render.resolution_y=512;scene.render.resolution_percentage=100;scene.render.film_transparent=True;scene.render.image_settings.file_format='PNG';scene.render.image_settings.color_mode='RGBA';scene.view_settings.view_transform='Standard';scene.world=bpy.data.worlds.new('sprite-world');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.8
+00:00.982  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/tree_pineTallA.png'
+02:39:06 | INFO: Data are loaded, start creating Blender stuff
+02:39:06 | INFO: Blender create Mesh node Mesh tree_pineTallB
+02:39:06 | INFO: glTF import finished in 0.00s
+00:01.264  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/tree_pineTallB.png'
+02:39:06 | INFO: Data are loaded, start creating Blender stuff
+02:39:06 | INFO: Blender create Mesh node Mesh tree_oak
+02:39:06 | INFO: glTF import finished in 0.00s
+00:01.546  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/tree_oak.png'
+02:39:07 | INFO: Data are loaded, start creating Blender stuff
+02:39:07 | INFO: Blender create Mesh node Mesh tree_small
+02:39:07 | INFO: glTF import finished in 0.00s
+00:01.830  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/tree_small.png'
+02:39:07 | INFO: Data are loaded, start creating Blender stuff
+02:39:07 | INFO: Blender create Mesh node Mesh plant_bushLarge
+02:39:07 | INFO: glTF import finished in 0.00s
+00:02.112  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/plant_bushLarge.png'
+02:39:07 | INFO: Data are loaded, start creating Blender stuff
+02:39:07 | INFO: Blender create Mesh node Mesh rock_largeA
+02:39:07 | INFO: glTF import finished in 0.00s
+00:02.397  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/rock_largeA.png'
+02:39:08 | INFO: Data are loaded, start creating Blender stuff
+02:39:08 | INFO: Blender create Mesh node Mesh rock_largeB
+02:39:08 | INFO: glTF import finished in 0.00s
+00:02.605  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/rock_largeB.png'
+02:39:08 | INFO: Data are loaded, start creating Blender stuff
+02:39:08 | INFO: Blender create Mesh node Mesh mushroom_redGroup
+02:39:08 | INFO: glTF import finished in 0.00s
+00:02.888  render           | Saved: '/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/derived-isometric-nature/mushroom_redGroup.png'
+ASSETS 8
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

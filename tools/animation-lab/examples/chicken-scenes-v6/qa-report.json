@@ -1,0 +1,261 @@
+{
+  "generatedAt": "2026-10-11T21:36:58.455712+00:00",
+  "uiEntry": "http://127.0.0.1:4317/lab/chicken-scene",
+  "entryFromChicken": "鸡群、下蛋、格斗掉毛与打鸣 →",
+  "visualStatus": "failed",
+  "scenes": [
+    {
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/lay-capture-v1",
+      "scenario": "lay",
+      "actors": 1,
+      "sourceAssetVersions": {
+        "rooster": "chicken-side-v6",
+        "hen": "chicken-hen-side-v7"
+      },
+      "choreographyVersion": 11,
+      "rendererVersion": 7,
+      "capturePreviewVersion": 1,
+      "movie": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/lay-capture-v1/chicken-lay.webm",
+      "technicalFrameCoverage": "passed",
+      "pngCount": 60,
+      "videoFrameCount": 61,
+      "movieDurationSeconds": 5.000359,
+      "requestedDurationSeconds": 5,
+      "rgbMAEMax": 2.0585250289351853,
+      "ptsMaxErrorSeconds": 0.010666666666666658,
+      "byteIdentity": {
+        "source": true,
+        "png": true,
+        "movie": true
+      },
+      "audio": null,
+      "visualReview": {
+        "status": "failed",
+        "reviewer": "root",
+        "methods": [
+          "actual UI playback",
+          "native all-frame contact sheet",
+          "full-resolution representative frames"
+        ],
+        "observations": [
+          "母鸡蹲伏、蛋从身体后方进入窝、恢复后露出；源股件前胸遮挡改善。",
+          "腿部黄色结节、腿比例和颈部材质仍失败。"
+        ],
+        "scope": "Visual review is separate from byte identity, decoded frame coverage and timing."
+      }
+    },
+    {
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/fight-capture-v2",
+      "scenario": "fight",
+      "actors": 2,
+      "sourceAssetVersions": {
+        "rooster": "chicken-side-v6",
+        "hen": "chicken-hen-side-v7"
+      },
+      "choreographyVersion": 11,
+      "rendererVersion": 7,
+      "capturePreviewVersion": 1,
+      "movie": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/fight-capture-v2/chicken-fight.webm",
+      "technicalFrameCoverage": "passed",
+      "pngCount": 48,
+      "videoFrameCount": 49,
+      "movieDurationSeconds": 3.994346,
+      "requestedDurationSeconds": 4,
+      "rgbMAEMax": 1.935535300925926,
+      "ptsMaxErrorSeconds": 0.021666666666666612,
+      "byteIdentity": {
+        "source": true,
+        "png": true,
+        "movie": true
+      },
+      "audio": null,
+      "visualReview": {
+        "status": "failed",
+        "reviewer": "root",
+        "methods": [
+          "actual UI playback",
+          "native all-frame contact sheet",
+          "full-resolution representative frames"
+        ],
+        "observations": [
+          "相向起跳，近侧前踢/远侧收腿、独立受击退让、掉毛与连续落脚已实看。",
+          "格斗接触力度不足；颈胸明暗界、腿细长与羽毛质感仍失败。"
+        ],
+        "scope": "Visual review is separate from byte identity, decoded frame coverage and timing."
+      }
+    },
+    {
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/crow-capture-v1",
+      "scenario": "crow",
+      "actors": 1,
+      "sourceAssetVersions": {
+        "rooster": "chicken-side-v6",
+        "hen": "chicken-hen-side-v7"
+      },
+      "choreographyVersion": 11,
+      "rendererVersion": 7,
+      "capturePreviewVersion": 1,
+      "movie": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/crow-capture-v1/chicken-crow.webm",
+      "technicalFrameCoverage": "passed",
+      "pngCount": 36,
+      "videoFrameCount": 37,
+      "movieDurationSeconds": 2.994031,
+      "requestedDurationSeconds": 3,
+      "rgbMAEMax": 1.942332175925926,
+      "ptsMaxErrorSeconds": 0.018000000000000016,
+      "byteIdentity": {
+        "source": true,
+        "png": true,
+        "movie": true
+      },
+      "audio": {
+        "sourceSHA": true,
+        "decodedSamples": 129600,
+        "measuredAudibleInterval": [
+          0.87,
+          2.4299999999999997
+        ],
+        "expectedCueStart": 0.8,
+        "expectedCueEnd": 2.7,
+        "expectedAudibleInterval": [
+          0.8500000000000001,
+          2.42
+        ],
+        "movieDuration": 2.994031,
+        "expectedSilent": false,
+        "peakWindowRMS": 0.2624345091692155,
+        "naturalSoundReview": "not-listened"
+      },
+      "visualReview": {
+        "status": "failed",
+        "reviewer": "root",
+        "methods": [
+          "actual UI playback",
+          "native all-frame contact sheet",
+          "full-resolution representative frames"
+        ],
+        "observations": [
+          "真实开合喙素材和真实录音声轨；36源帧整表及UI播放已检查。",
+          "下颈材质及腿部比例仍失败；音频解码有声通过，听觉自然度未听审。"
+        ],
+        "scope": "Visual review is separate from byte identity, decoded frame coverage and timing."
+      }
+    },
+    {
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/flock-capture-v2",
+      "scenario": "flock",
+      "actors": 9,
+      "sourceAssetVersions": {
+        "rooster": "chicken-side-v6",
+        "hen": "chicken-hen-side-v7"
+      },
+      "choreographyVersion": 11,
+      "rendererVersion": 7,
+      "capturePreviewVersion": 2,
+      "movie": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/flock-capture-v2/chicken-flock.webm",
+      "technicalFrameCoverage": "passed",
+      "pngCount": 72,
+      "videoFrameCount": 73,
+      "movieDurationSeconds": 5.947456,
+      "requestedDurationSeconds": 6,
+      "rgbMAEMax": 2.404328342013889,
+      "ptsMaxErrorSeconds": 0.004666666666666652,
+      "byteIdentity": {
+        "source": true,
+        "png": true,
+        "movie": true
+      },
+      "audio": null,
+      "visualReview": {
+        "status": "failed",
+        "reviewer": "root",
+        "methods": [
+          "actual UI playback",
+          "native all-frame contact sheet",
+          "full-resolution representative frames"
+        ],
+        "observations": [
+          "9只公母混合，各自相位行走/啄食，72源帧整表及真实UI电影已看。",
+          "极限啄食颈折叠、腿部结节与比例仍失败。"
+        ],
+        "scope": "Visual review is separate from byte identity, decoded frame coverage and timing."
+      }
+    },
+    {
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/flock-twelve-capture-v1",
+      "scenario": "flock",
+      "actors": 12,
+      "sourceAssetVersions": {
+        "rooster": "chicken-side-v6",
+        "hen": "chicken-hen-side-v7"
+      },
+      "choreographyVersion": 11,
+      "rendererVersion": 7,
+      "capturePreviewVersion": 2,
+      "movie": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/flock-twelve-capture-v1/chicken-flock.webm",
+      "technicalFrameCoverage": "passed",
+      "pngCount": 72,
+      "videoFrameCount": 73,
+      "movieDurationSeconds": 5.930352,
+      "requestedDurationSeconds": 6,
+      "rgbMAEMax": 2.6527701822916665,
+      "ptsMaxErrorSeconds": 0.004666666666666597,
+      "byteIdentity": {
+        "source": true,
+        "png": true,
+        "movie": true
+      },
+      "audio": null,
+      "visualReview": {
+        "status": "failed",
+        "reviewer": "root",
+        "methods": [
+          "actual UI playback",
+          "native all-frame contact sheet",
+          "full-resolution representative frames"
+        ],
+        "observations": [
+          "12只公母混合；72源帧整表、原生第37帧及真实电影播放到结束已看。",
+          "极限啄食颈折叠、腿部结节与比例仍失败。影片5.930352秒，较请求6秒短69.648ms；小于一个12fps周期，不能声称精确6秒。"
+        ],
+        "scope": "Visual review is separate from byte identity, decoded frame coverage and timing."
+      }
+    }
+  ],
+  "regressions": {
+    "full": {
+      "pass": 305,
+      "fail": 0,
+      "skipped": 0,
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-fight-fold-v2/full-regression.log",
+      "scope": "Before capture-preview bitmap optimization; includes current choreography/renderer."
+    },
+    "afterPreviewOptimization": {
+      "pass": 36,
+      "fail": 0,
+      "skipped": 0,
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/targeted-preview-regression.log",
+      "scope": "Chicken source/choreography/renderer and capture audio ownership."
+    }
+  },
+  "retainedFailures": [
+    {
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/fight-capture-v1/NOT-CURRENT.json",
+      "reason": "Historical choreography7/renderer5 ZIP was selected by filename; excluded from current-version evidence."
+    },
+    {
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/flock-capture-v1/validation-failure.json",
+      "reason": "First actual 9-actor movie encoded only37 of72 source frames. Capture callback performed redundant full scene rendering."
+    }
+  ],
+  "repair": "During capture, preview blits the same immutable captured bitmap; it no longer rebuilds the full character scene. Nine and twelve actors independently retested via actual browser downloads and native decoding.",
+  "screenshots": [
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/ui-entry-from-chicken.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/ui-lay-final-v11.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/ui-fight-final-v11-current.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/ui-crow-final-v11.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/ui-nine-flock-first-failed.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/ui-nine-flock-retest.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/chicken-scenes-v6/ui-twelve-flock-retest.png"
+  ]
+}

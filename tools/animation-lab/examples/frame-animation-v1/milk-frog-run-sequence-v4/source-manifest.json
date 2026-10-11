@@ -1,0 +1,238 @@
+{
+  "sourceArtStatus": "failed",
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "sample": {
+    "id": "milk-frog-run-sequence-v4",
+    "label": "奶蛙 · 真实12帧跑步 v4（摆臂/落地改善，待修）",
+    "fps": 8,
+    "loop": true,
+    "visualQA": "failed",
+    "qaNotes": [
+      "真实逐张imagegen12帧，含承重/经过/腾空/落地",
+      "透明1254共同源画布，非骨骼栅格或插值PNG",
+      "原腿身份/手互换/地线18px失败与局部修复保留",
+      "接地/材质/比例和完整循环仍需实际美术QA",
+      "仅frame7局部改善远侧脚回到髋下、近腿回收；原v2整体failed与素材保留，未全面通过",
+      "仅3/7近臂转向和11落地前源帧实改，全片仍未通过"
+    ],
+    "frames": [
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1-receipt.json",
+        "phase": 0,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2-receipt.json",
+        "phase": 0.08333333333333333,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3-receipt.json",
+        "phase": 0.16666666666666666,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2-receipt.json",
+        "phase": 0.25,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-04-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-04-v1-receipt.json",
+        "phase": 0.3333333333333333,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1-receipt.json",
+        "phase": 0.4166666666666667,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1-receipt.json",
+        "phase": 0.5,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v4-frame-07-v8.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-07-v8-receipt.json",
+        "phase": 0.5833333333333334,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-08-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-08-v2-receipt.json",
+        "phase": 0.6666666666666666,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-09-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-09-v1-receipt.json",
+        "phase": 0.75,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-10-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-10-v1-receipt.json",
+        "phase": 0.8333333333333334,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2-receipt.json",
+        "phase": 0.9166666666666666,
+        "durationMs": 125
+      }
+    ]
+  },
+  "revisions": [
+    {
+      "index": 3,
+      "version": 2,
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-6384f173-cb47-4f8f-bc42-8f615f413599.png",
+      "prompt": "Localized animation timing edit to IMAGE1, a single NEAR-takeoff run frame. SAME transparent1254x1254canvas, same camera, fixed exact head/face/eyes/tongue/torso/hips and BOTH legs in identical positions. FAR arm (left background curled fist) unchanged. No recenter/rescale/wholebody motion.\nOnly change the NEAR foreground OPEN-HAND arm. This source reaches its forward swing peak too early. Give it a clear forward-down transitional shoulder-elbow-wrist chain, between prior hanging passing arm and following forward peak. Keep shoulder pivot near(625,410) unchanged; NEAR elbow around(665,580) nearly under shoulder and slightly in front, forearm bent forward-down toward wrist around(865,690), OPEN pink palm centered around(950,735). Fingers retain the same relaxed open state, palm outside torso, not pressing thigh. Upper arm has only a small forward inclination, not the strong front peak in source; preserve ORIGINAL biceps/forearm length and muscle thickness. Rounded smooth connected shoulder/elbow/wrist contours, no skinny limb. Keep precisely TWOarms/twolegs, no ghost former hand/forearm. Retain same original yellow polished shading/highlights, thick blackoutline and wrist dots; all other regions unchanged. No text/control/floorline/shadow; only original single sprite with transparentalpha.",
+      "refs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-03-v1.png"
+      ],
+      "notes": "Near upperarm forward-down intermediate instead of early extreme, open palm retreats/down; full sequence remainsfailed.",
+      "receipt": {
+        "tool": "image_gen.imagegen",
+        "prompt": "Localized animation timing edit to IMAGE1, a single NEAR-takeoff run frame. SAME transparent1254x1254canvas, same camera, fixed exact head/face/eyes/tongue/torso/hips and BOTH legs in identical positions. FAR arm (left background curled fist) unchanged. No recenter/rescale/wholebody motion.\nOnly change the NEAR foreground OPEN-HAND arm. This source reaches its forward swing peak too early. Give it a clear forward-down transitional shoulder-elbow-wrist chain, between prior hanging passing arm and following forward peak. Keep shoulder pivot near(625,410) unchanged; NEAR elbow around(665,580) nearly under shoulder and slightly in front, forearm bent forward-down toward wrist around(865,690), OPEN pink palm centered around(950,735). Fingers retain the same relaxed open state, palm outside torso, not pressing thigh. Upper arm has only a small forward inclination, not the strong front peak in source; preserve ORIGINAL biceps/forearm length and muscle thickness. Rounded smooth connected shoulder/elbow/wrist contours, no skinny limb. Keep precisely TWOarms/twolegs, no ghost former hand/forearm. Retain same original yellow polished shading/highlights, thick blackoutline and wrist dots; all other regions unchanged. No text/control/floorline/shadow; only original single sprite with transparentalpha.",
+        "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-6384f173-cb47-4f8f-bc42-8f615f413599.png",
+        "generatedFileSha256": "1d952daaf4fd49942b549d9cfcfc6081104857d38a4177eaeb621f7a900346ba",
+        "referenceFiles": [
+          {
+            "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-03-v1.png",
+            "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+          }
+        ],
+        "phase": 0.25,
+        "sourceSize": [
+          1254,
+          1254
+        ],
+        "pixelBounds": {
+          "threshold": 24,
+          "bounds": [
+            145,
+            92,
+            1068,
+            1101
+          ],
+          "edgePixels": 0,
+          "hasTransparency": true,
+          "touchesEdge": false,
+          "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+        },
+        "qa": {
+          "visual": "failed",
+          "notes": "Near upperarm forward-down intermediate instead of early extreme, open palm retreats/down; full sequence remainsfailed."
+        }
+      },
+      "source": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2.png",
+      "receiptURL": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2-receipt.json"
+    },
+    {
+      "index": 7,
+      "version": 8,
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-a2d5bb73-e72e-4b50-b8ec-7ac5f08a15e2.png",
+      "prompt": "Precise animation timing edit to only the NEAR foreground arm in image1. Same transparent1254x1254canvas, original scale/camera/position. KEEP exact head/face/eyes/tongue, torso, BOTH legs incl foreground airborne recovery foot under pelvis and background FAR flat plantedfoot at y1199, unchanged. FAR arm with curledfistleft unchanged.\nOnly the NEAR arm with OPEN palm at right changes. It must start swinging backward before the following passing frame, not remain in the same forward peak as previous frame. Preserve shoulder at(615,415). Put near elbow around(635,585), nearly directly DOWN from shoulder (upperarm vertical, beginning backswing), forearm bent diagonally down-right from elbow to wrist around(795,655), open palm center about(890,710). Thus palm retreats left and down about150pixels vs source, but still in front of belly, an intermediate stage before next palm600. Preserve near OPEN fingers, no fistchange. Same biceps/forearm lengths and original thick muscle volumes; do not shrink arm to achieve handposition. Clean rounded connected shoulder-elbow-wrist. Exactly2arms/2legs, remove previous hand silhouette completely, no ghostthirdarm. Match original yellow shading/highlights, blackoutlines and wristdots, keep all unedited regions unchanged. No text, guides, floorline or shadow. Output only corrected transparent singleframe.",
+      "refs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-07-v7.png"
+      ],
+      "notes": "Near upperarm becomes vertical/earlybackswing, forearm and openpalm retreat/down; far support/near recovery remain. Whole sequencefailed.",
+      "receipt": {
+        "tool": "image_gen.imagegen",
+        "prompt": "Precise animation timing edit to only the NEAR foreground arm in image1. Same transparent1254x1254canvas, original scale/camera/position. KEEP exact head/face/eyes/tongue, torso, BOTH legs incl foreground airborne recovery foot under pelvis and background FAR flat plantedfoot at y1199, unchanged. FAR arm with curledfistleft unchanged.\nOnly the NEAR arm with OPEN palm at right changes. It must start swinging backward before the following passing frame, not remain in the same forward peak as previous frame. Preserve shoulder at(615,415). Put near elbow around(635,585), nearly directly DOWN from shoulder (upperarm vertical, beginning backswing), forearm bent diagonally down-right from elbow to wrist around(795,655), open palm center about(890,710). Thus palm retreats left and down about150pixels vs source, but still in front of belly, an intermediate stage before next palm600. Preserve near OPEN fingers, no fistchange. Same biceps/forearm lengths and original thick muscle volumes; do not shrink arm to achieve handposition. Clean rounded connected shoulder-elbow-wrist. Exactly2arms/2legs, remove previous hand silhouette completely, no ghostthirdarm. Match original yellow shading/highlights, blackoutlines and wristdots, keep all unedited regions unchanged. No text, guides, floorline or shadow. Output only corrected transparent singleframe.",
+        "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-a2d5bb73-e72e-4b50-b8ec-7ac5f08a15e2.png",
+        "generatedFileSha256": "d8f147f5a06b7fc7d83bdc088197ef0abb43f3af5e3249e81512af03bba2c539",
+        "referenceFiles": [
+          {
+            "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-07-v7.png",
+            "sha256": "b9aaf8f2aa8fce794e8ab942eb02323a12284d468e0e8f331ee2afd77fdd7d6a"
+          }
+        ],
+        "phase": 0.5833333333333334,
+        "sourceSize": [
+          1254,
+          1254
+        ],
+        "pixelBounds": {
+          "threshold": 24,
+          "bounds": [
+            366,
+            88,
+            682,
+            1112
+          ],
+          "edgePixels": 0,
+          "hasTransparency": true,
+          "touchesEdge": false,
+          "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+        },
+        "qa": {
+          "visual": "failed",
+          "notes": "Near upperarm becomes vertical/earlybackswing, forearm and openpalm retreat/down; far support/near recovery remain. Whole sequencefailed."
+        }
+      },
+      "source": "/frame-animation-assets/milk-frog-run-v4-frame-07-v8.png",
+      "receiptURL": "/frame-animation-assets/milk-frog-run-v4-frame-07-v8-receipt.json"
+    },
+    {
+      "index": 11,
+      "version": 2,
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-374ebfe4-43b5-4ede-88cb-3d298a0bbca4.png",
+      "prompt": "Generate the immediate PRE-LANDING animation frame before this exact contact sprite by a localized edit of IMAGE1. Keep same transparent1254x1254canvas, camera, original character size/position and full head/face/eyes/tongue/torso/arms/hip unchanged. Permanent near OPEN hand left-back, farCURLED fist right-front, same muscle volume/highlights/material. Do not recenter/rescale/change view.\nOnly lowerlegs/feet differ slightly. The NEAR forward leg is foreground on imageRIGHT. Just before landing its pink foot needs to hover24pixels above the next-frame ground y1192: near sole bottom y1168, still flat near-foot same xplacement as source, adjust lowercalf with slightlymoreflexion to remain smoothly attached at same near knee, don't shift torso. NEAR thigh and knee stay original positions. FAR background leg recovers behind to left with its knee bent and pinkfoot airborne; leave FAR thigh/knee position unchanged and put its foot just15pixels higher than source, slight ankle movement only. Exactly2legs/2arms, no oldghostfoot, no extra digits. This should look almost identical to source except a very small visible downward-landing gap in NEAR foot, for smooth frame11→frame0contact. Bothfeetairborne here, nextframe nearsole1192contacts. Keep blackoutlines/musclethickness and original polished yellows/whitebelly/greeneYES/pinkfeet. No floor/shadow/text/control. Return one originalcomposition transparent sprite.",
+      "refs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-00-v1.png"
+      ],
+      "notes": "Prelanding from nextcontact source0 preserving upperbody and minorfootlift; actual native measurement determines result, no coordinatepromise.",
+      "receipt": {
+        "tool": "image_gen.imagegen",
+        "prompt": "Generate the immediate PRE-LANDING animation frame before this exact contact sprite by a localized edit of IMAGE1. Keep same transparent1254x1254canvas, camera, original character size/position and full head/face/eyes/tongue/torso/arms/hip unchanged. Permanent near OPEN hand left-back, farCURLED fist right-front, same muscle volume/highlights/material. Do not recenter/rescale/change view.\nOnly lowerlegs/feet differ slightly. The NEAR forward leg is foreground on imageRIGHT. Just before landing its pink foot needs to hover24pixels above the next-frame ground y1192: near sole bottom y1168, still flat near-foot same xplacement as source, adjust lowercalf with slightlymoreflexion to remain smoothly attached at same near knee, don't shift torso. NEAR thigh and knee stay original positions. FAR background leg recovers behind to left with its knee bent and pinkfoot airborne; leave FAR thigh/knee position unchanged and put its foot just15pixels higher than source, slight ankle movement only. Exactly2legs/2arms, no oldghostfoot, no extra digits. This should look almost identical to source except a very small visible downward-landing gap in NEAR foot, for smooth frame11→frame0contact. Bothfeetairborne here, nextframe nearsole1192contacts. Keep blackoutlines/musclethickness and original polished yellows/whitebelly/greeneYES/pinkfeet. No floor/shadow/text/control. Return one originalcomposition transparent sprite.",
+        "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-374ebfe4-43b5-4ede-88cb-3d298a0bbca4.png",
+        "generatedFileSha256": "dfad9d922754694032221e2c24fa95ead13ec88f383f80829e705e81f3b73b28",
+        "referenceFiles": [
+          {
+            "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-00-v1.png",
+            "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+          }
+        ],
+        "phase": 0.9166666666666666,
+        "sourceSize": [
+          1254,
+          1254
+        ],
+        "pixelBounds": {
+          "threshold": 24,
+          "bounds": [
+            101,
+            84,
+            1058,
+            1085
+          ],
+          "edgePixels": 0,
+          "hasTransparency": true,
+          "touchesEdge": false,
+          "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+        },
+        "qa": {
+          "visual": "failed",
+          "notes": "Prelanding from nextcontact source0 preserving upperbody and minorfootlift; actual native measurement determines result, no coordinatepromise."
+        }
+      },
+      "source": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2.png",
+      "receiptURL": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2-receipt.json"
+    }
+  ],
+  "sourcePixelModification": "none; original native imagegen bytes retained, no per-frame fit",
+  "prior": "../milk-frog-run-sequence-v3/source-qa.json"
+}

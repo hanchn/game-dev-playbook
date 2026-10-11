@@ -1,0 +1,278 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "frame-animation",
+  "loop": true,
+  "durationMs": 2000,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 768,
+    "height": 384,
+    "cell": 192,
+    "columns": 4,
+    "rows": 2,
+    "padding": 12,
+    "sha256": "9ee0a9a8b159d000bb9b62d55ee22bff2bc427de09e4d7a65e8222351753ecf2"
+  },
+  "provenance": {
+    "type": "video",
+    "file": "source.mp4",
+    "sha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+    "decoder": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "timestampAccuracy": "ffprobe original decoded PTS, normalized to first frame; sample selects containing frame",
+    "sourceDuration": 2,
+    "requestedSampling": {
+      "start": 0,
+      "end": 2,
+      "fps": "4",
+      "times": null
+    },
+    "uniqueDecodedFrames": 8,
+    "duplicateSamples": 0,
+    "verification": "actual source bytes and decoded video frames; video background retained"
+  },
+  "visualQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        192,
+        192
+      ],
+      "contentRect": [
+        16,
+        48,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "001.png",
+      "timeMs": 0,
+      "durationMs": 250,
+      "sourceTime": 0,
+      "decodedTime": 0,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/001.png",
+      "pngSha256": "58eb7772853c419769a0c4252ee9785e49b49c612277e1c3fb565b0ec65ddc67",
+      "sourceIndex": 0,
+      "sourcePTS": 0
+    },
+    {
+      "index": 1,
+      "rect": [
+        192,
+        0,
+        192,
+        192
+      ],
+      "contentRect": [
+        208,
+        48,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "002.png",
+      "timeMs": 250,
+      "durationMs": 250,
+      "sourceTime": 0.25,
+      "decodedTime": 0.25,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/002.png",
+      "pngSha256": "0003dfb6df4d3af057356225aacdf699c3f0ef2745b31188a2755b666e70d77d",
+      "sourceIndex": 2,
+      "sourcePTS": 0.25
+    },
+    {
+      "index": 2,
+      "rect": [
+        384,
+        0,
+        192,
+        192
+      ],
+      "contentRect": [
+        400,
+        48,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "003.png",
+      "timeMs": 500,
+      "durationMs": 250,
+      "sourceTime": 0.5,
+      "decodedTime": 0.5,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/003.png",
+      "pngSha256": "8966d9b69db38649eeb17122692737a9c9e576de4f6332c85d9dc068a3d54d2b",
+      "sourceIndex": 4,
+      "sourcePTS": 0.5
+    },
+    {
+      "index": 3,
+      "rect": [
+        576,
+        0,
+        192,
+        192
+      ],
+      "contentRect": [
+        592,
+        48,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "004.png",
+      "timeMs": 750,
+      "durationMs": 250,
+      "sourceTime": 0.75,
+      "decodedTime": 0.75,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/004.png",
+      "pngSha256": "6175f41bb639bc6b5fdb44af980268172e0de319f7cf7572495b445f27f9de7e",
+      "sourceIndex": 6,
+      "sourcePTS": 0.75
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        192,
+        192,
+        192
+      ],
+      "contentRect": [
+        16,
+        240,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "005.png",
+      "timeMs": 1000,
+      "durationMs": 250,
+      "sourceTime": 1,
+      "decodedTime": 1,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/005.png",
+      "pngSha256": "06f7d5d8ffabc35131ae11d6c4337759ab2308328455932f084d47b665176bde",
+      "sourceIndex": 8,
+      "sourcePTS": 1
+    },
+    {
+      "index": 5,
+      "rect": [
+        192,
+        192,
+        192,
+        192
+      ],
+      "contentRect": [
+        208,
+        240,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "006.png",
+      "timeMs": 1250,
+      "durationMs": 250,
+      "sourceTime": 1.25,
+      "decodedTime": 1.25,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/006.png",
+      "pngSha256": "8d0f50c6f6b1e6f5a79ec33ab76f73c0493a9c05f8daf672399b9a4893b50460",
+      "sourceIndex": 10,
+      "sourcePTS": 1.25
+    },
+    {
+      "index": 6,
+      "rect": [
+        384,
+        192,
+        192,
+        192
+      ],
+      "contentRect": [
+        400,
+        240,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "007.png",
+      "timeMs": 1500,
+      "durationMs": 250,
+      "sourceTime": 1.5,
+      "decodedTime": 1.5,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/007.png",
+      "pngSha256": "98827b6aa9201109f1255ca591000b7c0d66485d087104254964abc9f9e15193",
+      "sourceIndex": 12,
+      "sourcePTS": 1.5
+    },
+    {
+      "index": 7,
+      "rect": [
+        576,
+        192,
+        192,
+        192
+      ],
+      "contentRect": [
+        592,
+        240,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "008.png",
+      "timeMs": 1750,
+      "durationMs": 250,
+      "sourceTime": 1.75,
+      "decodedTime": 1.75,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "file": "frames/008.png",
+      "pngSha256": "77e591fedd745c932eb837129b478dc4f088c06451952af096e3ded5b3350655",
+      "sourceIndex": 14,
+      "sourcePTS": 1.75
+    }
+  ],
+  "createdAt": "2026-10-11T15:15:57.130Z"
+}

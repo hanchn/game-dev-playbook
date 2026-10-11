@@ -1,0 +1,56 @@
+{
+  "schema": "sprite-art-review/v1",
+  "assetId": "horse-side-v21",
+  "sourceSha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+  "visual": "failed",
+  "registeredSource": "horse-side-parts-v5.png",
+  "changes": {
+    "neckMask": {
+      "start": 0.62,
+      "span": 0.18,
+      "startSlopeU": 0
+    },
+    "sourcePixels": "unchanged"
+  },
+  "actualReviewed": [
+    {
+      "path": "../ui-graze-phase0467-light-detail.png",
+      "pose": "graze .467",
+      "type": "Chrome actual source Canvas, light, 1.65x, full opaque",
+      "finding": "Black mane blade removed; root independent review still finds folded-sleeve neck/body anatomy."
+    },
+    {
+      "path": "../ui-graze-phase0467-fullpage.png",
+      "pose": "graze .467",
+      "type": "Chrome actual source Canvas full body",
+      "finding": "Whole envelope seen, no full-body crop; neck and limbs remain not accepted."
+    },
+    {
+      "path": "graze-light.png",
+      "samples": 16,
+      "finding": "Blade absent .133 to .733; remaining folded neck root."
+    },
+    {
+      "path": "idle-light.png",
+      "samples": 16,
+      "finding": "Identity stable; rear proximal oval joint and carpal knobs remain."
+    },
+    {
+      "path": "walk-light.png",
+      "samples": 16,
+      "finding": "Near/far alternate; joint caps still exaggerated."
+    },
+    {
+      "path": "run-light.png",
+      "samples": 16,
+      "finding": "Fore/rear closure still piece-like, not art accepted."
+    }
+  ],
+  "technical": {
+    "pass": 34,
+    "fail": 0,
+    "log": "../technical-tests.log"
+  },
+  "nonEvidence": "Contact sheets separately magnify each source frame; do not use them as fixed-frame silhouette/proportion acceptance. Native individual PNGs keep fixed512 camera.",
+  "retainedFailure": "../../horse-side-v20/ui-graze-phase0467-canvas-light-detail.png"
+}

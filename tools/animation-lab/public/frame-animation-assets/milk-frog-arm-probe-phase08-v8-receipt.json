@@ -1,0 +1,43 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Single-frame animation edit of REF1, the exact yellow muscular milk frog. REF2 is a newly generated standalone FAR ARM SHAPE reference only: a bent down-V yellow muscular arm with curled PINK FIST. It is oversized and NOT registered; do NOT paste its original size. REF3 gives the correctly sized and positioned entire arm chain on the same1254canvas. Replace only REF1's far arm, currently a curled fist on image-right belly edge, with the natural arm SHAPE from REF2 at REF3's small source-relative size and position. The new far shoulder is hidden under/behind the large source NEAR shoulder at650,430; its upper arm descends LEFT toward the elbow546,630, then forearm descends RIGHT toward wrist698,795. The PINK curled fist is below the unchanged OPEN PALM, tucked close beside the lower-left hip crease, around700,810. It is NOT at the outer right edge of the belly. Use a downward bent V as REF2, but upper andfore each225px asREF3. Part of arm can be behind torso/near arm, but pink curled knuckles should appear just below and separate from the original near open hand. Remove the old right-side far fist/forearm fully; exactly TWO arms. Preserve the source NEAR arm, OPEN HAND and spread elongated fingers without any alteration: the open hand stays at same oldlocation. Preserve face/head/eyes/smile, torso/white belly, muscles, both legs and toes, far planted foot and near raisedleg, source exact positions/size/view. Same blackoutline/yellowgloss/pinkmaterial. All1254canvas registration unchanged, no fit/crop/scale/shift of character, enough originaledge margin. Real transparency. No gray/blue controls, no labels, no separate part left floating. One natural actual frame.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c60b93fb-b43b-4584-98ee-97ac46f238a4.png",
+  "generatedFileSha256": "05b3e3b600a6ddb8491d709544fbc8da801d30082b6c7320e8b722ebf34d1b23",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+      "sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba44b266-0637-4f71-abd8-15708fbee045.png",
+      "sha256": "117ef7977d46ac6ec2ac70f18c380803e283264a6c5e040fdaa93348443265b6"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-arm-control-v1/control-08-far-only.png",
+      "sha256": "782ef814ac3a0a217f75e28b75414af431fd1c20f399a30fb2bed394f5cf18e9"
+    }
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      417,
+      85,
+      716,
+      1120
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": [
+      "Imagegen uses natural standalone arm style but places entire rear shoulder on outer right under throat and fist980,660; opposite upperarm direction from control. Existing left rear shoulder bulge remains; source attachment anatomy uncertain and not accepted. Not selected."
+    ]
+  }
+}

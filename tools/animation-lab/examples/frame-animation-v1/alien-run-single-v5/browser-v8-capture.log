@@ -1,0 +1,9 @@
+### Result
+{"status":"拍摄包已导出：WEBM 视频 + 12 张 PNG + 图集 + 时序。视频时长需用 FFprobe 核查。","sample":"外星探险者 · 逐张生图12帧 v8（修复中） · 素材美术未通过 · 两半周期双臂双腿交换，phase02/08 passing拳已局部修复；头形/皮纹与画面注册仍漂移；四帧原图安全留边不足，不是合格成片","phase":"12 / 12"}
+### Ran Playwright code
+```js
+await (async (page) => { await page.reload(); await page.locator("#samples").selectOption("alien-run-single-v8"); await page.locator("#load-sample").click(); await page.waitForFunction(()=>document.querySelector("#timeline").children.length===12);await page.locator("#background").selectOption("dark");await page.locator("#record-fps").fill("9");const zip=page.waitForEvent("download",{timeout:30000});await page.locator("#record").click();await(await zip).saveAs("/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-capture.zip");return {status:await page.locator("#status").textContent(),sample:await page.locator("#sample-review").textContent(),phase:await page.locator("#time").textContent()}; })(page);
+```
+### Events
+- Downloading file animation-capture.zip ...
+- Downloaded file animation-capture.zip to ".playwright-cli/animation-capture.zip"

@@ -1,0 +1,113 @@
+{
+  "schema": "isometric-map-receipt/v1",
+  "algorithm": "kenney-2d-semantic-native-castle-sprites-v3",
+  "config": {
+    "seed": "漫游-2026",
+    "scale": 256,
+    "seaLevel": 0.45,
+    "roughness": 0.45,
+    "vegetation": 0.65
+  },
+  "style": "settlement",
+  "region": {
+    "x": 24,
+    "y": 24,
+    "width": 32,
+    "height": 32
+  },
+  "files": [
+    {
+      "path": "sprites/c48731777960-landscapeTiles_067.png",
+      "bytes": 1471,
+      "sha256": "c48731777960773ae997a50bc3c32740e6adac112230d0a317416bb688d39fd9"
+    },
+    {
+      "path": "sprites/d709065bc17f-landscapeTiles_081.png",
+      "bytes": 987,
+      "sha256": "d709065bc17fe3f63b32fcf74eb69c420761bbfe05082399418d21e71f4b3120"
+    },
+    {
+      "path": "sprites/aeeb450c5355-rock_largeA_NE.png",
+      "bytes": 2891,
+      "sha256": "aeeb450c53551c117fab81e054fa9a6923e5eab19e4230c76de6627a6c148ad7"
+    },
+    {
+      "path": "sprites/d6f183657fb3-buildingTiles_000.png",
+      "bytes": 5854,
+      "sha256": "d6f183657fb305a7bdce8d7741299b9711492c8c7441ecc806e32b3cd31a3c63"
+    },
+    {
+      "path": "sprites/5ed7188d50e9-buildingTiles_062.png",
+      "bytes": 2164,
+      "sha256": "5ed7188d50e9dd55d3df0b7273d2b31f8c39e1187f4993bef3d3c9b378fae5c6"
+    },
+    {
+      "path": "sprites/7031bb433582-buildingTiles_014.png",
+      "bytes": 9252,
+      "sha256": "7031bb43358202bf0f3fefebbf1eec530b7bbc18b6c3026e39329bc55e85f5ab"
+    },
+    {
+      "path": "sprites/ab603816df99-tree_simple_NE.png",
+      "bytes": 2449,
+      "sha256": "ab603816df99fac09d5b0ddf57b273e6d28b7a7aa0c2b4583b540a075457c85e"
+    },
+    {
+      "path": "sprites/75dadf0d9209-castle.png",
+      "bytes": 651880,
+      "sha256": "75dadf0d92098b09f15e334592e1ad0ce0f0381206b43a3c4379f0b8f739e07a"
+    },
+    {
+      "path": "scene.png",
+      "bytes": 408302,
+      "sha256": "2cbb34831bf5f6efafe97c51d5f9cfe986bffcb8530e0b40f3f999b23b6db767"
+    },
+    {
+      "path": "scene.json",
+      "bytes": 359224,
+      "sha256": "1ebb84130be84e8c0bc1572de93d93798e96d3a4afe339bcf97d1bcbe2f47ca4"
+    },
+    {
+      "path": "collision.json",
+      "bytes": 8262,
+      "sha256": "81c0b70ca99e45e7f567649a5b0f04fd9fe08a657dd8cb53d03d7202d67f5156"
+    },
+    {
+      "path": "map.tmj",
+      "bytes": 33153,
+      "sha256": "383452a1d300ea2de6ee7922e75a9f5ded46284d466e74031537b2693ea178ed"
+    },
+    {
+      "path": "source-kenney-nature-kit.json",
+      "bytes": 639672,
+      "sha256": "8fd1b73584a76277766645ce685d08249e966a15d83a394a8ed32384bf63714c"
+    },
+    {
+      "path": "source-kenney-isometric-tiles-landscape.json",
+      "bytes": 23068,
+      "sha256": "1b1660f805b83e4bf794a1e217da4780899b7dba502c1ebb9b3f1d0edf035e0f"
+    },
+    {
+      "path": "source-kenney-isometric-tiles-buildings.json",
+      "bytes": 23266,
+      "sha256": "bd216d8447a17ab9cd0724f65f8520ef03e311989326face73fa0faf7fd36008"
+    },
+    {
+      "path": "source-kenney-hexagon-kit.json",
+      "bytes": 66261,
+      "sha256": "120531182913bf0fe99218a74a6d850cd7dd936c9608e10aad6ad4fff30f6581"
+    },
+    {
+      "path": "source-derived-isometric-castle.json",
+      "bytes": 2420,
+      "sha256": "0e22a9e47c117bbf69e4c9289a07a82003817acc680983fd2b936c6dea6c6daa"
+    }
+  ],
+  "qa": {
+    "visualAccepted": false,
+    "engineImported": false,
+    "tiledObjectAlignmentPending": true,
+    "castleSourcePreviewLowResolution": false,
+    "castleSpriteDerivedFromOriginalModels": true
+  },
+  "codec": "@napi-rs/canvas"
+}

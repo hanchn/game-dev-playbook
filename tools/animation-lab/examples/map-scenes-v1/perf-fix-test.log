@@ -1,0 +1,18 @@
+✔ Wangscape C++ reference implementation compiles in a test harness and matches JS byte shares (477.94775ms)
+✔ source hashes lock upstream and all three genuinely distinct raster atlases (7.215583ms)
+✔ terrain source sampling excludes transparent atlas edges that created black horizontal seams (280.977833ms)
+✔ corner material blending matches at both sides of every positive and negative chunk boundary (4.055916ms)
+✔ independently exported chunks stitch to the exact full-region RGBA at negative coordinates (91.206041ms)
+✔ decorative props use a halo: independent image windows stitch with the same alpha ordering (88.175125ms)
+✔ styles retain identical world data and collisions; Tiled has real local artwork and unique collision IDs (11.813542ms)
+✔ real PNG export is reproducible and decorative alpha is preserved; source atlas is included (272.656291ms)
+✔ browser ZIP supports binary PNG bytes and passes independent Python ZIP CRC validation (102.050708ms)
+✔ style and pixel budget reject bad values; renderer texture cache remains bounded (247.104042ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1650.093583

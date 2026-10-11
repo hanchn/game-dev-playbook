@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "length",
+      "label": "骨段长度固定",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "join",
+      "label": "逐关节连接连续",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "loop",
+      "label": "末首或动作回位",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "movement",
+      "label": "选中关节确实运动",
+      "passed": true,
+      "detail": "30.79 px"
+    }
+  ],
+  "scope": "character",
+  "clip": "tail",
+  "fault": "none",
+  "samples": 97,
+  "qa": {
+    "technical": "sampled",
+    "visual": "pending"
+  }
+}

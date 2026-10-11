@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Edit reference image 1, a single transparent-background native 1254x1254 frame of the SAME yellow muscular anthropomorphic milk frog running to image-right. Reference image 2 is a CODE-NATIVE ARM CONTROL ONLY for phase 8/12, not character art and not a color style. Correct ONLY the ENTIRE FAR (rear-layer) arm shoulder-to-elbow-to-wrist-to-curled-fist chain. The current pink curled fist far out to image-right is too early in the forward swing: remove that incorrect far fist and its old arm. Rebuild one connected, anatomically plausible muscular YELLOW far arm following the BLUE chain in reference 2, with NATURAL PINK fist, no blue/red lines or labels in output. The permanent FAR shoulder stays behind the near deltoid at source canvas approx (650,430), not relocated to the right belly or to a new torso socket. Upper arm slopes BACK and DOWN LEFT from shoulder to elbow approx (546,630). Then the bent forearm slopes DOWN RIGHT from that elbow to wrist approx (698,795). Elbow is moderately bent, about 70deg angle between upper-arm and forearm directions. The curled fist passes LOW near the hip axis, around x700/y800; it must NOT be a forward-extended fist around x1000/y660. A portion of the rear upper arm may naturally be occluded by the unchanged torso/near arm, but show a coherent visible elbow/forearm and same curled pink fist near the lower hip. Do not invent a third arm. This is an intermediate arm recovery/passing pose, not a front swing peak. Preserve the source's entire NEAR yellow arm and OPEN PINK PALM, head/green eyes/smile, white belly, shoulders except the rear socket correction, muscles/material/black outlines, BOTH legs and toes, their permanent near/far identity and exact pose. Preserve source camera/view/scale, native canvas framing, head size/position and every leg/foot location. Do not copy the gray torso/head diagram shapes. No shifts/scaling/fitting of the full character, no reframe, no new background, no text. Real transparency. Return ONLY one complete sprite frame.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-1e644f27-056e-43f8-b219-991704b5b15d.png",
+  "generatedFileSha256": "72797f1c2badbfbe142eb590a0098ab57d54cd40ce576234d37c3403f03a43b2",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+      "sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-arm-control-v1/control-08.png",
+      "sha256": "aa0fa011d98d683f83a60aafd7f984ad9329e9173a8a9d7f6df3fcf9611b74d7"
+    }
+  ],
+  "phase": 0.6666666666666666,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      388,
+      84,
+      745,
+      1121
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": [
+      "Whole far-arm control did remove early front fist, but actual elbow approx425,510 and curled fist505,665 remain extreme backswing, not control8 elbow546,630/wrist698,795. Not selected."
+    ]
+  }
+}

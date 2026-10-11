@@ -1,0 +1,139 @@
+{
+  "roi": [
+    350,
+    450,
+    800,
+    400
+  ],
+  "threshold": "RGBA alpha>=24, r>150,r-g>30,b>120,b>g*.9,4-neighbor,1000px minimum. Initial g<165 found no region >1000px and was invalid for this source palette; not used for pass/fail.",
+  "report": [
+    {
+      "version": 5,
+      "components": [
+        {
+          "pixels": 16968,
+          "bounds": [
+            569,
+            555,
+            740,
+            728
+          ],
+          "centroid": [
+            650.152817067421,
+            642.3870815652994
+          ]
+        },
+        {
+          "pixels": 4853,
+          "bounds": [
+            463,
+            615,
+            550,
+            713
+          ],
+          "centroid": [
+            502.31815371934886,
+            663.0859262311972
+          ]
+        }
+      ],
+      "limitation": "Color-connected regions support manual observations; not semantic hand detection or proof of arm anatomy."
+    },
+    {
+      "version": 6,
+      "components": [
+        {
+          "pixels": 9741,
+          "bounds": [
+            579,
+            608,
+            699,
+            732
+          ],
+          "centroid": [
+            637.1290421927933,
+            674.5638024843445
+          ]
+        }
+      ],
+      "limitation": "Color-connected regions support manual observations; not semantic hand detection or proof of arm anatomy."
+    },
+    {
+      "version": 7,
+      "components": [
+        {
+          "pixels": 17632,
+          "bounds": [
+            561,
+            553,
+            740,
+            729
+          ],
+          "centroid": [
+            648.3593466424683,
+            640.9558756805808
+          ]
+        },
+        {
+          "pixels": 3423,
+          "bounds": [
+            938,
+            643,
+            1012,
+            722
+          ],
+          "centroid": [
+            973.984516505989,
+            681.8848962898043
+          ]
+        },
+        {
+          "pixels": 1463,
+          "bounds": [
+            980,
+            697,
+            1031,
+            742
+          ],
+          "centroid": [
+            1008.8133971291866,
+            721.6787423103212
+          ]
+        }
+      ],
+      "limitation": "Color-connected regions support manual observations; not semantic hand detection or proof of arm anatomy."
+    },
+    {
+      "version": 8,
+      "components": [
+        {
+          "pixels": 17469,
+          "bounds": [
+            561,
+            553,
+            739,
+            727
+          ],
+          "centroid": [
+            648.1476329497967,
+            640.4942469517431
+          ]
+        },
+        {
+          "pixels": 4557,
+          "bounds": [
+            941,
+            613,
+            1022,
+            700
+          ],
+          "centroid": [
+            985.0754882598201,
+            652.6710555189818
+          ]
+        }
+      ],
+      "limitation": "Color-connected regions support manual observations; not semantic hand detection or proof of arm anatomy."
+    }
+  ]
+}

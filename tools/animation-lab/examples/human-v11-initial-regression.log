@@ -1,0 +1,180 @@
+npm warn Unknown user config "always-auth". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> test
+> node --test test/*.test.mjs
+
+✔ 人 完整循环与单配件可测试 (4.734375ms)
+✔ 鸡 完整循环与单配件可测试 (1.395708ms)
+✔ 恐龙 完整循环与单配件可测试 (1.651042ms)
+✔ 马 完整循环与单配件可测试 (1.765041ms)
+✔ 鳄鱼 完整循环与单配件可测试 (2.805625ms)
+✔ 百足虫 完整循环与单配件可测试 (8.57525ms)
+✔ 蜘蛛 完整循环与单配件可测试 (2.343375ms)
+✔ 蝎子 完整循环与单配件可测试 (4.080125ms)
+✔ 蛇 完整循环与单配件可测试 (1.931375ms)
+✔ 蚯蚓 完整循环与单配件可测试 (1.385125ms)
+✔ 蜘蛛故障 phase 必须拒收 (1.441375ms)
+✔ 蜘蛛故障 slide 必须拒收 (2.060583ms)
+✔ 蜘蛛故障 stretch 必须拒收 (1.261458ms)
+✔ 蜘蛛故障 seam 必须拒收 (1.447166ms)
+✔ 蜘蛛故障 frozen 必须拒收 (2.173875ms)
+✔ 蛇节段拉长拒收 (0.493791ms)
+✔ 蛇循环断裂拒收 (0.506333ms)
+✔ 部件丢失、重复或连接循环拒收 (0.308292ms)
+✔ 伸展模式不套用支撑滑步检查 (1.187083ms)
+✔ 图集不重复末帧且固定画布和锚点 (1.291292ms)
+✔ FPS从真实耗时计算并拒绝空数据 (0.122792ms)
+✔ MCP 初始化、发现、调用和工具错误 (59.420792ms)
+✔ 配件伸展必须有至少10px有效范围 (2.33125ms)
+✔ 零件角色和腿身份被改写时拒收 (0.128666ms)
+✔ 骨骼动作输出局部帧与独立根运动，末帧不重复终点 (0.61125ms)
+✔ 八种完整动作逐关节检查，拉长和末姿偏移会被拒收 (88.894042ms)
+✔ 深蹲和弯腰确实改变身体姿势，支撑脚固定 (1.526542ms)
+✔ 跳跃双脚离地、落地恢复；拳击横向出拳并收回 (0.138208ms)
+✔ 单次动作导出末姿与真实时长；循环动作不重复首帧 (56.684583ms)
+✔ 已认可的行走骨骼坐标保持原样 (2.060083ms)
+✔ 人的真实侧面资产有完整肩肘腕、髋膝踝连接及视角契约 (1.514208ms)
+✔ 每个肢体配件独立运动，其他肢体保持静止 (9.635792ms)
+✔ 真实行走通过，错误相位、滑脚、拉长、接缝及静止都被测出 (4.403959ms)
+✖ 源透明图有十六个独立测量区域，校准后骨段两端和实际贴图轴点重合 (107.293542ms)
+✔ 合成图集使用真实单次内嵌图片、固定锚点且无可见轴点 (12.813041ms)
+✔ 头颈测试实际弯曲且其他肢体保持静止 (4.202292ms)
+✔ 单件弯曲检视同时显示相邻贴图，不能用淡化的接头蒙混通过 (3.129875ms)
+✖ 三种手型在八种动作中有实际素材；十四个衔接位在弯曲采样中有真实像素重叠 (264.454167ms)
+✔ 贴图轴点落在透明位置时，即使骨骼连接正确也必须拒收 (333.280541ms)
+✔ 实际渲染随动作使用不同手型，颈根必须由躯干遮住 (1.458875ms)
+✖ 裤脚盖住踝件、衣领盖住颈根；反向遮挡即使像素相交也必须拒收 (326.179583ms)
+✔ 大腿源轮廓上宽下窄，裤脚结束在踝部旋转中心上方并保留鞋底锚点 (0.5115ms)
+✔ 髋根进入骨盆背后，避免圆弧贴在臀部前形成第二个凸块 (0.08375ms)
+✖ 翻滚97个姿势的真实渲染轮廓始终接地，根运动单独记录前进距离 (8.255875ms)
+✔ 从腕、肘或踝选择局部组合时整条肢体列入检查，其他肢体保持静止 (4.779375ms)
+✔ human 生产动作和所有活动关节通过独立检查 (46.580625ms)
+✔ human 对错误步态、滑步、拉长、断环及静止腿拒收 (3.586583ms)
+✔ chicken 生产动作和所有活动关节通过独立检查 (13.241792ms)
+✔ chicken 对错误步态、滑步、拉长、断环及静止腿拒收 (3.212208ms)
+✔ dinosaur 生产动作和所有活动关节通过独立检查 (35.126584ms)
+✔ dinosaur 对错误步态、滑步、拉长、断环及静止腿拒收 (6.864708ms)
+✔ horse 生产动作和所有活动关节通过独立检查 (17.009541ms)
+✔ horse 对错误步态、滑步、拉长、断环及静止腿拒收 (3.385584ms)
+✔ crocodile 生产动作和所有活动关节通过独立检查 (19.395417ms)
+✔ crocodile 对错误步态、滑步、拉长、断环及静止腿拒收 (4.35225ms)
+✔ centipede 生产动作和所有活动关节通过独立检查 (315.760375ms)
+✔ centipede 对错误步态、滑步、拉长、断环及静止腿拒收 (26.443ms)
+✔ snake 生产动作和所有活动关节通过独立检查 (15.364625ms)
+✔ snake 对错误步态、滑步、拉长、断环及静止腿拒收 (1.6855ms)
+✔ worm 生产动作和所有活动关节通过独立检查 (12.872875ms)
+✔ worm 对错误步态、滑步、拉长、断环及静止腿拒收 (1.371667ms)
+✔ spider 生产动作和所有活动关节通过独立检查 (354.157959ms)
+✔ spider 对错误步态、滑步、拉长、断环及静止腿拒收 (30.093833ms)
+✔ scorpion 生产动作和所有活动关节通过独立检查 (558.068ms)
+✔ scorpion 对错误步态、滑步、拉长、断环及静止腿拒收 (40.933667ms)
+✔ 持续蒙皮三角形相邻边连续，急弯仍有有限变换 (13.23175ms)
+✖ 图集渲染骨段轴点对应骨骼位置，静态贴图不改变身体比例 (2.568917ms)
+✔ 物种专属复杂动作有实质位移并回位，单次时长正确 (14.621875ms)
+ℹ tests 68
+ℹ suites 0
+ℹ pass 63
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1608.612917
+
+✖ failing tests:
+
+test at test/human-side.test.mjs:8:1
+✖ 源透明图有十六个独立测量区域，校准后骨段两端和实际贴图轴点重合 (107.293542ms)
+  AssertionError [ERR_ASSERTION]: 0.9428571428571431 != -8.063740185085676
+      at close (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/human-side.test.mjs:4:27)
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/human-side.test.mjs:8:629)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/human-textures.test.mjs:6:1
+✖ 三种手型在八种动作中有实际素材；十四个衔接位在弯曲采样中有真实像素重叠 (264.454167ms)
+  AssertionError [ERR_ASSERTION]: [{"partId":"neck","parent":"body","samples":65,"minimumOverlapPixels":0,"centerCovered":false,"passed":false}]
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/human-textures.test.mjs:6:166)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/human-textures.test.mjs:9:1
+✖ 裤脚盖住踝件、衣领盖住颈根；反向遮挡即使像素相交也必须拒收 (326.179583ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(r.joints.every(j=>j.passed))
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/human-textures.test.mjs:9:348)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/human-textures.test.mjs:12:1
+✖ 翻滚97个姿势的真实渲染轮廓始终接地，根运动单独记录前进距离 (8.255875ms)
+  AssertionError [ERR_ASSERTION]: frame 12: 0.6767563991968899
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/human-textures.test.mjs:12:356)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/production.test.mjs:8:1
+✖ 图集渲染骨段轴点对应骨骼位置，静态贴图不改变身体比例 (2.568917ms)
+  AssertionError [ERR_ASSERTION]: human/leg-1-upper
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/production.test.mjs:8:706)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

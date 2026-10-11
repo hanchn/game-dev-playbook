@@ -1,0 +1,746 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "milk-frog-far-occlusion-context-v1-capture",
+  "loop": false,
+  "durationMs": 375,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1536,
+    "height": 512,
+    "cell": 512,
+    "columns": 3,
+    "rows": 1,
+    "padding": 0,
+    "fixedTransform": {
+      "mode": "sequence-common-canvas",
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "scaleXY": [
+        1,
+        1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "sourceAnchor": [
+        256,
+        512
+      ],
+      "anchor": [
+        256,
+        512
+      ],
+      "rasterRoundingPx": 0.5,
+      "registration": "source coordinates retained; no per-frame alpha fitting or automatic recentering"
+    },
+    "sha256": "81b57bf0f1706097b05ba6359aec44ed9a55b5170aa23d6945cf4a7b39ad07fd"
+  },
+  "provenance": {
+    "type": "canvas-recording",
+    "recordedFrom": {
+      "format": "sprite-frame-animation",
+      "schemaVersion": 1,
+      "name": "milk-frog-far-occlusion-context-v1",
+      "loop": false,
+      "durationMs": 375,
+      "sheet": {
+        "file": "sheet.png",
+        "width": 768,
+        "height": 256,
+        "cell": 256,
+        "columns": 3,
+        "rows": 1,
+        "padding": 12,
+        "fixedTransform": {
+          "mode": "sequence-common-canvas",
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "sourceOrigin": [
+            0,
+            0
+          ],
+          "scale": 0.1850079744816587,
+          "scaleXY": [
+            0.1850079744816587,
+            0.1850079744816587
+          ],
+          "offset": [
+            12,
+            12
+          ],
+          "sourceAnchor": [
+            627,
+            1254
+          ],
+          "anchor": [
+            128,
+            244
+          ],
+          "rasterRoundingPx": 0.5,
+          "registration": "source coordinates retained; no per-frame alpha fitting or automatic recentering"
+        }
+      },
+      "provenance": {
+        "type": "imagegen-sequence",
+        "sampleId": "milk-frog-far-occlusion-context-v1",
+        "tool": "image_gen.imagegen",
+        "verification": "each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call",
+        "files": [
+          {
+            "file": "milk-frog-run-v7-frame-07-v9.png",
+            "sha256": "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288"
+          },
+          {
+            "file": "milk-frog-far-occluded-phase08-v1.png",
+            "sha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207"
+          },
+          {
+            "file": "milk-frog-run-v5-frame-09-v2.png",
+            "sha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff"
+          }
+        ],
+        "sourceQA": "failed",
+        "sourceQANotes": [
+          "Three real original PNGs: source7, new8probe, source9; not a new completed12frame loop.",
+          "Far fist naturally hidden in8, source9 remains overscale/abrupt; source failed art and registration retained."
+        ]
+      },
+      "visualQA": "failed",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            12,
+            12,
+            232,
+            232
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "scale": 0.1850079744816587,
+          "anchor": [
+            128,
+            244
+          ],
+          "name": "milk-frog-run-v7-frame-07-v9.png",
+          "phase": 0.5833333333333334,
+          "file": "frames/001.png",
+          "timeMs": 0,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": null,
+          "sourceSha256": "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288",
+          "sourceProvenance": {
+            "type": "imagegen",
+            "tool": "image_gen.imagegen",
+            "prompt": "Local correction ONLY to FAR background CURLED-FIST arm in this original sprite. Same original1254transparentcanvas, exact head face tongue/body/bothleg/pinkfootpositions AND NEAR foregroundOPEN arm onright unchanged. Permanent nearOPEN and farCURLED identities. This far-support/loading frame has farfistleftbackabout430,675, but nextframefarrightforward creates a jump. Move far upperarm/elbow/forearm together into DOWNWARD PASSING before frontswing: FAR shoulder remains backbehindnearshoulder at(525,410), upperarm descending about(515,530), elbow(520,580), forearm gentlyforward/down to wrist(555,650), CURLED pinkfist center roughly(580,680). Show plausible fararm emerging from body behindnear upperarm, connectedshoulder-elbow-wrist, keep muscular volume/full limb length and same farfist3roundedknuckles. Some upperarm overlap under near body is natural. Fist must stayLEFT of white bellycenterx800, not yet forward rightpeak. NearOPEN palm around870750 is untouched and clearlyseparate, don'tswitchhands. Both legs unchanged nearrecoverycalfunderhip and farfootunderpelvis planted1199, no reverttoearliertoeoff. Erase the old leftfist around430675 and old farforearm completely; exactlytwoarms/twolegs, no ghosts/extralimbs. Unchanged camera scale groundcanvas headtorsoyellowgloss/whitebellyblackoutlines/hilights/pinkdots. Single sprite no controls/text/ground/shadow.",
+            "receipt": {
+              "tool": "image_gen.imagegen",
+              "prompt": "Local correction ONLY to FAR background CURLED-FIST arm in this original sprite. Same original1254transparentcanvas, exact head face tongue/body/bothleg/pinkfootpositions AND NEAR foregroundOPEN arm onright unchanged. Permanent nearOPEN and farCURLED identities. This far-support/loading frame has farfistleftbackabout430,675, but nextframefarrightforward creates a jump. Move far upperarm/elbow/forearm together into DOWNWARD PASSING before frontswing: FAR shoulder remains backbehindnearshoulder at(525,410), upperarm descending about(515,530), elbow(520,580), forearm gentlyforward/down to wrist(555,650), CURLED pinkfist center roughly(580,680). Show plausible fararm emerging from body behindnear upperarm, connectedshoulder-elbow-wrist, keep muscular volume/full limb length and same farfist3roundedknuckles. Some upperarm overlap under near body is natural. Fist must stayLEFT of white bellycenterx800, not yet forward rightpeak. NearOPEN palm around870750 is untouched and clearlyseparate, don'tswitchhands. Both legs unchanged nearrecoverycalfunderhip and farfootunderpelvis planted1199, no reverttoearliertoeoff. Erase the old leftfist around430675 and old farforearm completely; exactlytwoarms/twolegs, no ghosts/extralimbs. Unchanged camera scale groundcanvas headtorsoyellowgloss/whitebellyblackoutlines/hilights/pinkdots. Single sprite no controls/text/ground/shadow.",
+              "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-f7c4a287-d2fc-4091-8b29-a48be40ea20c.png",
+              "generatedFileSha256": "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288",
+              "referenceFiles": [
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v4/frame-07-v8.png",
+                  "sha256": "d8f147f5a06b7fc7d83bdc088197ef0abb43f3af5e3249e81512af03bba2c539"
+                }
+              ],
+              "phase": 0.5833333333333334,
+              "sourceSize": [
+                1254,
+                1254
+              ],
+              "pixelBounds": {
+                "threshold": 24,
+                "bounds": [
+                  454,
+                  89,
+                  594,
+                  1111
+                ],
+                "edgePixels": 0,
+                "hasTransparency": true,
+                "touchesEdge": false,
+                "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+              },
+              "qa": {
+                "visual": "failed",
+                "notes": "Actual fulloriginal: far curlyfist shiftsbackleft430→near550725, shoulder/elbowdescendpassing, nearopen and bothleggeometry retained. Entirefar7→8trajectory stillfailed/too fast."
+              }
+            },
+            "sha256": "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288",
+            "file": "milk-frog-run-v7-frame-07-v9.png"
+          },
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              454,
+              89,
+              594,
+              1111
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "review": {
+            "state": "failed",
+            "notes": "Actual fulloriginal: far curlyfist shiftsbackleft430→near550725, shoulder/elbowdescendpassing, nearopen and bothleggeometry retained. Entirefar7→8trajectory stillfailed/too fast.",
+            "origin": "SHA-bound actual single-frame receipt"
+          }
+        },
+        {
+          "index": 1,
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            268,
+            12,
+            232,
+            232
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "scale": 0.1850079744816587,
+          "anchor": [
+            128,
+            244
+          ],
+          "name": "milk-frog-far-occluded-phase08-v1.png",
+          "phase": 0.6666666666666666,
+          "file": "frames/002.png",
+          "timeMs": 125,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": null,
+          "sourceSha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+          "sourceProvenance": {
+            "type": "imagegen",
+            "tool": "image_gen.imagegen",
+            "prompt": "Precise single-frame sprite edit. REFERENCE1 is the only FAR ARM pose guide; REFERENCE2 is the original native1254square milk-frog frame8 to preserve. Change ONLY the FAR / rear-layer arm in reference2. REMOVE the incorrect pink curled fist and yellow arm currently protruding on the outer RIGHT side of the belly aroundx955..1065,y600..735. That old fist is far too far from its source-scale socket. The corrected far arm is SHORT and bent, using reference1's complete chain: inferred rear shoulder around(515,397.5), elbow(558.6,517.4), wrist(636,531.1), yellow upperarm about128px, forearmabout79px. Shoulder is behind the original large near shoulder/upperarm, and the whole far forearm and curled pink fist swing FORWARD CLOSE to the BODY, underneath and BEHIND the original NEAR arm/torso. DO NOT place a replacement fist on the outer right belly edge. CRITICAL OCCLUSION: the natural near arm and torso must cover the rear shoulder/forearm/fist wherever they overlap. It is CORRECT if the far pink fist is completely hidden in this frame. No requirement to show both hands. Do not enlarge or move the far fist outside just to reveal it. Only a small source-scale rear yellow arm portion might be visible behind the near deltoid; no floating hand or extra appendage. STRICT UNCHANGED: the entire thick foreground NEAR arm with its exact OPEN pink palm and long spread fingers; the original green eyes/head/smile/whitebelly/neck/body/muscle highlights and blackoutlines; BOTH original near/far LEGS, knees, feet/toes and their exact geometry; source native1254camera/frame/scale/headsize/anchor and plantedfoot/raisedfoot positions. Do not modify those unchanged parts or shift/rescale/crop/fit the character. Keep real transparent background. The guide blue line/gray outline/text must NOT appear; final is the SAME natural yellowmuscle/pinkskin sprite with corrected rear arm hidden naturally. Return one complete actual original-size character frame.",
+            "receipt": {
+              "tool": "image_gen.imagegen",
+              "prompt": "Precise single-frame sprite edit. REFERENCE1 is the only FAR ARM pose guide; REFERENCE2 is the original native1254square milk-frog frame8 to preserve. Change ONLY the FAR / rear-layer arm in reference2. REMOVE the incorrect pink curled fist and yellow arm currently protruding on the outer RIGHT side of the belly aroundx955..1065,y600..735. That old fist is far too far from its source-scale socket. The corrected far arm is SHORT and bent, using reference1's complete chain: inferred rear shoulder around(515,397.5), elbow(558.6,517.4), wrist(636,531.1), yellow upperarm about128px, forearmabout79px. Shoulder is behind the original large near shoulder/upperarm, and the whole far forearm and curled pink fist swing FORWARD CLOSE to the BODY, underneath and BEHIND the original NEAR arm/torso. DO NOT place a replacement fist on the outer right belly edge. CRITICAL OCCLUSION: the natural near arm and torso must cover the rear shoulder/forearm/fist wherever they overlap. It is CORRECT if the far pink fist is completely hidden in this frame. No requirement to show both hands. Do not enlarge or move the far fist outside just to reveal it. Only a small source-scale rear yellow arm portion might be visible behind the near deltoid; no floating hand or extra appendage. STRICT UNCHANGED: the entire thick foreground NEAR arm with its exact OPEN pink palm and long spread fingers; the original green eyes/head/smile/whitebelly/neck/body/muscle highlights and blackoutlines; BOTH original near/far LEGS, knees, feet/toes and their exact geometry; source native1254camera/frame/scale/headsize/anchor and plantedfoot/raisedfoot positions. Do not modify those unchanged parts or shift/rescale/crop/fit the character. Keep real transparent background. The guide blue line/gray outline/text must NOT appear; final is the SAME natural yellowmuscle/pinkskin sprite with corrected rear arm hidden naturally. Return one complete actual original-size character frame.",
+              "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-996e8d0b-1848-45e4-a6b1-62eea5cb44c2.png",
+              "generatedFileSha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+              "referenceFiles": [
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-far-occlusion-probe-v1/control-far-phase08.png",
+                  "sha256": "b7032d7e11a1da3df556d97cb50b5675b117a0121a62b97b354e54ccc31fa597"
+                },
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+                  "sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d"
+                }
+              ],
+              "sourceSize": [
+                1254,
+                1254
+              ],
+              "phase": 0.6666666666666666,
+              "pixelBounds": {
+                "threshold": 24,
+                "bounds": [
+                  417,
+                  85,
+                  716,
+                  1120
+                ],
+                "edgePixels": 0,
+                "hasTransparency": true,
+                "touchesEdge": false,
+                "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+              },
+              "qa": {
+                "visual": "failed",
+                "notes": [
+                  "One local phase8 occlusion probe; old outer-right oversized far fist removed.",
+                  "Near open hand and overall face/leg poses visually retained, exact pixels still change; unreviewed source-scale hidden shoulder chain cannot be measured.",
+                  "Not a complete loop: source9 etc retain overscale far arm and material/ground registration failed."
+                ]
+              }
+            },
+            "sha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+            "file": "milk-frog-far-occluded-phase08-v1.png"
+          },
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              417,
+              85,
+              716,
+              1120
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "review": {
+            "state": "failed",
+            "notes": [
+              "One local phase8 occlusion probe; old outer-right oversized far fist removed.",
+              "Near open hand and overall face/leg poses visually retained, exact pixels still change; unreviewed source-scale hidden shoulder chain cannot be measured.",
+              "Not a complete loop: source9 etc retain overscale far arm and material/ground registration failed."
+            ],
+            "origin": "SHA-bound actual single-frame receipt"
+          }
+        },
+        {
+          "index": 2,
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            524,
+            12,
+            232,
+            232
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "scale": 0.1850079744816587,
+          "anchor": [
+            128,
+            244
+          ],
+          "name": "milk-frog-run-v5-frame-09-v2.png",
+          "phase": 0.75,
+          "file": "frames/003.png",
+          "timeMs": 250,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": null,
+          "sourceSha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff",
+          "sourceProvenance": {
+            "type": "imagegen",
+            "tool": "image_gen.imagegen",
+            "prompt": "Precise localized edit of ONLY the NEAR foreground OPEN-HAND arm in this sprite. Keep same transparent1254canvas, fixed camera/scale, original exact head eyes face tongue torso BOTH legs (near high knee right, far toeoff left) and FAR curled-fist arm right unchanged. No recenter/rescale/wholebodymotion.\nThe NEAR arm now extends almost straight far left with palm x200; this jumps too far after previous passing palm650. Preserve the same shoulder(615,410) and NEAR upperarm swinging BACK toward LEFT, but bend its elbow so forearm does not fully extendback yet. Place elbow near(420,535), then forearm bends DOWN and slightlyFORWARD toward wrist(480,670), OPEN relaxed pink palm center roughly(430,740), entirely behind hipx700. Near upperarm remains clearlyback while near thigh is forward, NOT forwardarm copied. Keep full original muscular biceps and forearm volumes/lengths, shoulder-elbow-wrist smoothlyconnected; no shrinking a limb. Openfingers same identityshape, notclosedfist. Exactly2arms/2legs, erase previous farleft hand/forearm silhouette completely, no extra ghostarm. Same polished yellow highlights, white belly, black outlines and wristdots, unchanged artwork outside targetarm. Transparentbackground, no groundline/shadow/text/controls. Single sprite only.",
+            "receipt": {
+              "tool": "image_gen.imagegen",
+              "prompt": "Precise localized edit of ONLY the NEAR foreground OPEN-HAND arm in this sprite. Keep same transparent1254canvas, fixed camera/scale, original exact head eyes face tongue torso BOTH legs (near high knee right, far toeoff left) and FAR curled-fist arm right unchanged. No recenter/rescale/wholebodymotion.\nThe NEAR arm now extends almost straight far left with palm x200; this jumps too far after previous passing palm650. Preserve the same shoulder(615,410) and NEAR upperarm swinging BACK toward LEFT, but bend its elbow so forearm does not fully extendback yet. Place elbow near(420,535), then forearm bends DOWN and slightlyFORWARD toward wrist(480,670), OPEN relaxed pink palm center roughly(430,740), entirely behind hipx700. Near upperarm remains clearlyback while near thigh is forward, NOT forwardarm copied. Keep full original muscular biceps and forearm volumes/lengths, shoulder-elbow-wrist smoothlyconnected; no shrinking a limb. Openfingers same identityshape, notclosedfist. Exactly2arms/2legs, erase previous farleft hand/forearm silhouette completely, no extra ghostarm. Same polished yellow highlights, white belly, black outlines and wristdots, unchanged artwork outside targetarm. Transparentbackground, no groundline/shadow/text/controls. Single sprite only.",
+              "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-4f624191-89c4-4c9c-9893-f9ed8209c5f1.png",
+              "generatedFileSha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff",
+              "referenceFiles": [
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-09-v1.png",
+                  "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+                }
+              ],
+              "phase": 0.75,
+              "sourceSize": [
+                1254,
+                1254
+              ],
+              "pixelBounds": {
+                "threshold": 24,
+                "bounds": [
+                  246,
+                  88,
+                  935,
+                  1114
+                ],
+                "edgePixels": 0,
+                "hasTransparency": true,
+                "touchesEdge": false,
+                "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+              },
+              "qa": {
+                "visual": "failed",
+                "notes": "Near upperarm stillbackswing, elbow flexed and open palm behindhip atabout450 insteadof200; reduces8→9handjump, wholeartfailed."
+              }
+            },
+            "sha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff",
+            "file": "milk-frog-run-v5-frame-09-v2.png"
+          },
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              246,
+              88,
+              935,
+              1114
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "review": {
+            "state": "failed",
+            "notes": "Near upperarm stillbackswing, elbow flexed and open palm behindhip atabout450 insteadof200; reduces8→9handjump, wholeartfailed.",
+            "origin": "SHA-bound actual single-frame receipt"
+          }
+        }
+      ]
+    },
+    "requestedFPS": 8,
+    "requestedDuration": 0.375,
+    "requestedFrameCount": 3,
+    "capturedFrameCount": 3,
+    "actualElapsedSeconds": 0.43990000000596047,
+    "terminalRequestElapsedMs": 376.90000000596046,
+    "cancelled": false,
+    "audioTrackCount": 0,
+    "encodingTiming": "captureStream(0) + one requestFrame per immutable PNG bitmap, plus terminal hold; MediaRecorder PTS are real wall-clock and require FFprobe verification",
+    "timingSamples": [
+      {
+        "requestedTimeMs": 0,
+        "actualRequestElapsedMs": 0.30000001192092896,
+        "latenessMs": 0.30000001192092896
+      },
+      {
+        "requestedTimeMs": 125,
+        "actualRequestElapsedMs": 127.59999999403954,
+        "latenessMs": 2.5999999940395355
+      },
+      {
+        "requestedTimeMs": 250,
+        "actualRequestElapsedMs": 250.7000000178814,
+        "latenessMs": 0.7000000178813934
+      }
+    ],
+    "requestedCycles": 1,
+    "cycleDurationSeconds": 0.375,
+    "cyclePolicy": "source index repeats chronologically; original PNG count unchanged",
+    "mimeType": "video/webm;codecs=vp9",
+    "background": "dark",
+    "videoFile": "recording.webm",
+    "videoSha256": "91b95304abe5bbc7a5060b38ad0a32f7703d6713235eb93500691a3d50e9f9d6",
+    "fixedTransform": {
+      "sourceCanvasSize": [
+        1254,
+        1254
+      ],
+      "scale": 0.38915470494417864,
+      "offset": [
+        12,
+        12
+      ]
+    },
+    "sourceQA": "failed"
+  },
+  "visualQA": "failed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "anchor": [
+        256,
+        512
+      ],
+      "name": "capture-1.png",
+      "phase": 0.5833333333333334,
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 125,
+      "sourceTime": 0,
+      "decodedTime": null,
+      "sourceFrameIndex": 0,
+      "sourceRect": null,
+      "sourceSha256": "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288",
+      "sourceProvenance": {
+        "type": "imagegen",
+        "tool": "image_gen.imagegen",
+        "prompt": "Local correction ONLY to FAR background CURLED-FIST arm in this original sprite. Same original1254transparentcanvas, exact head face tongue/body/bothleg/pinkfootpositions AND NEAR foregroundOPEN arm onright unchanged. Permanent nearOPEN and farCURLED identities. This far-support/loading frame has farfistleftbackabout430,675, but nextframefarrightforward creates a jump. Move far upperarm/elbow/forearm together into DOWNWARD PASSING before frontswing: FAR shoulder remains backbehindnearshoulder at(525,410), upperarm descending about(515,530), elbow(520,580), forearm gentlyforward/down to wrist(555,650), CURLED pinkfist center roughly(580,680). Show plausible fararm emerging from body behindnear upperarm, connectedshoulder-elbow-wrist, keep muscular volume/full limb length and same farfist3roundedknuckles. Some upperarm overlap under near body is natural. Fist must stayLEFT of white bellycenterx800, not yet forward rightpeak. NearOPEN palm around870750 is untouched and clearlyseparate, don'tswitchhands. Both legs unchanged nearrecoverycalfunderhip and farfootunderpelvis planted1199, no reverttoearliertoeoff. Erase the old leftfist around430675 and old farforearm completely; exactlytwoarms/twolegs, no ghosts/extralimbs. Unchanged camera scale groundcanvas headtorsoyellowgloss/whitebellyblackoutlines/hilights/pinkdots. Single sprite no controls/text/ground/shadow.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "Local correction ONLY to FAR background CURLED-FIST arm in this original sprite. Same original1254transparentcanvas, exact head face tongue/body/bothleg/pinkfootpositions AND NEAR foregroundOPEN arm onright unchanged. Permanent nearOPEN and farCURLED identities. This far-support/loading frame has farfistleftbackabout430,675, but nextframefarrightforward creates a jump. Move far upperarm/elbow/forearm together into DOWNWARD PASSING before frontswing: FAR shoulder remains backbehindnearshoulder at(525,410), upperarm descending about(515,530), elbow(520,580), forearm gentlyforward/down to wrist(555,650), CURLED pinkfist center roughly(580,680). Show plausible fararm emerging from body behindnear upperarm, connectedshoulder-elbow-wrist, keep muscular volume/full limb length and same farfist3roundedknuckles. Some upperarm overlap under near body is natural. Fist must stayLEFT of white bellycenterx800, not yet forward rightpeak. NearOPEN palm around870750 is untouched and clearlyseparate, don'tswitchhands. Both legs unchanged nearrecoverycalfunderhip and farfootunderpelvis planted1199, no reverttoearliertoeoff. Erase the old leftfist around430675 and old farforearm completely; exactlytwoarms/twolegs, no ghosts/extralimbs. Unchanged camera scale groundcanvas headtorsoyellowgloss/whitebellyblackoutlines/hilights/pinkdots. Single sprite no controls/text/ground/shadow.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-f7c4a287-d2fc-4091-8b29-a48be40ea20c.png",
+          "generatedFileSha256": "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288",
+          "referenceFiles": [
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v4/frame-07-v8.png",
+              "sha256": "d8f147f5a06b7fc7d83bdc088197ef0abb43f3af5e3249e81512af03bba2c539"
+            }
+          ],
+          "phase": 0.5833333333333334,
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              454,
+              89,
+              594,
+              1111
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Actual fulloriginal: far curlyfist shiftsbackleft430→near550725, shoulder/elbowdescendpassing, nearopen and bothleggeometry retained. Entirefar7→8trajectory stillfailed/too fast."
+          }
+        },
+        "sha256": "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288",
+        "file": "milk-frog-run-v7-frame-07-v9.png"
+      },
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "Actual fulloriginal: far curlyfist shiftsbackleft430→near550725, shoulder/elbowdescendpassing, nearopen and bothleggeometry retained. Entirefar7→8trajectory stillfailed/too fast.",
+        "origin": "SHA-bound actual single-frame receipt"
+      },
+      "pngSha256": "714b885c5201377300a9c71c909fcc9316a422e2f6871b2292b2d6c37b30dc86"
+    },
+    {
+      "index": 1,
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "anchor": [
+        256,
+        512
+      ],
+      "name": "capture-2.png",
+      "phase": 0.6666666666666666,
+      "file": "frames/002.png",
+      "timeMs": 125,
+      "durationMs": 125,
+      "sourceTime": 0.125,
+      "decodedTime": null,
+      "sourceFrameIndex": 1,
+      "sourceRect": null,
+      "sourceSha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+      "sourceProvenance": {
+        "type": "imagegen",
+        "tool": "image_gen.imagegen",
+        "prompt": "Precise single-frame sprite edit. REFERENCE1 is the only FAR ARM pose guide; REFERENCE2 is the original native1254square milk-frog frame8 to preserve. Change ONLY the FAR / rear-layer arm in reference2. REMOVE the incorrect pink curled fist and yellow arm currently protruding on the outer RIGHT side of the belly aroundx955..1065,y600..735. That old fist is far too far from its source-scale socket. The corrected far arm is SHORT and bent, using reference1's complete chain: inferred rear shoulder around(515,397.5), elbow(558.6,517.4), wrist(636,531.1), yellow upperarm about128px, forearmabout79px. Shoulder is behind the original large near shoulder/upperarm, and the whole far forearm and curled pink fist swing FORWARD CLOSE to the BODY, underneath and BEHIND the original NEAR arm/torso. DO NOT place a replacement fist on the outer right belly edge. CRITICAL OCCLUSION: the natural near arm and torso must cover the rear shoulder/forearm/fist wherever they overlap. It is CORRECT if the far pink fist is completely hidden in this frame. No requirement to show both hands. Do not enlarge or move the far fist outside just to reveal it. Only a small source-scale rear yellow arm portion might be visible behind the near deltoid; no floating hand or extra appendage. STRICT UNCHANGED: the entire thick foreground NEAR arm with its exact OPEN pink palm and long spread fingers; the original green eyes/head/smile/whitebelly/neck/body/muscle highlights and blackoutlines; BOTH original near/far LEGS, knees, feet/toes and their exact geometry; source native1254camera/frame/scale/headsize/anchor and plantedfoot/raisedfoot positions. Do not modify those unchanged parts or shift/rescale/crop/fit the character. Keep real transparent background. The guide blue line/gray outline/text must NOT appear; final is the SAME natural yellowmuscle/pinkskin sprite with corrected rear arm hidden naturally. Return one complete actual original-size character frame.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "Precise single-frame sprite edit. REFERENCE1 is the only FAR ARM pose guide; REFERENCE2 is the original native1254square milk-frog frame8 to preserve. Change ONLY the FAR / rear-layer arm in reference2. REMOVE the incorrect pink curled fist and yellow arm currently protruding on the outer RIGHT side of the belly aroundx955..1065,y600..735. That old fist is far too far from its source-scale socket. The corrected far arm is SHORT and bent, using reference1's complete chain: inferred rear shoulder around(515,397.5), elbow(558.6,517.4), wrist(636,531.1), yellow upperarm about128px, forearmabout79px. Shoulder is behind the original large near shoulder/upperarm, and the whole far forearm and curled pink fist swing FORWARD CLOSE to the BODY, underneath and BEHIND the original NEAR arm/torso. DO NOT place a replacement fist on the outer right belly edge. CRITICAL OCCLUSION: the natural near arm and torso must cover the rear shoulder/forearm/fist wherever they overlap. It is CORRECT if the far pink fist is completely hidden in this frame. No requirement to show both hands. Do not enlarge or move the far fist outside just to reveal it. Only a small source-scale rear yellow arm portion might be visible behind the near deltoid; no floating hand or extra appendage. STRICT UNCHANGED: the entire thick foreground NEAR arm with its exact OPEN pink palm and long spread fingers; the original green eyes/head/smile/whitebelly/neck/body/muscle highlights and blackoutlines; BOTH original near/far LEGS, knees, feet/toes and their exact geometry; source native1254camera/frame/scale/headsize/anchor and plantedfoot/raisedfoot positions. Do not modify those unchanged parts or shift/rescale/crop/fit the character. Keep real transparent background. The guide blue line/gray outline/text must NOT appear; final is the SAME natural yellowmuscle/pinkskin sprite with corrected rear arm hidden naturally. Return one complete actual original-size character frame.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-996e8d0b-1848-45e4-a6b1-62eea5cb44c2.png",
+          "generatedFileSha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+          "referenceFiles": [
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-far-occlusion-probe-v1/control-far-phase08.png",
+              "sha256": "b7032d7e11a1da3df556d97cb50b5675b117a0121a62b97b354e54ccc31fa597"
+            },
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+              "sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d"
+            }
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "phase": 0.6666666666666666,
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              417,
+              85,
+              716,
+              1120
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": [
+              "One local phase8 occlusion probe; old outer-right oversized far fist removed.",
+              "Near open hand and overall face/leg poses visually retained, exact pixels still change; unreviewed source-scale hidden shoulder chain cannot be measured.",
+              "Not a complete loop: source9 etc retain overscale far arm and material/ground registration failed."
+            ]
+          }
+        },
+        "sha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+        "file": "milk-frog-far-occluded-phase08-v1.png"
+      },
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": [
+          "One local phase8 occlusion probe; old outer-right oversized far fist removed.",
+          "Near open hand and overall face/leg poses visually retained, exact pixels still change; unreviewed source-scale hidden shoulder chain cannot be measured.",
+          "Not a complete loop: source9 etc retain overscale far arm and material/ground registration failed."
+        ],
+        "origin": "SHA-bound actual single-frame receipt"
+      },
+      "pngSha256": "b83baff5518aac309c3f384b41511aa5a7b09efab4d946789d477d4be183730a"
+    },
+    {
+      "index": 2,
+      "rect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "anchor": [
+        256,
+        512
+      ],
+      "name": "capture-3.png",
+      "phase": 0.75,
+      "file": "frames/003.png",
+      "timeMs": 250,
+      "durationMs": 125,
+      "sourceTime": 0.25,
+      "decodedTime": null,
+      "sourceFrameIndex": 2,
+      "sourceRect": null,
+      "sourceSha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff",
+      "sourceProvenance": {
+        "type": "imagegen",
+        "tool": "image_gen.imagegen",
+        "prompt": "Precise localized edit of ONLY the NEAR foreground OPEN-HAND arm in this sprite. Keep same transparent1254canvas, fixed camera/scale, original exact head eyes face tongue torso BOTH legs (near high knee right, far toeoff left) and FAR curled-fist arm right unchanged. No recenter/rescale/wholebodymotion.\nThe NEAR arm now extends almost straight far left with palm x200; this jumps too far after previous passing palm650. Preserve the same shoulder(615,410) and NEAR upperarm swinging BACK toward LEFT, but bend its elbow so forearm does not fully extendback yet. Place elbow near(420,535), then forearm bends DOWN and slightlyFORWARD toward wrist(480,670), OPEN relaxed pink palm center roughly(430,740), entirely behind hipx700. Near upperarm remains clearlyback while near thigh is forward, NOT forwardarm copied. Keep full original muscular biceps and forearm volumes/lengths, shoulder-elbow-wrist smoothlyconnected; no shrinking a limb. Openfingers same identityshape, notclosedfist. Exactly2arms/2legs, erase previous farleft hand/forearm silhouette completely, no extra ghostarm. Same polished yellow highlights, white belly, black outlines and wristdots, unchanged artwork outside targetarm. Transparentbackground, no groundline/shadow/text/controls. Single sprite only.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "Precise localized edit of ONLY the NEAR foreground OPEN-HAND arm in this sprite. Keep same transparent1254canvas, fixed camera/scale, original exact head eyes face tongue torso BOTH legs (near high knee right, far toeoff left) and FAR curled-fist arm right unchanged. No recenter/rescale/wholebodymotion.\nThe NEAR arm now extends almost straight far left with palm x200; this jumps too far after previous passing palm650. Preserve the same shoulder(615,410) and NEAR upperarm swinging BACK toward LEFT, but bend its elbow so forearm does not fully extendback yet. Place elbow near(420,535), then forearm bends DOWN and slightlyFORWARD toward wrist(480,670), OPEN relaxed pink palm center roughly(430,740), entirely behind hipx700. Near upperarm remains clearlyback while near thigh is forward, NOT forwardarm copied. Keep full original muscular biceps and forearm volumes/lengths, shoulder-elbow-wrist smoothlyconnected; no shrinking a limb. Openfingers same identityshape, notclosedfist. Exactly2arms/2legs, erase previous farleft hand/forearm silhouette completely, no extra ghostarm. Same polished yellow highlights, white belly, black outlines and wristdots, unchanged artwork outside targetarm. Transparentbackground, no groundline/shadow/text/controls. Single sprite only.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-4f624191-89c4-4c9c-9893-f9ed8209c5f1.png",
+          "generatedFileSha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff",
+          "referenceFiles": [
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-09-v1.png",
+              "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+            }
+          ],
+          "phase": 0.75,
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              246,
+              88,
+              935,
+              1114
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Near upperarm stillbackswing, elbow flexed and open palm behindhip atabout450 insteadof200; reduces8→9handjump, wholeartfailed."
+          }
+        },
+        "sha256": "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff",
+        "file": "milk-frog-run-v5-frame-09-v2.png"
+      },
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "Near upperarm stillbackswing, elbow flexed and open palm behindhip atabout450 insteadof200; reduces8→9handjump, wholeartfailed.",
+        "origin": "SHA-bound actual single-frame receipt"
+      },
+      "pngSha256": "9e075f8d18adc0a1fd628659a07785756bfa3e338b9421ccebd5771521f14b47"
+    }
+  ],
+  "exportedAt": "2026-10-11T23:24:41.453Z"
+}

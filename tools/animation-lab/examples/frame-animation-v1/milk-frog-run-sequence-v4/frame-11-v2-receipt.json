@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Generate the immediate PRE-LANDING animation frame before this exact contact sprite by a localized edit of IMAGE1. Keep same transparent1254x1254canvas, camera, original character size/position and full head/face/eyes/tongue/torso/arms/hip unchanged. Permanent near OPEN hand left-back, farCURLED fist right-front, same muscle volume/highlights/material. Do not recenter/rescale/change view.\nOnly lowerlegs/feet differ slightly. The NEAR forward leg is foreground on imageRIGHT. Just before landing its pink foot needs to hover24pixels above the next-frame ground y1192: near sole bottom y1168, still flat near-foot same xplacement as source, adjust lowercalf with slightlymoreflexion to remain smoothly attached at same near knee, don't shift torso. NEAR thigh and knee stay original positions. FAR background leg recovers behind to left with its knee bent and pinkfoot airborne; leave FAR thigh/knee position unchanged and put its foot just15pixels higher than source, slight ankle movement only. Exactly2legs/2arms, no oldghostfoot, no extra digits. This should look almost identical to source except a very small visible downward-landing gap in NEAR foot, for smooth frame11→frame0contact. Bothfeetairborne here, nextframe nearsole1192contacts. Keep blackoutlines/musclethickness and original polished yellows/whitebelly/greeneYES/pinkfeet. No floor/shadow/text/control. Return one originalcomposition transparent sprite.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-374ebfe4-43b5-4ede-88cb-3d298a0bbca4.png",
+  "generatedFileSha256": "dfad9d922754694032221e2c24fa95ead13ec88f383f80829e705e81f3b73b28",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-00-v1.png",
+      "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+    }
+  ],
+  "phase": 0.9166666666666666,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      101,
+      84,
+      1058,
+      1085
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Prelanding from nextcontact source0 preserving upperbody and minorfootlift; actual native measurement determines result, no coordinatepromise."
+  }
+}

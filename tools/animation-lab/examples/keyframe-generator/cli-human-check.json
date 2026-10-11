@@ -1,0 +1,29 @@
+{
+  "schema": "sprite-keyframe-check",
+  "schemaVersion": 1,
+  "assetId": "human-side-v17",
+  "samples": 65,
+  "passed": true,
+  "checks": [
+    {
+      "id": "bone-length",
+      "passed": true,
+      "maxError": 2.1316282072803006e-14
+    },
+    {
+      "id": "linked-sockets",
+      "passed": true,
+      "maxError": 0
+    },
+    {
+      "id": "loop-endpoints",
+      "passed": true,
+      "required": true,
+      "maxGap": 0
+    }
+  ],
+  "visual": "not-reviewed",
+  "limitations": [
+    "数值检查不判断接缝、材质、接地、动作自然度或角色比例。"
+  ]
+}

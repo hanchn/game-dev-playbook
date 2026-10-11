@@ -1,0 +1,76 @@
+{
+  "canvasId": "2104953051498848257",
+  "targetType": "NODE",
+  "targetId": "node-alien-run-35e4bb9ba419421c9e7bc43d492f16e0",
+  "canvas": {
+    "nodes": [
+      {
+        "id": "node-alien-ref-ffbb662b7c5f432c8e005a8331c83bfe",
+        "type": "rh-image",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "data": {
+          "aspectRatio": "3:4",
+          "height": 1448,
+          "width": 1086,
+          "label": "Canonical alien identity / actual PNG",
+          "sourceObjects": [
+            "https://rh-canvas-files.xiaoyaoyou.com/958c82e5aa39e5c908f82fd3b15d10ee/uploads/0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09.png"
+          ],
+          "status": "SUCCESS",
+          "subType": "text-image",
+          "title": "Canonical run frame 00"
+        }
+      },
+      {
+        "data": {
+          "generateNum": 1,
+          "height": 645,
+          "label": "Alien continuous run 4s QA probe",
+          "maxConnect": {
+            "image": null,
+            "text": null,
+            "video": null
+          },
+          "modelCode": "multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+          "params": {
+            "prompt": "One continuous side-profile 3D game character animation, using reference image1 as the exact alien explorer identity, clothes, boots, face, eye, skin detail and camera/scale reference. Large speckled beige bald elongated cranium, blue eye, olive sleeveless vest, cream undershirt, brown cargo trousers and dark boots. Strict orthographic right-facing side view, camera entirely locked, character pelvis remains in the same horizontal location and stable body size, tiny natural pelvis bob only. Run in place for four seconds with about three complete natural left/right cycles. Show TWO arms and TWO legs at all times, permanent near/far identities; foreground near thigh carries the same outside cargo pocket. NEAR thigh swings forward as NEAR arm swings backward, then near thigh recovers backward as NEAR arm swings forward. FAR arm and leg alternate in opposite phases; far knee, far foot and far fist visibly emerge each cycle, never stay hidden/frozen. Each shoulder-elbow-wrist follows a continuous back-passing-front-passing arc with bent elbows and softly closed independent fists. Feet must pass through contact, weight bearing, toe-off, folded-heel recovery, high-knee passing, airborne phase, landing approach; alternate which foot supports. No extra hands/feet, no cycling two extreme still poses. Keep same head/eye/microtexture throughout, forward gaze and same friendly slight smile, no forced blink. Entire full body, every head/hand/boot remain within one fixed movement envelope with at least8% safe canvas margin; no zoom, no camera pan, no camera yaw, no recentering, no cuts. Ground plane and foot sole baseline stay fixed; no sliding supporting foot and no floating contact. Simple constant flat light-gray background, no props, text, graphics or additional person. This video is a real continuous motion probe; final transparency is not claimed.",
+            "duration": "4",
+            "resolution": "768p",
+            "aspectRatio": "3:4",
+            "audioMode": "native",
+            "refImage1": "https://rh-canvas-files.xiaoyaoyou.com/958c82e5aa39e5c908f82fd3b15d10ee/uploads/0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09.png"
+          },
+          "prompt": "One continuous side-profile 3D game character animation, using reference image1 as the exact alien explorer identity, clothes, boots, face, eye, skin detail and camera/scale reference. Large speckled beige bald elongated cranium, blue eye, olive sleeveless vest, cream undershirt, brown cargo trousers and dark boots. Strict orthographic right-facing side view, camera entirely locked, character pelvis remains in the same horizontal location and stable body size, tiny natural pelvis bob only. Run in place for four seconds with about three complete natural left/right cycles. Show TWO arms and TWO legs at all times, permanent near/far identities; foreground near thigh carries the same outside cargo pocket. NEAR thigh swings forward as NEAR arm swings backward, then near thigh recovers backward as NEAR arm swings forward. FAR arm and leg alternate in opposite phases; far knee, far foot and far fist visibly emerge each cycle, never stay hidden/frozen. Each shoulder-elbow-wrist follows a continuous back-passing-front-passing arc with bent elbows and softly closed independent fists. Feet must pass through contact, weight bearing, toe-off, folded-heel recovery, high-knee passing, airborne phase, landing approach; alternate which foot supports. No extra hands/feet, no cycling two extreme still poses. Keep same head/eye/microtexture throughout, forward gaze and same friendly slight smile, no forced blink. Entire full body, every head/hand/boot remain within one fixed movement envelope with at least8% safe canvas margin; no zoom, no camera pan, no camera yaw, no recentering, no cuts. Ground plane and foot sole baseline stay fixed; no sliding supporting foot and no floating contact. Simple constant flat light-gray background, no props, text, graphics or additional person. This video is a real continuous motion probe; final transparency is not claimed.",
+          "status": "IDLE",
+          "subType": "multimodal-video",
+          "title": "Alien continuous run 4s QA probe",
+          "width": 360
+        },
+        "id": "node-alien-run-35e4bb9ba419421c9e7bc43d492f16e0",
+        "position": {
+          "x": 400,
+          "y": 0
+        },
+        "selectable": true,
+        "style": {
+          "height": 220,
+          "width": 380
+        },
+        "type": "rh-video"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-node-alien-ref-ffbb662b7c5f432c8e005a8331c83bfe-node-alien-run-35e4bb9ba419421c9e7bc43d492f16e0",
+        "source": "node-alien-ref-ffbb662b7c5f432c8e005a8331c83bfe",
+        "sourceHandle": "output",
+        "target": "node-alien-run-35e4bb9ba419421c9e7bc43d492f16e0",
+        "targetHandle": "input",
+        "type": "default"
+      }
+    ]
+  }
+}

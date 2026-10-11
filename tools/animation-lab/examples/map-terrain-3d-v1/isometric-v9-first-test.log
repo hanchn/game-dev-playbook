@@ -1,0 +1,19 @@
+✔ isometric projection/inverse preserves negative and fractional world coordinates (0.524833ms)
+✔ seeded overlapping windows share tiles and object identity/depth (64.604917ms)
+✔ style switches choose actual different sprite pools and water policies (43.377333ms)
+✔ disc motion blocks water tile and building without tunnelling (0.354416ms)
+✔ invalid regions and styles fail visibly (0.105708ms)
+✔ offline export has PNG, source hashes, copied sprite references and collision data (294.656833ms)
+✔ castle uses an original-model-derived native 1024px PNG with a measured ground anchor (35.3805ms)
+✔ isometric castle compound walls preserve the real source arch and shared window identity (48.157708ms)
+✔ derived vegetation references actual source pixels, uses varied geometry and aligned jittered colliders (57.727916ms)
+✔ continuous source ground uses identical negative world pixels across independently clipped regions (53.521291ms)
+✔ actual water atlas renders texture detail with stable negative-world pattern across independent river windows (114.295375ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 783.35375

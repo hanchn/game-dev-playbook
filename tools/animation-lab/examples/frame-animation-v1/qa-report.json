@@ -1,0 +1,130 @@
+{
+  "schema": "frame-animation-tool-qa",
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T16:00:03.175359+00:00",
+  "technicalStatus": "passed",
+  "visualStatus": "not-accepted",
+  "implementationSHA256": {
+    "tools/animation-lab/frame-animation-core.mjs": "1c7eb07bf1621c659ff2d88e7f222e1b47a791186ca75baddc22cb7655721e8f",
+    "tools/animation-lab/public/frame-animation.mjs": "420e27fe860e28b913c14b345075404321e2bd165563ec6e76343bb2c710a9e1",
+    "tools/animation-lab/public/frame-animation.html": "35a98564ee3911900a91f3c64a197523cb8ed96ec8e635cefe60b803a9b96216",
+    "tools/animation-lab/public/frame-animation.css": "49235c680a7c5874956062a85190fbab8093d4c8c7c9a87cc0ae3d46f0984de2",
+    "tools/animation-lab/scripts/frame-animation-cli.mjs": "fa2fde184e6f29fde0e94b8db10232633019ffade93f5c9be3b547f4cf478917",
+    "tools/animation-lab/test/frame-animation.test.mjs": "7c59a1ed32c67e2235d6e545393e6ca9115a653da01a31fcfa43e4e7d5cbe45c"
+  },
+  "tests": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "log": "tests.log"
+  },
+  "videoFixture": {
+    "source": "video/source.mp4",
+    "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+    "origin": "FFmpeg lavfi testsrc2; synthetic codec/chronology fixture, not a human motion reference",
+    "durationSeconds": 2,
+    "sourceFPS": 8,
+    "sampledFPS": 4,
+    "actualFrames": 8,
+    "decodedPTS": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1,
+      1.25,
+      1.5,
+      1.75
+    ],
+    "exactSourcePixelComparison": "native ffmpeg decoded frame 6 equals extracted PNG 004, test passed",
+    "cliManifest": "video/extracted/animation.json",
+    "browserManifest": "video/browser-animation.json",
+    "browserPNG": "video/browser-sheet.png",
+    "explicitTimesCli": "video/selected-cli/animation.json; unsorted1.25,.25,.75 sorts .25,.75,1.25;1500ms,actualdecodePTS exact",
+    "selectedCliZIP": "video/selected-cli/animation.zip",
+    "explicitTimesBrowser": {
+      "manifest": "video/browser-selected-animation.json",
+      "png": "video/browser-selected-sheet.png",
+      "sourceTimes": [
+        0.25,
+        0.75,
+        1.25
+      ],
+      "durationMs": 1500,
+      "invalidDuplicateRejected": true,
+      "previousFramesPreserved": true,
+      "evidence": "actual Playwright output cell64080"
+    }
+  },
+  "browser": {
+    "engine": "isolated Playwright Chrome sessions; actual local video and generated image file inputs",
+    "videoImportExtraction": "passed: eight unique thumbnail bitmaps",
+    "timelinePlayback": "passed: observed progression across >=6 distinct frames",
+    "singleShot": "passed: stopped at frame8",
+    "variableDurationEdit": "passed: first frame125→300ms gave1.175s, reorder preserved original image, deletion reduced frame count",
+    "pngAndJsonDownload": "passed: both actual downloads saved",
+    "zip": "passed: actual downloads, native unzip CRC and Python UTF-8 extraction",
+    "sourceFailedState": "passed: alien run failed status displayed and inherited by exported/recorded manifests",
+    "console": "initial favicon404 recorded, new page data favicon fixes it; no script errors in final isolated headless session",
+    "interruptedAttempt": "headed session externally navigated to lab/alien; did not operate that tab; resumed in isolated headless session"
+  },
+  "directGeneration": {
+    "tool": "image_gen.imagegen",
+    "original": "imagegen/jellyfish-original.png",
+    "receipt": "imagegen/receipt.json",
+    "sourceSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+    "actualPNGSize": [
+      1774,
+      887
+    ],
+    "integerGridSplit": "all source pixels covered without overlap despite nondivisible dimensions",
+    "actualFrameCount": 8,
+    "browserImportedAndPlayed": true,
+    "pixelEvidence": "imagegen/pixel-review.json",
+    "artVerdict": "failed",
+    "artFindings": [
+      "six requested tentacles not delivered (four dominant visible appendages)",
+      "bell dimensions/position drift across cells; continuity not accepted",
+      "very faint alpha-positive speckles at cell borders (counts10,38,9,14,14,19,48,38); preserved as source defects, not erased by code"
+    ],
+    "sourceDarkLightReview": [
+      "imagegen/source-dark-review.png",
+      "imagegen/source-light-review.png"
+    ]
+  },
+  "alienGeneratedSamples": {
+    "sourceOwner": "parent and sibling actual imagegen calls; no skeleton raster substituted",
+    "run": "failed: far limb second-half reciprocity and view drift",
+    "jumpSquatBendV2": "not-reviewed: source registration and scale defects explicitly displayed",
+    "exportsAndSHAValidation": "alien-action-samples/validation.json",
+    "liveSingleShotPlayback": "jump/squat/bend all8 actual PNGs, all1s, allstopframe8",
+    "recording": "alien-run-v1/recording-validation-manual-v2.json"
+  },
+  "recording": {
+    "automaticV1": "failed: video/recording-validation.json retained;13frames vs16 requested, truncated1.875s vs2",
+    "manualV1": "failed: alien-run-v1/recording-validation-manual-v1-failed.json retained;8correctframes but0.875s vs1",
+    "manualV2": "passed: explicit terminal bitmap redraw/requestFrame;actual9VP9frames (8samples+terminalhold),0.999328s for1s;all8video frames compare to corresponding capturePNG withlowmeanerror",
+    "video": "alien-run-v1/recording-manual-v2-decoded/recording.webm",
+    "pngs": "alien-run-v1/recording-manual-v2-decoded/frames/",
+    "timing": "alien-run-v1/recording-manual-v2-decoded/animation.json",
+    "packetTiming": "MediaRecorder wall-clock PTS, not guaranteed offline constant-frame-rate encoder",
+    "sourceArtState": "failed, never upgraded by technical recording validation",
+    "allEightVideoFramesChronology": "passed: corresponding video/PNG MAE1.187,1.639,1.432,1.378,1.305,1.231,1.181,1.214 /255; max timestamp deviation0.002s"
+  },
+  "screenshotsViewed": [
+    "browser-screenshots/video-last-frame.png",
+    "browser-screenshots/imagegen-dark.png",
+    "browser-screenshots/imagegen-light.png",
+    "browser-screenshots/alien-sample-light.png",
+    "browser-screenshots/alien-jump-v2-last-light.png",
+    "browser-screenshots/alien-squat-v2-last-light.png",
+    "browser-screenshots/alien-bend-v2-last-light.png"
+  ],
+  "limitations": [
+    "No automatic video background removal or interpolation",
+    "Browser source video <=256MB and <=3600s;CLI<=600s and <=128sampledframes",
+    "Recording<=60s/128fixedtimelinePNGs;requiredcaptureStream/requestFrame/MediaRecorder API",
+    "Generated anatomy and registration quality are separate from tool technical completion",
+    "Bone pose editor stays separate at/keyframe-generator"
+  ]
+}

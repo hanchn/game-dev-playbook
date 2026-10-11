@@ -1,0 +1,92 @@
+{
+  "sample": {
+    "id": "milk-frog-run-sequence-v6",
+    "label": "奶蛙 · 真实12帧跑步 v6（抬臂过渡改善，待修）",
+    "fps": 8,
+    "loop": true,
+    "visualQA": "failed",
+    "qaNotes": [
+      "12真实imagegen源姿势，正常/慢速循环需实际验收",
+      "4号近臂抬起中间姿势+9/10号回摆过渡",
+      "固定1254画布共同变换；接地19px/材质/峰值停留仍failed"
+    ],
+    "frames": [
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1-receipt.json",
+        "phase": 0,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2-receipt.json",
+        "phase": 0.08333333333333333,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3-receipt.json",
+        "phase": 0.16666666666666666,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2-receipt.json",
+        "phase": 0.25,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v6-frame-04-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v6-frame-04-v2-receipt.json",
+        "phase": 0.3333333333333333,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1-receipt.json",
+        "phase": 0.4166666666666667,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1-receipt.json",
+        "phase": 0.5,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v4-frame-07-v8.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-07-v8-receipt.json",
+        "phase": 0.5833333333333334,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-08-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-08-v2-receipt.json",
+        "phase": 0.6666666666666666,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v5-frame-09-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v5-frame-09-v2-receipt.json",
+        "phase": 0.75,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v5-frame-10-v3.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v5-frame-10-v3-receipt.json",
+        "phase": 0.8333333333333334,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2-receipt.json",
+        "phase": 0.9166666666666666,
+        "durationMs": 125
+      }
+    ]
+  },
+  "prior": "../milk-frog-run-sequence-v5/source-manifest.json",
+  "newSelected": [
+    4
+  ]
+}

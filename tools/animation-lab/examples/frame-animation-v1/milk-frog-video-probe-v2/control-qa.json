@@ -1,0 +1,13 @@
+{
+  "status": "passed-controls-only-not-source-art",
+  "initialGuide": "pose-guidance.png",
+  "initialStatus": "failed-unused",
+  "reason": "manual initial guide changed segment lengths; do not use as stable anatomy",
+  "secondGuide": "pose-guidance-v2.png",
+  "secondStatus": "failed-unused",
+  "secondReason": "IK branch could switch knee direction between near/far support; never submitted",
+  "submittedCandidateGuide": "pose-guidance-v3.png",
+  "maxSegmentLengthError": 4.263256414560601e-14,
+  "method": "same near/far roots, fixed93+93 arms/120+120 legs, forward-knee branch for every leg; artistic positions not mocap",
+  "sourceArtStatus": "not-generated"
+}

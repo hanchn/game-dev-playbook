@@ -1,0 +1,58 @@
+{
+  "phase": 0.5353999999999959,
+  "clip": "walk",
+  "backend": "webgl",
+  "samples": 120,
+  "window": {
+    "pose": {
+      "p50": 0.19999998807907104,
+      "p95": 0.7999999821186066
+    },
+    "productionCommands": {
+      "p50": 19.900000005960464,
+      "p95": 35.19999998807907
+    },
+    "candidateCommands": {
+      "p50": 24.400000005960464,
+      "p95": 40.80000001192093
+    },
+    "baselineDraw": {
+      "p50": 6,
+      "p95": 14.5
+    },
+    "candidateDraw": {
+      "p50": 13.100000023841858,
+      "p95": 29.599999994039536
+    },
+    "total": {
+      "p50": 70.30000001192093,
+      "p95": 88
+    }
+  },
+  "last": {
+    "pose": 0.29999998211860657,
+    "productionCommands": 17.5,
+    "candidateCommands": 7.5999999940395355,
+    "baselineDraw": 2,
+    "candidateDraw": 4.5,
+    "baselineGL": {
+      "drawCalls": 20,
+      "triangles": 2192,
+      "timings": {
+        "sourceTexture": 0,
+        "vertices": 1.899999976158142,
+        "submit": 0
+      }
+    },
+    "candidateGL": {
+      "drawCalls": 20,
+      "triangles": 3783,
+      "timings": {
+        "sourceTexture": 0,
+        "vertices": 4.4000000059604645,
+        "submit": 0.09999999403953552
+      }
+    },
+    "total": 31.899999976158142
+  }
+}

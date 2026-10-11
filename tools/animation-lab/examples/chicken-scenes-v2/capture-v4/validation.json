@@ -1,0 +1,44 @@
+{
+  "technical": {
+    "PNG": 72,
+    "CRC": "passed",
+    "SHA256": "all match",
+    "choreographyVersion": 3,
+    "commonActorScale": 1.6,
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "width": 1280,
+          "height": 720,
+          "nb_read_frames": "73"
+        }
+      ],
+      "format": {
+        "duration": "5.997910"
+      }
+    },
+    "regression": "../focused-regression.log: 35/35; 支撑足x、停止过渡、1–12只每只参与及73相位源clip固定边界。此为模型与绑定检查，不代替美术。"
+  },
+  "visual": {
+    "status": "failed",
+    "reviewed": [
+      "../ui-flock-v3-delay-layout.png",
+      "frames/026.png",
+      "frames/060.png",
+      "../ui-export-12-chickens-phase190.png"
+    ],
+    "remaining": [
+      "啄食喙未接触地面",
+      "idle到首次walk的起步需要完整过渡",
+      "鸡源股根/脚趾接地仍需逐关节检查"
+    ],
+    "previousFailures": [
+      "../capture-v3/frames/060.png：左右相向鸡头互相穿入；新构图改同向+开拍前统一1.6比例，需查看新原始帧"
+    ],
+    "newScenes": "真实母鸡16件和表演extras8件PNG/precision JSON已生成；source待装配校准，scene未接入，非已通过动作。",
+    "observed": "同向与1.6固定比例的新帧中未见旧相向头部穿入；第026帧啄食喙仍离地。"
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-11T14:04:57.047Z",
+  "route": "http://127.0.0.1:4317/keyframe-generator",
+  "technical": {
+    "testLog": "regression.log",
+    "testsPassed": 19,
+    "sheetCheck": "ui-sheet-check.json",
+    "checkedAt": "2026-10-11T14:37:20.991537+00:00"
+  },
+  "visualScope": "tool functional preview; existing character art not approved",
+  "observations": [
+    {
+      "id": "stage-framing",
+      "status": "failed",
+      "evidence": "human-initial.png",
+      "observation": "Fixed stage allowed intrinsic canvas height overflow; lower legs cropped.",
+      "retest": {
+        "status": "passed",
+        "evidence": "human-initial-retest.png",
+        "change": "Absolute canvas fit; later fixed whole-action camera provides readable full framing."
+      }
+    },
+    {
+      "id": "numeric-edit-commit",
+      "status": "failed",
+      "evidence": [
+        "human-edited-arm.png",
+        "ui-edit-failed-before.json"
+      ],
+      "observation": "Number field displayed 56°, but onchange-only handler left timeline export at 78.653°. UI appearance alone was insufficient.",
+      "retest": {
+        "status": "passed",
+        "evidence": [
+          "human-edited-arm-retest.png",
+          "ui-human-edited.json"
+        ],
+        "observedAngle": 56,
+        "change": "Submit input events immediately, export data verified and save/restore reproduced."
+      }
+    },
+    {
+      "id": "svg-export-size",
+      "status": "failed",
+      "observation": "Embedding full atlas in every mesh triangle exceeded JavaScript string limit.",
+      "retest": {
+        "status": "passed",
+        "evidence": "cli-human-sheet.svg",
+        "change": "One SVG defs atlas; use references per triangle."
+      }
+    },
+    {
+      "id": "alien-screenshot-framing",
+      "status": "invalid-evidence",
+      "evidence": "alien-run-light.png",
+      "observation": "Focus scroll cropped header and head in viewport screenshot.",
+      "retest": {
+        "status": "passed",
+        "evidence": "alien-run-light-retest.png",
+        "change": "Move viewport to header; full preview and skin identity visible."
+      }
+    },
+    {
+      "id": "json-import-move",
+      "status": "passed",
+      "evidence": "import-move-retest.png",
+      "observation": "Imported exported edited timeline; arm remains 56° and keyframe time moved 25%→30%."
+    },
+    {
+      "id": "dinosaur-v4-source",
+      "status": "passed-tool-load-only",
+      "evidence": "dinosaur-run-current.png",
+      "observation": "Dinosaur v4 source was loaded at original screenshot capture, with whole tail/head/feet visible. The file name contains current but is historical v4 evidence. This does not review newer v5 anatomy or joints.",
+      "assetId": "dinosaur-side-v4",
+      "atlas": "/art/dinosaur-side-parts-v4.png",
+      "evidenceSha256": "b81e3059af73a9545100804062b6118b49455b9bd3f052f05a15c20bb8aad3d4"
+    },
+    {
+      "id": "png-export",
+      "status": "passed-technical",
+      "evidence": [
+        "ui-human-edited-sheet.png",
+        "ui-sheet-check.json"
+      ],
+      "observation": "Actual UI 16-frame transparent PNG export at 2048×2048 passed fixed-cell alpha-margin check; does not imply full action art acceptance."
+    },
+    {
+      "id": "dinosaur-v5-ui-retest",
+      "status": "not-reviewed",
+      "assetId": "dinosaur-side-v5",
+      "attemptedAt": "2026-10-11T14:10:44.595Z",
+      "observation": "Attempted an independent IAB tab for current v5 tool preview; browser inventory had no IAB. No current-version screenshot was captured. Existing v4 evidence remains historical; current v5 passed mathematical source-pose regression."
+    },
+    {
+      "id": "stale-asset-json-gate",
+      "status": "passed-technical",
+      "observation": "Current source JSON roundtrip accepted; changed asset id, changed atlas, and missing asset id rejected by shared validation used by CLI/UI/MCP.",
+      "evidence": "regression.log",
+      "visualScope": "No new art screenshots inferred from this technical check."
+    }
+  ],
+  "limitations": [
+    "No IK foot lock, collision or anatomical QA automation.",
+    "Source character art quality remains separately reviewed."
+  ],
+  "implementationSources": [
+    {
+      "path": "tools/animation-lab/keyframe-generator-core.mjs",
+      "sha256": "babea4640f6f2a069f95c13f7145a9ee1cd6db07a4b7124318d1cea3689ec3f6"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.mjs",
+      "sha256": "6bc73bf4a7c2176f6bafdabea3314b16fe13f0db408fdcfac7680f7a0368f0aa"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.css",
+      "sha256": "b93d8e4b8185f35a15a9094d29702dbffd575f5c5f06858c6588720fdd15bca9"
+    },
+    {
+      "path": "tools/animation-lab/scripts/keyframe-generator-cli.mjs",
+      "sha256": "a6c91b36d3beb9ba340c340b58a5a67bfa553b355a6315c590958cd1ab04aac8"
+    },
+    {
+      "path": "tools/animation-lab/skin-renderer.mjs",
+      "sha256": "9aaede816a9d11c08bfb591483710446ddcb21fef4ba0527edfe3090b2f2e7e8"
+    },
+    {
+      "path": "tools/animation-lab/public/art/skins.json",
+      "sha256": "9e258d2f45fe97b2e9684dc9895c460afeb762965366691c57fdc1e682b78174"
+    }
+  ],
+  "characterVersions": [
+    {
+      "species": "human",
+      "id": "human-side-v17",
+      "atlas": "/art/human-side-parts-v13.png",
+      "scope": "current technical regression only"
+    },
+    {
+      "species": "dinosaur",
+      "id": "dinosaur-side-v5",
+      "atlas": "/art/dinosaur-side-parts-v5.png",
+      "scope": "current technical regression only"
+    },
+    {
+      "species": "human",
+      "skin": "alien",
+      "id": "human-alien-v6",
+      "atlas": "/art/human-alien-side-parts-v4.png",
+      "scope": "current technical regression only"
+    }
+  ],
+  "previousImplementationSources": [
+    {
+      "path": "tools/animation-lab/keyframe-generator-core.mjs",
+      "sha256": "aaef790e8ceafd04b02915714eee69b6a4028f592bacd4f1d7c3d024fcedef84"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.mjs",
+      "sha256": "6bc73bf4a7c2176f6bafdabea3314b16fe13f0db408fdcfac7680f7a0368f0aa"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.css",
+      "sha256": "b93d8e4b8185f35a15a9094d29702dbffd575f5c5f06858c6588720fdd15bca9"
+    },
+    {
+      "path": "tools/animation-lab/scripts/keyframe-generator-cli.mjs",
+      "sha256": "2ab8403434bc7ad4c329caa1c16bbe623edd4cae27d2ca5a2a77e8e48485b41a"
+    },
+    {
+      "path": "tools/animation-lab/skin-renderer.mjs",
+      "sha256": "57573e2de485e3915fd183984b79debcc63d112436aaae62caa3009e69103c89"
+    },
+    {
+      "path": "tools/animation-lab/public/art/skins.json",
+      "sha256": "e570de0ae7a017d0b42b6c9ed0cd978f3423bad08539d5fdac6b609f0fa78ab9"
+    }
+  ],
+  "implementationSourcesScope": "current technical regression dependencies; these are not hashes of code rendered in older screenshots",
+  "screenshotVersions": [
+    {
+      "assetId": "human-side-v17",
+      "atlas": "/art/human-side-parts-v13.png",
+      "evidence": [
+        "human-initial.png",
+        "human-initial-retest.png",
+        "human-edited-arm.png",
+        "human-edited-arm-retest.png",
+        "import-move-retest.png"
+      ]
+    },
+    {
+      "assetId": "human-alien-v6",
+      "atlas": "/art/human-alien-side-parts-v4.png",
+      "evidence": [
+        "alien-run-light.png",
+        "alien-run-light-retest.png"
+      ]
+    },
+    {
+      "assetId": "dinosaur-side-v4",
+      "atlas": "/art/dinosaur-side-parts-v4.png",
+      "evidence": [
+        "dinosaur-run-current.png"
+      ]
+    }
+  ],
+  "implementationSourcesBeforeStaleVersionGate": [
+    {
+      "path": "tools/animation-lab/keyframe-generator-core.mjs",
+      "sha256": "474970ff09208c604193530bd672a1e295e67e737c135a2ccafc98ed41882477"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.mjs",
+      "sha256": "6bc73bf4a7c2176f6bafdabea3314b16fe13f0db408fdcfac7680f7a0368f0aa"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.css",
+      "sha256": "b93d8e4b8185f35a15a9094d29702dbffd575f5c5f06858c6588720fdd15bca9"
+    },
+    {
+      "path": "tools/animation-lab/scripts/keyframe-generator-cli.mjs",
+      "sha256": "a6c91b36d3beb9ba340c340b58a5a67bfa553b355a6315c590958cd1ab04aac8"
+    },
+    {
+      "path": "tools/animation-lab/skin-renderer.mjs",
+      "sha256": "57573e2de485e3915fd183984b79debcc63d112436aaae62caa3009e69103c89"
+    },
+    {
+      "path": "tools/animation-lab/public/art/skins.json",
+      "sha256": "e570de0ae7a017d0b42b6c9ed0cd978f3423bad08539d5fdac6b609f0fa78ab9"
+    }
+  ]
+}

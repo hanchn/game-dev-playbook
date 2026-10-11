@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Generate ONE clean final animation sprite, not a contact sheet. Reference 1 is the exact yellow muscular humanoid milk frog identity/style. Reference 2 is a single-pose geometry guide ONLY; its gray dummy, red/blue chains and floor line MUST NOT appear anywhere in final artwork. Render the actual milk frog with its yellow muscles, white chest/belly/chin, green eyes, pink hands/feet, thick smooth black outlines and polished 2D shading, unchanged joyful open mouth and tongue. No costume or prop.\nThis is new run animation key pose 0%, NEAR leg forward contact, FAR leg in back recovery. Keep permanent foreground NEAR side and background FAR side. Follow the shoulder-elbow-wrist and hip-knee-ankle locations in guide. Near upper arm extends back toward image left while near thigh advances image right; near elbow is visibly behind shoulder. Far upper arm travels forward to the right with bent elbow and wrist in front of chest; far thigh points back and far knee bends to recover its foot visibly above the ground behind hip. Exactly TWO arms, TWO legs, both visible, fingers/toes clean; no ghosts, additional arms, unconnected hands or colored guides. Near hand keeps the same relaxed open pink shape as identity reference, far hand the same relaxed curled shape; do not change hand state when arm changes direction in future poses.\nFixed square camera/canvas, character facing image right in the same stable 3/4 side illustration as reference. Entire character fits comfortably inside 10% safe margins, sole of near contacting foot at 87% canvas height, far foot airborne, subject fixed scale and shoulder/hip pivot inherited from guide. No per-frame rescale or different camera. Transparent alpha background, no ground line or shadow, no lettering. Retain full head, hands, feet and black outline. Output only this one actual polished frog sprite.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+  "generatedFileSha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v1/canonical-v1.png",
+      "sha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-0.png",
+      "sha256": "0210825b700d7d98ad8faec2042b0cf5998cd1fc033a26d41d53956267c09814"
+    }
+  ],
+  "phase": 0,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      101,
+      84,
+      1058,
+      1109
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Two arms/legs visible; near arm back with near thigh forward; far recovery foot visible. Actual framing did not meet requested10% margin/87% sole line; establish measured candidate only, not full pass."
+  }
+}

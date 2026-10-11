@@ -1,0 +1,108 @@
+{
+  "sourceArtStatus": "failed",
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "sourcePixelModification": "none; original imagegen bytes retained, no per-frame fit",
+  "sample": {
+    "id": "milk-frog-run-sequence-v3",
+    "label": "奶蛙 · 真实12帧跑步 v3（承重改善，仍待修）",
+    "fps": 8,
+    "loop": true,
+    "visualQA": "failed",
+    "qaNotes": [
+      "真实逐张imagegen12帧，含承重/经过/腾空/落地",
+      "透明1254共同源画布，非骨骼栅格或插值PNG",
+      "原腿身份/手互换/地线18px失败与局部修复保留",
+      "接地/材质/比例和完整循环仍需实际美术QA",
+      "仅frame7局部改善远侧脚回到髋下、近腿回收；原v2整体failed与素材保留，未全面通过"
+    ],
+    "frames": [
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1-receipt.json",
+        "phase": 0,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2-receipt.json",
+        "phase": 0.08333333333333333,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3-receipt.json",
+        "phase": 0.16666666666666666,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-03-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-03-v1-receipt.json",
+        "phase": 0.25,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-04-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-04-v1-receipt.json",
+        "phase": 0.3333333333333333,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1-receipt.json",
+        "phase": 0.4166666666666667,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1-receipt.json",
+        "phase": 0.5,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v3-frame-07-v7.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v3-frame-07-v7-receipt.json",
+        "phase": 0.5833333333333334,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-08-v2.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-08-v2-receipt.json",
+        "phase": 0.6666666666666666,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-09-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-09-v1-receipt.json",
+        "phase": 0.75,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-10-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-10-v1-receipt.json",
+        "phase": 0.8333333333333334,
+        "durationMs": 125
+      },
+      {
+        "source": "/frame-animation-assets/milk-frog-run-v2-frame-11-v1.png",
+        "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-11-v1-receipt.json",
+        "phase": 0.9166666666666666,
+        "durationMs": 125
+      }
+    ]
+  },
+  "prior": "tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/source-qa.json",
+  "repairSources": [
+    "../milk-frog-run-sequence-v2/frame-07-v6-receipt.json",
+    "../milk-frog-run-sequence-v2/frame-07-v7-receipt.json",
+    "../milk-frog-run-sequence-v2/frame-02-v4-receipt.json",
+    "../milk-frog-run-sequence-v2/frame-02-v5-receipt.json"
+  ],
+  "notes": [
+    "frame7v6 rejected because near calf reverted toward toeoff; v7 fixes recovery and keeps far foot passed under pelvis",
+    "frame2v4 requested15px up but actual34px; correctivev5 actual31px down, ends1204 vs original1207. 3px marginal improvement with retexture does not justify replacing original. Not selected.",
+    "No original evidence overwritten; 12 actual distinct source frames, not rendered skeletons."
+  ]
+}

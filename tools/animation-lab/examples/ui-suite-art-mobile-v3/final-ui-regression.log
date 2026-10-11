@@ -1,0 +1,38 @@
+✔ CLI source export creates each state, keeps bitmaps separate and rejects invalid layout (240.445ms)
+✔ shared ZIP generation contains actual component sources and valid CRCs (36.40625ms)
+✔ CLI preserves puzzle conditions and explicit HUD through plan, export and re-import (105.853291ms)
+✔ binary ZIP preserves actual PNG bytes instead of UTF-8 stringifying raster assets (79.65125ms)
+✔ complete art CLI writes actual PNG pages and reusable states and rejects unproduced briefs (15761.516167ms)
+✔ platformer produces connected screens, event HUD and all component states (3.640792ms)
+✔ runner produces connected screens, event HUD and all component states (0.601125ms)
+✔ puzzle produces connected screens, event HUD and all component states (0.488792ms)
+✔ action produces connected screens, event HUD and all component states (0.581375ms)
+✔ rpg produces connected screens, event HUD and all component states (0.828084ms)
+✔ idle produces connected screens, event HUD and all component states (0.456542ms)
+✔ card produces connected screens, event HUD and all component states (0.408292ms)
+✔ portrait, non-touch and Godot adapt rather than reuse horizontal gameplay assumptions (0.599417ms)
+✔ source components export no baked text while spec previews explicitly show editable labels (0.541417ms)
+✔ safe area handles device cutouts and touch/text minimums in logical pixels (0.769833ms)
+✔ brief validation and absent inputs retain explicit assumptions (0.315291ms)
+✔ malformed plan rejects missing components, missing targets, duplicate assets and eventless HUD (0.854417ms)
+✔ reference/background status is not silently upgraded to generated or visually approved (0.265833ms)
+✔ non-scoring puzzle preserves exact goal/failure and never invents result score or reward (0.428459ms)
+✔ explicit HUD order and bindings strictly inherited including empty list (0.887916ms)
+✔ unspecified condition and HUD requirements remain assumptions; malformed rule and bindings reject (0.366583ms)
+✔ game-plan adapter provenance and its assumptions survive normalization without status promotion (0.279083ms)
+✔ actual art kit stays explicitly bound and other briefs receive full source-production tasks (0.777458ms)
+✔ all asset-backed page and component states retain data contract and actual source image references (6.336167ms)
+✔ actual generated source files exist with declared dimensions alpha and hashes (22.562084ms)
+✔ actual loading art cannot simulate early ready while pending assets and small HUD uses declared safe inset positions (1.1255ms)
+✔ actual art controls retain 48 logical pixels and disjoint safe hit areas across every page (13.861625ms)
+✔ actual button labels obey text enlargement without shrinking through component viewBox, and exported HUD omits developer copy (1.606333ms)
+✔ enlarged home caption clears the title and level return clears the first node label (0.958917ms)
+✔ art lock, movement and landmark symbols use explicit vector shapes independent of platform emoji fonts (0.327041ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16278.842458

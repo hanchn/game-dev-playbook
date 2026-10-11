@@ -1,0 +1,29 @@
+{
+  "technical": {
+    "png": 72,
+    "encoded": 73,
+    "zipCRC": "passed",
+    "sourceHashes": "all match",
+    "videoDuration": 6.000577,
+    "maxPTSgap": 0.08800000000000008,
+    "maxRGBMAE": 2.393613642939815,
+    "meanRGBMAE": 1.4522314654063786,
+    "frozenSource": "image decoded from same immutable atlas bytes as receipt SHA",
+    "frozenAsset": "chicken-side-v3",
+    "UIPlayback": {
+      "paused": false,
+      "duration": 6.000577,
+      "currentTime": 0.012614
+    },
+    "stopTest": "capture-stop-v1 actual 5 frames preserved, controls restored and next full72-frame recording worked"
+  },
+  "visual": {
+    "state": "failed",
+    "issues": "已观察到啄食喙未触地、多鸡位移未与支撑脚锁地一致；本成片保留失败供复测。",
+    "evidence": [
+      "frames/043.png",
+      "../ui-recorded-film.png"
+    ],
+    "recording": "usable for QA, source choreography not final acceptance"
+  }
+}

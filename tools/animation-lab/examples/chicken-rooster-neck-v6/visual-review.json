@@ -1,0 +1,78 @@
+{
+  "schema": "animal-art-review/v1",
+  "assetId": "chicken-side-v6",
+  "skinBindingVersion": 6,
+  "sourceSha256": {
+    "rooster": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de",
+    "hen": "c9d25daec3211116d358eecaa0f50cd8e5880ef25c45b971e78fa6c183cd5c84",
+    "extras": "08446d6d7f64ad47ac77e32f28922b480d18727cd08f0301a5ed41a4f87c32ac",
+    "intermediates": "5336454c01ebabcdf2abb26f62cf971972b5aaa254cfa69c07334e9245c1b5e2",
+    "rooster:chicken-leg-upper-v4": "c144ae3183b8338468518f8d7e15285251e0510dfa49e53e30e5f2fe9f82b828",
+    "rooster:chicken-leg-lower-v5": "920a30e0620cf6f1a2a4a0bd830c9ddff32a46e8f8629f4cd0b793b41136f9d1",
+    "hen:hen-leg-material": "978c0f3b480f3dd80bbaa11c73e2eea346d4acad6f1e4f999a930da629f50b39",
+    "hen:chicken-leg-upper-v4": "c144ae3183b8338468518f8d7e15285251e0510dfa49e53e30e5f2fe9f82b828",
+    "hen:chicken-leg-lower-v5": "920a30e0620cf6f1a2a4a0bd830c9ddff32a46e8f8629f4cd0b793b41136f9d1"
+  },
+  "visual": "failed",
+  "technical": {
+    "passed": 65,
+    "failed": 0,
+    "log": "examples/chicken-rooster-neck-v6/technical-tests.log",
+    "historicalTestFailures": [
+      "examples/chicken-rooster-neck-v6/technical-tests-failed-floating-equality.log",
+      "examples/chicken-rooster-neck-v6/technical-tests-failed-old-neck-opacity-contract.log"
+    ]
+  },
+  "changes": {
+    "neckUnderBody": true,
+    "neckLayer": 2,
+    "root": [
+      0.55,
+      0.9
+    ],
+    "layerSplit": {
+      "start": 0.6,
+      "slopeU": 0.3,
+      "overlap": 0.03
+    },
+    "sourceImagePixelsChanged": false,
+    "legAndFaceMappingChanged": false
+  },
+  "actualReviewed": [
+    {
+      "path": "examples/chicken-side-v6/retest/walk-ground-fixed-light.png",
+      "scope": "8 fixed-camera whole poses"
+    },
+    {
+      "path": "examples/chicken-side-v6/retest/peck-ground-fixed-light.png",
+      "scope": "16 fixed-camera whole poses"
+    },
+    {
+      "path": "examples/chicken-rooster-neck-v6/ui-walk-phase0-light-detail.png",
+      "scope": "Chrome CUA true rooster6; same original neck source; normal opaque"
+    },
+    {
+      "path": "examples/chicken-rooster-neck-v6/ui-peck-phase0467-light-detail.png",
+      "scope": "Chrome CUA true rooster6; same original neck source; normal opaque"
+    },
+    {
+      "path": "examples/chicken-rooster-neck-v6/ui-peck-phase0467-light-full.png",
+      "scope": "Chrome CUA true rooster6; same original neck source; normal opaque"
+    }
+  ],
+  "improved": [
+    "Standing/walking hanging feather neck sleeve is pulled into actual torso parent.",
+    "Rigid face and beak mapping unchanged within1e-7 rigpx; actual masks source identity unchanged."
+  ],
+  "remaining": [
+    "Peck max flex at7/15 still has pointed rear neck fold; not accepted as natural cervical bend.",
+    "Small golden hock transition and fine/long legs persist.",
+    "Crow uses separate extras source/runtime; this default-neck improvement does not resolve crow neckline."
+  ],
+  "notReviewed": [
+    "all current dark sequences",
+    "full slow live playback",
+    "new choreography11/renderer7 movies; root owns these"
+  ],
+  "productionFreeze": "Parent requested freeze rooster6/hen7 during four scene capture; no subsequent source version registered."
+}

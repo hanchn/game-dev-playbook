@@ -1,0 +1,935 @@
+{
+  "schema": "codex-game-plan/v1",
+  "status": "planned",
+  "title": "待命名游戏方案",
+  "brief": {
+    "genre": "puzzle",
+    "engine": "Godot 2D",
+    "entryScene": "entry",
+    "scenes": [
+      "entry",
+      "board",
+      "result"
+    ],
+    "connections": [
+      {
+        "from": "entry",
+        "to": "board",
+        "event": "session.start"
+      },
+      {
+        "from": "board",
+        "to": "result",
+        "event": "round.completed"
+      },
+      {
+        "from": "result",
+        "to": "board",
+        "event": "session.retry"
+      }
+    ]
+  },
+  "selection": {
+    "engine": "Godot 2D",
+    "genre": "puzzle",
+    "profile": "puzzle",
+    "platform": []
+  },
+  "assumptions": [
+    {
+      "field": "platform",
+      "proposal": "platform 未提供，保持未决定；先做引擎无关设计。",
+      "status": "assumed-not-confirmed"
+    },
+    {
+      "field": "coreLoop",
+      "proposal": "核心循环未提供，使用 puzzle 的待验证提案。",
+      "status": "assumed-not-confirmed"
+    },
+    {
+      "field": "objective",
+      "proposal": "objective 未提供，以下仅为待实现提案：用最小回合验证提供的核心循环；具体成功条件待定义。",
+      "status": "assumed-not-confirmed"
+    },
+    {
+      "field": "failure",
+      "proposal": "failure 未提供，以下仅为待实现提案：允许取消或重试；具体失败条件待定义。",
+      "status": "assumed-not-confirmed"
+    },
+    {
+      "field": "camera",
+      "proposal": "未给完整镜头配置；fixed-board 是玩法模板提案，需要实际构图。",
+      "status": "assumed-not-confirmed"
+    },
+    {
+      "field": "scene-scale",
+      "proposal": "未给完整场景尺度，须按角色、碰撞体和目标屏幕实际校准。",
+      "status": "assumed-not-confirmed"
+    },
+    {
+      "field": "characters",
+      "proposal": "未给角色/实体，按 puzzle 提出 board-token；不假定已有素材。",
+      "status": "assumed-not-confirmed"
+    },
+    {
+      "field": "character.entity-1.view",
+      "proposal": "角色真实视角未给出，需按镜头验证或制作方向素材。",
+      "status": "assumed-not-confirmed"
+    }
+  ],
+  "gameplay": {
+    "coreLoop": [
+      "观察局面与本回合目标",
+      "选择或交换棋子",
+      "结算有效操作与反馈",
+      "检查目标或失败条件",
+      "重试或进入下一局"
+    ],
+    "objective": {
+      "description": "用最小回合验证提供的核心循环；具体成功条件待定义。",
+      "event": null,
+      "condition": null,
+      "source": "assumed",
+      "status": "planned"
+    },
+    "failure": {
+      "description": "允许取消或重试；具体失败条件待定义。",
+      "event": null,
+      "condition": null,
+      "source": "assumed",
+      "status": "planned"
+    },
+    "controls": [
+      {
+        "action": "select",
+        "status": "planned",
+        "bindings": [
+          "binding-required"
+        ]
+      },
+      {
+        "action": "confirm",
+        "status": "planned",
+        "bindings": [
+          "binding-required"
+        ]
+      },
+      {
+        "action": "cancel",
+        "status": "planned",
+        "bindings": [
+          "binding-required"
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "id": "valid-command",
+        "condition": "当前状态允许且输入命令合法",
+        "effect": "执行一次规则状态变更并发布state.changed",
+        "status": "planned"
+      },
+      {
+        "id": "objective",
+        "condition": null,
+        "description": "用最小回合验证提供的核心循环；具体成功条件待定义。",
+        "event": "round.objective_satisfied",
+        "effect": "提交round.completed",
+        "status": "planned",
+        "implementation": "predicate-required"
+      },
+      {
+        "id": "failure",
+        "condition": null,
+        "description": "允许取消或重试；具体失败条件待定义。",
+        "event": "round.failure_satisfied",
+        "effect": "提交round.failed",
+        "status": "planned",
+        "implementation": "predicate-required"
+      },
+      {
+        "id": "retry",
+        "condition": "回合结束且玩家请求重试",
+        "effect": "清理临时对象并恢复回合初始状态，保留明确的长期进度",
+        "status": "planned"
+      }
+    ],
+    "progression": {
+      "status": "planned",
+      "proposal": "最小回合通过后再设定奖励、难度与长期进度；不虚构经济数值。"
+    }
+  },
+  "architecture": {
+    "status": "planned",
+    "engine": "Godot 2D",
+    "sourceReuse": {
+      "provided": null,
+      "status": "inspect-existing-source-required"
+    },
+    "layers": [
+      {
+        "id": "rules",
+        "owns": [
+          "state",
+          "commands",
+          "objective/failure predicates"
+        ],
+        "dependsOn": [
+          "data"
+        ]
+      },
+      {
+        "id": "input",
+        "owns": [
+          "action bindings",
+          "focus",
+          "device mapping"
+        ],
+        "dependsOn": [
+          "rules"
+        ]
+      },
+      {
+        "id": "scene-flow",
+        "owns": [
+          "scene transitions",
+          "asset readiness"
+        ],
+        "dependsOn": [
+          "rules",
+          "assets"
+        ]
+      },
+      {
+        "id": "presentation",
+        "owns": [
+          "rendering",
+          "camera",
+          "character animation"
+        ],
+        "dependsOn": [
+          "rules",
+          "assets"
+        ]
+      },
+      {
+        "id": "ui",
+        "owns": [
+          "HUD",
+          "screens",
+          "feedback"
+        ],
+        "dependsOn": [
+          "rules",
+          "input"
+        ]
+      },
+      {
+        "id": "clock",
+        "owns": [
+          "pause/resume",
+          "time step"
+        ],
+        "dependsOn": []
+      },
+      {
+        "id": "save",
+        "owns": [
+          "versioned progress",
+          "restore"
+        ],
+        "dependsOn": [
+          "data",
+          "rules"
+        ]
+      },
+      {
+        "id": "data",
+        "owns": [
+          "game definitions",
+          "balance parameters"
+        ],
+        "dependsOn": []
+      },
+      {
+        "id": "assets",
+        "owns": [
+          "manifest",
+          "decode",
+          "version/provenance"
+        ],
+        "dependsOn": [
+          "data"
+        ]
+      }
+    ],
+    "events": [
+      {
+        "id": "session.start",
+        "producer": "input",
+        "consumer": [
+          "session",
+          "scene-flow"
+        ]
+      },
+      {
+        "id": "input.command",
+        "producer": "input",
+        "consumer": [
+          "rules"
+        ]
+      },
+      {
+        "id": "state.changed",
+        "producer": "rules",
+        "consumer": [
+          "presentation",
+          "ui",
+          "save"
+        ]
+      },
+      {
+        "id": "round.objective_satisfied",
+        "producer": "rules",
+        "consumer": [
+          "round-result"
+        ]
+      },
+      {
+        "id": "round.failure_satisfied",
+        "producer": "rules",
+        "consumer": [
+          "round-result"
+        ]
+      },
+      {
+        "id": "round.completed",
+        "producer": "round-result",
+        "consumer": [
+          "scene-flow",
+          "ui",
+          "progress"
+        ]
+      },
+      {
+        "id": "round.failed",
+        "producer": "round-result",
+        "consumer": [
+          "scene-flow",
+          "ui"
+        ]
+      },
+      {
+        "id": "session.retry",
+        "producer": "ui",
+        "consumer": [
+          "session",
+          "scene-flow"
+        ]
+      },
+      {
+        "id": "session.pause",
+        "producer": "ui",
+        "consumer": [
+          "clock",
+          "presentation"
+        ]
+      },
+      {
+        "id": "session.resume",
+        "producer": "ui",
+        "consumer": [
+          "clock",
+          "presentation"
+        ]
+      },
+      {
+        "id": "assets.ready",
+        "producer": "assets",
+        "consumer": [
+          "scene-flow"
+        ]
+      }
+    ],
+    "stateLifecycle": [
+      "loading",
+      "ready",
+      "active",
+      "paused",
+      "completed",
+      "failed"
+    ],
+    "interfaces": [
+      {
+        "name": "dispatchCommand",
+        "input": "{action,payload,sequence}",
+        "output": "validated rules events"
+      },
+      {
+        "name": "snapshot",
+        "input": "game state",
+        "output": "versioned serializable save"
+      },
+      {
+        "name": "loadScene",
+        "input": "scene ID + transition condition",
+        "output": "assets decoded + first frame + gameplay state"
+      }
+    ]
+  },
+  "scenes": {
+    "entry": "entry",
+    "scenes": [
+      {
+        "id": "entry",
+        "name": "entry",
+        "purpose": null,
+        "status": "planned",
+        "camera": "fixed-board",
+        "scale": null,
+        "interactions": [
+          "select",
+          "confirm",
+          "cancel"
+        ],
+        "layers": [
+          "background",
+          "terrain-or-board",
+          "interactive-entities",
+          "effects",
+          "world-labels"
+        ],
+        "collisionOrNavigation": {
+          "status": "planned",
+          "profile": "board-grid",
+          "requirements": [
+            "格位/牌槽合法性",
+            "选择命中区域",
+            "有效操作规则"
+          ]
+        }
+      },
+      {
+        "id": "board",
+        "name": "board",
+        "purpose": null,
+        "status": "planned",
+        "camera": "fixed-board",
+        "scale": null,
+        "interactions": [
+          "select",
+          "confirm",
+          "cancel"
+        ],
+        "layers": [
+          "background",
+          "terrain-or-board",
+          "interactive-entities",
+          "effects",
+          "world-labels"
+        ],
+        "collisionOrNavigation": {
+          "status": "planned",
+          "profile": "board-grid",
+          "requirements": [
+            "格位/牌槽合法性",
+            "选择命中区域",
+            "有效操作规则"
+          ]
+        }
+      },
+      {
+        "id": "result",
+        "name": "result",
+        "purpose": null,
+        "status": "planned",
+        "camera": "fixed-board",
+        "scale": null,
+        "interactions": [
+          "select",
+          "confirm",
+          "cancel"
+        ],
+        "layers": [
+          "background",
+          "terrain-or-board",
+          "interactive-entities",
+          "effects",
+          "world-labels"
+        ],
+        "collisionOrNavigation": {
+          "status": "planned",
+          "profile": "board-grid",
+          "requirements": [
+            "格位/牌槽合法性",
+            "选择命中区域",
+            "有效操作规则"
+          ]
+        }
+      }
+    ],
+    "connections": [
+      {
+        "from": "entry",
+        "to": "board",
+        "event": "session.start",
+        "status": "planned",
+        "condition": null
+      },
+      {
+        "from": "board",
+        "to": "result",
+        "event": "round.completed",
+        "status": "planned",
+        "condition": null
+      },
+      {
+        "from": "result",
+        "to": "board",
+        "event": "session.retry",
+        "status": "planned",
+        "condition": null
+      }
+    ],
+    "validation": {
+      "status": "structure-checked",
+      "allScenesReachable": true,
+      "explicitFalseEdgesExcluded": true,
+      "conditionalRuntimeReachability": "not-tested"
+    }
+  },
+  "characters": [
+    {
+      "id": "entity-1",
+      "name": "board-token",
+      "role": "board-token",
+      "designStatus": "planned",
+      "visualStatus": "pending",
+      "reportedVisualStatus": null,
+      "proportions": {
+        "sourceLocked": true,
+        "calibration": "required"
+      },
+      "view": null,
+      "partOwnership": {
+        "status": "planned",
+        "requirements": [
+          "保留原生形象比例和稳定锚点",
+          "分件职责独立，关节圆弧重叠",
+          "近远侧肢体、遮挡和动作分开检查"
+        ]
+      },
+      "actions": [
+        {
+          "id": "idle",
+          "status": "planned",
+          "visualStatus": "pending",
+          "requiredAssets": [
+            "entity-1:idle:frames-or-rig"
+          ],
+          "interaction": null
+        },
+        {
+          "id": "select",
+          "status": "planned",
+          "visualStatus": "pending",
+          "requiredAssets": [
+            "entity-1:select:frames-or-rig"
+          ],
+          "interaction": null
+        },
+        {
+          "id": "confirm",
+          "status": "planned",
+          "visualStatus": "pending",
+          "requiredAssets": [
+            "entity-1:confirm:frames-or-rig"
+          ],
+          "interaction": null
+        },
+        {
+          "id": "success",
+          "status": "planned",
+          "visualStatus": "pending",
+          "requiredAssets": [
+            "entity-1:success:frames-or-rig"
+          ],
+          "interaction": null
+        },
+        {
+          "id": "failure",
+          "status": "planned",
+          "visualStatus": "pending",
+          "requiredAssets": [
+            "entity-1:failure:frames-or-rig"
+          ],
+          "interaction": null
+        }
+      ],
+      "assets": [],
+      "handStates": [
+        "按实际交互确认，不能将所有角色强制为人形手型"
+      ],
+      "qa": {
+        "status": "planned",
+        "checks": [
+          "源图比例和部位归属",
+          "逐关节弯曲与遮挡",
+          "动作对应素材齐备",
+          "实际尺寸播放、暂停与动作切换",
+          "固定画布留边和近远肢体真实运动"
+        ],
+        "approval": "visual-pending"
+      }
+    }
+  ],
+  "ui": {
+    "status": "planned",
+    "screens": [
+      {
+        "id": "loading",
+        "purpose": "解码和首帧准备完成后进入",
+        "controls": [
+          "loading-progress",
+          "retry-load"
+        ],
+        "states": [
+          "loading",
+          "load-failed",
+          "ready"
+        ]
+      },
+      {
+        "id": "entry",
+        "purpose": "开始与继续",
+        "controls": [
+          "start",
+          "continue",
+          "settings"
+        ],
+        "states": [
+          "new-session",
+          "save-available"
+        ]
+      },
+      {
+        "id": "tutorial",
+        "purpose": "教学提示与一次实际操作反馈",
+        "controls": [
+          "hint",
+          "skip-if-allowed"
+        ],
+        "states": [
+          "learning",
+          "completed"
+        ]
+      },
+      {
+        "id": "hud",
+        "purpose": "游戏状态和核心操作",
+        "controls": [
+          "objective",
+          "moves-remaining",
+          "progress"
+        ],
+        "states": [
+          "active",
+          "paused",
+          "feedback"
+        ]
+      },
+      {
+        "id": "pause",
+        "purpose": "冻结后方逻辑并恢复或退出",
+        "controls": [
+          "resume",
+          "restart",
+          "quit"
+        ],
+        "states": [
+          "open",
+          "confirm-restart"
+        ]
+      },
+      {
+        "id": "result",
+        "purpose": "成功/失败说明与重试",
+        "controls": [
+          "result-summary",
+          "retry",
+          "continue"
+        ],
+        "states": [
+          "success",
+          "failure"
+        ]
+      },
+      {
+        "id": "settings",
+        "purpose": "输入、音量和可访问性设置",
+        "controls": [
+          "audio",
+          "input",
+          "text-size"
+        ],
+        "states": [
+          "editing",
+          "saved"
+        ]
+      }
+    ],
+    "assetSuite": [
+      {
+        "screen": "loading",
+        "status": "planned",
+        "art": [
+          "background-or-panel",
+          "loading-progress:semantic-control",
+          "retry-load:semantic-control"
+        ],
+        "controlStates": [
+          "default",
+          "hover-or-focus",
+          "pressed",
+          "disabled"
+        ],
+        "textPolicy": "文字、数字与图标按语义分离，禁止把动态内容烘焙进按钮背景。"
+      },
+      {
+        "screen": "entry",
+        "status": "planned",
+        "art": [
+          "background-or-panel",
+          "start:semantic-control",
+          "continue:semantic-control",
+          "settings:semantic-control"
+        ],
+        "controlStates": [
+          "default",
+          "hover-or-focus",
+          "pressed",
+          "disabled"
+        ],
+        "textPolicy": "文字、数字与图标按语义分离，禁止把动态内容烘焙进按钮背景。"
+      },
+      {
+        "screen": "tutorial",
+        "status": "planned",
+        "art": [
+          "background-or-panel",
+          "hint:semantic-control",
+          "skip-if-allowed:semantic-control"
+        ],
+        "controlStates": [
+          "default",
+          "hover-or-focus",
+          "pressed",
+          "disabled"
+        ],
+        "textPolicy": "文字、数字与图标按语义分离，禁止把动态内容烘焙进按钮背景。"
+      },
+      {
+        "screen": "hud",
+        "status": "planned",
+        "art": [
+          "background-or-panel",
+          "objective:semantic-control",
+          "moves-remaining:semantic-control",
+          "progress:semantic-control"
+        ],
+        "controlStates": [
+          "default",
+          "hover-or-focus",
+          "pressed",
+          "disabled"
+        ],
+        "textPolicy": "文字、数字与图标按语义分离，禁止把动态内容烘焙进按钮背景。"
+      },
+      {
+        "screen": "pause",
+        "status": "planned",
+        "art": [
+          "background-or-panel",
+          "resume:semantic-control",
+          "restart:semantic-control",
+          "quit:semantic-control"
+        ],
+        "controlStates": [
+          "default",
+          "hover-or-focus",
+          "pressed",
+          "disabled"
+        ],
+        "textPolicy": "文字、数字与图标按语义分离，禁止把动态内容烘焙进按钮背景。"
+      },
+      {
+        "screen": "result",
+        "status": "planned",
+        "art": [
+          "background-or-panel",
+          "result-summary:semantic-control",
+          "retry:semantic-control",
+          "continue:semantic-control"
+        ],
+        "controlStates": [
+          "default",
+          "hover-or-focus",
+          "pressed",
+          "disabled"
+        ],
+        "textPolicy": "文字、数字与图标按语义分离，禁止把动态内容烘焙进按钮背景。"
+      },
+      {
+        "screen": "settings",
+        "status": "planned",
+        "art": [
+          "background-or-panel",
+          "audio:semantic-control",
+          "input:semantic-control",
+          "text-size:semantic-control"
+        ],
+        "controlStates": [
+          "default",
+          "hover-or-focus",
+          "pressed",
+          "disabled"
+        ],
+        "textPolicy": "文字、数字与图标按语义分离，禁止把动态内容烘焙进按钮背景。"
+      }
+    ],
+    "responsive": {
+      "platform": [],
+      "safeArea": "required",
+      "keyboardFocus": "required-when-keyboard-supported",
+      "smallScreen": "actual-layout-review-required"
+    },
+    "qa": [
+      "页面流与返回路径",
+      "HUD与规则值同步",
+      "焦点/触摸/禁用状态",
+      "暂停冻结与恢复",
+      "素材解码和首帧无闪烁",
+      "实际目标屏幕截图"
+    ],
+    "generation": "使用game-ui-suite/真实UI工具制作并检查；本计划未生成图片。"
+  },
+  "map": {
+    "status": "planned",
+    "profile": "board-grid",
+    "infiniteWorldRequired": false,
+    "recommendation": "有限逻辑布局，保持有效操作与胜负可验证。"
+  },
+  "qa": {
+    "status": "planned",
+    "technicalValidation": "plan-structure-only",
+    "visualStatus": "pending",
+    "gameIntegrated": false,
+    "checks": [
+      {
+        "id": "minimal-round",
+        "method": "实际运行引擎，输入→有效反馈→目标或失败→结算→重试",
+        "evidence": "video-or-action-log + state snapshots",
+        "status": "planned"
+      },
+      {
+        "id": "scene-runtime",
+        "method": "实际验证条件连接，不以静态图可达代替运行可达",
+        "evidence": "transition log",
+        "status": "planned"
+      },
+      {
+        "id": "source-asset-review",
+        "method": "逐角色/实体源图、动作、比例、关节及游戏尺寸审图",
+        "evidence": "source hashes + screenshots + failures/retests",
+        "status": "planned"
+      },
+      {
+        "id": "ui-runtime",
+        "method": "实测页面、HUD、暂停恢复、解码首帧与目标屏幕",
+        "evidence": "screenshots + state changes",
+        "status": "planned"
+      },
+      {
+        "id": "performance",
+        "method": "在目标平台测帧耗时、实体/纹理预算后设阈值",
+        "evidence": "measured trace; no assumed FPS claim",
+        "status": "planned"
+      }
+    ]
+  },
+  "nextImplementationTasks": [
+    {
+      "id": "rules-prototype",
+      "priority": "P0",
+      "description": "将输入核心循环变成最小可玩回合，写出成功/失败谓词并实测重试。",
+      "dependsOn": [],
+      "status": "planned"
+    },
+    {
+      "id": "engine-integration",
+      "priority": "P0",
+      "description": "确定并沿用已有引擎/可复用源码，将规则模型接入实际运行工程。",
+      "dependsOn": [
+        "rules-prototype"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "scene-flow",
+      "priority": "P0",
+      "description": "实现场景连接及条件，实际走完入口、核心挑战和结算。",
+      "dependsOn": [
+        "engine-integration"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "representative-character",
+      "priority": "P0",
+      "description": "顺序修复一个实际角色/实体，验证源图比例、动作素材和游戏尺寸。",
+      "dependsOn": [
+        "rules-prototype"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "ui-suite",
+      "priority": "P1",
+      "description": "根据HUD和页面流制作独立素材及状态，动态文字/数字独立实现。",
+      "dependsOn": [
+        "rules-prototype"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "map-or-layout",
+      "priority": "P1",
+      "description": "实现有限棋盘/牌槽规则，验证合法状态；无需强行引入无限地图。",
+      "dependsOn": [
+        "scene-flow"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "gameplay-qa",
+      "priority": "P0",
+      "description": "在实际引擎操作最小回合，保存失败、修复和同条件复测证据。",
+      "dependsOn": [
+        "scene-flow",
+        "representative-character",
+        "ui-suite",
+        "map-or-layout"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "expand-content",
+      "priority": "P2",
+      "description": "最小回合与代表资产通过后扩展场景、角色、难度和进度。",
+      "dependsOn": [
+        "gameplay-qa"
+      ],
+      "status": "planned"
+    }
+  ]
+}

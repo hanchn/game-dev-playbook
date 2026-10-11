@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "length",
+      "label": "刚性骨长固定",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "join",
+      "label": "肢体连接连续",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "return",
+      "label": "回到动作起点",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "movement",
+      "label": "动作确实驱动关节",
+      "passed": true,
+      "detail": "166.82 px"
+    },
+    {
+      "id": "roll-ground",
+      "label": "翻滚按旋转后的贴图轮廓接地",
+      "passed": true,
+      "detail": "穿地 / 悬空误差 0.0000 px"
+    },
+    {
+      "id": "roll-tuck",
+      "label": "旋转前先收腿团身",
+      "passed": true,
+      "detail": "团身高度为直立 44%"
+    }
+  ],
+  "clip": "roll",
+  "scope": "character",
+  "fault": "none",
+  "samples": 97,
+  "qa": {
+    "technical": "sampled",
+    "visual": "pending"
+  }
+}

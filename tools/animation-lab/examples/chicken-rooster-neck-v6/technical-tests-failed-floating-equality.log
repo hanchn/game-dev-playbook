@@ -1,0 +1,117 @@
+✔ 换皮肤后翻滚仍先双掌触地，靴底在触地准备阶段保持平放 (48.06075ms)
+✔ 外星人的衣孔有真实透明度及上层衣缘，独立运动默认保留装配遮挡 (55.802208ms)
+✔ 换皮肤保留骨架身份，独立头身比、轴点、抓握和接地轮廓随皮肤导出 (559.102667ms)
+✔ 真人比例检查区分头颅和带颈的整个贴图，避免小头与过宽躯干 (1.434083ms)
+✔ 鳄鱼前后腿的素材归属和折叠脚方向一致 (1.151ms)
+✖ 鸡的收翅朝身后，头颈共用完整羽毛源而不叠加柱形颈 (6.30125ms)
+✔ 柔性角色沿前端切线运动，连续源身体的相邻UV没有跨素材跳变 (16.126542ms)
+✔ 蝎子步足不重复带爪的胫节，夹螯闭合时两指尖汇合 (1.452834ms)
+✔ 衣缘遮挡随躯干转动，与原衣片使用同一个源点位置 (29.08675ms)
+✔ 团身后的滚动由衣服肩背和四肢承重，真人与大头皮肤不以头部作为地面支点 (447.036417ms)
+✔ 马的前腕链与后飞节链使用独立素材，骨长和下游连接在完整及单件动作保持 (28.472042ms)
+✔ chicken-hen-skin-v1.json preserves current measured ownership and source identity (367.9205ms)
+✔ chicken-performance-extras-v1.json preserves current measured ownership and source identity (166.485ms)
+✔ chicken-crow-intermediates-v1.json preserves current measured ownership and source identity (164.767084ms)
+✔ crow source states keep eye, poll and root registration consistent at one material scale (1.92375ms)
+✔ hen source cannot be described as an accepted rooster laying scene (2.060583ms)
+✔ registered hen uses complete female material and each foot native alpha support point (111.428042ms)
+✔ hen neck layer ownership changes without moving the rigid skull or native foot contacts (46.340833ms)
+✔ hen beak core reaches the actual floor during feeding and rises during recovery (57.867792ms)
+✔ hen leg material replacement leaves head, torso, feet and original neck recipe source-locked (10.627125ms)
+✔ rooster and hen only replace actual leg materials while the other fourteen source pieces remain byte-identical (481.073875ms)
+✖ rooster neck root partition preserves face mapping and all same-source ownership (26.300708ms)
+✔ a rooster asset cannot silently substitute for a laying hen (0.741208ms)
+✔ multiple chickens retain independent phases and stable identities (0.595792ms)
+✔ egg starts behind pelvis and persists once after recovery across repeated seeks (0.186917ms)
+✔ fight requires opposing actors; feather particles are seek-safe and recover (0.238542ms)
+✔ crow distinguishes beak opening from a whole head rotation and closes on recovery (0.108042ms)
+✔ walking to pecking inbetweens rotate bones without shortening them or separating joints (1.75275ms)
+✔ flock travel holds either stance foot for both facings and the actual render scale (8.054167ms)
+✔ stop transition pins the planted foot, idle does not slide home, and scene end holds (1.683125ms)
+✔ all 1–12 actors move and their source-bound silhouettes stay in the common fixed output frame (10756.501334ms)
+✔ fight has no unsupported recovery hop and eases wings into the held idle (0.414875ms)
+✔ flocks expose true female walking and pecking with stable mixed identities (0.493208ms)
+✔ delayed takeoff starts at the actual idle pose, pins its sole and has no boundary snap (39.864125ms)
+✔ performance requires real female material and two opposing fighting actors (0.816375ms)
+✔ unmodified poses preserve original leg solution exactly (1.231333ms)
+✔ sitting hen keeps both soles planted and bones intact at every transition sample (4.909083ms)
+✔ registered open and closed heads hold the same eye in world space through neck lift (53.176875ms)
+✔ fighting hop preserves every bone and exposes no grounded foot during flight (2.888084ms)
+✔ all four mouth sources register one eye while preserving native source aspect (4.856583ms)
+✔ struck bird recoils independently and flight tucks both feet with continuous landing (0.482792ms)
+✔ human 生产动作和所有活动关节通过独立检查 (283.162125ms)
+✔ human 对错误步态、滑步、拉长、断环及静止腿拒收 (3.771041ms)
+✔ chicken 生产动作和所有活动关节通过独立检查 (13.427209ms)
+✔ chicken 对错误步态、滑步、拉长、断环及静止腿拒收 (3.023833ms)
+✔ dinosaur 生产动作和所有活动关节通过独立检查 (52.650958ms)
+✔ dinosaur 对错误步态、滑步、拉长、断环及静止腿拒收 (9.38675ms)
+✔ horse 生产动作和所有活动关节通过独立检查 (25.525166ms)
+✔ horse 对错误步态、滑步、拉长、断环及静止腿拒收 (5.12025ms)
+✔ crocodile 生产动作和所有活动关节通过独立检查 (19.43525ms)
+✔ crocodile 对错误步态、滑步、拉长、断环及静止腿拒收 (5.937833ms)
+✔ centipede 生产动作和所有活动关节通过独立检查 (339.501083ms)
+✔ centipede 对错误步态、滑步、拉长、断环及静止腿拒收 (32.200917ms)
+✔ snake 生产动作和所有活动关节通过独立检查 (41.339584ms)
+✔ snake 对错误步态、滑步、拉长、断环及静止腿拒收 (5.653125ms)
+✔ worm 生产动作和所有活动关节通过独立检查 (22.111291ms)
+✔ worm 对错误步态、滑步、拉长、断环及静止腿拒收 (3.350458ms)
+✔ spider 生产动作和所有活动关节通过独立检查 (412.607833ms)
+✔ spider 对错误步态、滑步、拉长、断环及静止腿拒收 (33.620708ms)
+✔ scorpion 生产动作和所有活动关节通过独立检查 (692.847333ms)
+✔ scorpion 对错误步态、滑步、拉长、断环及静止腿拒收 (55.877625ms)
+✔ 持续蒙皮三角形相邻边连续，急弯仍有有限变换 (19.494083ms)
+✔ 图集渲染骨段轴点对应骨骼位置，静态贴图不改变身体比例 (19.056791ms)
+✔ 物种专属复杂动作有实质位移并回位，单次时长正确 (37.16075ms)
+ℹ tests 64
+ℹ suites 0
+ℹ pass 62
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10883.039666
+
+✖ failing tests:
+
+test at test/art-binding.test.mjs:22:1
+✖ 鸡的收翅朝身后，头颈共用完整羽毛源而不叠加柱形颈 (6.30125ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/art-binding.test.mjs:22:192)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/chicken-performance-source.test.mjs:51:1
+✖ rooster neck root partition preserves face mapping and all same-source ownership (26.300708ms)
+  AssertionError [ERR_ASSERTION]: rigid skull position must not move when root ownership changes
+  + actual - expected
+  
+    [
+      64.57323260290799,
+  +   -32.55988923801939
+  -   -32.55988923801937
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/chicken-performance-source.test.mjs:52:911)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 64.57323260290799, -32.55988923801939 ],
+    expected: [ 64.57323260290799, -32.55988923801937 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

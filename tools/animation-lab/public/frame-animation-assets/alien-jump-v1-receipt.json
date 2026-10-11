@@ -1,0 +1,250 @@
+{
+  "schema": "frame-animation-generation-receipt",
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "mode": "generate-from-identity-reference",
+  "prompt": "Use case: stylized-concept. Asset type: production game sprite animation sheet. Image 1 is identity and clothing reference, not a pose to repeat. Draw precisely this friendly large-headed beige freckled alien with blue eyes, olive sleeveless utility vest, beige undershirt, brown cargo trousers and substantial dark lace-up boots. Preserve the reference's oversized head-to-body proportions and realistic detailed 3D rendered material finish in ALL eight frames. True SIDE PROFILE FACING RIGHT for every pose. Fixed orthographic camera, no rotation toward viewer. EXACTLY EIGHT full-body frames in 4 columns and 2 rows, row-major timeline, no additional sprites. Canvas 2048x1024; each equal cell512x512. Every cell has generous transparent margin and a fixed centerline x256. Identical scale and lighting across all frames, standing character about335pixels high, ground baseline y470 in EACH cell; no camera recentering between frames. Full head and both boots entirely inside its cell. Transparent background, no floor, no shadows outside sprite, no grid lines, no text, no numbers, no scenery or props. Anatomically connected arms, neck, hips, knees and ankles; no detached pieces or hollow sleeves. Avoid changing shoe size, body length, eyes or outfit. Do not paste the same running pose. Action: ONE standing vertical jump, not running and not looping. Frame1 standing ready, knees slightly soft, arms low. Frame2 clear preparatory deep knee bend hips back and arms back, both soles on same ground line. Frame3 takeoff legs extending, arms sweeping up, toes just leave ground. Frame4 ascending, both soles 45pixels ABOVE ground baseline, slightly tucked knees. Frame5 apex, soles85pixels above baseline and arms forward/up, head remains within cell. Frame6 descending with legs reaching down, soles40pixels above baseline. Frame7 clear landing absorption knees bend, both soles on baseline. Frame8 recover upright exactly same stance and size as frame1. Physical joint articulation and coherent vertical trajectory; no horizontal translation.",
+  "identityReference": {
+    "file": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+    "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+  },
+  "editReference": null,
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-2ef649f0-83df-4e88-883b-76091fde0e3f.png",
+  "generatedFileSha256": "17c923dc8ec3cbb593391c499f61334b85df1578ceea53f72863fa6efde29023",
+  "projectFile": "public/frame-animation-assets/alien-jump-v1.png",
+  "projectFileSha256": "17c923dc8ec3cbb593391c499f61334b85df1578ceea53f72863fa6efde29023",
+  "image": {
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "count": 8,
+    "cellWidth": 443.5,
+    "cellHeight": 443.5,
+    "order": "row-major",
+    "requiresIntegerGridNormalization": true,
+    "boundaryPolicy": "floor(col*width/4),floor(row*height/2); final boundary=image dimensions"
+  },
+  "playback": {
+    "fps": 8,
+    "durationSeconds": 1,
+    "loop": false
+  },
+  "qa": {
+    "visual": "failed",
+    "frames": [
+      {
+        "index": 0,
+        "phase": "ready",
+        "alphaBoundsLocal": [
+          211,
+          31,
+          341,
+          425
+        ],
+        "marginLocal": {
+          "left": 211,
+          "top": 31,
+          "right": 102,
+          "bottom": 18
+        },
+        "cellRect": [
+          0,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "站立准备，手低；首尾头部尺度略有变化",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 1,
+        "phase": "crouch",
+        "alphaBoundsLocal": [
+          130,
+          77,
+          355,
+          424
+        ],
+        "marginLocal": {
+          "left": 130,
+          "top": 77,
+          "right": 89,
+          "bottom": 19
+        },
+        "cellRect": [
+          443,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "蓄力蹲低，胳膊向后；两靴叠合",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 2,
+        "phase": "takeoff",
+        "alphaBoundsLocal": [
+          180,
+          30,
+          355,
+          424
+        ],
+        "marginLocal": {
+          "left": 180,
+          "top": 30,
+          "right": 88,
+          "bottom": 19
+        },
+        "cellRect": [
+          887,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "起跳伸腿有限，尚呈蹲姿；离地辨识需播放",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 3,
+        "phase": "rise",
+        "alphaBoundsLocal": [
+          145,
+          9,
+          346,
+          364
+        ],
+        "marginLocal": {
+          "left": 145,
+          "top": 9,
+          "right": 98,
+          "bottom": 79
+        },
+        "cellRect": [
+          1330,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "离地抬臂，腿收；头部留边v2改善",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 4,
+        "phase": "apex",
+        "alphaBoundsLocal": [
+          171,
+          5,
+          378,
+          336
+        ],
+        "marginLocal": {
+          "left": 171,
+          "top": 5,
+          "right": 65,
+          "bottom": 108
+        },
+        "cellRect": [
+          0,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "顶点收腿；最高点脚线低于期望轨迹，需播放判断",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 5,
+        "phase": "fall",
+        "alphaBoundsLocal": [
+          164,
+          8,
+          353,
+          385
+        ],
+        "marginLocal": {
+          "left": 164,
+          "top": 8,
+          "right": 91,
+          "bottom": 59
+        },
+        "cellRect": [
+          443,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "下降姿，腿逐步伸，手臂仍前伸",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 6,
+        "phase": "landing",
+        "alphaBoundsLocal": [
+          153,
+          78,
+          313,
+          418
+        ],
+        "marginLocal": {
+          "left": 153,
+          "top": 78,
+          "right": 130,
+          "bottom": 26
+        },
+        "cellRect": [
+          887,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "落地缓冲可见，groundline与起始站姿偏移",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 7,
+        "phase": "recovery",
+        "alphaBoundsLocal": [
+          139,
+          24,
+          267,
+          418
+        ],
+        "marginLocal": {
+          "left": 139,
+          "top": 24,
+          "right": 177,
+          "bottom": 26
+        },
+        "cellRect": [
+          1330,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "恢复站立，头部/boot尺度与frame1轻微不同",
+        "status": "reviewed-with-open-registration-defect"
+      }
+    ],
+    "observations": [
+      "8阶段均可见，角色服装和朝向基本保持；逐帧视审已执行",
+      "v1头顶/边缘留白不足，基线和scale有偏移，未通过",
+      "工具黑底预览可见红黄细线；A>128红色筛查仅少量或零候选，不能仅凭预览证实source边缘污染，需真实深浅底播放验收。"
+    ],
+    "gameIntegrated": false,
+    "playbackReviewed": false,
+    "edgePixelScreening": {
+      "opaqueRedCandidates": 7,
+      "opaqueYellowCandidates": 0,
+      "criterion": "RGBA A>128 and saturated red/yellow heuristic; advisory not exact segmentation",
+      "interpretation": "少量颜色候选不能单独证明轮廓缺陷；工具黑底预览的红黄线可能为低alpha隐藏RGB，深浅底真实播放待查。"
+    }
+  }
+}

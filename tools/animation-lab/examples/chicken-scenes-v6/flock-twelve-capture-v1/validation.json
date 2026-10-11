@@ -1,0 +1,123 @@
+{
+  "pngCount": 72,
+  "pngSHA": true,
+  "sourceSHA": true,
+  "movieSHA": true,
+  "rendererVersion": 7,
+  "choreographyVersion": 11,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 1280,
+        "height": 720,
+        "nb_read_frames": "73"
+      }
+    ],
+    "format": {
+      "duration": "5.930352"
+    }
+  },
+  "decodedVideo": {
+    "frames": 73,
+    "terminalHoldFrames": 1,
+    "rgbMAE": {
+      "mean": 1.7124156408741646,
+      "max": 2.6527701822916665
+    },
+    "ptsMaxErrorSeconds": 0.004666666666666597,
+    "pts": [
+      0,
+      0.085,
+      0.169,
+      0.249,
+      0.336,
+      0.416,
+      0.501,
+      0.585,
+      0.664,
+      0.752,
+      0.832,
+      0.918,
+      0.999,
+      1.083,
+      1.164,
+      1.246,
+      1.333,
+      1.414,
+      1.5,
+      1.582,
+      1.665,
+      1.747,
+      1.833,
+      1.915,
+      1.998,
+      2.083,
+      2.166,
+      2.249,
+      2.332,
+      2.416,
+      2.499,
+      2.581,
+      2.666,
+      2.75,
+      2.831,
+      2.916,
+      2.997,
+      3.08,
+      3.162,
+      3.25,
+      3.332,
+      3.419,
+      3.499,
+      3.583,
+      3.667,
+      3.748,
+      3.833,
+      3.915,
+      4,
+      4.079,
+      4.166,
+      4.248,
+      4.333,
+      4.417,
+      4.497,
+      4.583,
+      4.667,
+      4.751,
+      4.831,
+      4.916,
+      4.999,
+      5.083,
+      5.165,
+      5.251,
+      5.333,
+      5.414,
+      5.5,
+      5.583,
+      5.668,
+      5.747,
+      5.835,
+      5.916,
+      5.93
+    ]
+  },
+  "visual": {
+    "status": "failed",
+    "reviewer": "root",
+    "methods": [
+      "actual UI playback",
+      "native all-frame contact sheet",
+      "full-resolution representative frames"
+    ],
+    "observations": [
+      "12只公母混合；72源帧整表、原生第37帧及真实电影播放到结束已看。",
+      "极限啄食颈折叠、腿部结节与比例仍失败。影片5.930352秒，较请求6秒短69.648ms；小于一个12fps周期，不能声称精确6秒。"
+    ],
+    "scope": "Visual review is separate from byte identity, decoded frame coverage and timing."
+  },
+  "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+  "audio": null
+}

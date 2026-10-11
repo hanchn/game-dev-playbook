@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-12",
+  "status": "partial-fix-overall-visual-failed",
+  "productionAsset": "dinosaur-side-v13",
+  "sourceIdentity": {
+    "assetId": "dinosaur-side-v13",
+    "primaryUnchanged": "/art/dinosaur-side-parts-v8.png",
+    "newLegSource": "/art/dinosaur-leg-parts-v1.png",
+    "sha256": "943ccc2adb1289af74d101500551e2f9403cddf86047195cce7f640b0e11c9b6",
+    "unchangedTileIndices": [
+      0,
+      1,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "status": "partial-leg-fix-overall-failed"
+  },
+  "scope": {
+    "actualJointRoutes": 32,
+    "joints": "near/far upper/middle/lower/foot",
+    "phases": [
+      0.25,
+      0.75
+    ],
+    "backgrounds": [
+      "light",
+      "dark"
+    ],
+    "diagnosticZoom": 3.4,
+    "selectedProportion": "upper40, hipY-78; tibia36, meta22; foot28",
+    "rootViewedJointContactSheets": 8,
+    "actualUiSaveAllMotions": 7,
+    "actualExportFrames": 112,
+    "minimumFrameMarginPx": 44,
+    "rootViewedMotionAtlases": 7,
+    "atlasViewing": "2048px exports, view tool resized to1600px; not native-pixel proof",
+    "normalAndSlowMainPlay": "brief actual UI observed; not full eight-cycle acceptance"
+  },
+  "technical": {
+    "bindingOnlyBeforeDefaultProportionChange": {
+      "unchangedPoses": 328,
+      "baselineAsset": "v12"
+    },
+    "focusedTests": 38,
+    "serverRegression": 1,
+    "fullRegression": 331,
+    "fullRegressionScope": "before final diagnostic-link and source-gallery unused-tail-slot correction; subsequent small changes syntax checked, actual UI deferred on user stop"
+  },
+  "recovery": {
+    "correctProbe": "source-recovery-probe.json",
+    "failureScreens": [
+      "ui-production13-load-failed.png",
+      "ui-missing-source-retry-visible.png",
+      "ui-missing-source-retry-recovered.png"
+    ],
+    "misnamedFailure": "ui-missing-source-retry-recovered.png remained Failed fetch; not success",
+    "successfulScreens": [
+      "ui-network-recovery-success.png",
+      "ui-secondary-source404-retry-recovered.png"
+    ],
+    "actual404Screen": "ui-secondary-source404-retry-visible.png",
+    "sourceRestoredExactSHA": true,
+    "temporaryBackupAbsent": true
+  },
+  "visualFailed": [
+    "foot/claw thickness and shoe-like block",
+    "ankle/metatarsal/toe proportion feels too elongated; latest user feedback, not changed after stop",
+    "leg material scale and hip seam",
+    "neck and tail source transitions",
+    "running folds and jump anticipation/tuck/landing"
+  ],
+  "notReviewed": [
+    "final source-gallery slot correction and new scoped navigation actual UI"
+  ],
+  "evidence": [
+    "browser/qa-cases.json",
+    "production13-frame-boundaries.json",
+    "full-current-regression.log",
+    "production13-binding-regression.log",
+    "server-recovery-regression.log"
+  ],
+  "finalFileSha256": {
+    "animal-rig.mjs": "70f95c44b783f60043d59d384a6bbd9c5d86471fb2144d963df01083dcd74ede",
+    "skin-renderer.mjs": "23db7a7bb735b444f8954b2564dae881855b16a631d58c7e63738db29f299ebf",
+    "public/app.mjs": "77c47b63d82d1667a92c60d5782ec5e434d7f884ef2a5d374f1c2a8aad838496",
+    "public/dinosaur-leg-review.mjs": "21257d62727cd0805114aef9b026b063ed0c58fa21ff4a50d971c92022c795ca",
+    "server.mjs": "ea0c2d9016bf2c418b5273151823d72be701d90156de0afd40047a7af41c7ca8",
+    "public/art/skins.json": "838952753643d6f35ee9f2f892001eba982f450d3582c8d20eedea475b981e03",
+    "public/art/dinosaur-leg-parts-v1.png": "943ccc2adb1289af74d101500551e2f9403cddf86047195cce7f640b0e11c9b6"
+  },
+  "productComplete": false
+}

@@ -1,0 +1,178 @@
+{
+  "sourceArtStatus": "failed",
+  "localFarOversizeRemoval": "observed-local-improvement: old right farfist removed; do not infer measured hiddenchain or wholeloop approval",
+  "hiddenFarChain": "not-measurable; allowed occlusion is not missing-limb failure by itself",
+  "nativeCanvas": [
+    1254,
+    1254
+  ],
+  "nativeBounds": {
+    "threshold": 24,
+    "bounds": [
+      417,
+      85,
+      716,
+      1120
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "soleY": 1204,
+  "preservedRegions": [
+    {
+      "region": "head-face",
+      "rect": [
+        610,
+        60,
+        480,
+        370
+      ],
+      "originalAlphaBounds": [
+        610,
+        84,
+        1044,
+        429
+      ],
+      "candidateAlphaBounds": [
+        610,
+        85,
+        1045,
+        429
+      ],
+      "alphaIoU": 0.995830291087907,
+      "alphaXorPixels": 474,
+      "opaqueRGBMAE": 4.621311567125724,
+      "changedRGBPixelsOver2": 79844,
+      "bothOpaquePixels": 113203,
+      "strictPixelPreservation": false,
+      "limitation": "ROI contains whole source pixels; approximate silhouette/pose registration evidence only, not identity or anatomical proof."
+    },
+    {
+      "region": "near-open-hand",
+      "rect": [
+        550,
+        550,
+        210,
+        190
+      ],
+      "originalAlphaBounds": [
+        550,
+        550,
+        759,
+        739
+      ],
+      "candidateAlphaBounds": [
+        550,
+        550,
+        759,
+        739
+      ],
+      "alphaIoU": 0.9996144057993368,
+      "alphaXorPixels": 15,
+      "opaqueRGBMAE": 4.099530250818632,
+      "changedRGBPixelsOver2": 26557,
+      "bothOpaquePixels": 38886,
+      "strictPixelPreservation": false,
+      "limitation": "ROI contains whole source pixels; approximate silhouette/pose registration evidence only, not identity or anatomical proof."
+    },
+    {
+      "region": "near-upper-arm",
+      "rect": [
+        460,
+        330,
+        290,
+        230
+      ],
+      "originalAlphaBounds": [
+        460,
+        330,
+        749,
+        559
+      ],
+      "candidateAlphaBounds": [
+        460,
+        330,
+        749,
+        559
+      ],
+      "alphaIoU": 0.9976419066868789,
+      "alphaXorPixels": 154,
+      "opaqueRGBMAE": 3.7307261369392046,
+      "changedRGBPixelsOver2": 40218,
+      "bothOpaquePixels": 65153,
+      "strictPixelPreservation": false,
+      "limitation": "ROI contains whole source pixels; approximate silhouette/pose registration evidence only, not identity or anatomical proof."
+    },
+    {
+      "region": "lower-both-legs",
+      "rect": [
+        400,
+        760,
+        750,
+        470
+      ],
+      "originalAlphaBounds": [
+        417,
+        760,
+        1131,
+        1204
+      ],
+      "candidateAlphaBounds": [
+        417,
+        760,
+        1132,
+        1204
+      ],
+      "alphaIoU": 0.9948955715399947,
+      "alphaXorPixels": 589,
+      "opaqueRGBMAE": 3.8034686109006017,
+      "changedRGBPixelsOver2": 69745,
+      "bothOpaquePixels": 114801,
+      "strictPixelPreservation": false,
+      "limitation": "ROI contains whole source pixels; approximate silhouette/pose registration evidence only, not identity or anatomical proof."
+    }
+  ],
+  "samePixelsGuaranteed": false,
+  "source7And9": "Unchanged source7/9 intentionally used for real continuity context. Source9 wrist far outside source-calibrated reach; 8occluded->9overscale still abrupt. Do not upgrade whole loop.",
+  "artifacts": [
+    {
+      "label": "SOURCE7 unchanged",
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/frame-animation-assets/milk-frog-run-v7-frame-07-v9.png"
+    },
+    {
+      "label": "SOURCE8 BEFORE",
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/frame-animation-assets/milk-frog-run-v7-frame-08-v4.png"
+    },
+    {
+      "label": "SOURCE8 ONE NEW PROBE",
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-far-occlusion-probe-v1/frame-08-occluded-v1.png"
+    },
+    {
+      "label": "SOURCE9 unchanged / still overscale",
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/frame-animation-assets/milk-frog-run-v5-frame-09-v2.png"
+    }
+  ],
+  "sourceMutation": "none; original bytes copied; no per-frame fit or source bitmap manipulation",
+  "original8Sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d",
+  "new8Sha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+  "pending": "Root review of local occlusion and back-neck cap. Whole sequence art failed; old v7 package unchanged.",
+  "backNeckNewContour": {
+    "roi": [
+      520,
+      250,
+      130,
+      100
+    ],
+    "newOpaquePixels": 1779,
+    "removedOpaquePixels": 22,
+    "observation": "New small yellow posterior-neck/shoulder cap in original frame8 comparison, around560..600/285..325. Anatomy/visible far root not certified; strict unchanged body contour failed."
+  },
+  "reviewedEvidence": [
+    "new original1254frame via view_image",
+    "compare-light.png source7/before8/new8/source9",
+    "UI-context0,1,2 each actual native screenshot",
+    "movie-normal-contact.png and movie-slow-contact.png decoded movie pixels"
+  ]
+}

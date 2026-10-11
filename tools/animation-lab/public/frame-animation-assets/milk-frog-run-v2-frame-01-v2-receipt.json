@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Local EDIT of reference1 loading sprite to improve continuousARM travel ONLY. Keep its face/head/body/leggeometry, nearfootground/farfootairborne, source1254camera/materialidentical. Reference2 nextpassingframe shows nextwaisthandposition.\nNear foreground OPEN hand currentlylow/backx350,y735 mustbend UP/slightlyFORWARD around SAMEnearELBOW x445,y520 to NEARWRISTx475,y595 and openpink HANDCENTERx525,y650. Preserve nearupperarmbackward angle/shoulder x650,395, onlyFLEX its elbow/forearm naturally. Remove old lowlefthand/forearm, no ghost; nearhandOPENsamefourdigits. Its centerstaysleft/behindhip, not chestfrontextreme.\nFar background CURLED hand currentlyfarfrontx980,y600 moves DOWN/BACK towardWAIST centerx800,y650. Farshoulder/upperarmstaysfrombehindtorso, farelbow bendsappropriately, curledhandvisibleonrightbellyedge. Removeoldfullfrontextremefist, no extrahand; farhandCURLED notopen.\nThis fixes smoothhandtravel acrosskey0→loading→passing, keeping sameboneproportions, stable near/far armidentity. DO NOT redraw legstates, head/face/gaze/whitebelly/pinkfeet orrescale. Exactly2arms2legs, originalslightloadingpose. Transparentalpha/no shadows/marks/crop. OutputONEactualcleanintermediateloadingframe.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-a9fdbb3c-5fcb-4982-b732-17fc63b112d1.png",
+  "generatedFileSha256": "be4af1d1076988b4074acbb8b8cc1e254af68bfd8a15f7147da737a4f2a085f0",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+      "sha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-809290e9-ed52-4cff-a2f0-87074f6b9ffb.png",
+      "sha256": "21008c3948ef2087be76dde1c5f21fe8121db7ab3caefb64de1c8a81f639aa8b"
+    }
+  ],
+  "phase": 0.25,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      411,
+      96,
+      714,
+      1104
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Local elbow/forearm repair shows near open hand between back and waist, retains near support."
+  }
+}

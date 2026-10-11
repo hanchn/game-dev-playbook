@@ -1,0 +1,888 @@
+{
+  "schema": "measured-map-performance/v1",
+  "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+  "fixture": {
+    "seed": "漫游-2026",
+    "scale": 256,
+    "seaLevel": 0.45,
+    "roughness": 0.45,
+    "vegetation": 0.65,
+    "cell": 64,
+    "camera": {
+      "x": 35.045729,
+      "y": 38.815633
+    },
+    "qaTime": 0
+  },
+  "coldDefinition": "full-page reload resets JS/renderer caches; HTTP/decoded-image caches not purged",
+  "measurement": "native Canvas2D API elapsed wall time, not GPU elapsed time; max rAF includes background browser scheduling; firstPaintMs starts at generate and includes worker/assets/raster/firstdraw/rAF delay",
+  "cases": [
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-cold-stage-before-v13.metrics.json",
+      "sha256": "195d7b9e1ef94f8c0093009e6e46fd4a08ec1422c60bbb18c3968435d738ac87",
+      "metrics": {
+        "drawTrace": [
+          {
+            "drawMs": 43.69999998807907,
+            "groundMs": 13.5,
+            "orderMs": 0.7999999821186066,
+            "tileMs": 0.30000004172325134,
+            "spriteMs": 0.4000000059604645,
+            "riverMs": 27.599999994039536,
+            "visibleSprites": 194,
+            "assetDecodeMs": 97.90000000596046,
+            "assetCount": 48
+          }
+        ],
+        "maxFrameIntervalMs": 33.400000000000006,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 48,
+        "drawMs": 43.69999998807907,
+        "groundMs": 13.5,
+        "workerBuildMs": 15,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-cold-final-v14.metrics.json",
+      "sha256": "2559410c96ad2f674bf2f657b5905a9e614c6cda1ac43f7980a567e26613bb4c",
+      "metrics": {
+        "drawTrace": [
+          {
+            "drawMs": 11.5,
+            "groundMs": 6.200000017881393,
+            "orderMs": 1.0999999940395355,
+            "tileMs": 0.5999999940395355,
+            "spriteMs": 0.30000001192092896,
+            "riverMs": 0.7000000178813934,
+            "visibleSprites": 194,
+            "assetDecodeMs": 74.69999998807907,
+            "assetRasterPrepareMs": 13.400000005960464,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 33.400000000000034,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 11.5,
+        "groundMs": 6.200000017881393,
+        "workerBuildMs": 13.199999988079071,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-first-paint-final-v14.metrics.json",
+      "sha256": "bb03bb9e34df7f818d45e4bcbddd208f8459dc144a1bc79551675b217366a968",
+      "metrics": {
+        "firstPaintMs": 395.80000001192093,
+        "drawTrace": [
+          {
+            "firstPaintMs": 395.80000001192093,
+            "drawMs": 23.19999998807907,
+            "groundMs": 10.200000017881393,
+            "orderMs": 6.5,
+            "tileMs": 0.9999999403953552,
+            "spriteMs": 0.5,
+            "riverMs": 0.5,
+            "visibleSprites": 194,
+            "assetDecodeMs": 77.69999998807907,
+            "assetRasterPrepareMs": 21,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 35.099999999999994,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 23.19999998807907,
+        "groundMs": 10.200000017881393,
+        "workerBuildMs": 20.599999994039536,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-worker-order-cold-v15.metrics.json",
+      "sha256": "92786c71ae61746402e0cc8910f26c969de30d022b7d9dbe0cd09922b29a98e8",
+      "metrics": {
+        "firstPaintMs": 253.59999999403954,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-render-order-v15",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.5999999940395355,
+            "firstPaintMs": 253.59999999403954,
+            "drawMs": 5.100000023841858,
+            "groundMs": 4.199999988079071,
+            "orderMs": 0,
+            "tileMs": 0,
+            "spriteMs": 0.10000002384185791,
+            "riverMs": 0.09999999403953552,
+            "visibleSprites": 194,
+            "assetDecodeMs": 49.29999998211861,
+            "assetRasterPrepareMs": 5.5,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 35.30000000000001,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 5.100000023841858,
+        "groundMs": 4.199999988079071,
+        "workerBuildMs": 11.599999994039536,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-worker-order-repeat-v15.metrics.json",
+      "sha256": "62ebe9cc8af604e14d902135a2d735b56bdfdf37dffc3cd792e202e974b3973f",
+      "metrics": {
+        "firstPaintMs": 329.2000000178814,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-render-order-v15",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.29999998211860657,
+            "firstPaintMs": 329.2000000178814,
+            "drawMs": 20.400000005960464,
+            "groundMs": 11.300000011920929,
+            "orderMs": 0,
+            "tileMs": 0.19999998807907104,
+            "spriteMs": 0.40000003576278687,
+            "riverMs": 1.9000000059604645,
+            "visibleSprites": 194,
+            "assetDecodeMs": 88.30000001192093,
+            "assetRasterPrepareMs": 9.699999988079071,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 34.80000000000001,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 20.400000005960464,
+        "groundMs": 11.300000011920929,
+        "workerBuildMs": 19.100000023841858,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-visible-queue-cold-v16.metrics.json",
+      "sha256": "a18790c2870286626bf77f726298c616f8011b9429c7f5b10c9ce4c638eb05bc",
+      "metrics": {
+        "firstPaintMs": 286.5,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-visible-ground-queue-v16",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.5,
+            "renderItems": 312,
+            "firstPaintMs": 286.5,
+            "drawMs": 29.900000005960464,
+            "groundMs": 26.5,
+            "orderMs": 0,
+            "tileMs": 0.3999999761581421,
+            "spriteMs": 0.699999988079071,
+            "riverMs": 0.5,
+            "visibleSprites": 194,
+            "assetDecodeMs": 43,
+            "assetRasterPrepareMs": 11.699999988079071,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 64.80000000000001,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 29.900000005960464,
+        "groundMs": 26.5,
+        "workerBuildMs": 13.5,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-visible-queue-repeat-v16.metrics.json",
+      "sha256": "4c12616cede036d076916dba7a0fe9d952cc2fa3f6beea9d35c3c10ca88dbdec",
+      "metrics": {
+        "firstPaintMs": 268.30000001192093,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-visible-ground-queue-v16",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.30000001192092896,
+            "renderItems": 312,
+            "firstPaintMs": 268.30000001192093,
+            "drawMs": 7.800000011920929,
+            "groundMs": 5.9000000059604645,
+            "orderMs": 0.09999999403953552,
+            "tileMs": 0.20000001788139343,
+            "spriteMs": 0.5,
+            "riverMs": 0.30000001192092896,
+            "visibleSprites": 194,
+            "assetDecodeMs": 48.80000001192093,
+            "assetRasterPrepareMs": 29.900000005960464,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 35.30000000000001,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 7.800000011920929,
+        "groundMs": 5.9000000059604645,
+        "workerBuildMs": 12.699999988079071,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-ground-subprofile-v16.metrics.json",
+      "sha256": "8bc121a01b94fe4bdb929ba26e1f205e959c6c677baf53b85464ef1ae37272e1",
+      "metrics": {
+        "firstPaintMs": 263,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-visible-ground-queue-v16",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.30000001192092896,
+            "renderItems": 312,
+            "firstPaintMs": 263,
+            "drawMs": 8.399999976158142,
+            "groundMs": 6.899999976158142,
+            "groundProfile": {
+              "cacheHit": true,
+              "mipMs": 0,
+              "transformClipMs": 0,
+              "patternMs": 0,
+              "fillMs": 6.5,
+              "restoreMs": 0,
+              "sourceWidth": 256,
+              "sourceHeight": 256
+            },
+            "orderMs": 0,
+            "tileMs": 0.4000000059604645,
+            "spriteMs": 0.20000001788139343,
+            "riverMs": 0.29999998211860657,
+            "visibleSprites": 194,
+            "assetDecodeMs": 48.900000005960464,
+            "assetRasterPrepareMs": 5.199999988079071,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 35.20000000000002,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 8.399999976158142,
+        "groundMs": 6.899999976158142,
+        "workerBuildMs": 23.899999976158142,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-ground-subprofile-repeat-v16.metrics.json",
+      "sha256": "1ce9467764d1f61dfa429e32d6c88b49289f8500cb0fc12f127681c60642133f",
+      "metrics": {
+        "firstPaintMs": 256.80000001192093,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-visible-ground-queue-v16",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.5999999940395355,
+            "renderItems": 312,
+            "firstPaintMs": 256.80000001192093,
+            "drawMs": 9.100000023841858,
+            "groundMs": 7,
+            "groundProfile": {
+              "cacheHit": true,
+              "mipMs": 0,
+              "transformClipMs": 0,
+              "patternMs": 0,
+              "fillMs": 6.9000000059604645,
+              "restoreMs": 0.09999999403953552,
+              "sourceWidth": 256,
+              "sourceHeight": 256
+            },
+            "orderMs": 0,
+            "tileMs": 0.7999999821186066,
+            "spriteMs": 0.4000000059604645,
+            "riverMs": 0.09999999403953552,
+            "visibleSprites": 194,
+            "assetDecodeMs": 49.900000005960464,
+            "assetRasterPrepareMs": 15,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 33.7,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 9.100000023841858,
+        "groundMs": 7,
+        "workerBuildMs": 14.5,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-worker-ground-cold-v17.metrics.json",
+      "sha256": "f08425d4612d84241858586c813d506fe044cee116b35f6c9ee9ed19a099bb11",
+      "metrics": {
+        "firstPaintMs": 315.30000001192093,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 1.5999999940395355,
+            "groundRasterMs": 3.300000011920929,
+            "groundRasterWaitMs": 4.699999988079071,
+            "groundRasterPixels": 2803712,
+            "renderItems": 312,
+            "firstPaintMs": 315.30000001192093,
+            "drawMs": 1.7999999821186066,
+            "groundMs": 0.09999999403953552,
+            "groundProfile": {},
+            "orderMs": 0,
+            "tileMs": 0.30000001192092896,
+            "spriteMs": 0.30000001192092896,
+            "riverMs": 0.3999999761581421,
+            "visibleSprites": 194,
+            "assetDecodeMs": 60.80000001192093,
+            "assetRasterPrepareMs": 6,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 66.69999999999999,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 1.7999999821186066,
+        "groundMs": 0.09999999403953552,
+        "workerBuildMs": 15.5,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-worker-ground-repeat-v17.metrics.json",
+      "sha256": "166b3c7ebbeee0d3643d1ea53741d9cce1cbaec9107633ca79140e20acc29fa1",
+      "metrics": {
+        "firstPaintMs": 296.30000001192093,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.4000000059604645,
+            "groundRasterMs": 1.2000000178813934,
+            "groundRasterWaitMs": 1.7000000178813934,
+            "groundRasterPixels": 2803712,
+            "renderItems": 312,
+            "firstPaintMs": 296.30000001192093,
+            "drawMs": 2,
+            "groundMs": 0,
+            "groundProfile": {},
+            "orderMs": 0,
+            "tileMs": 0.4000000059604645,
+            "spriteMs": 0.19999998807907104,
+            "riverMs": 0.09999999403953552,
+            "visibleSprites": 194,
+            "assetDecodeMs": 56.70000001788139,
+            "assetRasterPrepareMs": 14.899999976158142,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 35.20000000000002,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 2,
+        "groundMs": 0,
+        "workerBuildMs": 16.099999994039536,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-worker-ground-final-v17.metrics.json",
+      "sha256": "2a14080dff3fdb2dfff0c9646bd2870e0028f028f108ac9ca466bd404aff784f",
+      "metrics": {
+        "firstPaintMs": 257.5,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.4000000059604645,
+            "groundRasterMs": 1.5,
+            "groundRasterWaitMs": 2.0999999940395355,
+            "groundRasterPixels": 2803712,
+            "renderItems": 312,
+            "firstPaintMs": 257.5,
+            "drawMs": 2.2999999821186066,
+            "groundMs": 0.09999999403953552,
+            "groundProfile": {},
+            "orderMs": 0,
+            "tileMs": 0.30000001192092896,
+            "spriteMs": 1,
+            "riverMs": 0.09999999403953552,
+            "visibleSprites": 194,
+            "assetDecodeMs": 43.5,
+            "assetRasterPrepareMs": 12.5,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 34.19999999999999,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 2.2999999821186066,
+        "groundMs": 0.09999999403953552,
+        "workerBuildMs": 13.5,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-worker-ground-warm-v17.metrics.json",
+      "sha256": "a82a44dd01af43f69332fac3c5f8e7c7391c5187b1f32673ef860584aed345b9",
+      "metrics": {
+        "firstPaintMs": 315.30000001192093,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 1.5999999940395355,
+            "groundRasterMs": 3.300000011920929,
+            "groundRasterWaitMs": 4.699999988079071,
+            "groundRasterPixels": 2803712,
+            "renderItems": 312,
+            "firstPaintMs": 315.30000001192093,
+            "drawMs": 1.7999999821186066,
+            "groundMs": 0.09999999403953552,
+            "groundProfile": {},
+            "orderMs": 0,
+            "tileMs": 0.30000001192092896,
+            "spriteMs": 0.30000001192092896,
+            "riverMs": 0.3999999761581421,
+            "visibleSprites": 194,
+            "assetDecodeMs": 60.80000001192093,
+            "assetRasterPrepareMs": 6,
+            "assetCount": 46
+          },
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 1.5999999940395355,
+            "groundRasterMs": 3.300000011920929,
+            "groundRasterWaitMs": 4.699999988079071,
+            "groundRasterPixels": 2803712,
+            "renderItems": 213,
+            "firstPaintMs": 315.30000001192093,
+            "drawMs": 1,
+            "groundMs": 0.09999999403953552,
+            "groundProfile": {},
+            "orderMs": 0,
+            "tileMs": 0.09999999403953552,
+            "spriteMs": 0,
+            "riverMs": 0,
+            "visibleSprites": 133,
+            "assetDecodeMs": 60.80000001192093,
+            "assetRasterPrepareMs": 6,
+            "assetCount": 46
+          },
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "settlement",
+            "camera": {
+              "x": 35.045729,
+              "y": 38.815633
+            },
+            "cell": 64,
+            "region": {
+              "x": 17,
+              "y": 21,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 1.5999999940395355,
+            "groundRasterMs": 3.300000011920929,
+            "groundRasterWaitMs": 4.699999988079071,
+            "groundRasterPixels": 2803712,
+            "renderItems": 312,
+            "firstPaintMs": 315.30000001192093,
+            "drawMs": 0.800000011920929,
+            "groundMs": 0.09999999403953552,
+            "groundProfile": {},
+            "orderMs": 0,
+            "tileMs": 0.20000001788139343,
+            "spriteMs": 0.4000000059604645,
+            "riverMs": 0,
+            "visibleSprites": 194,
+            "assetDecodeMs": 60.80000001192093,
+            "assetRasterPrepareMs": 6,
+            "assetCount": 46
+          }
+        ],
+        "maxFrameIntervalMs": 98.79999999999927,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 67,
+        "visibleSprites": 194,
+        "textures": 46,
+        "drawMs": 0.800000011920929,
+        "groundMs": 0.09999999403953552,
+        "workerBuildMs": 15.5,
+        "camera": {
+          "x": 35.045729,
+          "y": 38.815633
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-river-cold-v17.metrics.json",
+      "sha256": "0290000691214f18ebcfc0e2a497211f2345c516748cc046651745989fe8b3ad",
+      "metrics": {
+        "firstPaintMs": 354.30000001192093,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "forest",
+            "camera": {
+              "x": -35,
+              "y": -56
+            },
+            "cell": 64,
+            "region": {
+              "x": -53,
+              "y": -74,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 0.5,
+            "groundRasterMs": 14.300000011920929,
+            "groundRasterWaitMs": 18,
+            "groundRasterPixels": 2803712,
+            "renderItems": 148,
+            "firstPaintMs": 354.30000001192093,
+            "drawMs": 1,
+            "groundMs": 0,
+            "groundProfile": {},
+            "orderMs": 0.09999999403953552,
+            "tileMs": 0.09999999403953552,
+            "spriteMs": 0.10000002384185791,
+            "riverMs": 0.5,
+            "visibleSprites": 66,
+            "assetDecodeMs": 76.09999999403954,
+            "assetRasterPrepareMs": 67.19999998807907,
+            "assetCount": 11
+          }
+        ],
+        "maxFrameIntervalMs": 35.20000000000002,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 134,
+        "visibleSprites": 66,
+        "textures": 11,
+        "drawMs": 1,
+        "groundMs": 0,
+        "workerBuildMs": 22.80000001192093,
+        "camera": {
+          "x": -35,
+          "y": -56
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    },
+    {
+      "path": "examples/map-terrain-3d-v1/ui-isometric-theme-desert-v17.metrics.json",
+      "sha256": "9ebdb6177d4ff251e931eec52808e3444793520c26cb0fb5669c9448226d2104",
+      "metrics": {
+        "firstPaintMs": 414.40000000596046,
+        "drawTrace": [
+          {
+            "algorithm": "kenney-2d-continuous-ground-planner4-worker-ground-raster-v17",
+            "style": "desert",
+            "camera": {
+              "x": -35,
+              "y": -56
+            },
+            "cell": 64,
+            "region": {
+              "x": -53,
+              "y": -74,
+              "width": 37,
+              "height": 37
+            },
+            "queueBuildMs": 1.5999999940395355,
+            "groundRasterMs": 0,
+            "groundRasterWaitMs": 0,
+            "groundRasterPixels": 0,
+            "renderItems": 1515,
+            "firstPaintMs": 414.40000000596046,
+            "drawMs": 4.5,
+            "groundMs": 0.30000001192092896,
+            "groundProfile": {},
+            "orderMs": 0,
+            "tileMs": 1.7999999821186066,
+            "spriteMs": 0.09999999403953552,
+            "riverMs": 0.5,
+            "visibleSprites": 923,
+            "assetDecodeMs": 6.800000011920929,
+            "assetRasterPrepareMs": 0,
+            "assetCount": 4
+          }
+        ],
+        "maxFrameIntervalMs": 66.59999999999854,
+        "projection": "Canvas2D isometric sprite",
+        "tiles": 1369,
+        "objects": 146,
+        "visibleSprites": 923,
+        "textures": 4,
+        "drawMs": 4.5,
+        "groundMs": 0.30000001192092896,
+        "workerBuildMs": 247.69999998807907,
+        "camera": {
+          "x": -35,
+          "y": -56
+        },
+        "animationTime": 0,
+        "collision": null
+      }
+    }
+  ],
+  "baselineSourceSnapshot": "examples/map-terrain-3d-v1/source-v15-before-perf/audit.json",
+  "intermediateSourceSnapshotLimit": "individual experimental versions14–16 did not each retain complete code snapshot; actual DOM algorithm/timing and failed PNGs retained; no current-source hash assigned to historical captures",
+  "currentMainDrawSamples": [
+    1.8,
+    2,
+    2.3
+  ],
+  "currentFirstSceneSamples": [
+    315.3,
+    296.3,
+    257.5
+  ],
+  "currentGroundPixels": 2803712,
+  "currentRawGroundRGBABytes": 11214848,
+  "limits": {
+    "pixelBudget": 8388608,
+    "sourceTextures": 64
+  },
+  "scope": {
+    "sourceArtChanged": false,
+    "sceneGeometryChanged": false,
+    "universalFpsAccepted": false,
+    "visualAccepted": false,
+    "engineImported": false,
+    "gameplayValidated": false
+  },
+  "remaining": [
+    "rAF34–67ms remains over16.67ms despite main draw improvement",
+    "river native mip prepare67.2ms and desert generator247.7ms retained; no universal load-time acceptance",
+    "current scan ground/low-poly objects/water-repeat/road grid fail overall natural-theme consistency"
+  ]
+}

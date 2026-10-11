@@ -1,0 +1,99 @@
+{
+  "schema": "codex-game-plan-qa/v1",
+  "testedAt": "2026-10-11T14:45:48.455Z",
+  "status": "technical-passed",
+  "tests": {
+    "count": 14,
+    "passed": 14,
+    "failed": 0,
+    "log": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/game-plan/core-test.log"
+  },
+  "rejectedInputs": [
+    {
+      "id": "undefined-target",
+      "input": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/game-plan/rejections/undefined-target.json",
+      "exitCode": 2,
+      "error": "场景连接未定义: entry → missing",
+      "status": "rejected-as-required"
+    },
+    {
+      "id": "unreachable-scene",
+      "input": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/game-plan/rejections/unreachable-scene.json",
+      "exitCode": 2,
+      "error": "从入口 entry 不可达的场景: result",
+      "status": "rejected-as-required"
+    },
+    {
+      "id": "always-false-connection",
+      "input": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/game-plan/rejections/always-false-connection.json",
+      "exitCode": 2,
+      "error": "从入口 entry 不可达的场景: board",
+      "status": "rejected-as-required"
+    },
+    {
+      "id": "empty-core-loop",
+      "input": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/game-plan/rejections/empty-core-loop.json",
+      "exitCode": 2,
+      "error": "coreLoop 不得为空",
+      "status": "rejected-as-required"
+    }
+  ],
+  "sceneGraphRetest": {
+    "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/game-plan/scene-retest-plan.json",
+    "status": "structure-checked",
+    "allScenesReachable": true,
+    "conditionalRuntimeReachability": "not-tested"
+  },
+  "independentOrchestrator": {
+    "originalReport": "/tmp/game-orchestrator-nonplatform-WfQbXD/audit-report.json",
+    "retestReport": "/tmp/game-orchestrator-nonplatform-retest-mSfWt7/audit-report.json",
+    "generatedOutputsOnlyUnderTmp": true,
+    "defects": [
+      {
+        "id": "BRIEF-ADAPTER",
+        "initialEvidence": "手工映射title→name，Godot 2D→godot，coreLoop数组→字符串；直接共享brief尚无适配器。",
+        "repair": "gamePlanUiBrief 做类型与引擎显式转换并保留原选择",
+        "retest": "automatic adapter -> actual UI CLI plan/validate/export",
+        "status": "technical-fixed"
+      },
+      {
+        "id": "EXACT-RULE-UI",
+        "initialEvidence": "UI normalizeBrief未保留objective/failure；三消HUD增加score模板字段，而本例未定义计分规则。",
+        "repair": "UI planner 保留规则JSON/显式HUD，puzzle默认不再添加未定义score",
+        "retest": "完整规则深比较；默认HUD无score且路径列为假设",
+        "status": "technical-fixed"
+      },
+      {
+        "id": "NO-RUNTIME",
+        "initialEvidence": "未创建Godot工程、未实际操作棋盘回合",
+        "status": "open",
+        "requiredNextEvidence": "输入→有效反馈→目标/失败→结算→重试的真实游戏操作记录"
+      },
+      {
+        "id": "NO-VISUAL",
+        "initialEvidence": "SVG未实机审图，无生成PNG与棋子美术",
+        "status": "open",
+        "requiredNextEvidence": "目标设备布局审图与素材视觉验收"
+      }
+    ]
+  },
+  "example": {
+    "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/game-plan/game-plan.json",
+    "purpose": "source-inherited survival design example; not game integrated",
+    "visualStatus": "pending"
+  },
+  "sourceHashes": {
+    "game-plan.mjs": "cf96f31fbfee86c114ca8ecaaf28c5c1d190e50d7f294210f58e791016e657f1",
+    "scripts/game-plan-cli.mjs": "1ca682fe64c87406b9b53e661bd84a616f19a6380fd426c02daf3c40fafdfdee",
+    "scripts/record-game-plan-qa.mjs": "03ee96988b8e71b8a0d70001370d8ab021c30e891e55bd7944d853a8bbbef611",
+    "test/game-plan.test.mjs": "ad2b55f80a1a7414e26115be43cfeb28f5b4b49ab9737a72bddf0541d82ce471",
+    "docs/game-development-plan.md": "71afe790af509a3b1d9bd6d865853fe85cf9910b605a3ab508bb003b93f610a7",
+    "examples/game-plan/brief.json": "eeb30a98f8cc3f742155c38ac579a976021ac6731ca9a7caf99488a9aa5e0a7a"
+  },
+  "limitations": {
+    "gameIntegrated": false,
+    "visualStatus": "pending",
+    "conditionalRuntimeReachability": "not-tested",
+    "gameplayRoundTest": "not-performed"
+  }
+}

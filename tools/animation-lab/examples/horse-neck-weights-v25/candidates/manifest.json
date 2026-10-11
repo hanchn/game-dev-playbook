@@ -1,0 +1,255 @@
+{
+  "registered": false,
+  "assetId": "horse-side-v24",
+  "assetVersion": 24,
+  "skinBindingVersion": 24,
+  "sourceSkinSnapshot": "source-skin-snapshot.json",
+  "sources": {
+    "primary": {
+      "atlas": "/art/horse-side-parts-v5.png",
+      "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b"
+    },
+    "horse-cannon-material": {
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5"
+    },
+    "horse-upper-material": {
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3"
+    },
+    "horse-hoof-material": {
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d"
+    }
+  },
+  "cases": [
+    {
+      "id": "baseline-v24",
+      "start": 0.62,
+      "span": 0.18,
+      "startSlopeU": 0,
+      "neckMask": {
+        "start": 0.62,
+        "span": 0.18,
+        "startSlopeU": 0,
+        "maxU": 0.68,
+        "fade": 0.14,
+        "anchorOrientation": "body",
+        "layerSplit": {
+          "start": 0.48,
+          "slopeU": 0.5,
+          "overlap": 0.03
+        }
+      },
+      "neckRoot": [
+        0.4,
+        0.8
+      ],
+      "states": [
+        {
+          "file": "baseline-v24-0.200.png",
+          "phase": 0.2
+        },
+        {
+          "file": "baseline-v24-0.467.png",
+          "phase": 0.467
+        },
+        {
+          "file": "baseline-v24-0.730.png",
+          "phase": 0.73
+        }
+      ],
+      "visual": "not-reviewed"
+    },
+    {
+      "id": "earlier-back",
+      "start": 0.4,
+      "span": 0.3,
+      "startSlopeU": 0.5,
+      "neckMask": {
+        "start": 0.4,
+        "span": 0.3,
+        "startSlopeU": 0.5,
+        "maxU": 0.68,
+        "fade": 0.14,
+        "anchorOrientation": "body",
+        "layerSplit": {
+          "start": 0.48,
+          "slopeU": 0.5,
+          "overlap": 0.03
+        }
+      },
+      "neckRoot": [
+        0.4,
+        0.8
+      ],
+      "states": [
+        {
+          "file": "earlier-back-0.200.png",
+          "phase": 0.2
+        },
+        {
+          "file": "earlier-back-0.467.png",
+          "phase": 0.467
+        },
+        {
+          "file": "earlier-back-0.730.png",
+          "phase": 0.73
+        }
+      ],
+      "visual": "not-reviewed"
+    },
+    {
+      "id": "moderate-back",
+      "start": 0.45,
+      "span": 0.25,
+      "startSlopeU": 0.4,
+      "neckMask": {
+        "start": 0.45,
+        "span": 0.25,
+        "startSlopeU": 0.4,
+        "maxU": 0.68,
+        "fade": 0.14,
+        "anchorOrientation": "body",
+        "layerSplit": {
+          "start": 0.48,
+          "slopeU": 0.5,
+          "overlap": 0.03
+        }
+      },
+      "neckRoot": [
+        0.4,
+        0.8
+      ],
+      "states": [
+        {
+          "file": "moderate-back-0.200.png",
+          "phase": 0.2
+        },
+        {
+          "file": "moderate-back-0.467.png",
+          "phase": 0.467
+        },
+        {
+          "file": "moderate-back-0.730.png",
+          "phase": 0.73
+        }
+      ],
+      "visual": "not-reviewed"
+    },
+    {
+      "id": "broad-back",
+      "start": 0.35,
+      "span": 0.4,
+      "startSlopeU": 0.55,
+      "neckMask": {
+        "start": 0.35,
+        "span": 0.4,
+        "startSlopeU": 0.55,
+        "maxU": 0.68,
+        "fade": 0.14,
+        "anchorOrientation": "body",
+        "layerSplit": {
+          "start": 0.48,
+          "slopeU": 0.5,
+          "overlap": 0.03
+        }
+      },
+      "neckRoot": [
+        0.4,
+        0.8
+      ],
+      "states": [
+        {
+          "file": "broad-back-0.200.png",
+          "phase": 0.2
+        },
+        {
+          "file": "broad-back-0.467.png",
+          "phase": 0.467
+        },
+        {
+          "file": "broad-back-0.730.png",
+          "phase": 0.73
+        }
+      ],
+      "visual": "not-reviewed"
+    },
+    {
+      "id": "low-root-back",
+      "start": 0.4,
+      "span": 0.3,
+      "startSlopeU": 0.5,
+      "neckRoot": [
+        0.32,
+        0.92
+      ],
+      "neckMask": {
+        "start": 0.4,
+        "span": 0.3,
+        "startSlopeU": 0.5,
+        "maxU": 0.68,
+        "fade": 0.14,
+        "anchorOrientation": "body",
+        "layerSplit": {
+          "start": 0.48,
+          "slopeU": 0.5,
+          "overlap": 0.03
+        }
+      },
+      "states": [
+        {
+          "file": "low-root-back-0.200.png",
+          "phase": 0.2
+        },
+        {
+          "file": "low-root-back-0.467.png",
+          "phase": 0.467
+        },
+        {
+          "file": "low-root-back-0.730.png",
+          "phase": 0.73
+        }
+      ],
+      "visual": "not-reviewed"
+    },
+    {
+      "id": "low-root-moderate",
+      "start": 0.45,
+      "span": 0.3,
+      "startSlopeU": 0.4,
+      "neckRoot": [
+        0.36,
+        0.92
+      ],
+      "neckMask": {
+        "start": 0.45,
+        "span": 0.3,
+        "startSlopeU": 0.4,
+        "maxU": 0.68,
+        "fade": 0.14,
+        "anchorOrientation": "body",
+        "layerSplit": {
+          "start": 0.48,
+          "slopeU": 0.5,
+          "overlap": 0.03
+        }
+      },
+      "states": [
+        {
+          "file": "low-root-moderate-0.200.png",
+          "phase": 0.2
+        },
+        {
+          "file": "low-root-moderate-0.467.png",
+          "phase": 0.467
+        },
+        {
+          "file": "low-root-moderate-0.730.png",
+          "phase": 0.73
+        }
+      ],
+      "visual": "not-reviewed"
+    }
+  ]
+}

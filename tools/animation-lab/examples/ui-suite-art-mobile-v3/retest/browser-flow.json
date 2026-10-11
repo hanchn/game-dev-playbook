@@ -1,0 +1,33 @@
+{
+  "scope": "actual art tool navigation; does not execute a game simulation",
+  "steps": [
+    {
+      "step": "home → settings",
+      "current": "settings"
+    },
+    {
+      "step": "settings → home",
+      "current": "home"
+    },
+    {
+      "step": "select playing",
+      "current": "playing"
+    },
+    {
+      "step": "playing → pause",
+      "current": "pause"
+    },
+    {
+      "step": "pause → settings",
+      "current": "settings"
+    },
+    {
+      "step": "settings → pause",
+      "current": "pause"
+    },
+    {
+      "step": "pause → playing",
+      "current": "playing"
+    }
+  ]
+}

@@ -1,0 +1,1007 @@
+{
+  "asset": {
+    "schemaVersion": 1,
+    "id": "worm-side-v6",
+    "species": "worm",
+    "name": "蚯蚓",
+    "version": 6,
+    "design": {
+      "color": "#e1a34c",
+      "size": 1,
+      "stride": 5,
+      "view": "侧面 · 正交 · 朝右"
+    },
+    "parts": [
+      {
+        "id": "root",
+        "name": "装配原点",
+        "parent": null,
+        "shape": "anchor",
+        "rest": [
+          0,
+          0
+        ],
+        "dimensions": [
+          0,
+          0
+        ],
+        "layer": 0,
+        "tile": 0,
+        "material": "#e1a34c"
+      },
+      {
+        "id": "segment-0",
+        "name": "身体节段 1",
+        "parent": "root",
+        "shape": "bone",
+        "rest": [
+          75,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 0,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-1",
+        "name": "身体节段 2",
+        "parent": "segment-0",
+        "shape": "bone",
+        "rest": [
+          62.5,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 1,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-2",
+        "name": "身体节段 3",
+        "parent": "segment-1",
+        "shape": "bone",
+        "rest": [
+          50,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 2,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-3",
+        "name": "身体节段 4",
+        "parent": "segment-2",
+        "shape": "bone",
+        "rest": [
+          37.5,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 3,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-4",
+        "name": "身体节段 5",
+        "parent": "segment-3",
+        "shape": "bone",
+        "rest": [
+          25,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 4,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-5",
+        "name": "身体节段 6",
+        "parent": "segment-4",
+        "shape": "bone",
+        "rest": [
+          12.5,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 5,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-6",
+        "name": "身体节段 7",
+        "parent": "segment-5",
+        "shape": "bone",
+        "rest": [
+          0,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 6,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-7",
+        "name": "身体节段 8",
+        "parent": "segment-6",
+        "shape": "bone",
+        "rest": [
+          -12.5,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 7,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-8",
+        "name": "身体节段 9",
+        "parent": "segment-7",
+        "shape": "bone",
+        "rest": [
+          -25,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 8,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-9",
+        "name": "身体节段 10",
+        "parent": "segment-8",
+        "shape": "bone",
+        "rest": [
+          -37.5,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 9,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-10",
+        "name": "身体节段 11",
+        "parent": "segment-9",
+        "shape": "bone",
+        "rest": [
+          -50,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 10,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "segment-11",
+        "name": "身体节段 12",
+        "parent": "segment-10",
+        "shape": "bone",
+        "rest": [
+          -62.5,
+          -27
+        ],
+        "dimensions": [
+          12.5,
+          14
+        ],
+        "layer": 3,
+        "tile": 10,
+        "material": "#e1a34c",
+        "role": "body-chain",
+        "segment": 11,
+        "skinHeight": 14,
+        "range": [
+          -60,
+          60
+        ]
+      },
+      {
+        "id": "head",
+        "name": "头部",
+        "parent": "segment-0",
+        "shape": "ellipse",
+        "rest": [
+          84,
+          -27
+        ],
+        "dimensions": [
+          18,
+          14
+        ],
+        "layer": 4,
+        "tile": 1,
+        "material": "#e1a34c"
+      }
+    ],
+    "clips": [
+      "idle",
+      "walk",
+      "run",
+      "contract",
+      "raise",
+      "burrow",
+      "extend"
+    ],
+    "status": "draft",
+    "qa": {
+      "technical": "untested",
+      "visual": "pending"
+    },
+    "source": {
+      "kind": "redrawn-continuous-skin",
+      "description": "完整圆弧零件和柔性连续贴图"
+    },
+    "rendering": {
+      "rig": "flex-side-v2",
+      "atlas": "/art/worm-side-parts-v5.png",
+      "view": "side",
+      "projection": "orthographic",
+      "facing": "right",
+      "frame": {
+        "anchor": [
+          256,
+          350
+        ],
+        "scale": 1.9
+      },
+      "tailMesh": {
+        "tile": 0,
+        "width": 14,
+        "role": "body-chain",
+        "sourceRange": [
+          1,
+          0
+        ]
+      },
+      "continuousWholeBody": true,
+      "hydrostat": true
+    },
+    "actionDesign": {
+      "title": "蚯蚓 · 柔性骨链",
+      "assembly": "连续贴图沿骨链弯曲；身体节段身份固定，逐节连接。圆弧腿段自然重叠，轴点隐藏。",
+      "actions": [
+        {
+          "id": "idle",
+          "name": "轻微呼吸",
+          "duration": 2,
+          "loop": true,
+          "keyPoses": [
+            "中性",
+            "波传播",
+            "回位"
+          ],
+          "participants": [
+            "segment-0",
+            "segment-1",
+            "segment-2",
+            "segment-3",
+            "segment-4",
+            "segment-5",
+            "segment-6",
+            "segment-7",
+            "segment-8",
+            "segment-9",
+            "segment-10",
+            "segment-11",
+            "head"
+          ],
+          "timing": "波沿身体传播；单次动作缓入缓出，循环动作保留相位。",
+          "ranges": "体节长度与直径互补变化，近似体积守恒；保留材料UV身份。",
+          "contact": "柔性身体运动学；不模拟地面摩擦推进。",
+          "acceptance": [
+            "连接连续",
+            "动作回位",
+            "体节体积守恒",
+            "完整轮廓",
+            "正确朝向"
+          ]
+        },
+        {
+          "id": "walk",
+          "name": "波状爬行",
+          "duration": 1.2,
+          "loop": true,
+          "keyPoses": [
+            "中性",
+            "波传播",
+            "回位"
+          ],
+          "participants": [
+            "segment-0",
+            "segment-1",
+            "segment-2",
+            "segment-3",
+            "segment-4",
+            "segment-5",
+            "segment-6",
+            "segment-7",
+            "segment-8",
+            "segment-9",
+            "segment-10",
+            "segment-11",
+            "head"
+          ],
+          "timing": "波沿身体传播；单次动作缓入缓出，循环动作保留相位。",
+          "ranges": "体节长度与直径互补变化，近似体积守恒；保留材料UV身份。",
+          "contact": "柔性身体运动学；不模拟地面摩擦推进。",
+          "acceptance": [
+            "连接连续",
+            "动作回位",
+            "体节体积守恒",
+            "完整轮廓",
+            "正确朝向"
+          ]
+        },
+        {
+          "id": "run",
+          "name": "快速爬行",
+          "duration": 0.75,
+          "loop": true,
+          "keyPoses": [
+            "中性",
+            "波传播",
+            "回位"
+          ],
+          "participants": [
+            "segment-0",
+            "segment-1",
+            "segment-2",
+            "segment-3",
+            "segment-4",
+            "segment-5",
+            "segment-6",
+            "segment-7",
+            "segment-8",
+            "segment-9",
+            "segment-10",
+            "segment-11",
+            "head"
+          ],
+          "timing": "波沿身体传播；单次动作缓入缓出，循环动作保留相位。",
+          "ranges": "体节长度与直径互补变化，近似体积守恒；保留材料UV身份。",
+          "contact": "柔性身体运动学；不模拟地面摩擦推进。",
+          "acceptance": [
+            "连接连续",
+            "动作回位",
+            "体节体积守恒",
+            "完整轮廓",
+            "正确朝向"
+          ]
+        },
+        {
+          "id": "contract",
+          "name": "收缩",
+          "duration": 1.6,
+          "loop": false,
+          "keyPoses": [
+            "中性",
+            "波传播",
+            "回位"
+          ],
+          "participants": [
+            "segment-0",
+            "segment-1",
+            "segment-2",
+            "segment-3",
+            "segment-4",
+            "segment-5",
+            "segment-6",
+            "segment-7",
+            "segment-8",
+            "segment-9",
+            "segment-10",
+            "segment-11",
+            "head"
+          ],
+          "timing": "波沿身体传播；单次动作缓入缓出，循环动作保留相位。",
+          "ranges": "体节长度与直径互补变化，近似体积守恒；保留材料UV身份。",
+          "contact": "柔性身体运动学；不模拟地面摩擦推进。",
+          "acceptance": [
+            "连接连续",
+            "动作回位",
+            "体节体积守恒",
+            "完整轮廓",
+            "正确朝向"
+          ]
+        },
+        {
+          "id": "raise",
+          "name": "抬前端",
+          "duration": 1.8,
+          "loop": false,
+          "keyPoses": [
+            "中性",
+            "波传播",
+            "回位"
+          ],
+          "participants": [
+            "segment-0",
+            "segment-1",
+            "segment-2",
+            "segment-3",
+            "segment-4",
+            "segment-5",
+            "segment-6",
+            "segment-7",
+            "segment-8",
+            "segment-9",
+            "segment-10",
+            "segment-11",
+            "head"
+          ],
+          "timing": "波沿身体传播；单次动作缓入缓出，循环动作保留相位。",
+          "ranges": "体节长度与直径互补变化，近似体积守恒；保留材料UV身份。",
+          "contact": "柔性身体运动学；不模拟地面摩擦推进。",
+          "acceptance": [
+            "连接连续",
+            "动作回位",
+            "体节体积守恒",
+            "完整轮廓",
+            "正确朝向"
+          ]
+        },
+        {
+          "id": "burrow",
+          "name": "弯头钻地",
+          "duration": 1.7,
+          "loop": false,
+          "keyPoses": [
+            "中性",
+            "波传播",
+            "回位"
+          ],
+          "participants": [
+            "segment-0",
+            "segment-1",
+            "segment-2",
+            "segment-3",
+            "segment-4",
+            "segment-5",
+            "segment-6",
+            "segment-7",
+            "segment-8",
+            "segment-9",
+            "segment-10",
+            "segment-11",
+            "head"
+          ],
+          "timing": "波沿身体传播；单次动作缓入缓出，循环动作保留相位。",
+          "ranges": "体节长度与直径互补变化，近似体积守恒；保留材料UV身份。",
+          "contact": "柔性身体运动学；不模拟地面摩擦推进。",
+          "acceptance": [
+            "连接连续",
+            "动作回位",
+            "体节体积守恒",
+            "完整轮廓",
+            "正确朝向"
+          ]
+        },
+        {
+          "id": "extend",
+          "name": "单配件屈伸",
+          "duration": 1,
+          "loop": true,
+          "keyPoses": [
+            "中性",
+            "波传播",
+            "回位"
+          ],
+          "participants": [
+            "segment-0",
+            "segment-1",
+            "segment-2",
+            "segment-3",
+            "segment-4",
+            "segment-5",
+            "segment-6",
+            "segment-7",
+            "segment-8",
+            "segment-9",
+            "segment-10",
+            "segment-11",
+            "head"
+          ],
+          "timing": "波沿身体传播；单次动作缓入缓出，循环动作保留相位。",
+          "ranges": "体节长度与直径互补变化，近似体积守恒；保留材料UV身份。",
+          "contact": "柔性身体运动学；不模拟地面摩擦推进。",
+          "acceptance": [
+            "连接连续",
+            "动作回位",
+            "体节体积守恒",
+            "完整轮廓",
+            "正确朝向"
+          ]
+        }
+      ],
+      "visualReview": [
+        "逐帧观察连续身体轮廓",
+        "单件与整体分别检查",
+        "深浅背景检查接缝"
+      ],
+      "limitations": [
+        "二维侧面运动学，未模拟生物级动力学或土壤接触。"
+      ]
+    }
+  },
+  "sourceSha256": "8073dc0831f4ec0ddad3419990704ba0c85773a7e14b6f9dc26a132d085b34ec",
+  "actions": [
+    {
+      "clip": "walk",
+      "frames": [
+        {
+          "name": "walk-01.png",
+          "t": 0
+        },
+        {
+          "name": "walk-02.png",
+          "t": 0.0625
+        },
+        {
+          "name": "walk-03.png",
+          "t": 0.125
+        },
+        {
+          "name": "walk-04.png",
+          "t": 0.1875
+        },
+        {
+          "name": "walk-05.png",
+          "t": 0.25
+        },
+        {
+          "name": "walk-06.png",
+          "t": 0.3125
+        },
+        {
+          "name": "walk-07.png",
+          "t": 0.375
+        },
+        {
+          "name": "walk-08.png",
+          "t": 0.4375
+        },
+        {
+          "name": "walk-09.png",
+          "t": 0.5
+        },
+        {
+          "name": "walk-10.png",
+          "t": 0.5625
+        },
+        {
+          "name": "walk-11.png",
+          "t": 0.625
+        },
+        {
+          "name": "walk-12.png",
+          "t": 0.6875
+        },
+        {
+          "name": "walk-13.png",
+          "t": 0.75
+        },
+        {
+          "name": "walk-14.png",
+          "t": 0.8125
+        },
+        {
+          "name": "walk-15.png",
+          "t": 0.875
+        },
+        {
+          "name": "walk-16.png",
+          "t": 0.9375
+        }
+      ]
+    },
+    {
+      "clip": "run",
+      "frames": [
+        {
+          "name": "run-01.png",
+          "t": 0
+        },
+        {
+          "name": "run-02.png",
+          "t": 0.0625
+        },
+        {
+          "name": "run-03.png",
+          "t": 0.125
+        },
+        {
+          "name": "run-04.png",
+          "t": 0.1875
+        },
+        {
+          "name": "run-05.png",
+          "t": 0.25
+        },
+        {
+          "name": "run-06.png",
+          "t": 0.3125
+        },
+        {
+          "name": "run-07.png",
+          "t": 0.375
+        },
+        {
+          "name": "run-08.png",
+          "t": 0.4375
+        },
+        {
+          "name": "run-09.png",
+          "t": 0.5
+        },
+        {
+          "name": "run-10.png",
+          "t": 0.5625
+        },
+        {
+          "name": "run-11.png",
+          "t": 0.625
+        },
+        {
+          "name": "run-12.png",
+          "t": 0.6875
+        },
+        {
+          "name": "run-13.png",
+          "t": 0.75
+        },
+        {
+          "name": "run-14.png",
+          "t": 0.8125
+        },
+        {
+          "name": "run-15.png",
+          "t": 0.875
+        },
+        {
+          "name": "run-16.png",
+          "t": 0.9375
+        }
+      ]
+    },
+    {
+      "clip": "contract",
+      "frames": [
+        {
+          "name": "contract-01.png",
+          "t": 0
+        },
+        {
+          "name": "contract-02.png",
+          "t": 0.06666666666666667
+        },
+        {
+          "name": "contract-03.png",
+          "t": 0.13333333333333333
+        },
+        {
+          "name": "contract-04.png",
+          "t": 0.2
+        },
+        {
+          "name": "contract-05.png",
+          "t": 0.26666666666666666
+        },
+        {
+          "name": "contract-06.png",
+          "t": 0.3333333333333333
+        },
+        {
+          "name": "contract-07.png",
+          "t": 0.4
+        },
+        {
+          "name": "contract-08.png",
+          "t": 0.4666666666666667
+        },
+        {
+          "name": "contract-09.png",
+          "t": 0.5333333333333333
+        },
+        {
+          "name": "contract-10.png",
+          "t": 0.6
+        },
+        {
+          "name": "contract-11.png",
+          "t": 0.6666666666666666
+        },
+        {
+          "name": "contract-12.png",
+          "t": 0.7333333333333333
+        },
+        {
+          "name": "contract-13.png",
+          "t": 0.8
+        },
+        {
+          "name": "contract-14.png",
+          "t": 0.8666666666666667
+        },
+        {
+          "name": "contract-15.png",
+          "t": 0.9333333333333333
+        },
+        {
+          "name": "contract-16.png",
+          "t": 1
+        }
+      ]
+    },
+    {
+      "clip": "raise",
+      "frames": [
+        {
+          "name": "raise-01.png",
+          "t": 0
+        },
+        {
+          "name": "raise-02.png",
+          "t": 0.06666666666666667
+        },
+        {
+          "name": "raise-03.png",
+          "t": 0.13333333333333333
+        },
+        {
+          "name": "raise-04.png",
+          "t": 0.2
+        },
+        {
+          "name": "raise-05.png",
+          "t": 0.26666666666666666
+        },
+        {
+          "name": "raise-06.png",
+          "t": 0.3333333333333333
+        },
+        {
+          "name": "raise-07.png",
+          "t": 0.4
+        },
+        {
+          "name": "raise-08.png",
+          "t": 0.4666666666666667
+        },
+        {
+          "name": "raise-09.png",
+          "t": 0.5333333333333333
+        },
+        {
+          "name": "raise-10.png",
+          "t": 0.6
+        },
+        {
+          "name": "raise-11.png",
+          "t": 0.6666666666666666
+        },
+        {
+          "name": "raise-12.png",
+          "t": 0.7333333333333333
+        },
+        {
+          "name": "raise-13.png",
+          "t": 0.8
+        },
+        {
+          "name": "raise-14.png",
+          "t": 0.8666666666666667
+        },
+        {
+          "name": "raise-15.png",
+          "t": 0.9333333333333333
+        },
+        {
+          "name": "raise-16.png",
+          "t": 1
+        }
+      ]
+    },
+    {
+      "clip": "burrow",
+      "frames": [
+        {
+          "name": "burrow-01.png",
+          "t": 0
+        },
+        {
+          "name": "burrow-02.png",
+          "t": 0.06666666666666667
+        },
+        {
+          "name": "burrow-03.png",
+          "t": 0.13333333333333333
+        },
+        {
+          "name": "burrow-04.png",
+          "t": 0.2
+        },
+        {
+          "name": "burrow-05.png",
+          "t": 0.26666666666666666
+        },
+        {
+          "name": "burrow-06.png",
+          "t": 0.3333333333333333
+        },
+        {
+          "name": "burrow-07.png",
+          "t": 0.4
+        },
+        {
+          "name": "burrow-08.png",
+          "t": 0.4666666666666667
+        },
+        {
+          "name": "burrow-09.png",
+          "t": 0.5333333333333333
+        },
+        {
+          "name": "burrow-10.png",
+          "t": 0.6
+        },
+        {
+          "name": "burrow-11.png",
+          "t": 0.6666666666666666
+        },
+        {
+          "name": "burrow-12.png",
+          "t": 0.7333333333333333
+        },
+        {
+          "name": "burrow-13.png",
+          "t": 0.8
+        },
+        {
+          "name": "burrow-14.png",
+          "t": 0.8666666666666667
+        },
+        {
+          "name": "burrow-15.png",
+          "t": 0.9333333333333333
+        },
+        {
+          "name": "burrow-16.png",
+          "t": 1
+        }
+      ]
+    }
+  ],
+  "canvas": [
+    512,
+    512
+  ],
+  "camera": "fixed whole sequence",
+  "technical": "hydrostatic volume proxy / materialUV tests passed",
+  "visual": "not-reviewed",
+  "limitations": [
+    "2D kinematic peristalsis; ground anchoring/friction and soil not simulated",
+    "front cap source and actual flex still require visual QA"
+  ]
+}

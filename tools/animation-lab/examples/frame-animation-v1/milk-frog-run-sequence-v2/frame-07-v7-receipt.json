@@ -1,0 +1,45 @@
+{
+  "index": 7,
+  "version": 7,
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise single-region edit. IMAGE1 is target, IMAGE2 is ONLY reference for its NEAR foreground leg under-pelvis recovery posture. Return the same 1254x1254 transparent sprite, no recenter, rescale, new view or whole-body shift. Keep image1 exact head/face/eyes/tongue, torso, both arms (nearOPEN hand right, farCURLED fist left), skin highlights/dot texture and the FAR planted leg on image right unchanged, especially its foot passing under hip with bottom y1197.\nChange ONLY the NEAR FOREGROUND leg, whose raised foot is presently bent backward to image left. It should be under-pelvis early RECOVERY, like image2, not backward toeoff again. Preserve its front attachment at left hip(650,720), thigh full original muscle volume. Keep the near thigh pointing downward to knee around(660,850), then near lower calf points diagonally down-left to ankle around(620,980), near pink toes around(680,1085), airborne with foot hanging under pelvis. Near foot must NOT fold behind toward x430. Raised sole above y1100. Two distinct connected legs. FAR foot stays flat on y1197 and NOT moved. Maintain near foreground thigh over far background thigh, clean rounded connected hip/knee/ankle. No ghost third foot. No text, guides, shadow or floor marks. Output just the corrected original composition.",
+  "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-8ea961cb-8999-4744-8ce0-76935710dccc.png",
+  "refs": [
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-07-v6.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-07-v5.png"
+  ],
+  "notes": "Local improvement: retained far planted foot moved backward under pelvis, restored near airborne calf under pelvis; still source-art failed for whole sequence registration/material/arm timing.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-8ea961cb-8999-4744-8ce0-76935710dccc.png",
+  "generatedFileSha256": "b9aaf8f2aa8fce794e8ab942eb02323a12284d468e0e8f331ee2afd77fdd7d6a",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      367,
+      89,
+      742,
+      1111
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-07-v6.png",
+      "sha256": "ae20d371d3da018e2f109e8f384a8fcfc58bc2ea938a7e146f986460779882c8"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-07-v5.png",
+      "sha256": "5ddc455a56471c85857d1f7e5cbe29c8de55806d9c626fee54c7409acc1bbeb8"
+    }
+  ],
+  "qa": {
+    "visual": "failed",
+    "notes": "Local improvement: retained far planted foot moved backward under pelvis, restored near airborne calf under pelvis; still source-art failed for whole sequence registration/material/arm timing."
+  }
+}

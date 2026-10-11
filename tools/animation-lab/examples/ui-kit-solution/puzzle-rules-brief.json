@@ -1,0 +1,25 @@
+{
+  "name": "三色棋盘 · 独立技能测试",
+  "genre": "puzzle",
+  "engine": "godot",
+  "orientation": "portrait",
+  "input": "touch",
+  "progression": "single-session",
+  "theme": "paper",
+  "coreLoop": "观察本局目标 → 交换相邻棋子 → 消除三连并更新目标 → 在20步内收集12枚蓝色棋子",
+  "objective": {
+    "description": "收集12枚蓝色棋子",
+    "event": "puzzle.blue_goal_completed",
+    "condition": {
+      "blueCollectedAtLeast": 12
+    }
+  },
+  "failure": {
+    "description": "20步耗尽且蓝色棋子不足12枚",
+    "event": "puzzle.moves_exhausted",
+    "condition": {
+      "movesAtMost": 0,
+      "blueCollectedBelow": 12
+    }
+  }
+}

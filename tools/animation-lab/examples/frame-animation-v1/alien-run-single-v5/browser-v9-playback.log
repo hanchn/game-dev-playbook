@@ -1,0 +1,11 @@
+### Result
+{"seen":["1 / 12","2 / 12","3 / 12","4 / 12","5 / 12","6 / 12","7 / 12","8 / 12","9 / 12","10 / 12","11 / 12","12 / 12"],"notes":"外星探险者 · 同首帧参照12帧 v9（修复中） · 素材美术未通过 · 部分头部尺度和2/8脚线改善；06脚线和08far passing仍不正确；09重生成出现3手，已排除，仍使用旧v6；整段美术未通过","status":"拍摄包已导出：WEBM 视频 + 12 张 PNG + 图集 + 时序。视频时长需用 FFprobe 核查。"}
+### Ran Playwright code
+```js
+await (async (page) => { await page.reload(); await page.locator("#samples").selectOption("alien-run-single-v9"); await page.locator("#load-sample").click(); await page.waitForFunction(()=>document.querySelector("#timeline").children.length===12); await page.locator("#scrub").fill("0");await page.locator("#scrub").dispatchEvent("input"); await page.locator("#play").click(); const seen=new Set;for(let i=0;i<80;i++){seen.add(await page.locator("#time").textContent());await page.waitForTimeout(25);}await page.locator("#play").click(); const zip=page.waitForEvent("download");await page.locator("#export-zip").click();await(await zip).saveAs("/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v9.zip");await page.locator("#record-fps").fill("9"); const movie=page.waitForEvent("download",{timeout:30000});await page.locator("#record").click();await(await movie).saveAs("/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v9-capture.zip");return {seen:[...seen],notes:await page.locator("#sample-review").textContent(),status:await page.locator("#status").textContent()}; })(page);
+```
+### Events
+- Downloading file alien-run-single-v9.zip ...
+- Downloaded file alien-run-single-v9.zip to ".playwright-cli/alien-run-single-v9.zip"
+- Downloading file animation-capture.zip ...
+- Downloaded file animation-capture.zip to ".playwright-cli/animation-capture.zip"

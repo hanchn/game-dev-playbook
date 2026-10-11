@@ -1,0 +1,201 @@
+{
+  "format": "frame-animation-qa",
+  "schemaVersion": 1,
+  "provenance": {
+    "type": "imagegen-sequence",
+    "sampleId": "alien-run-single-v8",
+    "tool": "image_gen.imagegen",
+    "verification": "each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call",
+    "files": [
+      {
+        "file": "alien-run-single-v5-phase-00.png",
+        "sha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09"
+      },
+      {
+        "file": "alien-run-single-v7-phase-01.png",
+        "sha256": "6f514502deee1c666600b0247de7dd446cf7dac638094dfd2c07dc4fc80332dc"
+      },
+      {
+        "file": "alien-run-single-v8-phase-02.png",
+        "sha256": "34cc463004b675b34526b26eaf8202fb359aa6654ad1c1997956401ab1c40f17"
+      },
+      {
+        "file": "alien-run-single-v5-phase-03.png",
+        "sha256": "98179283af46c0f637aa1ee37318ead610afa5710e5581a41a1677bc6e188337"
+      },
+      {
+        "file": "alien-run-single-v7-phase-04.png",
+        "sha256": "3be69ac223c8fc1badaac6fa0b1e3a3ba8fd78252b2a1a55e75ec8dd4bdb1234"
+      },
+      {
+        "file": "alien-run-single-v7-phase-05.png",
+        "sha256": "05feaff5b3b8d823a8a9e28f122bfded7cd48220555a4b1cd376bf94ec783fea"
+      },
+      {
+        "file": "alien-run-single-v5-phase-06.png",
+        "sha256": "53564a5a18d59a128ebb312f0fcb6754038083fa114de980ca94a2853cd99cb1"
+      },
+      {
+        "file": "alien-run-single-v7-phase-07.png",
+        "sha256": "ad1e531b4878daf0123f4b3db54eed97962a04b604594f4b0b5262a2e5582907"
+      },
+      {
+        "file": "alien-run-single-v8-phase-08.png",
+        "sha256": "2b6075030f42856d13e1cb1029f19c6921a4473ec07c2658b3926fd0ee23f5be"
+      },
+      {
+        "file": "alien-run-single-v6-phase-09.png",
+        "sha256": "a56f38d51ae7d8d654629ec22e9e45eececff4da3dd90699d09e815155fed3ba"
+      },
+      {
+        "file": "alien-run-single-v7-phase-10.png",
+        "sha256": "393544886f0f9288ddbb30239da708b14eb4ef81d5ce29e4f625dc08a97a50df"
+      },
+      {
+        "file": "alien-run-single-v7-phase-11.png",
+        "sha256": "ed6d97083cdce35220fd516c9e3d12f8ae19d25a7b3979435d568465eca1f6c7"
+      }
+    ],
+    "sourceQA": "failed",
+    "sourceQANotes": [
+      "两半周期双臂双腿交换，phase02/08 passing拳已局部修复",
+      "头形/皮纹与画面注册仍漂移；四帧原图安全留边不足，不是合格成片"
+    ]
+  },
+  "visualQA": "failed",
+  "playbackQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "name": "alien-run-single-v5-phase-00.png",
+      "sourceRect": null,
+      "sourceSha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09",
+      "review": {
+        "state": "failed",
+        "notes": "近腿前触地、远腿后折；近拳后/远拳前可见。全段身份/纹理漂移导致此源序列未通过，不能单帧局部通过推定循环通过。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 1,
+      "name": "alien-run-single-v7-phase-01.png",
+      "sourceRect": null,
+      "sourceSha256": "6f514502deee1c666600b0247de7dd446cf7dac638094dfd2c07dc4fc80332dc",
+      "review": {
+        "state": "failed",
+        "notes": "近侧支撑/屈膝较phase00变化少，近臂仍后摆，拳位置变化有限；需要连续承重而非同姿势重复。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 2,
+      "name": "alien-run-single-v8-phase-02.png",
+      "sourceRect": null,
+      "sourceSha256": "34cc463004b675b34526b26eaf8202fb359aa6654ad1c1997956401ab1c40f17",
+      "review": {
+        "state": "failed",
+        "notes": "近拳已移到腰/髋旁形成passing，远拳前方清晰；定点生成同时使头、皮纹和画面比例偏移，原图注册仍不合格，不可当成像素局部修复通过。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 3,
+      "name": "alien-run-single-v5-phase-03.png",
+      "sourceRect": null,
+      "sourceSha256": "98179283af46c0f637aa1ee37318ead610afa5710e5581a41a1677bc6e188337",
+      "review": {
+        "state": "failed",
+        "notes": "两拳在身体前方但垂直分离，双腿空中通过；与phase02/04相比头形/拳路径和皮肤花纹连续性待修，不能整段通过。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 4,
+      "name": "alien-run-single-v7-phase-04.png",
+      "sourceRect": null,
+      "sourceSha256": "3be69ac223c8fc1badaac6fa0b1e3a3ba8fd78252b2a1a55e75ec8dd4bdb1234",
+      "review": {
+        "state": "failed",
+        "notes": "近拳前/远拳后，近腿回收后折；脚向右延展，原图右仅32px，未满足本次64px安全包络。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 5,
+      "name": "alien-run-single-v7-phase-05.png",
+      "sourceRect": null,
+      "sourceSha256": "05feaff5b3b8d823a8a9e28f122bfded7cd48220555a4b1cd376bf94ec783fea",
+      "review": {
+        "state": "failed",
+        "notes": "近拳前/远拳后，近腿后折；原图右仅54px，未满足本次64px包络，重复跑姿相位区分不足。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 6,
+      "name": "alien-run-single-v5-phase-06.png",
+      "sourceRect": null,
+      "sourceSha256": "53564a5a18d59a128ebb312f0fcb6754038083fa114de980ca94a2853cd99cb1",
+      "review": {
+        "state": "failed",
+        "notes": "远侧腿前支撑、近腿后折，双拳方向与phase00互换；头颅更圆且眼形皮纹偏移，身份连续性未通过。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 7,
+      "name": "alien-run-single-v7-phase-07.png",
+      "sourceRect": null,
+      "sourceSha256": "ad1e531b4878daf0123f4b3db54eed97962a04b604594f4b0b5262a2e5582907",
+      "review": {
+        "state": "failed",
+        "notes": "远支撑/近回收姿势，与phase06变化少，近拳保持向前；跨帧皮肤微纹理改变。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 8,
+      "name": "alien-run-single-v8-phase-08.png",
+      "sourceRect": null,
+      "sourceSha256": "2b6075030f42856d13e1cb1029f19c6921a4473ec07c2658b3926fd0ee23f5be",
+      "review": {
+        "state": "failed",
+        "notes": "远拳已移到腰旁形成passing，近拳前方清晰；定点生成同时使头、皮纹和画面比例偏移，原图注册仍不合格，不可当成像素局部修复通过。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 9,
+      "name": "alien-run-single-v6-phase-09.png",
+      "sourceRect": null,
+      "sourceSha256": "a56f38d51ae7d8d654629ec22e9e45eececff4da3dd90699d09e815155fed3ba",
+      "review": {
+        "state": "failed",
+        "notes": "phase09 v6修复后近大腿口袋位于抬高前腿，far后腿无大口袋，双拳可见；较phase00皮肤花纹/头部身份漂移未通过。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 10,
+      "name": "alien-run-single-v7-phase-10.png",
+      "sourceRect": null,
+      "sourceSha256": "393544886f0f9288ddbb30239da708b14eb4ef81d5ce29e4f625dc08a97a50df",
+      "review": {
+        "state": "failed",
+        "notes": "近拳后/远拳前，但远后腿回收姿态变化不足；原图右28px，安全包络未通过，头颅接近圆形。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    },
+    {
+      "index": 11,
+      "name": "alien-run-single-v7-phase-11.png",
+      "sourceRect": null,
+      "sourceSha256": "ed6d97083cdce35220fd516c9e3d12f8ae19d25a7b3979435d568465eca1f6c7",
+      "review": {
+        "state": "failed",
+        "notes": "近拳后/远拳前、近腿前伸；原图右15px，安全包络不足，右下靴边还需查杂点，不能靠逐帧缩放通过。",
+        "origin": "SHA-bound actual single-frame receipt"
+      }
+    }
+  ]
+}

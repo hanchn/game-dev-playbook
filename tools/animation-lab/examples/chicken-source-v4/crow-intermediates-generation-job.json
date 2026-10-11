@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Asset type: rooster crowing intermediate-state sprite material. The attached actual production atlas has its matched closed head+neck at TOP LEFT and open head+neck at TOP SECOND. Create ONLY TWO independent complete head+neck components, side-by-side on true transparent alpha with generous clear margin. Left component: exactly the same rooster with beak ONE THIRD of the closed-to-open travel (about 8 degrees). Right component: exactly the same rooster with beak TWO THIRDS of closed-to-open travel (about 17 degrees). These are intermediate states between the reference 0-degree closed and 25-degree open yellow beak. Preserve identity rigidly: same amber eye pupil at same relative position, same skull outline, comb points, cheek patch, brow expression, wattle shape and neck feather pattern, copper brown palette and upper-left illumination. Strict orthographic right-facing side view, identical head/neck pixel scale and neck root outline for both components. ONLY lower mandible rotates about real jaw hinge below/behind the eye; upper yellow beak and rest of head remain unchanged. Do not enlarge eye, invent extra comb, move throat, shorten neck, flatten feathers, or make a new rooster. Small dark mouth gap proportional to opening, natural beak thickness. No body, no props, no labels, no grids, no shadows outside silhouette, no white or black backdrop. Both complete heads including feathered neck base and comb and beak must remain fully visible, not cropped. Production sprite source, no animation sheet other than these two state components.",
+  "reference": "public/art/chicken-performance-extras-v1.png",
+  "generatedPath": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-b18f0dfd-6080-4b97-8b31-23024475d2d4.png",
+  "output": "public/art/chicken-crow-intermediates-v1.png",
+  "visual": "candidate-partial-identity-fit-not-accepted-in-scene",
+  "sourceSha256": "5336454c01ebabcdf2abb26f62cf971972b5aaa254cfa69c07334e9245c1b5e2",
+  "referenceSha256": "08446d6d7f64ad47ac77e32f28922b480d18727cd08f0301a5ed41a4f87c32ac"
+}

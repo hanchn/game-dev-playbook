@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise animation registration repair of REFERENCE1, the corrected50% milk-frog key. Reference2 is key0 identity/camera/groundline ONLY, don't copy its leg support pose.\nPreserve reference1's exact foreground near thigh pointing DOWN-LEFT/back with folded near calf and pink recovery foot up at left. Preserve its background far thigh/rightward supporting leg, foreground open hand front and far curled hand behind. Exactly2arms2legs, no side exchange. This pose geometry is correct and MUST NOT be redesigned.\nFix ONLY fixed-camera registration: reference1 far contacting RIGHT foot sole is at source y1210, while the animation fixed ground is y1192. Bring the contacting foot sole to y1192, and the headtop from y106 back to y88 (same original1254square source pixels). This is a carefully drawn new source frame at the COMMON sequence camera/ground line, not auto-fit/rescale. Keep entire character at same SCALE and same neck/head proportions; move the connected pose UP18px, preserving all geometry and shading exactly, no new forehead/eye/mouth/hand anatomy. No stretching, no resizing. Maintain source head/torso width identical to key0 reference, same green eyes, cheerful expression and original yellow/white/pink materials.\nReference2 is provided for exact camera/face/material consistency. The near folding leg remains foreground LEFT, far supporting leg stays on RIGHT behind it. Do not change open pink fingers into a fist. Transparent background and no markings/line/shadow. Output one clean 1254x1254 sprite, no crop.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+  "generatedFileSha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-2ad097ed-fa27-4e35-8584-324755f236e7.png",
+      "sha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+      "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+    }
+  ],
+  "phase": 1.5,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      169,
+      91,
+      996,
+      1098
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "True far support from corrected50% source. Sole improved1210→1188 vsfixed1192, original18px failure retained."
+  }
+}

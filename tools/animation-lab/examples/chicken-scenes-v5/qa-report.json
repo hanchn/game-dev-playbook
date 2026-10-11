@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-11T20:43:11.909573+00:00",
+  "choreographyVersion": 10,
+  "rendererVersion": 6,
+  "currentSources": {
+    "rooster": "chicken-side-v4",
+    "hen": "chicken-hen-side-v6"
+  },
+  "functional": "partial",
+  "visual": "failed",
+  "entry": "/lab/chicken-scene",
+  "actualArchive": "/Users/lemon/Downloads/chicken-crow-capture (5).zip",
+  "zipCRC": true,
+  "movies": {
+    "crow": "crow-audio-capture-v2/chicken-crow.webm"
+  },
+  "evidence": [
+    "ui-crow-audio-v10-full.png",
+    "ui-crow-audio-v10-paused1500.png",
+    "crow-audio-capture-v1/capture.json",
+    "crow-audio-capture-v1/validation.json",
+    "audio-source.json",
+    "targeted-final-regression.log",
+    "full-regression.log",
+    "ui-crow-audio-v10-final.png",
+    "ui-crow-cancel-before-cue-fixed.png",
+    "crow-audio-capture-v2/validation.json",
+    "crow-audio-cancel-before-cue-v1/validation.json",
+    "full-regression-with-runtime.log",
+    "targeted-final-regression-retest.log",
+    "full-regression-final.log"
+  ],
+  "remaining": [
+    "腿金色结节和不自然比例",
+    "四嘴型源下颈与羽毛变化",
+    "格斗力度和爪源",
+    "其他鸡群/下蛋/格斗保持已录版本，未因新增声音重标美术通过",
+    "真实声音已接入和解码，人工听觉自然度未审核"
+  ],
+  "audioCancellation": {
+    "actualPartialArchive": "/Users/lemon/Downloads/chicken-crow-capture (4).zip",
+    "pngCount": 4,
+    "movieDurationSeconds": 0.298148,
+    "expectedSilent": true,
+    "actualPeakWindowRMS": 0,
+    "uiRetest": "ui-crow-cancel-before-cue-fixed.png",
+    "notes": "有Opus轨但声音事件尚未发生，不能标为实际有声。"
+  },
+  "regression": {
+    "tests": 296,
+    "pass": 296,
+    "fail": 0,
+    "skipped": 0,
+    "log": "full-regression-final.log",
+    "scope": "当前技术回归，不代表美术验收"
+  }
+}

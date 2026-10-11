@@ -1,6 +1,6 @@
 # 游戏开发经验包
 
-从实际小游戏迭代中整理的可复用方法：游戏架构、主视觉与审美、素材出图顺序、序列帧、固定化 UI、加载、结算、性能与问题排查。这里包含知识、原创 Skill 和只读验收脚本。
+从实际小游戏迭代中整理的可复用方法：游戏架构、主视觉与审美、素材出图顺序、序列帧、固定化 UI、加载、结算、性能与问题排查。这里包含经验、Skill，以及可调用的制作与验收工具。
 
 ## 使用方式
 
@@ -36,5 +36,23 @@ node skills/sprite-animation-production/scripts/check-sheet.mjs sprite.png 3 2 3
 
 ## 开发案例
 
+- [Dinosaur Park：折页手册、分层封面与独立加载](docs/cases/dinosaur-park-handbook.md)：独立标题按钮和上下装饰、透明图层校准、轻量入口、首帧就绪边界、语言与 OFL 字体、原生纸面折叠及手机验收边界。
 - [胶囊森林：绘制 UI、飞行反馈与帧动画修复](docs/cases/capsule-forest-ui-motion.md)：地图高亮、切片雷达、边界反弹、坠毁结算与未通过的逃跑姿势记录。
 - [街霸奶蛙：原设计还原、3D格斗与场景动画](docs/cases/dad-n-me-native-3d.md)：持续记录实测方法及未通过的手部修复方案，避免把技术通过当作美术完成。
+
+## 角色资产可视化工作台
+
+新增 [零件工坊](tools/animation-lab/README.md)：从零件设计形象，演示爆炸拆解与合并，独立测试配件、局部组合和完整动作。首批包含人、鸡、恐龙、马、鳄鱼、百足虫、蜘蛛、蝎子、蛇、蚯蚓；每类有详细动作设计。支持序列帧 SVG/PNG 导出、实测 FPS 曲线、stdio MCP、UI 套件和本地知识记录。首版是二维参数化示意资产，技术检查与人工视觉验收分开。
+
+```sh
+cd tools/animation-lab
+npm start
+```
+
+浏览器打开 `http://127.0.0.1:4317`；运行 `npm test` 检查正常样本、故障样本和 MCP 链路。
+
+游戏开发现在主动使用 [游戏开发统筹技能](skills/game-development-orchestrator/SKILL.md)，串联玩法、架构、场景、角色、[无限地图](skills/infinite-map-generation/SKILL.md)、[关键帧](skills/keyframe-generation/SKILL.md) 与完整 UI 套图。工作台侧栏提供三个工具入口，CLI/stdio MCP 可供 Codex 直接调用。各工具的技术检查与角色美术验收分别记录。
+
+## 动画与游戏资产工作台
+
+[2026-10-12收工、经验与未完成项](docs/closeout-2026-10-12.md)记录当前范围；[工作台](tools/animation-lab/README.md)包含角色分件、帧动画、拍摄、地图与UI生产工具。当前整体美术和游戏集成尚未验收。运行素材使用Git LFS，新克隆先执行 `git lfs pull`；历史大体积QA媒体保留本地，远程保存来源、报告和路径索引。

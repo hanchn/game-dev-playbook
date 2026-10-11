@@ -1,0 +1,152 @@
+{
+  "schema": "derived-isometric-sprite/v1",
+  "id": "derived-isometric-castle",
+  "upstreamPack": "kenney-castle-kit",
+  "upstreamPage": "https://kenney.nl/assets/castle-kit",
+  "derivation": "Offline source GLB module assembly rendered once to PNG, then Canvas2D sprite depth-sort; not a live orthographic 3D map",
+  "renderer": {
+    "blender": "5.2.1 LTS",
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      1024,
+      1024
+    ],
+    "elevationDegrees": 30,
+    "orthoScale": 31.0,
+    "bitwiseRerenderGuaranteed": false
+  },
+  "sourceFiles": [
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square.glb",
+      "sha256": "ae2e4f11247fef4e8e550011c20bc1862839cd4cfd21590aec9781ae0fbbbc7f"
+    },
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/wall.glb",
+      "sha256": "b2ea00acbf4ba91ff0d4b8b942edf9fa12d821abd0b2c945c57a2b9b3153cfe3"
+    },
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+      "sha256": "8daf5cccceace888d51d74b0e0254e192004faf926e07f1b28e94191879af3a6"
+    }
+  ],
+  "modulePlacements": [
+    {
+      "x": -0.28,
+      "z": -0.28,
+      "name": "tower-square",
+      "yaw": 0
+    },
+    {
+      "x": 0.28,
+      "z": -0.28,
+      "name": "tower-square",
+      "yaw": 0
+    },
+    {
+      "x": -0.28,
+      "z": 0.28,
+      "name": "tower-square",
+      "yaw": 0
+    },
+    {
+      "x": 0.28,
+      "z": 0.28,
+      "name": "tower-square",
+      "yaw": 0
+    },
+    {
+      "x": 0,
+      "z": -0.28,
+      "name": "wall",
+      "yaw": 1.5707963267948966
+    },
+    {
+      "x": 0,
+      "z": 0.28,
+      "name": "wall-doorway",
+      "yaw": 1.5707963267948966
+    },
+    {
+      "x": -0.28,
+      "z": 0,
+      "name": "wall",
+      "yaw": 0
+    },
+    {
+      "x": 0.28,
+      "z": 0,
+      "name": "wall",
+      "yaw": 0
+    }
+  ],
+  "renderScript": {
+    "path": "scripts/render-isometric-castle.py",
+    "sha256": "100a7ff250043b03165a7ff612d83cf0fd382555b5723ded4a0c3cc910f1ee08"
+  },
+  "anchorFullImage": [
+    512.0,
+    612.1238403320312
+  ],
+  "output": {
+    "path": "castle.png",
+    "sha256": "75dadf0d92098b09f15e334592e1ad0ce0f0381206b43a3c4379f0b8f739e07a",
+    "spriteRect": [
+      71,
+      156,
+      882,
+      677
+    ],
+    "anchorY": 0.6737427479055115,
+    "publishedFile": "castle-75dadf0d9209.png"
+  },
+  "qa": {
+    "visualAccepted": false,
+    "engineImported": false,
+    "gameplayValidated": false
+  },
+  "currentAssembly": "source-measured-castle-v2",
+  "currentParts": "parts-v2.json",
+  "currentOutput": {
+    "path": "castle-v2-a1dcf6664c60.png",
+    "sha256": "a1dcf6664c6003a651683426a57e2f0cfa0aa431cc80605ffbfb94599a558fde"
+  },
+  "currentRenderer": {
+    "blender": "5.2.1 LTS",
+    "orthoScale": 48,
+    "elevation": 30,
+    "azimuth": 45,
+    "resolution": 1024,
+    "alphaCropOnly": true,
+    "bitwiseRerenderGuaranteed": false
+  },
+  "currentScript": {
+    "path": "scripts/render-isometric-castle-v2.py",
+    "sha256": "5c058c4397b70065335a93e0b98bccd2108f8d7612cad5f0faf729d135a4cfd5"
+  },
+  "currentSourceFiles": [
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sha256": "996887e98957eeea2ba7b5d14f0d17877c91e4e99e1c5b8ee57d87b7f7c9d5e8"
+    },
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sha256": "68c186f978135ba77969cdbee502a1c0d9d8f40bd01e8aa33b7cc6859a2ba766"
+    },
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+      "sha256": "b9345255366bc88744eea5469dddb4dedf2c70f33075b0fde53144ca251e25ea"
+    },
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sha256": "5e98cdf2bf4d885edc3fa514719f80d63872e11c54ee629c11859223dad8489c"
+    },
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sha256": "347fcdb0842ed47f20931b962dc0a2ad212690812386a3cb634016b4229145a7"
+    },
+    {
+      "path": "public/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+      "sha256": "8daf5cccceace888d51d74b0e0254e192004faf926e07f1b28e94191879af3a6"
+    }
+  ]
+}

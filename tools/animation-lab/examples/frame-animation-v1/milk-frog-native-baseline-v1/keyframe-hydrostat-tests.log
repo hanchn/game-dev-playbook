@@ -1,0 +1,27 @@
+✔ current human  source poses round-trip and preserve joints (52.160958ms)
+✔ current chicken  source poses round-trip and preserve joints (7.297ms)
+✔ current dinosaur  source poses round-trip and preserve joints (11.091916ms)
+✔ current horse  source poses round-trip and preserve joints (8.860459ms)
+✔ current crocodile  source poses round-trip and preserve joints (8.70575ms)
+✔ current centipede  source poses round-trip and preserve joints (34.59575ms)
+✔ current snake  source poses round-trip and preserve joints (14.829292ms)
+✔ current worm  source poses round-trip and preserve joints (8.865875ms)
+✔ current spider  source poses round-trip and preserve joints (32.332041ms)
+✔ current scorpion  source poses round-trip and preserve joints (48.468625ms)
+✔ current human alien source poses round-trip and preserve joints (32.728291ms)
+✔ parent edit moves descendants, not opposite arm, and preserves all sampled bone lengths (2.447833ms)
+✔ insert preserves evaluated pose; imported edits and output stay round-trip stable (2.206083ms)
+✔ tampered length, missing node, duplicate times, NaN and wrong skin reject (0.917459ms)
+✔ an edited loop endpoint reports failed loop rather than visual approval (1.452792ms)
+✔ shared edit API is pure, rejects invalid edits and exposes MCP sampling limits (2.11625ms)
+✔ loop check detects terminal piece rotation even if socket position is unchanged (0.939708ms)
+✔ stale asset id or atlas rejects import while current source JSON passes (0.917209ms)
+✔ worm hydrostat preserves captured lengths and volume at interpolated and inserted keys; invalid width or stretch rejects (3.207542ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 349.642417

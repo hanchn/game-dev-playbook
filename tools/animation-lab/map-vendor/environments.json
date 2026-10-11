@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "catalog_id": "map-environment-profiles",
+  "environments": [
+    {
+      "environment_id": "mortal-temperate",
+      "name": "凡俗温带山地",
+      "status": "in-progress",
+      "space_layer": "surface",
+      "required_systems": ["height", "surface-material", "hydrology", "roads", "vegetation-scatter", "settlements"],
+      "surface_families": ["grass", "stone", "soil", "mud", "sand"],
+      "component_pack_refs": ["accident-ascension-realistic-v1"],
+      "generation_constraints": ["settlements require road access", "deep forest excludes stable villages", "water follows drainage"]
+    },
+    {
+      "environment_id": "ocean-surface",
+      "name": "海洋与群岛",
+      "status": "planned",
+      "space_layer": "surface",
+      "required_systems": ["bathymetry", "coastline", "water-surface", "currents", "islands", "shipping-routes"],
+      "surface_families": ["deep-water", "shallow-water", "reef", "sand", "coastal-rock"],
+      "component_pack_refs": ["ocean-navigation-core", "islands-realistic"],
+      "generation_constraints": ["islands derive from bathymetry", "routes avoid reef and storm exclusion masks", "ports require navigable coast"]
+    },
+    {
+      "environment_id": "underwater",
+      "name": "海底世界",
+      "status": "in-progress",
+      "space_layer": "underwater",
+      "required_systems": ["seabed-height", "seabed-material", "currents-3d", "coral-scatter", "caves", "submerged-ruins"],
+      "surface_families": ["seabed-sand", "seabed-rock", "coral", "abyss-silt", "hydrothermal"],
+      "component_pack_refs": ["underwater-biome-core", "submerged-ruins"],
+      "generation_constraints": ["surface and seabed use separate elevation", "depth controls light and biome", "air routes cannot connect directly to underwater roads"],
+      "runtime_features": ["submarine-controls", "sonar-pulse", "bubble-particles", "fish-schools", "volumetric-light", "ecology-hotspots"],
+      "preview_asset": "/assets/studio/underwater-world-v1.png"
+    },
+    {
+      "environment_id": "celestial-palace",
+      "name": "琼楼玉宇",
+      "status": "planned",
+      "space_layer": "celestial",
+      "required_systems": ["cloud-foundation", "terraces", "palace-modules", "sky-bridges", "flight-routes", "formation-boundaries"],
+      "surface_families": ["cloud-sea", "jade-platform", "white-stone", "celestial-water"],
+      "component_pack_refs": ["celestial-architecture", "formation-symbols"],
+      "generation_constraints": ["architecture uses axial hierarchy", "platforms require structural or magical support", "flight and bridge graphs remain traversable"]
+    },
+    {
+      "environment_id": "ruined-world",
+      "name": "断壁残垣",
+      "status": "planned",
+      "space_layer": "surface",
+      "required_systems": ["base-architecture", "damage-modifiers", "debris-scatter", "overgrowth", "collapse-navigation"],
+      "surface_families": ["rubble", "ash", "cracked-stone", "overgrown-soil"],
+      "component_pack_refs": ["damage-modifiers-core", "ruin-debris-core"],
+      "generation_constraints": ["damage is applied to compatible base components", "collapsed areas update collision and routes", "debris density follows destruction severity"]
+    },
+    {
+      "environment_id": "underworld",
+      "name": "地府阴司",
+      "status": "planned",
+      "space_layer": "parallel-realm",
+      "required_systems": ["realm-boundary", "soul-routes", "courts", "rivers-of-death", "gates", "memory-fog"],
+      "surface_families": ["dark-soil", "ash", "black-water", "bone-stone", "mist"],
+      "component_pack_refs": ["underworld-architecture", "soul-route-symbols"],
+      "generation_constraints": ["never merge with mortal surface coordinates", "entry and return points are explicit transitions", "knowledge state controls disclosure"]
+    },
+    {
+      "environment_id": "inferno",
+      "name": "炼狱",
+      "status": "planned",
+      "space_layer": "parallel-realm",
+      "required_systems": ["heat-field", "lava-network", "ash-weather", "hazard-zones", "punishment-structures"],
+      "surface_families": ["basalt", "lava", "ash", "slag", "burning-ground"],
+      "component_pack_refs": ["inferno-terrain", "inferno-structures"],
+      "generation_constraints": ["hazards affect traversability", "lava obeys height and source rules", "safe routes require authored or generated shelters"]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schema": "equine-neck-performance-review/v1",
+  "asset": "horse-side-v24",
+  "binding": 24,
+  "algorithm": "neck-path-v3",
+  "implementation": "equine-review-worker-pool2-v1",
+  "productionChanged": false,
+  "gameIntegrated": false,
+  "entry": "/lab/horse-neck-review",
+  "sourceSnapshots": [
+    {
+      "path": "equine-neck-path.mjs",
+      "snapshot": "equine-neck-path.mjs.final-source.txt",
+      "sha256": "df324c09e38fcb78b55d1776b85237c62623cb2c934d0680d8b2af18753db9ab"
+    },
+    {
+      "path": "public/horse-neck-review.mjs",
+      "snapshot": "horse-neck-review.mjs.final-source.txt",
+      "sha256": "b2b456de6c4bdd41aeba1d3e2f9ed1cd87e1da52ca52a3323515074de02ab876"
+    },
+    {
+      "path": "public/horse-neck-review.html",
+      "snapshot": "horse-neck-review.html.final-source.txt",
+      "sha256": "f809d80a40a6eae6f27e10eb47fd932677bb69ac81d295343bdf82efc3f5950e"
+    },
+    {
+      "path": "public/horse-neck-review.css",
+      "snapshot": "horse-neck-review.css.final-source.txt",
+      "sha256": "bf7f0b12f3661d93c241b6239e440b7d02b53a1c620e3677123569eae4e7b6cc"
+    }
+  ],
+  "technicalTests": "7/7 passed",
+  "nativeReferenceRGBA": {
+    "frames": 100,
+    "differentFrames": 0,
+    "sourceUnchangedDuringAudit": true,
+    "sourceSHA": "df324c09e38fcb78b55d1776b85237c62623cb2c934d0680d8b2af18753db9ab",
+    "evidence": "native-full-rgba.json"
+  },
+  "sourceLandmarks": {
+    "maxRigPx": 0.07453020470331255,
+    "threshold": 0.25,
+    "sourceMeshTriangles": 2548,
+    "budget": 4000
+  },
+  "workerVertexFloat32MaxRigPx": 2.6218177055418675e-05,
+  "browserBackendRGBA": {
+    "samples": 50,
+    "pixelIdentical": false,
+    "maxDifferentChannels": 17543,
+    "channelsPerFullImage": 1720320,
+    "maxChannelError": 110,
+    "maxMeanChannelError": 0.026663062686011905,
+    "strictPixelEquality": "failed",
+    "evidence": "backend-qa-v3/backend-qa.json",
+    "note": "WebGL multisample/source filtering edges differ; original default Canvas reference remains selectable and default."
+  },
+  "actualPresentation": {
+    "final-walk-normal.json": {
+      "telemetry": "实际呈现 24 FPS · P95 98.1ms（目标24FPS）",
+      "profileSamples": 120,
+      "framesPresented": 1118,
+      "lastIndex": 1117,
+      "skippedIndices": 0,
+      "workerMainSubmit": {
+        "p50": 0.4000000059604645,
+        "p95": 0.9000000059604645
+      },
+      "note": "workerLatency includes prepared-frame queue residence; not input latency."
+    },
+    "final-walk-slow.json": {
+      "telemetry": "实际呈现 24 FPS · P95 70.5ms（目标24FPS）",
+      "profileSamples": 120,
+      "framesPresented": 2376,
+      "lastIndex": 2375,
+      "skippedIndices": 0,
+      "workerMainSubmit": {
+        "p50": 0.5,
+        "p95": 1.2000000178813934
+      },
+      "note": "workerLatency includes prepared-frame queue residence; not input latency."
+    },
+    "final-graze-slow.json": {
+      "telemetry": "实际呈现 24 FPS · P95 88.6ms（目标24FPS）",
+      "profileSamples": 120,
+      "framesPresented": 193,
+      "lastIndex": 192,
+      "skippedIndices": 0,
+      "workerMainSubmit": {
+        "p50": 0.3999999761581421,
+        "p95": 0.9000000059604645
+      },
+      "note": "workerLatency includes prepared-frame queue residence; not input latency."
+    }
+  },
+  "ui80StepChecks": "actual-80-step-final.json",
+  "export": {
+    "evidence": "graze-r5-export/actual-artifact-check.json",
+    "PNGs": 32,
+    "sources": 4,
+    "allSHA": "matched",
+    "visual": "failed"
+  },
+  "sourceRecords": [
+    {
+      "key": "primary",
+      "atlas": "/art/horse-side-parts-v5.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+      "file": "sources/horse-side-parts-v5.png"
+    },
+    {
+      "key": "horse-cannon-material",
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+      "file": "sources/horse-cannon-parts-v8.png"
+    },
+    {
+      "key": "horse-upper-material",
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+      "file": "sources/horse-upper-parts-v9.png"
+    },
+    {
+      "key": "horse-hoof-material",
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+      "file": "sources/horse-hoof-parts-v11.png"
+    }
+  ],
+  "visuallyViewed": [
+    "graze-step07-final.png",
+    "walk-step07-final.png",
+    "run-step07-final.png",
+    "jump-step07-final.png",
+    "rear-step07-final.png",
+    "backend-qa-v3/webgl-graze-phase0467.png",
+    "graze-r5-export/candidate/07.png"
+  ],
+  "visual": "failed",
+  "observations": [
+    "Horse proportions, shoulder/hip bulges, abrupt wrist/hock taper and grazing folded support legs remain failed.",
+    "No source PNG, bone length, source clipping identity or production recipe was changed by this performance task."
+  ],
+  "performanceAcceptance": "partial: average24FPS observed; P95 jitter still exceeds ideal24FPS pacing; not stable60FPS/game-runtime acceptance",
+  "historicalFailures": [
+    "6–7FPS/P95200ms original review",
+    "cache-only8FPS/P95166.7",
+    "firstGL12FPS/P95101.9",
+    "directGL13FPS/P95101.4",
+    "singleWorker14FPS/P95104.8"
+  ],
+  "methods": [
+    "Stage measurements isolate pose, production mesh, candidate mapping, masked texture creation, vertex generation, GPU submission.",
+    "Cache immutable source clipping and layer ownership; retain adaptive .2px rows and unchanged density.",
+    "20 texture batches per side use all existing vertices.",
+    "Two Web Workers prepare at most6 future24FPS samples; presentation consumes strictly ordered indices, never skips to latest ready frame.",
+    "Performance telemetry counts completed presented frames, not pending requests.",
+    "Manual pause/seek/action change invalidates outstanding playback plans."
+  ]
+}

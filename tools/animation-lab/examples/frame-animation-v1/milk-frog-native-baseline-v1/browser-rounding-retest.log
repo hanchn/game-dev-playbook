@@ -1,0 +1,9 @@
+### Result
+{"status":"拍摄包已导出：WEBM 视频 + 12 张 PNG + 图集 + 时序。视频时长需用 FFprobe 核查。"}
+### Ran Playwright code
+```js
+await (async(page)=>{await page.reload();await page.locator("#samples").selectOption("milk-frog-native-v15-v16-v1");await page.locator("#load-sample").click();await page.waitForFunction(()=>document.querySelector("#scrub").max==="11");await page.locator("#record-fps").fill("12");const d=page.waitForEvent("download");await page.locator("#record").click();await(await d).saveAs("/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-v16-capture.zip");return {status:await page.locator("#status").textContent()};})(page);
+```
+### Events
+- Downloading file animation-capture.zip ...
+- Downloaded file animation-capture.zip to ".playwright-cli/animation-capture.zip"

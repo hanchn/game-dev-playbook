@@ -1,0 +1,59 @@
+{
+  "tool": "built-in image_gen",
+  "toolSourcePath": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-02e1fdab-bad2-4e2f-beaf-f9847190469f.png",
+  "references": [
+    {
+      "path": "public/art/chicken-side-parts-v3.png",
+      "sha256": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de",
+      "role": "style reference viewed before generation"
+    },
+    {
+      "path": "public/art/chicken-hen-parts-v3.png",
+      "sha256": "978c0f3b480f3dd80bbaa11c73e2eea346d4acad6f1e4f999a930da629f50b39",
+      "role": "style reference viewed before generation"
+    }
+  ],
+  "output": {
+    "path": "public/art/chicken-leg-parts-v4.png",
+    "sha256": "c144ae3183b8338468518f8d7e15285251e0510dfa49e53e30e5f2fe9f82b828",
+    "width": 1312,
+    "height": 1199
+  },
+  "promptPath": "examples/chicken-leg-source-v4/prompt.txt",
+  "registered": true,
+  "visual": "partial-material-improved-full-animal-failed",
+  "sourceObservations": [
+    "Feathered source more slender and small feather-to-scale distal transition; true source observed.",
+    "Scaled shaft remains bulbous at ends despite explicit no dumbbell brief; source lower-piece end ratio not accepted.",
+    "Native source aspect and exactmask assembly pending; not registered."
+  ],
+  "sourceGeometry": [
+    {
+      "rect": [
+        248,
+        63,
+        329,
+        1065
+      ],
+      "aspect": 0.3089201877934272,
+      "foreignCorePixels": 0
+    },
+    {
+      "rect": [
+        889,
+        65,
+        198,
+        1062
+      ],
+      "aspect": 0.1864406779661017,
+      "foreignCorePixels": 0
+    }
+  ],
+  "registeredSourceTileIndex": 0,
+  "registeredAssets": [
+    "chicken-side-v5",
+    "chicken-hen-side-v7"
+  ],
+  "reviewPath": "examples/chicken-leg-source-v5/visual-review.json",
+  "lowerPiece": "unregistered-bulbous-failed; replaced by v5 right piece"
+}

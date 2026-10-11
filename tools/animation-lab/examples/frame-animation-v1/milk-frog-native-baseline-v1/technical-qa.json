@@ -1,0 +1,227 @@
+{
+  "actualOrigin": "Real /frame-animation playback + shared Canvas MediaRecorder; actual FFprobe/decode comparisons",
+  "browserSeen": {
+    "v15": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "v15-v16": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "reports": [
+    {
+      "variant": "v15",
+      "origin": "original catch-milk-frog source frames, not new generation",
+      "sourceArtStatus": "failed",
+      "technicalStatus": "passed",
+      "nativeSourceFrames": 6,
+      "distinctExportPNGHashes": 6,
+      "videoCodec": "vp9",
+      "videoDurationSeconds": 1.000789,
+      "encodedFrames": 7,
+      "capturedPNGs": 6,
+      "videoSha256": "1c85f3ffd81f76005f3c4939d7131f56563c6d2d5357a036bd2c0ffd9705bc77",
+      "fixedTransform": {
+        "sourceCanvasSize": [
+          580,
+          540
+        ],
+        "scale": 0.8413793103448276,
+        "offset": [
+          12,
+          28.82758620689654
+        ]
+      },
+      "comparisons": [
+        {
+          "index": 0,
+          "sourceFrameIndex": 0,
+          "pts": 0,
+          "rgbMAE255": 1.4730631510416667
+        },
+        {
+          "index": 1,
+          "sourceFrameIndex": 1,
+          "pts": 0.167,
+          "rgbMAE255": 1.9149881998697917
+        },
+        {
+          "index": 2,
+          "sourceFrameIndex": 2,
+          "pts": 0.334,
+          "rgbMAE255": 2.0316594441731772
+        },
+        {
+          "index": 3,
+          "sourceFrameIndex": 3,
+          "pts": 0.5,
+          "rgbMAE255": 2.0303942362467446
+        },
+        {
+          "index": 4,
+          "sourceFrameIndex": 4,
+          "pts": 0.667,
+          "rgbMAE255": 1.7810681660970051
+        },
+        {
+          "index": 5,
+          "sourceFrameIndex": 5,
+          "pts": 0.834,
+          "rgbMAE255": 1.8488235473632812
+        }
+      ],
+      "maxRGBMAE255": 2.0316594441731772,
+      "lastFramePolicy": "One encoded terminal hold, excluded from PNG frame animation timeline",
+      "sourceRawCropEdges": [
+        0,
+        0,
+        0,
+        9,
+        2,
+        6
+      ],
+      "paths": {
+        "movie": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-capture/recording.webm",
+        "captureZIP": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-capture.zip",
+        "framesZIP": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-frames.zip",
+        "qa": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/source-qa.json"
+      }
+    },
+    {
+      "variant": "v15-v16",
+      "origin": "original catch-milk-frog source frames, not new generation",
+      "sourceArtStatus": "failed",
+      "technicalStatus": "passed",
+      "nativeSourceFrames": 12,
+      "distinctExportPNGHashes": 12,
+      "videoCodec": "vp9",
+      "videoDurationSeconds": 0.999382,
+      "encodedFrames": 13,
+      "capturedPNGs": 12,
+      "videoSha256": "fc838e267c59e1c2d81aa046879554f4440afbb0f4d81ff6c8ac91ac8d2cdabc",
+      "fixedTransform": {
+        "sourceCanvasSize": [
+          580,
+          540
+        ],
+        "scale": 0.8413793103448276,
+        "offset": [
+          12,
+          28.82758620689654
+        ]
+      },
+      "comparisons": [
+        {
+          "index": 0,
+          "sourceFrameIndex": 0,
+          "pts": 0,
+          "rgbMAE255": 1.4730631510416667
+        },
+        {
+          "index": 1,
+          "sourceFrameIndex": 1,
+          "pts": 0.084,
+          "rgbMAE255": 1.9875208536783855
+        },
+        {
+          "index": 2,
+          "sourceFrameIndex": 2,
+          "pts": 0.167,
+          "rgbMAE255": 1.8399899800618489
+        },
+        {
+          "index": 3,
+          "sourceFrameIndex": 3,
+          "pts": 0.249,
+          "rgbMAE255": 1.7680371602376301
+        },
+        {
+          "index": 4,
+          "sourceFrameIndex": 4,
+          "pts": 0.333,
+          "rgbMAE255": 1.9246533711751301
+        },
+        {
+          "index": 5,
+          "sourceFrameIndex": 5,
+          "pts": 0.417,
+          "rgbMAE255": 1.9505666097005208
+        },
+        {
+          "index": 6,
+          "sourceFrameIndex": 6,
+          "pts": 0.501,
+          "rgbMAE255": 1.257067362467448
+        },
+        {
+          "index": 7,
+          "sourceFrameIndex": 7,
+          "pts": 0.584,
+          "rgbMAE255": 1.8004748026529949
+        },
+        {
+          "index": 8,
+          "sourceFrameIndex": 8,
+          "pts": 0.666,
+          "rgbMAE255": 1.699109395345052
+        },
+        {
+          "index": 9,
+          "sourceFrameIndex": 9,
+          "pts": 0.75,
+          "rgbMAE255": 1.6989301045735676
+        },
+        {
+          "index": 10,
+          "sourceFrameIndex": 10,
+          "pts": 0.834,
+          "rgbMAE255": 1.8035519917805989
+        },
+        {
+          "index": 11,
+          "sourceFrameIndex": 11,
+          "pts": 0.916,
+          "rgbMAE255": 1.886553446451823
+        }
+      ],
+      "maxRGBMAE255": 1.9875208536783855,
+      "lastFramePolicy": "One encoded terminal hold, excluded from PNG frame animation timeline",
+      "sourceRawCropEdges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        2,
+        0,
+        6,
+        0
+      ],
+      "paths": {
+        "movie": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-v16-capture/recording.webm",
+        "captureZIP": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-v16-capture.zip",
+        "framesZIP": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-v16-frames.zip",
+        "qa": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/source-qa.json"
+      }
+    }
+  ]
+}

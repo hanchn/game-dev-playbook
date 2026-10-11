@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "requestedDurationSeconds": 1,
+  "requestedFPS": 8,
+  "ffprobe": {
+    "frames": [
+      {
+        "best_effort_timestamp_time": "0.000000"
+      },
+      {
+        "best_effort_timestamp_time": "0.124000"
+      },
+      {
+        "best_effort_timestamp_time": "0.249000"
+      },
+      {
+        "best_effort_timestamp_time": "0.376000"
+      },
+      {
+        "best_effort_timestamp_time": "0.499000"
+      },
+      {
+        "best_effort_timestamp_time": "0.625000"
+      },
+      {
+        "best_effort_timestamp_time": "0.751000"
+      },
+      {
+        "best_effort_timestamp_time": "0.877000"
+      },
+      {
+        "best_effort_timestamp_time": "0.999000"
+      }
+    ],
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 512,
+        "height": 512,
+        "nb_read_frames": "9"
+      }
+    ],
+    "format": {
+      "duration": "0.999328"
+    }
+  },
+  "decodedVideoFrames": 9,
+  "distinctDecodedVideoFrames": 9,
+  "capturedPngFrames": 8,
+  "distinctPngFrames": 8,
+  "firstVideoVsFirstPngMeanAbsoluteError": 1.1870969136555989,
+  "inheritedVisualQA": "failed",
+  "sourceFrameIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "note": "Manual sampled frames plus a separately redrawn terminal hold; browser PTS is wall-clock.",
+  "allEightVideoFrameVsCorrespondingPngMeanAbsoluteErrors": [
+    1.1870969136555989,
+    1.6388753255208333,
+    1.4318351745605469,
+    1.3780708312988281,
+    1.3048998514811199,
+    1.2305997212727864,
+    1.1808115641276042,
+    1.2136319478352864
+  ],
+  "allVideoFramesChronologyVerified": true,
+  "maxSampleTimestampErrorSeconds": 0.0020000000000000018
+}

@@ -1,0 +1,108 @@
+{
+  "pngCount": 36,
+  "pngSHA": true,
+  "sourceSHA": true,
+  "movieSHA": true,
+  "rendererVersion": 7,
+  "choreographyVersion": 11,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 1280,
+        "height": 720,
+        "nb_read_frames": "37"
+      },
+      {
+        "codec_name": "opus",
+        "nb_read_frames": "45"
+      }
+    ],
+    "format": {
+      "duration": "2.994031"
+    }
+  },
+  "decodedVideo": {
+    "frames": 37,
+    "terminalHoldFrames": 1,
+    "rgbMAE": {
+      "mean": 1.1983815686889145,
+      "max": 1.942332175925926
+    },
+    "ptsMaxErrorSeconds": 0.018000000000000016,
+    "pts": [
+      0,
+      0.087,
+      0.17,
+      0.249,
+      0.337,
+      0.414,
+      0.506,
+      0.586,
+      0.669,
+      0.768,
+      0.845,
+      0.92,
+      0.999,
+      1.084,
+      1.166,
+      1.252,
+      1.336,
+      1.419,
+      1.502,
+      1.587,
+      1.671,
+      1.75,
+      1.839,
+      1.917,
+      2.006,
+      2.086,
+      2.171,
+      2.253,
+      2.333,
+      2.42,
+      2.506,
+      2.585,
+      2.673,
+      2.753,
+      2.84,
+      2.919,
+      2.994
+    ]
+  },
+  "visual": {
+    "status": "failed",
+    "reviewer": "root",
+    "methods": [
+      "actual UI playback",
+      "native all-frame contact sheet",
+      "full-resolution representative frames"
+    ],
+    "observations": [
+      "真实开合喙素材和真实录音声轨；36源帧整表及UI播放已检查。",
+      "下颈材质及腿部比例仍失败；音频解码有声通过，听觉自然度未听审。"
+    ],
+    "scope": "Visual review is separate from byte identity, decoded frame coverage and timing."
+  },
+  "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+  "audio": {
+    "sourceSHA": true,
+    "decodedSamples": 129600,
+    "measuredAudibleInterval": [
+      0.87,
+      2.4299999999999997
+    ],
+    "expectedCueStart": 0.8,
+    "expectedCueEnd": 2.7,
+    "expectedAudibleInterval": [
+      0.8500000000000001,
+      2.42
+    ],
+    "movieDuration": 2.994031,
+    "expectedSilent": false,
+    "peakWindowRMS": 0.2624345091692155,
+    "naturalSoundReview": "not-listened"
+  }
+}

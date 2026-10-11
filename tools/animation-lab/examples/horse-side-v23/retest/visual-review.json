@@ -1,0 +1,160 @@
+{
+  "assetId": "horse-side-v23",
+  "primaryAtlas": "/art/horse-side-parts-v5.png",
+  "primarySourceSha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+  "alternateSources": {
+    "horse-cannon-material": {
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "width": 1536,
+      "height": 1024,
+      "sourceSha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5"
+    },
+    "horse-upper-material": {
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "width": 1774,
+      "height": 887,
+      "sourceSha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3"
+    }
+  },
+  "visual": "failed",
+  "render": "normal opaque; fixed512 anchor256,350 scale1.3; contact sheets no per-frame fit",
+  "technical": {
+    "priorLog": "technical-tests.log",
+    "priorPassed": 37,
+    "precisionRetestLog": "precision-regression.log",
+    "passed": 38,
+    "failed": 0,
+    "scope": "source identity, fresh exact masks, rig bone lengths/isolation, neck source .25rigpx and4000tri limits. Not art acceptance"
+  },
+  "reviewed": [
+    {
+      "kind": "native-original-tolerance04",
+      "directory": "retest",
+      "lightClips": [
+        "idle",
+        "walk",
+        "run",
+        "jump",
+        "graze",
+        "rear",
+        "tail"
+      ],
+      "darkClips": [
+        "run",
+        "graze"
+      ],
+      "framesPerClip": 16
+    },
+    {
+      "kind": "independent-source-joint-normal-extend",
+      "directory": "../limb-isolation",
+      "lightParts": [
+        "leg-0-upper",
+        "leg-0-middle",
+        "leg-1-upper",
+        "leg-1-middle",
+        "leg-2-upper",
+        "leg-2-middle",
+        "leg-3-upper",
+        "leg-3-middle"
+      ],
+      "samplesPerPart": 9,
+      "scope": "production extend amplitude±.40rad (22.918deg), not full declared range"
+    },
+    {
+      "kind": "diagnostic-declared-range-stress",
+      "directory": "../limb-stress",
+      "lightParts": [
+        "leg-0-middle",
+        "leg-2-middle"
+      ],
+      "darkParts": [
+        "leg-0-lower",
+        "leg-2-lower"
+      ],
+      "samplesPerPart": 9,
+      "scope": "unapproved provisional ranges middle±100deg/lower±120deg; stresses source overlap, not biologically valid animation"
+    },
+    {
+      "kind": "Chrome-production",
+      "url": "http://127.0.0.1:4317/lab/horse",
+      "header": "马 零件资产 / v23",
+      "files": [
+        "../ui-graze-phase0467-light-detail.png",
+        "../ui-run-phase05-light-detail.png"
+      ],
+      "phases": [
+        0.4666666666666667,
+        0.5
+      ],
+      "zoom": 1.65,
+      "background": "light",
+      "rendererRefineTolerance": 0.4
+    },
+    {
+      "kind": "Chrome-precision-retest",
+      "url": "http://127.0.0.1:4317/lab/horse",
+      "header": "马 零件资产 / v23",
+      "files": [
+        "../ui-graze-phase0467-precision02-light.png",
+        "../ui-run-phase05-precision02-light.png"
+      ],
+      "phases": [
+        0.4666666666666667,
+        0.5
+      ],
+      "zoom": 1.65,
+      "background": "light",
+      "rendererRefineTolerance": 0.2
+    }
+  ],
+  "findings": [
+    {
+      "area": "upper legs",
+      "status": "improved-not-accepted",
+      "observation": "Four new actual source pieces reduce old egg muscles while preserving bone lengths and native source aspect. Overall slender lower legs against large torso remains."
+    },
+    {
+      "area": "carpus/hock/fetlock source material",
+      "status": "failed",
+      "observation": "Actual source2/3/7/8 retain prominent distal knobs and stubs; cannon source4/9 remains narrow. Independent bending and run .5 show pad-like joint transitions."
+    },
+    {
+      "area": "neck graze .467",
+      "status": "failed",
+      "observation": "Black mane knife stays removed, but brown acute folded-sleeve crease remains at body/neck. .2 mesh precision resolves numerical error, not fold anatomy."
+    },
+    {
+      "area": "jump and rear",
+      "status": "failed-needs-motion-refinement",
+      "observation": "Paired near/far legs overlap strongly; jump remains stiff and rear front limb reads as sharp L configuration in actual16frame light sheets."
+    },
+    {
+      "area": "hoof material",
+      "status": "failed-source-review",
+      "observation": "Primary original5/10 heel source has glossy reflective plate-like surface, visible in assembled run; unchanged source retained as baseline."
+    },
+    {
+      "area": "tail",
+      "status": "reviewed-not-accepted",
+      "observation": "Current16frame light output retains continuous root and canvas inclusion. Static contactsheet cannot establish natural hair dynamics."
+    }
+  ],
+  "notReviewed": [
+    "native dark idle/walk/jump/rear/tail",
+    "all12 dark normal-isolation",
+    "light lower4 in limb-isolation directory",
+    "remaining stress panels",
+    "UI jump/rear/tail"
+  ],
+  "baseline": "../../horse-side-v22/retest/visual-review.json",
+  "rootCandidates": {
+    "registered": false,
+    "visual": "failed-all-four",
+    "comparison": "../root-candidates-detail/comparison-light.png",
+    "reason": "All .4/.8, .4/.94, .35/.94, .43/.88 roots retain graze folded material. Root parameter guesses were not registered."
+  },
+  "next": "Joint-end source anatomy and primary glossy hoof source; keep neck fold failed until genuinely continuous mapping/source resolves it."
+}

@@ -1,0 +1,142 @@
+{
+  "schema": "animal-art-review/v1",
+  "currentAssets": {
+    "rooster": "chicken-side-v5",
+    "hen": "chicken-hen-side-v7"
+  },
+  "scene": {
+    "choreography": 10,
+    "renderer": 6
+  },
+  "technical": {
+    "passed": 63,
+    "failed": 0,
+    "log": "examples/chicken-leg-source-v5/technical-tests.log"
+  },
+  "visual": "failed",
+  "sourceSha256": {
+    "rooster": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de",
+    "hen": "c9d25daec3211116d358eecaa0f50cd8e5880ef25c45b971e78fa6c183cd5c84",
+    "extras": "08446d6d7f64ad47ac77e32f28922b480d18727cd08f0301a5ed41a4f87c32ac",
+    "intermediates": "5336454c01ebabcdf2abb26f62cf971972b5aaa254cfa69c07334e9245c1b5e2",
+    "rooster:chicken-leg-upper-v4": "c144ae3183b8338468518f8d7e15285251e0510dfa49e53e30e5f2fe9f82b828",
+    "rooster:chicken-leg-lower-v5": "920a30e0620cf6f1a2a4a0bd830c9ddff32a46e8f8629f4cd0b793b41136f9d1",
+    "hen:hen-leg-material": "978c0f3b480f3dd80bbaa11c73e2eea346d4acad6f1e4f999a930da629f50b39",
+    "hen:chicken-leg-upper-v4": "c144ae3183b8338468518f8d7e15285251e0510dfa49e53e30e5f2fe9f82b828",
+    "hen:chicken-leg-lower-v5": "920a30e0620cf6f1a2a4a0bd830c9ddff32a46e8f8629f4cd0b793b41136f9d1"
+  },
+  "actualReviewed": [
+    {
+      "path": "examples/chicken-leg-source-v5/ui-crow-1.50-full.png",
+      "kind": "actual-Chrome-CUA-fullpage-normal-opaque",
+      "versions": "rooster5/hen7/choreography10/renderer6"
+    },
+    {
+      "path": "examples/chicken-leg-source-v5/ui-lay-1.50-full.png",
+      "kind": "actual-Chrome-CUA-fullpage-normal-opaque",
+      "versions": "rooster5/hen7/choreography10/renderer6"
+    },
+    {
+      "path": "examples/chicken-leg-source-v5/ui-lay-3.25-full.png",
+      "kind": "actual-Chrome-CUA-fullpage-normal-opaque",
+      "versions": "rooster5/hen7/choreography10/renderer6"
+    },
+    {
+      "path": "examples/chicken-leg-source-v5/ui-lay-4.40-full.png",
+      "kind": "actual-Chrome-CUA-fullpage-normal-opaque",
+      "versions": "rooster5/hen7/choreography10/renderer6"
+    },
+    {
+      "path": "examples/chicken-leg-source-v5/ui-fight-1.50-full.png",
+      "kind": "actual-Chrome-CUA-fullpage-normal-opaque",
+      "versions": "rooster5/hen7/choreography10/renderer6"
+    },
+    {
+      "path": "examples/chicken-leg-source-v5/ui-fight-2.10-full.png",
+      "kind": "actual-Chrome-CUA-fullpage-normal-opaque",
+      "versions": "rooster5/hen7/choreography10/renderer6"
+    },
+    {
+      "path": "examples/chicken-leg-source-v5/ui-flock-hens-1.50-full.png",
+      "kind": "actual-Chrome-CUA-fullpage-normal-opaque",
+      "versions": "rooster5/hen7/choreography10/renderer6"
+    },
+    {
+      "path": "examples/chicken-hen-side-v7/retest/walk-ground-fixed-light.png",
+      "kind": "actual-drawCanvas-viewed"
+    },
+    {
+      "path": "examples/chicken-hen-side-v7/retest/peck-ground-fixed-light.png",
+      "kind": "actual-drawCanvas-viewed"
+    },
+    {
+      "path": "examples/chicken-hen-side-v7/retest/leg-0-upper-isolated-light.png",
+      "kind": "actual-drawCanvas-viewed"
+    },
+    {
+      "path": "examples/chicken-hen-side-v7/retest/three-hens-1.50.png",
+      "kind": "actual-drawCanvas-viewed"
+    },
+    {
+      "path": "examples/chicken-side-v5/retest/walk-ground-fixed-light.png",
+      "kind": "actual-drawCanvas-viewed"
+    },
+    {
+      "path": "examples/chicken-side-v5/retest/run-ground-fixed-light.png",
+      "kind": "actual-drawCanvas-viewed"
+    },
+    {
+      "path": "examples/chicken-side-v5/retest/leg-0-lower-isolated-light.png",
+      "kind": "actual-drawCanvas-viewed"
+    }
+  ],
+  "resolved": [
+    {
+      "id": "chest-leg-blob",
+      "scope": "reviewed crow/lay/fight/flock",
+      "result": "giant feathered root no longer pasted onto torso front; smaller native upper source emerges beneath true body parent"
+    },
+    {
+      "id": "lower-dumbbell",
+      "scope": "reviewed source and same poses",
+      "result": "bulbous lower distal end reduced in generated v5 source; smaller hock still visible"
+    }
+  ],
+  "residuals": [
+    {
+      "id": "hock-transition",
+      "status": "failed",
+      "detail": "Small golden transition bead remains visible in standing/standing-up; feather-to-scale thickness and leg/body proportions need further review."
+    },
+    {
+      "id": "thin-long-legs",
+      "status": "failed",
+      "detail": "Thinner native material improves giant knobs but standing legs still appear fine/long against large body."
+    },
+    {
+      "id": "crow-neck-edge",
+      "status": "failed",
+      "detail": "Crow neck/hackles→torso show clear straight light/dark edge. Existing extras head/neck splitting is horizontal; source bottom itself has natural feather outline."
+    },
+    {
+      "id": "feeding-neck-sleeve",
+      "status": "failed",
+      "detail": "Hen peck max flex retains sharp lateral neck silhouette; rooster walk/run original neck looks like hanging sleeve."
+    },
+    {
+      "id": "fight-contact",
+      "status": "failed",
+      "detail": "1.50s airborne near extended legs and 2.10s feathers do not demonstrate strong natural fighting contact; root scene owner informed."
+    }
+  ],
+  "notReviewed": [
+    "Current dark background source assembled full sequences",
+    "Current continuous slow playback and newly recorded films",
+    "Current rooster idle/flap/peck and full independent upper sequence were generated but not viewed"
+  ],
+  "historicalFailedRetained": [
+    "examples/chicken-leg-root-v1/candidates/baseline-rooster4-crow-1.50.png",
+    "examples/chicken-leg-source-v4/assembled-candidates/two-new-source-crow-1.50.png",
+    "examples/chicken-hen-side-v6/leg-retest/visual-review.json"
+  ]
+}

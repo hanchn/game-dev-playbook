@@ -1,0 +1,66 @@
+✔ isometric projection/inverse preserves negative and fractional world coordinates (0.545ms)
+✔ seeded overlapping windows share tiles and object identity/depth (275.938667ms)
+✔ style switches choose actual different sprite pools and water policies (201.323125ms)
+✔ disc motion blocks water tile and building without tunnelling (0.359833ms)
+✔ invalid regions and styles fail visibly (0.117292ms)
+✔ offline export has PNG, source hashes, copied sprite references and collision data (200.764166ms)
+✔ castle uses an original-model-derived native 1024px PNG with a measured ground anchor (193.303208ms)
+✔ same seed produces identical geometry, layers, props and negative global samples (506.493959ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (241.41425ms)
+✔ three styles change actual geometry and model sets (483.307833ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (179.386417ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.524ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.13575ms)
+✔ water and steep ground deny actual actor movement (0.11ms)
+✔ object colliders reflect measured source model proportions (177.642042ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.691917ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (64.92375ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (453.77825ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (749.185292ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (371.709416ms)
+✔ castle source modules form eight unique placed parts, feature range limits avoid unbounded work (90.849042ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (144.833792ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.303125ms)
+✔ barren theme uses distinct bare-rock PBR, no water/buildings and gray object materials (127.580416ms)
+✔ actual source cave fixture faces downhill with flat entrance and a passable aperture (157.008ms)
+✔ cave ground floor remains deterministic and continuous across adjacent negative chunks (412.412167ms)
+✖ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (96.238709ms)
+✔ native cave carve rejects crossing a stream instead of raising its channel (154.73525ms)
+✔ global feature identity survives independent chunk queries and cache eviction (68.451958ms)
+✔ buildings validate whole footprints and reject flooded/steep terrain (6.385667ms)
+✔ streams descend across negative-coordinate regions, with bounded source travel (0.784416ms)
+✔ prepared neighboring terrain chunks apply the identical global river/ground height (14.158625ms)
+✔ invalid samples fail explicitly rather than placing bad objects (0.268791ms)
+✔ unrelated foundations cannot reset an active foundation height (0.091875ms)
+✔ foundation priority is independent of river enumeration order (0.098583ms)
+✔ global river paths avoid neighboring foundations with room for water width (41.155083ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 35
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4512.946375
+
+✖ failing tests:
+
+test at test/map-terrain-3d.test.mjs:35:1
+✖ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (96.238709ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '漫游-2026:-1,0:0:building:3'
+  - '漫游-2026:-1,0:0:building:5'
+                             ^
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/map-terrain-3d.test.mjs:36:785)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '漫游-2026:-1,0:0:building:3',
+    expected: '漫游-2026:-1,0:0:building:5',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

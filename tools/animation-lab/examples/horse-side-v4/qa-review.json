@@ -1,0 +1,35 @@
+{
+  "assetId": "horse-side-v4",
+  "atlas": "/art/horse-side-parts-v4.png",
+  "visual": "failed",
+  "actualProductionCanvas": "examples/horse-side-v4/retest",
+  "reviewed": [
+    {
+      "clip": "idle",
+      "background": "dark",
+      "phases": "all16",
+      "observation": "完整头颈绑定宽度过小，脖颈被拉细；站姿前腕和后飞节过度屈曲。尾毛恢复原生aspect，但不能据此接受整马。"
+    },
+    {
+      "clip": "walk",
+      "background": "dark",
+      "phases": "all16",
+      "observation": "近远侧四肢存在，站立承重仍过度折弯，绑定需修。"
+    },
+    {
+      "clip": "run",
+      "background": "light",
+      "phases": "all16",
+      "observation": "全颈无双cap但形态拉细；腿部承重结构异常。"
+    }
+  ],
+  "nextCandidate": "horse-side-v5",
+  "notReviewed": [
+    "graze",
+    "rear",
+    "jump",
+    "tail",
+    "single-joint extremes",
+    "browser playback"
+  ]
+}

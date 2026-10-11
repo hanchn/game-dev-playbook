@@ -1,0 +1,11 @@
+### Result
+{"initial":"12 帧 · 生图结果（来源记录已绑定） · 1254 × 1254","seen":["0","1","2","3","4","5","6","7","8","9","10","11"],"recordCycles":2,"status":"ZIP 已导出，包含真实单帧 PNG、sheet.png 和 animation.json。"}
+### Ran Playwright code
+```js
+await (async(page)=>{await page.reload();await page.locator("#samples").selectOption("milk-frog-run-sequence-v4");await page.locator("#load-sample").click();await page.waitForFunction(()=>document.querySelector("#scrub").max==="11");const initial=await page.locator("#identity").textContent();await page.locator("#play").click();const seen=new Set();for(let i=0;i<80;i++){seen.add(await page.locator("#scrub").inputValue());await page.waitForTimeout(40);}await page.locator("#play").click();await page.locator("#record-fps").fill("8");await page.locator("#record-cycles").fill("2");const base="/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v4/";let d=page.waitForEvent("download");await page.locator("#record").click();await(await d).saveAs(base+"browser-normal-capture.zip");d=page.waitForEvent("download");await page.locator("#export-zip").click();await(await d).saveAs(base+"browser-source-frames.zip");for(let i=0;i<12;i++){await page.locator("#timeline button").nth(i).click();await page.locator("#preview").screenshot({path:base+"ui-native-"+String(i).padStart(2,"0")+".png"});}return{initial,seen:[...seen].sort((a,b)=>+a-+b),recordCycles:2,status:await page.locator("#status").textContent()};})(page);
+```
+### Events
+- Downloading file animation-capture.zip ...
+- Downloaded file animation-capture.zip to ".playwright-cli/animation-capture.zip"
+- Downloading file milk-frog-run-sequence-v4.zip ...
+- Downloaded file milk-frog-run-sequence-v4.zip to ".playwright-cli/milk-frog-run-sequence-v4.zip"

@@ -1,0 +1,7 @@
+{
+  "prompt": "Edit the attached transparent 4 by 4 T-rex parts atlas. Change ONLY row 1 column 2, the upper skull. Keep the same right-facing skull and eye and teeth and scale texture, but INCLUDE ITS ATTACHED MUSCULAR NECK as one continuous piece: a short strong backward-sloping S-shaped neck curves down and left from behind the skull, with dark dorsal scales and a light scaly throat, wider fleshy lower base blending into shoulder. The jaw remains a separate existing part in row 4 column 1. The combined skull-and-neck must fit entirely in its existing top-row second tile, with transparent gaps to all neighbors; head at top/right and neck base at bottom/left. Preserve the exact other 15 parts, especially the long three-clawed foot. No visible ball cap, pipe, hollow neck, cylinder, mechanical hinge or neck seam. Natural T-rex anatomy in strict orthographic side view. Transparent alpha outside parts, no text, no background. The goal is a continuous head-neck texture that can bend with a soft mesh and bury the bottom of the neck into the torso.",
+  "reference": "dinosaur-side-parts-v4.png",
+  "output": "dinosaur-side-parts-v5.png",
+  "tool": "image_gen",
+  "purpose": "Continuous native skull-and-neck replaces visibly segmented neck connector."
+}

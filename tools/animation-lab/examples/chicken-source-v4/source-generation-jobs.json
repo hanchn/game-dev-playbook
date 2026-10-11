@@ -1,0 +1,29 @@
+{
+  "tool": "image_gen.imagegen",
+  "sourcePixelsEdited": false,
+  "generatedAt": "2026-10-12",
+  "hen": {
+    "prompt": "Use case: precise-object-edit. Asset type: transparent production anatomical sprite parts atlas. Reference is a brown rooster's 16-part atlas. Derive a FEMALE brown laying hen variant, same feather rendering identity, soft studio lighting and strict orthographic SIDE PROFILE FACING RIGHT. Female hen has compact small red comb and smaller wattle, plump oval laying-hen body, short modest tail feathers not a rooster's tall curved tail, no spurs, no eggs attached to her body. Exact 4 rows x 4 independent pieces with generous transparent gutters, actual transparent alpha; keep part roles and approximate bounding positions matching reference. Row1: torso WITHOUT attached legs/wings/neck, continuous full head+neck closed beak FEMALE hen, feathered upper thigh hip-to-knee, yellow scaly shank knee-to-ankle. Row2: side profile yellow foot with forward claws POINTING RIGHT and rear toe pointing left, feathered neck strip duplicate, short full female tail feathers with root on RIGHT and tips LEFT, folded RIGHT-facing wing with shoulder root upperRIGHT and flight-feather tips lowerLEFT. Row3: spread wing shoulder root upperLEFT and tips lowerRIGHT, second foot duplicate strict side-facing-right, small body feather cover patch, unused shank scales patch. Row4: same complete hen head+neck with beak naturally OPEN (same eye/poll identity), modest female tail alternate, belly cover patch, rump feather patch. Natural feather transitions, rounded hidden overlapping internal pivots, no visible cut flesh, no spherical body lumps. All independent pieces, no assembled full chicken, no grid/text/watermark, no props or eggs here.",
+    "reference": "public/art/chicken-side-parts-v3.png",
+    "generatedPath": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-ec56c2cc-42b9-42d3-8b83-a80d0eae3620.png",
+    "output": "public/art/chicken-hen-parts-v1.png",
+    "sourceSha256": "c9d25daec3211116d358eecaa0f50cd8e5880ef25c45b971e78fa6c183cd5c84",
+    "referenceSha256": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de"
+  },
+  "performance": {
+    "prompt": "Use case: precise-object-edit. Asset type: transparent rooster performance-and-props atlas. Match the attached brown rooster asset identity precisely: brown copper layered feathers, amber eye, red comb and wattle, yellow beak, right-facing orthographic side profile, soft upper-left studio lighting. Produce EXACTLY 8 independent source components in 2 rows x4 with clear transparent gutters, no text/grid. Top row: (1) complete continuous rooster head+neck, beak closed; (2) EXACT same full head+neck, identical skull/eye/comb/neck scale and viewpoint, beak naturally open 25 degrees for crowing, visible yellow lower mandible and modest dark mouth interior, throat raised very slightly but skull not stretched; (3) isolated red resting throat wattle pair attached roots at top, natural skin detail, side profile; (4) same red wattle throat softly fuller/expanded for crow, same root landmark, never a red inflated balloon. Bottom row: (5) ONE long brown flight feather with intact quill and barbs; (6) ONE short light brown soft contour feather with intact tiny quill; (7) ONE whole intact warm cream chicken egg, upright three-dimensional oval, soft highlights, no broken shell; (8) ONE shallow compact straw nest side profile on ground, empty, brown natural straw circle, no eggs or chicken. Head+neck components must remain large and equal size, props separate and fully visible with margins; no floating shadows, no assembled bird or body, no gore, no labels, no watermark. Actual transparent alpha preserves individual contours.",
+    "reference": "public/art/chicken-side-parts-v3.png",
+    "generatedPath": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-a3dfb7d5-3121-48e4-8273-9528ecf9954f.png",
+    "output": "public/art/chicken-performance-extras-v1.png",
+    "sourceSha256": "08446d6d7f64ad47ac77e32f28922b480d18727cd08f0301a5ed41a4f87c32ac",
+    "referenceSha256": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de"
+  },
+  "qa": {
+    "sourceViewed": true,
+    "sceneVisual": "not-reviewed",
+    "limitations": [
+      "Hen feet are oblique candidate, need complete actual scene support inspection.",
+      "Crow closed/open source landmarks manually registered; actual renderer state transition not yet viewed."
+    ]
+  }
+}

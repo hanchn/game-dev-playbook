@@ -1,0 +1,5133 @@
+{
+  "species": "scorpion",
+  "technical": "passed",
+  "visual": "agent-reviewed-user-acceptance-pending",
+  "note": "侧面八足，五节尾链及尾刺独立屈伸。双螯包含上臂、前臂、固定螯掌和活动指；按真实螯尖校准轴点，检查夹击、尾刺攻击和举螯警戒。",
+  "motions": [
+    {
+      "clip": "idle",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "0.6000"
+          }
+        ],
+        "scope": "character",
+        "clip": "idle",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "walk",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.0000"
+          },
+          {
+            "id": "support",
+            "label": "支撑足锁地",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "participation",
+            "label": "八腿参与",
+            "passed": true,
+            "detail": "12.0000"
+          },
+          {
+            "id": "phase",
+            "label": "四足组交替",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "character",
+        "clip": "walk",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "run",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "15.0000"
+          },
+          {
+            "id": "support",
+            "label": "支撑足锁地",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "participation",
+            "label": "八腿参与",
+            "passed": true,
+            "detail": "15.0000"
+          },
+          {
+            "id": "phase",
+            "label": "四足组交替",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "character",
+        "clip": "run",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "pinch",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "8.2746"
+          }
+        ],
+        "scope": "character",
+        "clip": "pinch",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "sting",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "27.2018"
+          }
+        ],
+        "scope": "character",
+        "clip": "sting",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "guard",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "15.4540"
+          }
+        ],
+        "scope": "character",
+        "clip": "guard",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "tail",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "10.6241"
+          }
+        ],
+        "scope": "character",
+        "clip": "tail",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "partId": "pedicel",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.3960"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "15.4894"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "15.2274"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.8836"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.9968"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.0152"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.7972"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-0-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "15.1581"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.9834"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.7263"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.0141"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.0342"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.7979"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-1-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-2-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.2526"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-2-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.9361"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-2-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "13.8673"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-2-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.4103"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-2-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.1395"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-2-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.8005"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-2-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-3-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.0146"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-3-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.7821"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-3-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "13.8068"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-3-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.4478"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-3-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.1412"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-3-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.8005"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-3-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-4-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "13.8972"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-4-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.0871"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-4-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.2447"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-4-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.1274"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-4-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.1010"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-4-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.7997"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-4-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-5-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.2019"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-5-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.3006"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-5-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "14.3424"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-5-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.0921"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-5-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.0870"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-5-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.7994"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-5-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-6-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "17.5844"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-6-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "16.8655"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-6-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "16.0964"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-6-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.9995"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-6-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "10.9448"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-6-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.7918"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-6-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-7-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "17.9486"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-7-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "17.1648"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-7-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "16.3365"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-7-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.0207"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-7-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "10.9463"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-7-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "5.7912"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "leg-7-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "2.2311"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-0-upper",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "25.2811"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-0-lower",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "17.6270"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-0-palm",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "10.7320"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-0-finger",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "6.9273"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-1-upper",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "25.4508"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-1-lower",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "17.9060"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-1-palm",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "10.7320"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "claw-1-finger",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "6.9273"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "tail-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "12.7040"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "tail-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.4902"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "tail-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "11.2384"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "tail-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "8.3461"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "tail-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "4.1843"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "stinger",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "七节固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "逐关节连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节确实运动",
+            "passed": true,
+            "detail": "7.6835"
+          },
+          {
+            "id": "isolation",
+            "label": "其余肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    }
+  ],
+  "sheets": [
+    {
+      "clip": "idle",
+      "passed": true,
+      "minimumMargin": 110,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            400,
+            341
+          ],
+          "margin": 111,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            203,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            203,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            203,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            203,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            203,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            400,
+            341
+          ],
+          "margin": 111,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            201,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            201,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            201,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            201,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            201,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            201,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            201,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "walk",
+      "passed": true,
+      "minimumMargin": 110,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "run",
+      "passed": true,
+      "minimumMargin": 110,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            341
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "pinch",
+      "passed": true,
+      "minimumMargin": 108,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            402,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            402,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            402,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            402,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            402,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            402,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            403,
+            342
+          ],
+          "margin": 108,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            403,
+            342
+          ],
+          "margin": 108,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            403,
+            342
+          ],
+          "margin": 108,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "sting",
+      "passed": true,
+      "minimumMargin": 107,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            113,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            111,
+            203,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            109,
+            204,
+            401,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            107,
+            205,
+            401,
+            342
+          ],
+          "margin": 107,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            112,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            137,
+            197,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            145,
+            199,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            145,
+            199,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            145,
+            199,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            145,
+            199,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            142,
+            198,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            135,
+            197,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            125,
+            198,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            117,
+            200,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "guard",
+      "passed": true,
+      "minimumMargin": 110,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            399,
+            342
+          ],
+          "margin": 112,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            397,
+            342
+          ],
+          "margin": 114,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            397,
+            342
+          ],
+          "margin": 114,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            397,
+            342
+          ],
+          "margin": 114,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            397,
+            342
+          ],
+          "margin": 114,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            397,
+            342
+          ],
+          "margin": 114,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            397,
+            342
+          ],
+          "margin": 114,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            399,
+            342
+          ],
+          "margin": 112,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            114,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "tail",
+      "passed": true,
+      "minimumMargin": 106,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            111,
+            197,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            115,
+            196,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            118,
+            196,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            197,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            122,
+            199,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            122,
+            200,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            121,
+            202,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            204,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            116,
+            205,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            113,
+            206,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            110,
+            207,
+            401,
+            342
+          ],
+          "margin": 110,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            108,
+            207,
+            401,
+            342
+          ],
+          "margin": 108,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            106,
+            206,
+            401,
+            342
+          ],
+          "margin": 106,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            106,
+            204,
+            401,
+            342
+          ],
+          "margin": 106,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            107,
+            201,
+            401,
+            342
+          ],
+          "margin": 107,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            109,
+            199,
+            401,
+            342
+          ],
+          "margin": 109,
+          "empty": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "assetId": "human-side-v13",
+  "joints": [
+    {
+      "partId": "neck",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 15,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "head",
+      "parent": "neck",
+      "samples": 65,
+      "minimumOverlapPixels": 10,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "leg-0-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 5,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "leg-0-lower",
+      "parent": "leg-0-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "leg-0-foot",
+      "parent": "leg-0-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 10,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "arm-0-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "arm-0-lower",
+      "parent": "arm-0-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "arm-0-hand",
+      "parent": "arm-0-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "leg-1-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 5,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "leg-1-lower",
+      "parent": "leg-1-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "leg-1-foot",
+      "parent": "leg-1-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 10,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "arm-1-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "arm-1-lower",
+      "parent": "arm-1-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    },
+    {
+      "partId": "arm-1-hand",
+      "parent": "arm-1-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "passed": true
+    }
+  ],
+  "materials": [
+    {
+      "clip": "idle",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "walk",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "run",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "jump",
+      "hand": "open",
+      "slot": 11,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11
+      ],
+      "passed": true
+    },
+    {
+      "clip": "punch",
+      "hand": "fist",
+      "slot": 12,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "clip": "squat",
+      "hand": "open",
+      "slot": 11,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11
+      ],
+      "passed": true
+    },
+    {
+      "clip": "bend",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "roll",
+      "hand": "fist",
+      "slot": 12,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        12
+      ],
+      "passed": true
+    }
+  ],
+  "occlusion": [
+    {
+      "id": "collar-over-neck",
+      "passed": true
+    },
+    {
+      "id": "leg-0-foot-under-cuff",
+      "passed": true
+    },
+    {
+      "id": "leg-1-foot-under-cuff",
+      "passed": true
+    },
+    {
+      "id": "leg-0-upper-under-pelvis",
+      "passed": true
+    },
+    {
+      "id": "leg-1-upper-under-pelvis",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": "Opaque overlap detects gaps, not contour bumps or color seams; bending screenshots still require visual review. Ankle overlap is sampled inside the cuff, 4px above the rotation center."
+}

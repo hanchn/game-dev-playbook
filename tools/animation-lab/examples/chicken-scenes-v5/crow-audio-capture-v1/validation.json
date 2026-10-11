@@ -1,0 +1,104 @@
+{
+  "pngCount": 36,
+  "pngSHA": true,
+  "sourceSHA": true,
+  "movieSHA": true,
+  "rendererVersion": 6,
+  "choreographyVersion": 10,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 1280,
+        "height": 720,
+        "nb_read_frames": "37"
+      },
+      {
+        "codec_name": "opus",
+        "nb_read_frames": "45"
+      }
+    ],
+    "format": {
+      "duration": "2.999495"
+    }
+  },
+  "decodedVideo": {
+    "frames": 37,
+    "terminalHoldFrames": 1,
+    "rgbMAE": {
+      "mean": 1.2023468243634259,
+      "max": 1.9479065393518518
+    },
+    "ptsMaxErrorSeconds": 0.008000000000000007,
+    "pts": [
+      0,
+      0.087,
+      0.172,
+      0.255,
+      0.338,
+      0.422,
+      0.506,
+      0.59,
+      0.67,
+      0.757,
+      0.838,
+      0.924,
+      1.002,
+      1.084,
+      1.174,
+      1.257,
+      1.335,
+      1.424,
+      1.505,
+      1.59,
+      1.673,
+      1.753,
+      1.839,
+      1.921,
+      2.006,
+      2.09,
+      2.17,
+      2.258,
+      2.341,
+      2.422,
+      2.505,
+      2.584,
+      2.674,
+      2.751,
+      2.84,
+      2.924,
+      2.999
+    ]
+  },
+  "visual": "failed",
+  "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+  "audio": {
+    "sourceSHA": true,
+    "decodedSamples": 129600,
+    "measuredAudibleInterval": [
+      0.86,
+      2.4299999999999997
+    ],
+    "expectedCueStart": 0.8,
+    "expectedCueEnd": 2.7,
+    "expectedAudibleInterval": [
+      0.8500000000000001,
+      2.42
+    ],
+    "movieDuration": 2.999495,
+    "expectedSilent": false,
+    "peakWindowRMS": 0.2747938418918944,
+    "naturalSoundReview": "not-listened"
+  },
+  "actualReview": {
+    "reviewer": "root",
+    "observations": [
+      "实际正常游戏尺寸股羽呈巨大斜向块与鼓包",
+      "颈喉与胸羽明暗/材质接缝仍明显"
+    ],
+    "uiProof": "../ui-crow-audio-v10-final.png",
+    "scope": "v1前轮已逐36帧检查；v2同源同固定动作与UI完整成片播放，不能继承听觉自然度审核"
+  }
+}

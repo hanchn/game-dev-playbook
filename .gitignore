@@ -2,3 +2,20 @@
 .env*
 node_modules/
 __pycache__/
+tools/animation-lab/data/
+.playwright-cli/
+output/
+# Historical QA media remain local; source/QA metadata and scripts are versioned.
+tools/animation-lab/examples/**/*.png
+tools/animation-lab/examples/**/*.jpg
+tools/animation-lab/examples/**/*.svg
+tools/animation-lab/examples/**/*.zip
+tools/animation-lab/examples/**/*.glb
+tools/animation-lab/examples/**/*.webm
+tools/animation-lab/examples/**/*.mp4
+tools/animation-lab/examples/**/*.gif
+tools/animation-lab/examples/**/*.wav
+# Downloaded but unregistered candidates; official manifests and downloader are versioned.
+tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/**/*.bin
+tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/**/*.jpg
+tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/**/*.png

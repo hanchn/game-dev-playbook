@@ -1,0 +1,121 @@
+{
+  "source": "/art/human-alien-side-parts-v4.png",
+  "sourceSHA256": "4a0fbcd5a14b48b94090fd8cf3ddc42b2dffe53f6b8b02ef8ccc4ff4db207ed3",
+  "fixedCamera": {
+    "anchor": [
+      256,
+      440
+    ],
+    "scale": 1.7,
+    "frame": [
+      512,
+      512
+    ]
+  },
+  "visual": "not-reviewed",
+  "candidates": [
+    {
+      "name": "recovery",
+      "profile": {
+        "spineCurlDegrees": 100,
+        "chinDegrees": 0,
+        "chinCurlDegrees": 0,
+        "footRearShift": -20,
+        "footLowerShift": 23,
+        "armExtensionDegrees": 0,
+        "elbowFlexDegrees": 10,
+        "handReachThroughCurl": true,
+        "spinByBodyOrientation": true,
+        "recoveryArms": true
+      },
+      "samples": [
+        {
+          "t": 0,
+          "file": "00.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "file": "01.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.13333333333333333,
+          "file": "02.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.2,
+          "file": "03.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.26666666666666666,
+          "file": "04.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.3333333333333333,
+          "file": "05.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.4,
+          "file": "06.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.4666666666666667,
+          "file": "07.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.5333333333333333,
+          "file": "08.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.6,
+          "file": "09.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.6666666666666666,
+          "file": "10.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.7333333333333333,
+          "file": "11.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.8,
+          "file": "12.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.8666666666666667,
+          "file": "13.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 0.9333333333333333,
+          "file": "14.png",
+          "headNearLegProjectedOverlapPixels": 0
+        },
+        {
+          "t": 1,
+          "file": "15.png",
+          "headNearLegProjectedOverlapPixels": 0
+        }
+      ]
+    }
+  ],
+  "rootVisualReview": {
+    "status": "failed",
+    "reviewer": "root",
+    "method": "actual native 16 frame contact sheets",
+    "reason": "Activated motion profile v8 as an improvement; crouch, fold and recovery remain mechanical."
+  }
+}

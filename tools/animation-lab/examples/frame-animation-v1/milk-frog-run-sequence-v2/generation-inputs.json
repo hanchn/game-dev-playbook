@@ -1,0 +1,246 @@
+{
+  "tool": "image_gen.imagegen",
+  "origin": "Actual imagegen source sequence, retained source variants; key0/25/75 reused from independently generated four-key version",
+  "items": [
+    {
+      "index": 0,
+      "version": 1,
+      "key": "milkFrogKey0",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+      "prompt": "Generate ONE clean final animation sprite, not a contact sheet. Reference 1 is the exact yellow muscular humanoid milk frog identity/style. Reference 2 is a single-pose geometry guide ONLY; its gray dummy, red/blue chains and floor line MUST NOT appear anywhere in final artwork. Render the actual milk frog with its yellow muscles, white chest/belly/chin, green eyes, pink hands/feet, thick smooth black outlines and polished 2D shading, unchanged joyful open mouth and tongue. No costume or prop.\nThis is new run animation key pose 0%, NEAR leg forward contact, FAR leg in back recovery. Keep permanent foreground NEAR side and background FAR side. Follow the shoulder-elbow-wrist and hip-knee-ankle locations in guide. Near upper arm extends back toward image left while near thigh advances image right; near elbow is visibly behind shoulder. Far upper arm travels forward to the right with bent elbow and wrist in front of chest; far thigh points back and far knee bends to recover its foot visibly above the ground behind hip. Exactly TWO arms, TWO legs, both visible, fingers/toes clean; no ghosts, additional arms, unconnected hands or colored guides. Near hand keeps the same relaxed open pink shape as identity reference, far hand the same relaxed curled shape; do not change hand state when arm changes direction in future poses.\nFixed square camera/canvas, character facing image right in the same stable 3/4 side illustration as reference. Entire character fits comfortably inside 10% safe margins, sole of near contacting foot at 87% canvas height, far foot airborne, subject fixed scale and shoulder/hip pivot inherited from guide. No per-frame rescale or different camera. Transparent alpha background, no ground line or shadow, no lettering. Retain full head, hands, feet and black outline. Output only this one actual polished frog sprite.",
+      "refs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v1/canonical-v1.png",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-0.png"
+      ],
+      "notes": "Near contact; same original four-key source reused."
+    },
+    {
+      "index": 1,
+      "version": 1,
+      "key": "milkFrogMiddle1",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+      "prompt": "Generate ONE actual new inbetween run-frame of the EXACT milk-frog animation, frame1/12 (8.33% near-side LOADING). Reference1 is preceding key0 contact; Reference2 is next key25% toe-off. Preserve reference1 character face size, headtop around84px, pink/yellow/white materials, ink,1254 square fixed camera; do not invent another style or scale. These are final art references, no colored guide.\nMake a distinct TRANSITION one third of the way from reference1 to reference2, not an identical extreme. NEAR foreground thigh is still forward/right but less extended; near knee bends for WEIGHT LOADING, near foot remains contacting at COMMON source y1192, directly below and slightly in front of hip. FAR background recovering foot comes forward under pelvis, still lifted; far knee advances from left/back toward vertical below hip, distinctly visible behind near leg. Permanent two hip-knee-ankle chains, big foreground near thigh stays in FRONT at root.\nNEAR open pink hand/upper arm travels from BACK toward downward passing, halfway down/behind waist; near elbow less far-left than key0. It must not jump to full front-extreme chest pose yet. FAR curled hand arm travels from chest toward waist, distinct behind torso, it must not jump fully behind. Same permanent near OPEN hand and far CURLED hand in every frame. Exactly2arms2legs, no extra limbs/fingers or merged feet.\nHead/torso SAME size and surface markings as reference1; only subtle anatomical bob and limb motion. Running support load is slight knee flexion, not squatting. Both eyes open, stable cheerful face/gaze, no compulsory blink. Original canvas camera/sourceorigin never changes; max silhouette stays at least32px inside. Transparent alpha background, no floor/shadow/text. Output ONE clean rendered sprite, genuine intermediate frame.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png"
+      ],
+      "notes": "Loading geometry present, wrist travel overly large before repair."
+    },
+    {
+      "index": 1,
+      "version": 2,
+      "key": "milkFrogMiddle1Transition",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-a9fdbb3c-5fcb-4982-b732-17fc63b112d1.png",
+      "prompt": "Local EDIT of reference1 loading sprite to improve continuousARM travel ONLY. Keep its face/head/body/leggeometry, nearfootground/farfootairborne, source1254camera/materialidentical. Reference2 nextpassingframe shows nextwaisthandposition.\nNear foreground OPEN hand currentlylow/backx350,y735 mustbend UP/slightlyFORWARD around SAMEnearELBOW x445,y520 to NEARWRISTx475,y595 and openpink HANDCENTERx525,y650. Preserve nearupperarmbackward angle/shoulder x650,395, onlyFLEX its elbow/forearm naturally. Remove old lowlefthand/forearm, no ghost; nearhandOPENsamefourdigits. Its centerstaysleft/behindhip, not chestfrontextreme.\nFar background CURLED hand currentlyfarfrontx980,y600 moves DOWN/BACK towardWAIST centerx800,y650. Farshoulder/upperarmstaysfrombehindtorso, farelbow bendsappropriately, curledhandvisibleonrightbellyedge. Removeoldfullfrontextremefist, no extrahand; farhandCURLED notopen.\nThis fixes smoothhandtravel acrosskey0→loading→passing, keeping sameboneproportions, stable near/far armidentity. DO NOT redraw legstates, head/face/gaze/whitebelly/pinkfeet orrescale. Exactly2arms2legs, originalslightloadingpose. Transparentalpha/no shadows/marks/crop. OutputONEactualcleanintermediateloadingframe.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-809290e9-ed52-4cff-a2f0-87074f6b9ffb.png"
+      ],
+      "notes": "Local elbow/forearm repair shows near open hand between back and waist, retains near support."
+    },
+    {
+      "index": 2,
+      "version": 1,
+      "key": "milkFrogMiddle2",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-0378dbfe-e9e4-4157-8fcf-ba95dc0136bd.png",
+      "prompt": "Draw ONE actual inbetween milk-frog run sprite frame2/12,16.67%, NEAR midstance/FAR passing. Reference1 previous loading frame, reference2 next25% toeoff. Same exact1254squarecamera, scale, head/face, yellow/white/pink materials, polished2D highlights and outlines. Keep torso/neck/head shape, permanent near foreground OPEN hand and far background CURLED hand.\nThis must be visibly different from both references: near supporting BIG foreground thigh now moves back toward vertical UNDER HIP, near knee flexed below hip, near foot contacting fixedsourceground y1192 UNDER hip rather than far in front. Far background knee travels forward past near leg toward imageRIGHT; far pink ankle/foot is raised under/front pelvis at about y1000, NEVER on ground, so a clear passing leg is visible. Near big thigh/root occludes far hip; do not make near knee still hugely frontward. Exactlytwohip-knee-ankle chains, no merged limbs.\nArms continue smooth travel: NEAR upper arm now nearly vertical/slightly forward, near elbow ahead of shoulder, OPEN near hand passes WAIST in front of hip, not yet chest/front extreme. FAR curled arm now behind with far elbow behind shoulder and curled hand behind waist. Arm directions opposite same-side thighs. No pink hand state swaps, extra fingers or ghosts.\nCommon camera/floor y1192/sourceorigin, at least32px motion margin, full feet/head/hands. Preserve face size/expression/gaze with no blink or style change. Source material/surface spots stay consistent. Transparent alpha background, no shadow/text/line. Output only one clean actual distinct passing/loading pose.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png"
+      ],
+      "notes": "Far recovered foot still behind hip, did not truly pass front."
+    },
+    {
+      "index": 2,
+      "version": 2,
+      "key": "milkFrogMiddle2Repair",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-93de17a4-618b-4d40-9e40-d7efcfa7394d.png",
+      "prompt": "Precise local EDIT of reference1 passing frame: KEEP the head/face, body/arms/hands, near support leg and common1254camera EXACTLY AS DRAWN. Repair ONLY FAR BACKGROUND LOWERLEG/FOOT passing visibility.\nThe far thigh is the SMALL background yellow thigh visible on the RIGHT of the foreground big thigh, ending in the FAR knee around source x940,y790. It is correctly advancing forward. Its far calf should run DOWN from that knee to a LIFTED pink foot around x895,y1000 on the RIGHT/front of the near support shin. In reference1 the far pink foot incorrectly remains folded behind the hip on LEFT around x565,y875; REMOVE that old left far foot and connected wrong fold, then redraw ONE continuous far calf from the far knee down to the new airborne RIGHT foot. This is the permanent BACKGROUND far leg, not an extra3rdleg or a swap with big foreground near support thigh.\nThe BIG FOREGROUND near thigh and straight support shin remain untouched, sole contacts sameground y1192. Do not change near foot, head/body registration, open near hand in front and curled far hand behind. Exactly TWO legs, TWO arms, no ghost/floating ankle. Maintain yellow muscle proportions and pink webbedfoot identity, no severe length change. Background calf can hide partially behind foreground leg, but new lifted foot must visibly clear on RIGHT. Transparentalpha, no shadows/marks, fixedcamera/texture. Reference2 next toeoff shows same permanent far raised leg identity only. Output one clean corrected passing sprite.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-0378dbfe-e9e4-4157-8fcf-ba95dc0136bd.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png"
+      ],
+      "notes": "Far foot now moves down/front under far knee, airborne."
+    },
+    {
+      "index": 2,
+      "version": 3,
+      "key": "milkFrogMiddle2Transition",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-809290e9-ed52-4cff-a2f0-87074f6b9ffb.png",
+      "prompt": "Precise local EDIT reference1 passing frame ONLY NEAR arm pose, preserving its corrected FAR forward-airborne foot and NEAR grounded support leg, head/body/camera1254/muscles/material/face unchanged. Reference2 previousloading shows where near arm camefrom.\nThe foreground NEAR open pink hand is too far forward at x1000,y650, it jumped from back swing. Redraw this NEAR arm in TRUE WAIST-PASSING pose: near shoulder stays at SOURCE x650,y395; near upperarm drops nearlyVERTICAL to near ELBOW aroundx645,y600; near forearm folds slightlyFORWARD/down to WRISTaroundx705,y745, with OPEN pink handcenteraroundx735,y795 in front of waist/topthigh. Remove the OLD right-extremeopenhand and its originalforearm, no thirdarm/ghost. Do NOT move near shoulder orresizebone/torso; maintain connectedupperarm/elbow/wrist anatomy. Near hand staysrelaxedOPEN samefourpinkdigits.\nPermanent BACKGROUND FAR curled hand behindleft atx400,y600 stays curled and EXACTLYinplace; leave far arm alone. Its foregroundnear supportleg stays grounded, farfootstillraisedrightabouty1000 exactlyasinreference1. Preserveleg identity/supportside; no footchanges.\nSame fixedhead/facegreeneyes/happyexpression, originalshading/ink/pattern, transparentalpha and32pxmotionmargin. This isonlypassingarmqualityfix, not newfullfrontextreme orperframefit. OutputONE clean actual correctedintermediate with nearOPENhand atwaist.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-93de17a4-618b-4d40-9e40-d7efcfa7394d.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png"
+      ],
+      "notes": "Near open hand reduced toward waist rather than extreme front; support side retained."
+    },
+    {
+      "index": 3,
+      "version": 1,
+      "key": "milkFrogKey1",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+      "prompt": "Produce ONE next frame of this exact milk-frog animation. Reference1 is previous final key0: preserve its EXACT square camera, character scale, head/face shape, glossy yellow/white/pink textures and black ink style. Reference2 is ONLY pose structure and never final artwork: no red, blue, gray mannequin, floor line or markings in final output.\nKey25%: permanent foreground NEAR leg has moved BACK to toe-off; its thigh/knee are behind the hip (image LEFT) and foot reaches back low, not forward. Permanent background FAR thigh advances forward with knee HIGH (image RIGHT), its foot airborne ahead of hip. BOTH legs visible and distinct. Permanent foreground NEAR upper arm now swings FORWARD (elbow ahead of shoulder, image RIGHT), elbow flexed and pink hand at chest height IN FRONT. Its relaxed open pink hand remains OPEN exactly as key0 (do not replace it with a fist). Background FAR upper arm swings BACK (elbow behind shoulder/image LEFT) with its curled pink hand behind waist. Its curled hand remains curled, do not exchange hands/sides. Exactly two shoulder-elbow-wrist chains, two hip-knee-ankle chains. No extra limbs/ghosts. Upper arm and same-side thigh counterphase, not merely wrist moving.\nKeep the head and shoulder/hip pivot registration in same source pixels as key0, same body proportions, SAME cheerful green-eyed gaze/open mouth and tongue. Shoulder/hip subtle pose rotation only, do not change head size or white belly pattern. The guide defines pose directions, do not use its gray body proportions to redesign the frog. Fixed full square canvas 1254x1254 like first frame, source near contacting foot baseline y1190, never enlarge or crop extremities; at least32px space around entire maximum motion silhouette, preserve common camera for every next pose. Sole in toe-off may lift slightly but head scale must stay fixed.\nClean transparent alpha background; no shadows/props/text. Output one actual polished frog sprite.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-1.png"
+      ],
+      "notes": "Near toeoff / far high recovery; same key25 reused."
+    },
+    {
+      "index": 4,
+      "version": 1,
+      "key": "milkFrogMiddle4",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba654e65-9bc9-41dd-8212-f7fb5432a6eb.png",
+      "prompt": "ONE clean actual inbetween milk-frog frame4/12,33.33%, FIRST FLIGHT after near-leg toeoff. Reference1 key25% is exact character/camera/material starting frame. Reference2 corrected key50% shows upcoming far contact/near folded recovery. Interpolate one-third of their limb pose while preserving foreground/background permanent identities, exact1254 square scale and same face/head size/white material shape.\nCRITICAL both feet AIRBORNE above fixedground y1192: foreground NEAR big thigh still BACK/LEFT; near knee flexes and its old low-left pink foot LIFTS up to about y1030 while curling back under it. BACKGROUND FAR thigh continues FORWARD/right and FAR knee starts to extend for future landing; far foot advances right/down but remains above ground around y1110. Near footleft, far footright, both clearly visible and unattached to ground. Do not keep the previous left support toe on y1192; this frame is truly aerial. Body may rise by only~10px with same camera/scale, no big jump/zoom.\nNear OPEN hand remains forward but begins backswing slightly, far CURLED hand behind begins coming forward slightly; same hand anatomy/near/far identity, never trade open/fist. Exactlytwoarms/twolegs, correct hip/knee/ankle connections/occlusion; near backward big thigh in front at hip, far forward small thigh behind.\nPreserve green-eye gaze and happy open mouth/tongue, all colors/textures/outlines, no blink or restyle. Full silhouette inside32px fixedmotionenvelope, no crop. Transparentalpha background, no floor/marks/shadow. Output only ONE genuine distinct flight pose.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png"
+      ],
+      "notes": "Both feet visibly airborne after near toeoff; foreground near recovery back, far forward extension."
+    },
+    {
+      "index": 5,
+      "version": 1,
+      "key": "milkFrogMiddle5",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-83a10fc0-12be-4a21-98f3-2b53533af8ae.png",
+      "prompt": "ONE distinct clean inbetween frame5/12,41.67%, FAR pre-landing. Reference1 previous flight sprite, reference2 upcoming corrected50% FAR contact. Preserve exact1254 fixedcamera/scale, headshape/gaze/joyfulface/yellowwhitepink material and near OPEN/front hand plus far CURLED/backhand.\nThe permanent BACKGROUND FAR leg extends FORWARD/right further than reference1, its knee straighter and pink foot lowers close to commonground y1192 but stays AIRBORNE at sole y1168 (24px before contact). Far toes point forward/right, ankle neutral ready to land; no ground penetration or current footstillhigh at1110. Permanent FOREGROUND NEAR big thigh stays BACK/LEFT with bent knee/recovering calf and near footraised atleft abouty870. Near recovery thigh occludes far hip root, bothlimbs distinctlyvisible. Do not flip big foreground thigh forward; reference2 has correct leftnear/rightfar identity.\nNear open arm begins moving back slightly fromfront extreme; far curled arm begins moving forward but still behindtorso. Handstateandfinger/toe anatomy constant. Exactlytwoarms/twolegs, no floating/pinkghosts. No change head/torso proportions/texture; face stable with no blink. Full silhouette32px safeedge, transparentalpha/no shadow/floor/text. Output single ACTUAL clean prelanding transition, different from both neighbors.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba654e65-9bc9-41dd-8212-f7fb5432a6eb.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png"
+      ],
+      "notes": "Far foot descends toward ground; source actual alpha sole must be measured."
+    },
+    {
+      "index": 6,
+      "version": 1,
+      "key": "milkFrogKey2Register",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+      "prompt": "Precise animation registration repair of REFERENCE1, the corrected50% milk-frog key. Reference2 is key0 identity/camera/groundline ONLY, don't copy its leg support pose.\nPreserve reference1's exact foreground near thigh pointing DOWN-LEFT/back with folded near calf and pink recovery foot up at left. Preserve its background far thigh/rightward supporting leg, foreground open hand front and far curled hand behind. Exactly2arms2legs, no side exchange. This pose geometry is correct and MUST NOT be redesigned.\nFix ONLY fixed-camera registration: reference1 far contacting RIGHT foot sole is at source y1210, while the animation fixed ground is y1192. Bring the contacting foot sole to y1192, and the headtop from y106 back to y88 (same original1254square source pixels). This is a carefully drawn new source frame at the COMMON sequence camera/ground line, not auto-fit/rescale. Keep entire character at same SCALE and same neck/head proportions; move the connected pose UP18px, preserving all geometry and shading exactly, no new forehead/eye/mouth/hand anatomy. No stretching, no resizing. Maintain source head/torso width identical to key0 reference, same green eyes, cheerful expression and original yellow/white/pink materials.\nReference2 is provided for exact camera/face/material consistency. The near folding leg remains foreground LEFT, far supporting leg stays on RIGHT behind it. Do not change open pink fingers into a fist. Transparent background and no markings/line/shadow. Output one clean 1254x1254 sprite, no crop.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-2ad097ed-fa27-4e35-8584-324755f236e7.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png"
+      ],
+      "notes": "True far support from corrected50% source. Sole improved1210→1188 vsfixed1192, original18px failure retained."
+    },
+    {
+      "index": 7,
+      "version": 1,
+      "key": "milkFrogMiddle7",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-808abedb-aa4b-4511-878d-90c1b0fcc7ea.png",
+      "prompt": "Generate ONE actual milk-frog inbetween frame7/12,58.33%, FAR support LOADING / NEAR recovery. Reference1 corrected50% FAR contact is exact currentcharacter/camera/material, reference2 next75% NEAR high-knee/FAR toeoff. One-third transition, not copied extreme.\nPermanent BACKGROUND FAR leg remains CONTACTING ground y1192 and flexes knee for load, far foot moves from forward-right closer UNDER pelvis. The SMALL far thigh/root stays behind foreground hip and the far knee is below/slightly in front of hip, not a new foreground limb. Permanent FOREGROUND NEAR BIG thigh still angled back/down-left but begins advancing toward hip; its bent recovering calf and pink near foot come forward from left/back toward UNDER pelvis while remaining HIGH/airborne aroundy960. Two distinct connectedlegs, near bigger/thigh in FRONT at root, far smaller/thigh behind. No support-side swap or mergedfeet.\nNEAR OPEN arm/hand travels down and BACK from full front/chest toward WAIST, near elbow less forward than50% but not full back yet. FAR CURLED arm/hand travels FORWARD from behind waist toward passing alongside hip; far hand must remain visible and curled. Samehandstates throughsequence, no extras or changes in fingers.\nPreserve exact1254canvas fixedscale/camera, headshape/eye size/green gaze/joyfulface/tongue and yellow/white/pink spotshading/blackink. Only slight knee-load bob, no neck/headrescale. Contact sole fixedy1192, all silhouette32px inside. Transparentalpha/no ground/shadow/text. Output only a distinct clean actual FAR loading sprite.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png"
+      ],
+      "notes": "FAILED hand identities swapped and near knee prematurely raised."
+    },
+    {
+      "index": 7,
+      "version": 2,
+      "key": "milkFrogMiddle7Repair",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3618ec19-3629-437f-b1de-0dea2a0d86e9.png",
+      "prompt": "Local EDIT of reference1 frame7 only HAND STATES; all original leg geometry,body,head,camera1254square and materials remain as reference1. It accidentally swapped the permanent hands. Reference2 key0 shows correct hand identities.\nThe hand on IMAGE LEFT at source x405,y600 attached to the foreground NEAR shoulder/upperarm on left is the permanent NEAR hand. Replace its current curled FIST with the same relaxed OPEN pink four-digit hand from reference2; its wrist and armposition stay atleft/down-back. Do not move arm forward.\nThe hand on IMAGE RIGHT at x1000,y680 attached to the BACKGROUND FAR arm is the permanent FAR hand. Replace its current open palm with the same relaxed CURLED pink fist from reference2. Keep wrist/root at right/waist and preserve far arm/neararm occlusion; do not swap limbs.\nExactlytwoarms/twolegs; one open NEAR left-hand, one curled FAR right-hand. Keep existing near foreground recovery thigh/calf/foot and backgroundfar supportingleg SAME pose/shape, sole fixedsamebaseline. No finger ghosts or detachedpinkblobs. Same green-eyedface,gaze,scale/pose/shading/blackoutline/sourcepixelregistration. Transparentalpha, no crop/shadow/marks. OutputONE clean correctedframe with permanently correcthands.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-808abedb-aa4b-4511-878d-90c1b0fcc7ea.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png"
+      ],
+      "notes": "Hand states locally restored, still overly early extreme knee/arm transition."
+    },
+    {
+      "index": 7,
+      "version": 3,
+      "key": "milkFrogMiddle7Transition",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-70a02e58-32fe-40df-9b57-da43b0c14707.png",
+      "prompt": "Precise SECOND local transition repair of reference1 far-loading milkfrog. Keep exactlegpose, head, torso,scale1254camera and material. Its current arms jumped too rapidly from preceding50% reference2. Bring arms to INTERMEDIATE passing positions, NOT full back/front extremes.\nFOREGROUND NEAR OPEN hand remains OPEN and moves to SOURCE x470,y760 behind/alongside hip at WAIST. Its near upperarm starts shoulder x625,y390, near ELBOW aroundx515,y570, near WRIST aroundx470,y705. This yields modest backward/downward upperarm, connected bentforearm; remove its old far-left open hand at x290,y590, no ghosts. Near hand pointsdown naturalrunning, fourpinkdigits clean.\nBACKGROUND FAR CURLED hand remains CURLED and moves to SOURCE x830,y750, passing in front/alongside belly at WAIST. Its far upperarm emerges from behindshoulder nearx560,y380, far elbow under/infront atx700,y570, wristnearx790,y715. Remove the old far-right fist atx1030,y660. Keep fararm behindnearshoulder/torso occlusion with wrist/fist visibleonright, don't addthirdarm.\nThis source is58.33%transition, halfwaypassing upperarms insteadfull75%extreme. Both hand identity states preserved, botharmscontinuous/visible. LEGS/face stay asreference1, far support foot contactsunchangedcommonground, nearfootairborne. Transparentalpha, no shadows/coloredmarks/overspill. Preserve facial features and texture EXACT, outputone clean actual intermediateload sprite.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3618ec19-3629-437f-b1de-0dea2a0d86e9.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png"
+      ],
+      "notes": "Near arm moves moderately toward passing, near knee still premature high."
+    },
+    {
+      "index": 7,
+      "version": 4,
+      "key": "milkFrogMiddle7Load",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png",
+      "prompt": "Generate corrected58.33% FAR-loading inbetween, not a high-knee extreme. Reference1 corrected50% contact is exact identity/material/camera; reference2 next66.67% passing is target later. SAME1254squarecamera, headscale/face/yellowwhitepinktexture/headtoparound90px, no restyle.\nPermanent FOREGROUND NEAR bigthigh is still DOWN/back toward VERTICAL, nearhipsource~675,750→NEAR KNEE~640,930. Near calf foldsback/up to liftednear pinkfootaroundx500,y1010, above ground, slightlybehindhip. Do NOT raise the nearthigh horizontallyrightyet; that happensnextframe. The NEARthigh remainsinFRONTathip.\nPermanent BACKGROUND FAR support thigh/leg staysbehind; farhip~780,750→FARKNEE~790,950→FARcontactfoot~900,1192. Knee flexesonlyslightlyload. This is FARsupport, NEARrecovering; do not copynearfrontlegofkey0.\nNearupperarm travelsfromfronttowardpassing: NEAR SHOULDER~650,395→NEARELBOW~680,580→WRIST~775,665→NEAR OPENhandcenter~820,700 infront/alongsidewaist. Openhandnotfist, stillfront butlessfarforwardthan50%, notteleport toleftbackextreme. FAR SHOULDERbehind~590,395→FARELBOW~560,580→FARcurledhand~500,720 behindleftwaist. Keep FARhandCURLED, nearOPEN, twoarmsonly. Neitherhandgoesfullyfrontextreme/backextreme. Exacttheseproximalcounterphase/transitionalangles.\nCleanconnectedknees/ankles/wrists, samebones/proportions/pink webhandfeet. Fullbody32pxinside, transparentalpha/no marks/shadow. OutputONE true qualityintermediate farload pose with two visiblefeet/handidentities and moderatearmtravel.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png"
+      ],
+      "notes": "Near thigh remains down/back but foot stays behind; local intermediate next repair needed."
+    },
+    {
+      "index": 7,
+      "version": 5,
+      "key": "milkFrogMiddle7Leg",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-31d9394e-ec67-47ea-8b8f-ad595e47738e.png",
+      "prompt": "Precise local EDIT reference1 FAR-load sprite nearrecoveryLEG only, to make true intermediate knee/footpassing insteadrepeating folded-back extreme. Keep torso/head/arms/opennearhandfront/curledfarhandback, camera1254 and materialsunchanged.\nForeground NEAR bigthighcurrentlyrootaroundx650,y730 pointsleft/backtoknee~580,y900 and pinkfootfolds farbehindleft~320,y840. AdvanceTHISpermanentNEARknee to just UNDER/infrontHIP aroundx690,y920; thighnownearlyVERTICAL ratherbackwardorhorizontalfronthigh. Keep samefemurlength/muscularwidth. UnfoldnearcalfDOWN fromnearknee to NEARANKLE~x610,y1040, pinknearFOOTsole~y1090 aroundx640, stillAIRBORNE102pxaboveground1192 and belowhip. This footispassing UNDERpelvis, notleftrearhighfold. REMOVEoldleftpinknearfootandfoldedcalf, no3rdfoot/ghost. Nearrootstillforegroundoverfarhip.\nBackground FAR leg remainsgrounded onright exactlyasinreference1, samekneeshin/sole and permanentfaridentity. This correctionshowsnearlegfrombackrecoverytoUNDERpelvisbeforeNEXTforwardhighpassingframe (reference2), notinstantfront-highkey. Preserveexacthandstates/face/headscale/shading/yellowwhitepinkmaterial/blackink, no sourceresize/fit. Transparentalpha/no shadow/text/line/crop. Outputonecleanactualunderpelvisrecoverytransition.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e1665353-efbe-4f47-903d-aee79bcdba5a.png"
+      ],
+      "notes": "Near recovery foot now under pelvis and airborne; far support remains grounded; hand identity retained. Proportion/continuity still needs sequence QA."
+    },
+    {
+      "index": 8,
+      "version": 1,
+      "key": "milkFrogMiddle8",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png",
+      "prompt": "ONE true passing inbetween milk-frog frame8/12,66.67%, FAR support/NEAR passing. Reference1 currentfar-load sprite andreference2 future75% highnear-knee are finalart. Preserve SAME exact1254camera/head/face proportions/style/colors/whitebelly spots/yellow muscles/pink handandfeet/blackink.\nPermanent FOREGROUND NEAR BIG thigh advances FORWARD/right but near knee atonlymediumheight, not full high-knee extreme. Bend near calf DOWN, pink near footpasses in FRONT/right of hip at source~x830,y1010, clearly ABOVEGROUND1192. Remove old left/back near recovery foot atx450,y900; there is only ONE nearfoot, now forwardunderrightknee. Foreground near thigh in front atroot, background far hip behind.\nPermanent BACKGROUND FAR support leg shifts BACK/LEFT underbody, knee nearvertical/slightlybehindhip, footstillcontactsourceground1192 aroundx620 onleft. This lowerleft supportleg is the FAR leg, don't trade with nearbigthigh. Exactly2legs, far sole grounded while nearsole airborne, bothvisible with correctkneeanklechain.\nNear OPEN armnowmoderatelybackswing, openhandonleft/down aboutx470,y700; farelbow/curledFISTmoderatelyforward nearx920,y660. SameOPENnear/CURLEDfarstates, twoarms only, proximalcounterphase. Arms should not duplicatefull75%extreme yet. No hand/fingerghosts, no colorcontrols.\nStableheadscale,gaze/happyface/tongue; movementis passing/runnotstandingposeorjump. Groundline1192fixedsourcecanvas nofit, allsilhouette32pxinside, transparentalpha/no shadows/text. Outputonecleanactualforward-passingnearfootpose.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-70a02e58-32fe-40df-9b57-da43b0c14707.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png"
+      ],
+      "notes": "Near forward foot now visibly passing; near arm too early full back."
+    },
+    {
+      "index": 8,
+      "version": 2,
+      "key": "milkFrogMiddle8Transition",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e1665353-efbe-4f47-903d-aee79bcdba5a.png",
+      "prompt": "Local EDIT of reference1 near-passing sprite ONLY foreground NEAR arm to smooth motion from preceding reference2 FAR-load. Keep legpose/supportside/head/body/camera1254/colors/materialunchanged.\nNEAR OPENhand atleftx360,y650 currentlyjumps tooquickly back. ChangeONLYforearm/elbowangle to a WAIST-PASSING NEAR OPENhand center aroundSOURCE x680,y740. NearSHOULDER staysx625,y380; near UPPERARM still swingsBACK to nearELBOWaroundx500,y540 (behindshoulder), then bendFOREARM FORWARD/down towardWRISTx620,y690→openpalm680740. UpperarmBACK remainsoppositeforegroundnearTHIGHforward even ifwristsinfrontofhip; don't rotateupperarm forward. This is physical elbowflexion, not detachedfloatinghand or thirdarm. Removeoldleftopenhand/forearm entirely, keepONEopennearhand.\nBACKGROUND FAR CURLEDhand atfront/right~1050,550 and its arm remainunchanged. Preserve fullNEARraisedforwardfoot/FARgroundedsupportfootasreference1; sourceground1192fixed, no legredesign. Exactly2arms2legs, no pinkghosts/fingerchanges. Sameface size/gaze/smile/tongue/shading/ink/whitepattern, no sourcefit/rescale. Transparentalpha/no shadow/text/crop. OutputONEcorrectedpassingarmtransitiononly.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png"
+      ],
+      "notes": "Near upper arm remains back while forearm flexes/open hand passes waist; far support unchanged."
+    },
+    {
+      "index": 9,
+      "version": 1,
+      "key": "milkFrogKey3",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+      "prompt": "EDIT reference1 milk-frog key0 into run key75%. Reference2 is pose directions ONLY, no guide pixels/colors/ground/gray dummy in final.\nPreserve reference1 exact head size, facial shape and green-eyed cheerful gaze/open mouth/tongue, muscular yellow/white/pink glossy2D style/blackink, same camera and1254square canvas. Preserve the NEAR foreground open pink hand BEHIND the shoulder/waist on imageLEFT with upper arm swinging BACK, and FAR curled pink fist IN FRONT on imageRIGHT with upper arm swinging FORWARD. Those arm states from reference1 are already correct; do not swap hands or turn open hand into fist.\nChange LEGS: BIG NEAR FOREGROUND leg currently extending front/right toward ground must now be in high-knee recovery: NEAR thigh points FORWARD/right almost horizontally to the raised knee, lowerleg folds down/back and near pink FOOT remains AIRBORNE above ground in front of hip. Keep that big near thigh on TOP at hip overlap and in front of far leg. FAR BACKGROUND leg goes BACK/left in toe-off: far thigh points LEFT behind hip, its knee unfolds and lowerleg/pinkfoot reaches down/back to source ground baseline y1190 on left. The far leg is visible below/behind near thigh, not lost or a duplicate near leg.\nExactly two connected arms and two legs, open near hand behind, curled far fist forward; near high knee forward and far supporting leg back. Upper arms opposite same-side thigh directions. Preserve head/shoulder/hip pivot registration, no different head scale or torso fit. Full outline inside32px safety margins. Transparent alpha background, no shadow/text/reference lines/extra anatomy. Output ONE actual clean key75% frog sprite.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-3.png"
+      ],
+      "notes": "Far toeoff / near high recovery, same key75 source reused."
+    },
+    {
+      "index": 10,
+      "version": 1,
+      "key": "milkFrogMiddle10",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e866957e-10b8-4c63-aee6-b4d820a28d74.png",
+      "prompt": "Generate ONE actual inbetween milkfrog run frame10/12,83.33%, SECOND FLIGHT after FAR leg toeoff. Reference1 preceding75% highNEARknee/fartoeoff, reference2 upcoming0% NEARcontact defines exactsameidentity/scale/camera/material.\nBothfeet mustbe AIRBORNE above commonfloor y1192. Permanent BACKGROUND FAR leg left/backsupport foot LEAVES ground and curls UP behindhip to soleabouty1040 (leftside). Permanent FOREGROUND NEAR BIG thigh remainsforward/right; highnearKNEE opens/lowers slightly, lowerlegEXTENDS forward/down so nearpinkfoot reachesright aboutx1080,y1110, stillaboveground. Don'tkeep farleftfoot grounded, don't leave nearcalf foldedunderhiplike75%. Two visible connectedlegchains withnearrootforeground/farroothiddenbehind.\nArms transitiongradually from75% to0%: nearOPENhand stillbehindleft butstartingforward frombackextreme, wristaroundx300,y700; fareCURLEDhandstillfrontbutstartingback fromfrontextreme aroundx1040,y650. Neitherhandstate swaps; foreupperarm/oppositethighcounterphase, nobigteleport tootherextreme, exactlytwoarms/twolegs, no additionalpinkfeet/fingers/ghosts.\nSAME1254squarecanvas/scale/headsize/face/gaze/expression/blackink/muscleshading; bodyriseonly10pxnotzoom. Stableyellowskin/whitebelly/pinkwebhandsfeet. Allsilhouette32pxinside, transparentalpha/no floor/shadow/lettering/controlcolors. OutputONE cleangenuineaerialtransition readyfornextnearlanding.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png"
+      ],
+      "notes": "Both feet visibly airborne, near leg extending forward for landing, far foot curled behind."
+    },
+    {
+      "index": 11,
+      "version": 1,
+      "key": "milkFrogMiddle11",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-69af362b-1efe-4614-8874-a157177d22f2.png",
+      "prompt": "ONE actual clean milkfrog frame11/12,91.67%, NEAR prelanding that closes seamlessly to nextkey0. Reference1 previousflight83.33%; reference2 next0% nearcontact is exact finaltargetidentity/camera.\nPermanent FOREGROUND NEAR bigthigh extends forward/right and knee opens slightly more, near pinkfoot LOWERS to sole SOURCE y1168, just24pxabove fixedground1192 beforelanding. Sameforegroundnearroot/nearlegfromreference1, never swap. Permanent BACKGROUND FAR leg remains folded/recovering BEHIND hip with farpinkfoot raisedatleft near y870. Bothfeetvisible, no groundpenetration, two connectedchains. Nearprelanding footshould be closeinshape/position to reference2 contacting foot butstillairborne. This is notrepeatfullcontact.\nNEAR OPEN hand stays back/left but upperarm lowersslightlytowardcontact, handcenteraroundx240,y650 matchingnextkey0; FAR CURLED fist stays frontandlowersslightlyaroundx1060,y600 matchingnextkey0. Samepermanenthandstates/fingertoes, no ghosts/extraarms. Avoidlargearmteleport andface/material redraw. Faceheadscale/gaze/expression/whitebelly/headregistrationexactmatchingnextreference2, preserved1254squarecamera/sourceorigin.\nFullsilhouette32pxinside, transparentalpha/no shadow/line/lettering; stableyellowmuscularfrogwhitebellygreeneyespinkhandfeet polished2Dink. OutputONEgenuinecleanprelanding source that transitions tokey0 naturally.",
+      "refs": [
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e866957e-10b8-4c63-aee6-b4d820a28d74.png",
+        "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png"
+      ],
+      "notes": "Near foot lowered toward landing and cycle0; actual source contact line to measure, not assert prompt target."
+    }
+  ]
+}

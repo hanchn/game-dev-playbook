@@ -1,0 +1,1278 @@
+{
+  "schema": "equine-neck-browser-review-audit/v1",
+  "revision": "r4",
+  "productionChanged": false,
+  "visual": "failed",
+  "criteria": {
+    "sourceAndPngSHA": "exact",
+    "captureVsExportRGBA": "exact",
+    "videoFrameCount": "one per PNG plus terminal hold",
+    "maxNominalPTSErrorSeconds": 0.02
+  },
+  "captures": [
+    {
+      "directory": "graze-0.25x-r4-capture",
+      "clip": "graze",
+      "speed": 0.25,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 96,
+      "decodedCount": 97,
+      "countMatches": true,
+      "requestedDuration": 8,
+      "lastPTS": 8.004,
+      "maxNominalPTSErrorSeconds": 0.05466666666666642,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 6,
+          "phase": 0.0625
+        },
+        {
+          "index": 13,
+          "phase": 0.13541666666666666
+        },
+        {
+          "index": 19,
+          "phase": 0.19791666666666666
+        },
+        {
+          "index": 25,
+          "phase": 0.2604166666666667
+        },
+        {
+          "index": 32,
+          "phase": 0.3333333333333333
+        },
+        {
+          "index": 38,
+          "phase": 0.3958333333333333
+        },
+        {
+          "index": 44,
+          "phase": 0.4583333333333333
+        },
+        {
+          "index": 51,
+          "phase": 0.53125
+        },
+        {
+          "index": 57,
+          "phase": 0.59375
+        },
+        {
+          "index": 63,
+          "phase": 0.65625
+        },
+        {
+          "index": 70,
+          "phase": 0.7291666666666666
+        },
+        {
+          "index": 76,
+          "phase": 0.7916666666666666
+        },
+        {
+          "index": 82,
+          "phase": 0.8541666666666666
+        },
+        {
+          "index": 89,
+          "phase": 0.9270833333333334
+        },
+        {
+          "index": 95,
+          "phase": 0.9895833333333334
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "graze-1x-r4-capture",
+      "clip": "graze",
+      "speed": 1,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 24,
+      "decodedCount": 25,
+      "countMatches": true,
+      "requestedDuration": 2,
+      "lastPTS": 2.001,
+      "maxNominalPTSErrorSeconds": 0.034666666666666845,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 2,
+          "phase": 0.08333333333333333
+        },
+        {
+          "index": 3,
+          "phase": 0.125
+        },
+        {
+          "index": 5,
+          "phase": 0.20833333333333334
+        },
+        {
+          "index": 6,
+          "phase": 0.25
+        },
+        {
+          "index": 8,
+          "phase": 0.3333333333333333
+        },
+        {
+          "index": 9,
+          "phase": 0.375
+        },
+        {
+          "index": 11,
+          "phase": 0.4583333333333333
+        },
+        {
+          "index": 12,
+          "phase": 0.5
+        },
+        {
+          "index": 14,
+          "phase": 0.5833333333333334
+        },
+        {
+          "index": 15,
+          "phase": 0.625
+        },
+        {
+          "index": 17,
+          "phase": 0.7083333333333334
+        },
+        {
+          "index": 18,
+          "phase": 0.75
+        },
+        {
+          "index": 20,
+          "phase": 0.8333333333333334
+        },
+        {
+          "index": 21,
+          "phase": 0.875
+        },
+        {
+          "index": 23,
+          "phase": 0.9583333333333334
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "jump-0.25x-r4-capture",
+      "clip": "jump",
+      "speed": 0.25,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 58,
+      "decodedCount": 59,
+      "countMatches": true,
+      "requestedDuration": 4.8,
+      "lastPTS": 4.809,
+      "maxNominalPTSErrorSeconds": 0.05833333333333357,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 4,
+          "phase": 0.06944444444444445
+        },
+        {
+          "index": 8,
+          "phase": 0.1388888888888889
+        },
+        {
+          "index": 11,
+          "phase": 0.1909722222222222
+        },
+        {
+          "index": 15,
+          "phase": 0.2604166666666667
+        },
+        {
+          "index": 19,
+          "phase": 0.3298611111111111
+        },
+        {
+          "index": 23,
+          "phase": 0.3993055555555556
+        },
+        {
+          "index": 27,
+          "phase": 0.46875
+        },
+        {
+          "index": 30,
+          "phase": 0.5208333333333334
+        },
+        {
+          "index": 34,
+          "phase": 0.5902777777777778
+        },
+        {
+          "index": 38,
+          "phase": 0.6597222222222222
+        },
+        {
+          "index": 42,
+          "phase": 0.7291666666666667
+        },
+        {
+          "index": 46,
+          "phase": 0.7986111111111112
+        },
+        {
+          "index": 49,
+          "phase": 0.8506944444444444
+        },
+        {
+          "index": 53,
+          "phase": 0.920138888888889
+        },
+        {
+          "index": 57,
+          "phase": 0.9895833333333334
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "jump-1x-r4-capture",
+      "clip": "jump",
+      "speed": 1,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 15,
+      "decodedCount": 16,
+      "countMatches": true,
+      "requestedDuration": 1.2,
+      "lastPTS": 1.225,
+      "maxNominalPTSErrorSeconds": 0.0636666666666667,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 1,
+          "phase": 0.06944444444444445
+        },
+        {
+          "index": 2,
+          "phase": 0.1388888888888889
+        },
+        {
+          "index": 3,
+          "phase": 0.20833333333333334
+        },
+        {
+          "index": 4,
+          "phase": 0.2777777777777778
+        },
+        {
+          "index": 5,
+          "phase": 0.34722222222222227
+        },
+        {
+          "index": 6,
+          "phase": 0.4166666666666667
+        },
+        {
+          "index": 7,
+          "phase": 0.48611111111111116
+        },
+        {
+          "index": 7,
+          "phase": 0.48611111111111116
+        },
+        {
+          "index": 8,
+          "phase": 0.5555555555555556
+        },
+        {
+          "index": 9,
+          "phase": 0.625
+        },
+        {
+          "index": 10,
+          "phase": 0.6944444444444445
+        },
+        {
+          "index": 11,
+          "phase": 0.7638888888888888
+        },
+        {
+          "index": 12,
+          "phase": 0.8333333333333334
+        },
+        {
+          "index": 13,
+          "phase": 0.9027777777777778
+        },
+        {
+          "index": 14,
+          "phase": 0.9722222222222223
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "rear-0.25x-r4-capture",
+      "clip": "rear",
+      "speed": 0.25,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 77,
+      "decodedCount": 78,
+      "countMatches": true,
+      "requestedDuration": 6.4,
+      "lastPTS": 6.413,
+      "maxNominalPTSErrorSeconds": 0.06400000000000006,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 5,
+          "phase": 0.06510416666666667
+        },
+        {
+          "index": 10,
+          "phase": 0.13020833333333334
+        },
+        {
+          "index": 15,
+          "phase": 0.1953125
+        },
+        {
+          "index": 20,
+          "phase": 0.2604166666666667
+        },
+        {
+          "index": 25,
+          "phase": 0.3255208333333333
+        },
+        {
+          "index": 30,
+          "phase": 0.390625
+        },
+        {
+          "index": 35,
+          "phase": 0.45572916666666663
+        },
+        {
+          "index": 41,
+          "phase": 0.5338541666666666
+        },
+        {
+          "index": 46,
+          "phase": 0.5989583333333334
+        },
+        {
+          "index": 51,
+          "phase": 0.6640625
+        },
+        {
+          "index": 56,
+          "phase": 0.7291666666666666
+        },
+        {
+          "index": 61,
+          "phase": 0.7942708333333333
+        },
+        {
+          "index": 66,
+          "phase": 0.859375
+        },
+        {
+          "index": 71,
+          "phase": 0.9244791666666666
+        },
+        {
+          "index": 76,
+          "phase": 0.9895833333333333
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "rear-1x-r4-capture",
+      "clip": "rear",
+      "speed": 1,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 20,
+      "decodedCount": 21,
+      "countMatches": true,
+      "requestedDuration": 1.6,
+      "lastPTS": 1.621,
+      "maxNominalPTSErrorSeconds": 0.05800000000000005,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 1,
+          "phase": 0.05208333333333333
+        },
+        {
+          "index": 3,
+          "phase": 0.15625
+        },
+        {
+          "index": 4,
+          "phase": 0.20833333333333331
+        },
+        {
+          "index": 5,
+          "phase": 0.2604166666666667
+        },
+        {
+          "index": 6,
+          "phase": 0.3125
+        },
+        {
+          "index": 8,
+          "phase": 0.41666666666666663
+        },
+        {
+          "index": 9,
+          "phase": 0.46875
+        },
+        {
+          "index": 10,
+          "phase": 0.5208333333333334
+        },
+        {
+          "index": 11,
+          "phase": 0.5729166666666666
+        },
+        {
+          "index": 13,
+          "phase": 0.6770833333333333
+        },
+        {
+          "index": 14,
+          "phase": 0.7291666666666666
+        },
+        {
+          "index": 15,
+          "phase": 0.78125
+        },
+        {
+          "index": 16,
+          "phase": 0.8333333333333333
+        },
+        {
+          "index": 18,
+          "phase": 0.9375
+        },
+        {
+          "index": 19,
+          "phase": 0.9895833333333333
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "run-0.25x-r4-capture",
+      "clip": "run",
+      "speed": 0.25,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 32,
+      "decodedCount": 33,
+      "countMatches": true,
+      "requestedDuration": 2.6,
+      "lastPTS": 2.62,
+      "maxNominalPTSErrorSeconds": 0.024333333333333346,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 2,
+          "phase": 0.0641025641025641
+        },
+        {
+          "index": 4,
+          "phase": 0.1282051282051282
+        },
+        {
+          "index": 6,
+          "phase": 0.1923076923076923
+        },
+        {
+          "index": 8,
+          "phase": 0.2564102564102564
+        },
+        {
+          "index": 10,
+          "phase": 0.32051282051282054
+        },
+        {
+          "index": 12,
+          "phase": 0.3846153846153846
+        },
+        {
+          "index": 14,
+          "phase": 0.44871794871794873
+        },
+        {
+          "index": 17,
+          "phase": 0.5448717948717949
+        },
+        {
+          "index": 19,
+          "phase": 0.6089743589743589
+        },
+        {
+          "index": 21,
+          "phase": 0.673076923076923
+        },
+        {
+          "index": 23,
+          "phase": 0.7371794871794872
+        },
+        {
+          "index": 25,
+          "phase": 0.8012820512820513
+        },
+        {
+          "index": 27,
+          "phase": 0.8653846153846153
+        },
+        {
+          "index": 29,
+          "phase": 0.9294871794871794
+        },
+        {
+          "index": 31,
+          "phase": 0.9935897435897436
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "run-1x-r4-capture",
+      "clip": "run",
+      "speed": 1,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 8,
+      "decodedCount": 9,
+      "countMatches": true,
+      "requestedDuration": 0.65,
+      "lastPTS": 0.662,
+      "maxNominalPTSErrorSeconds": 0.026000000000000023,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 1,
+          "phase": 0.1282051282051282
+        },
+        {
+          "index": 1,
+          "phase": 0.1282051282051282
+        },
+        {
+          "index": 2,
+          "phase": 0.2564102564102564
+        },
+        {
+          "index": 2,
+          "phase": 0.2564102564102564
+        },
+        {
+          "index": 3,
+          "phase": 0.3846153846153846
+        },
+        {
+          "index": 3,
+          "phase": 0.3846153846153846
+        },
+        {
+          "index": 4,
+          "phase": 0.5128205128205128
+        },
+        {
+          "index": 4,
+          "phase": 0.5128205128205128
+        },
+        {
+          "index": 5,
+          "phase": 0.6410256410256411
+        },
+        {
+          "index": 5,
+          "phase": 0.6410256410256411
+        },
+        {
+          "index": 6,
+          "phase": 0.7692307692307692
+        },
+        {
+          "index": 6,
+          "phase": 0.7692307692307692
+        },
+        {
+          "index": 7,
+          "phase": 0.8974358974358975
+        },
+        {
+          "index": 7,
+          "phase": 0.8974358974358975
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "walk-0.25x-r4-capture",
+      "clip": "walk",
+      "speed": 0.25,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 48,
+      "decodedCount": 49,
+      "countMatches": true,
+      "requestedDuration": 4,
+      "lastPTS": 4.025,
+      "maxNominalPTSErrorSeconds": 0.0626666666666667,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 3,
+          "phase": 0.0625
+        },
+        {
+          "index": 6,
+          "phase": 0.125
+        },
+        {
+          "index": 9,
+          "phase": 0.1875
+        },
+        {
+          "index": 13,
+          "phase": 0.2708333333333333
+        },
+        {
+          "index": 16,
+          "phase": 0.3333333333333333
+        },
+        {
+          "index": 19,
+          "phase": 0.3958333333333333
+        },
+        {
+          "index": 22,
+          "phase": 0.4583333333333333
+        },
+        {
+          "index": 25,
+          "phase": 0.5208333333333334
+        },
+        {
+          "index": 28,
+          "phase": 0.5833333333333334
+        },
+        {
+          "index": 31,
+          "phase": 0.6458333333333334
+        },
+        {
+          "index": 34,
+          "phase": 0.7083333333333334
+        },
+        {
+          "index": 38,
+          "phase": 0.7916666666666666
+        },
+        {
+          "index": 41,
+          "phase": 0.8541666666666666
+        },
+        {
+          "index": 44,
+          "phase": 0.9166666666666666
+        },
+        {
+          "index": 47,
+          "phase": 0.9791666666666666
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    },
+    {
+      "directory": "walk-1x-r4-capture",
+      "clip": "walk",
+      "speed": 1,
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "pngCount": 12,
+      "decodedCount": 13,
+      "countMatches": true,
+      "requestedDuration": 1,
+      "lastPTS": 1.048,
+      "maxNominalPTSErrorSeconds": 0.06433333333333335,
+      "videoTiming": "failed",
+      "sourceChecks": [
+        {
+          "atlas": "/art/horse-side-parts-v5.png",
+          "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-cannon-parts-v8.png",
+          "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-upper-parts-v9.png",
+          "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+          "match": true
+        },
+        {
+          "atlas": "/art/horse-hoof-parts-v11.png",
+          "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+          "match": true
+        }
+      ],
+      "frameHashes": true,
+      "movieSHA": true,
+      "dimensions": [
+        1024,
+        420
+      ],
+      "indices": [
+        {
+          "index": 0,
+          "phase": 0
+        },
+        {
+          "index": 1,
+          "phase": 0.08333333333333333
+        },
+        {
+          "index": 1,
+          "phase": 0.08333333333333333
+        },
+        {
+          "index": 2,
+          "phase": 0.16666666666666666
+        },
+        {
+          "index": 3,
+          "phase": 0.25
+        },
+        {
+          "index": 4,
+          "phase": 0.3333333333333333
+        },
+        {
+          "index": 4,
+          "phase": 0.3333333333333333
+        },
+        {
+          "index": 5,
+          "phase": 0.4166666666666667
+        },
+        {
+          "index": 6,
+          "phase": 0.5
+        },
+        {
+          "index": 7,
+          "phase": 0.5833333333333334
+        },
+        {
+          "index": 7,
+          "phase": 0.5833333333333334
+        },
+        {
+          "index": 8,
+          "phase": 0.6666666666666666
+        },
+        {
+          "index": 9,
+          "phase": 0.75
+        },
+        {
+          "index": 10,
+          "phase": 0.8333333333333334
+        },
+        {
+          "index": 10,
+          "phase": 0.8333333333333334
+        },
+        {
+          "index": 11,
+          "phase": 0.9166666666666666
+        }
+      ],
+      "contactSheet": "candidate-contact16.png",
+      "visual": "pending-actual-image-review"
+    }
+  ],
+  "exports": [
+    {
+      "directory": "graze-light-r4-16frames",
+      "clip": "graze",
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "phaseCount": 16,
+      "imageCount": 32,
+      "sourceHashes": true,
+      "pngHashes": true,
+      "capturePhase0SameRGBA": true,
+      "rgbaDifferences": 0,
+      "camera": {
+        "canvas": [
+          1024,
+          420
+        ],
+        "single": [
+          512,
+          420
+        ],
+        "transform": {
+          "anchor": [
+            256,
+            350
+          ],
+          "scale": 1.3
+        },
+        "camera": "fixed",
+        "perFrameFit": false
+      },
+      "visual": "failed"
+    },
+    {
+      "directory": "jump-light-r4-16frames",
+      "clip": "jump",
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "phaseCount": 16,
+      "imageCount": 32,
+      "sourceHashes": true,
+      "pngHashes": true,
+      "capturePhase0SameRGBA": true,
+      "rgbaDifferences": 0,
+      "camera": {
+        "canvas": [
+          1024,
+          420
+        ],
+        "single": [
+          512,
+          420
+        ],
+        "transform": {
+          "anchor": [
+            256,
+            350
+          ],
+          "scale": 1.3
+        },
+        "camera": "fixed",
+        "perFrameFit": false
+      },
+      "visual": "failed"
+    },
+    {
+      "directory": "rear-light-r4-16frames",
+      "clip": "rear",
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "phaseCount": 16,
+      "imageCount": 32,
+      "sourceHashes": true,
+      "pngHashes": true,
+      "capturePhase0SameRGBA": true,
+      "rgbaDifferences": 0,
+      "camera": {
+        "canvas": [
+          1024,
+          420
+        ],
+        "single": [
+          512,
+          420
+        ],
+        "transform": {
+          "anchor": [
+            256,
+            350
+          ],
+          "scale": 1.3
+        },
+        "camera": "fixed",
+        "perFrameFit": false
+      },
+      "visual": "failed"
+    },
+    {
+      "directory": "run-light-r4-16frames",
+      "clip": "run",
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "phaseCount": 16,
+      "imageCount": 32,
+      "sourceHashes": true,
+      "pngHashes": true,
+      "capturePhase0SameRGBA": true,
+      "rgbaDifferences": 0,
+      "camera": {
+        "canvas": [
+          1024,
+          420
+        ],
+        "single": [
+          512,
+          420
+        ],
+        "transform": {
+          "anchor": [
+            256,
+            350
+          ],
+          "scale": 1.3
+        },
+        "camera": "fixed",
+        "perFrameFit": false
+      },
+      "visual": "failed"
+    },
+    {
+      "directory": "walk-light-r4-16frames",
+      "clip": "walk",
+      "asset": "horse-side-v24",
+      "binding": 24,
+      "phaseCount": 16,
+      "imageCount": 32,
+      "sourceHashes": true,
+      "pngHashes": true,
+      "capturePhase0SameRGBA": true,
+      "rgbaDifferences": 0,
+      "camera": {
+        "canvas": [
+          1024,
+          420
+        ],
+        "single": [
+          512,
+          420
+        ],
+        "transform": {
+          "anchor": [
+            256,
+            350
+          ],
+          "scale": 1.3
+        },
+        "camera": "fixed",
+        "perFrameFit": false
+      },
+      "visual": "failed"
+    }
+  ],
+  "assetIdentity": "passed",
+  "scope": "Actual browser downloads, real Canvas PNG buffers, source byte hashes, and decoded MediaRecorder frames. No game integration or anatomical acceptance."
+}

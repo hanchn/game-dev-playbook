@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-11T20:31:14.900033+00:00",
+  "overallStatus": "active",
+  "acceptance": "实际UI、源图、导出及逐动作视觉分别复核；技术通过不表示美术通过",
+  "items": [
+    {
+      "id": "navigation",
+      "title": "统一主要功能导航",
+      "status": "completed",
+      "observed": "角色工作台实测跳转帧动画工坊；每个主要工具顶部入口与当前页高亮。",
+      "evidence": [
+        "navigation-v1/frame-navigation.png"
+      ]
+    },
+    {
+      "id": "characters",
+      "title": "既有角色修复",
+      "status": "failed",
+      "observed": "恐龙腿踝、马全身、外星人翻滚、蛇盘曲仍失败。马三段专属前后腿与源图正在复测，其余角色按角色逐关节走查。 马v20斜向源UV分层已消除旧graze背上黑鬃条，仍有鬃根刀片硬端。主Canvas及16张固定camera Canvas缩略分批替代SVG，真实动作切换从3秒超时到0.512秒，候选播放13.1FPS/P95 135.4ms，仍非60FPS高可用。",
+      "evidence": [
+        "cast-review-v1/manifest.json",
+        "human-alien-v7/retest/roll-light.png",
+        "snake-side-v5/ui-coil-phase0533-dark-failed.png",
+        "horse-side-v20/ui-graze-phase0467-canvas-light-detail.png",
+        "horse-side-v20/ui-graze-canvas-performance-fullpage.png"
+      ]
+    },
+    {
+      "id": "alien-binding",
+      "title": "外星人肩腕踝绑定",
+      "status": "partial",
+      "observed": "v7行走、快跑和弯腰衔接在源图/16帧及实际UI中改善；不能继承旧版本全动作验收。 翻滚四组相同512画布/scale1.7候选已逐16帧复核：旧收下巴角度把头压进腿部，较少弯曲虽减少投影重叠却以颅骨接地，全部failed；真实单帧源的新准备姿势头变大且离1199地面77px，未注册。",
+      "evidence": [
+        "human-alien-v7/binding-repair.json",
+        "human-alien-v7/ui-run-phase025-dark.png",
+        "human-alien-roll-v8-candidates/receipt.json",
+        "alien-direct-roll-v1/source-qa.json",
+        "alien-direct-roll-v1/fixed-source-registration.png",
+        "alien-direct-roll-v1/generation-history.json"
+      ]
+    },
+    {
+      "id": "worm",
+      "title": "蚯蚓连续身体",
+      "status": "partial",
+      "observed": "最新worm-side-v6连续源v5，液压体节伸缩、材料UV和回位技术通过；旧节段切口已用连续源减轻，但前端形态、真实锚定推进与钻土遮挡仍未验收。",
+      "evidence": [
+        "worm-side-v6/qa-report.json",
+        "worm-side-v6/ui-walk-phase025-dark.png",
+        "worm-side-v5/ui-contract-phase0533-dark.png"
+      ]
+    },
+    {
+      "id": "frame-animation",
+      "title": "帧动画与拍摄",
+      "status": "failed",
+      "observed": "工具导入、编辑、播放、PNG/JSON/ZIP和WebM录制已实际测试。外星人批量12帧摆臂顺序/远侧肢体失败，改逐张关键姿势后补中间帧；最终外星人/奶蛙两种成片待完成。 原catch-milk-frog v15六帧及v15/v16十二帧已实际录制基线（不是新生成）：6PNG/7encoded、12PNG/13encoded，0..11修复浮点末帧遗漏后完整覆盖，技术已验证，源裁切和手型/轮廓跳变仍failed。两AI真实连续视频均107native帧已看，尚未产生美术通过影片。",
+      "evidence": [
+        "frame-animation-v1/qa-report.json",
+        "frame-animation-v1/milk-frog-native-baseline-v1/technical-qa.json",
+        "frame-animation-v1/milk-frog-native-baseline-v1/browser-v15-v16-capture/recording.webm"
+      ]
+    },
+    {
+      "id": "map-2d",
+      "title": "2D地图接缝与缩小性能",
+      "status": "partial",
+      "observed": "图集真实分栏注册、连续UV与Worker/LOD修复已实测；贴图多风格、细资产碰撞及2D视觉2.5D继续扩展。",
+      "evidence": [
+        "map-scenes-v1/qa-report.json",
+        "map-scenes-v1/ui-pixel-stripes-after.png",
+        "map-scenes-v1/ui-zoom4-after.png"
+      ]
+    },
+    {
+      "id": "map-3d",
+      "title": "3D贴图、精细资产与碰撞",
+      "status": "in-progress",
+      "observed": "成熟NoiseStack/分块源码、真实GLB资源已接入候选；正在补地表PBR与实际移动碰撞、导出和性能复核。此路径不等于2D视觉2.5D。 地图v7现11包1315项全部source SHA，39/39回归；真实城门双向通过/门柱阻挡，cave入口避河；修河床浅槽导致water ribbon间断。6CLI与真实浏览器GLB均Khronos0/0。整体河岸、重复地表、风格混用、室内与引擎导入仍未通过。",
+      "evidence": [
+        "map-terrain-3d-v1/qa-report.json",
+        "map-terrain-3d-v1/ui-river-banks-after-v7.png",
+        "map-terrain-3d-v1/ui-isometric-gate-ingress-layered-v4.png"
+      ]
+    },
+    {
+      "id": "ui-suite",
+      "title": "完整UI套图",
+      "status": "in-progress",
+      "observed": "恐龙整套真实页面及控件状态已生产；工作台成像、打包导出、实际布局与游戏接入继续复核。",
+      "evidence": [
+        "ui-kit-solution/art-qa-review.json"
+      ]
+    },
+    {
+      "id": "library",
+      "title": "扩展角色库及新形象",
+      "status": "queued",
+      "observed": "现有角色质量通过后再扩展；避免数量先于质量。",
+      "evidence": []
+    },
+    {
+      "id": "chicken-scenes",
+      "title": "多鸡与物种专属动作",
+      "status": "partial",
+      "observed": "入口已支持1–12只鸡、独立母鸡坐窝下蛋、公鸡四档开合打鸣、双鸡相向起跳/接触/退回/羽毛飞散。真实录制最新版编排5/渲染4：下蛋60PNG+61VP9帧5.004316s；打鸣36+37帧3.001885s；格斗48+49帧3.998827s，固定1280×720，CRC/源图与各PNG/video SHA及解码序列核对。视频像素MAE最大约2.013/255，PTS最大偏差22.667ms。技术可拍摄不表示美术通过：母鸡颈根/腿源材质、四档头颈纹理差、格斗受击差异与羽毛脱落部位仍failed。公鸡v4/母鸡v2已按各源喙与足底地标修peck最低接地；当前独立母鸡v3进一步分层候选仍未通过。旧影片及失败全部保留。 新编排7/渲染5已录：母鸡v5仅新腿源、腾空收腿/受击独立后撤/接触颈部轮廓羽/删除无攻防的二次弹跳和翼过渡。新三片分别60/36/48 PNG，均额外1 encoded末帧hold；最大MAE2.016/255、PTS最大19ms，273技术全回归通过。实际看完整contact和UI仍failed：母鸡坐窝前胸露金鳞/贴肉垫、嘴型纹理跳变、腿材质与攻防力度。保留原5/4及6/5失败版本。 母鸡v6真实坐窝与起身已消除前胸金黄鳞块/卵状股件；原始踝部金结节和腿比例仍failed。鸡群支持全母鸡/全公鸡/混合1–12只，编排8/渲染6原电影72PNG+73VP9、5.990935s已整段看；起步缺过渡记录failed。新编排9补0–.2s idle到walk角度过渡，首支撑源足底重解固定骨长IK，继承起步根位移偏移并保留停止锁脚，19/19核心与渲染技术测试、公母双朝向200起步采样及实际UI确认。新72帧电影已拍，技术核对及完整视觉再审中。 编排9/渲染6新电影完整72原帧已看，73VP9帧5.985484s，CRC/SHA通过，MAE最大2.290161/255，PTS最大13.333ms；正常UI播放器1280×720实际播放观察已记录，脚结节与比例仍failed。 编排10/渲染6打鸣加入真实原速录音；实际新影片36PNG/37VP9+Opus，2.999495s，音轨非静音，PNG视频MAE最大1.947907/255，PTS8ms。腿结节/嘴型下颈纹理仍failed，音轨解码不能代替人工听觉自然度。",
+      "evidence": [
+        "chicken-scenes-v2/capture-v4/validation.json",
+        "chicken-scenes-v2/capture-v4/chicken-flock.webm",
+        "chicken-scenes-v2/capture-v4/frames/026.png",
+        "chicken-scenes-v2/ui-flock-v3-delay-layout.png",
+        "chicken-scenes-v2/capture-v3/frames/060.png",
+        "chicken-scenes-v2/focused-regression.log",
+        "chicken-scenes-v2/ui-export-12-chickens-phase190.png",
+        "chicken-source-v4/hen-masked-dark.png",
+        "chicken-source-v4/extras-masked-light.png",
+        "chicken-scenes-v3/qa-report.json",
+        "chicken-scenes-v3/ui-lay-phase440-full.png",
+        "chicken-scenes-v3/ui-fight-phase150-full.png",
+        "chicken-scenes-v3/lay-capture-v2/validation.json",
+        "chicken-scenes-v3/crow-capture-v2/chicken-crow.webm",
+        "chicken-scenes-v3/fight-capture-v2/chicken-fight.webm",
+        "chicken-scenes-v3/full-regression.log",
+        "chicken-scenes-v3/full-regression-retest.log",
+        "chicken-scenes-v4/qa-report.json",
+        "chicken-scenes-v4/fight-capture-v2/chicken-fight.webm",
+        "chicken-scenes-v4/ui-hen-v5-phase150-full.png",
+        "chicken-scenes-v4/lay-capture-v2/validation.json",
+        "chicken-scenes-v4/mixed-flock-capture-v1/validation.json",
+        "chicken-scenes-v4/mixed-flock-capture-v2/capture.json",
+        "chicken-scenes-v4/ui-hen-v6-phase440-film-full.png",
+        "chicken-scenes-v4/ui-mixed-v9-phase010-full.png",
+        "chicken-scenes-v4/ui-mixed-v9-phase210-film-full.png",
+        "chicken-scenes-v4/start-transition-v9-retest.log",
+        "chicken-scenes-v4/mixed-flock-capture-v2/validation.json",
+        "chicken-scenes-v5/qa-report.json",
+        "chicken-scenes-v5/crow-audio-capture-v1/validation.json",
+        "chicken-scenes-v5/ui-crow-audio-v10-full.png"
+      ]
+    },
+    {
+      "id": "world-features",
+      "title": "山水地脉与语义地图对象",
+      "status": "partial",
+      "observed": "plannerVersion2：完整地基优先、邻区河道避让，独立placement缓存；技术24/24通过。河流布局改变，旧截图不能验新布局，实际3D/2D仍复测中。",
+      "evidence": [
+        "development-tools/world-foundation-river-v2.log"
+      ]
+    },
+    {
+      "id": "worm-hydrostat",
+      "title": "蚯蚓体节伸缩",
+      "status": "partial",
+      "observed": "worm-side-v6源v5：伸长变细/缩短变粗，逐体节体积proxy与材料UV稳定。实际UI和16固定帧已看，直身伸缩替代原上下摆动；前端外形、真实锚定推进、土壤钻入遮挡仍未通过。",
+      "evidence": [
+        "worm-side-v6/manifest.json",
+        "worm-side-v6/ui-walk-phase025-dark.png",
+        "worm-side-v6/walk-fixed-dark.png",
+        "development-tools/current-focused-v6.log"
+      ]
+    }
+  ]
+}

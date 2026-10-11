@@ -1,0 +1,307 @@
+{
+  "assetId": "human-alien-v6",
+  "joints": [
+    {
+      "partId": "neck",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 108,
+      "centerCovered": true,
+      "method": "skin-inside-collar-overlaps-cloth-rim",
+      "passed": true
+    },
+    {
+      "partId": "head",
+      "parent": "neck",
+      "samples": 65,
+      "minimumOverlapPixels": 9,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "leg-0-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 5,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "leg-0-lower",
+      "parent": "leg-0-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "leg-0-foot",
+      "parent": "leg-0-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 20,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "arm-0-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 159,
+      "centerCovered": {
+        "center": [
+          121,
+          155
+        ],
+        "rx": 34,
+        "ry": 44
+      },
+      "method": "skin-fills-transparent-armhole-and-overlaps-cloth-rim",
+      "passed": true
+    },
+    {
+      "partId": "arm-0-lower",
+      "parent": "arm-0-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "arm-0-hand",
+      "parent": "arm-0-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 17,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "leg-1-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 5,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "leg-1-lower",
+      "parent": "leg-1-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "leg-1-foot",
+      "parent": "leg-1-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 20,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "arm-1-upper",
+      "parent": "body",
+      "samples": 65,
+      "minimumOverlapPixels": 159,
+      "centerCovered": {
+        "center": [
+          121,
+          155
+        ],
+        "rx": 34,
+        "ry": 44
+      },
+      "method": "skin-fills-transparent-armhole-and-overlaps-cloth-rim",
+      "passed": true
+    },
+    {
+      "partId": "arm-1-lower",
+      "parent": "arm-1-upper",
+      "samples": 65,
+      "minimumOverlapPixels": 25,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    },
+    {
+      "partId": "arm-1-hand",
+      "parent": "arm-1-lower",
+      "samples": 65,
+      "minimumOverlapPixels": 17,
+      "centerCovered": true,
+      "method": "opaque-adjacent-overlap",
+      "passed": true
+    }
+  ],
+  "materials": [
+    {
+      "clip": "idle",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "walk",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "run",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "jump",
+      "hand": "open",
+      "slot": 11,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11
+      ],
+      "passed": true
+    },
+    {
+      "clip": "punch",
+      "hand": "fist",
+      "slot": 12,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "clip": "squat",
+      "hand": "open",
+      "slot": 11,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11
+      ],
+      "passed": true
+    },
+    {
+      "clip": "bend",
+      "hand": "relaxed",
+      "slot": 9,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "clip": "roll",
+      "hand": "open",
+      "slot": 11,
+      "slots": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11
+      ],
+      "passed": true
+    }
+  ],
+  "occlusion": [
+    {
+      "id": "collar-over-neck",
+      "passed": true
+    },
+    {
+      "id": "leg-0-foot-under-cuff",
+      "passed": true
+    },
+    {
+      "id": "leg-1-foot-under-cuff",
+      "passed": true
+    },
+    {
+      "id": "leg-0-upper-under-pelvis",
+      "passed": true
+    },
+    {
+      "id": "leg-1-upper-under-pelvis",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": "Opaque overlap detects gaps, not contour bumps or color seams; bending screenshots still require visual review. Ankle overlap is sampled inside the cuff, 4px above the rotation center."
+}

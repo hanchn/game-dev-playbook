@@ -1,0 +1,165 @@
+✔ same seed reproduces tiles independent of query order (1.877167ms)
+✔ negative coordinates use floor chunk coordinates with nonnegative local indices (0.08875ms)
+✔ adjacent chunks agree with direct global samples, including all shared boundaries (9.364292ms)
+✔ elevation and moisture have no discontinuity at chunk edges (1.958834ms)
+✔ cache never exceeds budget, evicts remote chunks, restores identical content (36.724125ms)
+✔ parameter validation rejects invalid seeds, sizes, coordinates and cache budget (0.341ms)
+✔ export schema includes stable row-major positions, traversal and resources (1.319792ms)
+✔ connectivity avoids row-wrap, picks safe spawn and rejects inaccessible spawn (0.444333ms)
+✔ biome and resource coverage across fixed seeds (159.98075ms)
+✔ tool entry point validates operation and emits independent versioned schemas (1.603417ms)
+✔ CLI invalid arguments and blocked regions return distinct machine-readable exit codes (151.828625ms)
+✔ vendored upstream Python chunks reproduce on return and Tiled uses negative origins (73.172209ms)
+✔ vendored source hashes are locked and upstream Python behavior is preserved (95.883417ms)
+✔ isometric projection/inverse preserves negative and fractional world coordinates (0.562333ms)
+✔ seeded overlapping windows share tiles and object identity/depth (1943.742917ms)
+✔ style switches choose actual different sprite pools and water policies (444.39825ms)
+✔ disc motion blocks water tile and building without tunnelling (0.610667ms)
+✔ invalid regions and styles fail visibly (0.131ms)
+✔ offline export has PNG, source hashes, copied sprite references and collision data (1596.999584ms)
+✔ castle uses an original-model-derived native 1024px PNG with a measured ground anchor (290.50275ms)
+✔ isometric castle compound walls preserve the real source arch and shared window identity (164.040334ms)
+✔ derived vegetation references actual source pixels, uses varied geometry and aligned jittered colliders (1785.89025ms)
+✔ continuous source ground uses identical negative world pixels across independently clipped regions (1736.891875ms)
+✖ actual water atlas renders texture detail with stable negative-world pattern across independent river windows (370.915916ms)
+✔ Wangscape C++ reference implementation compiles in a test harness and matches JS byte shares (1240.79125ms)
+✔ source hashes lock upstream and all three genuinely distinct raster atlases (6.584292ms)
+✔ terrain source sampling excludes transparent atlas edges that created black horizontal seams (306.5395ms)
+✔ corner material blending matches at both sides of every positive and negative chunk boundary (4.431375ms)
+✔ independently exported chunks stitch to the exact full-region RGBA at negative coordinates (97.294958ms)
+✔ decorative props use a halo: independent image windows stitch with the same alpha ordering (1248.801417ms)
+✔ styles retain identical world data and collisions; Tiled has real local artwork and unique collision IDs (621.302875ms)
+✔ real PNG export is reproducible and decorative alpha is preserved; source atlas is included (309.589667ms)
+✔ browser ZIP supports binary PNG bytes and passes independent Python ZIP CRC validation (108.301542ms)
+✔ style and pixel budget reject bad values; renderer texture cache remains bounded (3408.335ms)
+✔ registered source cells exclude foreign terrain: ocean pixels stay blue, snow avoids brown stripes (155.745666ms)
+✔ LOD cache preserves all 40 visible overview chunks without per-frame rebuild and enforces byte limits (82.350375ms)
+✔ planner3 rivers stitch identical RGBA in independently queried negative windows and export their capsule width (721.065916ms)
+✔ continuous scene disc sweep blocks a thin source river, props, and leaving the exported window (0.502167ms)
+✔ same seed produces identical geometry, layers, props and negative global samples (221.525792ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (113.501417ms)
+✔ three styles change actual geometry and model sets (214.369666ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (74.623042ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.646333ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.161875ms)
+✔ water and steep ground deny actual actor movement (0.125709ms)
+✔ object colliders reflect measured source model proportions (73.726667ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.724709ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (68.74675ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (229.357125ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (337.428334ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (228.986042ms)
+✔ castle source modules form eight unique placed parts, feature range limits avoid unbounded work (32.160667ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (50.499666ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.326083ms)
+✔ barren theme uses distinct bare-rock PBR, no water/buildings and gray object materials (43.282792ms)
+✔ actual source cave fixture faces downhill with flat entrance and a passable aperture (78.896125ms)
+✔ cave ground floor remains deterministic and continuous across adjacent negative chunks (211.006666ms)
+✔ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (25.317459ms)
+✔ native cave carve rejects crossing a stream instead of raising its channel (75.352166ms)
+✔ stream ribbon rounded joints and smooth channel keep actual 1m mesh above-water holes closed (45.484292ms)
+✔ preview collision samples actual mesh triangles rather than a different bilinear surface (80.459375ms)
+✔ global feature identity survives independent chunk queries and cache eviction (68.158458ms)
+✔ buildings validate whole footprints and reject flooded/steep terrain (3.794541ms)
+✔ streams descend across negative-coordinate regions, with bounded source travel (1.132708ms)
+✔ prepared neighboring terrain chunks apply the identical global river/ground height (12.2175ms)
+✔ invalid samples fail explicitly rather than placing bad objects (0.463916ms)
+✔ unrelated foundations cannot reset an active foundation height (0.147375ms)
+✔ foundation priority is independent of river enumeration order (0.110417ms)
+✔ global river paths avoid neighboring foundations with room for water width (66.073ms)
+✔ v3 source turns reject sharp return hooks and source curves retain downhill bank avoidance (1.131834ms)
+ℹ tests 70
+ℹ suites 0
+ℹ pass 69
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8413.622875
+
+✖ failing tests:
+
+test at test/map-isometric.test.mjs:17:1
+✖ actual water atlas renders texture detail with stable negative-world pattern across independent river windows (370.915916ms)
+  AssertionError [ERR_ASSERTION]: Expected "actual" not to be strictly deep-equal to:
+  
+  Uint8ClampedArray(196608) [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+  ...
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/map-isometric.test.mjs:17:1436)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Uint8ClampedArray(196608) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0,
+      ... 196508 more items
+    ],
+    expected: Uint8ClampedArray(196608) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0,
+      ... 196508 more items
+    ],
+    operator: 'notDeepStrictEqual',
+    diff: 'simple'
+  }

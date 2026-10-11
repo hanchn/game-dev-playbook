@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const cli=fileURLToPath(new URL('../scripts/keyframe-generator-cli.mjs',import.meta.url));
+const run=(...args)=>spawnSync(process.execPath,[cli,...args],{encoding:'utf8',maxBuffer:2000000});
+test('CLI generate/edit/validate/export data and embedded SVG; bad loop exits 2',()=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'keyframe-cli-')),input=path.join(dir,'timeline.json'),edits=path.join(dir,'edits.json'),output=path.join(dir,'edited.json'),svg=path.join(dir,'sheet.svg');try{assert.equal(run('generate','--species','human','--clip','run','--output',input).status,0);fs.writeFileSync(edits,JSON.stringify([{op:'rotate',keyIndex:8,partId:'arm-0-upper',degrees:20}]));assert.equal(run('edit','--input',input,'--edits',edits,'--output',output).status,0);const check=run('validate','--input',output);assert.equal(check.status,2);assert.equal(JSON.parse(check.stdout).checks[2].passed,false);const poses=run('export','--input',output,'--count','16');assert.equal(poses.status,0);assert.equal(JSON.parse(poses.stdout).frames.length,16);assert.equal(run('export','--input',input,'--format','svg','--count','4','--output',svg).status,0);const markup=fs.readFileSync(svg,'utf8');assert.equal((markup.match(/data:image\/png;base64/g)??[]).length,1);assert.match(markup,/href="#export-atlas"/);assert.equal(run('generate','--clip','missing-action').status,1);}finally{fs.rmSync(dir,{recursive:true,force:true});}});

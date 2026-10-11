@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "id": "human-side-v2",
+  "species": "human",
+  "name": "人",
+  "version": 2,
+  "design": {
+    "color": "#e1a34c",
+    "size": 1,
+    "stride": 23,
+    "view": "侧面 · 正交 · 朝右"
+  },
+  "parts": [
+    {
+      "id": "root",
+      "name": "装配原点",
+      "parent": null,
+      "shape": "anchor",
+      "rest": [
+        0,
+        0
+      ],
+      "dimensions": [
+        0,
+        0
+      ],
+      "layer": 0,
+      "material": "#e1a34c"
+    },
+    {
+      "id": "body",
+      "name": "躯干与骨盆",
+      "parent": "root",
+      "shape": "ellipse",
+      "rest": [
+        0,
+        -146
+      ],
+      "dimensions": [
+        36,
+        86
+      ],
+      "layer": 3,
+      "material": "#e1a34c",
+      "tile": 0
+    },
+    {
+      "id": "neck",
+      "name": "颈部",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        0,
+        -184
+      ],
+      "dimensions": [
+        16,
+        12
+      ],
+      "layer": 4,
+      "material": "#e1a34c",
+      "tile": 5,
+      "role": "neck",
+      "range": [
+        -20,
+        20
+      ]
+    },
+    {
+      "id": "head",
+      "name": "头部",
+      "parent": "neck",
+      "shape": "ellipse",
+      "rest": [
+        6,
+        -203
+      ],
+      "dimensions": [
+        29,
+        36
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "tile": 1,
+      "range": [
+        -15,
+        15
+      ]
+    },
+    {
+      "id": "leg-0-upper",
+      "name": "近侧大腿",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        0,
+        -106
+      ],
+      "dimensions": [
+        49,
+        18
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "tile": 2,
+      "leg": 0,
+      "side": "near",
+      "role": "upper",
+      "phase": 0,
+      "range": [
+        -40,
+        45
+      ]
+    },
+    {
+      "id": "leg-0-lower",
+      "name": "近侧小腿",
+      "parent": "leg-0-upper",
+      "shape": "bone",
+      "rest": [
+        0,
+        -57
+      ],
+      "dimensions": [
+        49,
+        12
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "tile": 3,
+      "leg": 0,
+      "side": "near",
+      "role": "lower",
+      "phase": 0,
+      "range": [
+        0,
+        145
+      ]
+    },
+    {
+      "id": "leg-0-foot",
+      "name": "近侧鞋与脚踝",
+      "parent": "leg-0-lower",
+      "shape": "foot",
+      "rest": [
+        0,
+        -11
+      ],
+      "dimensions": [
+        29,
+        16
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "tile": 4,
+      "leg": 0,
+      "side": "near",
+      "role": "foot",
+      "phase": 0,
+      "range": [
+        -20,
+        20
+      ]
+    },
+    {
+      "id": "arm-0-upper",
+      "name": "近侧上臂",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        0,
+        -176
+      ],
+      "dimensions": [
+        34,
+        14
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "tile": 7,
+      "arm": 0,
+      "role": "upper-arm",
+      "range": [
+        -35,
+        35
+      ]
+    },
+    {
+      "id": "arm-0-lower",
+      "name": "近侧前臂",
+      "parent": "arm-0-upper",
+      "shape": "bone",
+      "rest": [
+        0,
+        -147
+      ],
+      "dimensions": [
+        31,
+        11
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "tile": 8,
+      "arm": 0,
+      "role": "forearm",
+      "range": [
+        0,
+        140
+      ]
+    },
+    {
+      "id": "arm-0-hand",
+      "name": "近侧手",
+      "parent": "arm-0-lower",
+      "shape": "bone",
+      "rest": [
+        0,
+        -116
+      ],
+      "dimensions": [
+        16,
+        8
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "tile": 9,
+      "arm": 0,
+      "role": "hand",
+      "range": [
+        -25,
+        25
+      ]
+    },
+    {
+      "id": "leg-1-upper",
+      "name": "远侧大腿",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        0,
+        -106
+      ],
+      "dimensions": [
+        49,
+        18
+      ],
+      "layer": 1,
+      "material": "#e1a34c",
+      "tile": 2,
+      "leg": 1,
+      "side": "far",
+      "role": "upper",
+      "phase": 0.5,
+      "range": [
+        -40,
+        45
+      ]
+    },
+    {
+      "id": "leg-1-lower",
+      "name": "远侧小腿",
+      "parent": "leg-1-upper",
+      "shape": "bone",
+      "rest": [
+        0,
+        -57
+      ],
+      "dimensions": [
+        49,
+        12
+      ],
+      "layer": 1,
+      "material": "#e1a34c",
+      "tile": 3,
+      "leg": 1,
+      "side": "far",
+      "role": "lower",
+      "phase": 0.5,
+      "range": [
+        0,
+        145
+      ]
+    },
+    {
+      "id": "leg-1-foot",
+      "name": "远侧鞋与脚踝",
+      "parent": "leg-1-lower",
+      "shape": "foot",
+      "rest": [
+        0,
+        -11
+      ],
+      "dimensions": [
+        29,
+        16
+      ],
+      "layer": 1,
+      "material": "#e1a34c",
+      "tile": 4,
+      "leg": 1,
+      "side": "far",
+      "role": "foot",
+      "phase": 0.5,
+      "range": [
+        -20,
+        20
+      ]
+    },
+    {
+      "id": "arm-1-upper",
+      "name": "远侧上臂",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        0,
+        -176
+      ],
+      "dimensions": [
+        34,
+        14
+      ],
+      "layer": 1,
+      "material": "#e1a34c",
+      "tile": 7,
+      "arm": 1,
+      "role": "upper-arm",
+      "range": [
+        -35,
+        35
+      ]
+    },
+    {
+      "id": "arm-1-lower",
+      "name": "远侧前臂",
+      "parent": "arm-1-upper",
+      "shape": "bone",
+      "rest": [
+        0,
+        -147
+      ],
+      "dimensions": [
+        31,
+        11
+      ],
+      "layer": 1,
+      "material": "#e1a34c",
+      "tile": 8,
+      "arm": 1,
+      "role": "forearm",
+      "range": [
+        0,
+        140
+      ]
+    },
+    {
+      "id": "arm-1-hand",
+      "name": "远侧手",
+      "parent": "arm-1-lower",
+      "shape": "bone",
+      "rest": [
+        0,
+        -116
+      ],
+      "dimensions": [
+        16,
+        8
+      ],
+      "layer": 1,
+      "material": "#e1a34c",
+      "tile": 9,
+      "arm": 1,
+      "role": "hand",
+      "range": [
+        -25,
+        25
+      ]
+    }
+  ],
+  "clips": [
+    "walk",
+    "extend"
+  ],
+  "status": "draft",
+  "qa": {
+    "technical": "untested",
+    "visual": "pending"
+  },
+  "source": {
+    "kind": "generated-transparent-part-atlas",
+    "view": "side",
+    "projection": "orthographic",
+    "facing": "right",
+    "description": "自然外观的侧面透明贴图；内部轴点不绘制到游戏图集"
+  },
+  "actionDesign": {
+    "title": "人 · 侧面动作设计 v2",
+    "scope": "单件 → 肢体组合 → 完整角色",
+    "assembly": "固定正交侧面朝右。先远侧肢体，再躯干、颈头，最后近侧肢体。肩、肘、腕、髋、膝、踝轴点仅存在于骨骼数据中；贴图在连接处覆盖重叠，游戏导出不显示轴点。",
+    "actions": [
+      {
+        "id": "extend",
+        "name": "单配件屈伸",
+        "duration": 1,
+        "participants": "选中上臂、前臂、大腿、小腿或其对应肢体链；其余肢体固定",
+        "keyPoses": [
+          "0% 中性姿势",
+          "25% 正向屈曲",
+          "50% 中性姿势",
+          "75% 反向伸展",
+          "100% 回到起点"
+        ],
+        "timing": "单件模式只旋转选中关节，下游零件跟随；局部模式回放整条肢体",
+        "ranges": "上臂 ±28°；前臂 8–78°；髋 -15–35°；膝 15–85°；腕 ±18°；踝 ±15°",
+        "contact": "配件测试脚端悬空，不应用支撑锁地约束",
+        "acceptance": [
+          "父关节位置固定",
+          "骨段长度恒定",
+          "下游连接连续",
+          "非选中肢体保持静止",
+          "循环末首一致"
+        ]
+      },
+      {
+        "id": "walk",
+        "name": "侧面行走",
+        "duration": 1,
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-lower",
+          "leg-0-foot",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "leg-1-upper",
+          "leg-1-lower",
+          "leg-1-foot",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand"
+        ],
+        "keyPoses": [
+          "0% 近腿支撑，远腿回摆",
+          "25% 远脚抬起回摆，近臂后摆",
+          "50% 两腿交换",
+          "75% 近脚回摆，远臂后摆",
+          "100% 回到循环起点"
+        ],
+        "timing": "左右腿相差半周期；手臂与同侧腿反向；躯干起伏 1.5 px",
+        "ranges": "大腿与小腿长度 49 px；步幅不超过 23 px；回摆抬脚 18 px",
+        "contact": "支撑脚踝高度 -11 px，鞋底贴地；根运动单独输出以验证世界坐标脚端稳定",
+        "acceptance": [
+          "左右腿交替",
+          "支撑脚不滑动",
+          "鞋底不穿地",
+          "肩肘腕/髋膝踝连接不脱离",
+          "循环连续"
+        ],
+        "secondary": "颈头随躯干起伏，手随前臂方向；远侧绘制层级固定"
+      }
+    ],
+    "visualReview": [
+      "一个可见侧面眼睛，面部朝右",
+      "躯干、肢体、鞋统一侧面，不混入正面与俯视",
+      "关节没有机械卡点，快慢速检查重叠处裂缝",
+      "目标游戏尺寸检查轮廓和动作可读性"
+    ],
+    "limitations": [
+      "这是二维刚性零件动画，关节纹理变形仍需人工调整。",
+      "不自动把技术通过当作美术通过；俯拍、背面尚未制作。"
+    ]
+  },
+  "rendering": {
+    "atlas": "/art/human-side-parts-v2.png",
+    "view": "side",
+    "projection": "orthographic",
+    "facing": "right",
+    "rig": "human-side-v2",
+    "qa": "visual-pending"
+  }
+}

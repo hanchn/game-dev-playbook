@@ -1,0 +1,32 @@
+✔ same seed produces identical geometry, layers, props and negative global samples (505.165792ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (241.432083ms)
+✔ three styles change actual geometry and model sets (496.246208ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (181.76225ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.770625ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.145458ms)
+✔ water and steep ground deny actual actor movement (0.112375ms)
+✔ object colliders reflect measured source model proportions (179.928375ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.699916ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (68.220708ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (465.2475ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (769.74275ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (381.007ms)
+✔ castle source modules form eight unique placed parts, feature range limits avoid unbounded work (92.7715ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (148.319375ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.301542ms)
+✔ global feature identity survives independent chunk queries and cache eviction (69.810375ms)
+✔ buildings validate whole footprints and reject flooded/steep terrain (6.352459ms)
+✔ streams descend across negative-coordinate regions, with bounded source travel (0.902625ms)
+✔ prepared neighboring terrain chunks apply the identical global river/ground height (13.887583ms)
+✔ invalid samples fail explicitly rather than placing bad objects (0.288125ms)
+✔ unrelated foundations cannot reset an active foundation height (0.106417ms)
+✔ foundation priority is independent of river enumeration order (0.099792ms)
+✔ global river paths avoid neighboring foundations with room for water width (39.749208ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3629.822833

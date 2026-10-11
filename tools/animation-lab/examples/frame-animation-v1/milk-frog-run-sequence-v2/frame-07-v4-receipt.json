@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Generate corrected58.33% FAR-loading inbetween, not a high-knee extreme. Reference1 corrected50% contact is exact identity/material/camera; reference2 next66.67% passing is target later. SAME1254squarecamera, headscale/face/yellowwhitepinktexture/headtoparound90px, no restyle.\nPermanent FOREGROUND NEAR bigthigh is still DOWN/back toward VERTICAL, nearhipsource~675,750→NEAR KNEE~640,930. Near calf foldsback/up to liftednear pinkfootaroundx500,y1010, above ground, slightlybehindhip. Do NOT raise the nearthigh horizontallyrightyet; that happensnextframe. The NEARthigh remainsinFRONTathip.\nPermanent BACKGROUND FAR support thigh/leg staysbehind; farhip~780,750→FARKNEE~790,950→FARcontactfoot~900,1192. Knee flexesonlyslightlyload. This is FARsupport, NEARrecovering; do not copynearfrontlegofkey0.\nNearupperarm travelsfromfronttowardpassing: NEAR SHOULDER~650,395→NEARELBOW~680,580→WRIST~775,665→NEAR OPENhandcenter~820,700 infront/alongsidewaist. Openhandnotfist, stillfront butlessfarforwardthan50%, notteleport toleftbackextreme. FAR SHOULDERbehind~590,395→FARELBOW~560,580→FARcurledhand~500,720 behindleftwaist. Keep FARhandCURLED, nearOPEN, twoarmsonly. Neitherhandgoesfullyfrontextreme/backextreme. Exacttheseproximalcounterphase/transitionalangles.\nCleanconnectedknees/ankles/wrists, samebones/proportions/pink webhandfeet. Fullbody32pxinside, transparentalpha/no marks/shadow. OutputONE true qualityintermediate farload pose with two visiblefeet/handidentities and moderatearmtravel.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png",
+  "generatedFileSha256": "22dd8460c63ce2db381403c4b7f99abc27cdd4089a2234666b970370f4e01868",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+      "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png",
+      "sha256": "b706df3588033f8194ad483a07ab22ebee281961cb2d32e0bb0d9537a04af9fb"
+    }
+  ],
+  "phase": 1.75,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      260,
+      88,
+      846,
+      1121
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Near thigh remains down/back but foot stays behind; local intermediate next repair needed."
+  }
+}

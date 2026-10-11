@@ -1,0 +1,2674 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "alien-run-video-v1",
+  "loop": false,
+  "durationMs": 4441,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1024,
+    "height": 3584,
+    "cell": 256,
+    "columns": 4,
+    "rows": 14,
+    "padding": 12,
+    "fixedTransform": {
+      "mode": "sequence-common-canvas",
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "scale": 0.453125,
+      "scaleXY": [
+        0.45187165775401067,
+        0.453125
+      ],
+      "offset": [
+        43,
+        12
+      ],
+      "sourceAnchor": [
+        187,
+        512
+      ],
+      "anchor": [
+        127.5,
+        244
+      ],
+      "rasterRoundingPx": 0.5,
+      "registration": "source coordinates retained; no per-frame alpha fitting or automatic recentering"
+    },
+    "sha256": "f1d369d2305cc0cc839be233bf5fd81d1d017c5abc8de2866e6916fc35195854"
+  },
+  "provenance": {
+    "type": "video",
+    "file": "alien-run-video-v1.mp4",
+    "sha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+    "decoder": "HTMLVideoElement + Canvas",
+    "timestampAccuracy": "requested browser seek time; decoded mediaTime recorded when supplied",
+    "verification": "actual generated video SHA bound to task receipt; browser-decoded frames retain original background and reported mediaTime",
+    "sampleId": "alien-run-video-v1",
+    "generatedVideo": {
+      "tool": "rh-canvas / multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+      "prompt": "One continuous side-profile 3D game character animation, using reference image1 as the exact alien explorer identity, clothes, boots, face, eye, skin detail and camera/scale reference. Large speckled beige bald elongated cranium, blue eye, olive sleeveless vest, cream undershirt, brown cargo trousers and dark boots. Strict orthographic right-facing side view, camera entirely locked, character pelvis remains in the same horizontal location and stable body size, tiny natural pelvis bob only. Run in place for four seconds with about three complete natural left/right cycles. Show TWO arms and TWO legs at all times, permanent near/far identities; foreground near thigh carries the same outside cargo pocket. NEAR thigh swings forward as NEAR arm swings backward, then near thigh recovers backward as NEAR arm swings forward. FAR arm and leg alternate in opposite phases; far knee, far foot and far fist visibly emerge each cycle, never stay hidden/frozen. Each shoulder-elbow-wrist follows a continuous back-passing-front-passing arc with bent elbows and softly closed independent fists. Feet must pass through contact, weight bearing, toe-off, folded-heel recovery, high-knee passing, airborne phase, landing approach; alternate which foot supports. No extra hands/feet, no cycling two extreme still poses. Keep same head/eye/microtexture throughout, forward gaze and same friendly slight smile, no forced blink. Entire full body, every head/hand/boot remain within one fixed movement envelope with at least8% safe canvas margin; no zoom, no camera pan, no camera yaw, no recentering, no cuts. Ground plane and foot sole baseline stay fixed; no sliding supporting foot and no floating contact. Simple constant flat light-gray background, no props, text, graphics or additional person. This video is a real continuous motion probe; final transparency is not claimed.",
+      "receipt": {
+        "tool": "rh-canvas / multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+        "prompt": "One continuous side-profile 3D game character animation, using reference image1 as the exact alien explorer identity, clothes, boots, face, eye, skin detail and camera/scale reference. Large speckled beige bald elongated cranium, blue eye, olive sleeveless vest, cream undershirt, brown cargo trousers and dark boots. Strict orthographic right-facing side view, camera entirely locked, character pelvis remains in the same horizontal location and stable body size, tiny natural pelvis bob only. Run in place for four seconds with about three complete natural left/right cycles. Show TWO arms and TWO legs at all times, permanent near/far identities; foreground near thigh carries the same outside cargo pocket. NEAR thigh swings forward as NEAR arm swings backward, then near thigh recovers backward as NEAR arm swings forward. FAR arm and leg alternate in opposite phases; far knee, far foot and far fist visibly emerge each cycle, never stay hidden/frozen. Each shoulder-elbow-wrist follows a continuous back-passing-front-passing arc with bent elbows and softly closed independent fists. Feet must pass through contact, weight bearing, toe-off, folded-heel recovery, high-knee passing, airborne phase, landing approach; alternate which foot supports. No extra hands/feet, no cycling two extreme still poses. Keep same head/eye/microtexture throughout, forward gaze and same friendly slight smile, no forced blink. Entire full body, every head/hand/boot remain within one fixed movement envelope with at least8% safe canvas margin; no zoom, no camera pan, no camera yaw, no recentering, no cuts. Ground plane and foot sole baseline stay fixed; no sliding supporting foot and no floating contact. Simple constant flat light-gray background, no props, text, graphics or additional person. This video is a real continuous motion probe; final transparency is not claimed.",
+        "generatedFile": "tools/animation-lab/examples/frame-animation-v1/alien-run-video-probe-v1/download/2109340337821196290-1.mp4",
+        "generatedFileSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+        "taskId": "2109340337821196290",
+        "requestSha256": "3bc4e413a7cff04c507ad0ac011dd389fef0abce03f86fa1c3cfe75536d9f271",
+        "referenceSha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09",
+        "actualVideo": {
+          "codec": "h264",
+          "size": [
+            864,
+            1184
+          ],
+          "frameCount": 107,
+          "durationSeconds": 4.458333,
+          "fps": 24
+        },
+        "qa": {
+          "visual": "failed",
+          "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+          "reviewedAllOriginalFrames": 107,
+          "evidence": [
+            "native-contact-1.png",
+            "native-contact-2.png",
+            "native-contact-3.png",
+            "native-contact-4.png"
+          ],
+          "observations": [
+            {
+              "frames": [
+                0,
+                6,
+                8,
+                14,
+                21,
+                28,
+                34,
+                38,
+                45,
+                54,
+                62,
+                68,
+                77,
+                84,
+                90,
+                96,
+                104,
+                106
+              ],
+              "finding": "实际可见双臂经过髋附近和前/后换向，双腿前后交换，较逐张原图减少表面纹理骤变。只是局部改善，无整体通过。"
+            },
+            {
+              "frames": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                16,
+                17,
+                18,
+                19,
+                20,
+                34,
+                35,
+                36,
+                37,
+                38,
+                62,
+                63,
+                64,
+                65,
+                86,
+                87,
+                88,
+                89,
+                103,
+                104,
+                105
+              ],
+              "finding": "眨眼在约4.46秒内多次出现，且与步态反复同步。提示明确不强制眨眼，但输出仍频繁闭眼，脸部自然度未通过。"
+            },
+            {
+              "frames": [
+                5,
+                6,
+                7,
+                21,
+                22,
+                23,
+                35,
+                36,
+                37,
+                63,
+                64,
+                65,
+                77,
+                78,
+                89,
+                90,
+                91,
+                105,
+                106
+              ],
+              "finding": "双脚/手经过位轮廓会合，部分远侧链非常窄；需放大核对遮挡、近远身份稳定及支撑转移，不能从交替字段判断通过。"
+            },
+            {
+              "frames": [
+                0,
+                106
+              ],
+              "finding": "首末步态不同，原生素材非闭合循环。保留single-shot，不偷偷倒放或插假帧。"
+            }
+          ],
+          "sourceBackground": "original flat gray opaque video; not transparent sprite frames",
+          "status": "failed"
+        }
+      }
+    },
+    "sourceQA": "failed",
+    "sourceQANotes": [
+      "真实107帧H264视频，不是骨骼渲染",
+      "原生灰背景保留、无alpha",
+      "双臂/腿连续交换改善；眨眼、遮挡与闭环未通过"
+    ]
+  },
+  "visualQA": "failed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        12,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-1.png",
+      "phase": null,
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 83,
+      "sourceTime": 0,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "a3a2961d69af63e8fb71ca87ab8864dce1d541eabb99a116e16fddd1bf886cd9"
+    },
+    {
+      "index": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        12,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-2.png",
+      "phase": null,
+      "file": "frames/002.png",
+      "timeMs": 83,
+      "durationMs": 83,
+      "sourceTime": 0.08333333333333333,
+      "decodedTime": 0.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e9858d73a8bf229f01ce351ee6d5d556bdeb2e4d4586fc16a4e460d4b9e7caec"
+    },
+    {
+      "index": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        12,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-3.png",
+      "phase": null,
+      "file": "frames/003.png",
+      "timeMs": 166,
+      "durationMs": 83,
+      "sourceTime": 0.16666666666666666,
+      "decodedTime": 0.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "6a3713db6c6578cadc22dfd74354cc5b3c8de9856752daed72457431183102df"
+    },
+    {
+      "index": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        12,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-4.png",
+      "phase": null,
+      "file": "frames/004.png",
+      "timeMs": 249,
+      "durationMs": 83,
+      "sourceTime": 0.25,
+      "decodedTime": 0.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "baa652320121d6228c9a775f1db2937d4761b2ff7927f9fdd81bdbb36dbd2c06"
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        268,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-5.png",
+      "phase": null,
+      "file": "frames/005.png",
+      "timeMs": 332,
+      "durationMs": 83,
+      "sourceTime": 0.3333333333333333,
+      "decodedTime": 0.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e2a5362a88f08de6c022e6f7f46fbe4bcb1f9484883ea7aa2ab42b80fb308df5"
+    },
+    {
+      "index": 5,
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        268,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-6.png",
+      "phase": null,
+      "file": "frames/006.png",
+      "timeMs": 415,
+      "durationMs": 83,
+      "sourceTime": 0.4166666666666667,
+      "decodedTime": 0.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "af265a702918f6cc769fa348b9c530f6097fb8d607433ab18a64eba5ad15b156"
+    },
+    {
+      "index": 6,
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        268,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-7.png",
+      "phase": null,
+      "file": "frames/007.png",
+      "timeMs": 498,
+      "durationMs": 83,
+      "sourceTime": 0.5,
+      "decodedTime": 0.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "3a8a89856751d0f473a3dccc180b8d1a5b2d8415fb35a4a83715793d1bdfe095"
+    },
+    {
+      "index": 7,
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        268,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-8.png",
+      "phase": null,
+      "file": "frames/008.png",
+      "timeMs": 581,
+      "durationMs": 83,
+      "sourceTime": 0.5833333333333334,
+      "decodedTime": 0.541667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c595ef9e61396b3ba7ae4be518728484a44f1de8168c024edb712876671e2f16"
+    },
+    {
+      "index": 8,
+      "rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        524,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-9.png",
+      "phase": null,
+      "file": "frames/009.png",
+      "timeMs": 664,
+      "durationMs": 83,
+      "sourceTime": 0.6666666666666666,
+      "decodedTime": 0.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "a0e6b84dec0eb2ceb29d29f069473239c6c18ed9ab1a86e54b2bddad8f1ed8b8"
+    },
+    {
+      "index": 9,
+      "rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        524,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-10.png",
+      "phase": null,
+      "file": "frames/010.png",
+      "timeMs": 747,
+      "durationMs": 83,
+      "sourceTime": 0.75,
+      "decodedTime": 0.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "cee4cef2e5348ef6d3d8bf7fb763bb931d95ab918ae1fa283d260277fba1449c"
+    },
+    {
+      "index": 10,
+      "rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        524,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-11.png",
+      "phase": null,
+      "file": "frames/011.png",
+      "timeMs": 830,
+      "durationMs": 83,
+      "sourceTime": 0.8333333333333334,
+      "decodedTime": 0.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "b75feda2e9dea89453282f3c3cd3166c6a6e4d476ea3e2e3a7220ea91a31ba9e"
+    },
+    {
+      "index": 11,
+      "rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        524,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-12.png",
+      "phase": null,
+      "file": "frames/012.png",
+      "timeMs": 913,
+      "durationMs": 83,
+      "sourceTime": 0.9166666666666666,
+      "decodedTime": 0.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "12943c2c2e3a5ee061d5261d27fc84dd248f4a821d74b950f42335cc90f3b691"
+    },
+    {
+      "index": 12,
+      "rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        780,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-13.png",
+      "phase": null,
+      "file": "frames/013.png",
+      "timeMs": 996,
+      "durationMs": 83,
+      "sourceTime": 1,
+      "decodedTime": 1,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "9229924555c4492e213e3da9d421f69b78c132de0a7b165f18c8188790fb334e"
+    },
+    {
+      "index": 13,
+      "rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        780,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-14.png",
+      "phase": null,
+      "file": "frames/014.png",
+      "timeMs": 1079,
+      "durationMs": 83,
+      "sourceTime": 1.0833333333333333,
+      "decodedTime": 1.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "dbbbd6020880f497c4124372dc4ab80d530fdd1acb4feb1b2e4e462e4f6dfc1d"
+    },
+    {
+      "index": 14,
+      "rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        780,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-15.png",
+      "phase": null,
+      "file": "frames/015.png",
+      "timeMs": 1162,
+      "durationMs": 83,
+      "sourceTime": 1.1666666666666667,
+      "decodedTime": 1.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "679cd48ed765c4d4bd91923aca880d2024f6dedd0099ac6db4c830f611dd8827"
+    },
+    {
+      "index": 15,
+      "rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        780,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-16.png",
+      "phase": null,
+      "file": "frames/016.png",
+      "timeMs": 1245,
+      "durationMs": 83,
+      "sourceTime": 1.25,
+      "decodedTime": 1.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "904199acab27ce4bbb5277bf452c3b9e0c003b193d2928ee7139c2e72bad0ee5"
+    },
+    {
+      "index": 16,
+      "rect": [
+        0,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        1036,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-17.png",
+      "phase": null,
+      "file": "frames/017.png",
+      "timeMs": 1328,
+      "durationMs": 83,
+      "sourceTime": 1.3333333333333333,
+      "decodedTime": 1.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "67712f0f5cea766f379ea3c77e897b2ee7848a2e8a644c12d89ca9d94bba7735"
+    },
+    {
+      "index": 17,
+      "rect": [
+        256,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        1036,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-18.png",
+      "phase": null,
+      "file": "frames/018.png",
+      "timeMs": 1411,
+      "durationMs": 83,
+      "sourceTime": 1.4166666666666667,
+      "decodedTime": 1.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "83cb407886321cd78b72ab1accc35a49fb4934a56dc7ac92797317ef1cf08fd9"
+    },
+    {
+      "index": 18,
+      "rect": [
+        512,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        1036,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-19.png",
+      "phase": null,
+      "file": "frames/019.png",
+      "timeMs": 1494,
+      "durationMs": 83,
+      "sourceTime": 1.5,
+      "decodedTime": 1.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "d7fa31ef30e315931bcb7a663d0e64fe4accd33bb7300d500aa7071111b3de14"
+    },
+    {
+      "index": 19,
+      "rect": [
+        768,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        1036,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-20.png",
+      "phase": null,
+      "file": "frames/020.png",
+      "timeMs": 1577,
+      "durationMs": 83,
+      "sourceTime": 1.5833333333333333,
+      "decodedTime": 1.541667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "655d85f219ab3c619b0ad33c9994dfdb36db23b72580b477b2762c1d5e3e3450"
+    },
+    {
+      "index": 20,
+      "rect": [
+        0,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        1292,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-21.png",
+      "phase": null,
+      "file": "frames/021.png",
+      "timeMs": 1660,
+      "durationMs": 83,
+      "sourceTime": 1.6666666666666667,
+      "decodedTime": 1.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "1d451cb5d14176402b232dcb90ff37f809d8ad23e66be60d646d274af3894356"
+    },
+    {
+      "index": 21,
+      "rect": [
+        256,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        1292,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-22.png",
+      "phase": null,
+      "file": "frames/022.png",
+      "timeMs": 1743,
+      "durationMs": 83,
+      "sourceTime": 1.75,
+      "decodedTime": 1.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e241331d8c5e18bec0413952b4c5e119e0d8b9aac2fec1854fa6d8b79a15c02e"
+    },
+    {
+      "index": 22,
+      "rect": [
+        512,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        1292,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-23.png",
+      "phase": null,
+      "file": "frames/023.png",
+      "timeMs": 1826,
+      "durationMs": 83,
+      "sourceTime": 1.8333333333333333,
+      "decodedTime": 1.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "2676ff66a8f478fa4a05aa0733e696d371f5ddb3d2e055fddd023972c92e32e4"
+    },
+    {
+      "index": 23,
+      "rect": [
+        768,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        1292,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-24.png",
+      "phase": null,
+      "file": "frames/024.png",
+      "timeMs": 1909,
+      "durationMs": 83,
+      "sourceTime": 1.9166666666666667,
+      "decodedTime": 1.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "5d0d14959658c19ba55080c83422f96fd155463d49832779d552b7178981f811"
+    },
+    {
+      "index": 24,
+      "rect": [
+        0,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        1548,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-25.png",
+      "phase": null,
+      "file": "frames/025.png",
+      "timeMs": 1992,
+      "durationMs": 83,
+      "sourceTime": 2,
+      "decodedTime": 2,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e556655cfdf584be19081846d341923f0d1e9e05d099b8e609395291d4f590dd"
+    },
+    {
+      "index": 25,
+      "rect": [
+        256,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        1548,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-26.png",
+      "phase": null,
+      "file": "frames/026.png",
+      "timeMs": 2075,
+      "durationMs": 83,
+      "sourceTime": 2.0833333333333335,
+      "decodedTime": 2.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "43d0d5e7ed0fdb2ca91f5200e6316f501736dd68c710c2db27b602d2a2da05a3"
+    },
+    {
+      "index": 26,
+      "rect": [
+        512,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        1548,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-27.png",
+      "phase": null,
+      "file": "frames/027.png",
+      "timeMs": 2158,
+      "durationMs": 83,
+      "sourceTime": 2.1666666666666665,
+      "decodedTime": 2.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "760f3b224aae347883cad3f7f5bd6f80548c05b2f4cadf5342a8bd317a1aef24"
+    },
+    {
+      "index": 27,
+      "rect": [
+        768,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        1548,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-28.png",
+      "phase": null,
+      "file": "frames/028.png",
+      "timeMs": 2241,
+      "durationMs": 83,
+      "sourceTime": 2.25,
+      "decodedTime": 2.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "232624ae9c20740e43ec35fcd809f0ac55e96380f810c24f07be33ec0e548c52"
+    },
+    {
+      "index": 28,
+      "rect": [
+        0,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        1804,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-29.png",
+      "phase": null,
+      "file": "frames/029.png",
+      "timeMs": 2324,
+      "durationMs": 83,
+      "sourceTime": 2.3333333333333335,
+      "decodedTime": 2.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "06da86614c33b95a8c32115670d50c373b6a3aeada5011bf2aef27eb0d80f0a3"
+    },
+    {
+      "index": 29,
+      "rect": [
+        256,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        1804,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-30.png",
+      "phase": null,
+      "file": "frames/030.png",
+      "timeMs": 2407,
+      "durationMs": 83,
+      "sourceTime": 2.4166666666666665,
+      "decodedTime": 2.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "b37160732270b437dbcc576b0fb769fd39895fdbf3db758918c4f8bfd6f02898"
+    },
+    {
+      "index": 30,
+      "rect": [
+        512,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        1804,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-31.png",
+      "phase": null,
+      "file": "frames/031.png",
+      "timeMs": 2490,
+      "durationMs": 83,
+      "sourceTime": 2.5,
+      "decodedTime": 2.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "3e4290014c4a758578dab542ab5c6f6fd870b0eb7ecfaec520baf366f11022f7"
+    },
+    {
+      "index": 31,
+      "rect": [
+        768,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        1804,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-32.png",
+      "phase": null,
+      "file": "frames/032.png",
+      "timeMs": 2573,
+      "durationMs": 83,
+      "sourceTime": 2.5833333333333335,
+      "decodedTime": 2.583333,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "01ea575f000b930c904e6544ccccc93cffbb75670ba17b68ec1d1eed9c790bfc"
+    },
+    {
+      "index": 32,
+      "rect": [
+        0,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        2060,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-33.png",
+      "phase": null,
+      "file": "frames/033.png",
+      "timeMs": 2656,
+      "durationMs": 83,
+      "sourceTime": 2.6666666666666665,
+      "decodedTime": 2.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e20596ecc2ed17e7619638dbc8f582e2b2cc6fab5d5b046046628e091e6c41b0"
+    },
+    {
+      "index": 33,
+      "rect": [
+        256,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        2060,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-34.png",
+      "phase": null,
+      "file": "frames/034.png",
+      "timeMs": 2739,
+      "durationMs": 83,
+      "sourceTime": 2.75,
+      "decodedTime": 2.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "7553526230a54572487daee9cada680432092cbd8936f4d072b77b4f84045f23"
+    },
+    {
+      "index": 34,
+      "rect": [
+        512,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        2060,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-35.png",
+      "phase": null,
+      "file": "frames/035.png",
+      "timeMs": 2822,
+      "durationMs": 83,
+      "sourceTime": 2.8333333333333335,
+      "decodedTime": 2.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "5799dfe3c02d52e81fca941e73c04e5ff085f809b0864b34b307238b401fe4dc"
+    },
+    {
+      "index": 35,
+      "rect": [
+        768,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        2060,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-36.png",
+      "phase": null,
+      "file": "frames/036.png",
+      "timeMs": 2905,
+      "durationMs": 83,
+      "sourceTime": 2.9166666666666665,
+      "decodedTime": 2.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "d1d65e39a4bbdb112f9fe907792d5d9d332b372451a6d012e532bc11dac4b80a"
+    },
+    {
+      "index": 36,
+      "rect": [
+        0,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        2316,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-37.png",
+      "phase": null,
+      "file": "frames/037.png",
+      "timeMs": 2988,
+      "durationMs": 83,
+      "sourceTime": 3,
+      "decodedTime": 3,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "cc9dc54243ecad948f0e32704758aedb4a10c2ef9a76cf440df7f493769e304d"
+    },
+    {
+      "index": 37,
+      "rect": [
+        256,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        2316,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-38.png",
+      "phase": null,
+      "file": "frames/038.png",
+      "timeMs": 3071,
+      "durationMs": 83,
+      "sourceTime": 3.0833333333333335,
+      "decodedTime": 3.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "5be5e0d93dfb662db324ec6e2098367aab84afd675463bf5ec854b8b95250da2"
+    },
+    {
+      "index": 38,
+      "rect": [
+        512,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        2316,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-39.png",
+      "phase": null,
+      "file": "frames/039.png",
+      "timeMs": 3154,
+      "durationMs": 83,
+      "sourceTime": 3.1666666666666665,
+      "decodedTime": 3.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "ccac7ac066ec0e467110df134f1b46f5d92887d6fcb0bd60d023adcf115b5fae"
+    },
+    {
+      "index": 39,
+      "rect": [
+        768,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        2316,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-40.png",
+      "phase": null,
+      "file": "frames/040.png",
+      "timeMs": 3237,
+      "durationMs": 83,
+      "sourceTime": 3.25,
+      "decodedTime": 3.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e8f1199dc084e71324293857ef342377586d38474940b267e7a1b120f3bea158"
+    },
+    {
+      "index": 40,
+      "rect": [
+        0,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        2572,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-41.png",
+      "phase": null,
+      "file": "frames/041.png",
+      "timeMs": 3320,
+      "durationMs": 83,
+      "sourceTime": 3.3333333333333335,
+      "decodedTime": 3.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "00d5c14c31c3acb5f2a9381502d40307100d04b7a6687efeae179abec1e48711"
+    },
+    {
+      "index": 41,
+      "rect": [
+        256,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        2572,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-42.png",
+      "phase": null,
+      "file": "frames/042.png",
+      "timeMs": 3403,
+      "durationMs": 83,
+      "sourceTime": 3.4166666666666665,
+      "decodedTime": 3.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c6be4af56734b001268443099e644b6c762b309ec4fab5f39fc9cd272d6ae923"
+    },
+    {
+      "index": 42,
+      "rect": [
+        512,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        2572,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-43.png",
+      "phase": null,
+      "file": "frames/043.png",
+      "timeMs": 3486,
+      "durationMs": 83,
+      "sourceTime": 3.5,
+      "decodedTime": 3.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "5c5afdb300e3f6608aa855466f19c5455b8caec138c23d90532eb131901798f7"
+    },
+    {
+      "index": 43,
+      "rect": [
+        768,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        2572,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-44.png",
+      "phase": null,
+      "file": "frames/044.png",
+      "timeMs": 3569,
+      "durationMs": 83,
+      "sourceTime": 3.5833333333333335,
+      "decodedTime": 3.541667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c1303cc9d51b202a2d1cfbfc5eec66f8d51ebbc686f4da71b2c55a01c7a855db"
+    },
+    {
+      "index": 44,
+      "rect": [
+        0,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        2828,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-45.png",
+      "phase": null,
+      "file": "frames/045.png",
+      "timeMs": 3652,
+      "durationMs": 83,
+      "sourceTime": 3.6666666666666665,
+      "decodedTime": 3.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "860edc1ec9e552803311cbca38b330a4c41874949bb9a7eeb94a1820f05393fd"
+    },
+    {
+      "index": 45,
+      "rect": [
+        256,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        2828,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-46.png",
+      "phase": null,
+      "file": "frames/046.png",
+      "timeMs": 3735,
+      "durationMs": 83,
+      "sourceTime": 3.75,
+      "decodedTime": 3.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "9f74cd380f0c2904349bc99eb545c8ada592b2f428c87f2e7ee8645b4d996651"
+    },
+    {
+      "index": 46,
+      "rect": [
+        512,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        2828,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-47.png",
+      "phase": null,
+      "file": "frames/047.png",
+      "timeMs": 3818,
+      "durationMs": 83,
+      "sourceTime": 3.8333333333333335,
+      "decodedTime": 3.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "fbe6d7a3289d9c17f53dadf3e97bcdd14657a63d832de2d28055f9aa427d2fd8"
+    },
+    {
+      "index": 47,
+      "rect": [
+        768,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        2828,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-48.png",
+      "phase": null,
+      "file": "frames/048.png",
+      "timeMs": 3901,
+      "durationMs": 83,
+      "sourceTime": 3.9166666666666665,
+      "decodedTime": 3.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "8fd86ed2d30b21de85202b2a3309431f9eae9c96484feffa3c6b7b02f0ab3a2d"
+    },
+    {
+      "index": 48,
+      "rect": [
+        0,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        3084,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-49.png",
+      "phase": null,
+      "file": "frames/049.png",
+      "timeMs": 3984,
+      "durationMs": 83,
+      "sourceTime": 4,
+      "decodedTime": 4,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "7e14849d20b6d87c33034942c960a87699aacfb4541915978bb39fc42f420b5a"
+    },
+    {
+      "index": 49,
+      "rect": [
+        256,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        3084,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-50.png",
+      "phase": null,
+      "file": "frames/050.png",
+      "timeMs": 4067,
+      "durationMs": 83,
+      "sourceTime": 4.083333333333333,
+      "decodedTime": 4.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "692db83e5ecb69b6dc2bf6343a1c4816895bd7532be804c4eeab7e0b92147ba9"
+    },
+    {
+      "index": 50,
+      "rect": [
+        512,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        555,
+        3084,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-51.png",
+      "phase": null,
+      "file": "frames/051.png",
+      "timeMs": 4150,
+      "durationMs": 83,
+      "sourceTime": 4.166666666666667,
+      "decodedTime": 4.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c32ae79f674f09c05b83ab092b3001853c5732af3a3c3ebeeeee62f58d6fbd68"
+    },
+    {
+      "index": 51,
+      "rect": [
+        768,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        811,
+        3084,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-52.png",
+      "phase": null,
+      "file": "frames/052.png",
+      "timeMs": 4233,
+      "durationMs": 83,
+      "sourceTime": 4.25,
+      "decodedTime": 4.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "2ba3330e8a7dbdf5296c508aa6bbf17e9807405fd71b094e6e871b4a3df0771d"
+    },
+    {
+      "index": 52,
+      "rect": [
+        0,
+        3328,
+        256,
+        256
+      ],
+      "contentRect": [
+        43,
+        3340,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-53.png",
+      "phase": null,
+      "file": "frames/053.png",
+      "timeMs": 4316,
+      "durationMs": 83,
+      "sourceTime": 4.333333333333333,
+      "decodedTime": 4.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "00c87b5594837a2bdd8463fffee99d3d369f43023efb00a1219f4c674eebbc0d"
+    },
+    {
+      "index": 53,
+      "rect": [
+        256,
+        3328,
+        256,
+        256
+      ],
+      "contentRect": [
+        299,
+        3340,
+        169,
+        232
+      ],
+      "sourceSize": [
+        374,
+        512
+      ],
+      "sourceCanvasSize": [
+        374,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        127.5,
+        244
+      ],
+      "name": "video-54.png",
+      "phase": null,
+      "file": "frames/054.png",
+      "timeMs": 4399,
+      "durationMs": 42,
+      "sourceTime": 4.416666666666667,
+      "decodedTime": 4.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "67134ee5682f4abd7185d41abaa05e0388f47b83570796666387156aadbd3566",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "双臂连续前/中/后摆与双腿交换改善，仍有灰背景无alpha、侧面转身、脚会合内腿轮廓不足、短段眨眼过频、首末未闭环；不能按任务 SUCCESS 或技术抽帧成功当作美术通过。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "9e56c84a5d63f3ed99d99cf509a800048efa24e317c12f54a3bc727734dd4b64"
+    }
+  ],
+  "exportedAt": "2026-10-11T18:00:23.968Z"
+}

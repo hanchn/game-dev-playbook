@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-11T20:12:08.139Z",
+  "inspection": "All source PNGs actually viewed. Common 1:1 comparison is a diagnostic render, never a replacement source or per-frame normalization.",
+  "visual": "failed",
+  "productionRegistration": false,
+  "records": [
+    {
+      "file": "source-v1.png",
+      "sha256": "0c8725349a83edef896a108d6125da6add85c08c85efc260e0abee3171a821a1",
+      "width": 1254,
+      "height": 1254,
+      "alphaThreshold": 24,
+      "visiblePixels": 322026,
+      "bbox": [
+        46,
+        9,
+        1217,
+        1212
+      ],
+      "minimumSafetyMargin": 9,
+      "redRGBPixels": 22124,
+      "redPixelsAboveAlphaThreshold": 0,
+      "grid": {
+        "columns": 4,
+        "rows": 4,
+        "exactIntegerCells": false
+      },
+      "visual": "failed"
+    },
+    {
+      "file": "source-v2.png",
+      "sha256": "3863f5a592baeff71a519e70a74307d4707f7bb89c064393274b82de6bb64b13",
+      "width": 1254,
+      "height": 1254,
+      "alphaThreshold": 24,
+      "visiblePixels": 288944,
+      "bbox": [
+        67,
+        67,
+        1210,
+        1219
+      ],
+      "minimumSafetyMargin": 34,
+      "redRGBPixels": 15871,
+      "redPixelsAboveAlphaThreshold": 0,
+      "grid": {
+        "columns": 4,
+        "rows": 4,
+        "exactIntegerCells": false
+      },
+      "visual": "failed"
+    },
+    {
+      "file": "key-0-v1.png",
+      "sha256": "6f693dbcbe2ce6a97207ed4ad0696757c60bde5452c22f3c5b67a6e5545b4816",
+      "width": 1254,
+      "height": 1254,
+      "alphaThreshold": 24,
+      "visiblePixels": 230861,
+      "bbox": [
+        453,
+        57,
+        818,
+        1199
+      ],
+      "minimumSafetyMargin": 54,
+      "redRGBPixels": 1045,
+      "redPixelsAboveAlphaThreshold": 0,
+      "targetGroundY": 1199,
+      "bottomDeltaFromGround": 0,
+      "visual": "failed"
+    },
+    {
+      "file": "key-0-v2.png",
+      "sha256": "9880dd174340bb52ecf754b7403b6596640751c820b58075ff54e8c363d59ba4",
+      "width": 1254,
+      "height": 1254,
+      "alphaThreshold": 24,
+      "visiblePixels": 179785,
+      "bbox": [
+        458,
+        65,
+        790,
+        1197
+      ],
+      "minimumSafetyMargin": 56,
+      "redRGBPixels": 892,
+      "redPixelsAboveAlphaThreshold": 0,
+      "targetGroundY": 1199,
+      "bottomDeltaFromGround": -2,
+      "visual": "failed"
+    },
+    {
+      "file": "key-4-v1.png",
+      "sha256": "861820e8a6fcec5ea4e9df21dc923b8d7ba41bb50e4a43a93e8b2ca8b94c236a",
+      "width": 1254,
+      "height": 1254,
+      "alphaThreshold": 24,
+      "visiblePixels": 374958,
+      "bbox": [
+        305,
+        252,
+        1091,
+        1122
+      ],
+      "minimumSafetyMargin": 131,
+      "redRGBPixels": 1899,
+      "redPixelsAboveAlphaThreshold": 0,
+      "targetGroundY": 1199,
+      "bottomDeltaFromGround": -77,
+      "visual": "failed"
+    }
+  ],
+  "findings": [
+    "Both 4x4 atlases have non-integer equal cells and sprites cross intended cell boundaries; reject before extraction.",
+    "Neutral v1 turns to 3/4 camera and has separate projected sole levels. Neutral v2 fixes one-eye side camera but far limbs are hidden in neutral.",
+    "Contact v1 shows both arms/legs coherently, but head grows and the common floor is missed. Do not fit each pose independently.",
+    "Red RGB in zero-alpha pixels is not a visible colored halo. Alpha-aware decoding/compositing is required before diagnosing fringe.",
+    "No complete roll sequence has passed anatomy, camera, fixed scale, ground registration, or UI playback review."
+  ]
+}

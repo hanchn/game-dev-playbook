@@ -1,0 +1,264 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Image 1 is the edit target: a 4-column × 3-row 12-frame alien running atlas. Image 2 is the required EXACT pose control. Image 3 is the original alien identity.\nCorrect ONE problem: the atlas does not follow the near/far limb motion specified by the control. Repose both arms and both legs in EVERY cell to exactly match its corresponding cell in image 2, retaining identity, clothing, head size, camera, equal grid, authentic detailed rendering, and genuine transparency. Do not keep image 1 arm or leg pose when it differs from image 2. Do not copy a single running pose to all cells.\nImage 2 RED segments identify the same foreground/NEAR arm and leg in every cell. BLUE is the far arm and leg. Final red or blue limbs are forbidden; both have the natural skin and clothing of image 3. Follow connected shoulder→elbow→wrist chains, not just isolated hand positions. This is strict right-facing side view.\nNear arm for frame1 (upper-left): points BACKWARDS/LEFT and near fist behind the pelvis. Frame2 (top row second cell): near elbow beside left hip, near fist still BEHIND pelvis, far fist in front. Frame3: near arm passes down beside hip. Frame4: near forearm now forward at waist height. Frame5: near arm forward. Frame6: near elbow and fist swing forward/up. Frame7: near arm maximum FORWARD/RIGHT while near heel folds BACK/LEFT. Frame8: near arm forward descending. Frame9: near hand forward at mid-height. Frame10: near hand passes waist toward back. Frame11: near arm down beside torso. Frame12: near elbow and fist BEHIND/LEFT of pelvis; far fist forward. Near wrist must visibly traverse BEHIND→DOWN→FORWARD→DOWN→BEHIND around the whole cycle. The far arm is opposite in each cell. At least frames1,2,12 must clearly show the nearest arm sweeping backwards, NOT a front fist from the identity pose.\nNear leg (red control): support/contact in cells1–3, folded recovery in cells5–8, high knee in cells9–10, extension before next contact in cells11–12. Far leg (blue control): folded recovery in cells1–3, forward high knee and extension cells4–6, support/contact in cells7–9, recovery cells10–12. Cells7–12 must exchange which side supports, not repeat cells1–6. Exactly TWO arms and TWO legs, correct knees, far limbs visible. Include the intermediate passing poses and airborne phases of image2.\nKeep same fixed orthographic view, hip x registration, same clothing details, brown rugged boots and constant pixels-per-unit scale. Keep every full figure inside its own cell with transparent margins and planted soles at common baseline. Remove colored red/yellow edge speckles; natural clean soft alpha edges. No text, guides, markers or scenery. Output final real rendered transparent 12-frame animation sheet, 4 columns by 3 rows.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-161a7c37-4d2f-45ea-9c0d-0ca4b75b8fb3.png",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-controlled-v4.png",
+  "generatedFileSha256": "db8477c412e05038a50a6ead3aa495ca9515d362cfe7cda5422f4ca229652dc4",
+  "references": [
+    {
+      "role": "edit-target-v3",
+      "path": "tools/animation-lab/public/frame-animation-assets/alien-run-controlled-v3.png",
+      "sha256": "657f4a61889eeb3349b57759bc3293b5f77966f7574ea35bb813db5c7a9b2592"
+    },
+    {
+      "role": "code-native-pose-control-only",
+      "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-controlled-v3/pose-control.png",
+      "sha256": "1cb65679d0c37a12f938b7dd86f70d2120261e379800b53ad1750ee0cde0579f"
+    },
+    {
+      "role": "identity",
+      "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+      "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+    }
+  ],
+  "grid": {
+    "columns": 4,
+    "rows": 3,
+    "count": 12
+  },
+  "actualPNGSize": [
+    1254,
+    1254
+  ],
+  "playback": {
+    "fps": 9,
+    "loop": true
+  },
+  "qa": {
+    "visual": "failed",
+    "observations": [
+      "近臂后摆/经过/前摆范围改善，但01→02→03的摆臂顺序错误",
+      "第01/04/12帧预期远手轮廓不可见，其余远手多固定髋后，远臂回摆仍缺证据",
+      "05/06/07/08腿姿相似，未可靠跟随控制图回收/着地过渡",
+      "07近臂过直且07→08高度突变",
+      "05–08鞋底与09–12头顶 alpha>=24轮廓触图格边界，源分格会裁切；没有用独立缩放隐藏"
+    ],
+    "frames": [
+      {
+        "index": 0,
+        "phase": "NEAR contact / FAR recovery",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": -61.787426745917486,
+        "notes": "近臂后摆但伸得过直；预期前摆的远臂无独立手/肘轮廓",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 149,
+          "wristX": 74,
+          "relativeX": -75,
+          "direction": "back",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": false
+      },
+      {
+        "index": 1,
+        "phase": "NEAR load / FAR passing",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": -23.85283180056544,
+        "notes": "应继续后摆但近臂提前前摆，01→02过大方向跳",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 153,
+          "wristX": 267,
+          "relativeX": 114,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 2,
+        "phase": "NEAR toe off / FAR knee lift",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 25.767878676765008,
+        "notes": "近手回到髋附近，02→03反向跳；近侧支撑脚斜向位置已变",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 147,
+          "wristX": 167,
+          "relativeX": 20,
+          "direction": "passing",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 3,
+        "phase": "Flight: NEAR folds / FAR high knee",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 66.74340152243906,
+        "notes": "近臂前摆，预期独立远臂无手/肘轮廓",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 159,
+          "wristX": 260,
+          "relativeX": 101,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": false
+      },
+      {
+        "index": 4,
+        "phase": "Flight: NEAR recovery / FAR extends",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 90.3848675488507,
+        "notes": "近臂前摆；近远腿与06/07相似，预期回收过渡不足",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 142,
+          "wristX": 267,
+          "relativeX": 125,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 5,
+        "phase": "FAR landing approach",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 102.61820360492516,
+        "notes": "近臂前摆；与05差异较小，远手仍在后侧髋旁",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 161,
+          "wristX": 277,
+          "relativeX": 116,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 6,
+        "phase": "FAR contact / NEAR recovery",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 104.97119292999105,
+        "notes": "近臂上举过直，前后邻帧肘屈曲不一致",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 163,
+          "wristX": 295,
+          "relativeX": 132,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 7,
+        "phase": "FAR load / NEAR passing",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 102.61820360492516,
+        "notes": "近臂骤回腰部前摆，与07形成肘/手高度跳变",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 160,
+          "wristX": 260,
+          "relativeX": 100,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 8,
+        "phase": "FAR toe off / NEAR knee lift",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 90.3848675488507,
+        "notes": "近臂仍在前，远手仍在后；预期近膝驱动侧身份需完整回放，不能由材质猜测",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 148,
+          "wristX": 265,
+          "relativeX": 117,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 9,
+        "phase": "Flight: FAR folds / NEAR high knee",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 66.74340152243906,
+        "notes": "近臂仍前摆，当前单帧接近控制图位置；问题在完整周期的01→02→03和07→08手臂顺序，而不是本帧必须在髋后",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 163,
+          "wristX": 245,
+          "relativeX": 82,
+          "direction": "forward",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 10,
+        "phase": "Flight: FAR recovery / NEAR extends",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": 25.767878676765008,
+        "notes": "近手下降到髋前，改善；远手也在髋后，缺完整臂链的经过证据",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 162,
+          "wristX": 186,
+          "relativeX": 24,
+          "direction": "passing",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": true
+      },
+      {
+        "index": 11,
+        "phase": "NEAR landing approach",
+        "status": "failed",
+        "poseControlNearWristRelativeHip": -23.85283180056544,
+        "notes": "近臂后摆改善，预期前摆远臂无独立手/肘轮廓",
+        "manualNearWristHip": {
+          "coordinateSpace": "actual source cell-local pixels",
+          "hipX": 178,
+          "wristX": 98,
+          "relativeX": -80,
+          "direction": "back",
+          "precisionPx": 6,
+          "method": "manual position on actual source and enlarged arm/hip evidence; near identity tracked via visible shoulder attachment"
+        },
+        "farIndependentHandVisible": false
+      }
+    ],
+    "edgeCorrection": {
+      "initialObservation": "raw transparent viewer shows colored fringes",
+      "retested": "actual deep/light Canvas composites do not show saturated red/yellow fringes; alpha>=24 red/yellow diagnostic count zero all12. Initial fringe conjecture withdrawn. Alpha>0 faint border pixels retained without source cleanup.",
+      "evidence": [
+        "v4-dark.png",
+        "v4-light.png",
+        "v4-pixel-review.json"
+      ]
+    },
+    "framingEvidence": "tools/animation-lab/examples/frame-animation-v1/alien-run-controlled-v3/v4-pixel-review.json"
+  },
+  "repairScope": "one actual imagegen repair of arm/leg pose adherence; first result retained"
+}

@@ -1,0 +1,3683 @@
+{
+  "schemaVersion": 1,
+  "type": "skeletal-scene-capture",
+  "scene": {
+    "scenario": "flock",
+    "actorScale": 1.7,
+    "actors": [
+      {
+        "id": "chicken-1",
+        "sex": "rooster",
+        "x": 273.33333333333337,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 0
+      },
+      {
+        "id": "chicken-2",
+        "sex": "rooster",
+        "x": 640,
+        "groundY": 560,
+        "facing": -1,
+        "phaseOffset": 0.73
+      },
+      {
+        "id": "chicken-3",
+        "sex": "rooster",
+        "x": 1006.6666666666667,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 1.46
+      }
+    ]
+  },
+  "asset": {
+    "schemaVersion": 1,
+    "id": "chicken-side-v3",
+    "species": "chicken",
+    "name": "鸡",
+    "version": 3,
+    "design": {
+      "color": "#e1a34c",
+      "size": 1,
+      "stride": 9,
+      "view": "侧面 · 正交 · 朝右"
+    },
+    "parts": [
+      {
+        "id": "root",
+        "name": "装配原点",
+        "parent": null,
+        "shape": "anchor",
+        "rest": [
+          0,
+          0
+        ],
+        "dimensions": [
+          0,
+          0
+        ],
+        "layer": 0,
+        "tile": 0,
+        "material": "#e1a34c"
+      },
+      {
+        "id": "body",
+        "name": "躯干",
+        "parent": "root",
+        "shape": "ellipse",
+        "rest": [
+          0,
+          -60
+        ],
+        "dimensions": [
+          66,
+          45
+        ],
+        "layer": 3,
+        "tile": 0,
+        "material": "#e1a34c"
+      },
+      {
+        "id": "neck",
+        "name": "颈部",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          22,
+          -73
+        ],
+        "dimensions": [
+          20.248456731316587,
+          12
+        ],
+        "layer": 4,
+        "tile": 5,
+        "material": "#e1a34c",
+        "role": "neck"
+      },
+      {
+        "id": "head",
+        "name": "头部",
+        "parent": "neck",
+        "shape": "ellipse",
+        "rest": [
+          34,
+          -96
+        ],
+        "dimensions": [
+          35,
+          37
+        ],
+        "layer": 5,
+        "tile": 1,
+        "material": "#e1a34c",
+        "skinAspect": true
+      },
+      {
+        "id": "leg-0-upper",
+        "name": "近侧第1腿 · 上段",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          0,
+          -43
+        ],
+        "dimensions": [
+          19,
+          8
+        ],
+        "layer": 6,
+        "tile": 2,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "upper",
+        "phase": 0,
+        "range": [
+          -100,
+          100
+        ]
+      },
+      {
+        "id": "leg-0-lower",
+        "name": "近侧第1腿 · 下段",
+        "parent": "leg-0-upper",
+        "shape": "bone",
+        "rest": [
+          0,
+          -43
+        ],
+        "dimensions": [
+          24,
+          5
+        ],
+        "layer": 6,
+        "tile": 3,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "lower",
+        "phase": 0,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-0-foot",
+        "name": "脚端",
+        "parent": "leg-0-lower",
+        "shape": "foot",
+        "rest": [
+          0,
+          -5
+        ],
+        "dimensions": [
+          13,
+          6
+        ],
+        "layer": 6,
+        "tile": 4,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "foot",
+        "phase": 0,
+        "range": [
+          -20,
+          20
+        ]
+      },
+      {
+        "id": "leg-1-upper",
+        "name": "远侧第1腿 · 上段",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          4,
+          -43
+        ],
+        "dimensions": [
+          19,
+          8
+        ],
+        "layer": 1,
+        "tile": 2,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "upper",
+        "phase": 0.5,
+        "range": [
+          -100,
+          100
+        ]
+      },
+      {
+        "id": "leg-1-lower",
+        "name": "远侧第1腿 · 下段",
+        "parent": "leg-1-upper",
+        "shape": "bone",
+        "rest": [
+          4,
+          -43
+        ],
+        "dimensions": [
+          24,
+          5
+        ],
+        "layer": 1,
+        "tile": 3,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "lower",
+        "phase": 0.5,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-1-foot",
+        "name": "脚端",
+        "parent": "leg-1-lower",
+        "shape": "foot",
+        "rest": [
+          4,
+          -5
+        ],
+        "dimensions": [
+          13,
+          6
+        ],
+        "layer": 1,
+        "tile": 4,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "foot",
+        "phase": 0.5,
+        "range": [
+          -20,
+          20
+        ]
+      },
+      {
+        "id": "arm-0",
+        "name": "翅膀 1",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -10,
+          -69
+        ],
+        "dimensions": [
+          32,
+          25
+        ],
+        "layer": 7,
+        "tile": 7,
+        "material": "#e1a34c",
+        "arm": 0,
+        "role": "wing",
+        "range": [
+          -80,
+          80
+        ]
+      },
+      {
+        "id": "arm-1",
+        "name": "翅膀 2",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -10,
+          -69
+        ],
+        "dimensions": [
+          32,
+          25
+        ],
+        "layer": 2,
+        "tile": 7,
+        "material": "#e1a34c",
+        "arm": 1,
+        "role": "wing",
+        "range": [
+          -80,
+          80
+        ]
+      },
+      {
+        "id": "tail-0",
+        "name": "尾羽",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -27,
+          -62
+        ],
+        "dimensions": [
+          31,
+          22
+        ],
+        "layer": 2,
+        "tile": 6,
+        "material": "#e1a34c",
+        "role": "tail"
+      }
+    ],
+    "clips": [
+      "idle",
+      "walk",
+      "run",
+      "jump",
+      "peck",
+      "flap",
+      "extend"
+    ],
+    "status": "draft",
+    "qa": {
+      "technical": "untested",
+      "visual": "pending"
+    },
+    "source": {
+      "kind": "redrawn-rounded-part-atlas",
+      "description": "重绘自然圆弧零件，内部旋转轴与透明重叠区域"
+    },
+    "rendering": {
+      "rig": "animal-side-v2",
+      "atlas": "/art/chicken-side-parts-v3.png",
+      "view": "side",
+      "projection": "orthographic",
+      "facing": "right",
+      "frame": {
+        "anchor": [
+          256,
+          350
+        ],
+        "scale": 1.5
+      },
+      "continuousNeck": true
+    },
+    "actionDesign": {
+      "title": "鸡 · 侧面多动作",
+      "assembly": "圆弧端部围绕内部轴点自然重叠。远侧肢体 → 身体 → 近侧肢体；动作保留稳定零件身份。",
+      "actions": [
+        {
+          "id": "idle",
+          "name": "呼吸待机",
+          "duration": 2,
+          "loop": true,
+          "keyPoses": [
+            "站立",
+            "轻微呼吸",
+            "回位"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "duration": 1,
+          "loop": true,
+          "keyPoses": [
+            "落脚支撑",
+            "抬脚回摆",
+            "交换支撑"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "run",
+          "name": "快跑",
+          "duration": 0.65,
+          "loop": true,
+          "keyPoses": [
+            "蹬地",
+            "快速回摆",
+            "交替落脚"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "jump",
+          "name": "跳跃",
+          "duration": 1.2,
+          "loop": false,
+          "keyPoses": [
+            "屈腿蓄力",
+            "起跳",
+            "腾空收腿",
+            "落地缓冲"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "蓄力 → 腾空 → 落地缓冲",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "peck",
+          "name": "啄食",
+          "duration": 1.4,
+          "loop": false,
+          "keyPoses": [
+            "观察",
+            "屈颈低头",
+            "啄食",
+            "抬头"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "flap",
+          "name": "振翅",
+          "duration": 0.8,
+          "loop": true,
+          "keyPoses": [
+            "收翅",
+            "伸展",
+            "下拍",
+            "收回"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "extend",
+          "name": "单配件屈伸",
+          "duration": 1,
+          "loop": true,
+          "keyPoses": [
+            "中性",
+            "屈曲",
+            "伸展",
+            "回位"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        }
+      ],
+      "visualReview": [
+        "正常速度与0.25倍速",
+        "深浅背景检查关节裂缝",
+        "检查眼睛、脚爪、尾羽朝向",
+        "固定画布逐帧检视"
+      ],
+      "limitations": [
+        "二维关节动画；不代表物种级生物或地面摩擦仿真。",
+        "侧面资产，俯拍和背面需要独立素材。"
+      ]
+    }
+  },
+  "assetId": "chicken-side-v3",
+  "version": 3,
+  "atlas": "/art/chicken-side-parts-v3.png",
+  "atlasSha256": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de",
+  "canvas": [
+    1280,
+    720
+  ],
+  "fixedTransform": {
+    "actorScale": 1.7,
+    "camera": "fixed",
+    "anchor": [
+      256,
+      350
+    ]
+  },
+  "receipt": {
+    "requestedFPS": 12,
+    "requestedDuration": 6,
+    "requestedFrameCount": 72,
+    "capturedFrameCount": 72,
+    "actualElapsedSeconds": 6.0655,
+    "terminalRequestElapsedMs": 6001.9000000059605,
+    "cancelled": false,
+    "encodingTiming": "captureStream(0) + one requestFrame per immutable PNG bitmap, plus terminal hold; MediaRecorder PTS are real wall-clock and require FFprobe verification",
+    "timingSamples": [
+      {
+        "requestedTimeMs": 0,
+        "actualRequestElapsedMs": 28.099999994039536,
+        "latenessMs": 28.099999994039536
+      },
+      {
+        "requestedTimeMs": 83.33333333333333,
+        "actualRequestElapsedMs": 97.2000000178814,
+        "latenessMs": 13.866666684548065
+      },
+      {
+        "requestedTimeMs": 166.66666666666666,
+        "actualRequestElapsedMs": 177,
+        "latenessMs": 10.333333333333343
+      },
+      {
+        "requestedTimeMs": 250,
+        "actualRequestElapsedMs": 263.5,
+        "latenessMs": 13.5
+      },
+      {
+        "requestedTimeMs": 333.3333333333333,
+        "actualRequestElapsedMs": 342.5,
+        "latenessMs": 9.166666666666686
+      },
+      {
+        "requestedTimeMs": 416.6666666666667,
+        "actualRequestElapsedMs": 422.40000000596046,
+        "latenessMs": 5.733333339293779
+      },
+      {
+        "requestedTimeMs": 500,
+        "actualRequestElapsedMs": 505.40000000596046,
+        "latenessMs": 5.4000000059604645
+      },
+      {
+        "requestedTimeMs": 583.3333333333334,
+        "actualRequestElapsedMs": 592.0999999940395,
+        "latenessMs": 8.766666660706164
+      },
+      {
+        "requestedTimeMs": 666.6666666666666,
+        "actualRequestElapsedMs": 676.2000000178814,
+        "latenessMs": 9.533333351214765
+      },
+      {
+        "requestedTimeMs": 750,
+        "actualRequestElapsedMs": 763.7000000178814,
+        "latenessMs": 13.700000017881393
+      },
+      {
+        "requestedTimeMs": 833.3333333333334,
+        "actualRequestElapsedMs": 842.0999999940395,
+        "latenessMs": 8.766666660706164
+      },
+      {
+        "requestedTimeMs": 916.6666666666666,
+        "actualRequestElapsedMs": 921.8000000119209,
+        "latenessMs": 5.1333333452543
+      },
+      {
+        "requestedTimeMs": 1000,
+        "actualRequestElapsedMs": 1008.9000000059605,
+        "latenessMs": 8.900000005960464
+      },
+      {
+        "requestedTimeMs": 1083.3333333333333,
+        "actualRequestElapsedMs": 1096.9000000059605,
+        "latenessMs": 13.566666672627207
+      },
+      {
+        "requestedTimeMs": 1166.6666666666667,
+        "actualRequestElapsedMs": 1171.5,
+        "latenessMs": 4.8333333333332575
+      },
+      {
+        "requestedTimeMs": 1250,
+        "actualRequestElapsedMs": 1260.5,
+        "latenessMs": 10.5
+      },
+      {
+        "requestedTimeMs": 1333.3333333333333,
+        "actualRequestElapsedMs": 1339,
+        "latenessMs": 5.6666666666667425
+      },
+      {
+        "requestedTimeMs": 1416.6666666666667,
+        "actualRequestElapsedMs": 1430,
+        "latenessMs": 13.333333333333258
+      },
+      {
+        "requestedTimeMs": 1500,
+        "actualRequestElapsedMs": 1508.9000000059605,
+        "latenessMs": 8.900000005960464
+      },
+      {
+        "requestedTimeMs": 1583.3333333333333,
+        "actualRequestElapsedMs": 1597.9000000059605,
+        "latenessMs": 14.566666672627207
+      },
+      {
+        "requestedTimeMs": 1666.6666666666667,
+        "actualRequestElapsedMs": 1679.0999999940395,
+        "latenessMs": 12.433333327372793
+      },
+      {
+        "requestedTimeMs": 1750,
+        "actualRequestElapsedMs": 1766.300000011921,
+        "latenessMs": 16.30000001192093
+      },
+      {
+        "requestedTimeMs": 1833.3333333333333,
+        "actualRequestElapsedMs": 1844.7000000178814,
+        "latenessMs": 11.366666684548136
+      },
+      {
+        "requestedTimeMs": 1916.6666666666667,
+        "actualRequestElapsedMs": 1933,
+        "latenessMs": 16.333333333333258
+      },
+      {
+        "requestedTimeMs": 2000,
+        "actualRequestElapsedMs": 2011.5,
+        "latenessMs": 11.5
+      },
+      {
+        "requestedTimeMs": 2083.3333333333335,
+        "actualRequestElapsedMs": 2098.800000011921,
+        "latenessMs": 15.466666678587444
+      },
+      {
+        "requestedTimeMs": 2166.6666666666665,
+        "actualRequestElapsedMs": 2175.5,
+        "latenessMs": 8.833333333333485
+      },
+      {
+        "requestedTimeMs": 2250,
+        "actualRequestElapsedMs": 2265.800000011921,
+        "latenessMs": 15.800000011920929
+      },
+      {
+        "requestedTimeMs": 2333.3333333333335,
+        "actualRequestElapsedMs": 2343.5,
+        "latenessMs": 10.166666666666515
+      },
+      {
+        "requestedTimeMs": 2416.6666666666665,
+        "actualRequestElapsedMs": 2432,
+        "latenessMs": 15.333333333333485
+      },
+      {
+        "requestedTimeMs": 2500,
+        "actualRequestElapsedMs": 2509.5,
+        "latenessMs": 9.5
+      },
+      {
+        "requestedTimeMs": 2583.3333333333335,
+        "actualRequestElapsedMs": 2598.300000011921,
+        "latenessMs": 14.966666678587444
+      },
+      {
+        "requestedTimeMs": 2666.6666666666665,
+        "actualRequestElapsedMs": 2676.300000011921,
+        "latenessMs": 9.633333345254414
+      },
+      {
+        "requestedTimeMs": 2750,
+        "actualRequestElapsedMs": 2765.300000011921,
+        "latenessMs": 15.300000011920929
+      },
+      {
+        "requestedTimeMs": 2833.3333333333335,
+        "actualRequestElapsedMs": 2845.5,
+        "latenessMs": 12.166666666666515
+      },
+      {
+        "requestedTimeMs": 2916.6666666666665,
+        "actualRequestElapsedMs": 2927,
+        "latenessMs": 10.333333333333485
+      },
+      {
+        "requestedTimeMs": 3000,
+        "actualRequestElapsedMs": 3012,
+        "latenessMs": 12
+      },
+      {
+        "requestedTimeMs": 3083.3333333333335,
+        "actualRequestElapsedMs": 3099,
+        "latenessMs": 15.666666666666515
+      },
+      {
+        "requestedTimeMs": 3166.6666666666665,
+        "actualRequestElapsedMs": 3176.5,
+        "latenessMs": 9.833333333333485
+      },
+      {
+        "requestedTimeMs": 3250,
+        "actualRequestElapsedMs": 3263.7000000178814,
+        "latenessMs": 13.700000017881393
+      },
+      {
+        "requestedTimeMs": 3333.3333333333335,
+        "actualRequestElapsedMs": 3341.4000000059605,
+        "latenessMs": 8.06666667262698
+      },
+      {
+        "requestedTimeMs": 3416.6666666666665,
+        "actualRequestElapsedMs": 3425.7000000178814,
+        "latenessMs": 9.033333351214878
+      },
+      {
+        "requestedTimeMs": 3500,
+        "actualRequestElapsedMs": 3511.5999999940395,
+        "latenessMs": 11.599999994039536
+      },
+      {
+        "requestedTimeMs": 3583.3333333333335,
+        "actualRequestElapsedMs": 3599.300000011921,
+        "latenessMs": 15.966666678587444
+      },
+      {
+        "requestedTimeMs": 3666.6666666666665,
+        "actualRequestElapsedMs": 3678.5,
+        "latenessMs": 11.833333333333485
+      },
+      {
+        "requestedTimeMs": 3750,
+        "actualRequestElapsedMs": 3765.2000000178814,
+        "latenessMs": 15.200000017881393
+      },
+      {
+        "requestedTimeMs": 3833.3333333333335,
+        "actualRequestElapsedMs": 3844.7000000178814,
+        "latenessMs": 11.366666684547909
+      },
+      {
+        "requestedTimeMs": 3916.6666666666665,
+        "actualRequestElapsedMs": 3932.0999999940395,
+        "latenessMs": 15.43333332737302
+      },
+      {
+        "requestedTimeMs": 4000,
+        "actualRequestElapsedMs": 4007.300000011921,
+        "latenessMs": 7.300000011920929
+      },
+      {
+        "requestedTimeMs": 4083.333333333333,
+        "actualRequestElapsedMs": 4098.9000000059605,
+        "latenessMs": 15.566666672627434
+      },
+      {
+        "requestedTimeMs": 4166.666666666667,
+        "actualRequestElapsedMs": 4178.200000017881,
+        "latenessMs": 11.533333351214424
+      },
+      {
+        "requestedTimeMs": 4250,
+        "actualRequestElapsedMs": 4266.200000017881,
+        "latenessMs": 16.200000017881393
+      },
+      {
+        "requestedTimeMs": 4333.333333333333,
+        "actualRequestElapsedMs": 4344,
+        "latenessMs": 10.66666666666697
+      },
+      {
+        "requestedTimeMs": 4416.666666666667,
+        "actualRequestElapsedMs": 4432.200000017881,
+        "latenessMs": 15.533333351214424
+      },
+      {
+        "requestedTimeMs": 4500,
+        "actualRequestElapsedMs": 4511.300000011921,
+        "latenessMs": 11.300000011920929
+      },
+      {
+        "requestedTimeMs": 4583.333333333333,
+        "actualRequestElapsedMs": 4598,
+        "latenessMs": 14.66666666666697
+      },
+      {
+        "requestedTimeMs": 4666.666666666667,
+        "actualRequestElapsedMs": 4675.5999999940395,
+        "latenessMs": 8.933333327372566
+      },
+      {
+        "requestedTimeMs": 4750,
+        "actualRequestElapsedMs": 4765.800000011921,
+        "latenessMs": 15.800000011920929
+      },
+      {
+        "requestedTimeMs": 4833.333333333333,
+        "actualRequestElapsedMs": 4843.300000011921,
+        "latenessMs": 9.966666678587899
+      },
+      {
+        "requestedTimeMs": 4916.666666666667,
+        "actualRequestElapsedMs": 4929.5999999940395,
+        "latenessMs": 12.933333327372566
+      },
+      {
+        "requestedTimeMs": 5000,
+        "actualRequestElapsedMs": 5012.800000011921,
+        "latenessMs": 12.800000011920929
+      },
+      {
+        "requestedTimeMs": 5083.333333333333,
+        "actualRequestElapsedMs": 5099,
+        "latenessMs": 15.66666666666697
+      },
+      {
+        "requestedTimeMs": 5166.666666666667,
+        "actualRequestElapsedMs": 5178.9000000059605,
+        "latenessMs": 12.233333339293495
+      },
+      {
+        "requestedTimeMs": 5250,
+        "actualRequestElapsedMs": 5265.4000000059605,
+        "latenessMs": 15.400000005960464
+      },
+      {
+        "requestedTimeMs": 5333.333333333333,
+        "actualRequestElapsedMs": 5344.700000017881,
+        "latenessMs": 11.366666684548363
+      },
+      {
+        "requestedTimeMs": 5416.666666666667,
+        "actualRequestElapsedMs": 5429.5999999940395,
+        "latenessMs": 12.933333327372566
+      },
+      {
+        "requestedTimeMs": 5500,
+        "actualRequestElapsedMs": 5512,
+        "latenessMs": 12
+      },
+      {
+        "requestedTimeMs": 5583.333333333333,
+        "actualRequestElapsedMs": 5596.5999999940395,
+        "latenessMs": 13.266666660706505
+      },
+      {
+        "requestedTimeMs": 5666.666666666667,
+        "actualRequestElapsedMs": 5677.700000017881,
+        "latenessMs": 11.033333351214424
+      },
+      {
+        "requestedTimeMs": 5750,
+        "actualRequestElapsedMs": 5766.5,
+        "latenessMs": 16.5
+      },
+      {
+        "requestedTimeMs": 5833.333333333333,
+        "actualRequestElapsedMs": 5844.300000011921,
+        "latenessMs": 10.966666678587899
+      },
+      {
+        "requestedTimeMs": 5916.666666666667,
+        "actualRequestElapsedMs": 5932.200000017881,
+        "latenessMs": 15.533333351214424
+      }
+    ]
+  },
+  "movie": {
+    "file": "chicken-flock.webm",
+    "sha256": "027653790cf97c8c3de256514be6a3d6c8455e5fa944bf4837162c25f633aff9",
+    "mimeType": "video/webm;codecs=vp9"
+  },
+  "frames": [
+    {
+      "name": "frames/001.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0,
+          "blend": null,
+          "offsetX": 0
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.7300000000000004,
+          "blend": null,
+          "offsetX": 0
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.32857142857142857,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 0,
+      "actualRequestElapsedMs": 28.099999994039536,
+      "sha256": "66143df350941db149c3eb26869cf297511a508a8019fe53391bfada936495e7"
+    },
+    {
+      "name": "frames/002.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.08333333333333304,
+          "blend": null,
+          "offsetX": 7.649999999999972
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.8,
+          "blend": {
+            "clip": "peck",
+            "phase": 0,
+            "weight": 0.012740740740740907
+          },
+          "offsetX": -6.366991656593551
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.3880952380952379,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.08333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 83.33333333333333,
+      "actualRequestElapsedMs": 97.2000000178814,
+      "sha256": "582a2f48fd77a63300d8d3b57cf539d88ddd1532cfccbedfbd04f415ed9d66be"
+    },
+    {
+      "name": "frames/003.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.16666666666666696,
+          "blend": null,
+          "offsetX": 15.300000000000026
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.8,
+          "blend": {
+            "clip": "peck",
+            "phase": 0,
+            "weight": 0.4750092592592578
+          },
+          "offsetX": -4.234948089644425
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.44761904761904786,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.16666666666666666,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 166.66666666666666,
+      "actualRequestElapsedMs": 177,
+      "sha256": "d62d4443044bd7ef08f2f2e08d2386547d8bc772bdac62a3dcff73ae5b9cd6de"
+    },
+    {
+      "name": "frames/004.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.25,
+          "blend": null,
+          "offsetX": 22.95
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.8,
+          "blend": {
+            "clip": "peck",
+            "phase": 0,
+            "weight": 0.9720000000000011
+          },
+          "offsetX": -1.963312649371125
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.5071428571428571,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.25,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 250,
+      "actualRequestElapsedMs": 263.5,
+      "sha256": "8ce2ddee3642659be3d422f12e435943f10493bcf0b6630ba998bc126e8c390d"
+    },
+    {
+      "name": "frames/005.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.33333333333333304,
+          "blend": null,
+          "offsetX": 30.59999999999997
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.045238095238095334,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.5666666666666664,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.3333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 333.3333333333333,
+      "actualRequestElapsedMs": 342.5,
+      "sha256": "ea713a2da75c2ca0bd64a3046d63fdfbb3ee8bd82047ebf544eeb7f1e288a150"
+    },
+    {
+      "name": "frames/006.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.41666666666666696,
+          "blend": null,
+          "offsetX": 38.25000000000002
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.10476190476190465,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.6261904761904764,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.4166666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 416.6666666666667,
+      "actualRequestElapsedMs": 422.40000000596046,
+      "sha256": "fc71970dde8887987878a79897bcdc1d2a47d932a407ae2ffd7c4b2f1ff71577"
+    },
+    {
+      "name": "frames/007.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.5,
+          "blend": null,
+          "offsetX": 45.9
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.1642857142857146,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.6857142857142857,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.5,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 500,
+      "actualRequestElapsedMs": 505.40000000596046,
+      "sha256": "7c0b2123c3f82cbaec1902f7c1efe571d18319c50d381dcc7a602ab1255ed84a"
+    },
+    {
+      "name": "frames/008.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.583333333333333,
+          "blend": null,
+          "offsetX": 53.54999999999997
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.22380952380952393,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.745238095238095,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.5833333333333334,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 583.3333333333334,
+      "actualRequestElapsedMs": 592.0999999940395,
+      "sha256": "7fddfc75cf02bdfb1626617dba7d446bd7a474f4cabe8febdc9d6a9358ee7b1b"
+    },
+    {
+      "name": "frames/009.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.666666666666667,
+          "blend": null,
+          "offsetX": 61.200000000000024
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.2833333333333332,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.804761904761905,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.6666666666666666,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 666.6666666666666,
+      "actualRequestElapsedMs": 676.2000000178814,
+      "sha256": "742ef33cfc7684641e22fd314d538f1a32d88434707664c2c306df7b4929a279"
+    },
+    {
+      "name": "frames/010.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.75,
+          "blend": null,
+          "offsetX": 68.85
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.3428571428571432,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.864285714285715,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.007250000000000982
+          },
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.75,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 750,
+      "actualRequestElapsedMs": 763.7000000178814,
+      "sha256": "7e4abb4328765b8652f57446d0d4ac2f1a34e9709c65d27b8db2c5e6890e6e2e"
+    },
+    {
+      "name": "frames/011.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.8,
+          "blend": {
+            "clip": "peck",
+            "phase": 0,
+            "weight": 0.07407407407407268
+          },
+          "offsetX": 73.09710864407624
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.4023809523809525,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.9238095238095236,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.45007407407407113
+          },
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.8333333333333334,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 833.3333333333334,
+      "actualRequestElapsedMs": 842.0999999940395,
+      "sha256": "cb21a564fdfe06c2123ac2dc562b1bdb3ca81fb58f595b75dabb2cc0142988a3"
+    },
+    {
+      "name": "frames/012.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.8,
+          "blend": {
+            "clip": "peck",
+            "phase": 0,
+            "weight": 0.6238425925925947
+          },
+          "offsetX": 70.5663521055712
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.4619047619047618,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.9833333333333336,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.9623425925925936
+          },
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 0.9166666666666666,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 916.6666666666666,
+      "actualRequestElapsedMs": 921.8000000119209,
+      "sha256": "10dd5ea92b04339759a13574eb1e377bb8e177a3916e0b88ca1db1bef0efe797"
+    },
+    {
+      "name": "frames/013.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.5214285714285718,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.016666666666666927,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1000,
+      "actualRequestElapsedMs": 1008.9000000059605,
+      "sha256": "2179e00a51da336ed3afd653eaedcff47e80e43e038e04e1e720730f9c43f6a3"
+    },
+    {
+      "name": "frames/014.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.05952380952380932,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.5809523809523811,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.03981481481481475,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.0833333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1083.3333333333333,
+      "actualRequestElapsedMs": 1096.9000000059605,
+      "sha256": "2954f0dd1998e3f445820e68c2a055e98d9f0dbfd40ccf588c490eb770e1442a"
+    },
+    {
+      "name": "frames/015.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.11904761904761926,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.6404761904761904,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.06296296296296305,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.1666666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1166.6666666666667,
+      "actualRequestElapsedMs": 1171.5,
+      "sha256": "44074a1e38e94edfdd95c97cf5423efec4998bf3a63849818159e7cc9e050b27"
+    },
+    {
+      "name": "frames/016.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.17857142857142858,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.7000000000000004,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.08611111111111137,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.25,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1250,
+      "actualRequestElapsedMs": 1260.5,
+      "sha256": "9efc8a3ffb0dfbc613c0dbdec9b6a4aede91c2d9192bcd13e54988c2e7d366a8"
+    },
+    {
+      "name": "frames/017.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.2380952380952379,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.759523809523809,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.1092592592592592,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.3333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1333.3333333333333,
+      "actualRequestElapsedMs": 1339,
+      "sha256": "412900a76789b197926343c2f915d2abd714c48659130572c2085e343064af4d"
+    },
+    {
+      "name": "frames/018.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.29761904761904784,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.819047619047619,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.1324074074074075,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.4166666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1416.6666666666667,
+      "actualRequestElapsedMs": 1430,
+      "sha256": "ba31b92d9ebac9fa60aa5700a0b864d8d45f1acfdbef2bd7208ca1ce27f9c770"
+    },
+    {
+      "name": "frames/019.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.35714285714285715,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.8785714285714289,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.0607500000000011
+          },
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.1555555555555558,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.5,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1500,
+      "actualRequestElapsedMs": 1508.9000000059605,
+      "sha256": "98312c7abe640629925c8028dcd0d22cddcafb69b60d26e2019089785aad810f"
+    },
+    {
+      "name": "frames/020.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.41666666666666646,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.9380952380952376,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.5994074074074016
+          },
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.17870370370370364,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.5833333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1583.3333333333333,
+      "actualRequestElapsedMs": 1597.9000000059605,
+      "sha256": "56457c85560af17893926e64eb9b3bbaaee4bad953581ffda3282ecbc5769aa2"
+    },
+    {
+      "name": "frames/021.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.47619047619047644,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "peck",
+          "phase": 0.9976190476190475,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.999175925925926
+          },
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.20185185185185195,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.6666666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1666.6666666666667,
+      "actualRequestElapsedMs": 1679.0999999940395,
+      "sha256": "9e25f00733adce6f53b930fa7ecfee6587926a041eb68db33b6bebe4af48dc74"
+    },
+    {
+      "name": "frames/022.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.5357142857142857,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.022222222222222365,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.22500000000000026,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.75,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1750,
+      "actualRequestElapsedMs": 1766.300000011921,
+      "sha256": "1c71dba1236bfa104abd25c2e5f2dd0dfdd96aa4b2685a88729d3ba427d9b2fb"
+    },
+    {
+      "name": "frames/023.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.595238095238095,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.045370370370370186,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.24814814814814806,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.8333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1833.3333333333333,
+      "actualRequestElapsedMs": 1844.7000000178814,
+      "sha256": "86e6c2803fe1ddab88603fa33963a710a25ed2f821e905074f67da8c7b27f474"
+    },
+    {
+      "name": "frames/024.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.654761904761905,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.06851851851851849,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.27129629629629637,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 1.9166666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 1916.6666666666667,
+      "actualRequestElapsedMs": 1933,
+      "sha256": "c43eb03cb66f24eee311c228fa8eaa8e3c54bb6503a38522633377d120754ca2"
+    },
+    {
+      "name": "frames/025.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.7142857142857143,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.09166666666666681,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.2944444444444447,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2000,
+      "actualRequestElapsedMs": 2011.5,
+      "sha256": "36f55b75d03c4a96f3cc73c769883115bb52562bd1bae35a9088515ff814f191"
+    },
+    {
+      "name": "frames/026.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.7738095238095243,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.11481481481481462,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.31759259259259254,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.0833333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2083.3333333333335,
+      "actualRequestElapsedMs": 2098.800000011921,
+      "sha256": "2d0fb93639953559ed8b76d2d097c7843b757a00bc7803d29bc1d437d64355cb"
+    },
+    {
+      "name": "frames/027.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.8333333333333329,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.13796296296296293,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.34074074074074084,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.1666666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2166.6666666666665,
+      "actualRequestElapsedMs": 2175.5,
+      "sha256": "7b2eb8cf37091ce045cc89aa2149da5c1f7f70a3819f1e6bfcece403d4b55c05"
+    },
+    {
+      "name": "frames/028.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.8928571428571429,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.15624999999999936
+          },
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.16111111111111126,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.36388888888888915,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.25,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2250,
+      "actualRequestElapsedMs": 2265.800000011921,
+      "sha256": "f135ccc686b85814a07f1fc0e43587e4f16e0e57241f4cb1430ca1ae37a96bdf"
+    },
+    {
+      "name": "frames/029.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.9523809523809529,
+          "blend": {
+            "clip": "idle",
+            "phase": 0,
+            "weight": 0.7407407407407447
+          },
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.18425925925925907,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.38703703703703696,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.3333333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2333.3333333333335,
+      "actualRequestElapsedMs": 2343.5,
+      "sha256": "9b0e34a3010df2c123261c1459c814ab108fd6c02eba3eeaf5824fd56c848530"
+    },
+    {
+      "name": "frames/030.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.00462962962962949,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.20740740740740737,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.41018518518518526,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.4166666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2416.6666666666665,
+      "actualRequestElapsedMs": 2432,
+      "sha256": "465f625fc1395885e6cd8d7fbf5d9fa615f465a37485757fc39201bc6900b313"
+    },
+    {
+      "name": "frames/031.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.0277777777777778,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.23055555555555568,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.43333333333333357,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.5,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2500,
+      "actualRequestElapsedMs": 2509.5,
+      "sha256": "d3f8433dec7725f38245d9ba54457e5ad8585471866d338e2287ff8e6b7d9873"
+    },
+    {
+      "name": "frames/032.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.05092592592592611,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.2537037037037035,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.4564814814814814,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.5833333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2583.3333333333335,
+      "actualRequestElapsedMs": 2598.300000011921,
+      "sha256": "645e454fe1f7aad1132866f2b90126f62a92fe87122f2f522b41e97843189922"
+    },
+    {
+      "name": "frames/033.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.07407407407407393,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.27685185185185185,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.47962962962962974,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.6666666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2666.6666666666665,
+      "actualRequestElapsedMs": 2676.300000011921,
+      "sha256": "11c155ee2b11b6b59634a210a7ff34f597a1bf8884c0975a11622957fb2c6503"
+    },
+    {
+      "name": "frames/034.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.09722222222222224,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.30000000000000016,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.502777777777778,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.75,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2750,
+      "actualRequestElapsedMs": 2765.300000011921,
+      "sha256": "2b2b5b160f48e2d49d9d22253223966a7a30e711ef060b52d9cabcf23090dab1"
+    },
+    {
+      "name": "frames/035.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.12037037037037056,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.32314814814814796,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.5259259259259258,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.8333333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2833.3333333333335,
+      "actualRequestElapsedMs": 2845.5,
+      "sha256": "1fce5720941c372f7f736ef5de49f9669f23f5fa3a2ccf9456dcc8a2de3fa278"
+    },
+    {
+      "name": "frames/036.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.14351851851851838,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.34629629629629627,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.5490740740740742,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 2.9166666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 2916.6666666666665,
+      "actualRequestElapsedMs": 2927,
+      "sha256": "0d2bd4500149df4f6a1172e64ca42fe6e8832a6ad2aa265bb2c67f91fd74eb4a"
+    },
+    {
+      "name": "frames/037.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.16666666666666669,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.3694444444444446,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.5722222222222225,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3000,
+      "actualRequestElapsedMs": 3012,
+      "sha256": "b961bc3cce181b2e3e2425b53bd112de58a7e5177f58c5ee06e7dbe2591b7828"
+    },
+    {
+      "name": "frames/038.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.189814814814815,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.3925925925925924,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.5953703703703703,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.0833333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3083.3333333333335,
+      "actualRequestElapsedMs": 3099,
+      "sha256": "546f710f28ea092c6fde314de19b6f1a2a7dcd51f4cefebae0a28a492a2f3222"
+    },
+    {
+      "name": "frames/039.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.21296296296296283,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.4157407407407407,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.6185185185185186,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.1666666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3166.6666666666665,
+      "actualRequestElapsedMs": 3176.5,
+      "sha256": "d0c577719360d496eb71fb5150afc060ee7dcbc9a157aebafd5dafdb12d2fb45"
+    },
+    {
+      "name": "frames/040.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.23611111111111113,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.438888888888889,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.6416666666666669,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.25,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3250,
+      "actualRequestElapsedMs": 3263.7000000178814,
+      "sha256": "fd3a45d4781167a4c3a32e67b85ca08afea5f12cdef4c3c67e9694983e0c4dc9"
+    },
+    {
+      "name": "frames/041.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.25925925925925947,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.46203703703703686,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.6648148148148147,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.3333333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3333.3333333333335,
+      "actualRequestElapsedMs": 3341.4000000059605,
+      "sha256": "5b59940bbc98ac2e730a2b787a69e64994392cf9ddfd41493f980fc1cbd8b0d9"
+    },
+    {
+      "name": "frames/042.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.2824074074074073,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.48518518518518516,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.687962962962963,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.4166666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3416.6666666666665,
+      "actualRequestElapsedMs": 3425.7000000178814,
+      "sha256": "13a4c14e0b099eb11618e12289db1d28449f41dbff6ee11caaf275840550c69a"
+    },
+    {
+      "name": "frames/043.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.3055555555555556,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.5083333333333334,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.7111111111111114,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.5,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3500,
+      "actualRequestElapsedMs": 3511.5999999940395,
+      "sha256": "f63552d33a574b3d64333940d0ddf8b1361e50e5b59bd72f473ae7aef2111b41"
+    },
+    {
+      "name": "frames/044.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.3287037037037039,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.5314814814814813,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.7342592592592592,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.5833333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3583.3333333333335,
+      "actualRequestElapsedMs": 3599.300000011921,
+      "sha256": "06f8428270ca3defe38312fd1e05ba81d3869472a12233c79912e0e81d3430c1"
+    },
+    {
+      "name": "frames/045.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.3518518518518517,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.5546296296296296,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.7574074074074075,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.6666666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3666.6666666666665,
+      "actualRequestElapsedMs": 3678.5,
+      "sha256": "a2ff372bacae4a8bcc6f9e8ba02f92de84bc2440fce59098c1bf68a9bef4f4ca"
+    },
+    {
+      "name": "frames/046.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.375,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.577777777777778,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.7805555555555558,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.75,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3750,
+      "actualRequestElapsedMs": 3765.2000000178814,
+      "sha256": "0e9e7ad9b85c2a5c5b8673d75dc09d91cba827eebf6e628f5cf6c134ebd5aebd"
+    },
+    {
+      "name": "frames/047.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.3981481481481483,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.6009259259259258,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.8037037037037036,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.8333333333333335,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3833.3333333333335,
+      "actualRequestElapsedMs": 3844.7000000178814,
+      "sha256": "abc49a65529ba45395a1229e4d34050343a837260f24886930761291e39b6b94"
+    },
+    {
+      "name": "frames/048.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.42129629629629617,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.624074074074074,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.826851851851852,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 3.9166666666666665,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 3916.6666666666665,
+      "actualRequestElapsedMs": 3932.0999999940395,
+      "sha256": "63148b9ef84b6a9f5a6616577ddb438458566c2da6e308a51f9cf6095154e4ef"
+    },
+    {
+      "name": "frames/049.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.4444444444444445,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.6472222222222224,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.8500000000000002,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 4,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4000,
+      "actualRequestElapsedMs": 4007.300000011921,
+      "sha256": "d6e8d77cca7d8a3e511a2bddb7b878f77ff9c97bdfec397abcf5c9a458df8fe1"
+    },
+    {
+      "name": "frames/050.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.4675925925925923,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.6703703703703702,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.873148148148148,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 4.083333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4083.333333333333,
+      "actualRequestElapsedMs": 4098.9000000059605,
+      "sha256": "9c172254162fc46452a5bb115bb4cf76623cb021ba8771c1661d200159b87363"
+    },
+    {
+      "name": "frames/051.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.4907407407407411,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.6935185185185185,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.8962962962962964,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 4.166666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4166.666666666667,
+      "actualRequestElapsedMs": 4178.200000017881,
+      "sha256": "eb136251ce2401c57322d6c89c4d84cbe4b8edc92227e97b9ac6d2aca314732e"
+    },
+    {
+      "name": "frames/052.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.513888888888889,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.7166666666666668,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9194444444444447,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 4.25,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4250,
+      "actualRequestElapsedMs": 4266.200000017881,
+      "sha256": "421572734c9a913b41af39cee2e115a87ba797d5c64926f41d9556300a93aac0"
+    },
+    {
+      "name": "frames/053.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.5370370370370368,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.7398148148148146,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9425925925925925,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 4.333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4333.333333333333,
+      "actualRequestElapsedMs": 4344,
+      "sha256": "a6bc79ea55623646599f3c08d39c81409ed2d7f62fe459742adddfc8dc4d6d19"
+    },
+    {
+      "name": "frames/054.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.5601851851851856,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.762962962962963,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9657407407407408,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 4.416666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4416.666666666667,
+      "actualRequestElapsedMs": 4432.200000017881,
+      "sha256": "017a71f3575c1e8954fc695ff61f067af5329418b8c7d5bd864367c0eaf2dd8f"
+    },
+    {
+      "name": "frames/055.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.5833333333333334,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.7861111111111112,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9888888888888892,
+          "blend": null,
+          "offsetX": 0
+        }
+      ],
+      "sourceTime": 4.5,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4500,
+      "actualRequestElapsedMs": 4511.300000011921,
+      "sha256": "d1c8249ac83cfc2b09ad5f8bdeb47f2588260a68790414bd4d177698ebc7afbc"
+    },
+    {
+      "name": "frames/056.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.6064814814814812,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.809259259259259,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.043333333333333,
+          "blend": null,
+          "offsetX": 3.977999999999969
+        }
+      ],
+      "sourceTime": 4.583333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4583.333333333333,
+      "actualRequestElapsedMs": 4598,
+      "sha256": "67c2defc352061778e4ba69e1eeff3a15f3e10a339eae9ace63c6f38d02b8dbe"
+    },
+    {
+      "name": "frames/057.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.62962962962963,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.8324074074074074,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.12666666666666693,
+          "blend": null,
+          "offsetX": 11.628000000000023
+        }
+      ],
+      "sourceTime": 4.666666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4666.666666666667,
+      "actualRequestElapsedMs": 4675.5999999940395,
+      "sha256": "1bbb6291782e74ec1bb9e97515e33629f87d46a87d15f4ccd076d5550ce313ac"
+    },
+    {
+      "name": "frames/058.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.6527777777777778,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.8555555555555556,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.20999999999999996,
+          "blend": null,
+          "offsetX": 19.277999999999988
+        }
+      ],
+      "sourceTime": 4.75,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4750,
+      "actualRequestElapsedMs": 4765.800000011921,
+      "sha256": "b7ca0a7bdded1738f958b3d39ccb3d7bf6c0417734c37d06166b5b694fa9046d"
+    },
+    {
+      "name": "frames/059.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.6759259259259256,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.8787037037037035,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.293333333333333,
+          "blend": null,
+          "offsetX": 26.92799999999997
+        }
+      ],
+      "sourceTime": 4.833333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4833.333333333333,
+      "actualRequestElapsedMs": 4843.300000011921,
+      "sha256": "4960b6ecac5ad9548c54dce805bab05e9d1e4e8d93aead65aa54e38f9886abd9"
+    },
+    {
+      "name": "frames/060.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.6990740740740744,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.9018518518518518,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.3766666666666669,
+          "blend": null,
+          "offsetX": 34.578000000000024
+        }
+      ],
+      "sourceTime": 4.916666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 4916.666666666667,
+      "actualRequestElapsedMs": 4929.5999999940395,
+      "sha256": "bf9161fe3422c899624cb1d3f79e69af9878e647db2bb1074dd4b6792c422788"
+    },
+    {
+      "name": "frames/061.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.7222222222222222,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.9250000000000002,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.45999999999999996,
+          "blend": null,
+          "offsetX": 42.22799999999999
+        }
+      ],
+      "sourceTime": 5,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5000,
+      "actualRequestElapsedMs": 5012.800000011921,
+      "sha256": "8240582d4514a172e8000c7aa3598940327a497bb7769e4ab0d6b8fe3ea5a76b"
+    },
+    {
+      "name": "frames/062.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.74537037037037,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.948148148148148,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.543333333333333,
+          "blend": null,
+          "offsetX": 49.877999999999965
+        }
+      ],
+      "sourceTime": 5.083333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5083.333333333333,
+      "actualRequestElapsedMs": 5099,
+      "sha256": "acabed427287e3e3991fee13b571ff3d3336945cec4895761364fba3983abd5a"
+    },
+    {
+      "name": "frames/063.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.7685185185185188,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.9712962962962962,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.6266666666666669,
+          "blend": null,
+          "offsetX": 57.52800000000002
+        }
+      ],
+      "sourceTime": 5.166666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5166.666666666667,
+      "actualRequestElapsedMs": 5178.9000000059605,
+      "sha256": "fe14cc0fa547c1ebe5ee9bff23bd70bfc9ef5f5090c47e5597d730a7c89b6b37"
+    },
+    {
+      "name": "frames/064.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.7916666666666666,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "idle",
+          "phase": 0.9944444444444446,
+          "blend": null,
+          "offsetX": -1.8359999999999426
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.71,
+          "blend": null,
+          "offsetX": 65.17799999999998
+        }
+      ],
+      "sourceTime": 5.25,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5250,
+      "actualRequestElapsedMs": 5265.4000000059605,
+      "sha256": "c5f5dac1322ab1189e238bd09bee90e662ae61f143025f10370a298e5d522039"
+    },
+    {
+      "name": "frames/065.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.8148148148148144,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.06333333333333258,
+          "blend": null,
+          "offsetX": -7.6499999999998725
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.793333333333333,
+          "blend": null,
+          "offsetX": 72.82799999999996
+        }
+      ],
+      "sourceTime": 5.333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5333.333333333333,
+      "actualRequestElapsedMs": 5344.700000017881,
+      "sha256": "88892846a5eca7fac5b11608ee87da4997384b3bc39e0b3e0548285cfd4a7b73"
+    },
+    {
+      "name": "frames/066.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.8379629629629632,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.1466666666666665,
+          "blend": null,
+          "offsetX": -15.299999999999926
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.8,
+          "blend": {
+            "clip": "peck",
+            "phase": 0,
+            "weight": 0.32817592592592754
+          },
+          "offsetX": 71.92423965694991
+        }
+      ],
+      "sourceTime": 5.416666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5416.666666666667,
+      "actualRequestElapsedMs": 5429.5999999940395,
+      "sha256": "67b552658a80829c070645226d6357862234f973717aee03e2021f2112f5aff4"
+    },
+    {
+      "name": "frames/067.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.8611111111111112,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.23000000000000043,
+          "blend": null,
+          "offsetX": -22.94999999999998
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.8,
+          "blend": {
+            "clip": "peck",
+            "phase": 0,
+            "weight": 0.8959999999999998
+          },
+          "offsetX": 69.32324345449511
+        }
+      ],
+      "sourceTime": 5.5,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5500,
+      "actualRequestElapsedMs": 5512,
+      "sha256": "c7c0a36d16a6d9e17e3feaf8e3372ac31c9829e235625e124a0d0301fecfc33b"
+    },
+    {
+      "name": "frames/068.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.884259259259259,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.3133333333333326,
+          "blend": null,
+          "offsetX": -30.59999999999987
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.030952380952380718,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        }
+      ],
+      "sourceTime": 5.583333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5583.333333333333,
+      "actualRequestElapsedMs": 5596.5999999940395,
+      "sha256": "239f7bc5af92ce94dfd7f821ce6e30663dbd68733ea0d021697145b199d85c58"
+    },
+    {
+      "name": "frames/069.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9074074074074078,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.3966666666666665,
+          "blend": null,
+          "offsetX": -38.24999999999992
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.09047619047619067,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        }
+      ],
+      "sourceTime": 5.666666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5666.666666666667,
+      "actualRequestElapsedMs": 5677.700000017881,
+      "sha256": "b543495ff50c9331672ccdc3720a18e2fcff8eef87bac61a4d3cc706c2acd9fc"
+    },
+    {
+      "name": "frames/070.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9305555555555556,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.4800000000000004,
+          "blend": null,
+          "offsetX": -45.89999999999998
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.15,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        }
+      ],
+      "sourceTime": 5.75,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5750,
+      "actualRequestElapsedMs": 5766.5,
+      "sha256": "54bd65b5b8482b5e1f0c0af0312187bfb967da25cb194f66f1422e2742257c2b"
+    },
+    {
+      "name": "frames/071.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9537037037037034,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.5633333333333326,
+          "blend": null,
+          "offsetX": -53.54999999999987
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.2095238095238093,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        }
+      ],
+      "sourceTime": 5.833333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5833.333333333333,
+      "actualRequestElapsedMs": 5844.300000011921,
+      "sha256": "6003b5a2044c6f7e017401171bce1933cd62cc7df6bf107df4fa8e235f04592d"
+    },
+    {
+      "name": "frames/072.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "idle",
+          "phase": 0.9768518518518522,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.6466666666666665,
+          "blend": null,
+          "offsetX": -61.199999999999925
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "peck",
+          "phase": 0.26904761904761926,
+          "blend": null,
+          "offsetX": 68.84999999999998
+        }
+      ],
+      "sourceTime": 5.916666666666667,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 5916.666666666667,
+      "actualRequestElapsedMs": 5932.200000017881,
+      "sha256": "086743965bd4ecd4ad1993ab4df5e182492c653098103013ad7cce80bef19aa2"
+    }
+  ],
+  "qa": {
+    "visual": "failed",
+    "timing": "requires-decoded-video-verification",
+    "notes": "已修正稳定行走与停止过渡的支撑脚世界位移；啄食喙未触地、下一次起步及源图关节仍需美术复测，本成片保留失败。"
+  }
+}

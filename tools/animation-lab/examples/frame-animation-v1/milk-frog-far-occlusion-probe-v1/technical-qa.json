@@ -1,0 +1,164 @@
+{
+  "technicalStatus": "passed",
+  "sourceArtStatus": "failed",
+  "origin": "real browser Canvas MediaRecorder -> actual FFprobe/FFmpeg native PTS decode -> every captured PNG comparison",
+  "sourceFiles": [
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/frame-animation-assets/milk-frog-run-v7-frame-07-v9.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-far-occlusion-probe-v1/frame-08-occluded-v1.png",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/frame-animation-assets/milk-frog-run-v5-frame-09-v2.png"
+  ],
+  "sourceHashes": [
+    "28cc9b54ce661b0aba1ff5637b5f54735ac8ec2c0413b72b254752a3c2b2c288",
+    "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+    "5a7406be63f1ad1855f40594ce7774bb3a10d5a864e8991431f97e9e17e475ff"
+  ],
+  "reports": [
+    {
+      "speed": "normal",
+      "technicalStatus": "passed",
+      "sourceArtStatus": "failed",
+      "sourceGeneratedProbeCount": 1,
+      "distinctOriginals": 3,
+      "originalPhases": [
+        0.5833333333333334,
+        0.6666666666666666,
+        0.75
+      ],
+      "capturedPNGs": 3,
+      "uniqueCapturedPNG": 3,
+      "encodedFrames": 4,
+      "seconds": 0.376631,
+      "expectedSeconds": 0.375,
+      "maxRGBMAE255": 2.5401509602864585,
+      "comparison": [
+        {
+          "index": 0,
+          "originalFramePhase": 0.5833333333333334,
+          "sourceIndex": 0,
+          "ptsSeconds": 0,
+          "rgbMAE255": 1.5655886332194011
+        },
+        {
+          "index": 1,
+          "originalFramePhase": 0.6666666666666666,
+          "sourceIndex": 1,
+          "ptsSeconds": 0.127,
+          "rgbMAE255": 2.284966786702474
+        },
+        {
+          "index": 2,
+          "originalFramePhase": 0.75,
+          "sourceIndex": 2,
+          "ptsSeconds": 0.25,
+          "rgbMAE255": 2.5401509602864585
+        }
+      ],
+      "policy": "Three real source PNGs. Slow capture holds each for4samples, not12newposes. One encoded terminal hold excluded from PNG timeline. Partial context NOT complete loop."
+    },
+    {
+      "speed": "slow",
+      "technicalStatus": "passed",
+      "sourceArtStatus": "failed",
+      "sourceGeneratedProbeCount": 1,
+      "distinctOriginals": 3,
+      "originalPhases": [
+        0.5833333333333334,
+        0.6666666666666666,
+        0.75
+      ],
+      "capturedPNGs": 12,
+      "uniqueCapturedPNG": 3,
+      "encodedFrames": 13,
+      "seconds": 1.500386,
+      "expectedSeconds": 1.5,
+      "maxRGBMAE255": 1.6562309265136719,
+      "comparison": [
+        {
+          "index": 0,
+          "originalFramePhase": 0.5833333333333334,
+          "sourceIndex": 0,
+          "ptsSeconds": 0,
+          "rgbMAE255": 1.5655886332194011
+        },
+        {
+          "index": 1,
+          "originalFramePhase": 0.5833333333333334,
+          "sourceIndex": 0,
+          "ptsSeconds": 0.127,
+          "rgbMAE255": 1.5682538350423176
+        },
+        {
+          "index": 2,
+          "originalFramePhase": 0.5833333333333334,
+          "sourceIndex": 0,
+          "ptsSeconds": 0.251,
+          "rgbMAE255": 1.5653762817382812
+        },
+        {
+          "index": 3,
+          "originalFramePhase": 0.5833333333333334,
+          "sourceIndex": 0,
+          "ptsSeconds": 0.377,
+          "rgbMAE255": 1.5633049011230469
+        },
+        {
+          "index": 4,
+          "originalFramePhase": 0.6666666666666666,
+          "sourceIndex": 1,
+          "ptsSeconds": 0.5,
+          "rgbMAE255": 1.6550203959147136
+        },
+        {
+          "index": 5,
+          "originalFramePhase": 0.6666666666666666,
+          "sourceIndex": 1,
+          "ptsSeconds": 0.627,
+          "rgbMAE255": 1.6562309265136719
+        },
+        {
+          "index": 6,
+          "originalFramePhase": 0.6666666666666666,
+          "sourceIndex": 1,
+          "ptsSeconds": 0.75,
+          "rgbMAE255": 1.6438522338867188
+        },
+        {
+          "index": 7,
+          "originalFramePhase": 0.6666666666666666,
+          "sourceIndex": 1,
+          "ptsSeconds": 0.875,
+          "rgbMAE255": 1.6233164469401042
+        },
+        {
+          "index": 8,
+          "originalFramePhase": 0.75,
+          "sourceIndex": 2,
+          "ptsSeconds": 0.999,
+          "rgbMAE255": 1.4481099446614583
+        },
+        {
+          "index": 9,
+          "originalFramePhase": 0.75,
+          "sourceIndex": 2,
+          "ptsSeconds": 1.127,
+          "rgbMAE255": 1.4474207560221355
+        },
+        {
+          "index": 10,
+          "originalFramePhase": 0.75,
+          "sourceIndex": 2,
+          "ptsSeconds": 1.25,
+          "rgbMAE255": 1.4473190307617188
+        },
+        {
+          "index": 11,
+          "originalFramePhase": 0.75,
+          "sourceIndex": 2,
+          "ptsSeconds": 1.376,
+          "rgbMAE255": 1.447247823079427
+        }
+      ],
+      "policy": "Three real source PNGs. Slow capture holds each for4samples, not12newposes. One encoded terminal hold excluded from PNG timeline. Partial context NOT complete loop."
+    }
+  ]
+}

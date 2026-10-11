@@ -1,0 +1,40 @@
+{
+  "kind": "imagegen-pose-part-probe",
+  "tool": "image_gen.imagegen",
+  "prompt": "Generate a SINGLE isolated far/right anatomical arm PART for this yellow muscular milk-frog, not a full character. Reference1 is the exact shape/placement guide: shoulder at650,430, elbow546,630, wrist698,795, curled pink fist slightly below wrist. Reference2 is ONLY natural yellow-muscle/pink-hand/black-outline ART STYLE and identity. Output exactly one isolated arm on a TRANSPARENT1254x1254 canvas in those native coordinates, no head/body/legs/otherarm. Keep all empty surrounding canvas transparent; do not center-fit or rescale the part. The silhouette is a bent DOWNWARD V: round muscular yellow shoulder at top-right, yellow upperarm slopes DOWN-LEFT to elbow at middle-left, yellow forearm slopes DOWN-RIGHT from elbow to a closed PINK FIST at bottom-right. Clearly form one connected shoulder-upperarm-elbow-forearm-wrist-fist chain, with anatomical tapered forearm and elbow crease and rounded wrist connection. Upper and forearm lengths both225px. Use same shiny yellow material, smallwhitegloss, thin clean blackoutline, pink curled knuckles as frog source. Same forearm dotted yellow-to-pink gradient near wrist. All fingers curled, NOT open palm. Blue/gray diagram just shape guide, NO blue/gray/text/grid in final. This is a standalone source pose PART to guide a later actual frame edit, NOT a final animation frame. Do not introduce body/face/feet or extra hand.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba44b266-0637-4f71-abd8-15708fbee045.png",
+  "generatedFileSha256": "117ef7977d46ac6ec2ac70f18c380803e283264a6c5e040fdaa93348443265b6",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-arm-control-v1/control-08-far-only.png",
+      "sha256": "782ef814ac3a0a217f75e28b75414af431fd1c20f399a30fb2bed394f5cf18e9"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+      "sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d"
+    }
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      430,
+      112,
+      565,
+      1006
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": [
+      "Standalone natural yellow arm downward-V shape generated; requested fixed source registration failed: visibly enlarged centered arm shoulderaround790260, elbow530630, wrist800930. NOT an actual character frame or final animation source."
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "equine-neck-fixed-encode/v1",
+  "inputCapture": "examples/horse-neck-path-v3/browser/walk-1x-r4-capture",
+  "captureRevision": "r4-identical-halves",
+  "asset": "horse-side-v24",
+  "algorithm": "neck-path-v3",
+  "clip": "walk",
+  "speed": 1,
+  "inputSHA": [
+    {
+      "file": "frames/000.png",
+      "sha256": "09a6b6e02dd8ecaee2228e0296e7a6152eb0241fb1753801e1060724f6b3e19f"
+    },
+    {
+      "file": "frames/001.png",
+      "sha256": "227e1e0aa1d8b2801037e347007e58a19a601659df88f6e18835205e1670236e"
+    },
+    {
+      "file": "frames/002.png",
+      "sha256": "1e6cfeb3c09a16464d53e6a5295f97c1e92270384814a498de21265c1e3d1633"
+    },
+    {
+      "file": "frames/003.png",
+      "sha256": "5c9b6d483a0c1e6904824e04e57de9d7eb64ac858ad3bbada5224f292583883e"
+    },
+    {
+      "file": "frames/004.png",
+      "sha256": "ba5fcf90601ec36af16ea116f7efd0ec06ef698dbe217cee6cc8be33c125c7e9"
+    },
+    {
+      "file": "frames/005.png",
+      "sha256": "507038e0e4670a526f33d7c573c3e7b7cf7bbc237acb184ab019e29de34835e5"
+    },
+    {
+      "file": "frames/006.png",
+      "sha256": "2f78ef464952b89f7d2401d4a48d2226abb26faf3e3bba854e18e08745aaf5e7"
+    },
+    {
+      "file": "frames/007.png",
+      "sha256": "195069a13e000a99b76ef7e51d34e2a8941bdb7cd2ff093e3584769be558e135"
+    },
+    {
+      "file": "frames/008.png",
+      "sha256": "e0cb68cddf2559cce1452e9f209693fd6606587654c9b50b90a02a1b3babb87e"
+    },
+    {
+      "file": "frames/009.png",
+      "sha256": "cfb8d160566bbcc844c755ff2c489322ded8ebc41615bb8e1af945e004e6743b"
+    },
+    {
+      "file": "frames/010.png",
+      "sha256": "529c4141bea6a0fc0104acf8f2a8fe8c6912c6e9a051aeea59e7c821d41471cd"
+    },
+    {
+      "file": "frames/011.png",
+      "sha256": "b7a7978306d7ecec43bb9935afa63339ad6b8fd946dd136dae795539de24359f"
+    }
+  ],
+  "sourceSHA": [
+    {
+      "key": "primary",
+      "atlas": "/art/horse-side-parts-v5.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+      "file": "sources/horse-side-parts-v5.png"
+    },
+    {
+      "key": "horse-cannon-material",
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+      "file": "sources/horse-cannon-parts-v8.png"
+    },
+    {
+      "key": "horse-upper-material",
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+      "file": "sources/horse-upper-parts-v9.png"
+    },
+    {
+      "key": "horse-hoof-material",
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+      "file": "sources/horse-hoof-parts-v11.png"
+    }
+  ],
+  "fps": 12,
+  "requestedDuration": 1,
+  "encodedDuration": 1,
+  "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+  "encodedFrameCount": 12,
+  "expectedFrameCount": 12,
+  "maxPTSErrorSeconds": 3.33333333379926e-7,
+  "output": "examples/horse-neck-path-v3/browser/walk-1x-r4-capture/fixed-12fps.mp4",
+  "outputSHA256": "b966ad876940ea10396c75389944fa1ad5f3904521200b9c9af2b0e1af972c03",
+  "args": [
+    "-y",
+    "-v",
+    "error",
+    "-framerate",
+    "12",
+    "-start_number",
+    "0",
+    "-i",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/horse-neck-path-v3/browser/walk-1x-r4-capture/frames/%03d.png",
+    "-map",
+    "0:v:0",
+    "-frames:v",
+    "12",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "18",
+    "-preset",
+    "veryslow",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/horse-neck-path-v3/browser/walk-1x-r4-capture/fixed-12fps.mp4"
+  ],
+  "technical": "passed",
+  "visual": "failed",
+  "gameIntegrated": false
+}

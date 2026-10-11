@@ -1,0 +1,95 @@
+{
+  "sourceArt": "failed",
+  "selectedIntoRun": false,
+  "existingSequence": "../milk-frog-run-sequence-v7/source-manifest.json",
+  "newOriginals": 4,
+  "standaloneParts": 1,
+  "controls": "controls.json",
+  "mathControl": {
+    "state": "passed-local",
+    "constraints": "fixed shoulder anchors,225px each arm segment,60..100deg flex,half-cycle opposed upperarms,continuous sampled trajectory",
+    "faultsRejected": [
+      "frozen far chain",
+      "same-phase arms",
+      "drifting shoulder root",
+      "disconnected wrist"
+    ],
+    "limits": "No measured biological kinematics, no actual output agreement, no leg contact validation. 12 time phases with 7 distinct cosine upper-arm postures; passing overlap3/9 may hide far arm.",
+    "sourceCoupling": "failed; source8 far upper/thigh same-back direction",
+    "rejectForNewGeneration": true
+  },
+  "sourceChecks": [
+    {
+      "v": 5,
+      "state": "failed",
+      "observation": "Far fist moves from outer-right early peak to extreme back. Native pink centroid502,663; target wrist698,795 not followed. Visible elbow approx425,510 not target546,630. Both hand identities retained but output is not phase8 passing."
+    },
+    {
+      "v": 6,
+      "state": "failed",
+      "observation": "Only one substantial pink hand region637,675; original near open fingers changed to rounded curled-looking shape, separate far fist absent. Cannot accept occlusion as success because near identity also changed."
+    },
+    {
+      "v": 7,
+      "state": "failed",
+      "observation": "Far-only control avoids near hand destruction (near centroid648,641), but rear fist remains on outer right. Native pink regions974,682 and1009,722; actual whole upperarm attaches aroundrightbelly instead of fixed shoulder650430. Guide not obeyed."
+    },
+    {
+      "v": 8,
+      "state": "failed",
+      "observation": "Standalone-part style reference generates connected yellow arm on outer-right throat/body side and pinkfist985,653, opposite control upperarm backslope. Near open hand648,640 remains; original left shoulder bulge remains anatomically uncertain. Entire far shoulder/elbow/wrist chain does not follow passing guide."
+    }
+  ],
+  "standalone": {
+    "state": "failed-registration",
+    "path": "standalone-arm-part-v1.png",
+    "observation": "Downward-V bent arm shape and curled fist generated, but requested source placement ignored. Actualalpha bounds430,112,565,1006. Oversized centered shoulder~790260 vs requested650430; not final frame; no code resizing/paste."
+  },
+  "technical": {
+    "nativeCanvas": [
+      1254,
+      1254
+    ],
+    "byteCopyOnly": true,
+    "noPerFrameFit": true,
+    "alphaThreshold": 24,
+    "edgePixels": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "soleY": [
+      1204,
+      1205,
+      1204,
+      1204
+    ],
+    "limitation": "Noedgepixels does not certify source registration; arm-only edits altered non-arm pixels too."
+  },
+  "evidence": {
+    "originals": [
+      "frame-08-v5.png",
+      "frame-08-v6.png",
+      "frame-08-v7.png",
+      "frame-08-v8.png"
+    ],
+    "ui": [
+      "ui-probe-v5.png",
+      "ui-probe-v6.png",
+      "ui-probe-v7.png",
+      "ui-probe-v8.png"
+    ],
+    "nativeMeasurements": "native-pink-components.json",
+    "observations": "Each full native PNG, controlcontact, actualUI screenshot individually inspected using view_image. No new actual run movie because none selected into sequence.",
+    "inputOutputs": [
+      "generation-inputs.json",
+      "additional-generation-inputs.json",
+      "*-receipt.json"
+    ],
+    "lastActualNormalMovie": "../milk-frog-run-sequence-v7/browser-normal-capture/recording.webm",
+    "lastActualSlowMovie": "../milk-frog-run-sequence-v7/browser-slow-capture/recording.webm"
+  },
+  "uncertainty": "Far shoulder is largely occluded in original three-quarter source; exact physical joint position cannot be certified from painted sprites.650430 is proposed stable control anchor, not measured anatomical truth. Permanent source hand/arm identity and actual wholechain agreement remain failed.",
+  "next": "New imagegen paused per root. Complete actual source leg/arm phase alignment and fixed socket reachability first. Source-labels.json/md+source-08-joint-overlay.png now ready."
+}

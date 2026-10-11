@@ -1,0 +1,222 @@
+{
+  "schema": "map-scene-qa/v2",
+  "status": "technical-regressions-passed-visual-candidate",
+  "date": "2026-10-11T16:00:20.103Z",
+  "technicalTests": {
+    "command": "node --test test/map-scene.test.mjs test/infinite-map.test.mjs",
+    "exitCode": 0,
+    "passed": 25,
+    "failed": 0,
+    "log": "core-test.log",
+    "compiledUnmodifiedWangscapeReference": "wangscape-reference.json"
+  },
+  "visualAcceptance": "pending-user-acceptance",
+  "engineImported": false,
+  "realGeographicData": false,
+  "styles": [
+    "painted",
+    "pixel",
+    "scifi"
+  ],
+  "deliverables": [
+    "painted/",
+    "pixel/",
+    "scifi/",
+    "browser-map-package.zip"
+  ],
+  "source": "../../map-vendor/SOURCE-scene.json",
+  "failuresAndRetests": [
+    {
+      "id": "source-art-initial-prop-margins",
+      "failure": "Generated props initially filled cells and risked clipping.",
+      "action": "Built-in imagegen edits preserve terrain and shrink only bottom-row props.",
+      "proof": "../../public/map-styles/generation-prompts.json",
+      "status": "candidate-repaired"
+    },
+    {
+      "id": "black-grid-lines",
+      "failure": "Surface sampling included semi-transparent bottom edges.",
+      "proof": "fail-ui-scifi-grid-lines.png",
+      "action": "Registered measured atlas boundaries and excluded 10 source pixels of soft edges; all sampled alpha≥250.",
+      "status": "regression-passed"
+    },
+    {
+      "id": "pixel-prop-green-strip",
+      "failure": "Wrong equal-height bottom-row extraction included terrain above trees.",
+      "proof": "fail-pixel-prop-edge-strip.png",
+      "action": "Real pixel row boundary747 registered; props rect samples actual cell.",
+      "status": "same-coordinate-retested"
+    },
+    {
+      "id": "user-vertical-sand-snow-stripes",
+      "failure": "Equal-width1448÷4 sampling used362/724/1086 while actual painted/pixel boundaries are374/748/1120; ocean read sand and marsh read snow.",
+      "proof": [
+        "user-reported-stripes.png",
+        "fail-ui-pixel-stripes-user-position.png"
+      ],
+      "action": "Explicit source registration from RGB and alpha discontinuities, non-destructive exact source rects; stochastic global translations replace mirrored flower-ring repetition.",
+      "retest": "ui-pixel-stripes-after.png",
+      "parameters": {
+        "seed": "漫游-2026",
+        "scale": 96,
+        "seaLevel": 0.45,
+        "roughness": 0.45,
+        "vegetation": 0.65,
+        "style": "pixel",
+        "x": 214,
+        "y": -328,
+        "zoom": 9.95
+      },
+      "viewportNote": "User screenshot and local Chrome viewport differ; seed/config/camera/zoom match.",
+      "status": "visually-rechecked-candidate"
+    },
+    {
+      "id": "zoom4-cache-thrashing",
+      "failure": "40 visible texture chunks exceeded fixed24chunkLRU, rebuilding on every movement.",
+      "before": {
+        "initialDrawMs": 897.3,
+        "warmMoveDrawMs": 879.6,
+        "visibleChunks": 40,
+        "textureCapacity": 24,
+        "screenshot": "fail-ui-zoom4-before.png"
+      },
+      "action": "Independent32MiB/512chunk texture budget, LOD4/8/16 adjusted tovisible budget, Worker CPU generation, sprite halo cached in Worker, far-sprite omission.",
+      "after": {
+        "sampleCount": 85,
+        "maxDrawMs": 3.0999999940395355,
+        "maxRafIntervalMs": 34.40000000000009,
+        "warmOneTileMoveDrawMs": 0.4,
+        "warmNewTextures": 0,
+        "initialReadyAfterMs": 2338.5999999940395,
+        "initialVisibleChunks": 40,
+        "initialTextureBytes": 2621440,
+        "trace": "zoom4-after-metrics.json",
+        "screenshot": "ui-zoom4-after.png"
+      },
+      "parameters": {
+        "style": "painted",
+        "x": 251,
+        "y": -272,
+        "zoom": 4
+      },
+      "status": "actual-keyboard-and-drag-retested"
+    },
+    {
+      "id": "single-chunk-main-thread-stall",
+      "failure": "First attempt only limited to one chunk per frame but measured56–70ms blocking perchunk.",
+      "action": "Actual raster computation moved to module Worker; UI uploads pixels and draws only.",
+      "status": "worker-retested"
+    },
+    {
+      "id": "test-foam-threshold",
+      "failure": "Naive B>R test rejected nearly white ocean foam (maxR−B2) and warm snow (maxR−B22).",
+      "action": "Use observed source thresholds B≥R−4 for ocean andB≥R−24 for snow; old sand/brown-contamination exceeds those ranges.",
+      "status": "corrected-observable-test-passed"
+    },
+    {
+      "id": "automation-download-wait-timeout",
+      "failure": "Initial CUA download event timed out although actual Chrome Downloads ZIP existed.",
+      "action": "Validate actual downloadedZIP, CRC and files; never treat attemptedclickas success.",
+      "status": "product-download-verified"
+    }
+  ],
+  "browserExport": {
+    "crcPassed": true,
+    "files": [
+      "terrain.png",
+      "decorations.png",
+      "scene.png",
+      "scene.json",
+      "map.tmj",
+      "atlas.png",
+      "source.json"
+    ],
+    "schema": "styled-game-map/v1",
+    "algorithm": "wangscape-top-two-registered-stochastic-textures-v2",
+    "config": {
+      "seed": "漫游-2026",
+      "scale": 96,
+      "seaLevel": 0.45,
+      "roughness": 0.45,
+      "vegetation": 0.65
+    },
+    "region": {
+      "x": 188,
+      "y": -345,
+      "width": 54,
+      "height": 35
+    },
+    "style": "pixel",
+    "pixelsPerTile": 32,
+    "sha256": "6ce822f82368187123c9c546b077d783542124ed9acce940018b21261f37ad93",
+    "bytes": 8313248,
+    "pixelParity": {
+      "terrain.png": {
+        "width": 1728,
+        "height": 1120,
+        "differingBytes": 66917,
+        "maxDifference": 1,
+        "exact": false
+      },
+      "scene.png": {
+        "width": 1728,
+        "height": 1120,
+        "differingBytes": 71386,
+        "maxDifference": 1,
+        "exact": false
+      }
+    },
+    "proof": "ui-background-export-success.png",
+    "interaction": "Moved camera214→215 while exportbutton disabled/backgroundPNG task running; downloadfinished afterward.",
+    "byteParityNote": "BrowserPNG vsCLI decoded opaque terrain/scene differ by atmost1 channel unit; not byte-exact.",
+    "consoleErrors": []
+  },
+  "continuity": {
+    "terrainIndependentWindows": "exact-fullRGBA-negative-coordinate-test-passed",
+    "decorativeHalo": "exact-fullRGBA-independent-window-test-passed",
+    "stylesShareGameplayData": true
+  },
+  "performanceLimitations": [
+    "Measured draw time is UI rendering only; worker build and initial progressive loading are separate metrics.",
+    "rAF max34.4ms in measured session does not establish60fps; no target-game performance claim.",
+    "32MiB cap excludes original atlas,logic chunks,Worker copies and browser canvas/compositor.",
+    "Initial complete texture visibility required about2.34seconds in final test; UI remained interactive."
+  ],
+  "openIssues": [
+    "Engine import not executed.",
+    "Navigation excludes decorative colliders and actor dimensions.",
+    "No bridges,roads,settlements,save patches or real geographic elevations.",
+    "Stochastic sampling can soften pixel source art and source motifs mayremain visible.",
+    "2D scenery framing and style quality remain candidates awaiting user review.",
+    "3D integration and resource library still inprogress."
+  ],
+  "hashes": {
+    "map-scene.mjs": "dee8cfd7305de47e5585cc01516b6afc840489f8d57d890c21793dcfcf3b2f2c",
+    "public/map-generator.mjs": "23082bda533d2dd6b460edc48ea7f931d459d0a57441d5aa229255e93ea596c0",
+    "public/map-scene-worker.mjs": "39981791a0154017b7bc34a045b5a76cc737f33ddafbfa2785a2cfd515e7aedc",
+    "scripts/styled-map-export.mjs": "0652cb0af8cdc445872949a55456936317fe12e89d1d6e1e5eaa82e66494dbee",
+    "public/map-styles/generation-prompts.json": "a809b94a3877ba036322d0f04f10f445ae0a31b160bde108fcfd94521521e23a",
+    "map-vendor/SOURCE-scene.json": "d753c08870747116ab571667777540c1a947d8a84e63c6626d371a5d0ee71b78",
+    "examples/map-scenes-v1/ui-pixel-stripes-after.png": "136b58edbf21100770e5d2d1067d574c694b9dcd729e42093cda44e42660db2b",
+    "examples/map-scenes-v1/ui-zoom4-after.png": "6378dbac12ee38bce12e55c34b5e6d46ed2fe71f590f092644eab5d8e5aa26b8"
+  },
+  "currentSemanticScene": {
+    "algorithm": "wangscape-top-two-global-planner4-rivers-v4",
+    "plannerVersion": 4,
+    "evidenceIndex": "../map-terrain-3d-v1/qa-report.json",
+    "sameOriginalOverview": {
+      "x": 251,
+      "y": -272,
+      "scale": 96,
+      "zoom": 4,
+      "visibleTextures": 40,
+      "bytes": 2621440,
+      "coldReadyBeforeMs": 17987.9,
+      "coldReadyAfterMs": 2832.7,
+      "drawMs": 0.4
+    },
+    "sourcePathsAndCollisionExported": true,
+    "visualAccepted": false,
+    "engineImported": false
+  }
+}

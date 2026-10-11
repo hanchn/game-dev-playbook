@@ -1,0 +1,35 @@
+{
+  "observedAt": "2026-10-11T22:35:26.699305+00:00",
+  "failures": [
+    {
+      "source": "https://api.polyhaven.com/assets?type=all&collection=pine_forest",
+      "status": 403,
+      "effect": "public metadata API unavailable in this session; model dependencies/LOD bytes not obtained"
+    },
+    {
+      "source": "https://api.polyhaven.com/files/pine_tree_01",
+      "status": 403
+    },
+    {
+      "source": "https://api.polyhaven.com/files/tree_small_02",
+      "status": 403
+    }
+  ],
+  "websiteConfirmedNotLocalSource": [
+    {
+      "url": "https://polyhaven.com/collections/pine_forest",
+      "type": "official original Blender scene + nature assets collection",
+      "status": "official page checked; not downloaded/imported/tested"
+    },
+    {
+      "url": "https://polyhaven.com/a/pine_tree_01",
+      "type": "actual mature pine model with PBR/LODs",
+      "status": "official page checked; not in local1349catalog"
+    },
+    {
+      "url": "https://polyhaven.com/a/tree_small_02",
+      "type": "actual broadleaf model with PBR/LODs",
+      "status": "official page checked; 5M native triangles documented; not downloaded/imported/tested"
+    }
+  ]
+}

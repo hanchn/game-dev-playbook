@@ -1,0 +1,47 @@
+{
+  "i": "08",
+  "prompt": "Use case: stylized-concept. Edit reference image1 into ONE actual game animation PNG. Image1 is the accepted canonical camera and alien face/skin/clothing reference, image2 is the assigned limb pose diagram only. Keep the ENTIRE HEAD FACE EYE NECK AND TORSO of image1 at the exact same original position, apparent size, skin microtexture and lighting. Do not regenerate, enlarge, round or recenter the head. Repose only both arms and legs. True alpha background. Canvas 1086×1448 same as image1, no zoom/fit/crop. Actual baseline of image1 is y1375 for ground contact; use y1375 precisely for contacting toe, not bottom canvas y1448. The hip/belt remains at same height and x as image1. Red means permanent near foreground limb, blue far background limb. Real skin/clothing, no colors/bones/labels. Same olive sleeveless vest, cream undershirt, brown cargo pants, dark brown boots; large outer cargo thigh pocket stays on near leg, never transfers to far leg. Same gaze/expression/speckle pattern/eye shape. Every hand and boot inside canvas with at least64px lateral margin and64px below lowest foot. Independent two fists and two boots, no body crossing discontinuity. Return a single actual 3D rendered sprite, not sheet.\nPhase8/12: Far plain-side leg extends diagonally BACK to toe-off, far boot TOE touches y1375 behind hip, heel lifts. Near cargo-pocket leg lifts FORWARD with shin folded and near heel under hip, boot safely airborne. Far arm is PASSING: upper arm behind/down elbow waist, forearm down-right far fist next to hip visible beside vest (not back extreme). Near arm forward at low chest with separate fist. Keep head and waist the canonical image1 unchanged, do not lower entire body or lengthen legs.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c2371b9d-b044-404c-88cd-464b66c99891.png",
+  "tool": "image_gen.imagegen",
+  "generatedFileSha256": "d99570c2ac1ae081f5ab359de36befc8bee25bc6970db1ec12357bcc048bf6b9",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v9-phase-08.png",
+  "references": [
+    {
+      "role": "canonical frame0 identity/camera/style",
+      "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-00.png",
+      "sha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09"
+    },
+    {
+      "role": "single pose control",
+      "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-08.png",
+      "sha256": "1d90f8df8af71ffd617f3ce73bd8bdc4a12dc3896a8a7a88b08953eb0d86ac38"
+    }
+  ],
+  "phase": 0.6666666666666666,
+  "actualPNGSize": [
+    1086,
+    1448
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      150,
+      64,
+      731,
+      1315
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "poseAdherence": "partial-local-only",
+    "notes": "canonical帧0重姿势后far脚底返回约1375基线，但far拳仍稍后于passing预期；头形/皮纹跨帧需继续复测，未通过",
+    "upperSilhouetteMaxRun": 398,
+    "reviewedAt": "2026-10-11T17:23:53.226Z"
+  },
+  "index": 8,
+  "file": "alien-run-single-v9-phase-08.png"
+}

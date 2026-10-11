@@ -1,0 +1,158 @@
+[
+  {
+    "id": "painted",
+    "name": "手绘森林",
+    "description": "温暖手绘草地、湖岸与树冠",
+    "pixelated": false,
+    "version": 1,
+    "atlas": "/map-styles/painted-atlas-v1.png",
+    "grid": {
+      "columns": 4,
+      "rows": 3
+    },
+    "terrainCells": [
+      "grass",
+      "earth",
+      "sand",
+      "ocean",
+      "water",
+      "rock",
+      "snow",
+      "marsh"
+    ],
+    "propCells": [
+      "tree",
+      "rock",
+      "shrub",
+      "cactus"
+    ],
+    "bytes": 2863469,
+    "sha256": "00010acaebdc030e88a6789ce3c5b8e9dc163c9ed6208c9df90468eb83984208",
+    "width": 1448,
+    "height": 1086,
+    "generatedBy": "built-in image_gen",
+    "promptPath": "public/map-styles/generation-prompts.json",
+    "visualStatus": "candidate-user-discovered-defects-fixed-pending-acceptance",
+    "registeredAtlas": {
+      "width": 1448,
+      "height": 1086,
+      "x": [
+        0,
+        374,
+        748,
+        1120,
+        1448
+      ],
+      "y": [
+        0,
+        362,
+        725,
+        1086
+      ]
+    }
+  },
+  {
+    "id": "pixel",
+    "name": "复古像素",
+    "description": "16-bit 地表、清晰像素轮廓",
+    "pixelated": true,
+    "version": 1,
+    "atlas": "/map-styles/pixel-atlas-v1.png",
+    "grid": {
+      "columns": 4,
+      "rows": 3
+    },
+    "terrainCells": [
+      "grass",
+      "earth",
+      "sand",
+      "ocean",
+      "water",
+      "rock",
+      "snow",
+      "marsh"
+    ],
+    "propCells": [
+      "tree",
+      "rock",
+      "shrub",
+      "cactus"
+    ],
+    "bytes": 2342714,
+    "sha256": "a424d5b209042aee044a1365b35ab7b67bb61ff948efc39b97085816617048ec",
+    "width": 1448,
+    "height": 1086,
+    "generatedBy": "built-in image_gen",
+    "promptPath": "public/map-styles/generation-prompts.json",
+    "visualStatus": "candidate-user-discovered-defects-fixed-pending-acceptance",
+    "registeredAtlas": {
+      "width": 1448,
+      "height": 1086,
+      "x": [
+        0,
+        374,
+        748,
+        1120,
+        1448
+      ],
+      "y": [
+        0,
+        373,
+        747,
+        1086
+      ]
+    }
+  },
+  {
+    "id": "scifi",
+    "name": "科幻荒原",
+    "description": "紫色苔原、晶体与发光菌群",
+    "pixelated": false,
+    "version": 1,
+    "atlas": "/map-styles/scifi-atlas-v1.png",
+    "grid": {
+      "columns": 4,
+      "rows": 3
+    },
+    "terrainCells": [
+      "grass",
+      "earth",
+      "sand",
+      "ocean",
+      "water",
+      "rock",
+      "snow",
+      "marsh"
+    ],
+    "propCells": [
+      "tree",
+      "rock",
+      "shrub",
+      "cactus"
+    ],
+    "bytes": 3203695,
+    "sha256": "15217e98a3fc7a8233ad566d70136522f58525db5ca6c86af647f22eacd99d31",
+    "width": 1448,
+    "height": 1086,
+    "generatedBy": "built-in image_gen",
+    "promptPath": "public/map-styles/generation-prompts.json",
+    "visualStatus": "candidate-user-discovered-defects-fixed-pending-acceptance",
+    "registeredAtlas": {
+      "width": 1448,
+      "height": 1086,
+      "x": [
+        0,
+        362,
+        725,
+        1086,
+        1448
+      ],
+      "y": [
+        0,
+        362,
+        723,
+        1086
+      ]
+    }
+  }
+]

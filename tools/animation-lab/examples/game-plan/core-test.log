@@ -1,0 +1,22 @@
+✔ puzzle brief retains actual rules and uses board controls, without platform-game assumptions (1.670584ms)
+✔ unknown genre and selectors remain assumptions rather than becoming dinosaur platformer (0.266875ms)
+✔ explicit scenes and current characters are inherited; assets never promoted to visual approval (0.242708ms)
+✔ undefined scene targets, duplicate IDs and missing entry are actually rejected (0.397625ms)
+✔ explicit disconnected graph is rejected; absent edges become transparent proposed routing (0.221584ms)
+✔ bidirectional edge does not duplicate infinitely and conditional runtime reachability stays untested (0.122042ms)
+✔ invalid inputs and duplicate character/action identifiers fail before emitting a plan (3.818458ms)
+✔ all generated tasks remain planned, dependencies exist and UI assets are semantic proposals (0.206042ms)
+✔ CLI rejects disconnected scene brief with machine-readable exit 2, valid nonplatform brief exits 0 (83.217583ms)
+✔ explicit always-false transition cannot make a scene reachable (0.254875ms)
+✔ CLI file input writes a planned result, invalid graph cannot overwrite an existing output (89.112167ms)
+✔ UI adapter preserves rules, explicit HUD and engine provenance without mutating a game plan (2.124584ms)
+✔ UI adapter rejects unsupported engines and genres rather than silently changing user selection (0.3825ms)
+✔ UI adapter requires generated plan shape and rejects overlong UI text before forwarding (0.201208ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 185.4435

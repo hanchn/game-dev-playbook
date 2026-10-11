@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "technicalStatus": "passed",
+  "characterArtStatus": "failed",
+  "scope": "video extraction, source-bound actual independent imagegen frames, fixed sequence transform, preview/export and actual shared Canvas recording; no skeleton raster pretending imagegen",
+  "createdAt": "2026-10-11T17:21:35.428Z",
+  "implementation": [
+    {
+      "file": "tools/animation-lab/frame-animation-core.mjs",
+      "sha256": "65fb05b4c109718159fc4dac8f0e7f123b10b5f6f4f708f2537a2bb061760cb2"
+    },
+    {
+      "file": "tools/animation-lab/public/frame-animation.mjs",
+      "sha256": "65837e0d9f04b35cab7578ade77ebd3c83494a004945df2055a9045958baa2c7"
+    },
+    {
+      "file": "tools/animation-lab/public/canvas-sequence-capture.mjs",
+      "sha256": "570d92ddd9f081795cd5db7d0a02d0139a0244cf4ba9a349a869d56359337272"
+    },
+    {
+      "file": "tools/animation-lab/public/frame-animation.html",
+      "sha256": "7f24b569f1f37079e85566b8a98b747cd2e6903ed9809c1c88567acb7f6adb84"
+    },
+    {
+      "file": "tools/animation-lab/scripts/frame-animation-cli.mjs",
+      "sha256": "565d584bf289288ecebf0fb313d3126124cd9cce619a29b8993c8da2ee1fb420"
+    },
+    {
+      "file": "tools/animation-lab/test/frame-animation.test.mjs",
+      "sha256": "bdece6360de01d25aaa3b95531d3ac74635bbe74bbe707356f0f1a3d88b7d790"
+    }
+  ],
+  "tests": {
+    "count": 13,
+    "passed": 13,
+    "log": "tools/animation-lab/examples/frame-animation-v1/frame-tests-v2.log",
+    "newChecks": [
+      "unequal raw PNGs share a source marker placement after one common transform",
+      "original alpha>=24 clipping cannot be hidden by padding",
+      "explicit receipt phase order overrides v5/v7/v8 filename order",
+      "wrong source SHA rejects before output directory",
+      "real H264 exact decoded frame pixel equivalence",
+      "ZIP native CRC exact byte and Unicode verification"
+    ]
+  },
+  "baselineTechnicalEvidence": "tools/animation-lab/examples/frame-animation-v1/qa-report.json",
+  "actualNativeImagegenEvidence": {
+    "status": "failed",
+    "batchVersions": [
+      "alien-run-controlled-v3",
+      "alien-run-controlled-v4"
+    ],
+    "separateSourceFrames": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/all-frames-reviewed-v8.json",
+    "sourceMetrics": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/source-registration-v8.json",
+    "rawCanvas": [
+      1086,
+      1448
+    ],
+    "controlIsFinalSprite": false,
+    "productionApproval": false,
+    "failedHistoryPreserved": true
+  },
+  "browser": {
+    "url": "http://127.0.0.1:4317/frame-animation",
+    "isolatedHeadlessSession": "frame-animation-generation-qa",
+    "playbackVisitedAll12": true,
+    "sourceReceiptNotesPreserved": true,
+    "playbackEvidence": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-playback.json",
+    "zip": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8.zip",
+    "qa": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-qa.json",
+    "validStageScreenshots": [
+      "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-phase02-dark.png",
+      "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-phase08-light.png"
+    ],
+    "olderScrolledShotsInvalidForArtQA": true
+  },
+  "actualRecording": {
+    "status": "passed",
+    "sourceArtStatus": "failed",
+    "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-capture/recording.webm",
+    "zip": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-capture.zip",
+    "decodedActualPixels": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-decoded-contact.png",
+    "validation": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-recording-validation.json",
+    "requestedDuration": 1.332,
+    "actualDuration": 1.333239,
+    "PNGs": 12,
+    "encodedFrames": 13,
+    "terminalHoldIsExtraEncodedFrame": true,
+    "maxPTSErrorSeconds": 0.006000000000000005,
+    "maxRGBMAE255": 1.8539594014485676,
+    "sourceQAStaysFailed": true
+  },
+  "remainingArtFailures": [
+    "head longest opaque upper-row silhouette spans353..413px, approx17%range relativeminimum; anatomical head landmark still manual",
+    "supporting sole proxies in phase01/07 are24/30pxbelowphase00 and passing2/8new39/62pxbelow",
+    "near/far support and passing arms locally improved but whole sequence continuity and face/texture drift failed",
+    "some original hands/boots miss declared64px safe envelope; packing does not cure it"
+  ],
+  "testHarnessCorrections": [
+    "Playwright CLI run-code cannot dynamic import node fs; initial harness failure rerun via returned JSON, actual download/saveAs",
+    "scrolled canvas screenshots with shared fixed navbar overlay excluded from art QA; isolated1440x1500 scroll0 stage retest viewed"
+  ]
+}

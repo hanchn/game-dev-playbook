@@ -1,0 +1,43 @@
+✔ 换皮肤后翻滚仍先双掌触地，靴底在触地准备阶段保持平放 (37.504708ms)
+✔ 外星人的衣孔有真实透明度及上层衣缘，独立运动默认保留装配遮挡 (51.608916ms)
+✔ 换皮肤保留骨架身份，独立头身比、轴点、抓握和接地轮廓随皮肤导出 (442.611916ms)
+✔ 真人比例检查区分头颅和带颈的整个贴图，避免小头与过宽躯干 (1.348708ms)
+✔ 鳄鱼前后腿的素材归属和折叠脚方向一致 (1.199042ms)
+✔ 鸡的收翅朝身后，头颈共用完整羽毛源而不叠加柱形颈 (0.941041ms)
+✔ 柔性角色沿前端切线运动，连续源身体的相邻UV没有跨素材跳变 (14.273083ms)
+✔ 蝎子步足不重复带爪的胫节，夹螯闭合时两指尖汇合 (1.564208ms)
+✔ 衣缘遮挡随躯干转动，与原衣片使用同一个源点位置 (24.64925ms)
+✔ 团身后的滚动由衣服肩背和四肢承重，真人与大头皮肤不以头部作为地面支点 (370.509208ms)
+✔ 马的前腕链与后飞节链使用独立素材，骨长和下游连接在完整及单件动作保持 (24.132083ms)
+✔ a rooster asset cannot silently substitute for a laying hen (0.652416ms)
+✔ multiple chickens retain independent phases and stable identities (0.508167ms)
+✔ egg starts behind pelvis and persists once after recovery across repeated seeks (0.17ms)
+✔ fight requires opposing actors; feather particles are seek-safe and recover (0.233333ms)
+✔ crow distinguishes beak opening from a whole head rotation and closes on recovery (0.1065ms)
+✔ walking to pecking inbetweens rotate bones without shortening them or separating joints (1.586584ms)
+✔ flock travel holds either stance foot for both facings and the actual render scale (3.765834ms)
+✔ stop transition pins the planted foot, idle does not slide home, and scene end holds (1.923625ms)
+✔ all 1–12 actors move and their source-bound silhouettes stay in the common fixed output frame (2336.373166ms)
+✔ 头颈测试实际弯曲且其他肢体保持静止 (3.780625ms)
+✔ 单件弯曲检视同时显示相邻贴图，不能用淡化的接头蒙混通过 (9.636958ms)
+✔ 三种手型在八种动作中有实际素材；十四个衔接位在弯曲采样中有真实像素重叠 (1818.421875ms)
+✔ 贴图轴点落在透明位置时，即使骨骼连接正确也必须拒收 (950.836583ms)
+✔ 实际渲染随动作使用不同手型，颈根必须由躯干遮住 (3.225125ms)
+✔ 裤脚盖住踝件、衣领盖住颈根；反向遮挡即使像素相交也必须拒收 (944.3705ms)
+✔ 大腿源轮廓上宽下窄，裤脚结束在踝部旋转中心上方并保留鞋底锚点 (1.133125ms)
+✔ 髋根进入骨盆背后，避免圆弧贴在臀部前形成第二个凸块 (0.094875ms)
+✔ 翻滚97个姿势的真实渲染轮廓始终接地，根运动单独记录前进距离 (283.221625ms)
+✔ 从腕、肘或踝选择局部组合时整条肢体列入检查，其他肢体保持静止 (9.246625ms)
+✔ 连续头颈和臀腿在共享素材边界映射完全一致，极限动作没有网格翻面 (515.923542ms)
+✔ 翻滚脚的世界坐标使用旋转后的脚端和根运动 (43.2065ms)
+✔ neck root cross-section stays with body during large independent head turns (0.73775ms)
+✔ skull remains rigid and legacy root orientation is preserved by default (0.09825ms)
+✔ a diagonal source neck boundary anchors the nape before the throat without deforming the skull (0.516541ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4709.63075

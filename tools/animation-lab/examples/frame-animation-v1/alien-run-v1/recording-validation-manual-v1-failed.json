@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "No final encoded hold: WebM metadata duration 0.875031 s for requested 1 s despite correct eight source frames",
+  "actualVideoFrames": 8,
+  "actualPTS": [
+    0,
+    0.126,
+    0.249,
+    0.376,
+    0.499,
+    0.624,
+    0.749,
+    0.875
+  ],
+  "firstVideoFrameVsPngMeanError": 0.9258982340494791,
+  "sourceQA": "failed",
+  "video": "recording-manual-decoded/recording.webm",
+  "fix": "Redraw final bitmap and requestFrame at end time, allow encode before stop; retain old evidence."
+}

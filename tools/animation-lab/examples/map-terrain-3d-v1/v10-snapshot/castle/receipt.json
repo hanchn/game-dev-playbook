@@ -1,0 +1,136 @@
+{
+  "schema": "terrain-3d-receipt/v1",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "forest",
+    "preset": "rollingHills",
+    "scale": 256,
+    "height": 24,
+    "waterLevel": 0.22,
+    "vegetation": 0.65
+  },
+  "region": {
+    "x": -4,
+    "z": 1,
+    "width": 3,
+    "depth": 3
+  },
+  "chunks": 9,
+  "props": 141,
+  "files": [
+    {
+      "path": "scene.glb",
+      "bytes": 2343100,
+      "sha256": "f471f3fbe7fcf168ce3d9314cde35d115e189c2a5b7c926f54b382648e4bfc83"
+    },
+    {
+      "path": "textures/Diffuse.jpg",
+      "bytes": 437891,
+      "sha256": "2bac85cdc76927fa7dc311037bbbc4dfa2633ea56eb0a24c9cabe163a68c9aa5"
+    },
+    {
+      "path": "textures/nor_gl.jpg",
+      "bytes": 577163,
+      "sha256": "cf6a40ab24f44d3e891a92a1c252416ed1192af54ac92a5704bdfbda0805e290"
+    },
+    {
+      "path": "textures/arm.jpg",
+      "bytes": 313980,
+      "sha256": "af70dcaa5f6c8770504132b5a3c25e9b9b5b431148c8796226492c8fff2bd6eb"
+    },
+    {
+      "path": "models/tree_oak.glb",
+      "bytes": 14644,
+      "sha256": "d7fd8773674928c50c11b66d12c636d49bdcc15a8b1c7fbb98e6f63a3439a3f3"
+    },
+    {
+      "path": "models/tree_pineTallB.glb",
+      "bytes": 7204,
+      "sha256": "49b54146351e1e009e97ee592f997a90a16b10c5467baf734d352df1cddec5d1"
+    },
+    {
+      "path": "models/rock_largeB.glb",
+      "bytes": 8560,
+      "sha256": "caa8b025833d4dabf6d98fe2e96cf2fbd886693ac990df0db75f9d827194374b"
+    },
+    {
+      "path": "models/tree_simple.glb",
+      "bytes": 6500,
+      "sha256": "93891ea740447634930de19c31a7c1c9f4add94122e6db03aca9f75aea32f9d6"
+    },
+    {
+      "path": "models/rock_largeA.glb",
+      "bytes": 7552,
+      "sha256": "6dd15390fd96501dcd1454765a17ba61dbbd8d47705dfe5149c8dd92b353ce25"
+    },
+    {
+      "path": "models/tree_pineTallA.glb",
+      "bytes": 7200,
+      "sha256": "e0a56eb196d8a64ba86c7304d607136e17e6f9ad748dffcf86bd53b18b91b196"
+    },
+    {
+      "path": "models/tower-square.glb",
+      "bytes": 24116,
+      "sha256": "f2242fe7ec92673137e37ee7fb8fd797c9a9133ed07052d3e1fd7c7afdf8c3a9"
+    },
+    {
+      "path": "models/wall.glb",
+      "bytes": 24104,
+      "sha256": "196df14932c4277adcc71696722b04c0f1911d34fa3316fff74fab6bb72ffd9c"
+    },
+    {
+      "path": "models/wall-doorway.glb",
+      "bytes": 45112,
+      "sha256": "a559e4d4d0d109ec23909c4ebfda694016296ec39661aedb49fa3e32dfb30d90"
+    },
+    {
+      "path": "scene.json",
+      "bytes": 163458,
+      "sha256": "5f894ce6734ecc42956106e2a81090e28ce585ad46cedeab96d0ac5b8d81656b"
+    }
+  ],
+  "sourceModels": [
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sha256": "d7fd8773674928c50c11b66d12c636d49bdcc15a8b1c7fbb98e6f63a3439a3f3"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sha256": "49b54146351e1e009e97ee592f997a90a16b10c5467baf734d352df1cddec5d1"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sha256": "caa8b025833d4dabf6d98fe2e96cf2fbd886693ac990df0db75f9d827194374b"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sha256": "93891ea740447634930de19c31a7c1c9f4add94122e6db03aca9f75aea32f9d6"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sha256": "6dd15390fd96501dcd1454765a17ba61dbbd8d47705dfe5149c8dd92b353ce25"
+    },
+    {
+      "url": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sha256": "e0a56eb196d8a64ba86c7304d607136e17e6f9ad748dffcf86bd53b18b91b196"
+    },
+    {
+      "url": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square.glb",
+      "sha256": "f2242fe7ec92673137e37ee7fb8fd797c9a9133ed07052d3e1fd7c7afdf8c3a9"
+    },
+    {
+      "url": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall.glb",
+      "sha256": "196df14932c4277adcc71696722b04c0f1911d34fa3316fff74fab6bb72ffd9c"
+    },
+    {
+      "url": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+      "sha256": "a559e4d4d0d109ec23909c4ebfda694016296ec39661aedb49fa3e32dfb30d90"
+    }
+  ],
+  "qa": {
+    "engineImported": false,
+    "visualAccepted": false,
+    "actorCollisionsVerified": false,
+    "realGeographicData": false
+  }
+}

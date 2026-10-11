@@ -1,0 +1,42 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise single-frame sprite edit. REFERENCE1 is the only FAR ARM pose guide; REFERENCE2 is the original native1254square milk-frog frame8 to preserve. Change ONLY the FAR / rear-layer arm in reference2. REMOVE the incorrect pink curled fist and yellow arm currently protruding on the outer RIGHT side of the belly aroundx955..1065,y600..735. That old fist is far too far from its source-scale socket. The corrected far arm is SHORT and bent, using reference1's complete chain: inferred rear shoulder around(515,397.5), elbow(558.6,517.4), wrist(636,531.1), yellow upperarm about128px, forearmabout79px. Shoulder is behind the original large near shoulder/upperarm, and the whole far forearm and curled pink fist swing FORWARD CLOSE to the BODY, underneath and BEHIND the original NEAR arm/torso. DO NOT place a replacement fist on the outer right belly edge. CRITICAL OCCLUSION: the natural near arm and torso must cover the rear shoulder/forearm/fist wherever they overlap. It is CORRECT if the far pink fist is completely hidden in this frame. No requirement to show both hands. Do not enlarge or move the far fist outside just to reveal it. Only a small source-scale rear yellow arm portion might be visible behind the near deltoid; no floating hand or extra appendage. STRICT UNCHANGED: the entire thick foreground NEAR arm with its exact OPEN pink palm and long spread fingers; the original green eyes/head/smile/whitebelly/neck/body/muscle highlights and blackoutlines; BOTH original near/far LEGS, knees, feet/toes and their exact geometry; source native1254camera/frame/scale/headsize/anchor and plantedfoot/raisedfoot positions. Do not modify those unchanged parts or shift/rescale/crop/fit the character. Keep real transparent background. The guide blue line/gray outline/text must NOT appear; final is the SAME natural yellowmuscle/pinkskin sprite with corrected rear arm hidden naturally. Return one complete actual original-size character frame.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-996e8d0b-1848-45e4-a6b1-62eea5cb44c2.png",
+  "generatedFileSha256": "2455c52d75297c88ccf5124494b0353311615260510a454d1059708a0e96c207",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-far-occlusion-probe-v1/control-far-phase08.png",
+      "sha256": "b7032d7e11a1da3df556d97cb50b5675b117a0121a62b97b354e54ccc31fa597"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+      "sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d"
+    }
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "phase": 0.6666666666666666,
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      417,
+      85,
+      716,
+      1120
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": [
+      "One local phase8 occlusion probe; old outer-right oversized far fist removed.",
+      "Near open hand and overall face/leg poses visually retained, exact pixels still change; unreviewed source-scale hidden shoulder chain cannot be measured.",
+      "Not a complete loop: source9 etc retain overscale far arm and material/ground registration failed."
+    ]
+  }
+}

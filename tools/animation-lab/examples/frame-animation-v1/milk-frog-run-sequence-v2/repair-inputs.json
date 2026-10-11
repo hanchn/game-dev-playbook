@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "index": 7,
+      "version": 6,
+      "tool": "image_gen.imagegen",
+      "prompt": "Precise localized edit for a genuine 12-frame 2D run sprite. Image1 is the edit target (far-side load, frame7), image2 is previous frame6 only for unchanged muscle thickness/material identity. Keep the exact same original1254x1254 transparent canvas, same camera/scale, head, face, tongue, eye shapes, torso, two arms and open near hand / curled far hand at the same positions. Do not fit, recenter, rescale or shift the whole subject. No text, ground marks or colored controls.\nChange ONLY the lower body:\nThe FAR leg is the background leg on image RIGHT with its pink foot planted. This load phase needs that planted foot to pass back under the pelvis, instead of repeating the far-front contact in frame6. Bend the far knee smoothly forward, keep its hip attached behind the foreground thigh; place far knee about(830,940), ankle about(840,1110), pink heel about(760,1145), toes extending right to about(995,1190). The lowest black sole must sit exactly at y1192 with enough transparent margin below. Foot lies flat, no disconnected ankle or extra limb. Keep FAR thigh and calf with their original muscular volume, no rubber shrink. This is between previous far contact foot1100 and next far support foot450.\nThe NEAR leg is foreground with raised pink foot currently below left hip. Keep its current recovery knee/foot side and airborne, but restore the same substantial muscular near thigh thickness as image2, not a skinny shrunken oval. Exactly2 legs. Near toes remain above y1110. Preserve rounded connected hip/knee/ankle contours and original yellow polished shading with black outlines. Match original rendering, unchanged highlights/material in every untouched region. Return only the corrected single transparent sprite with no new composition.",
+      "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-2a4a40d1-51bd-436f-aebd-2e8293eba9a3.png",
+      "refs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-07-v5.png",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-06-v1.png"
+      ],
+      "notes": "FAILED local correction: far support moves backward and sole improves, but near recovery calf folds backward again (regresses frame7 middle toward frame6); untouched texture changed. Do not select."
+    }
+  ]
+}

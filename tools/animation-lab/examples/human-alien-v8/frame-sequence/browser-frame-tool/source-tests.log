@@ -1,0 +1,27 @@
+✔ half-open video sampling, explicit sorted times, invalid/oversized sampling rejected (1.095709ms)
+✔ chronology is numeric, per-frame durations affect playback, exact source rectangles and safe sheet bounds (9.290708ms)
+✔ decoded PTS follows containing source frame, reports duplicates without inventing timestamps (0.146417ms)
+✔ source failed QA and individual frame observations survive export without upgrading loop approval (0.10625ms)
+✔ generation requests remain pending until actual outputs; layout and limb continuity specified (0.183041ms)
+✔ odd source sheet is partitioned without lost or overlapping pixels (0.141458ms)
+✔ ZIP store files pass native CRC validation and preserve Unicode names and exact bytes (41.126125ms)
+✔ real H264 video -> eight distinct exact decoded PNGs -> alpha-padded sheet; existing outputs rejected (1653.702167ms)
+✔ receipt per-frame QA transfers notes without upgrading overall playback acceptance (0.305958ms)
+✔ unequal source frames share a fixed affine transform and source anchor; no individual fitting (0.203292ms)
+✔ original alpha boundary rejects clipped transparent sprite before padding; opaque video and faint border are distinguished (0.185625ms)
+✔ real unequal PNGs retain identical source-marker placement after one sequence transform (292.338ms)
+✔ mixed-version generated PNGs follow receipt chronology; mismatched provenance rejects before output (253.335917ms)
+✔ existing project crops bind exact source PNG SHA and remain imports, not new generation (0.503041ms)
+✔ fractional FPS recording boundaries choose every frame once without rounding to prior frame (0.511833ms)
+✔ multi-cycle capture repeats source chronology across last-to-first boundaries (0.648916ms)
+✔ skeletal rendered frames verify actual PNG plus four independent source byte hashes and reject forged origins (0.707958ms)
+✔ skeletal CLI import binds actual source snapshots and refuses replaced source before making output (171.428ms)
+✔ 30fps sample durations retain fractional milliseconds and exact 37-frame source duration (0.184291ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2484.998541

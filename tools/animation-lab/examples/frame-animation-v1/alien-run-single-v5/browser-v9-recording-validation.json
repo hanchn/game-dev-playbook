@@ -1,0 +1,115 @@
+{
+  "technicalStatus": "passed",
+  "sourceArtStatus": "failed",
+  "sourceSequence": "all-frames-reviewed-v9.json",
+  "sourceFrameCount": 12,
+  "capturedPNGs": 12,
+  "videoDurationSeconds": 1.332222,
+  "decodedVideoFrameCount": 13,
+  "videoCodec": "vp9",
+  "videoPTS": [
+    0,
+    0.115,
+    0.227,
+    0.333,
+    0.449,
+    0.556,
+    0.668,
+    0.782,
+    0.89,
+    1,
+    1.114,
+    1.226,
+    1.332
+  ],
+  "comparisons": [
+    {
+      "index": 0,
+      "sourceFrameIndex": 0,
+      "requestedTimeSeconds": 0,
+      "pts": 0,
+      "rgbMAE255": 1.2924588521321614
+    },
+    {
+      "index": 1,
+      "sourceFrameIndex": 1,
+      "requestedTimeSeconds": 0.1111111111111111,
+      "pts": 0.115,
+      "rgbMAE255": 1.8539594014485676
+    },
+    {
+      "index": 2,
+      "sourceFrameIndex": 2,
+      "requestedTimeSeconds": 0.2222222222222222,
+      "pts": 0.227,
+      "rgbMAE255": 1.6524696350097656
+    },
+    {
+      "index": 3,
+      "sourceFrameIndex": 3,
+      "requestedTimeSeconds": 0.3333333333333333,
+      "pts": 0.333,
+      "rgbMAE255": 1.6382459004720051
+    },
+    {
+      "index": 4,
+      "sourceFrameIndex": 4,
+      "requestedTimeSeconds": 0.4444444444444444,
+      "pts": 0.449,
+      "rgbMAE255": 1.6526501973470051
+    },
+    {
+      "index": 5,
+      "sourceFrameIndex": 5,
+      "requestedTimeSeconds": 0.5555555555555556,
+      "pts": 0.556,
+      "rgbMAE255": 1.6457227071126301
+    },
+    {
+      "index": 6,
+      "sourceFrameIndex": 6,
+      "requestedTimeSeconds": 0.6666666666666666,
+      "pts": 0.668,
+      "rgbMAE255": 1.6058197021484375
+    },
+    {
+      "index": 7,
+      "sourceFrameIndex": 7,
+      "requestedTimeSeconds": 0.7777777777777778,
+      "pts": 0.782,
+      "rgbMAE255": 1.5711504618326824
+    },
+    {
+      "index": 8,
+      "sourceFrameIndex": 8,
+      "requestedTimeSeconds": 0.8888888888888888,
+      "pts": 0.89,
+      "rgbMAE255": 1.5612589518229167
+    },
+    {
+      "index": 9,
+      "sourceFrameIndex": 9,
+      "requestedTimeSeconds": 1,
+      "pts": 1,
+      "rgbMAE255": 1.5593846638997395
+    },
+    {
+      "index": 10,
+      "sourceFrameIndex": 10,
+      "requestedTimeSeconds": 1.1111111111111112,
+      "pts": 1.114,
+      "rgbMAE255": 1.6267929077148438
+    },
+    {
+      "index": 11,
+      "sourceFrameIndex": 11,
+      "requestedTimeSeconds": 1.2222222222222223,
+      "pts": 1.226,
+      "rgbMAE255": 1.612719217936198
+    }
+  ],
+  "maxRGBMAE255": 1.8539594014485676,
+  "terminalHold": "Extra encoded final hold is excluded from frame animation timing",
+  "sha256Video": "53ab9c9bd4ff98c8ac92ef37a15f167ef6fc16ab01c3465460b31b2ca2a887cf",
+  "actualOrigin": "real browser /frame-animation MediaRecorder export, no synthetic substitution"
+}

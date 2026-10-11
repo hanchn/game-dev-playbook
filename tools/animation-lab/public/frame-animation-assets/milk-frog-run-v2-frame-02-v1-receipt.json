@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Draw ONE actual inbetween milk-frog run sprite frame2/12,16.67%, NEAR midstance/FAR passing. Reference1 previous loading frame, reference2 next25% toeoff. Same exact1254squarecamera, scale, head/face, yellow/white/pink materials, polished2D highlights and outlines. Keep torso/neck/head shape, permanent near foreground OPEN hand and far background CURLED hand.\nThis must be visibly different from both references: near supporting BIG foreground thigh now moves back toward vertical UNDER HIP, near knee flexed below hip, near foot contacting fixedsourceground y1192 UNDER hip rather than far in front. Far background knee travels forward past near leg toward imageRIGHT; far pink ankle/foot is raised under/front pelvis at about y1000, NEVER on ground, so a clear passing leg is visible. Near big thigh/root occludes far hip; do not make near knee still hugely frontward. Exactlytwohip-knee-ankle chains, no merged limbs.\nArms continue smooth travel: NEAR upper arm now nearly vertical/slightly forward, near elbow ahead of shoulder, OPEN near hand passes WAIST in front of hip, not yet chest/front extreme. FAR curled arm now behind with far elbow behind shoulder and curled hand behind waist. Arm directions opposite same-side thighs. No pink hand state swaps, extra fingers or ghosts.\nCommon camera/floor y1192/sourceorigin, at least32px motion margin, full feet/head/hands. Preserve face size/expression/gaze with no blink or style change. Source material/surface spots stay consistent. Transparent alpha background, no shadow/text/line. Output only one clean actual distinct passing/loading pose.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-0378dbfe-e9e4-4157-8fcf-ba95dc0136bd.png",
+  "generatedFileSha256": "bd7839bffcd8f75947c00fea4326dd2359856fee58eb1828e83042d83c30f12c",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+      "sha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+      "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+    }
+  ],
+  "phase": 0.5,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      336,
+      93,
+      766,
+      1113
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Far recovered foot still behind hip, did not truly pass front."
+  }
+}

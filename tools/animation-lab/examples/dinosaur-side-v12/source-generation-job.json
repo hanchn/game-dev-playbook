@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Input1 is the current transparent dinosaur sprite parts atlas. Input2 is a rendered joint QA view showing why these parts fail: the rounded amputated femur end forms a bulbous pad over the calf, and every bend looks like a pile of separate meat balls. Change ONLY row1 column3 femur and row1 column4 tibia in Input1; preserve exact positions and 4x4 layout, side-facing-right camera, bronze-olive scales, transparent background. Femur: a powerful muscular upper thigh from hip to knee, gradually narrower at knee, elongated smooth muscle contour, reduce distal rounded ball width by about 35%, no protruding anatomical stump/extra hip lobe. Tibia: muscular upper calf tapering into long solid ankle shaft, smooth nearly straight longitudinal contour with mild taper, replace HUGE circular proximal head with a modest smooth oval overlap pad that is no wider than calf's upper third; compact distal ankle end. Both ends must support internal pivot overlap under adjacent parts, flat lighting and matching scale density across adjoining ends; absolutely no exposed cut faces or bulbous joint caps. Keep the rest of head/neck/body/tail/metatarsus/clawed foot/forelimbs/jaw identical as closely as possible. No arrows, text, grid, gore, mechanical joints. This edits the asset atlas only; do not output the QA assembled pose.",
+  "references": [
+    "public/art/dinosaur-side-parts-v7.png",
+    "examples/dinosaur-side-v11/joints/leg-0-middle-light.png"
+  ],
+  "generated": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-ef6e79b6-de58-42a4-82a3-5288ae259858.png",
+  "output": "public/art/dinosaur-side-parts-v8.png",
+  "sourceReview": "Full actual image viewed before registration. Femur root and distal muscle silhouette slightly reduced; tibia remains rounded upper calf. All 16 components rescanned precision:true. Tool redrew small unrequested textures; no pixel-identical claim. Joint visual review pending."
+}

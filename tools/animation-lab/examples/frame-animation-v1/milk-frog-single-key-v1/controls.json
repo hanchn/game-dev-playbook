@@ -1,0 +1,345 @@
+{
+  "purpose": "code-native motion constraint reference, NOT final generated art or mocap",
+  "periodSeconds": 4,
+  "fixedSegmentLengths": {
+    "arm": [
+      93,
+      93
+    ],
+    "leg": [
+      120,
+      120
+    ]
+  },
+  "nearIdentity": "foreground side is red across all guides; final sprite retains natural skin",
+  "farIdentity": "blue background side across all guides",
+  "phases": [
+    {
+      "name": "0s / 4s NEAR support",
+      "nearArm": [
+        [
+          248,
+          180
+        ],
+        [
+          157.90861424292544,
+          203.0768761397635
+        ],
+        [
+          120,
+          288
+        ]
+      ],
+      "farArm": [
+        [
+          265,
+          180
+        ],
+        [
+          304.44212842930494,
+          264.2218410209978
+        ],
+        [
+          380,
+          210
+        ]
+      ],
+      "nearLeg": [
+        [
+          260,
+          300
+        ],
+        [
+          375.4992802043594,
+          332.55635532848953
+        ],
+        [
+          420,
+          444
+        ]
+      ],
+      "farLeg": [
+        [
+          273,
+          300
+        ],
+        [
+          207.98083069595936,
+          400.8588499984632
+        ],
+        [
+          115,
+          325
+        ]
+      ]
+    },
+    {
+      "name": "1s NEAR back / FAR high",
+      "nearArm": [
+        [
+          248,
+          180
+        ],
+        [
+          299.86481212202057,
+          257.19482666310944
+        ],
+        [
+          380,
+          210
+        ]
+      ],
+      "farArm": [
+        [
+          265,
+          180
+        ],
+        [
+          174.90861424292544,
+          203.0768761397635
+        ],
+        [
+          137,
+          288
+        ]
+      ],
+      "nearLeg": [
+        [
+          260,
+          300
+        ],
+        [
+          209.41502236956353,
+          408.81709442053784
+        ],
+        [
+          95,
+          445
+        ]
+      ],
+      "farLeg": [
+        [
+          273,
+          300
+        ],
+        [
+          390.46337047504676,
+          275.45704588599995
+        ],
+        [
+          380,
+          395
+        ]
+      ]
+    },
+    {
+      "name": "2s FAR support",
+      "nearArm": [
+        [
+          248,
+          180
+        ],
+        [
+          299.86481212202057,
+          257.19482666310944
+        ],
+        [
+          380,
+          210
+        ]
+      ],
+      "farArm": [
+        [
+          265,
+          180
+        ],
+        [
+          179.45727646238737,
+          216.48893599116823
+        ],
+        [
+          120,
+          288
+        ]
+      ],
+      "nearLeg": [
+        [
+          260,
+          300
+        ],
+        [
+          203.60758790107204,
+          405.9240098262178
+        ],
+        [
+          115,
+          325
+        ]
+      ],
+      "farLeg": [
+        [
+          273,
+          300
+        ],
+        [
+          389.7153001598564,
+          327.8843810868133
+        ],
+        [
+          420,
+          444
+        ]
+      ]
+    },
+    {
+      "name": "3s FAR back / NEAR high",
+      "nearArm": [
+        [
+          248,
+          180
+        ],
+        [
+          157.90861424292544,
+          203.0768761397635
+        ],
+        [
+          120,
+          288
+        ]
+      ],
+      "farArm": [
+        [
+          265,
+          180
+        ],
+        [
+          304.44212842930494,
+          264.2218410209978
+        ],
+        [
+          380,
+          210
+        ]
+      ],
+      "nearLeg": [
+        [
+          260,
+          300
+        ],
+        [
+          377.3730676369558,
+          275.0287566691085
+        ],
+        [
+          380,
+          395
+        ]
+      ],
+      "farLeg": [
+        [
+          273,
+          300
+        ],
+        [
+          206.0848497808417,
+          399.6110569723436
+        ],
+        [
+          95,
+          445
+        ]
+      ]
+    }
+  ],
+  "changes": "Individual single-pose controls. Phase1 far arm and phase3 near arm changed to back swing; original v3 passed only length/IK, did not verify far proximal counterphase.",
+  "qa": [
+    {
+      "index": 0,
+      "phase": 0,
+      "file": "control-0.png",
+      "sha256": "0210825b700d7d98ad8faec2042b0cf5998cd1fc033a26d41d53956267c09814",
+      "boneLengthMaxError": 5.684341886080802e-14,
+      "identity": [
+        {
+          "side": "near",
+          "upperArmX": -90.09138575707456,
+          "thighX": 115.49928020435942,
+          "counterphase": true
+        },
+        {
+          "side": "far",
+          "upperArmX": 39.442128429304944,
+          "thighX": -65.01916930404064,
+          "counterphase": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 1,
+      "phase": 0.25,
+      "file": "control-1.png",
+      "sha256": "82bd741a7eafec9a60d3f0e5d165d76fa595bf5691b643489d62bda22f79808e",
+      "boneLengthMaxError": 4.263256414560601e-14,
+      "identity": [
+        {
+          "side": "near",
+          "upperArmX": 51.86481212202057,
+          "thighX": -50.58497763043647,
+          "counterphase": true
+        },
+        {
+          "side": "far",
+          "upperArmX": -90.09138575707456,
+          "thighX": 117.46337047504676,
+          "counterphase": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 2,
+      "phase": 0.5,
+      "file": "control-2.png",
+      "sha256": "2411a2b4302a697950d610eefdd359b5c4dfe5d60632f7604a11e700625ebcd8",
+      "boneLengthMaxError": 4.263256414560601e-14,
+      "identity": [
+        {
+          "side": "near",
+          "upperArmX": 51.86481212202057,
+          "thighX": -56.39241209892796,
+          "counterphase": true
+        },
+        {
+          "side": "far",
+          "upperArmX": -85.54272353761263,
+          "thighX": 116.71530015985638,
+          "counterphase": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 3,
+      "phase": 0.75,
+      "file": "control-3.png",
+      "sha256": "555f768dea98c130b4c6d7213de52062cd0ca135789d4ad3acb1a9b76c030836",
+      "boneLengthMaxError": 5.684341886080802e-14,
+      "identity": [
+        {
+          "side": "near",
+          "upperArmX": -90.09138575707456,
+          "thighX": 117.3730676369558,
+          "counterphase": true
+        },
+        {
+          "side": "far",
+          "upperArmX": 39.442128429304944,
+          "thighX": -66.9151502191583,
+          "counterphase": true
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

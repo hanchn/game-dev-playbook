@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "game-ui-suite-brief-v1",
+  "title": "Codex game UI suite brief",
+  "type": "object",
+  "required": [
+    "name",
+    "coreLoop"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "coreLoop": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "genre": {
+      "enum": [
+        "platformer",
+        "runner",
+        "puzzle",
+        "action",
+        "rpg",
+        "idle",
+        "card"
+      ]
+    },
+    "audience": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "orientation": {
+      "enum": [
+        "landscape",
+        "portrait"
+      ]
+    },
+    "input": {
+      "enum": [
+        "touch",
+        "keyboard",
+        "gamepad",
+        "mixed"
+      ]
+    },
+    "engine": {
+      "enum": [
+        "phaser",
+        "godot"
+      ]
+    },
+    "artStyle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "theme": {
+      "enum": [
+        "jungle",
+        "candy",
+        "space",
+        "paper"
+      ]
+    },
+    "progression": {
+      "enum": [
+        "levels",
+        "endless",
+        "single-session"
+      ]
+    },
+    "sessionMinutes": {
+      "type": "number",
+      "minimum": 0.5,
+      "maximum": 120
+    },
+    "references": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "path"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "kind": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "objective": {
+      "$ref": "#/$defs/gameRule"
+    },
+    "failure": {
+      "$ref": "#/$defs/gameRule"
+    },
+    "hud": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "$ref": "#/$defs/hudBinding"
+      }
+    },
+    "sourceGamePlan": {
+      "type": "object",
+      "description": "Original game-plan provenance; copied without upgrading planned/runtime/visual status"
+    },
+    "integrationAssumptions": {
+      "type": "array",
+      "maxItems": 40,
+      "items": {
+        "type": "object",
+        "required": [
+          "field",
+          "value",
+          "reason"
+        ],
+        "properties": {
+          "field": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "value": {},
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      }
+    },
+    "productionKit": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "description": "Explicit identifier for a verified actual art kit; not inferred from genre/theme"
+    }
+  },
+  "$defs": {
+    "gameRule": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        {
+          "type": "object",
+          "required": [
+            "description"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            },
+            "event": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            },
+            "condition": {}
+          }
+        }
+      ]
+    },
+    "hudBinding": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "path",
+        "event"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "event": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "format": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "critical": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

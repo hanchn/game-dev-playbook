@@ -1,0 +1,2638 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "milk-frog-run-video-v1",
+  "loop": false,
+  "durationMs": 4440,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1024,
+    "height": 3584,
+    "cell": 256,
+    "columns": 4,
+    "rows": 14,
+    "padding": 12,
+    "fixedTransform": {
+      "mode": "sequence-common-canvas",
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "scale": 0.453125,
+      "scaleXY": [
+        0.453125,
+        0.453125
+      ],
+      "offset": [
+        12,
+        12
+      ],
+      "sourceAnchor": [
+        256,
+        512
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "rasterRoundingPx": 0.5,
+      "registration": "source coordinates retained; no per-frame alpha fitting or automatic recentering"
+    },
+    "sha256": "edc1ae8b400e0cfab6e5b418925ba6e4835af095785f1d61d2813273eeff2b7d"
+  },
+  "provenance": {
+    "type": "video",
+    "file": "milk-frog-run-video-v1.mp4",
+    "sha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+    "decoder": "HTMLVideoElement + Canvas",
+    "timestampAccuracy": "requested browser seek time; decoded mediaTime recorded when supplied",
+    "verification": "actual generated video SHA bound to task receipt; browser-decoded frames retain original background and reported mediaTime",
+    "sampleId": "milk-frog-run-video-v1",
+    "generatedVideo": {
+      "tool": "rh-canvas / multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+      "prompt": "Animate EXACT provided yellow muscular humanoid MILK FROG into one coherent 4 second RUN-IN-PLACE animation. The provided image is the permanent character identity and first pose, not a real frog. Retain original glossy yellow muscles, white chest/belly/chin, green eyes, pink broad three-toed feet and pink hands, cheerful open-mouth/tongue face and thick BLACK 2D cartoon outlines. No realistic amphibian, no 3D restyling, no costume. Keep fixed square camera and unchanged frontal-side angle facing RIGHT, constant scale and center/pivot, white flat background without scenery or cast shadow. The entire head, every hand and all toes must remain fully inside a fixed motion envelope with at least 10% canvas margin. Do not pan, zoom, turn, shrink or expand over time. Exactly TWO anatomical arms and TWO legs. Permanent foreground NEAR arm+leg and background FAR arm+leg must swap forward/back continuously, never only one visible moving side. Run as humanoid biped with natural successive contact, loading, passing, toe-off, bent recovering knee/heel, high knee, forward extension and landing. Near leg forward means near arm back; half-cycle later far leg forward means near arm forward. Both hands must travel behind, past and ahead of hip, remain attached at wrist with the same fingers; both feet alternate between genuine support and swing, retain identical pink toe count. Keep far hands/feet visibly separated when passing with slight safe lateral offset; never merge hands into torso or collapse far limb to sliver. Foot support sole stays on one constant invisible groundline; only airborne phases lift both feet. Include 3 complete gait cycles over 4 seconds with intermediate motion, finish matching the exact initial pose and camera for a seamless run loop. Constant forward gaze and cheerful stable mouth, eyes stay open during this short run (no repetitive blink synchronized to footfalls). No motion blur, floating fingers, extra limbs, duplicate character, changing anatomy, text, labels, music or speech. This is a true generated continuous raster animation video, not a sprite sheet or skeleton demonstration.",
+      "receipt": {
+        "tool": "rh-canvas / multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+        "prompt": "Animate EXACT provided yellow muscular humanoid MILK FROG into one coherent 4 second RUN-IN-PLACE animation. The provided image is the permanent character identity and first pose, not a real frog. Retain original glossy yellow muscles, white chest/belly/chin, green eyes, pink broad three-toed feet and pink hands, cheerful open-mouth/tongue face and thick BLACK 2D cartoon outlines. No realistic amphibian, no 3D restyling, no costume. Keep fixed square camera and unchanged frontal-side angle facing RIGHT, constant scale and center/pivot, white flat background without scenery or cast shadow. The entire head, every hand and all toes must remain fully inside a fixed motion envelope with at least 10% canvas margin. Do not pan, zoom, turn, shrink or expand over time. Exactly TWO anatomical arms and TWO legs. Permanent foreground NEAR arm+leg and background FAR arm+leg must swap forward/back continuously, never only one visible moving side. Run as humanoid biped with natural successive contact, loading, passing, toe-off, bent recovering knee/heel, high knee, forward extension and landing. Near leg forward means near arm back; half-cycle later far leg forward means near arm forward. Both hands must travel behind, past and ahead of hip, remain attached at wrist with the same fingers; both feet alternate between genuine support and swing, retain identical pink toe count. Keep far hands/feet visibly separated when passing with slight safe lateral offset; never merge hands into torso or collapse far limb to sliver. Foot support sole stays on one constant invisible groundline; only airborne phases lift both feet. Include 3 complete gait cycles over 4 seconds with intermediate motion, finish matching the exact initial pose and camera for a seamless run loop. Constant forward gaze and cheerful stable mouth, eyes stay open during this short run (no repetitive blink synchronized to footfalls). No motion blur, floating fingers, extra limbs, duplicate character, changing anatomy, text, labels, music or speech. This is a true generated continuous raster animation video, not a sprite sheet or skeleton demonstration.",
+        "generatedFile": "tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v1/download/2109345232162926593-1.mp4",
+        "generatedFileSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+        "taskId": "2109345232162926593",
+        "requestSha256": "e101b5c9e8424671394e234f402f262ecce3b932c5a5199c941b977eaff116d2",
+        "referenceSha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d",
+        "actualVideo": {
+          "codec": "h264",
+          "size": [
+            1024,
+            1024
+          ],
+          "frameCount": 107,
+          "durationSeconds": 4.458008,
+          "fps": 24
+        },
+        "qa": {
+          "visual": "failed",
+          "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+          "reviewedAllOriginalFrames": 107,
+          "evidence": [
+            "native-contact-1.png",
+            "native-contact-2.png",
+            "native-contact-3.png",
+            "native-contact-4.png",
+            "native-frames/010.png",
+            "native-frames/031.png",
+            "native-frames/048.png",
+            "native-frames/065.png"
+          ],
+          "observations": [
+            {
+              "frames": [
+                0,
+                6,
+                9,
+                17,
+                24,
+                32,
+                43,
+                51,
+                59,
+                68,
+                77,
+                85,
+                94,
+                102
+              ],
+              "finding": "原角色粗黑线/glossy黄肌肉白腹绿眼粉色手脚保持；近臂后摆/经过/前摆和两腿交换存在，局部改善不是全片通过。"
+            },
+            {
+              "frames": [
+                13,
+                14,
+                30,
+                47,
+                64,
+                81,
+                98
+              ],
+              "finding": "周期passing出现粉色远脚和黄色膝/髋混融、大块碎片，030对应031.png最清楚；近远手指也发生模糊幽灵重叠。"
+            },
+            {
+              "frames": [
+                0,
+                106
+              ],
+              "finding": "首末姿势不同，原素材不是闭合循环；背景原生白色opaque，无alpha。"
+            },
+            {
+              "frames": [
+                9,
+                30,
+                47,
+                64
+              ],
+              "finding": "真实全尺寸复查有脚趾数和手指形态波动、视角转身。固定原镜头/轮廓身份和支撑链自然度未通过。"
+            }
+          ],
+          "sourceBackground": "original white opaque video; not transparent sprite frames"
+        }
+      }
+    },
+    "sourceQA": "failed",
+    "sourceQANotes": [
+      "真实107帧原角色2D H264视频",
+      "两臂/腿过渡更完整；passing仍脚手形变",
+      "原白背景、10%包络和闭环未通过"
+    ]
+  },
+  "visualQA": "failed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-1.png",
+      "phase": null,
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 83,
+      "sourceTime": 0,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "56a81953a68a09169865d0bdb2964a4c067a82260c0589356effec31a1ce623a"
+    },
+    {
+      "index": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-2.png",
+      "phase": null,
+      "file": "frames/002.png",
+      "timeMs": 83,
+      "durationMs": 83,
+      "sourceTime": 0.08333333333333333,
+      "decodedTime": 0.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "a19bae46bdff977a6632e3ba58933fe06ba00beb97ded12d1b0be2a56f090f7e"
+    },
+    {
+      "index": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-3.png",
+      "phase": null,
+      "file": "frames/003.png",
+      "timeMs": 166,
+      "durationMs": 83,
+      "sourceTime": 0.16666666666666666,
+      "decodedTime": 0.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "1aff8b38e7152cdb5a9e106c822607385ead0050150aca795bd114b36cf50ad9"
+    },
+    {
+      "index": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-4.png",
+      "phase": null,
+      "file": "frames/004.png",
+      "timeMs": 249,
+      "durationMs": 83,
+      "sourceTime": 0.25,
+      "decodedTime": 0.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "6eb782ce0ffc54a0a34fc3f657e2255636c27e13a53db59d63d21df1e1253e4a"
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-5.png",
+      "phase": null,
+      "file": "frames/005.png",
+      "timeMs": 332,
+      "durationMs": 83,
+      "sourceTime": 0.3333333333333333,
+      "decodedTime": 0.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "3b9f311f4579606636a53dd46de14d4d0a667269e3de36f600b3bacdfe296789"
+    },
+    {
+      "index": 5,
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-6.png",
+      "phase": null,
+      "file": "frames/006.png",
+      "timeMs": 415,
+      "durationMs": 83,
+      "sourceTime": 0.4166666666666667,
+      "decodedTime": 0.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "914fcefcbc965abdd425db39388c07aeddc8fedf657db9d1a7344a72869c825d"
+    },
+    {
+      "index": 6,
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-7.png",
+      "phase": null,
+      "file": "frames/007.png",
+      "timeMs": 498,
+      "durationMs": 83,
+      "sourceTime": 0.5,
+      "decodedTime": 0.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "dcaee2ac01ca7f4257f25d8243aec5e41ebf40fdf4c9d3f7aa9a3d61fabfd077"
+    },
+    {
+      "index": 7,
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-8.png",
+      "phase": null,
+      "file": "frames/008.png",
+      "timeMs": 581,
+      "durationMs": 83,
+      "sourceTime": 0.5833333333333334,
+      "decodedTime": 0.541667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "5f0e20d6fd2b3f3095ea504589c231d1107ba811958ec0e6e82e986e382c5979"
+    },
+    {
+      "index": 8,
+      "rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-9.png",
+      "phase": null,
+      "file": "frames/009.png",
+      "timeMs": 664,
+      "durationMs": 83,
+      "sourceTime": 0.6666666666666666,
+      "decodedTime": 0.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "13d437d8341f071e8fdf23a6e68576bd469a11177ed4e1781df2866d64ca6490"
+    },
+    {
+      "index": 9,
+      "rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-10.png",
+      "phase": null,
+      "file": "frames/010.png",
+      "timeMs": 747,
+      "durationMs": 83,
+      "sourceTime": 0.75,
+      "decodedTime": 0.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "839fb5afc5468b0549a542a7be0c68ff685c1d5a5467b235c914de5622e4962b"
+    },
+    {
+      "index": 10,
+      "rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-11.png",
+      "phase": null,
+      "file": "frames/011.png",
+      "timeMs": 830,
+      "durationMs": 83,
+      "sourceTime": 0.8333333333333334,
+      "decodedTime": 0.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "5bdd1424c43ed24f309555eefc04cc800eba34848ab3a83a095d1ff62e08e9b4"
+    },
+    {
+      "index": 11,
+      "rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-12.png",
+      "phase": null,
+      "file": "frames/012.png",
+      "timeMs": 913,
+      "durationMs": 83,
+      "sourceTime": 0.9166666666666666,
+      "decodedTime": 0.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "69979434fab7cca818a545caf300b26e13f289367753c193c34a257b17c5eb26"
+    },
+    {
+      "index": 12,
+      "rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        780,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-13.png",
+      "phase": null,
+      "file": "frames/013.png",
+      "timeMs": 996,
+      "durationMs": 83,
+      "sourceTime": 1,
+      "decodedTime": 1,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "90d17e45a94dd8c776dc81baae333e6596a31cbda27dc055b91e4b521d6dfba1"
+    },
+    {
+      "index": 13,
+      "rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        780,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-14.png",
+      "phase": null,
+      "file": "frames/014.png",
+      "timeMs": 1079,
+      "durationMs": 83,
+      "sourceTime": 1.0833333333333333,
+      "decodedTime": 1.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "b6081766999567dbea9c0a4c884021994a2aed6f4d094f884f806e512b217618"
+    },
+    {
+      "index": 14,
+      "rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        780,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-15.png",
+      "phase": null,
+      "file": "frames/015.png",
+      "timeMs": 1162,
+      "durationMs": 83,
+      "sourceTime": 1.1666666666666667,
+      "decodedTime": 1.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c5f83e838c5bf6831bbf0e9bf00f4b41ee71bc07d2c1dbe8ce98d22dd707c327"
+    },
+    {
+      "index": 15,
+      "rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        780,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-16.png",
+      "phase": null,
+      "file": "frames/016.png",
+      "timeMs": 1245,
+      "durationMs": 83,
+      "sourceTime": 1.25,
+      "decodedTime": 1.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "7c04ab4adb2ddb7d755b8ea8b9772770bd038f20e40543e2bca2aaa6df62b514"
+    },
+    {
+      "index": 16,
+      "rect": [
+        0,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        1036,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-17.png",
+      "phase": null,
+      "file": "frames/017.png",
+      "timeMs": 1328,
+      "durationMs": 83,
+      "sourceTime": 1.3333333333333333,
+      "decodedTime": 1.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c86fb0257e911a74721c88b00842adb6f6bb0aa529679e5bb9173ffb3207cdb7"
+    },
+    {
+      "index": 17,
+      "rect": [
+        256,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        1036,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-18.png",
+      "phase": null,
+      "file": "frames/018.png",
+      "timeMs": 1411,
+      "durationMs": 83,
+      "sourceTime": 1.4166666666666667,
+      "decodedTime": 1.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "68715356bfe031376f969bf63e94a344010cfbfe0371c64e5b2566fa0d38ca27"
+    },
+    {
+      "index": 18,
+      "rect": [
+        512,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        1036,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-19.png",
+      "phase": null,
+      "file": "frames/019.png",
+      "timeMs": 1494,
+      "durationMs": 83,
+      "sourceTime": 1.5,
+      "decodedTime": 1.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "7ee57fb222cd25e949dfffe33d0a2f12bb0ed33802eb75746627390b9cc1b031"
+    },
+    {
+      "index": 19,
+      "rect": [
+        768,
+        1024,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        1036,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-20.png",
+      "phase": null,
+      "file": "frames/020.png",
+      "timeMs": 1577,
+      "durationMs": 83,
+      "sourceTime": 1.5833333333333333,
+      "decodedTime": 1.541667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "d180f05978b5c21ee770599b8d58f8d4c59f1a18b777ab8c6c3e980fec90c0eb"
+    },
+    {
+      "index": 20,
+      "rect": [
+        0,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        1292,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-21.png",
+      "phase": null,
+      "file": "frames/021.png",
+      "timeMs": 1660,
+      "durationMs": 83,
+      "sourceTime": 1.6666666666666667,
+      "decodedTime": 1.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "9b4fff9404ac4f5cbc1ad519f09d43913a41f6c1408a564d1cf5fd0530c372e7"
+    },
+    {
+      "index": 21,
+      "rect": [
+        256,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        1292,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-22.png",
+      "phase": null,
+      "file": "frames/022.png",
+      "timeMs": 1743,
+      "durationMs": 83,
+      "sourceTime": 1.75,
+      "decodedTime": 1.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e7765bed463537618d60b20342611ba9f0328b1ac235ec519a074a81e6712525"
+    },
+    {
+      "index": 22,
+      "rect": [
+        512,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        1292,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-23.png",
+      "phase": null,
+      "file": "frames/023.png",
+      "timeMs": 1826,
+      "durationMs": 83,
+      "sourceTime": 1.8333333333333333,
+      "decodedTime": 1.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "3b341f4004e475ce9b6718952be4e4a648ef43dd014aac4b474e2b8cc6a10fb1"
+    },
+    {
+      "index": 23,
+      "rect": [
+        768,
+        1280,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        1292,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-24.png",
+      "phase": null,
+      "file": "frames/024.png",
+      "timeMs": 1909,
+      "durationMs": 83,
+      "sourceTime": 1.9166666666666667,
+      "decodedTime": 1.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "6a00fa3e9d2881285f6647ff86083761a7b679b053aef8eef59ed744902d396d"
+    },
+    {
+      "index": 24,
+      "rect": [
+        0,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        1548,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-25.png",
+      "phase": null,
+      "file": "frames/025.png",
+      "timeMs": 1992,
+      "durationMs": 83,
+      "sourceTime": 2,
+      "decodedTime": 2,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "2fdd8292f1c0527bd34671321e68672af0e695fb6eff9536f46303e0c96ecbe8"
+    },
+    {
+      "index": 25,
+      "rect": [
+        256,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        1548,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-26.png",
+      "phase": null,
+      "file": "frames/026.png",
+      "timeMs": 2075,
+      "durationMs": 83,
+      "sourceTime": 2.0833333333333335,
+      "decodedTime": 2.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c06ae687a5e89530e1f4d00d785733526c2e8b611a2152dcb486fc22c5000d6e"
+    },
+    {
+      "index": 26,
+      "rect": [
+        512,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        1548,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-27.png",
+      "phase": null,
+      "file": "frames/027.png",
+      "timeMs": 2158,
+      "durationMs": 83,
+      "sourceTime": 2.1666666666666665,
+      "decodedTime": 2.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c25503cbe51acdfc80818511d6bd5c6f83c1114eb39f26c3e0039d6ffbbe46a5"
+    },
+    {
+      "index": 27,
+      "rect": [
+        768,
+        1536,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        1548,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-28.png",
+      "phase": null,
+      "file": "frames/028.png",
+      "timeMs": 2241,
+      "durationMs": 83,
+      "sourceTime": 2.25,
+      "decodedTime": 2.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "41568e327ce167bb2a140befacbca435d844b8a6803e7f7a90e5c0086a03ee20"
+    },
+    {
+      "index": 28,
+      "rect": [
+        0,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        1804,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-29.png",
+      "phase": null,
+      "file": "frames/029.png",
+      "timeMs": 2324,
+      "durationMs": 83,
+      "sourceTime": 2.3333333333333335,
+      "decodedTime": 2.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "fd359afc42cc110c4b3280dda98ca1d45a1852a4ba66252f3deecdcfb5b64e19"
+    },
+    {
+      "index": 29,
+      "rect": [
+        256,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        1804,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-30.png",
+      "phase": null,
+      "file": "frames/030.png",
+      "timeMs": 2407,
+      "durationMs": 83,
+      "sourceTime": 2.4166666666666665,
+      "decodedTime": 2.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e5c1c4e74c4ba6d0901d7e7077df3614d879209e78108b2c61469fc547132f89"
+    },
+    {
+      "index": 30,
+      "rect": [
+        512,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        1804,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-31.png",
+      "phase": null,
+      "file": "frames/031.png",
+      "timeMs": 2490,
+      "durationMs": 83,
+      "sourceTime": 2.5,
+      "decodedTime": 2.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "48bea33bd94fa5ca9c2c8beac2cf030cc5bf8757725b9d9ea3a6ee1b3e065f48"
+    },
+    {
+      "index": 31,
+      "rect": [
+        768,
+        1792,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        1804,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-32.png",
+      "phase": null,
+      "file": "frames/032.png",
+      "timeMs": 2573,
+      "durationMs": 83,
+      "sourceTime": 2.5833333333333335,
+      "decodedTime": 2.541667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c86c22cec458603120e197ef575ea803b492bda3fb4bcb220a78462c15bc4dfc"
+    },
+    {
+      "index": 32,
+      "rect": [
+        0,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        2060,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-33.png",
+      "phase": null,
+      "file": "frames/033.png",
+      "timeMs": 2656,
+      "durationMs": 83,
+      "sourceTime": 2.6666666666666665,
+      "decodedTime": 2.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "45c7c491add9745803fa793d4c7f64c5a1f4d7d5e4e906266038a99bb74081be"
+    },
+    {
+      "index": 33,
+      "rect": [
+        256,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        2060,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-34.png",
+      "phase": null,
+      "file": "frames/034.png",
+      "timeMs": 2739,
+      "durationMs": 83,
+      "sourceTime": 2.75,
+      "decodedTime": 2.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "7514b007ad0a7f1ccf0cff6188d52f52ec1d7cad8896336933e73cc4084a425d"
+    },
+    {
+      "index": 34,
+      "rect": [
+        512,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        2060,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-35.png",
+      "phase": null,
+      "file": "frames/035.png",
+      "timeMs": 2822,
+      "durationMs": 83,
+      "sourceTime": 2.8333333333333335,
+      "decodedTime": 2.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "261e9d933cdb56eed70cb8bde431ebc7759283a4228f39d1a8ea52d65132d88f"
+    },
+    {
+      "index": 35,
+      "rect": [
+        768,
+        2048,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        2060,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-36.png",
+      "phase": null,
+      "file": "frames/036.png",
+      "timeMs": 2905,
+      "durationMs": 83,
+      "sourceTime": 2.9166666666666665,
+      "decodedTime": 2.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "e1a40b095d5a93ceb16540d278c3db093e8a5d944e46fc4e09baf1df9e71b312"
+    },
+    {
+      "index": 36,
+      "rect": [
+        0,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        2316,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-37.png",
+      "phase": null,
+      "file": "frames/037.png",
+      "timeMs": 2988,
+      "durationMs": 83,
+      "sourceTime": 3,
+      "decodedTime": 3,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "ad4674edd5f6b50a7d823a32139e7a06564f37ea2b66bdbabea24cc69aa8bc29"
+    },
+    {
+      "index": 37,
+      "rect": [
+        256,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        2316,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-38.png",
+      "phase": null,
+      "file": "frames/038.png",
+      "timeMs": 3071,
+      "durationMs": 83,
+      "sourceTime": 3.0833333333333335,
+      "decodedTime": 3.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "90a401fab00361708101959b93d52f1b2398a936d3cfc73bb9de2f38409bda38"
+    },
+    {
+      "index": 38,
+      "rect": [
+        512,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        2316,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-39.png",
+      "phase": null,
+      "file": "frames/039.png",
+      "timeMs": 3154,
+      "durationMs": 83,
+      "sourceTime": 3.1666666666666665,
+      "decodedTime": 3.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "62c789d492435e7e477e13f4506e9ac617e8b20d7232c5d1ae2886183aafbc22"
+    },
+    {
+      "index": 39,
+      "rect": [
+        768,
+        2304,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        2316,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-40.png",
+      "phase": null,
+      "file": "frames/040.png",
+      "timeMs": 3237,
+      "durationMs": 83,
+      "sourceTime": 3.25,
+      "decodedTime": 3.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "eb2175456930a3bcf473a5d410fb2711c1eb8cce015ea118815df082e4c28b04"
+    },
+    {
+      "index": 40,
+      "rect": [
+        0,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        2572,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-41.png",
+      "phase": null,
+      "file": "frames/041.png",
+      "timeMs": 3320,
+      "durationMs": 83,
+      "sourceTime": 3.3333333333333335,
+      "decodedTime": 3.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "0fe92fe791e69b603a0c197317edbd31d3d79869bd817c6c63d9524b6cf95b8a"
+    },
+    {
+      "index": 41,
+      "rect": [
+        256,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        2572,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-42.png",
+      "phase": null,
+      "file": "frames/042.png",
+      "timeMs": 3403,
+      "durationMs": 83,
+      "sourceTime": 3.4166666666666665,
+      "decodedTime": 3.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "1580826d0df767fb0a232949452e3907fadb00ca630fd5467d208be4fb32e3d8"
+    },
+    {
+      "index": 42,
+      "rect": [
+        512,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        2572,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-43.png",
+      "phase": null,
+      "file": "frames/043.png",
+      "timeMs": 3486,
+      "durationMs": 83,
+      "sourceTime": 3.5,
+      "decodedTime": 3.5,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "056ca6da5a71838219aaa2d0298c151c914cab821b8667022e47261b64767777"
+    },
+    {
+      "index": 43,
+      "rect": [
+        768,
+        2560,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        2572,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-44.png",
+      "phase": null,
+      "file": "frames/044.png",
+      "timeMs": 3569,
+      "durationMs": 83,
+      "sourceTime": 3.5833333333333335,
+      "decodedTime": 3.541667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "4790e09e986c162b15130ff5db3d41ecbb0a48d6d5d2b378553067dad6694e68"
+    },
+    {
+      "index": 44,
+      "rect": [
+        0,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        2828,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-45.png",
+      "phase": null,
+      "file": "frames/045.png",
+      "timeMs": 3652,
+      "durationMs": 83,
+      "sourceTime": 3.6666666666666665,
+      "decodedTime": 3.625,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "5bdffdfea49516de0940f55d12f2a7b1f01870f48e9f09a7b2036f74abab97fa"
+    },
+    {
+      "index": 45,
+      "rect": [
+        256,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        2828,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-46.png",
+      "phase": null,
+      "file": "frames/046.png",
+      "timeMs": 3735,
+      "durationMs": 83,
+      "sourceTime": 3.75,
+      "decodedTime": 3.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "be0b80abcc11dd36f3eaf3cd44379563bafc89371778f9539a9c93bee9555b3b"
+    },
+    {
+      "index": 46,
+      "rect": [
+        512,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        2828,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-47.png",
+      "phase": null,
+      "file": "frames/047.png",
+      "timeMs": 3818,
+      "durationMs": 83,
+      "sourceTime": 3.8333333333333335,
+      "decodedTime": 3.791667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "de30ffb2fdbd16d1ed68d9989c445e776434152e6e25ebe8298a86f15912987c"
+    },
+    {
+      "index": 47,
+      "rect": [
+        768,
+        2816,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        2828,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-48.png",
+      "phase": null,
+      "file": "frames/048.png",
+      "timeMs": 3901,
+      "durationMs": 83,
+      "sourceTime": 3.9166666666666665,
+      "decodedTime": 3.875,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "c7a3f941393e93c450c673d7b5d2013a5c1ba3089f1627ced492e8f7b5bb93b6"
+    },
+    {
+      "index": 48,
+      "rect": [
+        0,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        3084,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-49.png",
+      "phase": null,
+      "file": "frames/049.png",
+      "timeMs": 3984,
+      "durationMs": 83,
+      "sourceTime": 4,
+      "decodedTime": 4,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "0bdbe529dc93d92a9e68db19d1459476088b6e7c321f565715e9e745a0564ef5"
+    },
+    {
+      "index": 49,
+      "rect": [
+        256,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        3084,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-50.png",
+      "phase": null,
+      "file": "frames/050.png",
+      "timeMs": 4067,
+      "durationMs": 83,
+      "sourceTime": 4.083333333333333,
+      "decodedTime": 4.041667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "6d10b9facc36f2b3387c950fc523bb0e413e05d71903d53aa025a39693a4a07d"
+    },
+    {
+      "index": 50,
+      "rect": [
+        512,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        3084,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-51.png",
+      "phase": null,
+      "file": "frames/051.png",
+      "timeMs": 4150,
+      "durationMs": 83,
+      "sourceTime": 4.166666666666667,
+      "decodedTime": 4.125,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "94068e1abbceb6b828710208eddd1a22dc33112a266175959adfe87eac7a421e"
+    },
+    {
+      "index": 51,
+      "rect": [
+        768,
+        3072,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        3084,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-52.png",
+      "phase": null,
+      "file": "frames/052.png",
+      "timeMs": 4233,
+      "durationMs": 83,
+      "sourceTime": 4.25,
+      "decodedTime": 4.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "1f11423c27ddc138a51a08aecfd15ec26c3e4ed98885709f3d97bf6d7231d191"
+    },
+    {
+      "index": 52,
+      "rect": [
+        0,
+        3328,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        3340,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-53.png",
+      "phase": null,
+      "file": "frames/053.png",
+      "timeMs": 4316,
+      "durationMs": 83,
+      "sourceTime": 4.333333333333333,
+      "decodedTime": 4.291667,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "045d09b7a884035b941a497432c4aade93b2fbfdb768b93faa896d3a4a54bd36"
+    },
+    {
+      "index": 53,
+      "rect": [
+        256,
+        3328,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        3340,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "video-54.png",
+      "phase": null,
+      "file": "frames/054.png",
+      "timeMs": 4399,
+      "durationMs": 41,
+      "sourceTime": 4.416666666666667,
+      "decodedTime": 4.375,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+      "sourceProvenance": null,
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+        "origin": "SHA-bound generated video source review"
+      },
+      "pngSha256": "895ce16453b928fa364d2c451568e8e611009f870d32d53921513b3aee26d5cf"
+    }
+  ],
+  "exportedAt": "2026-10-11T18:16:06.717Z"
+}

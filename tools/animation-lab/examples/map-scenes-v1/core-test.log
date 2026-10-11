@@ -1,0 +1,33 @@
+✔ same seed reproduces tiles independent of query order (1.795917ms)
+✔ negative coordinates use floor chunk coordinates with nonnegative local indices (0.09ms)
+✔ adjacent chunks agree with direct global samples, including all shared boundaries (7.151791ms)
+✔ elevation and moisture have no discontinuity at chunk edges (1.809583ms)
+✔ cache never exceeds budget, evicts remote chunks, restores identical content (30.975291ms)
+✔ parameter validation rejects invalid seeds, sizes, coordinates and cache budget (0.303875ms)
+✔ export schema includes stable row-major positions, traversal and resources (1.056583ms)
+✔ connectivity avoids row-wrap, picks safe spawn and rejects inaccessible spawn (0.323833ms)
+✔ biome and resource coverage across fixed seeds (150.201959ms)
+✔ tool entry point validates operation and emits independent versioned schemas (1.560875ms)
+✔ CLI invalid arguments and blocked regions return distinct machine-readable exit codes (147.121333ms)
+✔ vendored upstream Python chunks reproduce on return and Tiled uses negative origins (67.576125ms)
+✔ vendored source hashes are locked and upstream Python behavior is preserved (92.785541ms)
+✔ Wangscape C++ reference implementation compiles in a test harness and matches JS byte shares (1105.118167ms)
+✔ source hashes lock upstream and all three genuinely distinct raster atlases (8.4795ms)
+✔ terrain source sampling excludes transparent atlas edges that created black horizontal seams (282.988375ms)
+✔ corner material blending matches at both sides of every positive and negative chunk boundary (5.972875ms)
+✔ independently exported chunks stitch to the exact full-region RGBA at negative coordinates (99.102334ms)
+✔ decorative props use a halo: independent image windows stitch with the same alpha ordering (97.182792ms)
+✔ styles retain identical world data and collisions; Tiled has real local artwork and unique collision IDs (10.826875ms)
+✔ real PNG export is reproducible and decorative alpha is preserved; source atlas is included (266.544084ms)
+✔ browser ZIP supports binary PNG bytes and passes independent Python ZIP CRC validation (104.127208ms)
+✔ style and pixel budget reject bad values; renderer texture cache remains bounded (254.032167ms)
+✔ registered source cells exclude foreign terrain: ocean pixels stay blue, snow avoids brown stripes (152.250333ms)
+✔ LOD cache preserves all 40 visible overview chunks without per-frame rebuild and enforces byte limits (82.840625ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2534.78375

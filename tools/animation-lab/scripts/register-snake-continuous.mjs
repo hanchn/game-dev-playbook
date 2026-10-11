@@ -1,0 +1,17 @@
+import fs from 'node:fs/promises';
+import crypto from 'node:crypto';
+import {createRequire} from 'node:module';
+import {scanPixels} from './scan-atlas.mjs';
+const root=new URL('../',import.meta.url),require=createRequire('/Users/lemon/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/registration.cjs'),sharp=require('sharp');
+const atlas='/art/snake-side-parts-v6.png',bytes=await fs.readFile(new URL('public'+atlas,root)),raw=await sharp(bytes).ensureAlpha().raw().toBuffer({resolveWithObject:true}),scan=scanPixels({w:raw.info.width,h:raw.info.height,pixels:raw.data},{tileCount:4,rows:4,precision:true});
+const body=scan.tiles.find(t=>t.rect[2]>1000),head=scan.tiles.find(t=>t.rect[0]>700&&t.rect[2]>400),jaw=scan.tiles.find(t=>t!==head&&t.rect[0]>900&&t.rect[0]<1300),tongue=scan.tiles.find(t=>t.rect[0]>1300);
+if(!body||!head||!jaw||!tongue)throw Error('Missing real independent anatomy');
+head.ownership='上颌、头与颈根，源图独立下颌';head.pivot=[.12,.5];head.distal=[.95,.5];
+body.ownership='单一连续全长身体和尾部，禁用跨素材sections';body.pivot=[.98,.5];body.distal=[.02,.5];
+jaw.ownership='独立下颌';jaw.pivot=[.10,.20];jaw.distal=[.90,.70];tongue.pivot=[.04,.50];tongue.distal=[.96,.50];tongue.ownership='真实分叉蛇信';
+const skinsFile=new URL('public/art/skins.json',root),skins=JSON.parse(await fs.readFile(skinsFile)),old=skins.snake;
+await fs.writeFile(new URL('examples/snake-side-v5/baseline/skin.json',root),JSON.stringify(old,null,2));
+skins.snake={width:raw.info.width,height:raw.info.height,transparent:true,atlas,tiles:Array.from({length:16},(_,i)=>structuredClone(i===1?head:i===9?jaw:i===4?tongue:body)),qa:{sourceRegions:'alpha-connected-pixel-union',visual:'pending'}};
+await fs.writeFile(skinsFile,JSON.stringify(skins,null,2));
+await fs.writeFile(new URL('examples/snake-side-v5/source-registration.json',root),JSON.stringify({atlas,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),scan,bodyRect:body.rect,headRect:head.rect,jawRect:jaw.rect,tongueRect:tongue.rect,method:'native alpha measurement, no source pixel changes',status:'source-reviewed-binding-pending'},null,2));
+console.log({body:body.rect,head:head.rect,jaw:jaw.rect,tongue:tongue.rect});

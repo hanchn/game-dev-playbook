@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise SECOND local transition repair of reference1 far-loading milkfrog. Keep exactlegpose, head, torso,scale1254camera and material. Its current arms jumped too rapidly from preceding50% reference2. Bring arms to INTERMEDIATE passing positions, NOT full back/front extremes.\nFOREGROUND NEAR OPEN hand remains OPEN and moves to SOURCE x470,y760 behind/alongside hip at WAIST. Its near upperarm starts shoulder x625,y390, near ELBOW aroundx515,y570, near WRIST aroundx470,y705. This yields modest backward/downward upperarm, connected bentforearm; remove its old far-left open hand at x290,y590, no ghosts. Near hand pointsdown naturalrunning, fourpinkdigits clean.\nBACKGROUND FAR CURLED hand remains CURLED and moves to SOURCE x830,y750, passing in front/alongside belly at WAIST. Its far upperarm emerges from behindshoulder nearx560,y380, far elbow under/infront atx700,y570, wristnearx790,y715. Remove the old far-right fist atx1030,y660. Keep fararm behindnearshoulder/torso occlusion with wrist/fist visibleonright, don't addthirdarm.\nThis source is58.33%transition, halfwaypassing upperarms insteadfull75%extreme. Both hand identity states preserved, botharmscontinuous/visible. LEGS/face stay asreference1, far support foot contactsunchangedcommonground, nearfootairborne. Transparentalpha, no shadows/coloredmarks/overspill. Preserve facial features and texture EXACT, outputone clean actual intermediateload sprite.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-70a02e58-32fe-40df-9b57-da43b0c14707.png",
+  "generatedFileSha256": "bd436bdf547f16c4535920fad05d1a773f6b2433af00f452e319f450f17546aa",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3618ec19-3629-437f-b1de-0dea2a0d86e9.png",
+      "sha256": "de05ef2d576c0b982b76fa9e061193ce6a213bffbf88135f03ba9c02b9827978"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+      "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+    }
+  ],
+  "phase": 1.75,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      335,
+      85,
+      761,
+      1105
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Near arm moves moderately toward passing, near knee still premature high."
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "schema": "frame-animation-generation-receipt",
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "mode": "identity-preserve-framing-edit",
+  "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame bend animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+  "identityReference": {
+    "file": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+    "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+  },
+  "editReference": {
+    "file": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-30299536-df64-4eab-9819-cf01908c38b2.png",
+    "sha256": "d0a36105045ae7c092a7540b72c92aafb1593931b3b15682b99d5d674dfda6d6"
+  },
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-e1395fda-248b-49ee-b950-77513e290ff3.png",
+  "generatedFileSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+  "projectFile": "public/frame-animation-assets/alien-bend-v2.png",
+  "projectFileSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+  "image": {
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "count": 8,
+    "cellWidth": 443.5,
+    "cellHeight": 443.5,
+    "order": "row-major",
+    "requiresIntegerGridNormalization": true,
+    "boundaryPolicy": "floor(col*width/4),floor(row*height/2); final boundary=image dimensions"
+  },
+  "playback": {
+    "fps": 8,
+    "durationSeconds": 1,
+    "loop": false
+  },
+  "qa": {
+    "visual": "needs-registration-and-playback-review",
+    "frames": [
+      {
+        "index": 0,
+        "phase": "stand",
+        "alphaBoundsLocal": [
+          168,
+          106,
+          273,
+          410
+        ],
+        "marginLocal": {
+          "left": 168,
+          "top": 106,
+          "right": 170,
+          "bottom": 33
+        },
+        "cellRect": [
+          0,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "直立起始，脚平，远近腿叠合",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 1,
+        "phase": "hinge-20",
+        "alphaBoundsLocal": [
+          174,
+          120,
+          312,
+          412
+        ],
+        "marginLocal": {
+          "left": 174,
+          "top": 120,
+          "right": 132,
+          "bottom": 31
+        },
+        "cellRect": [
+          443,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "轻度髋折叠，胳膊下垂",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 2,
+        "phase": "hinge-45",
+        "alphaBoundsLocal": [
+          155,
+          158,
+          326,
+          410
+        ],
+        "marginLocal": {
+          "left": 155,
+          "top": 158,
+          "right": 117,
+          "bottom": 33
+        },
+        "cellRect": [
+          887,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "45度髋折叠可辨，头随躯干",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 3,
+        "phase": "hinge-70",
+        "alphaBoundsLocal": [
+          137,
+          199,
+          346,
+          412
+        ],
+        "marginLocal": {
+          "left": 137,
+          "top": 199,
+          "right": 98,
+          "bottom": 31
+        },
+        "cellRect": [
+          1330,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "深折叠，背近水平；手臂在肩下，颈无断开",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 4,
+        "phase": "hold",
+        "alphaBoundsLocal": [
+          129,
+          178,
+          343,
+          380
+        ],
+        "marginLocal": {
+          "left": 129,
+          "top": 178,
+          "right": 100,
+          "bottom": 64
+        },
+        "cellRect": [
+          0,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "深折叠hold，脚基线和frame4轻微漂移",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 5,
+        "phase": "return-45",
+        "alphaBoundsLocal": [
+          156,
+          109,
+          324,
+          380
+        ],
+        "marginLocal": {
+          "left": 156,
+          "top": 109,
+          "right": 120,
+          "bottom": 64
+        },
+        "cellRect": [
+          443,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "中折叠返回",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 6,
+        "phase": "return-20",
+        "alphaBoundsLocal": [
+          171,
+          80,
+          296,
+          380
+        ],
+        "marginLocal": {
+          "left": 171,
+          "top": 80,
+          "right": 147,
+          "bottom": 64
+        },
+        "cellRect": [
+          887,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "浅折叠返回，腿较直",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 7,
+        "phase": "stand",
+        "alphaBoundsLocal": [
+          175,
+          74,
+          281,
+          380
+        ],
+        "marginLocal": {
+          "left": 175,
+          "top": 74,
+          "right": 163,
+          "bottom": 64
+        },
+        "cellRect": [
+          1330,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "站立恢复，源scale/baseline仍非完全一致",
+        "status": "reviewed-with-open-registration-defect"
+      }
+    ],
+    "observations": [
+      "8阶段均可见，角色服装和朝向基本保持；逐帧视审已执行",
+      "v2留边明显改善且关节连续；仍有落脚基线、头部尺度和水平registration轻微偏移，未签收最终成片",
+      "工具黑底预览可见红黄细线；A>128红色筛查仅少量或零候选，不能仅凭预览证实source边缘污染，需真实深浅底播放验收。"
+    ],
+    "gameIntegrated": false,
+    "playbackReviewed": false,
+    "edgePixelScreening": {
+      "opaqueRedCandidates": 292,
+      "opaqueYellowCandidates": 0,
+      "criterion": "RGBA A>128 and saturated red/yellow heuristic; advisory not exact segmentation",
+      "interpretation": "少量颜色候选不能单独证明轮廓缺陷；工具黑底预览的红黄线可能为低alpha隐藏RGB，深浅底真实播放待查。"
+    }
+  }
+}

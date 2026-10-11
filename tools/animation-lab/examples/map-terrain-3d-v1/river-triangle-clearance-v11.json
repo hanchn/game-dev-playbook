@@ -1,0 +1,42 @@
+{
+  "algorithm": "procedural-terrains-7452c2c-cpu-planner4-river-scenes-v11",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "forest",
+    "preset": "rollingHills",
+    "scale": 128,
+    "height": 24,
+    "waterLevel": 0.22,
+    "vegetation": 0.65
+  },
+  "featureId": "漫游-2026:0,0:stream",
+  "terminalBasin": {
+    "position": {
+      "x": 163.70199277692038,
+      "z": 148.10167917496017
+    },
+    "radius": 3.9936000000000003,
+    "waterHeight": 5.932530120849609,
+    "status": "planned-generated-depression",
+    "hydrologicallyValidated": false,
+    "validation": {
+      "completeFootprintAvoidance": [
+        "castle",
+        "village",
+        "cave"
+      ],
+      "visual": "not-reviewed"
+    }
+  },
+  "vertices": 163,
+  "triangles": 192,
+  "checks": 931,
+  "minimumClearance": 0.023799980510375462,
+  "worst": {
+    "x": 171.27230834960938,
+    "y": 7.597667694091797,
+    "z": 168.58877563476562,
+    "diff": 0.023799980510375462
+  },
+  "visualAccepted": false
+}

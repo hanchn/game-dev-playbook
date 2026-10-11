@@ -1,0 +1,47 @@
+✔ half-open video sampling, explicit sorted times, invalid/oversized sampling rejected (1.07525ms)
+✔ chronology is numeric, per-frame durations affect playback, exact source rectangles and safe sheet bounds (9.026583ms)
+✔ decoded PTS follows containing source frame, reports duplicates without inventing timestamps (0.156459ms)
+✔ source failed QA and individual frame observations survive export without upgrading loop approval (0.09775ms)
+✔ generation requests remain pending until actual outputs; layout and limb continuity specified (0.183667ms)
+✔ odd source sheet is partitioned without lost or overlapping pixels (0.12425ms)
+✔ ZIP store files pass native CRC validation and preserve Unicode names and exact bytes (49.141041ms)
+✔ real H264 video -> eight distinct exact decoded PNGs -> alpha-padded sheet; existing outputs rejected (1636.045625ms)
+✔ receipt per-frame QA transfers notes without upgrading overall playback acceptance (0.275791ms)
+✔ unequal source frames share a fixed affine transform and source anchor; no individual fitting (0.191084ms)
+✔ original alpha boundary rejects clipped transparent sprite before padding; opaque video and faint border are distinguished (0.207875ms)
+✔ real unequal PNGs retain identical source-marker placement after one sequence transform (291.170875ms)
+✔ mixed-version generated PNGs follow receipt chronology; mismatched provenance rejects before output (249.764708ms)
+✔ existing project crops bind exact source PNG SHA and remain imports, not new generation (0.480208ms)
+✔ fractional FPS recording boundaries choose every frame once without rounding to prior frame (0.822084ms)
+✖ multi-cycle capture repeats source chronology across last-to-first boundaries (0.820166ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 15
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2297.848375
+
+✖ failing tests:
+
+test at tools/animation-lab/test/frame-animation.test.mjs:146:1
+✖ multi-cycle capture repeats source chronology across last-to-first boundaries (0.820166ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  11 !== 0
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/frame-animation.test.mjs:147:154)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 11,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

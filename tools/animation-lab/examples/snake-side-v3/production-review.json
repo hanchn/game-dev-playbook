@@ -1,0 +1,2532 @@
+{
+  "species": "snake",
+  "technical": "passed",
+  "visual": "agent-reviewed-user-acceptance-pending",
+  "note": "完整身体连续蒙皮采用平滑插值，盘曲不露横切节段。上颌与下颌独立，蛇信探查、抬头警戒、突击咬合分别检查；保留失败v2并使用修复v3。运动学未模拟摩擦推进。",
+  "motions": [
+    {
+      "clip": "idle",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "2.5653"
+          }
+        ],
+        "scope": "character",
+        "clip": "idle",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "walk",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "8.7202"
+          }
+        ],
+        "scope": "character",
+        "clip": "walk",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "run",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "8.7202"
+          }
+        ],
+        "scope": "character",
+        "clip": "run",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "probe",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "1.5591"
+          }
+        ],
+        "scope": "character",
+        "clip": "probe",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "coil",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "138.2916"
+          }
+        ],
+        "scope": "character",
+        "clip": "coil",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "raise",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "38.0000"
+          }
+        ],
+        "scope": "character",
+        "clip": "raise",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "clip": "strike",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "38.0000"
+          }
+        ],
+        "scope": "character",
+        "clip": "strike",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "partId": "segment-0",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "71.5210"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-1",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "65.5609"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-2",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "59.6008"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-3",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "53.6407"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-4",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "47.6806"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-5",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "41.7206"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-6",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "35.7605"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-7",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "29.8004"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-8",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "23.8403"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-9",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "17.8802"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-10",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "11.9202"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "segment-11",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "5.9601"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "jaw",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "3.5711"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    },
+    {
+      "partId": "tongue",
+      "report": {
+        "passed": true,
+        "checks": [
+          {
+            "id": "length",
+            "label": "骨段固定长度",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "join",
+            "label": "连接连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "loop",
+            "label": "首尾或回位连续",
+            "passed": true,
+            "detail": "0.0000"
+          },
+          {
+            "id": "movement",
+            "label": "选中关节参与动作",
+            "passed": true,
+            "detail": "5.8008"
+          },
+          {
+            "id": "isolation",
+            "label": "其他肢体固定",
+            "passed": true,
+            "detail": "0.0000"
+          }
+        ],
+        "scope": "component",
+        "clip": "extend",
+        "samples": 97,
+        "qa": {
+          "technical": "sampled",
+          "visual": "pending"
+        }
+      }
+    }
+  ],
+  "sheets": [
+    {
+      "clip": "idle",
+      "passed": true,
+      "minimumMargin": 79,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            121,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            121,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "walk",
+      "passed": true,
+      "minimumMargin": 79,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            121,
+            294,
+            432,
+            323
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            322
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            293,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            291,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            293,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            322
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            295,
+            432,
+            322
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            296,
+            432,
+            323
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            296,
+            432,
+            324
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            296,
+            432,
+            325
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            295,
+            432,
+            325
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            295,
+            432,
+            324
+          ],
+          "margin": 79,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "run",
+      "passed": true,
+      "minimumMargin": 79,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            121,
+            294,
+            432,
+            323
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            294,
+            432,
+            322
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            293,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            291,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            119,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            292,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            293,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            322
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            295,
+            432,
+            322
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            296,
+            432,
+            323
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            296,
+            432,
+            324
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            296,
+            432,
+            325
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            295,
+            432,
+            325
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            295,
+            432,
+            324
+          ],
+          "margin": 79,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "probe",
+      "passed": true,
+      "minimumMargin": 63,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            447,
+            321
+          ],
+          "margin": 64,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            448,
+            321
+          ],
+          "margin": 63,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            447,
+            321
+          ],
+          "margin": 64,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            448,
+            321
+          ],
+          "margin": 63,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            447,
+            321
+          ],
+          "margin": 64,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            448,
+            321
+          ],
+          "margin": 63,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "coil",
+      "passed": true,
+      "minimumMargin": 79,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            116,
+            271,
+            424,
+            322
+          ],
+          "margin": 87,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            146,
+            191,
+            406,
+            325
+          ],
+          "margin": 105,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            195,
+            154,
+            381,
+            328
+          ],
+          "margin": 130,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            202,
+            190,
+            357,
+            331
+          ],
+          "margin": 154,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            198,
+            215,
+            339,
+            333
+          ],
+          "margin": 172,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            196,
+            222,
+            331,
+            334
+          ],
+          "margin": 177,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            196,
+            222,
+            331,
+            334
+          ],
+          "margin": 177,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            196,
+            222,
+            331,
+            334
+          ],
+          "margin": 177,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            196,
+            222,
+            331,
+            334
+          ],
+          "margin": 177,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            196,
+            222,
+            332,
+            334
+          ],
+          "margin": 177,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            200,
+            207,
+            346,
+            333
+          ],
+          "margin": 165,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            201,
+            165,
+            371,
+            330
+          ],
+          "margin": 140,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            166,
+            172,
+            399,
+            326
+          ],
+          "margin": 112,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            118,
+            261,
+            422,
+            322
+          ],
+          "margin": 89,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "raise",
+      "passed": true,
+      "minimumMargin": 79,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            290,
+            432,
+            319
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            122,
+            277,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            129,
+            261,
+            432,
+            323
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            138,
+            246,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            144,
+            238,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            144,
+            238,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            144,
+            238,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            144,
+            238,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            144,
+            238,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            144,
+            238,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            138,
+            246,
+            432,
+            326
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            129,
+            261,
+            432,
+            323
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            122,
+            277,
+            432,
+            320
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            290,
+            432,
+            319
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        }
+      ]
+    },
+    {
+      "clip": "strike",
+      "passed": true,
+      "minimumMargin": 33,
+      "frames": [
+        {
+          "row": 0,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            122,
+            286,
+            432,
+            319
+          ],
+          "margin": 79,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            127,
+            264,
+            431,
+            323
+          ],
+          "margin": 80,
+          "empty": false
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            139,
+            244,
+            430,
+            326
+          ],
+          "margin": 81,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            143,
+            239,
+            430,
+            326
+          ],
+          "margin": 81,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            147,
+            255,
+            445,
+            325
+          ],
+          "margin": 66,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            169,
+            267,
+            473,
+            322
+          ],
+          "margin": 38,
+          "empty": false
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            172,
+            267,
+            478,
+            322
+          ],
+          "margin": 33,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            172,
+            267,
+            478,
+            322
+          ],
+          "margin": 33,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            172,
+            267,
+            478,
+            322
+          ],
+          "margin": 33,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            170,
+            267,
+            476,
+            322
+          ],
+          "margin": 35,
+          "empty": false
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            161,
+            271,
+            468,
+            321
+          ],
+          "margin": 43,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            146,
+            279,
+            457,
+            320
+          ],
+          "margin": 54,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            133,
+            287,
+            445,
+            319
+          ],
+          "margin": 66,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            123,
+            292,
+            436,
+            320
+          ],
+          "margin": 75,
+          "empty": false
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "width": 512,
+          "height": 512,
+          "bounds": [
+            120,
+            294,
+            432,
+            321
+          ],
+          "margin": 79,
+          "empty": false
+        }
+      ]
+    }
+  ]
+}

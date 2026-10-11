@@ -1,0 +1,39 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise single-sprite animation edit. REFERENCE 1 is a FAR ARM ONLY pose diagram. REFERENCE 2 is the actual character frame and all its unchanged parts. Return the SAME yellow muscular milk-frog frame from reference 2 with ONLY its far/back-layer arm redrawn into the full blue chain in reference 1, using the SOURCE NATURAL yellow muscular arm and pink CURLED fist style. The pose diagram has NO near arm; leave the original foreground arm and all its long spread OPEN pink fingers exactly unchanged. The far arm is the OTHER arm, currently ending in the curled fist far to the right at belly height; remove that wrong old arm/fist completely. The new FAR arm is bent LOW and passes close beside the waist: its hidden shoulder sits under/behind the big foreground shoulder, its upper arm slopes down-back to an elbow beside the BACK WAIST, and its forearm slopes down-forward to a curled fist UNDER THE BELLY beside the upper thigh, below the near open hand. Follow the diagram's blue shoulder->elbow->wrist chain as one connected arm, not just moving a hand: shoulder650,430, elbow546,630, wrist698,795 on1254canvas. The wrist is about level with the low hip crease, well below the open palm. This is a recovery/passing arm, not a backward extreme and not an arm extended forward at stomach level. The far fist can naturally partly overlap the upper thigh edge; keep visible pink curled knuckles, NOT merge them with the unchanged open near hand. Keep exactly TWO arms and distinguish open foreground hand vs curled rear fist. Preserve the actual reference 2 HEAD, eyes, face, entire torso/white belly, NEAR arm/open fingers, both LEGS/feet/toes, their pose, muscle proportions, material, highlights, outlines and native1254square registration. Fixed camera, scale, head size and foot positions; do not fit, crop or shift. No diagram/grid/text/blue/gray in the output. Preserve transparent background. One actual character PNG, not a guide.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-b58bd2ac-cf02-442a-a3f8-205011c4feb6.png",
+  "generatedFileSha256": "c663281c44185a090004932a7a20edd7f5bfd415a6489d09d5ece354e2e2805e",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-arm-control-v1/control-08-far-only.png",
+      "sha256": "782ef814ac3a0a217f75e28b75414af431fd1c20f399a30fb2bed394f5cf18e9"
+    },
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v7/frame-08-v4.png",
+      "sha256": "926571915a5c3adb9f970868ff24ef92762a1950a7163e72a28cde8e60227d7d"
+    }
+  ],
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      417,
+      85,
+      715,
+      1120
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": [
+      "Far-only guide preserves near open hand but far shoulder/elbow remain on outer right torso, fist approximately980,715 instead of chain wrist698,795. Whole-chain guide ignored; not selected."
+    ]
+  }
+}

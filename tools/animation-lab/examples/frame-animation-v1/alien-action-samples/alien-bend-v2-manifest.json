@@ -1,0 +1,617 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "alien-bend-v2",
+  "loop": false,
+  "durationMs": 1000,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1024,
+    "height": 512,
+    "cell": 256,
+    "columns": 4,
+    "rows": 2,
+    "padding": 12,
+    "sha256": "02f147b29fdb65ddc2220b9c7a1df58f79fc0028c344d94e448db9d2b8c34a17"
+  },
+  "provenance": {
+    "type": "imagegen",
+    "file": "alien-bend-v2.png",
+    "sha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame bend animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+    "receipt": {
+      "schema": "frame-animation-generation-receipt",
+      "schemaVersion": 1,
+      "tool": "image_gen.imagegen",
+      "mode": "identity-preserve-framing-edit",
+      "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame bend animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+      "identityReference": {
+        "file": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+        "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+      },
+      "editReference": {
+        "file": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-30299536-df64-4eab-9819-cf01908c38b2.png",
+        "sha256": "d0a36105045ae7c092a7540b72c92aafb1593931b3b15682b99d5d674dfda6d6"
+      },
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-e1395fda-248b-49ee-b950-77513e290ff3.png",
+      "generatedFileSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "projectFile": "public/frame-animation-assets/alien-bend-v2.png",
+      "projectFileSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "image": {
+        "width": 1774,
+        "height": 887,
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "cellWidth": 443.5,
+        "cellHeight": 443.5,
+        "order": "row-major",
+        "requiresIntegerGridNormalization": true,
+        "boundaryPolicy": "floor(col*width/4),floor(row*height/2); final boundary=image dimensions"
+      },
+      "playback": {
+        "fps": 8,
+        "durationSeconds": 1,
+        "loop": false
+      },
+      "qa": {
+        "visual": "needs-registration-and-playback-review",
+        "frames": [
+          {
+            "index": 0,
+            "phase": "stand",
+            "alphaBoundsLocal": [
+              168,
+              106,
+              273,
+              410
+            ],
+            "marginLocal": {
+              "left": 168,
+              "top": 106,
+              "right": 170,
+              "bottom": 33
+            },
+            "cellRect": [
+              0,
+              0,
+              443,
+              443
+            ],
+            "visualObservation": "直立起始，脚平，远近腿叠合",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 1,
+            "phase": "hinge-20",
+            "alphaBoundsLocal": [
+              174,
+              120,
+              312,
+              412
+            ],
+            "marginLocal": {
+              "left": 174,
+              "top": 120,
+              "right": 132,
+              "bottom": 31
+            },
+            "cellRect": [
+              443,
+              0,
+              444,
+              443
+            ],
+            "visualObservation": "轻度髋折叠，胳膊下垂",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 2,
+            "phase": "hinge-45",
+            "alphaBoundsLocal": [
+              155,
+              158,
+              326,
+              410
+            ],
+            "marginLocal": {
+              "left": 155,
+              "top": 158,
+              "right": 117,
+              "bottom": 33
+            },
+            "cellRect": [
+              887,
+              0,
+              443,
+              443
+            ],
+            "visualObservation": "45度髋折叠可辨，头随躯干",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 3,
+            "phase": "hinge-70",
+            "alphaBoundsLocal": [
+              137,
+              199,
+              346,
+              412
+            ],
+            "marginLocal": {
+              "left": 137,
+              "top": 199,
+              "right": 98,
+              "bottom": 31
+            },
+            "cellRect": [
+              1330,
+              0,
+              444,
+              443
+            ],
+            "visualObservation": "深折叠，背近水平；手臂在肩下，颈无断开",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 4,
+            "phase": "hold",
+            "alphaBoundsLocal": [
+              129,
+              178,
+              343,
+              380
+            ],
+            "marginLocal": {
+              "left": 129,
+              "top": 178,
+              "right": 100,
+              "bottom": 64
+            },
+            "cellRect": [
+              0,
+              443,
+              443,
+              444
+            ],
+            "visualObservation": "深折叠hold，脚基线和frame4轻微漂移",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 5,
+            "phase": "return-45",
+            "alphaBoundsLocal": [
+              156,
+              109,
+              324,
+              380
+            ],
+            "marginLocal": {
+              "left": 156,
+              "top": 109,
+              "right": 120,
+              "bottom": 64
+            },
+            "cellRect": [
+              443,
+              443,
+              444,
+              444
+            ],
+            "visualObservation": "中折叠返回",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 6,
+            "phase": "return-20",
+            "alphaBoundsLocal": [
+              171,
+              80,
+              296,
+              380
+            ],
+            "marginLocal": {
+              "left": 171,
+              "top": 80,
+              "right": 147,
+              "bottom": 64
+            },
+            "cellRect": [
+              887,
+              443,
+              443,
+              444
+            ],
+            "visualObservation": "浅折叠返回，腿较直",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 7,
+            "phase": "stand",
+            "alphaBoundsLocal": [
+              175,
+              74,
+              281,
+              380
+            ],
+            "marginLocal": {
+              "left": 175,
+              "top": 74,
+              "right": 163,
+              "bottom": 64
+            },
+            "cellRect": [
+              1330,
+              443,
+              444,
+              444
+            ],
+            "visualObservation": "站立恢复，源scale/baseline仍非完全一致",
+            "status": "reviewed-with-open-registration-defect"
+          }
+        ],
+        "observations": [
+          "8阶段均可见，角色服装和朝向基本保持；逐帧视审已执行",
+          "v2留边明显改善且关节连续；仍有落脚基线、头部尺度和水平registration轻微偏移，未签收最终成片",
+          "工具黑底预览可见红黄细线；A>128红色筛查仅少量或零候选，不能仅凭预览证实source边缘污染，需真实深浅底播放验收。"
+        ],
+        "gameIntegrated": false,
+        "playbackReviewed": false,
+        "edgePixelScreening": {
+          "opaqueRedCandidates": 292,
+          "opaqueYellowCandidates": 0,
+          "criterion": "RGBA A>128 and saturated red/yellow heuristic; advisory not exact segmentation",
+          "interpretation": "少量颜色候选不能单独证明轮廓缺陷；工具黑底预览的红黄线可能为低alpha隐藏RGB，深浅底真实播放待查。"
+        }
+      }
+    },
+    "sourceQA": "not-reviewed",
+    "verification": "receipt bound by output SHA-256; generation claim supplied by importer",
+    "grid": {
+      "columns": 4,
+      "rows": 2,
+      "count": 8
+    },
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "sampleId": "alien-bend-v2",
+    "sourceQANotes": [
+      "上下排脚底基线约412→380，可能出现位置跳变",
+      "留边改善，尺度和边缘尚需复查"
+    ]
+  },
+  "visualQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "alien-bend-v2.png#1",
+      "phase": "stand",
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        0,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "c2e93406d08e3f0f5c7e39f6aad7fc2ad706bba6d200e371bf519bd08437fe89"
+    },
+    {
+      "index": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-bend-v2.png#2",
+      "phase": "hinge-20",
+      "file": "frames/002.png",
+      "timeMs": 125,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        443,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "79c9753a9faa50c723148a748f4232f89eb92aaf93178f75b35da78c44053a96"
+    },
+    {
+      "index": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "alien-bend-v2.png#3",
+      "phase": "hinge-45",
+      "file": "frames/003.png",
+      "timeMs": 250,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        887,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "171788fb033d82004c20d42f64027b0fae5dd4925b5ff322c47153f4de5fc1a9"
+    },
+    {
+      "index": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-bend-v2.png#4",
+      "phase": "hinge-70",
+      "file": "frames/004.png",
+      "timeMs": 375,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        1330,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "111029b70bb7076bef73a7c189ea53f50b14897212c6409d2ed13557b515b6bf"
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-bend-v2.png#5",
+      "phase": "hold",
+      "file": "frames/005.png",
+      "timeMs": 500,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        0,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "175163fa88493eb63ab9fb0c7a3b8981313fad16debe9189069dd86859d6eeb1"
+    },
+    {
+      "index": 5,
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-bend-v2.png#6",
+      "phase": "return-45",
+      "file": "frames/006.png",
+      "timeMs": 625,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        443,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "8b305f010c5f5849309d139181df4dc9a7873d7cc939a608bf4f4446e87b47db"
+    },
+    {
+      "index": 6,
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-bend-v2.png#7",
+      "phase": "return-20",
+      "file": "frames/007.png",
+      "timeMs": 750,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        887,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "c86d314a7c9512854b4d44db8bee21563f7eaa6a04de0e7d641c0f46846216d6"
+    },
+    {
+      "index": 7,
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-bend-v2.png#8",
+      "phase": "stand",
+      "file": "frames/008.png",
+      "timeMs": 875,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        1330,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "7a7738e6c4e9040db21870f29168f98cba82c5eb337eab273d90608afe946333",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "57c951d455a2658ac79d8d07150ca90c40088849b3ab03c566c4fa12db726e69"
+    }
+  ],
+  "exportedAt": "2026-10-11T15:40:50.289Z"
+}

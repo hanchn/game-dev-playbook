@@ -1,0 +1,94 @@
+{
+  "assetId": "horse-side-v22",
+  "primaryAtlas": "/art/horse-side-parts-v5.png",
+  "primarySourceSha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+  "alternateSources": {
+    "horse-cannon-material": {
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "width": 1536,
+      "height": 1024,
+      "sourceSha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5"
+    }
+  },
+  "render": "normal-opaque fixed512 floor350 worldfloor0; contact sheets use same transform per frame",
+  "visual": "failed",
+  "technical": {
+    "log": "technical-tests.log",
+    "passed": 36,
+    "failed": 0,
+    "scope": "source identity + fresh mask ownership + actual pivot alpha + shared rig/render regressions; not artistic acceptance"
+  },
+  "reviewed": [
+    {
+      "kind": "native",
+      "files": [
+        "idle-light.png",
+        "walk-light.png",
+        "run-light.png",
+        "run-dark.png",
+        "graze-light.png"
+      ],
+      "samples": 16
+    },
+    {
+      "kind": "native-independent",
+      "files": [
+        "leg-0-lower-isolated-light.png",
+        "leg-1-lower-isolated-light.png",
+        "leg-2-lower-isolated-light.png",
+        "leg-3-lower-isolated-light.png"
+      ],
+      "samples": 9
+    },
+    {
+      "kind": "Chrome-production",
+      "url": "http://127.0.0.1:4317/lab/horse",
+      "assetHeader": "马 零件资产 / v22",
+      "files": [
+        "../ui-graze-phase0467-light-detail.png",
+        "../ui-run-phase025-fullpage.png"
+      ],
+      "phases": [
+        0.4666666666666667,
+        0.25
+      ],
+      "background": "light",
+      "opacity": "normal",
+      "zooms": [
+        1.65,
+        1
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "area": "cannon shafts and distal pads",
+      "status": "improved-not-accepted",
+      "observation": "Actual replacement source produces slimmer shaft and reduced distal cap, but full resting silhouette now emphasizes excessive contrast against old upper limbs."
+    },
+    {
+      "area": "front carpus and hind hock",
+      "status": "failed",
+      "observation": "Old middle material retains prominent black endpoint bulbs; source/assembly still reads as joint pads."
+    },
+    {
+      "area": "neck root graze .467",
+      "status": "failed",
+      "observation": "v21 black mane blade removed; remaining brown neck-to-body folded-sleeve material visible in actual same pose Chrome."
+    },
+    {
+      "area": "upper legs and material transition",
+      "status": "failed",
+      "observation": "Old thigh/stifle ovals and abrupt chestnut-to-black change remain; normal opaque run and idle still look assembled."
+    }
+  ],
+  "notReviewed": [
+    "jump",
+    "rear",
+    "tail",
+    "all independent dark-background panels"
+  ],
+  "baseline": "../horse-side-v21/retest/visual-review.json",
+  "next": "Review anatomical four-part upper-leg source candidate without changing primary head/body/tail/hooves."
+}

@@ -1,0 +1,40 @@
+{
+  "index": 2,
+  "version": 4,
+  "tool": "image_gen.imagegen",
+  "prompt": "Edit only the bottom of the planted NEAR leg in this exact sprite, preserving everything else. Same1254x1254 transparent canvas, fixed camera, original character size/position. No whole-frame motion, fitting or rescaling. Keep head eyes face tongue torso both arms nearOPEN hand / farCURLED fist unchanged. Keep the airborne background FAR leg on image right unchanged.\nThe NEAR planted pink foot at bottom center-right currently has bottom sole y1207, 15pixels below the animation common ground y1192. Raise ONLY that foot and its ankle connection by15pixels, heel around(670,1100), toes rightmost about(970,1170), LOWEST black sole precisely y1192. Slightly increase knee flexion / adjust calf angle to connect naturally to this foot while preserving original muscular calf/thigh volume and original hip/knee positions. Do not shift the head/torso to fix ground. Preserve thick smooth black outline, same yellow highlights and wrist/ankle dots. Exactly two arms/two legs, no additional foot. Transparent alpha, no ground/shadow/marks/text. Output only the corrected original single sprite.",
+  "path": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3716afcb-e919-4468-b6e7-660104f31044.png",
+  "refs": [
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-02-v3.png"
+  ],
+  "notes": "FAILED: target sole1192 but model raised calf/foot too far; native measurement required before selecting, source not per-frame fitted.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3716afcb-e919-4468-b6e7-660104f31044.png",
+  "generatedFileSha256": "1aa8cd5654ed2dbeea895f2123605268d6847cee6820ef17b86012926bfb13ed",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      337,
+      93,
+      808,
+      1081
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-02-v3.png",
+      "sha256": "21008c3948ef2087be76dde1c5f21fe8121db7ab3caefb64de1c8a81f639aa8b"
+    }
+  ],
+  "qa": {
+    "visual": "failed",
+    "notes": "FAILED: target sole1192 but model raised calf/foot too far; native measurement required before selecting, source not per-frame fitted."
+  }
+}

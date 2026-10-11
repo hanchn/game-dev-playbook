@@ -1,0 +1,30 @@
+{
+  "asset": "human-alien-v8",
+  "visualStatus": "failed",
+  "technicalTargetedTests": 42,
+  "nonRollRegression": "264 serialized pose snapshots unchanged",
+  "sourceOriginalSHA": "4a0fbcd5a14b48b94090fd8cf3ddc42b2dffe53f6b8b02ef8ccc4ff4db207ed3",
+  "sourceEdited": false,
+  "nativeSamples": 37,
+  "nativeDistinctPNGs": 35,
+  "nativeHoldSourceIndices": [
+    9,
+    10,
+    11
+  ],
+  "actualUI": [
+    "ui-roll-phase040-light.png"
+  ],
+  "reviewedNativeSheet": "frame-sequence/native-contact-sheet.png",
+  "productionImprovement": "Subtract local spine bend from intended torso orientation: prevent >360 overspin then reverse; extend palms through curl; recover arms continuously with constant bone lengths.",
+  "remaining": [
+    "Crouch and recovery have mechanical timing and support silhouette.",
+    "Neck/collar and bent-leg proportions need action-by-action review."
+  ],
+  "diagnosticReceipts": [
+    "tools/animation-lab/examples/human-alien-roll-v9-candidates/receipt.json",
+    "tools/animation-lab/examples/human-alien-roll-v10-candidate/receipt.json",
+    "tools/animation-lab/examples/human-alien-roll-v11-candidate/receipt.json",
+    "tools/animation-lab/examples/human-alien-roll-v12-candidate/receipt.json"
+  ]
+}

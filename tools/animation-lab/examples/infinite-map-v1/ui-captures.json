@@ -1,0 +1,87 @@
+[
+  {
+    "file": "preview-default.png",
+    "test": "Final desktop layout and validated origin",
+    "cache": "缓存 8 / 192 块 · 已生成 24 · 已回收 16 · 绘制 1.5 ms",
+    "camera": "X 0 · Y 0",
+    "grid": false,
+    "inspectedCoordinates": "0, 0",
+    "layer": "biomes",
+    "status": "区域检查完成；黄框标记可通行出生点",
+    "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=0&y=0&zoom=12.00",
+    "validation": "建议出生点 (0, 0) · 可达 2476 格 / 区域 84% · 1 个陆地分区",
+    "viewport": [
+      1280,
+      720
+    ],
+    "zoom": "12 px / 格"
+  },
+  {
+    "file": "preview-negative-chunks.png",
+    "test": "Negative chunk coordinates, far-cache eviction and old analysis invalidation",
+    "cache": "缓存 8 / 192 块 · 已生成 32 · 已回收 24 · 绘制 1.4 ms",
+    "camera": "X -1,000 · Y -750",
+    "grid": true,
+    "inspectedCoordinates": "0, 0",
+    "layer": "biomes",
+    "status": "已前往 -1000, -750",
+    "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=-1000&y=-750&zoom=12.00",
+    "validation": "检视区域已改变，请重新检查可达性。",
+    "viewport": [
+      1280,
+      720
+    ],
+    "zoom": "12 px / 格"
+  },
+  {
+    "file": "preview-height.png",
+    "test": "Height layer at fixed negative coordinates",
+    "cache": "缓存 8 / 192 块 · 已生成 32 · 已回收 24 · 绘制 1.0 ms",
+    "camera": "X -1,000 · Y -750",
+    "grid": true,
+    "inspectedCoordinates": "0, 0",
+    "layer": "height",
+    "status": "已前往 -1000, -750",
+    "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=-1000&y=-750&zoom=12.00",
+    "validation": "检视区域已改变，请重新检查可达性。",
+    "viewport": [
+      1280,
+      720
+    ],
+    "zoom": "12 px / 格"
+  },
+  {
+    "file": "preview-pan-keyboard.png",
+    "test": "Single keyboard tap and drag update actual world coordinates",
+    "cache": "缓存 8 / 192 块 · 已生成 40 · 已回收 32 · 绘制 1.2 ms",
+    "camera": "X 12 · Y -6",
+    "grid": false,
+    "inspectedCoordinates": "0, 0",
+    "layer": "biomes",
+    "status": "已回到原点",
+    "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=12&y=-6&zoom=12.00",
+    "validation": "检视区域已改变，请重新检查可达性。",
+    "viewport": [
+      1280,
+      720
+    ],
+    "zoom": "12 px / 格"
+  },
+  {
+    "file": "preview-inspection-validation.png",
+    "test": "Spawn and visible inspector both select global coordinate 0,0",
+    "cache": "缓存 8 / 192 块 · 已生成 40 · 已回收 32 · 绘制 1.3 ms",
+    "camera": "X 0 · Y 0",
+    "grid": false,
+    "inspectedCoordinates": "0, 0",
+    "layer": "biomes",
+    "status": "区域检查完成；黄框标记可通行出生点",
+    "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=0&y=0&zoom=12.00",
+    "validation": "建议出生点 (0, 0) · 可达 2476 格 / 区域 84% · 1 个陆地分区",
+    "viewport": [
+      1280,
+      720
+    ],
+    "zoom": "12 px / 格"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "schema": "map-resource-handoff/v1",
+  "stopReason": "User requested end work for today and remote push; parent owns commit/push",
+  "isometricAlgorithm": "kenney-2d-continuous-ground-planner4-worker-ground-zoom-v18",
+  "terrainAlgorithm": "procedural-terrains-7452c2c-cpu-planner4-softbanks-v15",
+  "sourceAudit": {
+    "checked": 35,
+    "mismatches": []
+  },
+  "newDownload": {
+    "sourcePack": "public/map-resources/polyhaven-nature-expansion-v1",
+    "process": "python3 scripts/import-polyhaven-nature.py exited0; no outstanding download session",
+    "assets": [
+      {
+        "id": "tree_small_02",
+        "files": 11,
+        "bytes": 100974143,
+        "page": "https://polyhaven.com/a/tree_small_02"
+      },
+      {
+        "id": "shrub_03",
+        "files": 5,
+        "bytes": 1628793,
+        "page": "https://polyhaven.com/a/shrub_03"
+      }
+    ],
+    "files": [
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/tree_small_02_1k.gltf",
+        "bytes": 9075,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_branch_nor_gl_1k.jpg",
+        "bytes": 581596,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_branch_diff_1k.jpg",
+        "bytes": 449977,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_branch_arm_1k.jpg",
+        "bytes": 375732,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_leaves_nor_gl_1k.jpg",
+        "bytes": 681604,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_leaves_diff_1k.jpg",
+        "bytes": 340003,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_leaves_arm_1k.jpg",
+        "bytes": 633698,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_nor_gl_1k.jpg",
+        "bytes": 1228646,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_diff_1k.jpg",
+        "bytes": 863246,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_arm_1k.jpg",
+        "bytes": 708242,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/tree_small_02.bin",
+        "bytes": 95102324,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/shrub_03_1k.gltf",
+        "bytes": 7296,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/shrub_03.bin",
+        "bytes": 238684,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/textures/shrub_03_arm_1k.jpg",
+        "bytes": 396238,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/textures/shrub_03_diff_1k.jpg",
+        "bytes": 481841,
+        "shaMatch": true,
+        "officialMd5Match": true
+      },
+      {
+        "path": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/textures/shrub_03_nor_gl_1k.jpg",
+        "bytes": 504734,
+        "shaMatch": true,
+        "officialMd5Match": true
+      }
+    ],
+    "bytes": 102602936,
+    "registeredInCatalog": false,
+    "derivedGlbProduced": false,
+    "directionalSpritesProduced": false,
+    "sceneIntegrated": false,
+    "visualAccepted": false
+  },
+  "pending": [
+    "source tree_small_02 glTFLOD0 has2062487triangles, not ready for streamed placement; no simplification rendered/accepted",
+    "shrub_03 has4 source roots,8287totaltriangles; individual variant anchors/colliders not yet measured",
+    "buildings/caves/roads/shore/water theme still lacks verified coherent sources",
+    "Do not stage unpublished source binaries as completed production assets"
+  ]
+}

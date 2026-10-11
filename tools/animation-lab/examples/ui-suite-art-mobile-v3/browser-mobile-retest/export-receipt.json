@@ -1,0 +1,637 @@
+{
+  "schema": "ui-art-browser-export/v1",
+  "layoutVersion": 3,
+  "sourceKit": "dinosaur-jade-amber-v2",
+  "pageViewport": {
+    "width": 740,
+    "height": 360,
+    "insets": [
+      16,
+      44,
+      16,
+      44
+    ],
+    "textScale": 1.35
+  },
+  "sourceIdentity": [
+    {
+      "id": "button-primary-default",
+      "file": "sources/button-primary-default.png",
+      "sha256": "f17772e351d5412b7ea549bf19a5756b27333fe3ae14442c7deae7d031a0f2d6"
+    },
+    {
+      "id": "panel-modal",
+      "file": "sources/panel-modal.png",
+      "sha256": "09d001abaa73900c5df6d19e5f6cf42ddbdcdbd2e87e95262928b7425a5468fe"
+    },
+    {
+      "id": "button-secondary-default",
+      "file": "sources/button-secondary-default.png",
+      "sha256": "967021f9913e57a05b3ae51516c4e5808d38df3afd2c8d030a0185bf73d8c2ce"
+    },
+    {
+      "id": "control-round-default",
+      "file": "sources/control-round-default.png",
+      "sha256": "bdd793cb5d959beec76e0770795bc3896585ad684850a5e48867693a8580f841"
+    },
+    {
+      "id": "level-map",
+      "file": "sources/level-map.png",
+      "sha256": "27ee0225bef1fef210e389fa5503ec4a215ca3b53aeef493fe7b5ebfa304fba2"
+    },
+    {
+      "id": "gameplay-background",
+      "file": "sources/gameplay-background.png",
+      "sha256": "0f83a9e343bbb7befeb67e8962475b882eab6394c1cc7b44f87bc0f719bbba14"
+    },
+    {
+      "id": "button-secondary-pressed",
+      "file": "sources/button-secondary-pressed.png",
+      "sha256": "e7df028164c2d76afc96f611f7ca9b930ccb0c5ec85d1c88c514ebc4a51bfbf8"
+    },
+    {
+      "id": "control-round-pressed",
+      "file": "sources/control-round-pressed.png",
+      "sha256": "5d7863d65ceae913d88b7d0f3d00ad9025ca89312bfbd9bc8a63875f27ce5a5e"
+    },
+    {
+      "id": "button-primary-pressed",
+      "file": "sources/button-primary-pressed.png",
+      "sha256": "332f1e662f1bf1daa9ad96f54189a1de80f880df06ac3f427ebaf47e53b5485d"
+    },
+    {
+      "id": "success-emblem",
+      "file": "sources/success-emblem.png",
+      "sha256": "9bdb325a9f32a461067524a2b59124abbac7d71f99fc188798edaeed4725e676"
+    },
+    {
+      "id": "failure-emblem",
+      "file": "sources/failure-emblem.png",
+      "sha256": "2293a72181e5de67f027917ff16bd13057847f9a8ab5fbaf64f10dcb5f18a1f4"
+    },
+    {
+      "id": "menu-background",
+      "file": "sources/menu-background.png",
+      "sha256": "93e3841118290c6f5861820bcafc587b97d19680cba53fe7e2b933bc762e32b7"
+    }
+  ],
+  "files": [
+    {
+      "file": "ui-plan.json",
+      "bytes": 100150,
+      "sha256": "59310c34d7189cea60c8fbff19b2c8f820070d560e9d536e47c93fe10559ae92"
+    },
+    {
+      "file": "production-manifest.json",
+      "bytes": 11188,
+      "sha256": "c1925b5e33b05c6684d586ec9ab1872126950d15070d9e0d9e320a6cbbe751cd"
+    },
+    {
+      "file": "sources/button-primary-default.png",
+      "bytes": 1492397,
+      "sha256": "f17772e351d5412b7ea549bf19a5756b27333fe3ae14442c7deae7d031a0f2d6"
+    },
+    {
+      "file": "sources/panel-modal.png",
+      "bytes": 2750720,
+      "sha256": "09d001abaa73900c5df6d19e5f6cf42ddbdcdbd2e87e95262928b7425a5468fe"
+    },
+    {
+      "file": "sources/button-secondary-default.png",
+      "bytes": 1977365,
+      "sha256": "967021f9913e57a05b3ae51516c4e5808d38df3afd2c8d030a0185bf73d8c2ce"
+    },
+    {
+      "file": "sources/control-round-default.png",
+      "bytes": 2567751,
+      "sha256": "bdd793cb5d959beec76e0770795bc3896585ad684850a5e48867693a8580f841"
+    },
+    {
+      "file": "sources/level-map.png",
+      "bytes": 3179165,
+      "sha256": "27ee0225bef1fef210e389fa5503ec4a215ca3b53aeef493fe7b5ebfa304fba2"
+    },
+    {
+      "file": "sources/gameplay-background.png",
+      "bytes": 2639001,
+      "sha256": "0f83a9e343bbb7befeb67e8962475b882eab6394c1cc7b44f87bc0f719bbba14"
+    },
+    {
+      "file": "sources/button-secondary-pressed.png",
+      "bytes": 1754433,
+      "sha256": "e7df028164c2d76afc96f611f7ca9b930ccb0c5ec85d1c88c514ebc4a51bfbf8"
+    },
+    {
+      "file": "sources/control-round-pressed.png",
+      "bytes": 2427994,
+      "sha256": "5d7863d65ceae913d88b7d0f3d00ad9025ca89312bfbd9bc8a63875f27ce5a5e"
+    },
+    {
+      "file": "sources/button-primary-pressed.png",
+      "bytes": 1421043,
+      "sha256": "332f1e662f1bf1daa9ad96f54189a1de80f880df06ac3f427ebaf47e53b5485d"
+    },
+    {
+      "file": "sources/success-emblem.png",
+      "bytes": 2415508,
+      "sha256": "9bdb325a9f32a461067524a2b59124abbac7d71f99fc188798edaeed4725e676"
+    },
+    {
+      "file": "sources/failure-emblem.png",
+      "bytes": 2327245,
+      "sha256": "2293a72181e5de67f027917ff16bd13057847f9a8ab5fbaf64f10dcb5f18a1f4"
+    },
+    {
+      "file": "sources/menu-background.png",
+      "bytes": 2286378,
+      "sha256": "93e3841118290c6f5861820bcafc587b97d19680cba53fe7e2b933bc762e32b7"
+    },
+    {
+      "file": "pages/loading.png",
+      "bytes": 548043,
+      "sha256": "619a60f75237af9292b830f9074d81ce896459a4499dc407bc28f462f697a2e3"
+    },
+    {
+      "file": "pages/loading.svg",
+      "bytes": 2723,
+      "sha256": "9aa658b1d8b166c2c8c5a5550f641f433c356a94cc9dbb966ef8dcd20e09bb9d"
+    },
+    {
+      "file": "pages/load-error.png",
+      "bytes": 560274,
+      "sha256": "c7ba3e7dcc7ce600a14843c4ddaad56f4eaa63f9cb1870b391d07add33bfb25f"
+    },
+    {
+      "file": "pages/load-error.svg",
+      "bytes": 3260,
+      "sha256": "935b2a310910707328eb2cceb5279339688e3671847c6b38e1a623424ed441a2"
+    },
+    {
+      "file": "pages/home.png",
+      "bytes": 562347,
+      "sha256": "597f9759bbd5be96439d304f17f411d7fd38049c66c0203b900d5972fa2a5d27"
+    },
+    {
+      "file": "pages/home.svg",
+      "bytes": 3360,
+      "sha256": "6de90aaf9a18310596d91107256c3c839a434371e5f8528a7d882ba0521269bd"
+    },
+    {
+      "file": "pages/level-select.png",
+      "bytes": 681217,
+      "sha256": "99af697c6d3c16fc8e9e2327f46a71f32cd78972716e8bdad501f873b4af3d88"
+    },
+    {
+      "file": "pages/level-select.svg",
+      "bytes": 4484,
+      "sha256": "485228026787072f31e2d4a2a0343425dba000ffb89be9e083277e8a6e3bd2cc"
+    },
+    {
+      "file": "pages/tutorial.png",
+      "bytes": 565821,
+      "sha256": "b545a5ce7773cc5e2eb9349d73da805ae753b10fa293070fdb475a18149b33cc"
+    },
+    {
+      "file": "pages/tutorial.svg",
+      "bytes": 3297,
+      "sha256": "35c779fb7dbe61d146f88a2f78f9e721397b4848ae5872c646e1d78d4af049b2"
+    },
+    {
+      "file": "pages/playing.png",
+      "bytes": 650050,
+      "sha256": "9f12ed9d921b98e27eabeb85076f9ccb711196b55f0c56fbdf8914bb28918137"
+    },
+    {
+      "file": "pages/playing.svg",
+      "bytes": 5221,
+      "sha256": "22838cb591aceb0c98611d9c3711ee4429614f63a7a2e11110de95c85fc7af45"
+    },
+    {
+      "file": "pages/pause.png",
+      "bytes": 580033,
+      "sha256": "0fb1fc195c57e48fe83cc20907a58f90a9ba4cc8dbfef01ff25ef3fb70c1d9c1"
+    },
+    {
+      "file": "pages/pause.svg",
+      "bytes": 4787,
+      "sha256": "4fb0e7e2e08f9b504f467c8ed5a7a9f0b893a7b69db5e521984d25c732a52a84"
+    },
+    {
+      "file": "pages/settings.png",
+      "bytes": 562976,
+      "sha256": "24dffd3cce2c414008191dbd20199c318c06be3829d9e197801a8a4cdb43dc8f"
+    },
+    {
+      "file": "pages/settings.svg",
+      "bytes": 3455,
+      "sha256": "2dbd8a995362b3719939776c0ed3419a7eebdd05b59eeb780eb99bccc33442b3"
+    },
+    {
+      "file": "pages/failure.png",
+      "bytes": 569828,
+      "sha256": "55a0d46228c692e6db1fd0ab972569d39f3342ead246955554ecb383f42018f2"
+    },
+    {
+      "file": "pages/failure.svg",
+      "bytes": 3293,
+      "sha256": "b311d4c6bdfb28b3bbd418f7b295705fe5e60f1cde603a238686fb512ca310ca"
+    },
+    {
+      "file": "pages/success.png",
+      "bytes": 567067,
+      "sha256": "0e230051a596a483cd681b2ffd51fe83b516e9e9412aee744fcab4289b572319"
+    },
+    {
+      "file": "pages/success.svg",
+      "bytes": 3255,
+      "sha256": "b266040b128e070860c499fd37cb47c6fe69a0c200f03a2f5a8615cdb8a67f87"
+    },
+    {
+      "file": "pages/confirm-restart.png",
+      "bytes": 566091,
+      "sha256": "7d86e3908a77919df6fc700745a48452809f58ab640f1effe57aec61a23ea2f5"
+    },
+    {
+      "file": "pages/confirm-restart.svg",
+      "bytes": 3098,
+      "sha256": "6d9d73a58b202a961417d61e4ada93dda8da4b1b9aee48bb37e39936453f40d6"
+    },
+    {
+      "file": "pages/confirm-exit.png",
+      "bytes": 565573,
+      "sha256": "6d5ae3ca121bad78d7ba0016a515675ca4bfd2d6b4c485a9f3255bb93cf3a011"
+    },
+    {
+      "file": "pages/confirm-exit.svg",
+      "bytes": 3092,
+      "sha256": "51e1b50e3597459ace9b65e10b4185e29b3ef619f212c1a8b6fba217be2eb14b"
+    },
+    {
+      "file": "states/button-primary--default.png",
+      "bytes": 48397,
+      "sha256": "61330b3f5fbe9e06996e0cc514ffea944a1dbcf0ce13d1edc78d80fc0bb755b0"
+    },
+    {
+      "file": "states/button-primary--pressed.png",
+      "bytes": 47826,
+      "sha256": "4e26093bd29c6dc41e5d286e464cc1046871fbde675b2a3e60a40f113739c402"
+    },
+    {
+      "file": "states/button-primary--disabled.png",
+      "bytes": 24100,
+      "sha256": "51ff6bfbbcd056989e3172a33490e14d45d35f09d43cc8b5a42696462daf5eb9"
+    },
+    {
+      "file": "states/button-primary--focus.png",
+      "bytes": 47121,
+      "sha256": "1aeb5977c458bc52d13ef720644ea18bc2af89e4a20358639ef6c13fe4cbb6c3"
+    },
+    {
+      "file": "states/button-secondary--default.png",
+      "bytes": 42552,
+      "sha256": "d20ac51f326dcce96c1fc62335a36df1c7c67f6f83b556d4b76f7ff31deb5f2f"
+    },
+    {
+      "file": "states/button-secondary--pressed.png",
+      "bytes": 41716,
+      "sha256": "41aa97d64f493d132a1fa8e8ab4c1bb0d6e60b6fac8a81f49b663f9883162f68"
+    },
+    {
+      "file": "states/button-secondary--disabled.png",
+      "bytes": 21531,
+      "sha256": "46b2bb0a17eb80a7222f31912e8d06de9a34fa78c3357109eb5038655f638099"
+    },
+    {
+      "file": "states/button-secondary--focus.png",
+      "bytes": 41495,
+      "sha256": "b4ab9c94db63b06e58a1fa0d79aebb8d3b0e2eaf1bfa95336dadeba2d1a1515c"
+    },
+    {
+      "file": "states/button-icon--default.png",
+      "bytes": 8126,
+      "sha256": "72ef9c43f5d96ea82a1e527212f41c16962a40a6cef47077395c7388e8045a74"
+    },
+    {
+      "file": "states/button-icon--pressed.png",
+      "bytes": 8121,
+      "sha256": "c02433f38918a27f69fdbcc2deab0f60d52977b7b6b474d16bc3627ce1886484"
+    },
+    {
+      "file": "states/button-icon--disabled.png",
+      "bytes": 5119,
+      "sha256": "aa492e7e5f2ac76ff78e5bd745d85de413cc6f6cc8a1fd3941c3356519551c75"
+    },
+    {
+      "file": "states/button-icon--focus.png",
+      "bytes": 7953,
+      "sha256": "6363f59bb1fea5f306f6755eae766678d56e4d3b8c3d03db1433ffc9ac81167f"
+    },
+    {
+      "file": "states/panel-modal--default.png",
+      "bytes": 467195,
+      "sha256": "120eadd2abb083f2be57651010fab795adf311c3781e85e095887bc1de1461b1"
+    },
+    {
+      "file": "states/panel-hud--default.png",
+      "bytes": 39016,
+      "sha256": "638cedeaebcfd65252629dce0585b5bb4f3e94dfacbefea2289d7d9b60b1d519"
+    },
+    {
+      "file": "states/progress-bar--default.png",
+      "bytes": 13948,
+      "sha256": "f96491f15be15a92c6545f9c84fb26d3f6474f8af3f5c1a97727793d00c4f730"
+    },
+    {
+      "file": "states/progress-bar--low.png",
+      "bytes": 13943,
+      "sha256": "aa83a60247f37e3b9d2b18ded4c713e292c5aa8f25f0602fdacbc4daeb38bc22"
+    },
+    {
+      "file": "states/progress-bar--complete.png",
+      "bytes": 13898,
+      "sha256": "f231491c8f870ba11d970c5271c19009c99a8437995bc70914dca2a09b79ead8"
+    },
+    {
+      "file": "states/loading-bar--default.png",
+      "bytes": 20040,
+      "sha256": "75fb9c527e248aaf48ec1381aeddab5adb373594982f7459e35fd8cb970d0be8"
+    },
+    {
+      "file": "states/loading-bar--complete.png",
+      "bytes": 20027,
+      "sha256": "b2410e807d9442a95e541fc97043820629e0c38fc27cd889bf18ccf0e32102c6"
+    },
+    {
+      "file": "states/toggle--default.png",
+      "bytes": 8588,
+      "sha256": "634553e4e092d0ce242f3ceefaaca9b88973f97212bddbc40e05804edde37ecf"
+    },
+    {
+      "file": "states/toggle--selected.png",
+      "bytes": 8204,
+      "sha256": "4870c52754afa14d5c582906edda4b8d2b9bd55bea09a52d80827d0cc67706b9"
+    },
+    {
+      "file": "states/toggle--disabled.png",
+      "bytes": 5029,
+      "sha256": "646105b6e542930d3ed4539a7e224e06baf79452f997caec5bb857a6d81ea872"
+    },
+    {
+      "file": "states/toggle--focus.png",
+      "bytes": 8166,
+      "sha256": "ef3ffea2ce40f0b83d844499a98ff1559b08ee81e4fa4fc28f260cccee62dc63"
+    },
+    {
+      "file": "states/slider--default.png",
+      "bytes": 28563,
+      "sha256": "4522da997192c68bbde6c4d7ea20fc70b9060939883ce27c32ebe1c2b4b592ae"
+    },
+    {
+      "file": "states/slider--pressed.png",
+      "bytes": 28209,
+      "sha256": "4718afe62b76c0515ea44ab057d9e9d5c4260bfd6dc3c5f9b143247e8e6314c6"
+    },
+    {
+      "file": "states/slider--disabled.png",
+      "bytes": 14755,
+      "sha256": "a2a509dcc40d8e254b1ac4e6855436d912e2b080336729c05c6547d919214b75"
+    },
+    {
+      "file": "states/slider--focus.png",
+      "bytes": 27444,
+      "sha256": "db14b62988bb3c4a8cd131bfb412ae0440c6e2939aa7ec9162bdb9a88363aa4b"
+    },
+    {
+      "file": "states/tab--default.png",
+      "bytes": 25399,
+      "sha256": "fd4faa141922ba9ee93a779b4d75572fdb94cc9b0dce6cd7eabe75438751fbb2"
+    },
+    {
+      "file": "states/tab--selected.png",
+      "bytes": 24256,
+      "sha256": "ad4ef134cc5e073d72e8f333d5ac45db53172cb82db1c72f0bee4c10c2bd75fa"
+    },
+    {
+      "file": "states/tab--disabled.png",
+      "bytes": 13124,
+      "sha256": "b91a2365b7d05cf81a7e6bb7202a0500c7ace9594fc355b7d5512be8186ee8da"
+    },
+    {
+      "file": "states/tab--focus.png",
+      "bytes": 24256,
+      "sha256": "ad4ef134cc5e073d72e8f333d5ac45db53172cb82db1c72f0bee4c10c2bd75fa"
+    },
+    {
+      "file": "states/toast--default.png",
+      "bytes": 62498,
+      "sha256": "f3fe321dea1bfef61e35265c84da8c3e189c65c856f00add30807d5b1811a37d"
+    },
+    {
+      "file": "states/toast--success.png",
+      "bytes": 62498,
+      "sha256": "f3fe321dea1bfef61e35265c84da8c3e189c65c856f00add30807d5b1811a37d"
+    },
+    {
+      "file": "states/toast--error.png",
+      "bytes": 62421,
+      "sha256": "6bee8966d385835c9fe1342649bbbdc74d4a5e448653447a7e695902309d22d8"
+    },
+    {
+      "file": "states/tooltip--default.png",
+      "bytes": 69054,
+      "sha256": "45a8c4989cf0eead18098f52d7b70d1bbc5bddcee1fab814b9b25257825e5d7b"
+    },
+    {
+      "file": "states/level-card--default.png",
+      "bytes": 73219,
+      "sha256": "5f405c6d60507df3274f48b673b0b9a0f07f1cf25d539dc3e1633d604f3b3733"
+    },
+    {
+      "file": "states/level-card--selected.png",
+      "bytes": 73165,
+      "sha256": "30f363598d2d7b5b746ae9f87d106079a065c7728c1811f7fc0044f9996ef9da"
+    },
+    {
+      "file": "states/level-card--locked.png",
+      "bytes": 38593,
+      "sha256": "eccc5b26abab53f345b1f210a50788b42f7473d88de4a3bf8e247c694e074da6"
+    },
+    {
+      "file": "states/level-card--complete.png",
+      "bytes": 74260,
+      "sha256": "ec6416bc896273372d174591d1a8518d4c4caad4dbf690b9e0793806dd3737ca"
+    },
+    {
+      "file": "states/level-card--focus.png",
+      "bytes": 73165,
+      "sha256": "30f363598d2d7b5b746ae9f87d106079a065c7728c1811f7fc0044f9996ef9da"
+    },
+    {
+      "file": "states/icon-pause--default.png",
+      "bytes": 4399,
+      "sha256": "c42689544f452710de8d7e8c88343e03631e9ea6893f8447289e1072a5dfdaa1"
+    },
+    {
+      "file": "states/icon-pause--disabled.png",
+      "bytes": 2965,
+      "sha256": "08a43a81e146737d6887cca4ade07b8437ef16ff1c8cd9735b126f92abac3eec"
+    },
+    {
+      "file": "states/icon-play--default.png",
+      "bytes": 4406,
+      "sha256": "cdb5fbf8f379471b7ff117379ffef6cbfed1387122919650f5f1e291715fe30c"
+    },
+    {
+      "file": "states/icon-play--disabled.png",
+      "bytes": 3010,
+      "sha256": "cf1f228fe7567f6c687b44a433e9af4d54b816083a750516ec7672b6bac11849"
+    },
+    {
+      "file": "states/icon-retry--default.png",
+      "bytes": 4625,
+      "sha256": "003fdde218f4d83c33003351685c0181e310d0718dc00cc91976f67e45feb8cb"
+    },
+    {
+      "file": "states/icon-retry--disabled.png",
+      "bytes": 3149,
+      "sha256": "5e9a628d6746cfea5e58ab61942fa873ffac37b088825d881edfd7c9899e4206"
+    },
+    {
+      "file": "states/icon-close--default.png",
+      "bytes": 4543,
+      "sha256": "3247106516a21c01f542b9cc5a6636ae8ae4b2311b3ffcae919139ecb8a3c858"
+    },
+    {
+      "file": "states/icon-close--disabled.png",
+      "bytes": 3091,
+      "sha256": "eb76949ea6a3a2d3408934faa68e324e7467696000d2e8336cc58ef8e11de0bf"
+    },
+    {
+      "file": "states/icon-settings--default.png",
+      "bytes": 4620,
+      "sha256": "b894a2690885914aff4b5dca05992a4e524d9d025c9381622bfdbdbe232d035e"
+    },
+    {
+      "file": "states/icon-settings--disabled.png",
+      "bytes": 3125,
+      "sha256": "f861dceb50d68f11b177bfed26c909405b49cb6fee442d118bf93f094134f044"
+    },
+    {
+      "file": "states/icon-sound--default.png",
+      "bytes": 4508,
+      "sha256": "df31357df1487824cc4814542aaa2873aec1fdc8b3d486650b521207be56abe8"
+    },
+    {
+      "file": "states/icon-sound--disabled.png",
+      "bytes": 3055,
+      "sha256": "e01e1f4dedce6d3a1400add2cd3bc990af60690a6b8c57e3cc9a0e619bb239fb"
+    },
+    {
+      "file": "states/icon-music--default.png",
+      "bytes": 4531,
+      "sha256": "e52a2977c3e9c1a540fbf5f1790db35fb02759722f064eff6dcf02af421ee8e9"
+    },
+    {
+      "file": "states/icon-music--disabled.png",
+      "bytes": 3112,
+      "sha256": "7066290a4ff0694ddc06ac0de59abf87ba545f439ddf9f7e5ddc918c8fab889e"
+    },
+    {
+      "file": "states/icon-health--default.png",
+      "bytes": 4317,
+      "sha256": "c51bcd994fc35bc3d805753f05325892fb136c63a0c45d0925338d1c419b3530"
+    },
+    {
+      "file": "states/icon-health--disabled.png",
+      "bytes": 2991,
+      "sha256": "ee10454f88e541b5a8bb4c49e3f8ab3e508b53eb71760549175dd5e019595368"
+    },
+    {
+      "file": "states/icon-collectible--default.png",
+      "bytes": 4304,
+      "sha256": "e12deb846642811e8a3b19a74943f7181b0b94ff54cdcfdbce072521699598b0"
+    },
+    {
+      "file": "states/icon-collectible--disabled.png",
+      "bytes": 2963,
+      "sha256": "6491ee0dfdea4aa53ff881735c1a66619b082a69e5afc7bdae2c82e9bfa9862d"
+    },
+    {
+      "file": "states/icon-goal--default.png",
+      "bytes": 4815,
+      "sha256": "774b0f9ab559ded39cdcc03e2b4c266c31db67ba790f18f5de2a3d6ba292b99e"
+    },
+    {
+      "file": "states/icon-goal--disabled.png",
+      "bytes": 3304,
+      "sha256": "345ff913826e147f6e154239083bfdc4a0264e6809d3bec2323c2306a4fe9c18"
+    },
+    {
+      "file": "states/icon-star--default.png",
+      "bytes": 4431,
+      "sha256": "e346030afb9c9af75b7d990896f066a56ebda6853e5526191d50db30b83a1798"
+    },
+    {
+      "file": "states/icon-star--disabled.png",
+      "bytes": 3035,
+      "sha256": "93df88563c830d03b0a8014796f6a1af03a0479dfb6e2939fbc21f75689738e4"
+    },
+    {
+      "file": "states/icon-arrow-left--default.png",
+      "bytes": 4511,
+      "sha256": "ab5231758c966bb6767a91fa7157b1f2dfb963788604b32f4f6190780156f78f"
+    },
+    {
+      "file": "states/icon-arrow-left--disabled.png",
+      "bytes": 3066,
+      "sha256": "a6737e60985b1a255ae1ebbb1d4f8672f7b0c1c0c4fccec86bf28c240583d0d1"
+    },
+    {
+      "file": "states/control-move-left--default.png",
+      "bytes": 16217,
+      "sha256": "613ca254f15964cd1ffc8d4b60773d376c88c529b01bdf3d983d3ecaf7b8c833"
+    },
+    {
+      "file": "states/control-move-left--pressed.png",
+      "bytes": 16168,
+      "sha256": "44c98d3162fe9ba1a6d8e56c1602ba74821769438fe35ae65cf0a5006fc96ca9"
+    },
+    {
+      "file": "states/control-move-left--disabled.png",
+      "bytes": 9737,
+      "sha256": "8ff9bc74329a26976ef71df40bbdc07b9baad70c19308d28ebb36f3e3f000f82"
+    },
+    {
+      "file": "states/control-move-right--default.png",
+      "bytes": 16257,
+      "sha256": "ef1366de3caa5f3fefc2c54adc61029932aa4c29917bd705e1e66fed76d86f57"
+    },
+    {
+      "file": "states/control-move-right--pressed.png",
+      "bytes": 16183,
+      "sha256": "180b92e8c9981dae75ce8bb08b674703e028aed4a922f76843ce1dfd702527df"
+    },
+    {
+      "file": "states/control-move-right--disabled.png",
+      "bytes": 9724,
+      "sha256": "6e0ae67f4dd1153b1a3a61d180bf754818945465082a2780071a34c8a53ba22e"
+    },
+    {
+      "file": "states/control-jump--default.png",
+      "bytes": 16183,
+      "sha256": "65493c8d352f60a2c5c317dc103c6315200fcf47e465f4855fa3c063810c84dd"
+    },
+    {
+      "file": "states/control-jump--pressed.png",
+      "bytes": 16141,
+      "sha256": "50499625dac812e454d5d0d52dbeb412d1a1ef7bdf8316329683d326b08b6499"
+    },
+    {
+      "file": "states/control-jump--disabled.png",
+      "bytes": 9706,
+      "sha256": "284d5fe6d53486df8cfae0d57ca6416d0138f924e7e975c4f4c97c3a7bbe32ba"
+    }
+  ],
+  "gameIntegrated": false,
+  "visualAcceptance": "requires actual page review"
+}

@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise local EDIT reference1 passing frame ONLY NEAR arm pose, preserving its corrected FAR forward-airborne foot and NEAR grounded support leg, head/body/camera1254/muscles/material/face unchanged. Reference2 previousloading shows where near arm camefrom.\nThe foreground NEAR open pink hand is too far forward at x1000,y650, it jumped from back swing. Redraw this NEAR arm in TRUE WAIST-PASSING pose: near shoulder stays at SOURCE x650,y395; near upperarm drops nearlyVERTICAL to near ELBOW aroundx645,y600; near forearm folds slightlyFORWARD/down to WRISTaroundx705,y745, with OPEN pink handcenteraroundx735,y795 in front of waist/topthigh. Remove the OLD right-extremeopenhand and its originalforearm, no thirdarm/ghost. Do NOT move near shoulder orresizebone/torso; maintain connectedupperarm/elbow/wrist anatomy. Near hand staysrelaxedOPEN samefourpinkdigits.\nPermanent BACKGROUND FAR curled hand behindleft atx400,y600 stays curled and EXACTLYinplace; leave far arm alone. Its foregroundnear supportleg stays grounded, farfootstillraisedrightabouty1000 exactlyasinreference1. Preserveleg identity/supportside; no footchanges.\nSame fixedhead/facegreeneyes/happyexpression, originalshading/ink/pattern, transparentalpha and32pxmotionmargin. This isonlypassingarmqualityfix, not newfullfrontextreme orperframefit. OutputONE clean actual correctedintermediate with nearOPENhand atwaist.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-809290e9-ed52-4cff-a2f0-87074f6b9ffb.png",
+  "generatedFileSha256": "21008c3948ef2087be76dde1c5f21fe8121db7ab3caefb64de1c8a81f639aa8b",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-93de17a4-618b-4d40-9e40-d7efcfa7394d.png",
+      "sha256": "3d22f36af149ff6e02c7b32eca5cc63036bfad31035f3f4b4f7b23f47c95784a"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+      "sha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3"
+    }
+  ],
+  "phase": 0.5,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      337,
+      94,
+      807,
+      1114
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Near open hand reduced toward waist rather than extreme front; support side retained."
+  }
+}

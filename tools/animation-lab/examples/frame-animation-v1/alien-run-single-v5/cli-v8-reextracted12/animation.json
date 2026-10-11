@@ -1,0 +1,776 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "frame-animation",
+  "loop": false,
+  "durationMs": 1333,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1024,
+    "height": 768,
+    "cell": 256,
+    "columns": 4,
+    "rows": 3,
+    "padding": 12,
+    "fixedTransform": {
+      "mode": "sequence-common-canvas",
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "scale": 0.453125,
+      "scaleXY": [
+        0.453125,
+        0.453125
+      ],
+      "offset": [
+        12,
+        12
+      ],
+      "sourceAnchor": [
+        256,
+        512
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "rasterRoundingPx": 0.5,
+      "registration": "source coordinates retained; no per-frame alpha fitting or automatic recentering"
+    },
+    "sha256": "a753f43692119b4a06d6a84f5ddf4e671a0e5d09c8627905dd0d7064cbe51913"
+  },
+  "provenance": {
+    "type": "video",
+    "file": "recording.webm",
+    "sha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+    "decoder": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "timestampAccuracy": "ffprobe original decoded PTS, normalized to first frame; sample selects containing frame",
+    "sourceDuration": 1.333239,
+    "requestedSampling": {
+      "start": 0,
+      "end": "1.333239",
+      "fps": 8,
+      "times": "0,.115,.223,.333,.446,.559,.668,.780,.894,1,1.112,1.223"
+    },
+    "uniqueDecodedFrames": 11,
+    "duplicateSamples": 1,
+    "verification": "actual source bytes and decoded video frames; video background retained"
+  },
+  "visualQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "001.png",
+      "phase": null,
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 115,
+      "sourceTime": 0,
+      "decodedTime": 0,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "bb3871e51e0847756c90a2f03b47defbc4565ef1b9cda7ab6f83bd4e0aecc2ca",
+      "sourceIndex": 0,
+      "sourcePTS": 0
+    },
+    {
+      "index": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "002.png",
+      "phase": null,
+      "file": "frames/002.png",
+      "timeMs": 115,
+      "durationMs": 108,
+      "sourceTime": 0.115,
+      "decodedTime": 0.115,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "82ce85347c16bc2cb48f9bc0097bf94d44b8fe898225ca8274a57d85300a8777",
+      "sourceIndex": 1,
+      "sourcePTS": 0.115
+    },
+    {
+      "index": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "003.png",
+      "phase": null,
+      "file": "frames/003.png",
+      "timeMs": 223,
+      "durationMs": 110,
+      "sourceTime": 0.223,
+      "decodedTime": 0.223,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "bf79c2ba20d022fdce9c936086af8a54037112faf59612333e8656b08bc8102f",
+      "sourceIndex": 2,
+      "sourcePTS": 0.223
+    },
+    {
+      "index": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "004.png",
+      "phase": null,
+      "file": "frames/004.png",
+      "timeMs": 333,
+      "durationMs": 113,
+      "sourceTime": 0.333,
+      "decodedTime": 0.333,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "95b885eaf9edf5e6f351b4010a4336a4c641c946ea3bde9144486b6b51833205",
+      "sourceIndex": 3,
+      "sourcePTS": 0.333
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "005.png",
+      "phase": null,
+      "file": "frames/005.png",
+      "timeMs": 446,
+      "durationMs": 113,
+      "sourceTime": 0.446,
+      "decodedTime": 0.446,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "2a2894b3832fd617b6513a766f05c70d5c244b7cc4fd8713e048148bac610287",
+      "sourceIndex": 4,
+      "sourcePTS": 0.446
+    },
+    {
+      "index": 5,
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "006.png",
+      "phase": null,
+      "file": "frames/006.png",
+      "timeMs": 559,
+      "durationMs": 109,
+      "sourceTime": 0.559,
+      "decodedTime": 0.559,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "65ab45993890825fde0a7b66b5fb716c1425d75c8e1220cf6a2ea4df767f9da6",
+      "sourceIndex": 5,
+      "sourcePTS": 0.559
+    },
+    {
+      "index": 6,
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "007.png",
+      "phase": null,
+      "file": "frames/007.png",
+      "timeMs": 668,
+      "durationMs": 112,
+      "sourceTime": 0.668,
+      "decodedTime": 0.668,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "3462813944003f80910744527ab3baf26fb837acd6fb6d0308dd7947078a7eb7",
+      "sourceIndex": 6,
+      "sourcePTS": 0.668
+    },
+    {
+      "index": 7,
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "008.png",
+      "phase": null,
+      "file": "frames/008.png",
+      "timeMs": 780,
+      "durationMs": 114,
+      "sourceTime": 0.78,
+      "decodedTime": 0.668,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "3462813944003f80910744527ab3baf26fb837acd6fb6d0308dd7947078a7eb7",
+      "sourceIndex": 6,
+      "sourcePTS": 0.668
+    },
+    {
+      "index": 8,
+      "rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "009.png",
+      "phase": null,
+      "file": "frames/009.png",
+      "timeMs": 894,
+      "durationMs": 106,
+      "sourceTime": 0.894,
+      "decodedTime": 0.894,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "780512af23b82e77077edcddc67958523b2a192c0a1fc4c7343e025b7d89f2fe",
+      "sourceIndex": 8,
+      "sourcePTS": 0.894
+    },
+    {
+      "index": 9,
+      "rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "010.png",
+      "phase": null,
+      "file": "frames/010.png",
+      "timeMs": 1000,
+      "durationMs": 112,
+      "sourceTime": 1,
+      "decodedTime": 1,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "c0cddb237e1237420cb10279e138c373f4819f52a93791f058d2fce86742bdd7",
+      "sourceIndex": 9,
+      "sourcePTS": 1
+    },
+    {
+      "index": 10,
+      "rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "011.png",
+      "phase": null,
+      "file": "frames/011.png",
+      "timeMs": 1112,
+      "durationMs": 111,
+      "sourceTime": 1.112,
+      "decodedTime": 1.112,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "26ffd5a98c27aedebb825658cd2097c09caaf77571e5d97ee44d78cf76f47b7d",
+      "sourceIndex": 10,
+      "sourcePTS": 1.112
+    },
+    {
+      "index": 11,
+      "rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        524,
+        232,
+        232
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 0.453125,
+      "anchor": [
+        128,
+        244
+      ],
+      "name": "012.png",
+      "phase": null,
+      "file": "frames/012.png",
+      "timeMs": 1223,
+      "durationMs": 110,
+      "sourceTime": 1.223,
+      "decodedTime": 1.223,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40",
+      "sourceProvenance": null,
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "edgePixels": 2044,
+        "hasTransparency": false,
+        "touchesEdge": true,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "4f199f5dc5df98bdb7f0ef534b0155bd7a8c5f167cd0181336a6ab9325fecd65",
+      "sourceIndex": 11,
+      "sourcePTS": 1.223
+    }
+  ],
+  "createdAt": "2026-10-11T17:26:42.223Z"
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-evidence-preserved",
+  "copiedFrom": "/tmp/animal-gait-audit.json",
+  "report": "report.json",
+  "reportSha256": "fb9f81635ffd55ca541ebf8d6d9168c0953e8b0aa2e5f4d52526628d9f431027",
+  "originalCreatedAt": "2026-10-11T14:06:22.247Z",
+  "status": "historical-findings-not-current-art-approval",
+  "assets": [
+    {
+      "species": "chicken",
+      "assetId": "chicken-side-v3",
+      "atlas": "/art/chicken-side-parts-v3.png",
+      "atlasSha256": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de"
+    },
+    {
+      "species": "dinosaur",
+      "assetId": "dinosaur-side-v5",
+      "atlas": "/art/dinosaur-side-parts-v5.png",
+      "atlasSha256": "2a3ab3e9fbc6463694c10bc42ae6585f8ab0391962accb25b11d360c1bc879ad"
+    },
+    {
+      "species": "horse",
+      "assetId": "horse-side-v3",
+      "atlas": "/art/horse-side-parts-v2.png",
+      "atlasSha256": "aee4380e1f41f9218e752ca4d0eccc02608853bb07afd2edf7ff924e50415993"
+    },
+    {
+      "species": "crocodile",
+      "assetId": "crocodile-side-v3",
+      "atlas": "/art/crocodile-side-parts-v2.png",
+      "atlasSha256": "b55e792ef7830ecfe8d45adc7ec878d03d56b53d253194e4179bce8d7ea50905"
+    },
+    {
+      "species": "spider",
+      "assetId": "spider-side-v2",
+      "atlas": "/art/spider-side-parts-v2.png",
+      "atlasSha256": "a29ff2e2c315a056c32fb88dcbb7be10caf7ca50b8f13188182041c31212a69a"
+    },
+    {
+      "species": "scorpion",
+      "assetId": "scorpion-side-v3",
+      "atlas": "/art/scorpion-side-parts-v2.png",
+      "atlasSha256": "91b45dc5a57e642617b81f535f394471117836b07d8ad44f9d03df647dc21e9c"
+    }
+  ],
+  "definitions": {
+    "samples": 128,
+    "observable": "Actual source-bound nodes and foot endpoints; does not use phase/stance labels for verdict",
+    "xTravelMinimum": 3,
+    "liftMinimum": "max(0.8, total leg bone length * 0.015) local pixels",
+    "contactHeightTolerance": 0.15,
+    "groundDriftMaximum": 0.15,
+    "contactArrivalsPerCycle": 1,
+    "oppositeLag": {
+      "expected": 0.5,
+      "tolerance": 0.08,
+      "samePhaseRmsMinimum": 1
+    },
+    "faults": [
+      "freeze-inner",
+      "same-phase-inner"
+    ],
+    "faultInjection": "Changes every far-side node while retaining normal phase/stance labels",
+    "visibility": "16 source-alpha poses at one local-pixel grid, not actual browser raster; strip tails excluded",
+    "visibilityReviewGate": "Entire-cycle maximum visible fraction < 8% requires review, not individual-frame hiding",
+    "proximalBendRisk": "Adjacent short segment screen > 150 degrees; screening value, not published species joint limit"
+  },
+  "references": [
+    {
+      "species": "horse",
+      "url": "https://www.mdpi.com/2076-2615/12/21/3053",
+      "use": "Ordinary four-beat lateral walk vs diagonal trot; not a gallop template"
+    },
+    {
+      "species": "chicken",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1158940/",
+      "use": "Original chick locomotion support and age effects; not a universal adult chicken template"
+    },
+    {
+      "species": "crocodile",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9716509/",
+      "use": "Original low vs high alligator walk study"
+    },
+    {
+      "species": "crocodile",
+      "url": "https://digitalcommons.usf.edu/bin_facpub/454/",
+      "use": "Shoulder/torso contribution to alligator stride"
+    },
+    {
+      "species": "spider",
+      "url": "https://journals.biologists.com/jeb/article/214/20/3433/10466/Biomechanics-of-octopedal-locomotion-kinematic-and",
+      "use": "Observed spider gait depends on velocity; generic tetrapod template limited"
+    },
+    {
+      "species": "scorpion",
+      "url": "https://link.springer.com/article/10.1007/BF00614529",
+      "use": "Normal-walk original study: opposite and neighboring limb coordination"
+    }
+  ],
+  "limitations": [
+    "Original dinosaur asset and implementation hashes remain in report unchanged. Its asset ID already says v5; this historical receipt predates the latest precise-mask renderer. Current v5 raster exports have separate technical-report.json.",
+    "Horse walk failures and spider/scorpion warnings are not overwritten by newer unrelated work.",
+    "No live playback or anatomical art approval was recorded in the historical report."
+  ],
+  "detail": "../../../../docs/animal-gait-audit.md"
+}

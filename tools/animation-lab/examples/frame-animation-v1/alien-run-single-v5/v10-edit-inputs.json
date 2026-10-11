@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "version": "v10-local-edits",
+  "artStatus": "failed",
+  "frames": [
+    {
+      "index": 9,
+      "prompt": "Use case: precise-object-edit. Edit target: supplied alien run frame phase 09. Change only one defect: REMOVE the entire extra third arm and third fist visible on the LEFT behind the olive vest, from left shoulder down to the hip (the dangling arm x435..510,y510..826). Fill that removed silhouette with genuine transparent background; where it overlays vest/pants restore the existing vest side/pant waist. Keep the TWO legitimate arms pointing toward the RIGHT exactly intact: large near forearm/fist around y550-690, smaller far forearm/fist around y685-740. Final anatomy exactly two shoulders, two elbows, two wrists, two fists; do not add any hand on the left of waist. Preserve the entire large skull/eye/face/neck, body, costume skin texture, BOTH LEGS, boots, all camera/scale and placement pixel unchanged as much as possible. Keep native 1086x1448 portrait canvas and existing transparent alpha background. This is a local anatomy repair, not a restyling, pose reconstruction, resizing or recentering. No labels, no shadow, no ground.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-fa80b6b0-5b36-4fef-b96a-71e1ece73788.png",
+      "reference": "alien-run-single-v9-phase-09.png",
+      "notes": "第三条左侧幽灵手臂已经去除，保留双前拳与双腿。但头颅/眼形、画面注册、材质发生变化，局部去臂修复不是整帧身份通过。"
+    },
+    {
+      "index": 6,
+      "prompt": "Use case: precise-object-edit. Supplied alien run frame is the edit target. Correct ONLY the front/right planted FAR boot position and ankle: the lowest sole currently y1403, bring this entire boot and immediate trouser cuff UP 28px and LEFT 12px, lowest sole should be y1375, reconnect lower shin naturally to ankle. Maintain exactly two boots, near foreground cargo-pocket leg stays bent backward and lifted. Preserve large cranium, eye, face, neck, olive vest, two swinging arms, hands, waist, other raised leg and boot, surface texture and all camera/framing unchanged. Original fixed portrait 1086×1448 transparent canvas, unchanged body registration and character scale. Do not independently fit, recenter, enlarge, shrink, restyle or change head. This is local foot groundline adjustment for chronological run frames. NO shadow, ground, text, extra appendage.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7446ca46-783e-4ba3-bc98-65b72865265e.png",
+      "reference": "alien-run-single-v9-phase-06.png",
+      "notes": "源图编辑请求仅上移远侧支撑靴28px到1375基线，实际还需测量；新图前靴仍明显偏低，头脸/衣服也改变。不得凭提示成功假称脚底正确。"
+    }
+  ]
+}

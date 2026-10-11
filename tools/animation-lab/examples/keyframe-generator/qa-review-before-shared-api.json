@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-11T14:04:57.047Z",
+  "route": "http://127.0.0.1:4317/keyframe-generator",
+  "technical": {
+    "testLog": "regression.log",
+    "testsPassed": 16,
+    "sheetCheck": "ui-sheet-check.json"
+  },
+  "visualScope": "tool functional preview; existing character art not approved",
+  "observations": [
+    {
+      "id": "stage-framing",
+      "status": "failed",
+      "evidence": "human-initial.png",
+      "observation": "Fixed stage allowed intrinsic canvas height overflow; lower legs cropped.",
+      "retest": {
+        "status": "passed",
+        "evidence": "human-initial-retest.png",
+        "change": "Absolute canvas fit; later fixed whole-action camera provides readable full framing."
+      }
+    },
+    {
+      "id": "numeric-edit-commit",
+      "status": "failed",
+      "evidence": [
+        "human-edited-arm.png",
+        "ui-edit-failed-before.json"
+      ],
+      "observation": "Number field displayed 56°, but onchange-only handler left timeline export at 78.653°. UI appearance alone was insufficient.",
+      "retest": {
+        "status": "passed",
+        "evidence": [
+          "human-edited-arm-retest.png",
+          "ui-human-edited.json"
+        ],
+        "observedAngle": 56,
+        "change": "Submit input events immediately, export data verified and save/restore reproduced."
+      }
+    },
+    {
+      "id": "svg-export-size",
+      "status": "failed",
+      "observation": "Embedding full atlas in every mesh triangle exceeded JavaScript string limit.",
+      "retest": {
+        "status": "passed",
+        "evidence": "cli-human-sheet.svg",
+        "change": "One SVG defs atlas; use references per triangle."
+      }
+    },
+    {
+      "id": "alien-screenshot-framing",
+      "status": "invalid-evidence",
+      "evidence": "alien-run-light.png",
+      "observation": "Focus scroll cropped header and head in viewport screenshot.",
+      "retest": {
+        "status": "passed",
+        "evidence": "alien-run-light-retest.png",
+        "change": "Move viewport to header; full preview and skin identity visible."
+      }
+    },
+    {
+      "id": "json-import-move",
+      "status": "passed",
+      "evidence": "import-move-retest.png",
+      "observation": "Imported exported edited timeline; arm remains 56° and keyframe time moved 25%→30%."
+    },
+    {
+      "id": "dinosaur-current-source",
+      "status": "passed-tool-load-only",
+      "evidence": "dinosaur-run-current.png",
+      "observation": "Current dinosaur v4 source loaded with whole tail/head/feet visible. Anatomy and all joints not reviewed by this tool task."
+    },
+    {
+      "id": "png-export",
+      "status": "passed-technical",
+      "evidence": [
+        "ui-human-edited-sheet.png",
+        "ui-sheet-check.json"
+      ],
+      "observation": "Actual UI 16-frame transparent PNG export at 2048×2048 passed fixed-cell alpha-margin check; does not imply full action art acceptance."
+    }
+  ],
+  "limitations": [
+    "No IK foot lock, collision or anatomical QA automation.",
+    "Source character art quality remains separately reviewed."
+  ],
+  "implementationSources": [
+    {
+      "path": "tools/animation-lab/keyframe-generator-core.mjs",
+      "sha256": "aaef790e8ceafd04b02915714eee69b6a4028f592bacd4f1d7c3d024fcedef84"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.mjs",
+      "sha256": "6bc73bf4a7c2176f6bafdabea3314b16fe13f0db408fdcfac7680f7a0368f0aa"
+    },
+    {
+      "path": "tools/animation-lab/public/keyframe-generator.css",
+      "sha256": "b93d8e4b8185f35a15a9094d29702dbffd575f5c5f06858c6588720fdd15bca9"
+    },
+    {
+      "path": "tools/animation-lab/scripts/keyframe-generator-cli.mjs",
+      "sha256": "2ab8403434bc7ad4c329caa1c16bbe623edd4cae27d2ca5a2a77e8e48485b41a"
+    },
+    {
+      "path": "tools/animation-lab/skin-renderer.mjs",
+      "sha256": "57573e2de485e3915fd183984b79debcc63d112436aaae62caa3009e69103c89"
+    },
+    {
+      "path": "tools/animation-lab/public/art/skins.json",
+      "sha256": "e570de0ae7a017d0b42b6c9ed0cd978f3423bad08539d5fdac6b609f0fa78ab9"
+    }
+  ],
+  "characterVersions": [
+    {
+      "species": "human",
+      "id": "human-side-v17",
+      "atlas": "/art/human-side-parts-v13.png"
+    },
+    {
+      "species": "dinosaur",
+      "id": "dinosaur-side-v5",
+      "atlas": "/art/dinosaur-side-parts-v5.png"
+    },
+    {
+      "species": "human",
+      "skin": "alien",
+      "id": "human-alien-v6",
+      "atlas": "/art/human-alien-side-parts-v4.png"
+    }
+  ]
+}

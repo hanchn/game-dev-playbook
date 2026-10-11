@@ -1,0 +1,3551 @@
+{
+  "schema": "game-ui-suite-plan",
+  "schemaVersion": 1,
+  "brief": {
+    "name": "三色棋盘 · 独立技能测试",
+    "genre": "puzzle",
+    "coreLoop": "观察本局目标 → 交换相邻棋子 → 消除三连并更新目标 → 在20步内收集12枚蓝色棋子",
+    "audience": "轻度玩家",
+    "orientation": "portrait",
+    "input": "touch",
+    "engine": "godot",
+    "artStyle": "非像素 HD 卡通",
+    "theme": "paper",
+    "progression": "single-session",
+    "sessionMinutes": 3,
+    "references": [],
+    "objective": {
+      "description": "收集12枚蓝色棋子",
+      "event": "puzzle.blue_goal_completed",
+      "condition": {
+        "blueCollectedAtLeast": 12
+      }
+    },
+    "failure": {
+      "description": "20步耗尽且蓝色棋子不足12枚",
+      "event": "puzzle.moves_exhausted",
+      "condition": {
+        "movesAtMost": 0,
+        "blueCollectedBelow": 12
+      }
+    }
+  },
+  "assumptions": [
+    {
+      "field": "audience",
+      "value": "轻度玩家",
+      "reason": "未提供"
+    },
+    {
+      "field": "artStyle",
+      "value": "非像素 HD 卡通",
+      "reason": "未提供"
+    },
+    {
+      "field": "hud",
+      "value": "类型默认HUD绑定",
+      "reason": "未提供显式HUD列表，数据路径与变化事件为待接入提案；不添加未定义的计分系统"
+    }
+  ],
+  "tokens": {
+    "colors": {
+      "canvas": "#ece4d5",
+      "surface": "#f6eddb",
+      "surfaceRaised": "#fff8ea",
+      "border": "#a2977e",
+      "primary": "#d2a548",
+      "primaryPressed": "#b0822d",
+      "text": "#2b332e",
+      "muted": "#617168",
+      "accent": "#477d65",
+      "danger": "#995738",
+      "disabled": "#b7b19f"
+    },
+    "font": {
+      "family": "Noto Sans SC, system-ui, sans-serif",
+      "heading": 38,
+      "body": 24,
+      "caption": 20,
+      "minCritical": 20,
+      "textScaleRange": [
+        1,
+        1.35
+      ],
+      "localizationExpansion": 1.6
+    },
+    "spacing": {
+      "base": 8,
+      "steps": [
+        8,
+        16,
+        24,
+        32,
+        48
+      ]
+    },
+    "radius": {
+      "button": 16,
+      "panel": 24,
+      "chip": 12
+    },
+    "elevation": {
+      "panel": 16,
+      "button": 5
+    },
+    "motion": {
+      "pressMs": 90,
+      "releaseMs": 140,
+      "screenMs": 220,
+      "reducedMotion": "移除位移、震动和脉冲；保留状态变化与淡入"
+    },
+    "layout": {
+      "referenceSize": [
+        720,
+        1280
+      ],
+      "scaleMode": "fit + expand-safe-edges",
+      "safeArea": {
+        "mode": "OS-reported-insets + padding",
+        "minPadding": 24,
+        "criticalTouchMin": 48
+      },
+      "hudPolicy": "使用safe-area容器，锚点+行列容器；额外空间允许景深背景扩展",
+      "fontPolicy": "最小关键文字在CSS/设备逻辑像素中不得小于16；密度缩放后另做实机检查"
+    }
+  },
+  "screens": [
+    {
+      "id": "loading",
+      "title": "加载",
+      "purpose": "真实资源解码与纹理准备完成后才能开始",
+      "components": [
+        "loading-bar",
+        "icon-retry"
+      ],
+      "actions": [
+        {
+          "id": "load-done",
+          "label": "准备完成",
+          "event": "assets_ready",
+          "target": "home",
+          "mode": "replace"
+        },
+        {
+          "id": "load-failed",
+          "label": "加载失败",
+          "event": "assets_failed",
+          "target": "load-error",
+          "mode": "replace"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "load-done",
+        "order": [
+          "load-done",
+          "load-failed"
+        ]
+      },
+      "entry": "加载贴图/字体/音频并解码；合并进度事件，关键资源完成前禁用进入游戏",
+      "binding": "assets.loaded / assets.total"
+    },
+    {
+      "id": "load-error",
+      "title": "加载失败",
+      "purpose": "资源请求失败可重试，错误说明不遮住重试",
+      "components": [
+        "panel-modal",
+        "button-primary",
+        "button-secondary"
+      ],
+      "actions": [
+        {
+          "id": "reload",
+          "label": "重新加载",
+          "event": "reload_requested",
+          "target": "loading",
+          "mode": "replace"
+        },
+        {
+          "id": "home-safe",
+          "label": "返回",
+          "event": "back_requested",
+          "target": "home",
+          "mode": "replace"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "reload",
+        "order": [
+          "reload",
+          "home-safe"
+        ]
+      },
+      "entry": "显示缺失资源与可理解原因；保留失败诊断，不泄露路径中的敏感信息"
+    },
+    {
+      "id": "home",
+      "title": "开始页面",
+      "purpose": "清楚呈现游戏目标、主要入口和上次进度",
+      "components": [
+        "button-primary",
+        "button-secondary",
+        "button-icon"
+      ],
+      "actions": [
+        {
+          "id": "start",
+          "label": "开始游戏",
+          "event": "start_requested",
+          "target": "tutorial",
+          "mode": "replace"
+        },
+        {
+          "id": "settings",
+          "label": "设置",
+          "event": "settings_requested",
+          "target": "settings",
+          "mode": "push"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "start",
+        "order": [
+          "start",
+          "settings"
+        ]
+      },
+      "art": "menu-background",
+      "copy": {
+        "title": "三色棋盘 · 独立技能测试",
+        "subtitle": "观察本局目标 → 交换相邻棋子 → 消除三连并更新目标 → 在20步内收集12枚蓝色棋子"
+      },
+      "backgroundPolicy": "只用独立背景，标题/按钮/数字可编辑"
+    },
+    {
+      "id": "tutorial",
+      "title": "教程",
+      "purpose": "只教本局必需操作，在真实操作成功后推进",
+      "components": [
+        "panel-modal",
+        "button-primary",
+        "button-secondary"
+      ],
+      "actions": [
+        {
+          "id": "tutorial-complete",
+          "label": "完成教程",
+          "event": "tutorial_completed",
+          "target": "playing",
+          "mode": "replace"
+        },
+        {
+          "id": "skip-tutorial",
+          "label": "跳过",
+          "event": "tutorial_skipped",
+          "target": "playing",
+          "mode": "replace"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "tutorial-complete",
+        "order": [
+          "tutorial-complete",
+          "skip-tutorial"
+        ]
+      },
+      "steps": [
+        {
+          "id": "step-0",
+          "inputAction": "board-select",
+          "completionEvent": "board-select_performed",
+          "text": "尝试 board-select，完成操作后继续",
+          "placement": "靠近实际控件且不覆盖玩家"
+        }
+      ],
+      "replayPolicy": "首次必看，完成后可从暂停帮助重看；跳过不修改关卡状态"
+    },
+    {
+      "id": "playing",
+      "title": "游戏 HUD",
+      "purpose": "呈现本局决策必需信息，不遮挡角色和危险预警",
+      "components": [
+        "panel-hud",
+        "button-icon"
+      ],
+      "actions": [
+        {
+          "id": "pause",
+          "label": "暂停",
+          "event": "pause_requested",
+          "target": "pause",
+          "mode": "push"
+        },
+        {
+          "id": "fail",
+          "label": "失败",
+          "event": "puzzle.moves_exhausted",
+          "target": "failure",
+          "mode": "replace"
+        },
+        {
+          "id": "win",
+          "label": "完成",
+          "event": "puzzle.blue_goal_completed",
+          "target": "success",
+          "mode": "replace"
+        }
+      ],
+      "layout": {
+        "container": "safe-area-anchors",
+        "hudTop": "top-left-safe row",
+        "menu": "top-right-safe",
+        "controls": "bottom-safe split"
+      },
+      "focus": {
+        "initial": "pause",
+        "order": [
+          "pause",
+          "fail",
+          "win"
+        ]
+      },
+      "interaction": "游戏世界收到输入；触控区不遮HUD；暂停/弹窗出现后世界输入禁用",
+      "hint": "收集12枚蓝色棋子",
+      "objective": {
+        "description": "收集12枚蓝色棋子",
+        "event": "puzzle.blue_goal_completed",
+        "condition": {
+          "blueCollectedAtLeast": 12
+        }
+      },
+      "failure": {
+        "description": "20步耗尽且蓝色棋子不足12枚",
+        "event": "puzzle.moves_exhausted",
+        "condition": {
+          "movesAtMost": 0,
+          "blueCollectedBelow": 12
+        }
+      }
+    },
+    {
+      "id": "pause",
+      "title": "暂停",
+      "purpose": "暂停世界并保留本局；恢复时无输入穿透",
+      "components": [
+        "panel-modal",
+        "button-primary",
+        "button-secondary"
+      ],
+      "actions": [
+        {
+          "id": "resume",
+          "label": "继续游戏",
+          "event": "resume_requested",
+          "target": "playing",
+          "mode": "pop"
+        },
+        {
+          "id": "pause-settings",
+          "label": "设置",
+          "event": "settings_requested",
+          "target": "settings",
+          "mode": "push"
+        },
+        {
+          "id": "retry-pause",
+          "label": "重新开始",
+          "event": "restart_requested",
+          "target": "confirm-restart",
+          "mode": "push"
+        },
+        {
+          "id": "exit-pause",
+          "label": "返回首页",
+          "event": "exit_requested",
+          "target": "confirm-exit",
+          "mode": "push"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "resume",
+        "order": [
+          "resume",
+          "pause-settings",
+          "retry-pause",
+          "exit-pause"
+        ]
+      },
+      "simulationPolicy": "暂停世界模拟与计时；声音按音频总线策略淡出"
+    },
+    {
+      "id": "settings",
+      "title": "设置",
+      "purpose": "音量、动态效果与文字大小可立即预览并保存",
+      "components": [
+        "panel-modal",
+        "toggle",
+        "slider",
+        "button-secondary"
+      ],
+      "actions": [
+        {
+          "id": "settings-back",
+          "label": "返回",
+          "event": "settings_closed",
+          "target": "$previous",
+          "mode": "pop"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "settings-back",
+        "order": [
+          "settings-back"
+        ]
+      },
+      "bindings": [
+        "settings.musicVolume",
+        "settings.sfxVolume",
+        "settings.reducedMotion",
+        "settings.textScale"
+      ],
+      "exitPolicy": "从首页返回首页，从暂停返回暂停；不直接跳游戏"
+    },
+    {
+      "id": "failure",
+      "title": "失败与重试",
+      "purpose": "解释声明的失败原因，重试只重置本局",
+      "components": [
+        "panel-modal",
+        "button-primary",
+        "button-secondary",
+        "icon-retry"
+      ],
+      "actions": [
+        {
+          "id": "retry",
+          "label": "再试一次",
+          "event": "retry_requested",
+          "target": "loading",
+          "mode": "replace"
+        },
+        {
+          "id": "failure-home",
+          "label": "返回首页",
+          "event": "home_requested",
+          "target": "home",
+          "mode": "replace"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "retry",
+        "order": [
+          "retry",
+          "failure-home"
+        ]
+      },
+      "bindings": [
+        "run.failureReason",
+        "puzzle.remaining",
+        "puzzle.moves"
+      ],
+      "hint": "20步耗尽且蓝色棋子不足12枚",
+      "failure": {
+        "description": "20步耗尽且蓝色棋子不足12枚",
+        "event": "puzzle.moves_exhausted",
+        "condition": {
+          "movesAtMost": 0,
+          "blueCollectedBelow": 12
+        }
+      },
+      "dataPolicy": "本局数据由游戏逻辑提供；重试保留设置/已确认持久进度，清空本局状态；没有定义计分时不显示分数"
+    },
+    {
+      "id": "success",
+      "title": "关卡结算",
+      "purpose": "展示声明目标达成结果，结束后清晰下一步",
+      "components": [
+        "panel-modal",
+        "button-primary",
+        "button-secondary",
+        "icon-star"
+      ],
+      "actions": [
+        {
+          "id": "next",
+          "label": "再来一局",
+          "event": "next_requested",
+          "target": "loading",
+          "mode": "replace"
+        },
+        {
+          "id": "success-home",
+          "label": "返回首页",
+          "event": "home_requested",
+          "target": "home",
+          "mode": "replace"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "next",
+        "order": [
+          "next",
+          "success-home"
+        ]
+      },
+      "bindings": [
+        "puzzle.remaining",
+        "puzzle.moves"
+      ],
+      "hint": "收集12枚蓝色棋子",
+      "objective": {
+        "description": "收集12枚蓝色棋子",
+        "event": "puzzle.blue_goal_completed",
+        "condition": {
+          "blueCollectedAtLeast": 12
+        }
+      },
+      "dataPolicy": "展示实际目标结果；计分、评级、奖励仅在游戏规则声明后接入，不能在UI自行添加"
+    },
+    {
+      "id": "confirm-restart",
+      "title": "重新开始本局？",
+      "purpose": "明确丢弃未完成本局，不改变历史进度",
+      "components": [
+        "panel-modal",
+        "button-primary",
+        "button-secondary"
+      ],
+      "actions": [
+        {
+          "id": "confirm",
+          "label": "确认",
+          "event": "restart_confirmed",
+          "target": "loading",
+          "mode": "replace"
+        },
+        {
+          "id": "cancel",
+          "label": "继续当前游戏",
+          "event": "cancel_requested",
+          "target": "$previous",
+          "mode": "pop"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "confirm",
+        "order": [
+          "confirm",
+          "cancel"
+        ]
+      },
+      "layer": "modal",
+      "inputPolicy": "锁世界及底层UI输入；关闭后回到调用屏幕与原焦点"
+    },
+    {
+      "id": "confirm-exit",
+      "title": "返回首页？",
+      "purpose": "明确丢弃未完成本局，不改变历史进度",
+      "components": [
+        "panel-modal",
+        "button-primary",
+        "button-secondary"
+      ],
+      "actions": [
+        {
+          "id": "confirm",
+          "label": "确认",
+          "event": "exit_confirmed",
+          "target": "home",
+          "mode": "replace"
+        },
+        {
+          "id": "cancel",
+          "label": "继续当前游戏",
+          "event": "cancel_requested",
+          "target": "$previous",
+          "mode": "pop"
+        }
+      ],
+      "layout": {
+        "container": "vertical-safe-column",
+        "maxContentWidth": 620,
+        "anchor": "center-safe"
+      },
+      "focus": {
+        "initial": "confirm",
+        "order": [
+          "confirm",
+          "cancel"
+        ]
+      },
+      "layer": "modal",
+      "inputPolicy": "锁世界及底层UI输入；关闭后回到调用屏幕与原焦点"
+    }
+  ],
+  "flow": [
+    {
+      "from": "loading",
+      "event": "assets_ready",
+      "to": "home",
+      "mode": "replace",
+      "actionId": "load-done"
+    },
+    {
+      "from": "loading",
+      "event": "assets_failed",
+      "to": "load-error",
+      "mode": "replace",
+      "actionId": "load-failed"
+    },
+    {
+      "from": "load-error",
+      "event": "reload_requested",
+      "to": "loading",
+      "mode": "replace",
+      "actionId": "reload"
+    },
+    {
+      "from": "load-error",
+      "event": "back_requested",
+      "to": "home",
+      "mode": "replace",
+      "actionId": "home-safe"
+    },
+    {
+      "from": "home",
+      "event": "start_requested",
+      "to": "tutorial",
+      "mode": "replace",
+      "actionId": "start"
+    },
+    {
+      "from": "home",
+      "event": "settings_requested",
+      "to": "settings",
+      "mode": "push",
+      "actionId": "settings"
+    },
+    {
+      "from": "tutorial",
+      "event": "tutorial_completed",
+      "to": "playing",
+      "mode": "replace",
+      "actionId": "tutorial-complete"
+    },
+    {
+      "from": "tutorial",
+      "event": "tutorial_skipped",
+      "to": "playing",
+      "mode": "replace",
+      "actionId": "skip-tutorial"
+    },
+    {
+      "from": "playing",
+      "event": "pause_requested",
+      "to": "pause",
+      "mode": "push",
+      "actionId": "pause"
+    },
+    {
+      "from": "playing",
+      "event": "puzzle.moves_exhausted",
+      "to": "failure",
+      "mode": "replace",
+      "actionId": "fail"
+    },
+    {
+      "from": "playing",
+      "event": "puzzle.blue_goal_completed",
+      "to": "success",
+      "mode": "replace",
+      "actionId": "win"
+    },
+    {
+      "from": "pause",
+      "event": "resume_requested",
+      "to": "playing",
+      "mode": "pop",
+      "actionId": "resume"
+    },
+    {
+      "from": "pause",
+      "event": "settings_requested",
+      "to": "settings",
+      "mode": "push",
+      "actionId": "pause-settings"
+    },
+    {
+      "from": "pause",
+      "event": "restart_requested",
+      "to": "confirm-restart",
+      "mode": "push",
+      "actionId": "retry-pause"
+    },
+    {
+      "from": "pause",
+      "event": "exit_requested",
+      "to": "confirm-exit",
+      "mode": "push",
+      "actionId": "exit-pause"
+    },
+    {
+      "from": "settings",
+      "event": "settings_closed",
+      "to": "$previous",
+      "mode": "pop",
+      "actionId": "settings-back"
+    },
+    {
+      "from": "failure",
+      "event": "retry_requested",
+      "to": "loading",
+      "mode": "replace",
+      "actionId": "retry"
+    },
+    {
+      "from": "failure",
+      "event": "home_requested",
+      "to": "home",
+      "mode": "replace",
+      "actionId": "failure-home"
+    },
+    {
+      "from": "success",
+      "event": "next_requested",
+      "to": "loading",
+      "mode": "replace",
+      "actionId": "next"
+    },
+    {
+      "from": "success",
+      "event": "home_requested",
+      "to": "home",
+      "mode": "replace",
+      "actionId": "success-home"
+    },
+    {
+      "from": "confirm-restart",
+      "event": "restart_confirmed",
+      "to": "loading",
+      "mode": "replace",
+      "actionId": "confirm"
+    },
+    {
+      "from": "confirm-restart",
+      "event": "cancel_requested",
+      "to": "$previous",
+      "mode": "pop",
+      "actionId": "cancel"
+    },
+    {
+      "from": "confirm-exit",
+      "event": "exit_confirmed",
+      "to": "home",
+      "mode": "replace",
+      "actionId": "confirm"
+    },
+    {
+      "from": "confirm-exit",
+      "event": "cancel_requested",
+      "to": "$previous",
+      "mode": "pop",
+      "actionId": "cancel"
+    }
+  ],
+  "gameplay": {
+    "objective": {
+      "description": "收集12枚蓝色棋子",
+      "event": "puzzle.blue_goal_completed",
+      "condition": {
+        "blueCollectedAtLeast": 12
+      }
+    },
+    "failure": {
+      "description": "20步耗尽且蓝色棋子不足12枚",
+      "event": "puzzle.moves_exhausted",
+      "condition": {
+        "movesAtMost": 0,
+        "blueCollectedBelow": 12
+      }
+    },
+    "conditionsExecuted": false
+  },
+  "hudBindings": [
+    {
+      "id": "objective",
+      "label": "收集12枚蓝色棋子",
+      "path": "puzzle.remaining",
+      "event": "objective_changed",
+      "format": "remaining / target",
+      "feedback": "完成一项目标后显式勾选",
+      "update": "event-driven",
+      "screen": "playing",
+      "anchor": "top-left-safe",
+      "critical": true
+    },
+    {
+      "id": "moves",
+      "label": "剩余步数",
+      "path": "puzzle.moves",
+      "event": "moves_changed",
+      "format": "整数",
+      "feedback": "最后几步用图标+文字，不只变色",
+      "update": "event-driven",
+      "screen": "playing",
+      "anchor": "top-left-safe",
+      "critical": false
+    },
+    {
+      "id": "pause",
+      "label": "暂停",
+      "path": "ui.pause",
+      "event": "pause_requested",
+      "format": "action",
+      "feedback": "冻结棋盘交互",
+      "update": "event-driven",
+      "screen": "playing",
+      "anchor": "top-right-safe",
+      "critical": false
+    }
+  ],
+  "components": [
+    {
+      "id": "button-primary",
+      "name": "主操作按钮",
+      "kind": "button",
+      "size": [
+        280,
+        64
+      ],
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "semantics": "default 下一步 / pressed 按压 / disabled 不可操作+原因 / focus 焦点描边"
+    },
+    {
+      "id": "button-secondary",
+      "name": "次操作按钮",
+      "kind": "button-secondary",
+      "size": [
+        240,
+        64
+      ],
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "button-icon",
+      "name": "图标按钮",
+      "kind": "icon-button",
+      "size": [
+        56,
+        56
+      ],
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "hitArea": [
+        64,
+        64
+      ],
+      "icon": "pause"
+    },
+    {
+      "id": "panel-modal",
+      "name": "居中弹窗底板",
+      "kind": "panel",
+      "size": [
+        560,
+        400
+      ],
+      "states": [
+        "default"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "contentPadding": 32
+    },
+    {
+      "id": "panel-hud",
+      "name": "HUD 背板",
+      "kind": "hud-panel",
+      "size": [
+        220,
+        64
+      ],
+      "states": [
+        "default"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "contentPadding": 16
+    },
+    {
+      "id": "progress-bar",
+      "name": "比例进度条",
+      "kind": "progress",
+      "size": [
+        260,
+        24
+      ],
+      "states": [
+        "default",
+        "low",
+        "complete"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "binding": "current / max",
+      "nineSlice": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "id": "loading-bar",
+      "name": "加载进度条",
+      "kind": "progress",
+      "size": [
+        380,
+        24
+      ],
+      "states": [
+        "default",
+        "complete"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "binding": "loaded / total"
+    },
+    {
+      "id": "toggle",
+      "name": "设置开关",
+      "kind": "toggle",
+      "size": [
+        76,
+        40
+      ],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "focus"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "hitArea": [
+        88,
+        56
+      ]
+    },
+    {
+      "id": "slider",
+      "name": "音量滑块",
+      "kind": "slider",
+      "size": [
+        260,
+        40
+      ],
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "hitArea": [
+        280,
+        56
+      ]
+    },
+    {
+      "id": "tab",
+      "name": "分类标签",
+      "kind": "tab",
+      "size": [
+        160,
+        56
+      ],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "focus"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "toast",
+      "name": "非阻塞反馈条",
+      "kind": "toast",
+      "size": [
+        400,
+        56
+      ],
+      "states": [
+        "default",
+        "success",
+        "error"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        18,
+        18,
+        18,
+        18
+      ],
+      "durationMs": 1800
+    },
+    {
+      "id": "tooltip",
+      "name": "说明提示",
+      "kind": "tooltip",
+      "size": [
+        320,
+        100
+      ],
+      "states": [
+        "default"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "level-card",
+      "name": "关卡入口卡片",
+      "kind": "level-card",
+      "size": [
+        180,
+        180
+      ],
+      "states": [
+        "default",
+        "selected",
+        "locked",
+        "complete",
+        "focus"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "icon-pause",
+      "name": "暂停图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "pause",
+      "hitArea": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "icon-play",
+      "name": "开始图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "play"
+    },
+    {
+      "id": "icon-retry",
+      "name": "重试图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "retry"
+    },
+    {
+      "id": "icon-close",
+      "name": "关闭图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "close",
+      "hitArea": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "icon-settings",
+      "name": "设置图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "settings"
+    },
+    {
+      "id": "icon-sound",
+      "name": "音效图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "sound"
+    },
+    {
+      "id": "icon-music",
+      "name": "音乐图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "music"
+    },
+    {
+      "id": "icon-health",
+      "name": "生命图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "health"
+    },
+    {
+      "id": "icon-collectible",
+      "name": "晶石图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "collectible"
+    },
+    {
+      "id": "icon-goal",
+      "name": "目标图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "goal"
+    },
+    {
+      "id": "icon-star",
+      "name": "评价图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "star"
+    },
+    {
+      "id": "icon-arrow-left",
+      "name": "返回图标",
+      "kind": "icon",
+      "size": [
+        40,
+        40
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "production": "vector-source",
+      "textPolicy": "文字使用引擎字体/本地化，不烘焙进贴图",
+      "icon": "arrow-left"
+    }
+  ],
+  "assetManifest": [
+    {
+      "id": "button-primary--default",
+      "componentId": "button-primary",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        280,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-primary--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-primary--pressed",
+      "componentId": "button-primary",
+      "state": "pressed",
+      "format": "svg",
+      "size": [
+        280,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-primary--pressed.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-primary--disabled",
+      "componentId": "button-primary",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        280,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-primary--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-primary--focus",
+      "componentId": "button-primary",
+      "state": "focus",
+      "format": "svg",
+      "size": [
+        280,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-primary--focus.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-secondary--default",
+      "componentId": "button-secondary",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        240,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-secondary--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-secondary--pressed",
+      "componentId": "button-secondary",
+      "state": "pressed",
+      "format": "svg",
+      "size": [
+        240,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-secondary--pressed.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-secondary--disabled",
+      "componentId": "button-secondary",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        240,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-secondary--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-secondary--focus",
+      "componentId": "button-secondary",
+      "state": "focus",
+      "format": "svg",
+      "size": [
+        240,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-secondary--focus.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-icon--default",
+      "componentId": "button-icon",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        56,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-icon--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-icon--pressed",
+      "componentId": "button-icon",
+      "state": "pressed",
+      "format": "svg",
+      "size": [
+        56,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-icon--pressed.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-icon--disabled",
+      "componentId": "button-icon",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        56,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-icon--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "button-icon--focus",
+      "componentId": "button-icon",
+      "state": "focus",
+      "format": "svg",
+      "size": [
+        56,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/button-icon--focus.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "panel-modal--default",
+      "componentId": "panel-modal",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        560,
+        400
+      ],
+      "alpha": true,
+      "nineSlice": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/panel-modal--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "panel-hud--default",
+      "componentId": "panel-hud",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        220,
+        64
+      ],
+      "alpha": true,
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/panel-hud--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "progress-bar--default",
+      "componentId": "progress-bar",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        260,
+        24
+      ],
+      "alpha": true,
+      "nineSlice": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/progress-bar--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "progress-bar--low",
+      "componentId": "progress-bar",
+      "state": "low",
+      "format": "svg",
+      "size": [
+        260,
+        24
+      ],
+      "alpha": true,
+      "nineSlice": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/progress-bar--low.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "progress-bar--complete",
+      "componentId": "progress-bar",
+      "state": "complete",
+      "format": "svg",
+      "size": [
+        260,
+        24
+      ],
+      "alpha": true,
+      "nineSlice": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/progress-bar--complete.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "loading-bar--default",
+      "componentId": "loading-bar",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        380,
+        24
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/loading-bar--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "loading-bar--complete",
+      "componentId": "loading-bar",
+      "state": "complete",
+      "format": "svg",
+      "size": [
+        380,
+        24
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/loading-bar--complete.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "toggle--default",
+      "componentId": "toggle",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        76,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/toggle--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "toggle--selected",
+      "componentId": "toggle",
+      "state": "selected",
+      "format": "svg",
+      "size": [
+        76,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/toggle--selected.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "toggle--disabled",
+      "componentId": "toggle",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        76,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/toggle--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "toggle--focus",
+      "componentId": "toggle",
+      "state": "focus",
+      "format": "svg",
+      "size": [
+        76,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/toggle--focus.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "slider--default",
+      "componentId": "slider",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        260,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/slider--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "slider--pressed",
+      "componentId": "slider",
+      "state": "pressed",
+      "format": "svg",
+      "size": [
+        260,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/slider--pressed.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "slider--disabled",
+      "componentId": "slider",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        260,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/slider--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "slider--focus",
+      "componentId": "slider",
+      "state": "focus",
+      "format": "svg",
+      "size": [
+        260,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/slider--focus.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "tab--default",
+      "componentId": "tab",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        160,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/tab--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "tab--selected",
+      "componentId": "tab",
+      "state": "selected",
+      "format": "svg",
+      "size": [
+        160,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/tab--selected.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "tab--disabled",
+      "componentId": "tab",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        160,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/tab--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "tab--focus",
+      "componentId": "tab",
+      "state": "focus",
+      "format": "svg",
+      "size": [
+        160,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/tab--focus.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "toast--default",
+      "componentId": "toast",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        400,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": [
+        18,
+        18,
+        18,
+        18
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/toast--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "toast--success",
+      "componentId": "toast",
+      "state": "success",
+      "format": "svg",
+      "size": [
+        400,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": [
+        18,
+        18,
+        18,
+        18
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/toast--success.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "toast--error",
+      "componentId": "toast",
+      "state": "error",
+      "format": "svg",
+      "size": [
+        400,
+        56
+      ],
+      "alpha": true,
+      "nineSlice": [
+        18,
+        18,
+        18,
+        18
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/toast--error.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "tooltip--default",
+      "componentId": "tooltip",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        320,
+        100
+      ],
+      "alpha": true,
+      "nineSlice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/tooltip--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "level-card--default",
+      "componentId": "level-card",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        180,
+        180
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/level-card--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "level-card--selected",
+      "componentId": "level-card",
+      "state": "selected",
+      "format": "svg",
+      "size": [
+        180,
+        180
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/level-card--selected.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "level-card--locked",
+      "componentId": "level-card",
+      "state": "locked",
+      "format": "svg",
+      "size": [
+        180,
+        180
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/level-card--locked.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "level-card--complete",
+      "componentId": "level-card",
+      "state": "complete",
+      "format": "svg",
+      "size": [
+        180,
+        180
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/level-card--complete.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "level-card--focus",
+      "componentId": "level-card",
+      "state": "focus",
+      "format": "svg",
+      "size": [
+        180,
+        180
+      ],
+      "alpha": true,
+      "nineSlice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/level-card--focus.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-pause--default",
+      "componentId": "icon-pause",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-pause--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-pause--disabled",
+      "componentId": "icon-pause",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-pause--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-play--default",
+      "componentId": "icon-play",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-play--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-play--disabled",
+      "componentId": "icon-play",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-play--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-retry--default",
+      "componentId": "icon-retry",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-retry--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-retry--disabled",
+      "componentId": "icon-retry",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-retry--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-close--default",
+      "componentId": "icon-close",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-close--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-close--disabled",
+      "componentId": "icon-close",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-close--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-settings--default",
+      "componentId": "icon-settings",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-settings--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-settings--disabled",
+      "componentId": "icon-settings",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-settings--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-sound--default",
+      "componentId": "icon-sound",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-sound--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-sound--disabled",
+      "componentId": "icon-sound",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-sound--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-music--default",
+      "componentId": "icon-music",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-music--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-music--disabled",
+      "componentId": "icon-music",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-music--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-health--default",
+      "componentId": "icon-health",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-health--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-health--disabled",
+      "componentId": "icon-health",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-health--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-collectible--default",
+      "componentId": "icon-collectible",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-collectible--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-collectible--disabled",
+      "componentId": "icon-collectible",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-collectible--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-goal--default",
+      "componentId": "icon-goal",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-goal--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-goal--disabled",
+      "componentId": "icon-goal",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-goal--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-star--default",
+      "componentId": "icon-star",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-star--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-star--disabled",
+      "componentId": "icon-star",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-star--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-arrow-left--default",
+      "componentId": "icon-arrow-left",
+      "state": "default",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-arrow-left--default.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "icon-arrow-left--disabled",
+      "componentId": "icon-arrow-left",
+      "state": "disabled",
+      "format": "svg",
+      "size": [
+        40,
+        40
+      ],
+      "alpha": true,
+      "nineSlice": null,
+      "status": "source-ready",
+      "generator": "renderUiComponent",
+      "file": "components/icon-arrow-left--disabled.svg",
+      "prompt": null,
+      "acceptance": [
+        "轮廓不裁切",
+        "文字与数字保持独立",
+        "图标语义明确",
+        "不同状态可区分",
+        "状态不能改变命中区"
+      ]
+    },
+    {
+      "id": "menu-background",
+      "size": [
+        1080,
+        1920
+      ],
+      "alpha": false,
+      "purpose": "菜单环境背景；不含文字/按钮/角色，中心留给界面",
+      "format": "png",
+      "status": "planned",
+      "reference": null,
+      "file": "art/menu-background.png",
+      "generator": "imagegen-required",
+      "prompt": "为游戏《三色棋盘 · 独立技能测试》制作单独的 菜单环境背景；不含文字/按钮/角色，中心留给界面。画风：非像素 HD 卡通。统一调色：#ece4d5, #f6eddb, #fff8ea, #a2977e, #d2a548, #b0822d, #2b332e。尺寸比例 1080:1920。完整背景，没有透明空洞。不要把整张 UI mockup 当作组件；无文字、无按钮、无水印。角色身份和原生比例以输入参考为准。保持主体完整与足够留边。",
+      "acceptance": [
+        "符合当前角色参考与画风",
+        "不烘焙本地化文字",
+        "独立文件，不能从拼贴图猜测切件",
+        "透明资产检查alpha与留边",
+        "以正常显示尺寸做视觉审查"
+      ]
+    },
+    {
+      "id": "result-emblem",
+      "size": [
+        512,
+        512
+      ],
+      "alpha": true,
+      "purpose": "独立游戏主题结算徽章；透明底，内圈留目标达成符号，不画文字",
+      "format": "png",
+      "status": "planned",
+      "reference": null,
+      "file": "art/result-emblem.png",
+      "generator": "imagegen-required",
+      "prompt": "为游戏《三色棋盘 · 独立技能测试》制作单独的 独立游戏主题结算徽章；透明底，内圈留目标达成符号，不画文字。画风：非像素 HD 卡通。统一调色：#ece4d5, #f6eddb, #fff8ea, #a2977e, #d2a548, #b0822d, #2b332e。尺寸比例 512:512。实际 alpha 透明背景。不要把整张 UI mockup 当作组件；无文字、无按钮、无水印。角色身份和原生比例以输入参考为准。保持主体完整与足够留边。",
+      "acceptance": [
+        "符合当前角色参考与画风",
+        "不烘焙本地化文字",
+        "独立文件，不能从拼贴图猜测切件",
+        "透明资产检查alpha与留边",
+        "以正常显示尺寸做视觉审查"
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "id": "flow-loading",
+      "kind": "navigation",
+      "screen": "loading",
+      "scenario": "从合法入口进入「加载」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-load-error",
+      "kind": "navigation",
+      "screen": "load-error",
+      "scenario": "从合法入口进入「加载失败」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-home",
+      "kind": "navigation",
+      "screen": "home",
+      "scenario": "从合法入口进入「开始页面」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-tutorial",
+      "kind": "navigation",
+      "screen": "tutorial",
+      "scenario": "从合法入口进入「教程」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-playing",
+      "kind": "navigation",
+      "screen": "playing",
+      "scenario": "从合法入口进入「游戏 HUD」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-pause",
+      "kind": "navigation",
+      "screen": "pause",
+      "scenario": "从合法入口进入「暂停」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-settings",
+      "kind": "navigation",
+      "screen": "settings",
+      "scenario": "从合法入口进入「设置」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-failure",
+      "kind": "navigation",
+      "screen": "failure",
+      "scenario": "从合法入口进入「失败与重试」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-success",
+      "kind": "navigation",
+      "screen": "success",
+      "scenario": "从合法入口进入「关卡结算」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-confirm-restart",
+      "kind": "navigation",
+      "screen": "confirm-restart",
+      "scenario": "从合法入口进入「重新开始本局？」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "flow-confirm-exit",
+      "kind": "navigation",
+      "screen": "confirm-exit",
+      "scenario": "从合法入口进入「返回首页？」，激活每个操作并返回",
+      "expected": "到达声明目标；只有栈顶收到输入；返回保留前一屏状态与焦点",
+      "status": "not-run"
+    },
+    {
+      "id": "state-button-primary",
+      "kind": "states",
+      "component": "button-primary",
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-button-secondary",
+      "kind": "states",
+      "component": "button-secondary",
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-button-icon",
+      "kind": "states",
+      "component": "button-icon",
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-progress-bar",
+      "kind": "states",
+      "component": "progress-bar",
+      "states": [
+        "default",
+        "low",
+        "complete"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-loading-bar",
+      "kind": "states",
+      "component": "loading-bar",
+      "states": [
+        "default",
+        "complete"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-toggle",
+      "kind": "states",
+      "component": "toggle",
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "focus"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-slider",
+      "kind": "states",
+      "component": "slider",
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-tab",
+      "kind": "states",
+      "component": "tab",
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "focus"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-toast",
+      "kind": "states",
+      "component": "toast",
+      "states": [
+        "default",
+        "success",
+        "error"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-level-card",
+      "kind": "states",
+      "component": "level-card",
+      "states": [
+        "default",
+        "selected",
+        "locked",
+        "complete",
+        "focus"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-pause",
+      "kind": "states",
+      "component": "icon-pause",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-play",
+      "kind": "states",
+      "component": "icon-play",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-retry",
+      "kind": "states",
+      "component": "icon-retry",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-close",
+      "kind": "states",
+      "component": "icon-close",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-settings",
+      "kind": "states",
+      "component": "icon-settings",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-sound",
+      "kind": "states",
+      "component": "icon-sound",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-music",
+      "kind": "states",
+      "component": "icon-music",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-health",
+      "kind": "states",
+      "component": "icon-health",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-collectible",
+      "kind": "states",
+      "component": "icon-collectible",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-goal",
+      "kind": "states",
+      "component": "icon-goal",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-star",
+      "kind": "states",
+      "component": "icon-star",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "state-icon-arrow-left",
+      "kind": "states",
+      "component": "icon-arrow-left",
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "scenario": "逐状态查看并检查命中区、禁用原因、键盘/手柄焦点",
+      "expected": "状态区分清晰，pressed结束恢复；disabled不发游戏事件；命中区稳定",
+      "status": "not-run"
+    },
+    {
+      "id": "safe-small",
+      "kind": "integration",
+      "scenario": "窄屏、横竖屏、刘海与极端安全区",
+      "expected": "关键控件在安全区内，触控至少48逻辑像素，内容不重叠",
+      "status": "not-run"
+    },
+    {
+      "id": "long-copy",
+      "kind": "integration",
+      "scenario": "中文/英文长文案与1.35×文字",
+      "expected": "自动换行与容器扩展，不裁标题或按钮文字",
+      "status": "not-run"
+    },
+    {
+      "id": "loading-failed",
+      "kind": "integration",
+      "scenario": "关键资源失败、重试、解码慢",
+      "expected": "不能误进游戏；错误可重试；不显示假100%",
+      "status": "not-run"
+    },
+    {
+      "id": "double-click",
+      "kind": "integration",
+      "scenario": "结算/重试按钮快速连续激活",
+      "expected": "只结算一次，只创建一个新游戏状态",
+      "status": "not-run"
+    },
+    {
+      "id": "pause-input",
+      "kind": "integration",
+      "scenario": "暂停与确认弹窗叠层期间持续触控",
+      "expected": "世界与底层UI均收不到输入；恢复时无残留按压",
+      "status": "not-run"
+    },
+    {
+      "id": "hud-events",
+      "kind": "integration",
+      "scenario": "健康/目标/成绩变化与快速合并事件",
+      "expected": "HUD正确响应对应数据，解绑后不继续接收",
+      "status": "not-run"
+    },
+    {
+      "id": "settings-return",
+      "kind": "integration",
+      "scenario": "首页→设置→返回；游玩→暂停→设置→返回",
+      "expected": "回到各自调用屏，不意外恢复游戏",
+      "status": "not-run"
+    },
+    {
+      "id": "source-art",
+      "kind": "integration",
+      "scenario": "角色与背景源图比例、透明边、深浅环境",
+      "expected": "以实际源图视觉检查，不把结构测试等同美术通过",
+      "status": "not-run"
+    },
+    {
+      "id": "reduced-motion",
+      "kind": "integration",
+      "scenario": "启用减少动态效果",
+      "expected": "保留状态信息，去掉位移、抖动与持续脉冲",
+      "status": "not-run"
+    }
+  ],
+  "pipeline": [
+    {
+      "stage": "brief",
+      "output": "明确核心循环、失败条件、输入/设备与来源参考",
+      "gate": "未提供字段记录假设，不冒充已确认需求"
+    },
+    {
+      "stage": "flow",
+      "output": "screen stack、场景切换与所有返回路径",
+      "gate": "每个操作有目标和数据重置/保留规则"
+    },
+    {
+      "stage": "style",
+      "output": "统一tokens、布局、安全区与独立文字规则",
+      "gate": "正常显示尺寸对比度/可读性检查"
+    },
+    {
+      "stage": "components",
+      "output": "所有必要交互状态的SVG源件与9slice参数",
+      "gate": "命中区不随视觉状态改变；禁止整图截图代替组件"
+    },
+    {
+      "stage": "bitmap-art",
+      "output": "逐件独立图片、提示词、源文件与生成记录",
+      "gate": "planned/reference-provided不等于已生成/已审核"
+    },
+    {
+      "stage": "engine-wire",
+      "output": "Phaser场景事件 / Godot信号与Control主题映射",
+      "gate": "UI不直接改游戏逻辑，HUD按事件更新，栈顶锁输入"
+    },
+    {
+      "stage": "qa",
+      "output": "逐页面/状态/极端设备/完整游戏循环证据",
+      "gate": "保留failed与同条件retest；未跑的仍not-run"
+    }
+  ],
+  "engine": {
+    "selected": "godot",
+    "contract": {
+      "screenStack": "push overlay / pop restore / replace scene; snapshot previous focus",
+      "hud": "subscribe to declared gameplay events on enter; unsubscribe on exit",
+      "input": "topmost-screen owns input; world paused/blocked behind modal",
+      "assets": "load separately named states, font and source images; no UI labels baked into atlas",
+      "logic": "send semantic intent events; receive game state/result events; reward and reset belong to game systems"
+    },
+    "phaser": {
+      "layout": "UI Scene above World Scene; resize uses safe-inset root + containers; engine scale fit with expand background",
+      "events": "World events → scene.events/EventEmitter → HUD; unregister on shutdown",
+      "nineSlice": "export declared insets; verify installed Phaser NineSlice API before adapter implementation",
+      "focus": "explicit control order + initial focus; pointer and keyboard/gamepad may coexist"
+    },
+    "godot": {
+      "layout": "CanvasLayer + Control, containers/anchors and safe-area MarginContainer",
+      "events": "gameplay signals → HUD; disconnect on teardown",
+      "nineSlice": "Theme StyleBoxTexture with supplied margins; keep labels as Label nodes",
+      "focus": "focus neighbors and initial grab_focus; mouse filter/input router blocks underlying game"
+    }
+  },
+  "excluded": [
+    {
+      "screen": "store / ads / payments",
+      "reason": "brief 未定义经济/商业化，不额外引入商店、广告或支付"
+    },
+    {
+      "screen": "inventory",
+      "reason": "当前核心玩法未定义背包系统"
+    }
+  ],
+  "sourceScope": {
+    "kind": "codex-development-helper",
+    "gameImplemented": false,
+    "bitmapGenerationClaim": "only supplied provenance/files can confirm produced art; planned assets are not generated",
+    "visual": "not-reviewed"
+  },
+  "layoutScenarios": [
+    {
+      "name": "reference",
+      "viewport": [
+        720,
+        1280
+      ],
+      "safeInsets": [
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "small-phone",
+      "viewport": [
+        360,
+        640
+      ],
+      "safeInsets": [
+        40,
+        16,
+        24,
+        16
+      ]
+    },
+    {
+      "name": "tablet",
+      "viewport": [
+        768,
+        1024
+      ],
+      "safeInsets": [
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "wide",
+      "viewport": [
+        1080,
+        1920
+      ],
+      "safeInsets": [
+        24,
+        24,
+        24,
+        24
+      ]
+    }
+  ]
+}

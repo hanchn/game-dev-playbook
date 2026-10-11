@@ -1,0 +1,53 @@
+{
+  "skillValidation": "passed-with-isolated-PyYAML-environment",
+  "globalInstructions": "/Users/lemon/.codex/AGENTS.md",
+  "installedSkills": [
+    "game-development-orchestrator",
+    "infinite-map-generation",
+    "keyframe-generation",
+    "game-ui-suite"
+  ],
+  "stdioMcpRoundtrip": "passed",
+  "mcpRegistration": "not-modified",
+  "production": {
+    "map": "deterministic-data-and-preview-tested",
+    "keyframes": "edit-and-export-tested-current-source-versions",
+    "ui": "73-state-SVG-source-files-and-background-produced",
+    "gamePlan": "structured-plan-and-linked-UI-tested; game-not-integrated"
+  },
+  "reports": [
+    "../infinite-map-v1/qa-report.json",
+    "../keyframe-generator/qa-review.json",
+    "../ui-kit-solution/qa-review.json",
+    "../game-plan/qa-report.json",
+    "../dinosaur-side-v5/art-qa-report.json",
+    "dinosaur-browser-local-review.json"
+  ],
+  "knownOpen": [
+    "Dinosaur visual failures remain; examine report",
+    "Horse/crocodile and other animals require sequential repairs",
+    "Queued four new character assets not created",
+    "Engine game integration and target-device gameplay not completed"
+  ],
+  "testLogs": {
+    "current": "all-tests.log",
+    "initial": "all-tests-initial.log"
+  },
+  "sourceHashes": {
+    "services.mjs": "07265b61be0e6f0e8794a45365e87e4796bb2c851525333d58112343104ecd55",
+    "server.mjs": "b673b69b9c7073519b63bf315c0777f3d49c722263137dc1cf417dad22e0bd5f",
+    "mcp.mjs": "0e1604832792f1cf399b0fa673958b02955bebed622840e27d7ad1eb58e98a5f",
+    "game-plan.mjs": "cf96f31fbfee86c114ca8ecaaf28c5c1d190e50d7f294210f58e791016e657f1",
+    "ui-kit-planner.mjs": "430263805b57ba01e1b0c7e07e8f023e915c7a59b5f087029e9d8f80e25387a9",
+    "infinite-map.mjs": "9c7dca663c9a77ad23308f7260f84981c5df1f7b686defdc1f23adbbd65c817f",
+    "keyframe-generator-core.mjs": "babea4640f6f2a069f95c13f7145a9ee1cd6db07a4b7124318d1cea3689ec3f6"
+  },
+  "regression": {
+    "tests": 161,
+    "passed": 161,
+    "failed": 0,
+    "skipped": 0,
+    "log": "all-tests.log",
+    "nativePixelTests": "included via bundled Canvas/Sharp runtime"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Localized animation timing edit to IMAGE1, a single NEAR-takeoff run frame. SAME transparent1254x1254canvas, same camera, fixed exact head/face/eyes/tongue/torso/hips and BOTH legs in identical positions. FAR arm (left background curled fist) unchanged. No recenter/rescale/wholebody motion.\nOnly change the NEAR foreground OPEN-HAND arm. This source reaches its forward swing peak too early. Give it a clear forward-down transitional shoulder-elbow-wrist chain, between prior hanging passing arm and following forward peak. Keep shoulder pivot near(625,410) unchanged; NEAR elbow around(665,580) nearly under shoulder and slightly in front, forearm bent forward-down toward wrist around(865,690), OPEN pink palm centered around(950,735). Fingers retain the same relaxed open state, palm outside torso, not pressing thigh. Upper arm has only a small forward inclination, not the strong front peak in source; preserve ORIGINAL biceps/forearm length and muscle thickness. Rounded smooth connected shoulder/elbow/wrist contours, no skinny limb. Keep precisely TWOarms/twolegs, no ghost former hand/forearm. Retain same original yellow polished shading/highlights, thick blackoutline and wrist dots; all other regions unchanged. No text/control/floorline/shadow; only original single sprite with transparentalpha.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-6384f173-cb47-4f8f-bc42-8f615f413599.png",
+  "generatedFileSha256": "1d952daaf4fd49942b549d9cfcfc6081104857d38a4177eaeb621f7a900346ba",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-03-v1.png",
+      "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+    }
+  ],
+  "phase": 0.25,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      145,
+      92,
+      1068,
+      1101
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Near upperarm forward-down intermediate instead of early extreme, open palm retreats/down; full sequence remainsfailed."
+  }
+}

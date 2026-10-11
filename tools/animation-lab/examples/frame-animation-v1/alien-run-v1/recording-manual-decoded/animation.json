@@ -1,0 +1,671 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "alien-run-v1-capture",
+  "loop": false,
+  "durationMs": 1000,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 4096,
+    "height": 512,
+    "cell": 512,
+    "columns": 8,
+    "rows": 1,
+    "padding": 0,
+    "sha256": "77df38129b7b636a9833db6155ca0211a420abde8ab79e0d5bc9a337a1150a22"
+  },
+  "provenance": {
+    "type": "canvas-recording",
+    "recordedFrom": {
+      "format": "sprite-frame-animation",
+      "schemaVersion": 1,
+      "name": "alien-run-v1",
+      "loop": true,
+      "durationMs": 1000,
+      "sheet": {
+        "file": "sheet.png",
+        "width": 1024,
+        "height": 512,
+        "cell": 256,
+        "columns": 4,
+        "rows": 2,
+        "padding": 12
+      },
+      "provenance": {
+        "type": "imagegen",
+        "file": "alien-run-v1.png",
+        "sha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+        "tool": "image_gen.imagegen",
+        "prompt": "Use case: stylized-concept. Asset type: production transparent game sprite animation sheet. Input image is the identity reference, NOT a pose to repeat. Preserve this exact alien explorer: large elongated speckled beige bald cranium, huge blue eye, small friendly face, slender adult alien build, olive sleeveless open expedition vest over cream shirt, brown cargo trousers with pocket and belt, dark brown rugged lace-up boots. Keep consistent face, cranium shape, head/body ratio, clothing details, boot size, illumination and render quality in EVERY cell. STRICT SIDE PROFILE facing RIGHT, orthographic fixed camera, no perspective rotation, both near and far limbs anatomically complete. Actual alpha transparency. No scenery, shadows, labels, gridlines, borders or text.\nLayout: exactly 8 chronological frames in a 4-column × 2-row equal-cell grid, row-major order. Each full character centered at same x in its own cell, identical pixels-per-unit scale, consistent planted sole baseline 88% down each cell, ample transparent padding above head and beside limbs. Every figure entirely within its own cell. Intended sheet 2048×1536. Cinematic-quality detailed 3D render material with smooth coherent anatomy, no cutout joints, no joint balls, no floating hands or boots.\nAction: one seamless FAST RUN cycle in place at even 1/8-cycle intervals. Frames: 1 right/near thigh forward high knee, left/far leg stretched behind toe-off, opposite arm forward; 2 right foot lowers towards contact and left heel folds high towards hip; 3 right foot contact under center of mass while left knee passes forward, arms crossing mid-swing; 4 right leg drives backwards and left thigh reaches forward high knee, BOTH legs visibly distinct; 5 exact mirrored gait of frame1 with left/far thigh forward and right/near leg behind; 6 left foot lowers and right heel folds; 7 left foot contact under center of mass and right knee passes; 8 left drives backwards and right thigh reaches high knee, transitions smoothly into frame1. Natural slight forward lean, elbows ~90deg, fists lightly closed, hands swing alongside ribs and hip not across face, meaningful knee lift and heel recovery. Visible reciprocal far limb action. Do not duplicate first frame at the end. Do not render eight variations of the same running pose.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: stylized-concept. Asset type: production transparent game sprite animation sheet. Input image is the identity reference, NOT a pose to repeat. Preserve this exact alien explorer: large elongated speckled beige bald cranium, huge blue eye, small friendly face, slender adult alien build, olive sleeveless open expedition vest over cream shirt, brown cargo trousers with pocket and belt, dark brown rugged lace-up boots. Keep consistent face, cranium shape, head/body ratio, clothing details, boot size, illumination and render quality in EVERY cell. STRICT SIDE PROFILE facing RIGHT, orthographic fixed camera, no perspective rotation, both near and far limbs anatomically complete. Actual alpha transparency. No scenery, shadows, labels, gridlines, borders or text.\nLayout: exactly 8 chronological frames in a 4-column × 2-row equal-cell grid, row-major order. Each full character centered at same x in its own cell, identical pixels-per-unit scale, consistent planted sole baseline 88% down each cell, ample transparent padding above head and beside limbs. Every figure entirely within its own cell. Intended sheet 2048×1536. Cinematic-quality detailed 3D render material with smooth coherent anatomy, no cutout joints, no joint balls, no floating hands or boots.\nAction: one seamless FAST RUN cycle in place at even 1/8-cycle intervals. Frames: 1 right/near thigh forward high knee, left/far leg stretched behind toe-off, opposite arm forward; 2 right foot lowers towards contact and left heel folds high towards hip; 3 right foot contact under center of mass while left knee passes forward, arms crossing mid-swing; 4 right leg drives backwards and left thigh reaches forward high knee, BOTH legs visibly distinct; 5 exact mirrored gait of frame1 with left/far thigh forward and right/near leg behind; 6 left foot lowers and right heel folds; 7 left foot contact under center of mass and right knee passes; 8 left drives backwards and right thigh reaches high knee, transitions smoothly into frame1. Natural slight forward lean, elbows ~90deg, fists lightly closed, hands swing alongside ribs and hip not across face, meaningful knee lift and heel recovery. Visible reciprocal far limb action. Do not duplicate first frame at the end. Do not render eight variations of the same running pose.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a126a8-4d56-7ba1-a63e-b73e68d63528/exec-9d3bd9b3-42c0-4e72-8f6a-58f5a4e501b0.png",
+          "generatedFileSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "projectFile": "public/frame-animation-assets/alien-run-v1.png",
+          "grid": {
+            "columns": 4,
+            "rows": 2,
+            "count": 8
+          },
+          "qa": {
+            "visual": "failed",
+            "observations": [
+              "远近腿的第二半周期没有清晰互换，摆臂方向重复",
+              "头部和服装基本保持，镜头出现少量三分之二侧面漂移"
+            ]
+          }
+        },
+        "sourceQA": "failed",
+        "verification": "receipt bound by output SHA-256; generation claim supplied by importer",
+        "grid": {
+          "columns": 4,
+          "rows": 2,
+          "count": 8
+        },
+        "sourceSize": [
+          1448,
+          1086
+        ],
+        "sampleId": "alien-run-v1",
+        "sourceQANotes": [
+          "远近腿第二半周期没有清晰互换，摆臂重复",
+          "镜头出现少量三分之二侧面漂移"
+        ]
+      },
+      "visualQA": "failed",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            50,
+            12,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#1",
+          "file": "frames/001.png",
+          "timeMs": 0,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            0,
+            0,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        },
+        {
+          "index": 1,
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            306,
+            12,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#2",
+          "file": "frames/002.png",
+          "timeMs": 125,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            362,
+            0,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        },
+        {
+          "index": 2,
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            562,
+            12,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#3",
+          "file": "frames/003.png",
+          "timeMs": 250,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            724,
+            0,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        },
+        {
+          "index": 3,
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            818,
+            12,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#4",
+          "file": "frames/004.png",
+          "timeMs": 375,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            1086,
+            0,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            256,
+            256,
+            256
+          ],
+          "contentRect": [
+            50,
+            268,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#5",
+          "file": "frames/005.png",
+          "timeMs": 500,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            0,
+            543,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        },
+        {
+          "index": 5,
+          "rect": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "contentRect": [
+            306,
+            268,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#6",
+          "file": "frames/006.png",
+          "timeMs": 625,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            362,
+            543,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        },
+        {
+          "index": 6,
+          "rect": [
+            512,
+            256,
+            256,
+            256
+          ],
+          "contentRect": [
+            562,
+            268,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#7",
+          "file": "frames/007.png",
+          "timeMs": 750,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            724,
+            543,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        },
+        {
+          "index": 7,
+          "rect": [
+            768,
+            256,
+            256,
+            256
+          ],
+          "contentRect": [
+            818,
+            268,
+            155,
+            232
+          ],
+          "sourceSize": [
+            362,
+            543
+          ],
+          "scale": 0.427255985267035,
+          "name": "alien-run-v1.png#8",
+          "file": "frames/008.png",
+          "timeMs": 875,
+          "durationMs": 125,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": [
+            1086,
+            543,
+            362,
+            543
+          ],
+          "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+          "review": {
+            "state": "not-reviewed",
+            "notes": ""
+          }
+        }
+      ]
+    },
+    "requestedFPS": 8,
+    "requestedDuration": 1,
+    "actualElapsedSeconds": 1.0317999999821186,
+    "encodingTiming": "Manual canvas requestFrame at fixed requested timeline; MediaRecorder uses measured wall-clock PTS, with an explicit terminal hold frame",
+    "mimeType": "video/webm;codecs=vp9",
+    "background": "light",
+    "videoFile": "recording.webm",
+    "videoSha256": "5660adea65f4c84d71d236705c116132f40dbfe1b1eeb3454990c7c4aa7fd44e",
+    "cancelled": false,
+    "sourceQA": "failed"
+  },
+  "visualQA": "failed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-1.png",
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 125,
+      "sourceTime": 0,
+      "decodedTime": null,
+      "sourceFrameIndex": 0,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "5caf801982ed7b72edbfd7e165199933e7ca8de255e7bdacbbfd4aa6c3b11e2b"
+    },
+    {
+      "index": 1,
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-2.png",
+      "file": "frames/002.png",
+      "timeMs": 125,
+      "durationMs": 125,
+      "sourceTime": 0.125,
+      "decodedTime": null,
+      "sourceFrameIndex": 1,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "4f9d0db469adaa8a6e782cfa577cfd68632ee7140f6f334a35019b98bf2f7676"
+    },
+    {
+      "index": 2,
+      "rect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-3.png",
+      "file": "frames/003.png",
+      "timeMs": 250,
+      "durationMs": 125,
+      "sourceTime": 0.25,
+      "decodedTime": null,
+      "sourceFrameIndex": 2,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "bc673fdedb8cb1b8ff46a94b7261160fb5539c99631b64b5d3e0592c470c1f41"
+    },
+    {
+      "index": 3,
+      "rect": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-4.png",
+      "file": "frames/004.png",
+      "timeMs": 375,
+      "durationMs": 125,
+      "sourceTime": 0.375,
+      "decodedTime": null,
+      "sourceFrameIndex": 3,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "7dcb0c1e8571f957b2e17cfaadc65baf85e5c1cd2ee65523d3a65920adf41883"
+    },
+    {
+      "index": 4,
+      "rect": [
+        2048,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        2048,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-5.png",
+      "file": "frames/005.png",
+      "timeMs": 500,
+      "durationMs": 125,
+      "sourceTime": 0.5,
+      "decodedTime": null,
+      "sourceFrameIndex": 4,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "0c4e54cf18c2510df1476cb768878dab07d45b2a83b4bd9c57b61b3171ab5a80"
+    },
+    {
+      "index": 5,
+      "rect": [
+        2560,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        2560,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-6.png",
+      "file": "frames/006.png",
+      "timeMs": 625,
+      "durationMs": 125,
+      "sourceTime": 0.625,
+      "decodedTime": null,
+      "sourceFrameIndex": 5,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "ba339a57d75d032ead73139eb6bb5d600d2c2beb7db7635a50d83511b44c84cc"
+    },
+    {
+      "index": 6,
+      "rect": [
+        3072,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        3072,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-7.png",
+      "file": "frames/007.png",
+      "timeMs": 750,
+      "durationMs": 125,
+      "sourceTime": 0.75,
+      "decodedTime": null,
+      "sourceFrameIndex": 6,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "b6b11c2d49926d4733744499940188142bdb5b0798d500ab2d021ad9a245597b"
+    },
+    {
+      "index": 7,
+      "rect": [
+        3584,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        3584,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "name": "capture-8.png",
+      "file": "frames/008.png",
+      "timeMs": 875,
+      "durationMs": 125,
+      "sourceTime": 0.875,
+      "decodedTime": null,
+      "sourceFrameIndex": 7,
+      "sourceRect": null,
+      "sourceSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "8f174977de3016e22138a995e455752db5f5039877f47409b5116d095249603e"
+    }
+  ],
+  "exportedAt": "2026-10-11T15:34:55.474Z"
+}

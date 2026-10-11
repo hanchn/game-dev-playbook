@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "id": "spider-kit",
+  "species": "spider",
+  "name": "蜘蛛",
+  "version": 1,
+  "design": {
+    "color": "#e1a34c",
+    "size": 1,
+    "stride": 23,
+    "view": "侧面 / 近远侧错层示意"
+  },
+  "parts": [
+    {
+      "id": "root",
+      "name": "装配原点",
+      "parent": null,
+      "shape": "anchor",
+      "rest": [
+        0,
+        0
+      ],
+      "dimensions": [
+        0,
+        0
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": null
+    },
+    {
+      "id": "body",
+      "name": "躯干",
+      "parent": "root",
+      "shape": "ellipse",
+      "rest": [
+        0,
+        -48
+      ],
+      "dimensions": [
+        60,
+        32
+      ],
+      "layer": 2,
+      "material": "#e1a34c",
+      "socket": "pivot"
+    },
+    {
+      "id": "head",
+      "name": "头部",
+      "parent": "body",
+      "shape": "ellipse",
+      "rest": [
+        38,
+        -69
+      ],
+      "dimensions": [
+        32,
+        26.4
+      ],
+      "layer": 4,
+      "material": "#e1a34c",
+      "socket": "pivot"
+    },
+    {
+      "id": "leg-0-upper",
+      "name": "近侧第 1 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        -21,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 0,
+      "side": "near",
+      "phase": 0,
+      "role": "upper"
+    },
+    {
+      "id": "leg-0-lower",
+      "name": "近侧第 1 腿 · 下段",
+      "parent": "leg-0-upper",
+      "shape": "bone",
+      "rest": [
+        -6,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 0,
+      "side": "near",
+      "phase": 0,
+      "role": "lower"
+    },
+    {
+      "id": "leg-0-foot",
+      "name": "近侧第 1 腿 · 脚端",
+      "parent": "leg-0-lower",
+      "shape": "foot",
+      "rest": [
+        -21,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 0,
+      "side": "near",
+      "phase": 0,
+      "role": "foot"
+    },
+    {
+      "id": "leg-1-upper",
+      "name": "远侧第 1 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        -21,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 1,
+      "side": "far",
+      "phase": 0.5,
+      "role": "upper"
+    },
+    {
+      "id": "leg-1-lower",
+      "name": "远侧第 1 腿 · 下段",
+      "parent": "leg-1-upper",
+      "shape": "bone",
+      "rest": [
+        -6,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 1,
+      "side": "far",
+      "phase": 0.5,
+      "role": "lower"
+    },
+    {
+      "id": "leg-1-foot",
+      "name": "远侧第 1 腿 · 脚端",
+      "parent": "leg-1-lower",
+      "shape": "foot",
+      "rest": [
+        -21,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 1,
+      "side": "far",
+      "phase": 0.5,
+      "role": "foot"
+    },
+    {
+      "id": "leg-2-upper",
+      "name": "近侧第 2 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        -7,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 2,
+      "side": "near",
+      "phase": 0.5,
+      "role": "upper"
+    },
+    {
+      "id": "leg-2-lower",
+      "name": "近侧第 2 腿 · 下段",
+      "parent": "leg-2-upper",
+      "shape": "bone",
+      "rest": [
+        8,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 2,
+      "side": "near",
+      "phase": 0.5,
+      "role": "lower"
+    },
+    {
+      "id": "leg-2-foot",
+      "name": "近侧第 2 腿 · 脚端",
+      "parent": "leg-2-lower",
+      "shape": "foot",
+      "rest": [
+        -7,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 2,
+      "side": "near",
+      "phase": 0.5,
+      "role": "foot"
+    },
+    {
+      "id": "leg-3-upper",
+      "name": "远侧第 2 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        -7,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 3,
+      "side": "far",
+      "phase": 0,
+      "role": "upper"
+    },
+    {
+      "id": "leg-3-lower",
+      "name": "远侧第 2 腿 · 下段",
+      "parent": "leg-3-upper",
+      "shape": "bone",
+      "rest": [
+        8,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 3,
+      "side": "far",
+      "phase": 0,
+      "role": "lower"
+    },
+    {
+      "id": "leg-3-foot",
+      "name": "远侧第 2 腿 · 脚端",
+      "parent": "leg-3-lower",
+      "shape": "foot",
+      "rest": [
+        -7,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 3,
+      "side": "far",
+      "phase": 0,
+      "role": "foot"
+    },
+    {
+      "id": "leg-4-upper",
+      "name": "近侧第 3 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        7,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 4,
+      "side": "near",
+      "phase": 0,
+      "role": "upper"
+    },
+    {
+      "id": "leg-4-lower",
+      "name": "近侧第 3 腿 · 下段",
+      "parent": "leg-4-upper",
+      "shape": "bone",
+      "rest": [
+        22,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 4,
+      "side": "near",
+      "phase": 0,
+      "role": "lower"
+    },
+    {
+      "id": "leg-4-foot",
+      "name": "近侧第 3 腿 · 脚端",
+      "parent": "leg-4-lower",
+      "shape": "foot",
+      "rest": [
+        7,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 4,
+      "side": "near",
+      "phase": 0,
+      "role": "foot"
+    },
+    {
+      "id": "leg-5-upper",
+      "name": "远侧第 3 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        7,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 5,
+      "side": "far",
+      "phase": 0.5,
+      "role": "upper"
+    },
+    {
+      "id": "leg-5-lower",
+      "name": "远侧第 3 腿 · 下段",
+      "parent": "leg-5-upper",
+      "shape": "bone",
+      "rest": [
+        22,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 5,
+      "side": "far",
+      "phase": 0.5,
+      "role": "lower"
+    },
+    {
+      "id": "leg-5-foot",
+      "name": "远侧第 3 腿 · 脚端",
+      "parent": "leg-5-lower",
+      "shape": "foot",
+      "rest": [
+        7,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 5,
+      "side": "far",
+      "phase": 0.5,
+      "role": "foot"
+    },
+    {
+      "id": "leg-6-upper",
+      "name": "近侧第 4 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        21,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 6,
+      "side": "near",
+      "phase": 0.5,
+      "role": "upper"
+    },
+    {
+      "id": "leg-6-lower",
+      "name": "近侧第 4 腿 · 下段",
+      "parent": "leg-6-upper",
+      "shape": "bone",
+      "rest": [
+        36,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 5,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 6,
+      "side": "near",
+      "phase": 0.5,
+      "role": "lower"
+    },
+    {
+      "id": "leg-6-foot",
+      "name": "近侧第 4 腿 · 脚端",
+      "parent": "leg-6-lower",
+      "shape": "foot",
+      "rest": [
+        21,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 6,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 6,
+      "side": "near",
+      "phase": 0.5,
+      "role": "foot"
+    },
+    {
+      "id": "leg-7-upper",
+      "name": "远侧第 4 腿 · 上段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        21,
+        -32
+      ],
+      "dimensions": [
+        27,
+        7
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        -110,
+        110
+      ],
+      "leg": 7,
+      "side": "far",
+      "phase": 0,
+      "role": "upper"
+    },
+    {
+      "id": "leg-7-lower",
+      "name": "远侧第 4 腿 · 下段",
+      "parent": "leg-7-upper",
+      "shape": "bone",
+      "rest": [
+        36,
+        -10
+      ],
+      "dimensions": [
+        27,
+        5
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "range": [
+        0,
+        155
+      ],
+      "leg": 7,
+      "side": "far",
+      "phase": 0,
+      "role": "lower"
+    },
+    {
+      "id": "leg-7-foot",
+      "name": "远侧第 4 腿 · 脚端",
+      "parent": "leg-7-lower",
+      "shape": "foot",
+      "rest": [
+        21,
+        0
+      ],
+      "dimensions": [
+        12,
+        4
+      ],
+      "layer": 0,
+      "material": "#e1a34c",
+      "socket": "pivot",
+      "leg": 7,
+      "side": "far",
+      "phase": 0,
+      "role": "foot"
+    }
+  ],
+  "clips": [
+    "walk",
+    "extend"
+  ],
+  "status": "draft",
+  "qa": {
+    "technical": "untested",
+    "visual": "pending"
+  },
+  "source": {
+    "kind": "procedural",
+    "description": "可编辑参数化零件；无外部图像或 AI 美术生成"
+  },
+  "actionDesign": {
+    "title": "蜘蛛 · 动作设计 v1",
+    "scope": "零件 → 局部组合 → 完整角色",
+    "assembly": "每个零件保留稳定 ID；通过父级连接组装。爆炸图位移只用于检视，不写入动作数据。",
+    "actions": [
+      {
+        "id": "extend",
+        "name": "单腿收拢与伸展",
+        "participants": "选中腿的上段、下段和脚端",
+        "duration": 1,
+        "keyPoses": [
+          "0% 收拢",
+          "25% 逐渐伸展",
+          "50% 最大伸展",
+          "75% 收回",
+          "100% 回到初始姿势"
+        ],
+        "ranges": "膝关节 0–155°；髋关节 ±110°",
+        "contact": "局部伸展为悬空测试，不应用落地锁脚规则",
+        "acceptance": [
+          "固定连接点",
+          "骨段长度不漂移",
+          "伸展幅度达到至少 10 px",
+          "循环接缝连续"
+        ],
+        "failure": "关节超限、零件掉落、脚端不动、骨段拉长"
+      },
+      {
+        "id": "walk",
+        "name": "完整步态",
+        "participants": [
+          "body",
+          "head",
+          "leg-0-upper",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-lower",
+          "leg-1-foot",
+          "leg-2-upper",
+          "leg-2-lower",
+          "leg-2-foot",
+          "leg-3-upper",
+          "leg-3-lower",
+          "leg-3-foot",
+          "leg-4-upper",
+          "leg-4-lower",
+          "leg-4-foot",
+          "leg-5-upper",
+          "leg-5-lower",
+          "leg-5-foot",
+          "leg-6-upper",
+          "leg-6-lower",
+          "leg-6-foot",
+          "leg-7-upper",
+          "leg-7-lower",
+          "leg-7-foot"
+        ],
+        "duration": 1,
+        "keyPoses": [
+          "0% A 组支撑、B 组摆动",
+          "25% 摆动脚到达最高点",
+          "50% 支撑组交换",
+          "75% 另一组摆动",
+          "100% 返回循环起点"
+        ],
+        "timing": "交替四足组；先验证每条腿伸展，再验证协调",
+        "ranges": "固定两段腿长；脚离地高度由物种预设控制",
+        "contact": "前半周期支撑；世界坐标脚端固定。后半周期抬脚回摆。",
+        "acceptance": [
+          "每条腿完整经历支撑与摆动",
+          "按预设保持组间相位",
+          "支撑脚不滑动",
+          "脚端不穿地",
+          "头尾循环连续"
+        ],
+        "secondary": "八条腿各有髋、膝、脚端；示意步态不是物种级生物仿真"
+      }
+    ],
+    "layers": {
+      "component": "每条腿 / 每个身体节段单独检查",
+      "subassembly": "选中零件及其子树检视和回放",
+      "character": "全角色步态与地面关系"
+    },
+    "visualReview": [
+      "正常速度与 0.25 倍速观察",
+      "近远侧身份、轮廓重叠与动作自然度",
+      "目标游戏尺寸及实际场景验证"
+    ],
+    "limitations": [
+      "程序化二维示意资产，非照片或原画自动拆分",
+      "运动学测试不等于生物真实性或用户美术验收",
+      "没有实现 Spine / Blender 导出适配器"
+    ]
+  }
+}

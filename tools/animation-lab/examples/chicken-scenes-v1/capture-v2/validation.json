@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "technical": {
+    "zipFiles": 75,
+    "pngFrames": 72,
+    "decodedFrames": 73,
+    "resolution": [
+      1280,
+      720
+    ],
+    "durationSeconds": 5.994692,
+    "maxPTSGapSeconds": 0.09300000000000008,
+    "monotonicPTS": true,
+    "sourceFrameOrderMAEMax": 2.393613642939815,
+    "sourceFrameOrderMAEMean": 1.4522314654063786,
+    "allPNGHashesMatch": true,
+    "terminalHold": "one additional duplicate image, not another action pose"
+  },
+  "visual": {
+    "state": "failed",
+    "observations": [
+      {
+        "frame": 43,
+        "timeSeconds": 3.5,
+        "issue": "chicken-1 peck beak visibly stays above ground, stance leg and thigh attachment require review",
+        "evidence": "frames/043.png"
+      },
+      {
+        "scope": "flock walk",
+        "issue": "actors use in-place walk and a small offset; scene world translation does not yet preserve actual stance locking"
+      }
+    ],
+    "sourceArt": "chicken-side-v3 not approved",
+    "framing": "constant scale 1.7 and camera; selected raw full frames intact; complete boundary envelope not yet independently audited"
+  },
+  "previousCandidate": {
+    "path": "../capture-v1",
+    "issue": "three actors too small for readable final-film composition; retained"
+  },
+  "receipt": {
+    "requestedFPS": 12,
+    "requestedDuration": 6,
+    "requestedFrameCount": 72,
+    "capturedFrameCount": 72,
+    "actualElapsedSeconds": 6.064799999982118,
+    "terminalRequestElapsedMs": 6000.5999999940395,
+    "cancelled": false,
+    "encodingTiming": "captureStream(0) + one requestFrame per immutable PNG bitmap, plus terminal hold; MediaRecorder PTS are real wall-clock and require FFprobe verification",
+    "timingSamples": [
+      {
+        "requestedTimeMs": 0,
+        "actualRequestElapsedMs": 5.799999982118607,
+        "latenessMs": 5.799999982118607
+      },
+      {
+        "requestedTimeMs": 83.33333333333333,
+        "actualRequestElapsedMs": 91.19999998807907,
+        "latenessMs": 7.8666666547457424
+      },
+      {
+        "requestedTimeMs": 166.66666666666666,
+        "actualRequestElapsedMs": 175.09999999403954,
+        "latenessMs": 8.433333327372878
+      },
+      {
+        "requestedTimeMs": 250,
+        "actualRequestElapsedMs": 255.19999998807907,
+        "latenessMs": 5.199999988079071
+      },
+      {
+        "requestedTimeMs": 333.3333333333333,
+        "actualRequestElapsedMs": 341.19999998807907,
+        "latenessMs": 7.866666654745757
+      },
+      {
+        "requestedTimeMs": 416.6666666666667,
+        "actualRequestElapsedMs": 427.5,
+        "latenessMs": 10.833333333333314
+      },
+      {
+        "requestedTimeMs": 500,
+        "actualRequestElapsedMs": 506.7999999821186,
+        "latenessMs": 6.799999982118607
+      },
+      {
+        "requestedTimeMs": 583.3333333333334,
+        "actualRequestElapsedMs": 595.9000000059605,
+        "latenessMs": 12.566666672627093
+      },
+      {
+        "requestedTimeMs": 666.6666666666666,
+        "actualRequestElapsedMs": 674.2999999821186,
+        "latenessMs": 7.633333315451978
+      },
+      {
+        "requestedTimeMs": 750,
+        "actualRequestElapsedMs": 756.5999999940395,
+        "latenessMs": 6.5999999940395355
+      },
+      {
+        "requestedTimeMs": 833.3333333333334,
+        "actualRequestElapsedMs": 841.5,
+        "latenessMs": 8.166666666666629
+      },
+      {
+        "requestedTimeMs": 916.6666666666666,
+        "actualRequestElapsedMs": 934,
+        "latenessMs": 17.33333333333337
+      },
+      {
+        "requestedTimeMs": 1000,
+        "actualRequestElapsedMs": 1007.5999999940395,
+        "latenessMs": 7.5999999940395355
+      },
+      {
+        "requestedTimeMs": 1083.3333333333333,
+        "actualRequestElapsedMs": 1096.4000000059605,
+        "latenessMs": 13.066666672627207
+      },
+      {
+        "requestedTimeMs": 1166.6666666666667,
+        "actualRequestElapsedMs": 1175.699999988079,
+        "latenessMs": 9.033333321412329
+      },
+      {
+        "requestedTimeMs": 1250,
+        "actualRequestElapsedMs": 1266.5999999940395,
+        "latenessMs": 16.599999994039536
+      },
+      {
+        "requestedTimeMs": 1333.3333333333333,
+        "actualRequestElapsedMs": 1341.199999988079,
+        "latenessMs": 7.8666666547458135
+      },
+      {
+        "requestedTimeMs": 1416.6666666666667,
+        "actualRequestElapsedMs": 1433.5,
+        "latenessMs": 16.833333333333258
+      },
+      {
+        "requestedTimeMs": 1500,
+        "actualRequestElapsedMs": 1508,
+        "latenessMs": 8
+      },
+      {
+        "requestedTimeMs": 1583.3333333333333,
+        "actualRequestElapsedMs": 1600.199999988079,
+        "latenessMs": 16.866666654745814
+      },
+      {
+        "requestedTimeMs": 1666.6666666666667,
+        "actualRequestElapsedMs": 1675.699999988079,
+        "latenessMs": 9.033333321412329
+      },
+      {
+        "requestedTimeMs": 1750,
+        "actualRequestElapsedMs": 1766,
+        "latenessMs": 16
+      },
+      {
+        "requestedTimeMs": 1833.3333333333333,
+        "actualRequestElapsedMs": 1842.4000000059605,
+        "latenessMs": 9.066666672627207
+      },
+      {
+        "requestedTimeMs": 1916.6666666666667,
+        "actualRequestElapsedMs": 1934.2999999821186,
+        "latenessMs": 17.633333315451864
+      },
+      {
+        "requestedTimeMs": 2000,
+        "actualRequestElapsedMs": 2007.9000000059605,
+        "latenessMs": 7.9000000059604645
+      },
+      {
+        "requestedTimeMs": 2083.3333333333335,
+        "actualRequestElapsedMs": 2099.699999988079,
+        "latenessMs": 16.366666654745586
+      },
+      {
+        "requestedTimeMs": 2166.6666666666665,
+        "actualRequestElapsedMs": 2175.9000000059605,
+        "latenessMs": 9.23333333929395
+      },
+      {
+        "requestedTimeMs": 2250,
+        "actualRequestElapsedMs": 2259.699999988079,
+        "latenessMs": 9.699999988079071
+      },
+      {
+        "requestedTimeMs": 2333.3333333333335,
+        "actualRequestElapsedMs": 2341.199999988079,
+        "latenessMs": 7.866666654745586
+      },
+      {
+        "requestedTimeMs": 2416.6666666666665,
+        "actualRequestElapsedMs": 2427.199999988079,
+        "latenessMs": 10.533333321412556
+      },
+      {
+        "requestedTimeMs": 2500,
+        "actualRequestElapsedMs": 2508,
+        "latenessMs": 8
+      },
+      {
+        "requestedTimeMs": 2583.3333333333335,
+        "actualRequestElapsedMs": 2593.9000000059605,
+        "latenessMs": 10.56666667262698
+      },
+      {
+        "requestedTimeMs": 2666.6666666666665,
+        "actualRequestElapsedMs": 2674.5,
+        "latenessMs": 7.833333333333485
+      },
+      {
+        "requestedTimeMs": 2750,
+        "actualRequestElapsedMs": 2760.199999988079,
+        "latenessMs": 10.199999988079071
+      },
+      {
+        "requestedTimeMs": 2833.3333333333335,
+        "actualRequestElapsedMs": 2841.5,
+        "latenessMs": 8.166666666666515
+      },
+      {
+        "requestedTimeMs": 2916.6666666666665,
+        "actualRequestElapsedMs": 2934.699999988079,
+        "latenessMs": 18.033333321412556
+      },
+      {
+        "requestedTimeMs": 3000,
+        "actualRequestElapsedMs": 3008.5999999940395,
+        "latenessMs": 8.599999994039536
+      },
+      {
+        "requestedTimeMs": 3083.3333333333335,
+        "actualRequestElapsedMs": 3099.2999999821186,
+        "latenessMs": 15.966666648785122
+      },
+      {
+        "requestedTimeMs": 3166.6666666666665,
+        "actualRequestElapsedMs": 3175.699999988079,
+        "latenessMs": 9.033333321412556
+      },
+      {
+        "requestedTimeMs": 3250,
+        "actualRequestElapsedMs": 3258.5,
+        "latenessMs": 8.5
+      },
+      {
+        "requestedTimeMs": 3333.3333333333335,
+        "actualRequestElapsedMs": 3341.0999999940395,
+        "latenessMs": 7.766666660706051
+      },
+      {
+        "requestedTimeMs": 3416.6666666666665,
+        "actualRequestElapsedMs": 3424.0999999940395,
+        "latenessMs": 7.43333332737302
+      },
+      {
+        "requestedTimeMs": 3500,
+        "actualRequestElapsedMs": 3507.699999988079,
+        "latenessMs": 7.699999988079071
+      },
+      {
+        "requestedTimeMs": 3583.3333333333335,
+        "actualRequestElapsedMs": 3597.199999988079,
+        "latenessMs": 13.866666654745586
+      },
+      {
+        "requestedTimeMs": 3666.6666666666665,
+        "actualRequestElapsedMs": 3676.5999999940395,
+        "latenessMs": 9.93333332737302
+      },
+      {
+        "requestedTimeMs": 3750,
+        "actualRequestElapsedMs": 3762.9000000059605,
+        "latenessMs": 12.900000005960464
+      },
+      {
+        "requestedTimeMs": 3833.3333333333335,
+        "actualRequestElapsedMs": 3842.5,
+        "latenessMs": 9.166666666666515
+      },
+      {
+        "requestedTimeMs": 3916.6666666666665,
+        "actualRequestElapsedMs": 3927.699999988079,
+        "latenessMs": 11.033333321412556
+      },
+      {
+        "requestedTimeMs": 4000,
+        "actualRequestElapsedMs": 4008.7999999821186,
+        "latenessMs": 8.799999982118607
+      },
+      {
+        "requestedTimeMs": 4083.333333333333,
+        "actualRequestElapsedMs": 4098.9000000059605,
+        "latenessMs": 15.566666672627434
+      },
+      {
+        "requestedTimeMs": 4166.666666666667,
+        "actualRequestElapsedMs": 4174.799999982119,
+        "latenessMs": 8.133333315451637
+      },
+      {
+        "requestedTimeMs": 4250,
+        "actualRequestElapsedMs": 4268,
+        "latenessMs": 18
+      },
+      {
+        "requestedTimeMs": 4333.333333333333,
+        "actualRequestElapsedMs": 4342.5999999940395,
+        "latenessMs": 9.266666660706505
+      },
+      {
+        "requestedTimeMs": 4416.666666666667,
+        "actualRequestElapsedMs": 4429.4000000059605,
+        "latenessMs": 12.733333339293495
+      },
+      {
+        "requestedTimeMs": 4500,
+        "actualRequestElapsedMs": 4508.5,
+        "latenessMs": 8.5
+      },
+      {
+        "requestedTimeMs": 4583.333333333333,
+        "actualRequestElapsedMs": 4597.5,
+        "latenessMs": 14.16666666666697
+      },
+      {
+        "requestedTimeMs": 4666.666666666667,
+        "actualRequestElapsedMs": 4673.5,
+        "latenessMs": 6.83333333333303
+      },
+      {
+        "requestedTimeMs": 4750,
+        "actualRequestElapsedMs": 4764.199999988079,
+        "latenessMs": 14.199999988079071
+      },
+      {
+        "requestedTimeMs": 4833.333333333333,
+        "actualRequestElapsedMs": 4839.5,
+        "latenessMs": 6.16666666666697
+      },
+      {
+        "requestedTimeMs": 4916.666666666667,
+        "actualRequestElapsedMs": 4932.199999988079,
+        "latenessMs": 15.533333321412101
+      },
+      {
+        "requestedTimeMs": 5000,
+        "actualRequestElapsedMs": 5005.4000000059605,
+        "latenessMs": 5.4000000059604645
+      },
+      {
+        "requestedTimeMs": 5083.333333333333,
+        "actualRequestElapsedMs": 5097.9000000059605,
+        "latenessMs": 14.566666672627434
+      },
+      {
+        "requestedTimeMs": 5166.666666666667,
+        "actualRequestElapsedMs": 5171.699999988079,
+        "latenessMs": 5.033333321412101
+      },
+      {
+        "requestedTimeMs": 5250,
+        "actualRequestElapsedMs": 5263.699999988079,
+        "latenessMs": 13.699999988079071
+      },
+      {
+        "requestedTimeMs": 5333.333333333333,
+        "actualRequestElapsedMs": 5338.299999982119,
+        "latenessMs": 4.966666648785576
+      },
+      {
+        "requestedTimeMs": 5416.666666666667,
+        "actualRequestElapsedMs": 5423.299999982119,
+        "latenessMs": 6.633333315451637
+      },
+      {
+        "requestedTimeMs": 5500,
+        "actualRequestElapsedMs": 5505.299999982119,
+        "latenessMs": 5.299999982118607
+      },
+      {
+        "requestedTimeMs": 5583.333333333333,
+        "actualRequestElapsedMs": 5589,
+        "latenessMs": 5.66666666666697
+      },
+      {
+        "requestedTimeMs": 5666.666666666667,
+        "actualRequestElapsedMs": 5671.4000000059605,
+        "latenessMs": 4.733333339293495
+      },
+      {
+        "requestedTimeMs": 5750,
+        "actualRequestElapsedMs": 5764.5999999940395,
+        "latenessMs": 14.599999994039536
+      },
+      {
+        "requestedTimeMs": 5833.333333333333,
+        "actualRequestElapsedMs": 5838.5999999940395,
+        "latenessMs": 5.266666660706505
+      },
+      {
+        "requestedTimeMs": 5916.666666666667,
+        "actualRequestElapsedMs": 5925.299999982119,
+        "latenessMs": 8.633333315451637
+      }
+    ]
+  }
+}

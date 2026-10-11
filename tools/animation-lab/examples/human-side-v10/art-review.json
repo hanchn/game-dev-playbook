@@ -1,0 +1,18 @@
+{
+  "assetId": "human-side-v10",
+  "visual": "failed",
+  "userAccepted": false,
+  "failures": [
+    {
+      "joint": "neck/head",
+      "observed": "用户连续指出脖子异常；独立圆柱颈件与头部肉块连接不自然",
+      "evidence": "../human-v10-neck-12.png"
+    },
+    {
+      "joint": "pelvis/thigh",
+      "observed": "臀部像圆垫，最大屈髋时出现拼片边缘",
+      "evidence": "../human-v10-hip-folded.png"
+    }
+  ],
+  "technicalResultsRemainHistorical": true
+}

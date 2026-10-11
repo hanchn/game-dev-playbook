@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise local EDIT of reference1 passing frame: KEEP the head/face, body/arms/hands, near support leg and common1254camera EXACTLY AS DRAWN. Repair ONLY FAR BACKGROUND LOWERLEG/FOOT passing visibility.\nThe far thigh is the SMALL background yellow thigh visible on the RIGHT of the foreground big thigh, ending in the FAR knee around source x940,y790. It is correctly advancing forward. Its far calf should run DOWN from that knee to a LIFTED pink foot around x895,y1000 on the RIGHT/front of the near support shin. In reference1 the far pink foot incorrectly remains folded behind the hip on LEFT around x565,y875; REMOVE that old left far foot and connected wrong fold, then redraw ONE continuous far calf from the far knee down to the new airborne RIGHT foot. This is the permanent BACKGROUND far leg, not an extra3rdleg or a swap with big foreground near support thigh.\nThe BIG FOREGROUND near thigh and straight support shin remain untouched, sole contacts sameground y1192. Do not change near foot, head/body registration, open near hand in front and curled far hand behind. Exactly TWO legs, TWO arms, no ghost/floating ankle. Maintain yellow muscle proportions and pink webbedfoot identity, no severe length change. Background calf can hide partially behind foreground leg, but new lifted foot must visibly clear on RIGHT. Transparentalpha, no shadows/marks, fixedcamera/texture. Reference2 next toeoff shows same permanent far raised leg identity only. Output one clean corrected passing sprite.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-93de17a4-618b-4d40-9e40-d7efcfa7394d.png",
+  "generatedFileSha256": "3d22f36af149ff6e02c7b32eca5cc63036bfad31035f3f4b4f7b23f47c95784a",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-0378dbfe-e9e4-4157-8fcf-ba95dc0136bd.png",
+      "sha256": "bd7839bffcd8f75947c00fea4326dd2359856fee58eb1828e83042d83c30f12c"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+      "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+    }
+  ],
+  "phase": 0.5,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      336,
+      93,
+      806,
+      1114
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Far foot now moves down/front under far knee, airborne."
+  }
+}

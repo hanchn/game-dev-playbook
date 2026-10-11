@@ -1,0 +1,103 @@
+{
+  "schema": "isometric-map-receipt/v1",
+  "algorithm": "kenney-2d-continuous-ground-planner4-river-textures-v8",
+  "config": {
+    "seed": "漫游-2026",
+    "scale": 256,
+    "seaLevel": 0.45,
+    "roughness": 0.45,
+    "vegetation": 0.65
+  },
+  "style": "desert",
+  "region": {
+    "x": 64,
+    "y": -80,
+    "width": 32,
+    "height": 32
+  },
+  "files": [
+    {
+      "path": "sprites/afd246b92a88-landscapeTiles_066.png",
+      "bytes": 740,
+      "sha256": "afd246b92a8818eab8281cc69906ef19942450df78790985fde07d9587fd333d"
+    },
+    {
+      "path": "sprites/4787623bb7cc-landscapeTiles_059.png",
+      "bytes": 1012,
+      "sha256": "4787623bb7cccd3f733df46bfe67fd9c1a8eee2729f1b9f41c64fc118791f66f"
+    },
+    {
+      "path": "sprites/359d0e665493-tree_palm_NE.png",
+      "bytes": 3649,
+      "sha256": "359d0e665493de31e7e56929c18a87b4344627a70a13ffeffd78ee518c7cc4bc"
+    },
+    {
+      "path": "sprites/63f58fe6a436-cactus_tall_NE.png",
+      "bytes": 2423,
+      "sha256": "63f58fe6a436cebaadb63c655524486117210ba3ae548718d4e4cd25371dea48"
+    },
+    {
+      "path": "scene.png",
+      "bytes": 316280,
+      "sha256": "cc06bed736e3f28d071b0231e1729f635ab18649feb2b03d63e0fc321ed65929"
+    },
+    {
+      "path": "scene.json",
+      "bytes": 482114,
+      "sha256": "d6745699feaaa7da2950dae60ca48023f6ef2fdc0abfe2f7b4935cacff5bf1a1"
+    },
+    {
+      "path": "collision.json",
+      "bytes": 36305,
+      "sha256": "fc56ba3f36d9657f46bb149f58e7326b110c7b7e5aaf1cfee3f833fefb3a99fc"
+    },
+    {
+      "path": "map.tmj",
+      "bytes": 41077,
+      "sha256": "2ea57d6943047faf76c2498c243a5d2c5db67d8a50c0e7c06fd75f8f45a3a2aa"
+    },
+    {
+      "path": "source-kenney-nature-kit.json",
+      "bytes": 639672,
+      "sha256": "8fd1b73584a76277766645ce685d08249e966a15d83a394a8ed32384bf63714c"
+    },
+    {
+      "path": "source-kenney-isometric-tiles-landscape.json",
+      "bytes": 23068,
+      "sha256": "1b1660f805b83e4bf794a1e217da4780899b7dba502c1ebb9b3f1d0edf035e0f"
+    },
+    {
+      "path": "source-kenney-isometric-tiles-buildings.json",
+      "bytes": 23266,
+      "sha256": "bd216d8447a17ab9cd0724f65f8520ef03e311989326face73fa0faf7fd36008"
+    },
+    {
+      "path": "source-kenney-hexagon-kit.json",
+      "bytes": 66261,
+      "sha256": "120531182913bf0fe99218a74a6d850cd7dd936c9608e10aad6ad4fff30f6581"
+    },
+    {
+      "path": "source-derived-isometric-castle.json",
+      "bytes": 2508,
+      "sha256": "6a316a01416a4aaba41229d5145cd2547c862abeaebd251cd02aba0768924584"
+    },
+    {
+      "path": "source-derived-isometric-nature.json",
+      "bytes": 6293,
+      "sha256": "86290f06854ddefa1ec845bf1aae7704178d5891bbe3d962aa8023736179de3d"
+    },
+    {
+      "path": "source-polyhaven-pbr.json",
+      "bytes": 8149,
+      "sha256": "641a9841961f89d6d21f3c80f10d1e83cc440400ffa4327deee489b6a62e1fab"
+    }
+  ],
+  "qa": {
+    "visualAccepted": false,
+    "engineImported": false,
+    "tiledObjectAlignmentPending": true,
+    "castleSourcePreviewLowResolution": false,
+    "castleSpriteDerivedFromOriginalModels": true
+  },
+  "codec": "@napi-rs/canvas with PNG-signature pngjs decode; original source metadata bytes retained"
+}

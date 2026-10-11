@@ -1,0 +1,80 @@
+{
+  "schema": "styled-game-map-export/v1",
+  "algorithm": "wangscape-top-two-registered-stochastic-textures-v2",
+  "style": "scifi",
+  "config": {
+    "seed": "漫游-2026",
+    "scale": 96,
+    "seaLevel": 0.45,
+    "roughness": 0.45,
+    "vegetation": 0.65
+  },
+  "region": {
+    "x": 224,
+    "y": -220,
+    "width": 32,
+    "height": 24
+  },
+  "pixelsPerTile": 32,
+  "outputDir": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi",
+  "width": 1024,
+  "height": 768,
+  "files": [
+    {
+      "name": "terrain.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi/terrain.png",
+      "bytes": 1843721,
+      "sha256": "93eab84e66b9bb96468c4a96f8ecf4db64d8765188b9db1c9d0e02cd6ff50cae"
+    },
+    {
+      "name": "decorations.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi/decorations.png",
+      "bytes": 422549,
+      "sha256": "50ecdebb052a8dad8f7dfbf8072dd2617a09877865b26196ab9b88d88ab9bf67"
+    },
+    {
+      "name": "scene.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi/scene.png",
+      "bytes": 1958763,
+      "sha256": "55b238db9104548446b8d7107f753ef610bbd4ea89e329c66b5b5b2afd97a86f"
+    },
+    {
+      "name": "atlas.png",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi/atlas.png",
+      "bytes": 3203695,
+      "sha256": "15217e98a3fc7a8233ad566d70136522f58525db5ca6c86af647f22eacd99d31"
+    },
+    {
+      "name": "scene.json",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi/scene.json",
+      "bytes": 115214,
+      "sha256": "3b8bf2f5b437241eefa1a5e31d98ccd0967401d50092c2bc0b3f9d19b53aa93a"
+    },
+    {
+      "name": "map.tmj",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi/map.tmj",
+      "bytes": 66742,
+      "sha256": "74ab9b634752c68db143fbc56bd950b327c6911be6dca5f77e64b76271507df8"
+    },
+    {
+      "name": "source.json",
+      "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/map-scenes-v1/scifi/source.json",
+      "bytes": 5945,
+      "sha256": "d753c08870747116ab571667777540c1a947d8a84e63c6626d371a5d0ee71b78"
+    }
+  ],
+  "status": "generated-candidate",
+  "visualStatus": "pending",
+  "engineImported": false,
+  "notes": [
+    "Tiled map contains actual terrain/decor PNG image layers and terrain/prop collision objects.",
+    "Map is generated from a seed, not real geographic elevation.",
+    "Terrain-only traversal analysis excludes prop colliders; validate actor navigation in the actual game."
+  ],
+  "codec": {
+    "package": "pngjs",
+    "implementation": "PNG.sync.read/write",
+    "runtime": "project node_modules or Codex bundled runtime",
+    "testedVersion": "7.0.0"
+  }
+}

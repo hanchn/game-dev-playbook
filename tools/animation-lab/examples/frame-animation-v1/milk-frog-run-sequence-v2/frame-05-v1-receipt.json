@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "ONE distinct clean inbetween frame5/12,41.67%, FAR pre-landing. Reference1 previous flight sprite, reference2 upcoming corrected50% FAR contact. Preserve exact1254 fixedcamera/scale, headshape/gaze/joyfulface/yellowwhitepink material and near OPEN/front hand plus far CURLED/backhand.\nThe permanent BACKGROUND FAR leg extends FORWARD/right further than reference1, its knee straighter and pink foot lowers close to commonground y1192 but stays AIRBORNE at sole y1168 (24px before contact). Far toes point forward/right, ankle neutral ready to land; no ground penetration or current footstillhigh at1110. Permanent FOREGROUND NEAR big thigh stays BACK/LEFT with bent knee/recovering calf and near footraised atleft abouty870. Near recovery thigh occludes far hip root, bothlimbs distinctlyvisible. Do not flip big foreground thigh forward; reference2 has correct leftnear/rightfar identity.\nNear open arm begins moving back slightly fromfront extreme; far curled arm begins moving forward but still behindtorso. Handstateandfinger/toe anatomy constant. Exactlytwoarms/twolegs, no floating/pinkghosts. No change head/torso proportions/texture; face stable with no blink. Full silhouette32px safeedge, transparentalpha/no shadow/floor/text. Output single ACTUAL clean prelanding transition, different from both neighbors.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-83a10fc0-12be-4a21-98f3-2b53533af8ae.png",
+  "generatedFileSha256": "e2241087da407cbd4c108af35c855edd4e135d66a92216a6c9b6ac51d27aa265",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba654e65-9bc9-41dd-8212-f7fb5432a6eb.png",
+      "sha256": "56d7e074ba758d96d672866da707c085ebcba7ca005dbb711d535c4b54bf1cea"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+      "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+    }
+  ],
+  "phase": 1.25,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      209,
+      91,
+      993,
+      1070
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Far foot descends toward ground; source actual alpha sole must be measured."
+  }
+}

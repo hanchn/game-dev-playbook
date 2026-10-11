@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "version": "chicken-scene-v1",
+  "testedAt": "2026-10-11T16:59:28.251Z",
+  "route": "/lab/chicken-scene",
+  "source": {
+    "atlas": "/art/chicken-side-parts-v3.png",
+    "sha256": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de"
+  },
+  "functional": {
+    "actualUI": [
+      "3 actors independent phases, pause",
+      "12 actors switch",
+      "native browser PNG download",
+      "workshop → scene → workshop route link",
+      "actual scene JSON download"
+    ],
+    "export": {
+      "file": "browser-twelve-chickens.png",
+      "width": 1280,
+      "height": 720,
+      "json": "browser-flock.json"
+    },
+    "technicalTests": 6
+  },
+  "visual": {
+    "status": "partial",
+    "observations": [
+      "Actual twelve-actor export inspected: all twelve heads, tails and toes remain inside fixed canvas.",
+      "Opposite-facing instances retain IDs and show different walking/pecking/rest states.",
+      "Source v3 neck, wings, gait and peck grounding are not approved by this scene test."
+    ],
+    "pending": [
+      "hen source and egg/nest materials",
+      "open/closed beak and throat states",
+      "fight contacts, feather source and effect rendering",
+      "video export integration and long playback",
+      "full action envelopes and opaque per-joint source review"
+    ]
+  },
+  "scope": "Multi-actor flock UI/PNG and choreography core; dedicated biological actions remain unrendered",
+  "regression": {
+    "file": "../development-tools/current-regression-v5.log",
+    "passed": 215,
+    "total": 215,
+    "scope": "technical snapshot; subsequent source edits require retest"
+  },
+  "implementation": {
+    "chicken-scene-core.mjs": "b037a6028dca50e9b4b850fe2e94ffd078379e4d6f644658692c3512c0a8086e",
+    "public/chicken-scene.html": "fefda0c843424eb8dfaf2a66ed0539b9bfceb72ac65e532375a075f2f7bf5d47",
+    "public/chicken-scene.mjs": "bf26e7ba34f83fa56655d07b39a331d8f97f55bc15121bfdfb9f0330418a18e7"
+  }
+}

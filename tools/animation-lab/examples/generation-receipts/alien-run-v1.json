@@ -1,0 +1,19 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Asset type: production transparent game sprite animation sheet. Input image is the identity reference, NOT a pose to repeat. Preserve this exact alien explorer: large elongated speckled beige bald cranium, huge blue eye, small friendly face, slender adult alien build, olive sleeveless open expedition vest over cream shirt, brown cargo trousers with pocket and belt, dark brown rugged lace-up boots. Keep consistent face, cranium shape, head/body ratio, clothing details, boot size, illumination and render quality in EVERY cell. STRICT SIDE PROFILE facing RIGHT, orthographic fixed camera, no perspective rotation, both near and far limbs anatomically complete. Actual alpha transparency. No scenery, shadows, labels, gridlines, borders or text.\nLayout: exactly 8 chronological frames in a 4-column × 2-row equal-cell grid, row-major order. Each full character centered at same x in its own cell, identical pixels-per-unit scale, consistent planted sole baseline 88% down each cell, ample transparent padding above head and beside limbs. Every figure entirely within its own cell. Intended sheet 2048×1536. Cinematic-quality detailed 3D render material with smooth coherent anatomy, no cutout joints, no joint balls, no floating hands or boots.\nAction: one seamless FAST RUN cycle in place at even 1/8-cycle intervals. Frames: 1 right/near thigh forward high knee, left/far leg stretched behind toe-off, opposite arm forward; 2 right foot lowers towards contact and left heel folds high towards hip; 3 right foot contact under center of mass while left knee passes forward, arms crossing mid-swing; 4 right leg drives backwards and left thigh reaches forward high knee, BOTH legs visibly distinct; 5 exact mirrored gait of frame1 with left/far thigh forward and right/near leg behind; 6 left foot lowers and right heel folds; 7 left foot contact under center of mass and right knee passes; 8 left drives backwards and right thigh reaches high knee, transitions smoothly into frame1. Natural slight forward lean, elbows ~90deg, fists lightly closed, hands swing alongside ribs and hip not across face, meaningful knee lift and heel recovery. Visible reciprocal far limb action. Do not duplicate first frame at the end. Do not render eight variations of the same running pose.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a126a8-4d56-7ba1-a63e-b73e68d63528/exec-9d3bd9b3-42c0-4e72-8f6a-58f5a4e501b0.png",
+  "generatedFileSha256": "e3c8aad2bfb59c90f4e625467adf871623c575d7bd6fd7475825c741f1284bf8",
+  "projectFile": "public/frame-animation-assets/alien-run-v1.png",
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "count": 8
+  },
+  "qa": {
+    "visual": "failed",
+    "observations": [
+      "远近腿的第二半周期没有清晰互换，摆臂方向重复",
+      "头部和服装基本保持，镜头出现少量三分之二侧面漂移"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+✔ CLI generate/edit/validate/export data and embedded SVG; bad loop exits 2 (356.749667ms)
+✔ current human  source poses round-trip and preserve joints (51.669583ms)
+✔ current chicken  source poses round-trip and preserve joints (6.929208ms)
+✔ current dinosaur  source poses round-trip and preserve joints (13.733875ms)
+✔ current horse  source poses round-trip and preserve joints (7.853041ms)
+✔ current crocodile  source poses round-trip and preserve joints (11.100917ms)
+✔ current centipede  source poses round-trip and preserve joints (36.057542ms)
+✔ current snake  source poses round-trip and preserve joints (10.8755ms)
+✔ current worm  source poses round-trip and preserve joints (5.428417ms)
+✔ current spider  source poses round-trip and preserve joints (33.685791ms)
+✔ current scorpion  source poses round-trip and preserve joints (43.110917ms)
+✔ current human alien source poses round-trip and preserve joints (34.853292ms)
+✔ parent edit moves descendants, not opposite arm, and preserves all sampled bone lengths (2.612667ms)
+✔ insert preserves evaluated pose; imported edits and output stay round-trip stable (2.508584ms)
+✔ tampered length, missing node, duplicate times, NaN and wrong skin reject (0.901458ms)
+✔ an edited loop endpoint reports failed loop rather than visual approval (1.913375ms)
+✔ shared edit API is pure, rejects invalid edits and exposes MCP sampling limits (3.36525ms)
+✔ loop check detects terminal piece rotation even if socket position is unchanged (1.036292ms)
+✔ stale asset id or atlas rejects import while current source JSON passes (0.963667ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 414.761416

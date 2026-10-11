@@ -1,0 +1,36 @@
+[image2 @ 0x7a7501c280] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 71 >= 71
+{
+  "pngCount": 72,
+  "pngSHA": true,
+  "sourceSHA": true,
+  "movieSHA": true,
+  "rendererVersion": 7,
+  "choreographyVersion": 11,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 1280,
+        "height": 720,
+        "nb_read_frames": "73"
+      }
+    ],
+    "format": {
+      "duration": "5.947456"
+    }
+  },
+  "decodedVideo": {
+    "frames": 73,
+    "terminalHoldFrames": 1,
+    "rgbMAE": {
+      "mean": 1.4200674049157673,
+      "max": 2.404328342013889
+    },
+    "ptsMaxErrorSeconds": 0.004666666666666652
+  },
+  "visual": "not-reviewed",
+  "notes": "编码与字节验证不能代替原生源件和实际成片美术审核。",
+  "audio": null
+}

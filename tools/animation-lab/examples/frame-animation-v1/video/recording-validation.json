@@ -1,0 +1,48 @@
+{
+  "status": "failed",
+  "requestedFPS": 8,
+  "requestedDurationSeconds": 2,
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 512,
+        "height": 512,
+        "avg_frame_rate": "0/0",
+        "nb_read_frames": "13"
+      }
+    ],
+    "format": {
+      "duration": "1.875369"
+    }
+  },
+  "decodedVideoFrames": 13,
+  "distinctDecodedVideoFrames": 13,
+  "capturePngFrames": 16,
+  "distinctCapturePngFrames": 8,
+  "sourceFrameIndices": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    6,
+    6,
+    7,
+    7
+  ],
+  "videoSha256Verified": true,
+  "note": "MediaRecorder timestamps are wall-clock and measured, not guaranteed exact offline frame boundaries.",
+  "preliminaryStatus": "passed",
+  "failure": "Automatic captureStream missed 3 requested samples and terminated WebM duration at 1.875369 seconds rather than 2 seconds; loose initial duration threshold is not an acceptance gate.",
+  "supersededBy": "../alien-run-v1/recording-validation-manual-v2.json"
+}

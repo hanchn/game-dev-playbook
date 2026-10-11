@@ -1,0 +1,111 @@
+{
+  "scene": {
+    "scenario": "flock",
+    "actors": [
+      {
+        "id": "chicken-1",
+        "sex": "rooster",
+        "x": 273.33333333333337,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 0
+      },
+      {
+        "id": "chicken-2",
+        "sex": "rooster",
+        "x": 640,
+        "groundY": 560,
+        "facing": -1,
+        "phaseOffset": 0.73
+      },
+      {
+        "id": "chicken-3",
+        "sex": "rooster",
+        "x": 1006.6666666666667,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 1.46
+      }
+    ]
+  },
+  "current": {
+    "schemaVersion": 1,
+    "scenario": "flock",
+    "time": 0.2334,
+    "cycle": 0,
+    "duration": 6,
+    "loop": true,
+    "actors": [
+      {
+        "id": "chicken-1",
+        "sex": "rooster",
+        "x": 273.33333333333337,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 0,
+        "clip": "walk",
+        "phase": 0.2333999999999996,
+        "blend": null,
+        "offsetX": 0.4820675466879984,
+        "bodyDrop": 0,
+        "neckLift": 0,
+        "beakOpen": 0,
+        "wingLift": 0
+      },
+      {
+        "id": "chicken-2",
+        "sex": "rooster",
+        "x": 640,
+        "groundY": 560,
+        "facing": -1,
+        "phaseOffset": 0.73,
+        "clip": "walk",
+        "phase": 0.9634,
+        "blend": null,
+        "offsetX": -6.808061800080593,
+        "bodyDrop": 0,
+        "neckLift": 0,
+        "beakOpen": 0,
+        "wingLift": 0
+      },
+      {
+        "id": "chicken-3",
+        "sex": "rooster",
+        "x": 1006.6666666666667,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 1.46,
+        "clip": "walk",
+        "phase": 0.6934000000000005,
+        "blend": null,
+        "offsetX": 16.692596462362076,
+        "bodyDrop": 0,
+        "neckLift": 0,
+        "beakOpen": 0,
+        "wingLift": 0
+      }
+    ],
+    "props": [],
+    "requiredAssets": [
+      "rooster-or-hen",
+      "near-and-far-leg",
+      "both-wings"
+    ],
+    "qa": {
+      "choreography": "sampled",
+      "sourceArt": "not-reviewed",
+      "rendering": "not-reviewed"
+    }
+  },
+  "assetId": "chicken-side-v3",
+  "version": 3,
+  "atlas": "/art/chicken-side-parts-v3.png",
+  "canvas": [
+    1280,
+    720
+  ],
+  "camera": "fixed",
+  "qa": {
+    "visual": "not-approved"
+  }
+}

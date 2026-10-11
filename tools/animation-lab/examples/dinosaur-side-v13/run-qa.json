@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "length",
+      "label": "骨段长度固定",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "join",
+      "label": "逐关节连接连续",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "loop",
+      "label": "末首或动作回位",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "movement",
+      "label": "选中关节确实运动",
+      "passed": true,
+      "detail": "40.12 px"
+    },
+    {
+      "id": "support",
+      "label": "支撑脚世界坐标稳定",
+      "passed": true,
+      "detail": "0.0000 px"
+    },
+    {
+      "id": "participation",
+      "label": "每条腿参与步态",
+      "passed": true,
+      "detail": "33.25 px"
+    },
+    {
+      "id": "phase",
+      "label": "物种步态相位",
+      "passed": true,
+      "detail": "实测近远腿的相位分组"
+    }
+  ],
+  "scope": "character",
+  "clip": "run",
+  "fault": "none",
+  "samples": 97,
+  "qa": {
+    "technical": "sampled",
+    "visual": "pending"
+  }
+}

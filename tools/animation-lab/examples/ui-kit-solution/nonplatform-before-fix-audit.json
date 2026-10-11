@@ -1,0 +1,199 @@
+{
+  "schema": "orchestrator-independent-audit/v1",
+  "testedAt": "2026-10-11T14:38:12.024Z",
+  "task": {
+    "title": "三色棋盘 · 独立技能测试",
+    "engine": "Godot 2D",
+    "genre": "puzzle",
+    "platform": "mobile",
+    "coreLoop": [
+      "观察本局目标",
+      "交换相邻棋子",
+      "消除三连并更新目标",
+      "在20步内收集12枚蓝色棋子"
+    ],
+    "objective": {
+      "description": "收集12枚蓝色棋子",
+      "event": "puzzle.blue_goal_completed",
+      "condition": {
+        "blueCollectedAtLeast": 12
+      }
+    },
+    "failure": {
+      "description": "20步耗尽且蓝色棋子不足12枚",
+      "event": "puzzle.moves_exhausted",
+      "condition": {
+        "movesAtMost": 0,
+        "blueCollectedBelow": 12
+      }
+    },
+    "camera": "fixed-board",
+    "characters": [
+      {
+        "id": "token",
+        "name": "棋子",
+        "role": "board-token",
+        "view": "top",
+        "actions": [
+          "select",
+          "swap",
+          "match",
+          "remove"
+        ],
+        "assets": []
+      }
+    ],
+    "scenes": [
+      {
+        "id": "menu",
+        "connections": [
+          "board"
+        ]
+      },
+      {
+        "id": "board",
+        "connections": [
+          "result"
+        ]
+      },
+      {
+        "id": "result",
+        "connections": [
+          "menu"
+        ]
+      }
+    ],
+    "entryScene": "menu",
+    "limits": {
+      "moveLimit": 20,
+      "blueTarget": 12
+    }
+  },
+  "scope": "Nonplatform plan + independent UI sources only; all generated files under /tmp",
+  "outputDir": "/tmp/game-orchestrator-nonplatform-WfQbXD",
+  "gamePlan": {
+    "profile": "puzzle",
+    "status": "planned",
+    "assumptions": [
+      {
+        "field": "scene-scale",
+        "proposal": "未给完整场景尺度，须按角色、碰撞体和目标屏幕实际校准。",
+        "status": "assumed-not-confirmed"
+      }
+    ],
+    "sceneReachability": {
+      "status": "structure-checked",
+      "allScenesReachable": true,
+      "explicitFalseEdgesExcluded": true,
+      "conditionalRuntimeReachability": "not-tested"
+    },
+    "objective": {
+      "description": "收集12枚蓝色棋子",
+      "event": "puzzle.blue_goal_completed",
+      "condition": {
+        "blueCollectedAtLeast": 12
+      },
+      "source": "provided",
+      "status": "planned"
+    }
+  },
+  "ui": {
+    "genre": "puzzle",
+    "engine": "godot",
+    "hudBindings": [
+      {
+        "id": "objective",
+        "label": "目标",
+        "path": "puzzle.remaining",
+        "event": "objective_changed",
+        "format": "remaining / target",
+        "feedback": "完成一项目标后显式勾选",
+        "update": "event-driven",
+        "screen": "playing",
+        "anchor": "top-left-safe",
+        "critical": true
+      },
+      {
+        "id": "moves",
+        "label": "剩余步数",
+        "path": "puzzle.moves",
+        "event": "moves_changed",
+        "format": "整数",
+        "feedback": "最后几步用图标+文字，不只变色",
+        "update": "event-driven",
+        "screen": "playing",
+        "anchor": "top-left-safe",
+        "critical": false
+      },
+      {
+        "id": "score",
+        "label": "分数",
+        "path": "run.score",
+        "event": "score_changed",
+        "format": "整数",
+        "feedback": "连击汇总，避免多次数字覆盖",
+        "update": "event-driven",
+        "screen": "playing",
+        "anchor": "top-left-safe",
+        "critical": false
+      },
+      {
+        "id": "pause",
+        "label": "暂停",
+        "path": "ui.pause",
+        "event": "pause_requested",
+        "format": "action",
+        "feedback": "冻结棋盘交互",
+        "update": "event-driven",
+        "screen": "playing",
+        "anchor": "top-right-safe",
+        "critical": false
+      }
+    ],
+    "export": {
+      "outputDir": "/tmp/game-orchestrator-nonplatform-WfQbXD/ui-sources",
+      "vectorSources": 64,
+      "screenPreviews": 11,
+      "bitmapGenerated": false,
+      "visual": "not-reviewed"
+    },
+    "check": {
+      "passed": true,
+      "screens": 11,
+      "components": 25,
+      "assets": 66,
+      "visual": "not-reviewed",
+      "pendingBitmap": [
+        "menu-background",
+        "result-emblem"
+      ]
+    },
+    "receipt": "/tmp/game-orchestrator-nonplatform-WfQbXD/ui-sources/production-receipt.json"
+  },
+  "deficiencies": [
+    {
+      "id": "BRIEF-ADAPTER",
+      "evidence": "手工映射title→name，Godot 2D→godot，coreLoop数组→字符串；直接共享brief尚无适配器。",
+      "impact": "orchestrator只有工具表，无法自动保持两个规划器契约一致。"
+    },
+    {
+      "id": "EXACT-RULE-UI",
+      "evidence": "UI normalizeBrief未保留objective/failure；三消HUD增加score模板字段，而本例未定义计分规则。",
+      "impact": "需要保留明确目标/步数/失败规则或标明模板提案，避免UI规则漂移。"
+    },
+    {
+      "id": "NO-RUNTIME",
+      "evidence": "全部产物是planned JSON与written SVG；未创建Godot工程或操作棋盘回合。",
+      "impact": "仅验证规划与源件生产，不足以宣称orchestrator已完成游戏。"
+    },
+    {
+      "id": "NO-VISUAL",
+      "evidence": "SVG production receipt visual not-reviewed；无imagegen PNG、棋子美术或实机截图。",
+      "impact": "没有美术签收或目标手机屏幕适配证据。"
+    }
+  ],
+  "sourceHashes": {
+    "gamePlan": "5c67ddded86ebd721b35ff3a3c6dd1e4ab39f4e91bca49a36c8d19814dff94ba",
+    "orchestratorSkill": "6b5ef351eb107fa10277d5b1a0f666e3a1d3ffb18f0c8bcbb98064b6cea01cbb"
+  }
+}

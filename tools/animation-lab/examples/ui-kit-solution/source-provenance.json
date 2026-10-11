@@ -1,0 +1,112 @@
+{
+  "schema": "ui-suite-source-provenance",
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T14:46:09.501341+00:00",
+  "implementation": [
+    {
+      "path": "tools/animation-lab/ui-kit-planner.mjs",
+      "sha256": "430263805b57ba01e1b0c7e07e8f023e915c7a59b5f087029e9d8f80e25387a9"
+    },
+    {
+      "path": "tools/animation-lab/scripts/ui-kit-cli.mjs",
+      "sha256": "49e5ceffe4b35a203ff279467eb23e8e7ef7c64551aac5c25f29d110ef0900cf"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.mjs",
+      "sha256": "35883f6d5daaa02ffa1a22369d121f25a85048d5a889bbc7fafc0d21b4745067"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.css",
+      "sha256": "b8efa9891ffe6e5d95af0282c3b201a46d1d5cd7f969bf1e60a48b18d88d264a"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.html",
+      "sha256": "7be251b6d000b0d23497f0627fa833cd964609129b4ae75e5e24c6a6b875ebbd"
+    },
+    {
+      "path": "skills/game-ui-suite/SKILL.md",
+      "sha256": "bae13b82b76bab02a7905ea702bceb75262db08e34a8eec425deebe908250016"
+    }
+  ],
+  "vectorSources": {
+    "generator": "ui-kit-planner.mjs/renderUiComponent",
+    "format": "SVG",
+    "statesWritten": 73,
+    "textBaked": false,
+    "importedExternalImplementation": false,
+    "receipt": "dinosaur-suite/production-receipt.json"
+  },
+  "bitmap": [
+    {
+      "path": "tools/animation-lab/public/ui-suite/dinosaur-jungle-home-v1.png",
+      "sha256": "93e3841118290c6f5861820bcafc587b97d19680cba53fe7e2b933bc762e32b7",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "actually-generated",
+      "generator": "image_gen.imagegen",
+      "promptFile": "tools/animation-lab/public/ui-suite/dinosaur-jungle-home-v1-prompt.json",
+      "originalFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-89f2570e-26c1-4afd-a447-d47047515b1d.png",
+      "role": "menu-background",
+      "visualScope": "menu art with no baked text, characters or UI; not collision terrain"
+    }
+  ],
+  "unproduced": [
+    {
+      "id": "result-emblem",
+      "status": "planned"
+    }
+  ],
+  "localSourceInspection": {
+    "path": "/Users/lemon/Desktop/game-asset-studio",
+    "access": "read-only; never started",
+    "inspected": [
+      "AGENTS.md",
+      "docs/project-memory",
+      "apps/web/studio.js",
+      "workers/generation",
+      "packages",
+      "storage/library",
+      "storage/imports"
+    ],
+    "findings": "No installed complete UI-suite planner; storage imports/library only .gitkeep. Asset catalogs and map-schema are source leads, not a reused implementation."
+  },
+  "guidance": [
+    "/Users/lemon/.codex/skills/game-ui-ux/SKILL.md",
+    "/Users/lemon/.codex/skills/.system/skill-creator/SKILL.md"
+  ],
+  "productionScope": {
+    "gameImplemented": false,
+    "engineAdapterCreated": false,
+    "svgComponentsCreated": true,
+    "backgroundCreated": true
+  },
+  "implementationBeforeGameplayRules": [
+    {
+      "path": "tools/animation-lab/ui-kit-planner.mjs",
+      "sha256": "6f27a58057152144e7e369fa2b82cb1ecd6edc26726161fb28681f8db1bc2703"
+    },
+    {
+      "path": "tools/animation-lab/scripts/ui-kit-cli.mjs",
+      "sha256": "7dd08ce987ab1915983ecc39724601649038f52e88f4fe764a410f1c31a6efd6"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.mjs",
+      "sha256": "b19e03ff4f5459bfbed08b2fc61b77e91ec7bfedc391a923545602fdf382f5b5"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.css",
+      "sha256": "c0fd6523067f606045b1543eb20c46a1dee9d3fa3d9d43b8572721754a73cd7f"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.html",
+      "sha256": "f73a35c35ae7babb235df0bffbf79b664f01de14add4e8af3ebbba018e2b0a4d"
+    },
+    {
+      "path": "skills/game-ui-suite/SKILL.md",
+      "sha256": "b630f5f75995c72a33c0e77bb8173b6bebb76c102fa93a3f0828c91824a487e8"
+    }
+  ],
+  "implementationScope": "Current implementation; earlier screenshots have their own QA historical hashes."
+}

@@ -1,0 +1,617 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "alien-jump-v2",
+  "loop": false,
+  "durationMs": 1000,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1024,
+    "height": 512,
+    "cell": 256,
+    "columns": 4,
+    "rows": 2,
+    "padding": 12,
+    "sha256": "f745eb4a1cb4571f99bb99c425105219c9a33787914cdc2dfe7fd9cb083a88b0"
+  },
+  "provenance": {
+    "type": "imagegen",
+    "file": "alien-jump-v2.png",
+    "sha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame jump animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+    "receipt": {
+      "schema": "frame-animation-generation-receipt",
+      "schemaVersion": 1,
+      "tool": "image_gen.imagegen",
+      "mode": "identity-preserve-framing-edit",
+      "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame jump animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+      "identityReference": {
+        "file": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+        "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+      },
+      "editReference": {
+        "file": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-2ef649f0-83df-4e88-883b-76091fde0e3f.png",
+        "sha256": "17c923dc8ec3cbb593391c499f61334b85df1578ceea53f72863fa6efde29023"
+      },
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-d49e6d67-d252-4896-a1dd-1d0f286f6225.png",
+      "generatedFileSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "projectFile": "public/frame-animation-assets/alien-jump-v2.png",
+      "projectFileSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "image": {
+        "width": 1774,
+        "height": 887,
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "cellWidth": 443.5,
+        "cellHeight": 443.5,
+        "order": "row-major",
+        "requiresIntegerGridNormalization": true,
+        "boundaryPolicy": "floor(col*width/4),floor(row*height/2); final boundary=image dimensions"
+      },
+      "playback": {
+        "fps": 8,
+        "durationSeconds": 1,
+        "loop": false
+      },
+      "qa": {
+        "visual": "needs-registration-and-playback-review",
+        "frames": [
+          {
+            "index": 0,
+            "phase": "ready",
+            "alphaBoundsLocal": [
+              189,
+              106,
+              305,
+              425
+            ],
+            "marginLocal": {
+              "left": 189,
+              "top": 106,
+              "right": 138,
+              "bottom": 18
+            },
+            "cellRect": [
+              0,
+              0,
+              443,
+              443
+            ],
+            "visualObservation": "站立准备，手低；首尾头部尺度略有变化",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 1,
+            "phase": "crouch",
+            "alphaBoundsLocal": [
+              130,
+              160,
+              324,
+              425
+            ],
+            "marginLocal": {
+              "left": 130,
+              "top": 160,
+              "right": 120,
+              "bottom": 18
+            },
+            "cellRect": [
+              443,
+              0,
+              444,
+              443
+            ],
+            "visualObservation": "蓄力蹲低，胳膊向后；两靴叠合",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 2,
+            "phase": "takeoff",
+            "alphaBoundsLocal": [
+              169,
+              137,
+              322,
+              425
+            ],
+            "marginLocal": {
+              "left": 169,
+              "top": 137,
+              "right": 121,
+              "bottom": 18
+            },
+            "cellRect": [
+              887,
+              0,
+              443,
+              443
+            ],
+            "visualObservation": "起跳伸腿有限，尚呈蹲姿；离地辨识需播放",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 3,
+            "phase": "rise",
+            "alphaBoundsLocal": [
+              156,
+              101,
+              324,
+              380
+            ],
+            "marginLocal": {
+              "left": 156,
+              "top": 101,
+              "right": 120,
+              "bottom": 63
+            },
+            "cellRect": [
+              1330,
+              0,
+              444,
+              443
+            ],
+            "visualObservation": "离地抬臂，腿收；头部留边v2改善",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 4,
+            "phase": "apex",
+            "alphaBoundsLocal": [
+              172,
+              90,
+              341,
+              355
+            ],
+            "marginLocal": {
+              "left": 172,
+              "top": 90,
+              "right": 102,
+              "bottom": 89
+            },
+            "cellRect": [
+              0,
+              443,
+              443,
+              444
+            ],
+            "visualObservation": "顶点收腿；最高点脚线低于期望轨迹，需播放判断",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 5,
+            "phase": "fall",
+            "alphaBoundsLocal": [
+              179,
+              103,
+              335,
+              391
+            ],
+            "marginLocal": {
+              "left": 179,
+              "top": 103,
+              "right": 109,
+              "bottom": 53
+            },
+            "cellRect": [
+              443,
+              443,
+              444,
+              444
+            ],
+            "visualObservation": "下降姿，腿逐步伸，手臂仍前伸",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 6,
+            "phase": "landing",
+            "alphaBoundsLocal": [
+              166,
+              154,
+              303,
+              403
+            ],
+            "marginLocal": {
+              "left": 166,
+              "top": 154,
+              "right": 140,
+              "bottom": 41
+            },
+            "cellRect": [
+              887,
+              443,
+              443,
+              444
+            ],
+            "visualObservation": "落地缓冲可见，groundline与起始站姿偏移",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 7,
+            "phase": "recovery",
+            "alphaBoundsLocal": [
+              167,
+              99,
+              277,
+              404
+            ],
+            "marginLocal": {
+              "left": 167,
+              "top": 99,
+              "right": 167,
+              "bottom": 40
+            },
+            "cellRect": [
+              1330,
+              443,
+              444,
+              444
+            ],
+            "visualObservation": "恢复站立，头部/boot尺度与frame1轻微不同",
+            "status": "reviewed-with-open-registration-defect"
+          }
+        ],
+        "observations": [
+          "8阶段均可见，角色服装和朝向基本保持；逐帧视审已执行",
+          "v2留边明显改善且关节连续；仍有落脚基线、头部尺度和水平registration轻微偏移，未签收最终成片",
+          "工具黑底预览可见红黄细线；A>128红色筛查仅少量或零候选，不能仅凭预览证实source边缘污染，需真实深浅底播放验收。"
+        ],
+        "gameIntegrated": false,
+        "playbackReviewed": false,
+        "edgePixelScreening": {
+          "opaqueRedCandidates": 10,
+          "opaqueYellowCandidates": 0,
+          "criterion": "RGBA A>128 and saturated red/yellow heuristic; advisory not exact segmentation",
+          "interpretation": "少量颜色候选不能单独证明轮廓缺陷；工具黑底预览的红黄线可能为低alpha隐藏RGB，深浅底真实播放待查。"
+        }
+      }
+    },
+    "sourceQA": "not-reviewed",
+    "verification": "receipt bound by output SHA-256; generation claim supplied by importer",
+    "grid": {
+      "columns": 4,
+      "rows": 2,
+      "count": 8
+    },
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "sampleId": "alien-jump-v2",
+    "sourceQANotes": [
+      "落地/恢复的脚底基线相对准备帧上移约21像素",
+      "留边已改善，尺度和红黄边缘需完整播放复查"
+    ]
+  },
+  "visualQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "alien-jump-v2.png#1",
+      "phase": "ready",
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        0,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "219feed74a44fa37720ffbd381954b921820054069c093fabb2e8ea9efac254d"
+    },
+    {
+      "index": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-jump-v2.png#2",
+      "phase": "crouch",
+      "file": "frames/002.png",
+      "timeMs": 125,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        443,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "8ab4998f4c61163e09f906e337794085aa122172ce5ce9a82bb1c9edc588f806"
+    },
+    {
+      "index": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "alien-jump-v2.png#3",
+      "phase": "takeoff",
+      "file": "frames/003.png",
+      "timeMs": 250,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        887,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "84da8f61009f4002b2180dd3fa65b2367e3d64b72fc48a578f84a22c1b5897cf"
+    },
+    {
+      "index": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-jump-v2.png#4",
+      "phase": "rise",
+      "file": "frames/004.png",
+      "timeMs": 375,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        1330,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "86b97c50eaec772fcb53e7877d4c941311d6eec7eca2a8d742e4b6d1a032ef01"
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-jump-v2.png#5",
+      "phase": "apex",
+      "file": "frames/005.png",
+      "timeMs": 500,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        0,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "341355b5c70c2e981f87e76a995ed6e6e8ccaea284b77d1e0c3760d7811838ad"
+    },
+    {
+      "index": 5,
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-jump-v2.png#6",
+      "phase": "fall",
+      "file": "frames/006.png",
+      "timeMs": 625,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        443,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "71d216e0934db9f5857c5d76b1f933bceb6b93b09343221ec4bf02467dc6b0fd"
+    },
+    {
+      "index": 6,
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-jump-v2.png#7",
+      "phase": "landing",
+      "file": "frames/007.png",
+      "timeMs": 750,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        887,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "e3fbfd84516a9ddebb5f47ef3c4042175268e55c5b216fb268340ec28d84d66c"
+    },
+    {
+      "index": 7,
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-jump-v2.png#8",
+      "phase": "recovery",
+      "file": "frames/008.png",
+      "timeMs": 875,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        1330,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "9375aaf88543eb46780f0076ba5bc756a9c6a048bb74a0f10bebb8314642e46b"
+    }
+  ],
+  "exportedAt": "2026-10-11T15:40:47.323Z"
+}

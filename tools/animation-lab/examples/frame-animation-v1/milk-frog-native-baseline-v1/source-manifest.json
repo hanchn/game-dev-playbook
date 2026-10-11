@@ -1,0 +1,1209 @@
+{
+  "kind": "imported-existing-project",
+  "gait": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+  "gaitSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf",
+  "originalSources": [
+    {
+      "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+      "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3"
+    },
+    {
+      "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v16/frog-inbetweens.png",
+      "sha256": "557541f631f63704176758419ddbdd6853953b11e7189675654cc44feffe02a8"
+    }
+  ],
+  "sequences": [
+    {
+      "sample": {
+        "id": "milk-frog-native-v15-v1",
+        "label": "奶蛙 · 原项目已有6帧 v15",
+        "origin": "existing-project",
+        "fps": 6,
+        "loop": true,
+        "visualQA": "failed",
+        "qaNotes": [
+          "原项目已有帧，非本次新生成",
+          "使用原frog-gait.json裁切/偏移，未逐帧重新居中或缩放",
+          "技术和实际美术审查独立",
+          "实际深浅图审查：手掌状态/轮廓跳变未通过，短循环不提供眨眼"
+        ],
+        "frames": [
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v1-00.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v1-00-receipt.json",
+            "phase": "近腿前伸接地／远腿后蹬，近臂后摆",
+            "durationMs": 166.66666666666666
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v1-01.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v1-01-receipt.json",
+            "phase": "近腿承重／远腿后抬，近臂后摆",
+            "durationMs": 166.66666666666666
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v1-02.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v1-02-receipt.json",
+            "phase": "近腿后蹬／远腿抬膝，近臂前摆",
+            "durationMs": 166.66666666666666
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v1-03.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v1-03-receipt.json",
+            "phase": "远腿前伸接地／近腿后蹬，近臂前摆",
+            "durationMs": 166.66666666666666
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v1-04.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v1-04-receipt.json",
+            "phase": "远腿承重／近腿后抬，近臂前摆",
+            "durationMs": 166.66666666666666
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v1-05.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v1-05-receipt.json",
+            "phase": "远腿后蹬／近腿抬膝，近臂后摆",
+            "durationMs": 166.66666666666666
+          }
+        ]
+      },
+      "frames": [
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "146bb6cb0b8693d89741a9902118312f3e9d1e5e45212240bfc00cd62239ed18",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              0,
+              0,
+              540,
+              519
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿前伸接地／远腿后蹬，近臂后摆",
+          "sourceFrameId": "1",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              99,
+              34,
+              436,
+              480
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              79,
+              24,
+              436,
+              480
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "1be249c9350fc2c592bb40d82ea0104d855cff85aedc0ad0314c5bc24bdd9d0b",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              540,
+              0,
+              484,
+              519
+            ],
+            "offset": [
+              48,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿承重／远腿后抬，近臂后摆",
+          "sourceFrameId": "2",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              83,
+              33,
+              372,
+              481
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              35,
+              23,
+              372,
+              481
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "3a7f45c9b8f5bf56ffa9f038e2ec219ff6f98246929d6da2e1ff5a5121305b70",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              1024,
+              0,
+              512,
+              519
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿后蹬／远腿抬膝，近臂前摆",
+          "sourceFrameId": "3",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              35,
+              34,
+              428,
+              477
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              15,
+              24,
+              428,
+              477
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "255bccaef4974316cba1cc0355a7991fd2fc31c033fd930e0823dafffbcde954",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              0,
+              519,
+              540,
+              505
+            ],
+            "offset": [
+              20,
+              17
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿前伸接地／近腿后蹬，近臂前摆",
+          "sourceFrameId": "4",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              77,
+              17,
+              464,
+              477
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              57,
+              0,
+              464,
+              477
+            ],
+            "edgePixels": 9,
+            "hasTransparency": true,
+            "touchesEdge": true,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "c019f8bd5ece977942a614d43744e5a98b429d88e040788ec044ababde82040d",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              540,
+              519,
+              484,
+              505
+            ],
+            "offset": [
+              48,
+              17
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿承重／近腿后抬，近臂前摆",
+          "sourceFrameId": "5",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              98,
+              17,
+              339,
+              481
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              50,
+              0,
+              339,
+              481
+            ],
+            "edgePixels": 2,
+            "hasTransparency": true,
+            "touchesEdge": true,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "9de83b09a33ce221c5641998cfbd325f3eaa3f3635bcba281bba36ff4dcbdbfc",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              1024,
+              519,
+              512,
+              505
+            ],
+            "offset": [
+              20,
+              17
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿后蹬／近腿抬膝，近臂后摆",
+          "sourceFrameId": "6",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              44,
+              17,
+              426,
+              473
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              24,
+              0,
+              426,
+              473
+            ],
+            "edgePixels": 6,
+            "hasTransparency": true,
+            "touchesEdge": true,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        }
+      ]
+    },
+    {
+      "sample": {
+        "id": "milk-frog-native-v15-v16-v1",
+        "label": "奶蛙 · 原项目已有12帧 v15-v16",
+        "origin": "existing-project",
+        "fps": 12,
+        "loop": true,
+        "visualQA": "failed",
+        "qaNotes": [
+          "原项目已有帧，非本次新生成",
+          "使用原frog-gait.json裁切/偏移，未逐帧重新居中或缩放",
+          "技术和实际美术审查独立",
+          "实际深浅图审查：手掌状态/轮廓跳变未通过，短循环不提供眨眼"
+        ],
+        "frames": [
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-00.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-00-receipt.json",
+            "phase": "近腿前伸接地／远腿后蹬，近臂后摆",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-01.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-01-receipt.json",
+            "phase": "近腿接地缓冲／远脚离地",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-02.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-02-receipt.json",
+            "phase": "近腿承重／远腿后抬，近臂后摆",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-03.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-03-receipt.json",
+            "phase": "近腿后移支撑／远膝前送",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-04.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-04-receipt.json",
+            "phase": "近腿后蹬／远腿抬膝，近臂前摆",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-05.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-05-receipt.json",
+            "phase": "远腿伸膝前送／近脚蹬地",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-06.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-06-receipt.json",
+            "phase": "远腿前伸接地／近腿后蹬，近臂前摆",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-07.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-07-receipt.json",
+            "phase": "远腿接地缓冲／近脚离地",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-08.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-08-receipt.json",
+            "phase": "远腿承重／近腿后抬，近臂前摆",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-09.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-09-receipt.json",
+            "phase": "远腿后移支撑／近膝前送",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-10.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-10-receipt.json",
+            "phase": "远腿后蹬／近腿抬膝，近臂后摆",
+            "durationMs": 83.33333333333333
+          },
+          {
+            "source": "/frame-animation-assets/milk-frog-native-v15-v16-v1-11.png",
+            "receipt": "/frame-animation-assets/milk-frog-native-v15-v16-v1-11-receipt.json",
+            "phase": "近腿伸膝前送／远脚蹬地",
+            "durationMs": 83.33333333333333
+          }
+        ]
+      },
+      "frames": [
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "146bb6cb0b8693d89741a9902118312f3e9d1e5e45212240bfc00cd62239ed18",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              0,
+              0,
+              540,
+              519
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿前伸接地／远腿后蹬，近臂后摆",
+          "sourceFrameId": "1",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              99,
+              34,
+              436,
+              480
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              79,
+              24,
+              436,
+              480
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "fe5baafdc0175b0129184ef4981e15794dd3896e6dcb15dc5d0102e0f203868e",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v16/frog-inbetweens.png",
+            "sha256": "557541f631f63704176758419ddbdd6853953b11e7189675654cc44feffe02a8",
+            "sourceRect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿接地缓冲／远脚离地",
+          "sourceFrameId": "1-between",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              110,
+              33,
+              399,
+              475
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              90,
+              23,
+              399,
+              475
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "1be249c9350fc2c592bb40d82ea0104d855cff85aedc0ad0314c5bc24bdd9d0b",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              540,
+              0,
+              484,
+              519
+            ],
+            "offset": [
+              48,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿承重／远腿后抬，近臂后摆",
+          "sourceFrameId": "2",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              83,
+              33,
+              372,
+              481
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              35,
+              23,
+              372,
+              481
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "ca8a7abaecd5f3476f89213435283da1a0444def85b2002b94b6aafa33640da9",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v16/frog-inbetweens.png",
+            "sha256": "557541f631f63704176758419ddbdd6853953b11e7189675654cc44feffe02a8",
+            "sourceRect": [
+              512,
+              0,
+              484,
+              512
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿后移支撑／远膝前送",
+          "sourceFrameId": "2-between",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              95,
+              29,
+              348,
+              478
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              75,
+              19,
+              348,
+              478
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "3a7f45c9b8f5bf56ffa9f038e2ec219ff6f98246929d6da2e1ff5a5121305b70",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              1024,
+              0,
+              512,
+              519
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿后蹬／远腿抬膝，近臂前摆",
+          "sourceFrameId": "3",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              35,
+              34,
+              428,
+              477
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              15,
+              24,
+              428,
+              477
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "56be04c0de62e847446f16b88a30dcca5a5959b0b8c6371d31ae63f886b63e01",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v16/frog-inbetweens.png",
+            "sha256": "557541f631f63704176758419ddbdd6853953b11e7189675654cc44feffe02a8",
+            "sourceRect": [
+              996,
+              0,
+              540,
+              512
+            ],
+            "offset": [
+              -8,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿伸膝前送／近脚蹬地",
+          "sourceFrameId": "3-between",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              7,
+              33,
+              470,
+              470
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              15,
+              23,
+              470,
+              470
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "255bccaef4974316cba1cc0355a7991fd2fc31c033fd930e0823dafffbcde954",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              0,
+              519,
+              540,
+              505
+            ],
+            "offset": [
+              20,
+              17
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿前伸接地／近腿后蹬，近臂前摆",
+          "sourceFrameId": "4",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              77,
+              17,
+              464,
+              477
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              57,
+              0,
+              464,
+              477
+            ],
+            "edgePixels": 9,
+            "hasTransparency": true,
+            "touchesEdge": true,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "eea7f74d63b04e7d6ff80f667d1e612ee9134425075b7db027e4caac19bb6ed4",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v16/frog-inbetweens.png",
+            "sha256": "557541f631f63704176758419ddbdd6853953b11e7189675654cc44feffe02a8",
+            "sourceRect": [
+              0,
+              512,
+              512,
+              512
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿接地缓冲／近脚离地",
+          "sourceFrameId": "4-between",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              99,
+              15,
+              411,
+              472
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              79,
+              5,
+              411,
+              472
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "c019f8bd5ece977942a614d43744e5a98b429d88e040788ec044ababde82040d",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              540,
+              519,
+              484,
+              505
+            ],
+            "offset": [
+              48,
+              17
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿承重／近腿后抬，近臂前摆",
+          "sourceFrameId": "5",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              98,
+              17,
+              339,
+              481
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              50,
+              0,
+              339,
+              481
+            ],
+            "edgePixels": 2,
+            "hasTransparency": true,
+            "touchesEdge": true,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "9dfd1432c66039999700b3fc4b49f09c00e1c2e133190f326e0afe360712e145",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v16/frog-inbetweens.png",
+            "sha256": "557541f631f63704176758419ddbdd6853953b11e7189675654cc44feffe02a8",
+            "sourceRect": [
+              512,
+              512,
+              512,
+              512
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿后移支撑／近膝前送",
+          "sourceFrameId": "5-between",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              112,
+              16,
+              348,
+              469
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              92,
+              6,
+              348,
+              469
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "9de83b09a33ce221c5641998cfbd325f3eaa3f3635bcba281bba36ff4dcbdbfc",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v15/frog-run.png",
+            "sha256": "f3d9d4c24772e1a2570326e773ae2ab3eaddcdfe6020fc2473ec933314fd91b3",
+            "sourceRect": [
+              1024,
+              519,
+              512,
+              505
+            ],
+            "offset": [
+              20,
+              17
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "远腿后蹬／近腿抬膝，近臂后摆",
+          "sourceFrameId": "6",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              44,
+              17,
+              426,
+              473
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              24,
+              0,
+              426,
+              473
+            ],
+            "edgePixels": 6,
+            "hasTransparency": true,
+            "touchesEdge": true,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        },
+        {
+          "kind": "existing-project-frame",
+          "fileSha256": "538d4ff6bdf455cb270268f0de9b5273b942bb203981169e6eeecb0f78d53de9",
+          "origin": "imported existing catch-milk-frog project atlas",
+          "tool": "native Canvas sourceRect crop using existing frog-gait.json",
+          "inputSource": {
+            "file": "/Users/lemon/Desktop/catch-milk-frog/public/assets/forest-ui/v16/frog-inbetweens.png",
+            "sha256": "557541f631f63704176758419ddbdd6853953b11e7189675654cc44feffe02a8",
+            "sourceRect": [
+              1024,
+              512,
+              512,
+              512
+            ],
+            "offset": [
+              20,
+              10
+            ],
+            "mappingFile": "/Users/lemon/Desktop/catch-milk-frog/src/frog-gait.json",
+            "mappingSha256": "f626ddf9509d4836fb54fed1e428dbea5926e1eebd857eb16ab2d09d3fd51ecf"
+          },
+          "fixedCanvas": [
+            580,
+            540
+          ],
+          "phase": "近腿伸膝前送／远脚蹬地",
+          "sourceFrameId": "6-between",
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              39,
+              15,
+              450,
+              465
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Existing project baseline: hand state changes open/fist between arm directions; contour/registration changes remain. Real playback required; not new generation."
+          },
+          "rawCropBounds": {
+            "threshold": 24,
+            "bounds": [
+              19,
+              5,
+              450,
+              465
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          }
+        }
+      ]
+    }
+  ]
+}

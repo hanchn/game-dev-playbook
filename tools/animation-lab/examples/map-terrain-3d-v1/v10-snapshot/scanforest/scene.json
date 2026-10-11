@@ -1,0 +1,935 @@
+{
+  "schema": "styled-terrain-3d-export/v1",
+  "algorithm": "procedural-terrains-7452c2c-cpu-planner3-river-scenes-v10",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "scanforest",
+    "preset": "rollingHills",
+    "scale": 64,
+    "height": 24,
+    "waterLevel": 0.22,
+    "vegetation": 0.08
+  },
+  "region": {
+    "x": -1,
+    "z": -1,
+    "width": 3,
+    "depth": 3
+  },
+  "resolution": 32,
+  "environmentBundle": {
+    "terrain": "forest_leaves_02",
+    "water": {
+      "color": "#315e59",
+      "roughness": 0.25,
+      "opacity": 0.84,
+      "waveScale": 1.4,
+      "waveStrength": 0.1,
+      "waveSpeed": 0.35
+    },
+    "lighting": {
+      "sky": "#a8bebd",
+      "sun": "#fff1d3",
+      "intensity": 2.4
+    },
+    "models": [
+      "pine_sapling_small",
+      "boulder_01"
+    ],
+    "assetStyle": "photogrammetry PBR"
+  },
+  "shader": {
+    "terrain": "global-continuous-four-corner-scale-pbr-v2",
+    "water": "world-continuous-theme-water-ripples-edgefade-v3",
+    "portableGlb": false,
+    "standardGlbUsesOriginalTextures": true
+  },
+  "chunkSize": 32,
+  "terrainFile": "scene.glb",
+  "props": [
+    {
+      "id": "-4:-6",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -18.22,
+        10.200762748718262,
+        -29.6
+      ],
+      "yaw": 3.88,
+      "height": 1.8399999999999999,
+      "collider": {
+        "id": "-4:-6",
+        "type": "conservative-cylinder",
+        "x": -18.22,
+        "z": -29.6,
+        "y": 10.200762748718262,
+        "height": 1.8399999999999999,
+        "radius": 2.042857826318269,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-5:-1",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -24.97,
+        9.53459644317627,
+        -1.9900000000000002
+      ],
+      "yaw": 1.37,
+      "height": 4.79,
+      "collider": {
+        "id": "-5:-1",
+        "type": "conservative-cylinder",
+        "x": -24.97,
+        "z": -1.9900000000000002,
+        "y": 9.53459644317627,
+        "height": 4.79,
+        "radius": 2.0652864491397915,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-2:-1",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -7.41,
+        8.566596984863281,
+        -1.81
+      ],
+      "yaw": 1.37,
+      "height": 2.14,
+      "collider": {
+        "id": "-2:-1",
+        "type": "conservative-cylinder",
+        "x": -7.41,
+        "z": -1.81,
+        "y": 8.566596984863281,
+        "height": 2.14,
+        "radius": 2.3759324719136394,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "1:-3",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        8.66,
+        8.940953254699707,
+        -12.69
+      ],
+      "yaw": 1.7,
+      "height": 2.27,
+      "collider": {
+        "id": "1:-3",
+        "type": "conservative-cylinder",
+        "x": 8.66,
+        "z": -12.69,
+        "y": 8.940953254699707,
+        "height": 2.27,
+        "radius": 2.5202648183383,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "11:-6",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        55.35,
+        9.554353713989258,
+        -29.91
+      ],
+      "yaw": 5.38,
+      "height": 4.8,
+      "collider": {
+        "id": "11:-6",
+        "type": "conservative-cylinder",
+        "x": 55.35,
+        "z": -29.91,
+        "y": 9.554353713989258,
+        "height": 4.8,
+        "radius": 2.0695981118728604,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "7:-2",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        37.73,
+        10.917224884033203,
+        -9
+      ],
+      "yaw": 1.06,
+      "height": 2.27,
+      "collider": {
+        "id": "7:-2",
+        "type": "conservative-cylinder",
+        "x": 37.73,
+        "z": -9,
+        "y": 10.917224884033203,
+        "height": 2.27,
+        "radius": 2.5202648183383,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-3:0",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -14.83,
+        9.27527141571045,
+        1.26
+      ],
+      "yaw": 1.83,
+      "height": 1.88,
+      "collider": {
+        "id": "-3:0",
+        "type": "conservative-cylinder",
+        "x": -14.83,
+        "z": 1.26,
+        "y": 9.27527141571045,
+        "height": 1.88,
+        "radius": 2.0872677790643186,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-3:4",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -14.57,
+        8.13152027130127,
+        21.71
+      ],
+      "yaw": 3.35,
+      "height": 2.26,
+      "collider": {
+        "id": "-3:4",
+        "type": "conservative-cylinder",
+        "x": -14.57,
+        "z": 21.71,
+        "y": 8.13152027130127,
+        "height": 2.26,
+        "radius": 2.509162330151787,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-4:5",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -16.97,
+        7.888652324676514,
+        28.06
+      ],
+      "yaw": 1.93,
+      "height": 1.81,
+      "collider": {
+        "id": "-4:5",
+        "type": "conservative-cylinder",
+        "x": -16.97,
+        "z": 28.06,
+        "y": 7.888652324676514,
+        "height": 1.81,
+        "radius": 2.0095503617587323,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "2:3",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        12.21,
+        8.371771812438965,
+        15.39
+      ],
+      "yaw": 0.56,
+      "height": 5.08,
+      "collider": {
+        "id": "2:3",
+        "type": "conservative-cylinder",
+        "x": 12.21,
+        "z": 15.39,
+        "y": 8.371771812438965,
+        "height": 5.08,
+        "radius": 2.190324668398777,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "6:4",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        30.57,
+        9.10908031463623,
+        20.18
+      ],
+      "yaw": 1.2,
+      "height": 2.12,
+      "collider": {
+        "id": "6:4",
+        "type": "conservative-cylinder",
+        "x": 30.57,
+        "z": 20.18,
+        "y": 9.10908031463623,
+        "height": 2.12,
+        "radius": 2.353727495540615,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "10:0",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        53.69,
+        10.513840675354004,
+        1.83
+      ],
+      "yaw": 2.13,
+      "height": 1.79,
+      "collider": {
+        "id": "10:0",
+        "type": "conservative-cylinder",
+        "x": 53.69,
+        "z": 1.83,
+        "y": 10.513840675354004,
+        "height": 1.79,
+        "radius": 1.9873453853857077,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "6:1",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        32.37,
+        12.241451263427734,
+        6.88
+      ],
+      "yaw": 2.14,
+      "height": 1.92,
+      "collider": {
+        "id": "6:1",
+        "type": "conservative-cylinder",
+        "x": 32.37,
+        "z": 6.88,
+        "y": 12.241451263427734,
+        "height": 1.92,
+        "radius": 2.131677731810368,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "9:1",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        48.1,
+        10.89202880859375,
+        8.65
+      ],
+      "yaw": 0.81,
+      "height": 2.33,
+      "collider": {
+        "id": "9:1",
+        "type": "conservative-cylinder",
+        "x": 48.1,
+        "z": 8.65,
+        "y": 10.89202880859375,
+        "height": 2.33,
+        "radius": 2.586879747457374,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "11:3",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        58.03,
+        10.871707916259766,
+        15.57
+      ],
+      "yaw": 5.49,
+      "height": 5.63,
+      "collider": {
+        "id": "11:3",
+        "type": "conservative-cylinder",
+        "x": 58.03,
+        "z": 15.57,
+        "y": 10.871707916259766,
+        "height": 5.63,
+        "radius": 2.427466118717542,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "10:4",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        52.44,
+        9.49322509765625,
+        23.47
+      ],
+      "yaw": 3.32,
+      "height": 2.25,
+      "collider": {
+        "id": "10:4",
+        "type": "conservative-cylinder",
+        "x": 52.44,
+        "z": 23.47,
+        "y": 9.49322509765625,
+        "height": 2.25,
+        "radius": 2.4980598419652753,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-1:6",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -2.29,
+        7.46877384185791,
+        32.36
+      ],
+      "yaw": 6.19,
+      "height": 5.23,
+      "collider": {
+        "id": "-1:6",
+        "type": "conservative-cylinder",
+        "x": -2.29,
+        "z": 32.36,
+        "y": 7.46877384185791,
+        "height": 5.23,
+        "radius": 2.2549996093948037,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-6:11",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        -29.76,
+        7.075991630554199,
+        55.01
+      ],
+      "yaw": 0.16,
+      "height": 5.52,
+      "collider": {
+        "id": "-6:11",
+        "type": "conservative-cylinder",
+        "x": -29.76,
+        "z": 55.01,
+        "y": 7.075991630554199,
+        "height": 5.52,
+        "radius": 2.380037828653789,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "3:9",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        16.11,
+        7.307153701782227,
+        48.12
+      ],
+      "yaw": 5.6,
+      "height": 4.82,
+      "collider": {
+        "id": "3:9",
+        "type": "conservative-cylinder",
+        "x": 16.11,
+        "z": 48.12,
+        "y": 7.307153701782227,
+        "height": 4.82,
+        "radius": 2.078221437338997,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "6:11",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        30.27,
+        8.051864624023438,
+        56
+      ],
+      "yaw": 5.16,
+      "height": 1.8599999999999999,
+      "collider": {
+        "id": "6:11",
+        "type": "conservative-cylinder",
+        "x": 30.27,
+        "z": 56,
+        "y": 8.051864624023438,
+        "height": 1.8599999999999999,
+        "radius": 2.0650628026912936,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "8:8",
+      "model": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        42.89,
+        8.551983833312988,
+        41.28
+      ],
+      "yaw": 5.92,
+      "height": 5.5600000000000005,
+      "collider": {
+        "id": "8:8",
+        "type": "conservative-cylinder",
+        "x": 42.89,
+        "z": 41.28,
+        "y": 8.551983833312988,
+        "height": 5.5600000000000005,
+        "radius": 2.3972844795860633,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "12:12",
+      "model": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "sourcePack": "polyhaven-models",
+      "position": [
+        60.77,
+        6.00289249420166,
+        62.39
+      ],
+      "yaw": 2.27,
+      "height": 2.26,
+      "collider": {
+        "id": "12:12",
+        "type": "conservative-cylinder",
+        "x": 60.77,
+        "z": 62.39,
+        "y": 6.00289249420166,
+        "height": 2.26,
+        "radius": 2.509162330151787,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    }
+  ],
+  "features": [],
+  "materials": {
+    "sourcePack": "polyhaven-pbr",
+    "id": "forest_leaves_02",
+    "metersPerRepeat": 6
+  },
+  "collision": {
+    "terrain": "global NoiseStack + deterministic feature carve/foundation sampling",
+    "objects": [
+      {
+        "id": "-4:-6",
+        "type": "conservative-cylinder",
+        "x": -18.22,
+        "z": -29.6,
+        "y": 10.200762748718262,
+        "height": 1.8399999999999999,
+        "radius": 2.042857826318269,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-5:-1",
+        "type": "conservative-cylinder",
+        "x": -24.97,
+        "z": -1.9900000000000002,
+        "y": 9.53459644317627,
+        "height": 4.79,
+        "radius": 2.0652864491397915,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-2:-1",
+        "type": "conservative-cylinder",
+        "x": -7.41,
+        "z": -1.81,
+        "y": 8.566596984863281,
+        "height": 2.14,
+        "radius": 2.3759324719136394,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "1:-3",
+        "type": "conservative-cylinder",
+        "x": 8.66,
+        "z": -12.69,
+        "y": 8.940953254699707,
+        "height": 2.27,
+        "radius": 2.5202648183383,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "11:-6",
+        "type": "conservative-cylinder",
+        "x": 55.35,
+        "z": -29.91,
+        "y": 9.554353713989258,
+        "height": 4.8,
+        "radius": 2.0695981118728604,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "7:-2",
+        "type": "conservative-cylinder",
+        "x": 37.73,
+        "z": -9,
+        "y": 10.917224884033203,
+        "height": 2.27,
+        "radius": 2.5202648183383,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-3:0",
+        "type": "conservative-cylinder",
+        "x": -14.83,
+        "z": 1.26,
+        "y": 9.27527141571045,
+        "height": 1.88,
+        "radius": 2.0872677790643186,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-3:4",
+        "type": "conservative-cylinder",
+        "x": -14.57,
+        "z": 21.71,
+        "y": 8.13152027130127,
+        "height": 2.26,
+        "radius": 2.509162330151787,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-4:5",
+        "type": "conservative-cylinder",
+        "x": -16.97,
+        "z": 28.06,
+        "y": 7.888652324676514,
+        "height": 1.81,
+        "radius": 2.0095503617587323,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "2:3",
+        "type": "conservative-cylinder",
+        "x": 12.21,
+        "z": 15.39,
+        "y": 8.371771812438965,
+        "height": 5.08,
+        "radius": 2.190324668398777,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "6:4",
+        "type": "conservative-cylinder",
+        "x": 30.57,
+        "z": 20.18,
+        "y": 9.10908031463623,
+        "height": 2.12,
+        "radius": 2.353727495540615,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "10:0",
+        "type": "conservative-cylinder",
+        "x": 53.69,
+        "z": 1.83,
+        "y": 10.513840675354004,
+        "height": 1.79,
+        "radius": 1.9873453853857077,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "6:1",
+        "type": "conservative-cylinder",
+        "x": 32.37,
+        "z": 6.88,
+        "y": 12.241451263427734,
+        "height": 1.92,
+        "radius": 2.131677731810368,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "9:1",
+        "type": "conservative-cylinder",
+        "x": 48.1,
+        "z": 8.65,
+        "y": 10.89202880859375,
+        "height": 2.33,
+        "radius": 2.586879747457374,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "11:3",
+        "type": "conservative-cylinder",
+        "x": 58.03,
+        "z": 15.57,
+        "y": 10.871707916259766,
+        "height": 5.63,
+        "radius": 2.427466118717542,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "10:4",
+        "type": "conservative-cylinder",
+        "x": 52.44,
+        "z": 23.47,
+        "y": 9.49322509765625,
+        "height": 2.25,
+        "radius": 2.4980598419652753,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-1:6",
+        "type": "conservative-cylinder",
+        "x": -2.29,
+        "z": 32.36,
+        "y": 7.46877384185791,
+        "height": 5.23,
+        "radius": 2.2549996093948037,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-6:11",
+        "type": "conservative-cylinder",
+        "x": -29.76,
+        "z": 55.01,
+        "y": 7.075991630554199,
+        "height": 5.52,
+        "radius": 2.380037828653789,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "3:9",
+        "type": "conservative-cylinder",
+        "x": 16.11,
+        "z": 48.12,
+        "y": 7.307153701782227,
+        "height": 4.82,
+        "radius": 2.078221437338997,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "6:11",
+        "type": "conservative-cylinder",
+        "x": 30.27,
+        "z": 56,
+        "y": 8.051864624023438,
+        "height": 1.8599999999999999,
+        "radius": 2.0650628026912936,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "8:8",
+        "type": "conservative-cylinder",
+        "x": 42.89,
+        "z": 41.28,
+        "y": 8.551983833312988,
+        "height": 5.5600000000000005,
+        "radius": 2.3972844795860633,
+        "sourceModel": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "12:12",
+        "type": "conservative-cylinder",
+        "x": 60.77,
+        "z": 62.39,
+        "y": 6.00289249420166,
+        "height": 2.26,
+        "radius": 2.509162330151787,
+        "sourceModel": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    ],
+    "sweepFunction": "sweepTerrainMotion",
+    "triangleMesh": false
+  },
+  "noiseStack": {
+    "version": 1,
+    "globalSeed": 925300048,
+    "normalizeOutput": false,
+    "outputMin": 0,
+    "outputMax": 1.35,
+    "layers": [
+      {
+        "id": "layer-0",
+        "name": "Base",
+        "enabled": true,
+        "type": "fbm",
+        "blendMode": "add",
+        "strength": 0.5,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 1,
+          "octaves": 4,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-1",
+        "name": "Soft Hills",
+        "enabled": true,
+        "type": "billow",
+        "blendMode": "add",
+        "strength": 0.25,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 2.2,
+          "octaves": 3,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-2",
+        "name": "Detail",
+        "enabled": true,
+        "type": "fbm",
+        "blendMode": "add",
+        "strength": 0.06,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 6,
+          "octaves": 3,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      }
+    ]
+  },
+  "source": "map-vendor/SOURCE-terrain-3d.json",
+  "qa": {
+    "engineImported": false,
+    "visualAccepted": false,
+    "actorCollisionsVerified": false,
+    "realGeographicData": false
+  }
+}

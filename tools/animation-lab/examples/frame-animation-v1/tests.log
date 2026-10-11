@@ -1,0 +1,16 @@
+✔ half-open video sampling, explicit sorted times, invalid/oversized sampling rejected (1.004375ms)
+✔ chronology is numeric, per-frame durations affect playback, exact source rectangles and safe sheet bounds (8.357292ms)
+✔ decoded PTS follows containing source frame, reports duplicates without inventing timestamps (0.270083ms)
+✔ source failed QA and individual frame observations survive export without upgrading loop approval (0.13275ms)
+✔ generation requests remain pending until actual outputs; layout and limb continuity specified (0.219667ms)
+✔ odd source sheet is partitioned without lost or overlapping pixels (0.162125ms)
+✔ ZIP store files pass native CRC validation and preserve Unicode names and exact bytes (38.622167ms)
+✔ real H264 video -> eight distinct exact decoded PNGs -> alpha-padded sheet; existing outputs rejected (959.311292ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1063.897834

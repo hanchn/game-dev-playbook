@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Precise local correction of ONLY the foreground near OPEN-HAND forearm and palm. Same original 1254x1254 transparent canvas, unchanged exact head/eyes/mouth/tongue, torso and yellow muscular material, both airborne legs and both pink feet, curled FAR fist on image right. No camera/scale/pivot change. In this second flight sprite the open fingertips now touch the left raised pink foot at about (245,660), causing a fused silhouette. Raise ONLY the bent near forearm, wrist and open palm so its finger tips are 70px ABOVE the raised far foot heel: keep near shoulder (610,410) and elbow (400,500), bring wrist to about (335,520), open palm center about (295,555), lowest near fingertip no lower than y610. Preserve muscular forearm full volume and natural bent elbow; upperarm remains swinging BACK to image left opposite near thigh forward, don't straighten the whole arm horizontally. There must be a visible transparent gap at least45px between ALL hand fingertips and the raised pink rear foot below. Existing raised rear-foot heel around y670 and toe y850 remain exactly unchanged. Same permanent nearOPEN/ farCURLED identities, exactly2 arms/2 legs, no ghost previous open palm, no extra fingers/limbs, outlines/highlights/dots same. Do not repaint any other region. One transparent sprite only, no text/floor/shadow.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-355726ba-bbd1-4981-9120-45b23ca33bdf.png",
+  "generatedFileSha256": "275c7b05add477d7d20649fd588a0916d7b245d0d41ff14664bde5993e6febef",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d27f7671-e23e-4bda-a45f-380de19cbf77.png",
+      "sha256": "c797e63013722d07945c75fb3872d937361874d7f67502817e6ddcf8af0315be"
+    }
+  ],
+  "phase": 0.8333333333333334,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      148,
+      87,
+      1057,
+      1049
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Actual full original viewed: open fingertips now separated from raised rear-foot heel by visible alpha gap. Arm remains backward opposite near thigh forward, far fist and both flight legs intact. Material/ground/global motion still failed."
+  }
+}

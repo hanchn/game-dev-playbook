@@ -1,0 +1,312 @@
+{
+  "schema": "ui-suite-qa-review",
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-11T14:46:09.501341+00:00",
+  "route": "http://127.0.0.1:4317/ui-kit-solution",
+  "scope": "Codex development helper functional flow and basic source components, not a completed game or engine art acceptance",
+  "technical": {
+    "testsPassed": 20,
+    "testLog": "regression.log",
+    "sourceFiles": 73,
+    "screenSpecs": 12,
+    "components": 28,
+    "plannedQaScenarios": 46,
+    "skillValidation": "Parent ran quick_validate successfully and installed global symlink; earlier default Python failed missing yaml, not counted as successful validation",
+    "checkedAt": "2026-10-11T14:46:09.501341+00:00"
+  },
+  "observations": [
+    {
+      "id": "contact-sheet-thumbnail-crop",
+      "status": "invalid-evidence",
+      "evidence": "component-contact-sheet.svg.png",
+      "observation": "Quick Look square thumbnails crop a tall/nonsquare source; early contact sheet did not show all states.",
+      "retest": {
+        "status": "passed",
+        "evidence": [
+          "components-square-1.svg.png",
+          "components-square-2.svg.png",
+          "components-square-3.svg.png",
+          "components-square-4.svg.png"
+        ],
+        "change": "Paginated square SVG wrappers preserve complete visible states."
+      }
+    },
+    {
+      "id": "component-state-art-review",
+      "status": "failed",
+      "observation": "Initial secondary pressed label had low contrast; toast states were identical; touch right arrow reused left direction; touch disabled lacked visual distinction; slider pressed had no differentiated knob.",
+      "initialRasterAvailable": false,
+      "retest": {
+        "status": "passed-basic-source-review",
+        "evidence": [
+          "components-square-1.svg.png",
+          "components-square-2.svg.png",
+          "components-square-4.svg.png"
+        ],
+        "change": "Dark pressed labels, semantic toast icons, action-specific arrows, desaturated disabled controls, distinct pressed slider knob."
+      }
+    },
+    {
+      "id": "selected-level-label-contrast",
+      "status": "failed",
+      "evidence": "components-square-2-before-level-text.png",
+      "observation": "Selected/completed level tile cream label on pale green had weak contrast.",
+      "retest": {
+        "status": "passed",
+        "evidence": "components-square-2.svg.png",
+        "change": "Use dark labels on selected/completed tiles; current generated source re-exported."
+      }
+    },
+    {
+      "id": "all-vector-states",
+      "status": "passed-basic-source-review",
+      "evidence": [
+        "components-square-1.svg.png",
+        "components-square-2.svg.png",
+        "components-square-3.svg.png",
+        "components-square-4.svg.png"
+      ],
+      "observation": "All 73 source-state previews inspected at rendered size. Icons are directionally distinct; focus and disabled states visible. Text shown in spec preview, absent from production SVG."
+    },
+    {
+      "id": "browser-home-and-flow",
+      "status": "passed-tool-flow",
+      "testedBy": "parent agent actual IAB",
+      "evidence": "../ui-suite/tool-home-actual.png",
+      "steps": [
+        "home/start",
+        "level-select/select",
+        "tutorial/continue",
+        "playing"
+      ],
+      "observation": "Actual path navigated; gameplay world remains intentionally delegated to engine."
+    },
+    {
+      "id": "hud-safe-insets-small-large-text",
+      "status": "failed",
+      "evidence": "../ui-suite/tool-hud-small-text.png",
+      "observation": "Small phone740×360 with large text placed left control outer edge and badge outside safe outline because CSS percentage and native viewport coordinates were mixed.",
+      "retest": {
+        "status": "passed",
+        "testedBy": "parent agent actual IAB; this agent viewed retest PNG and inspected DOM report",
+        "evidence": [
+          "../ui-suite/tool-hud-small-text-retest.png",
+          "../ui-suite/safe-area-actual-retest.json"
+        ],
+        "parameters": {
+          "device": "small-phone",
+          "viewport": [
+            740,
+            360
+          ],
+          "insets": [
+            16,
+            44,
+            16,
+            44
+          ],
+          "bigText": true,
+          "screen": "playing"
+        },
+        "change": "Scale HUD/menu/touch native safe coordinates using the same preview fit; source touch SVG fits entire button.",
+        "observation": "3 HUD badges, pause and all 3 touch controls DOM rects contained in actual safe outline."
+      }
+    },
+    {
+      "id": "browser-disabled-source-export",
+      "status": "passed",
+      "testedBy": "parent agent actual IAB",
+      "evidence": [
+        "../ui-suite/tool-components-disabled.png",
+        "../ui-suite/button-primary-disabled-actual.svg"
+      ],
+      "observation": "Actually exported disabled primary source contains no text."
+    },
+    {
+      "id": "bitmap-menu-background",
+      "status": "passed-menu-visual-review",
+      "evidence": "../../public/ui-suite/dinosaur-jungle-home-v1.png",
+      "observation": "Generated jungle art has quiet center and consistent teal/amber lighting; preview dark overlay protects text. Not source character or gameplay map evidence."
+    },
+    {
+      "id": "nonplatform-explicit-gameplay-rules",
+      "status": "failed",
+      "evidence": "nonplatform-before-fix-audit.json",
+      "observation": "Independent Godot/mobile puzzle audit found normalizeBrief discarded goal/failure conditions and forced score HUD despite no scoring rules.",
+      "retest": {
+        "status": "passed-tool-contract",
+        "testedBy": "parent agent actual IAB import / Generate / playing / failure / JSON export; this agent viewed screenshots and independently asserted exported JSON",
+        "evidence": [
+          "../ui-suite/puzzle-rule-brief.json",
+          "../ui-suite/tool-puzzle-hud-rules-retest.png",
+          "../ui-suite/tool-puzzle-failure-retest.png",
+          "../ui-suite/puzzle-plan-actual-export.json",
+          "regression.log"
+        ],
+        "steps": [
+          "Import declared Godot portrait puzzle brief",
+          "Generate again to test preservation",
+          "Playing shows only blue/moves bindings",
+          "Activate declared puzzle.failed event",
+          "Failure shows declared 20-step rule",
+          "Export JSON and compare objective/failure condition and all HUD fields"
+        ],
+        "change": "Preserve optional objective/failure/HUD + adapter provenance; explicit HUD list overrides defaults, no puzzle score; default binding/rule requirements recorded as assumptions; result screens no invented scoring/reward.",
+        "visualScope": "Gameplay-contract and helper navigation review only; paper-theme styling and physical-phone readability not signed off."
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/components-square-1.svg.png",
+      "sha256": "956c828c3eb31db491b99883b51a0215e431adb09783e805773be4165112934f"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/components-square-2.svg.png",
+      "sha256": "e8af74d0e1dd24a8eb3172a89d1a592d8e6290b6228ab30b7ba34f74bf6e43ab"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/components-square-3.svg.png",
+      "sha256": "7dfed765707a1d54cab6751546e2b4c74be16b416d423289d237f252ede3287b"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/components-square-4.svg.png",
+      "sha256": "56ebf673a4fbe002b39b98336afaa2abbfb4295e37f11ba1878a93303fd9188c"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/components-square-2-before-level-text.png",
+      "sha256": "0c0317b1d61de6f40a17c6c6d3fb8d3e7e67c487d5e709149ce69fc07dab4a7d"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/component-contact-sheet.svg.png",
+      "sha256": "77c98bf9a97d37a6f0fedbd76e429087e93878b2ad76260c5974b2c2669312ee"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/tool-home-actual.png",
+      "sha256": "c5992887b6652834a96a98c2b7324d2933616d54c6532e1a1ad45036a395b21c"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/tool-hud-small-text.png",
+      "sha256": "887fb94541933c3ef973a1a54541d9af64981b7279fc30cbf9b9c4b891d7b66d"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/tool-hud-small-text-retest.png",
+      "sha256": "b89fd24084d9c28cfb89f68a4ad4095ee14c810058fd3fac7701b394dec9f647"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/safe-area-actual-retest.json",
+      "sha256": "59a9d62291135fb202dc8bdb30760e023f58ed4dc6829697f5aeca84da2dc428"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/tool-components-disabled.png",
+      "sha256": "6fc6720b11534b96592103e889c999ac49f8b32fcebee5d8fd290992fcbbb32c"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/button-primary-disabled-actual.svg",
+      "sha256": "43bf6cdcb5ec6df6a3af1cd5bc03169b0e273199fc29eb41c8b9288145e10e7f"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/nonplatform-before-fix-audit.json",
+      "sha256": "5517acabed58356dd2153c27784b96fa9df43baede9684449002bdb8abd22571"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/puzzle-rules-brief.json",
+      "sha256": "7dbcaae81199e0dca5db170ad8426feaba00ed2eca3c31fb98fdd69726d7dd98"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/puzzle-rules-plan.json",
+      "sha256": "c2d55ccc4d40f9c5b001f691a16b274f94345581f0c3950851e72f61b8622e1d"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/puzzle-explicit-hud-brief.json",
+      "sha256": "ad30eba51385e7b185c983fe420706070cfc089bd550cbd17b4aa076966b6bf3"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-kit-solution/puzzle-explicit-hud-plan.json",
+      "sha256": "f1ee98bccdad4a23923c000300c5b9ca1a530a0c5aaa4b8695cca631a2a5bf25"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/puzzle-rule-brief.json",
+      "sha256": "10e5e4d6f0eb318d134a88bf3468658548f2b95d2cd24c6cfd0861287f588944"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/tool-puzzle-hud-rules-retest.png",
+      "sha256": "8d2261bdf526b6ba28325bfe8f7e6538749db7301ec9830952e48aa6568c9ebc"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/tool-puzzle-failure-retest.png",
+      "sha256": "dece6973e37052f0013f04e780742d3930ea7110c7774f3e08e291f2c9bc6973"
+    },
+    {
+      "path": "tools/animation-lab/examples/ui-suite/puzzle-plan-actual-export.json",
+      "sha256": "39f523f6436475cdbeaf979148e3509a462957b91c7f9a3069b3d41ea188d81f"
+    }
+  ],
+  "implementationSources": [
+    {
+      "path": "tools/animation-lab/ui-kit-planner.mjs",
+      "sha256": "430263805b57ba01e1b0c7e07e8f023e915c7a59b5f087029e9d8f80e25387a9"
+    },
+    {
+      "path": "tools/animation-lab/scripts/ui-kit-cli.mjs",
+      "sha256": "49e5ceffe4b35a203ff279467eb23e8e7ef7c64551aac5c25f29d110ef0900cf"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.mjs",
+      "sha256": "35883f6d5daaa02ffa1a22369d121f25a85048d5a889bbc7fafc0d21b4745067"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.css",
+      "sha256": "b8efa9891ffe6e5d95af0282c3b201a46d1d5cd7f969bf1e60a48b18d88d264a"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.html",
+      "sha256": "7be251b6d000b0d23497f0627fa833cd964609129b4ae75e5e24c6a6b875ebbd"
+    },
+    {
+      "path": "skills/game-ui-suite/SKILL.md",
+      "sha256": "bae13b82b76bab02a7905ea702bceb75262db08e34a8eec425deebe908250016"
+    }
+  ],
+  "unreviewed": [
+    "Actual Phaser/Godot hookup, physical touch/controller device tests, localization and all-screen stress execution.",
+    "Optional result emblem is planned, not generated.",
+    "Spec QA matrix remains not-run until real per-scenario evidence; above observations cover explicit helper checks only."
+  ],
+  "technicalBeforeGameplayRules": {
+    "testsPassed": 15,
+    "testLog": "regression.log",
+    "sourceFiles": 73,
+    "screenSpecs": 12,
+    "components": 28,
+    "plannedQaScenarios": 46,
+    "skillValidation": "Parent ran quick_validate successfully and installed global symlink; earlier default Python failed missing yaml, not counted as successful validation"
+  },
+  "implementationSourcesAtInitialVisualReview": [
+    {
+      "path": "tools/animation-lab/ui-kit-planner.mjs",
+      "sha256": "6f27a58057152144e7e369fa2b82cb1ecd6edc26726161fb28681f8db1bc2703"
+    },
+    {
+      "path": "tools/animation-lab/scripts/ui-kit-cli.mjs",
+      "sha256": "7dd08ce987ab1915983ecc39724601649038f52e88f4fe764a410f1c31a6efd6"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.mjs",
+      "sha256": "b19e03ff4f5459bfbed08b2fc61b77e91ec7bfedc391a923545602fdf382f5b5"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.css",
+      "sha256": "c0fd6523067f606045b1543eb20c46a1dee9d3fa3d9d43b8572721754a73cd7f"
+    },
+    {
+      "path": "tools/animation-lab/public/ui-kit-solution.html",
+      "sha256": "f73a35c35ae7babb235df0bffbf79b664f01de14add4e8af3ebbba018e2b0a4d"
+    },
+    {
+      "path": "skills/game-ui-suite/SKILL.md",
+      "sha256": "b630f5f75995c72a33c0e77bb8173b6bebb76c102fa93a3f0828c91824a487e8"
+    }
+  ],
+  "implementationSourcesScope": "Current technical/helper-rule sources; initial home/component/safe screenshots retain historical source hashes separately."
+}

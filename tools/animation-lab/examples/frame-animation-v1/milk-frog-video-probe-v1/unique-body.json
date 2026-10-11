@@ -1,0 +1,76 @@
+{
+  "canvasId": "2104953051498848257",
+  "targetType": "NODE",
+  "targetId": "node-frog-run-9a8438c759304f059a0b7253ecaf7027",
+  "canvas": {
+    "nodes": [
+      {
+        "id": "node-frog-ref-cb5e661c85d44295a436e62dee7f90a5",
+        "type": "rh-image",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "data": {
+          "aspectRatio": "1:1",
+          "height": 1254,
+          "width": 1254,
+          "label": "User milk frog canonical actual PNG",
+          "sourceObjects": [
+            "https://rh-canvas-files.xiaoyaoyou.com/958c82e5aa39e5c908f82fd3b15d10ee/uploads/86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d.png"
+          ],
+          "status": "SUCCESS",
+          "subType": "text-image",
+          "title": "Milk frog canonical"
+        }
+      },
+      {
+        "data": {
+          "generateNum": 1,
+          "height": 645,
+          "label": "Milk frog coherent run 4s QA probe",
+          "maxConnect": {
+            "image": null,
+            "text": null,
+            "video": null
+          },
+          "modelCode": "multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+          "params": {
+            "duration": "4",
+            "resolution": "768p",
+            "aspectRatio": "1:1",
+            "audioMode": "native",
+            "prompt": "Animate EXACT provided yellow muscular humanoid MILK FROG into one coherent 4 second RUN-IN-PLACE animation. The provided image is the permanent character identity and first pose, not a real frog. Retain original glossy yellow muscles, white chest/belly/chin, green eyes, pink broad three-toed feet and pink hands, cheerful open-mouth/tongue face and thick BLACK 2D cartoon outlines. No realistic amphibian, no 3D restyling, no costume. Keep fixed square camera and unchanged frontal-side angle facing RIGHT, constant scale and center/pivot, white flat background without scenery or cast shadow. The entire head, every hand and all toes must remain fully inside a fixed motion envelope with at least 10% canvas margin. Do not pan, zoom, turn, shrink or expand over time. Exactly TWO anatomical arms and TWO legs. Permanent foreground NEAR arm+leg and background FAR arm+leg must swap forward/back continuously, never only one visible moving side. Run as humanoid biped with natural successive contact, loading, passing, toe-off, bent recovering knee/heel, high knee, forward extension and landing. Near leg forward means near arm back; half-cycle later far leg forward means near arm forward. Both hands must travel behind, past and ahead of hip, remain attached at wrist with the same fingers; both feet alternate between genuine support and swing, retain identical pink toe count. Keep far hands/feet visibly separated when passing with slight safe lateral offset; never merge hands into torso or collapse far limb to sliver. Foot support sole stays on one constant invisible groundline; only airborne phases lift both feet. Include 3 complete gait cycles over 4 seconds with intermediate motion, finish matching the exact initial pose and camera for a seamless run loop. Constant forward gaze and cheerful stable mouth, eyes stay open during this short run (no repetitive blink synchronized to footfalls). No motion blur, floating fingers, extra limbs, duplicate character, changing anatomy, text, labels, music or speech. This is a true generated continuous raster animation video, not a sprite sheet or skeleton demonstration.",
+            "refImage1": "https://rh-canvas-files.xiaoyaoyou.com/958c82e5aa39e5c908f82fd3b15d10ee/uploads/86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d.png"
+          },
+          "prompt": "Animate EXACT provided yellow muscular humanoid MILK FROG into one coherent 4 second RUN-IN-PLACE animation. The provided image is the permanent character identity and first pose, not a real frog. Retain original glossy yellow muscles, white chest/belly/chin, green eyes, pink broad three-toed feet and pink hands, cheerful open-mouth/tongue face and thick BLACK 2D cartoon outlines. No realistic amphibian, no 3D restyling, no costume. Keep fixed square camera and unchanged frontal-side angle facing RIGHT, constant scale and center/pivot, white flat background without scenery or cast shadow. The entire head, every hand and all toes must remain fully inside a fixed motion envelope with at least 10% canvas margin. Do not pan, zoom, turn, shrink or expand over time. Exactly TWO anatomical arms and TWO legs. Permanent foreground NEAR arm+leg and background FAR arm+leg must swap forward/back continuously, never only one visible moving side. Run as humanoid biped with natural successive contact, loading, passing, toe-off, bent recovering knee/heel, high knee, forward extension and landing. Near leg forward means near arm back; half-cycle later far leg forward means near arm forward. Both hands must travel behind, past and ahead of hip, remain attached at wrist with the same fingers; both feet alternate between genuine support and swing, retain identical pink toe count. Keep far hands/feet visibly separated when passing with slight safe lateral offset; never merge hands into torso or collapse far limb to sliver. Foot support sole stays on one constant invisible groundline; only airborne phases lift both feet. Include 3 complete gait cycles over 4 seconds with intermediate motion, finish matching the exact initial pose and camera for a seamless run loop. Constant forward gaze and cheerful stable mouth, eyes stay open during this short run (no repetitive blink synchronized to footfalls). No motion blur, floating fingers, extra limbs, duplicate character, changing anatomy, text, labels, music or speech. This is a true generated continuous raster animation video, not a sprite sheet or skeleton demonstration.",
+          "status": "IDLE",
+          "subType": "multimodal-video",
+          "title": "Milk frog coherent run 4s QA probe",
+          "width": 360
+        },
+        "id": "node-frog-run-9a8438c759304f059a0b7253ecaf7027",
+        "position": {
+          "x": 400,
+          "y": 0
+        },
+        "selectable": true,
+        "style": {
+          "height": 220,
+          "width": 380
+        },
+        "type": "rh-video"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-node-frog-ref-cb5e661c85d44295a436e62dee7f90a5-node-frog-run-9a8438c759304f059a0b7253ecaf7027",
+        "source": "node-frog-ref-cb5e661c85d44295a436e62dee7f90a5",
+        "sourceHandle": "output",
+        "target": "node-frog-run-9a8438c759304f059a0b7253ecaf7027",
+        "targetHandle": "input",
+        "type": "default"
+      }
+    ]
+  }
+}

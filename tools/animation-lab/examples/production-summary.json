@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-10-11T03:55:53.198Z",
+  "regressions": 86,
+  "regressionLog": "examples/current-regression.log",
+  "characters": [
+    {
+      "species": "human",
+      "skin": "classic",
+      "assetId": "human-side-v17",
+      "technical": "passed",
+      "visual": "agent-reviewed-user-acceptance-pending",
+      "actions": 8,
+      "components": 14,
+      "qaRoutes": 36,
+      "review": "examples/human-side-v17/art-review.json"
+    },
+    {
+      "species": "human",
+      "skin": "alien",
+      "assetId": "human-alien-v6",
+      "technical": "passed",
+      "visual": "agent-reviewed-user-acceptance-pending",
+      "actions": 8,
+      "components": 14,
+      "qaRoutes": 36,
+      "review": "examples/human-alien-v6/art-review.json"
+    },
+    {
+      "species": "chicken",
+      "assetId": "chicken-side-v3",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "脖子衔接",
+        "翅膀方向"
+      ]
+    },
+    {
+      "species": "dinosaur",
+      "assetId": "dinosaur-side-v3",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "两段腿+脚的身份与形状",
+        "肩臂位置"
+      ]
+    },
+    {
+      "species": "horse",
+      "assetId": "horse-side-v3",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "脖子",
+        "前后腿比例",
+        "尾巴"
+      ]
+    },
+    {
+      "species": "crocodile",
+      "assetId": "crocodile-side-v3",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "前后腿身份及姿势"
+      ]
+    },
+    {
+      "species": "scorpion",
+      "assetId": "scorpion-side-v3",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "腿链形状与步态"
+      ]
+    },
+    {
+      "species": "snake",
+      "assetId": "snake-side-v4",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "连续多源衔接和旋转切线"
+      ]
+    },
+    {
+      "species": "worm",
+      "assetId": "worm-side-v4",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "连续身体与头尾角度"
+      ]
+    },
+    {
+      "species": "spider",
+      "assetId": "spider-side-v2",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "按新版QA流程复核"
+      ]
+    },
+    {
+      "species": "centipede",
+      "assetId": "centipede-side-v2",
+      "technical": "historical-results-not-current-visual-approval",
+      "visual": "not-reviewed-user-defects-open",
+      "openDefects": [
+        "按新版QA流程复核"
+      ]
+    }
+  ]
+}

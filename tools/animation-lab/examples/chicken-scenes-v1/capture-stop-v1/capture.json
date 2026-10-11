@@ -1,0 +1,876 @@
+{
+  "schemaVersion": 1,
+  "type": "skeletal-scene-capture",
+  "scene": {
+    "scenario": "flock",
+    "actorScale": 1.7,
+    "actors": [
+      {
+        "id": "chicken-1",
+        "sex": "rooster",
+        "x": 273.33333333333337,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 0
+      },
+      {
+        "id": "chicken-2",
+        "sex": "rooster",
+        "x": 640,
+        "groundY": 560,
+        "facing": -1,
+        "phaseOffset": 0.73
+      },
+      {
+        "id": "chicken-3",
+        "sex": "rooster",
+        "x": 1006.6666666666667,
+        "groundY": 560,
+        "facing": 1,
+        "phaseOffset": 1.46
+      }
+    ]
+  },
+  "asset": {
+    "schemaVersion": 1,
+    "id": "chicken-side-v3",
+    "species": "chicken",
+    "name": "鸡",
+    "version": 3,
+    "design": {
+      "color": "#e1a34c",
+      "size": 1,
+      "stride": 9,
+      "view": "侧面 · 正交 · 朝右"
+    },
+    "parts": [
+      {
+        "id": "root",
+        "name": "装配原点",
+        "parent": null,
+        "shape": "anchor",
+        "rest": [
+          0,
+          0
+        ],
+        "dimensions": [
+          0,
+          0
+        ],
+        "layer": 0,
+        "tile": 0,
+        "material": "#e1a34c"
+      },
+      {
+        "id": "body",
+        "name": "躯干",
+        "parent": "root",
+        "shape": "ellipse",
+        "rest": [
+          0,
+          -60
+        ],
+        "dimensions": [
+          66,
+          45
+        ],
+        "layer": 3,
+        "tile": 0,
+        "material": "#e1a34c"
+      },
+      {
+        "id": "neck",
+        "name": "颈部",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          22,
+          -73
+        ],
+        "dimensions": [
+          20.248456731316587,
+          12
+        ],
+        "layer": 4,
+        "tile": 5,
+        "material": "#e1a34c",
+        "role": "neck"
+      },
+      {
+        "id": "head",
+        "name": "头部",
+        "parent": "neck",
+        "shape": "ellipse",
+        "rest": [
+          34,
+          -96
+        ],
+        "dimensions": [
+          35,
+          37
+        ],
+        "layer": 5,
+        "tile": 1,
+        "material": "#e1a34c",
+        "skinAspect": true
+      },
+      {
+        "id": "leg-0-upper",
+        "name": "近侧第1腿 · 上段",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          0,
+          -43
+        ],
+        "dimensions": [
+          19,
+          8
+        ],
+        "layer": 6,
+        "tile": 2,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "upper",
+        "phase": 0,
+        "range": [
+          -100,
+          100
+        ]
+      },
+      {
+        "id": "leg-0-lower",
+        "name": "近侧第1腿 · 下段",
+        "parent": "leg-0-upper",
+        "shape": "bone",
+        "rest": [
+          0,
+          -43
+        ],
+        "dimensions": [
+          24,
+          5
+        ],
+        "layer": 6,
+        "tile": 3,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "lower",
+        "phase": 0,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-0-foot",
+        "name": "脚端",
+        "parent": "leg-0-lower",
+        "shape": "foot",
+        "rest": [
+          0,
+          -5
+        ],
+        "dimensions": [
+          13,
+          6
+        ],
+        "layer": 6,
+        "tile": 4,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "foot",
+        "phase": 0,
+        "range": [
+          -20,
+          20
+        ]
+      },
+      {
+        "id": "leg-1-upper",
+        "name": "远侧第1腿 · 上段",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          4,
+          -43
+        ],
+        "dimensions": [
+          19,
+          8
+        ],
+        "layer": 1,
+        "tile": 2,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "upper",
+        "phase": 0.5,
+        "range": [
+          -100,
+          100
+        ]
+      },
+      {
+        "id": "leg-1-lower",
+        "name": "远侧第1腿 · 下段",
+        "parent": "leg-1-upper",
+        "shape": "bone",
+        "rest": [
+          4,
+          -43
+        ],
+        "dimensions": [
+          24,
+          5
+        ],
+        "layer": 1,
+        "tile": 3,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "lower",
+        "phase": 0.5,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-1-foot",
+        "name": "脚端",
+        "parent": "leg-1-lower",
+        "shape": "foot",
+        "rest": [
+          4,
+          -5
+        ],
+        "dimensions": [
+          13,
+          6
+        ],
+        "layer": 1,
+        "tile": 4,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "foot",
+        "phase": 0.5,
+        "range": [
+          -20,
+          20
+        ]
+      },
+      {
+        "id": "arm-0",
+        "name": "翅膀 1",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -10,
+          -69
+        ],
+        "dimensions": [
+          32,
+          25
+        ],
+        "layer": 7,
+        "tile": 7,
+        "material": "#e1a34c",
+        "arm": 0,
+        "role": "wing",
+        "range": [
+          -80,
+          80
+        ]
+      },
+      {
+        "id": "arm-1",
+        "name": "翅膀 2",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -10,
+          -69
+        ],
+        "dimensions": [
+          32,
+          25
+        ],
+        "layer": 2,
+        "tile": 7,
+        "material": "#e1a34c",
+        "arm": 1,
+        "role": "wing",
+        "range": [
+          -80,
+          80
+        ]
+      },
+      {
+        "id": "tail-0",
+        "name": "尾羽",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -27,
+          -62
+        ],
+        "dimensions": [
+          31,
+          22
+        ],
+        "layer": 2,
+        "tile": 6,
+        "material": "#e1a34c",
+        "role": "tail"
+      }
+    ],
+    "clips": [
+      "idle",
+      "walk",
+      "run",
+      "jump",
+      "peck",
+      "flap",
+      "extend"
+    ],
+    "status": "draft",
+    "qa": {
+      "technical": "untested",
+      "visual": "pending"
+    },
+    "source": {
+      "kind": "redrawn-rounded-part-atlas",
+      "description": "重绘自然圆弧零件，内部旋转轴与透明重叠区域"
+    },
+    "rendering": {
+      "rig": "animal-side-v2",
+      "atlas": "/art/chicken-side-parts-v3.png",
+      "view": "side",
+      "projection": "orthographic",
+      "facing": "right",
+      "frame": {
+        "anchor": [
+          256,
+          350
+        ],
+        "scale": 1.5
+      },
+      "continuousNeck": true
+    },
+    "actionDesign": {
+      "title": "鸡 · 侧面多动作",
+      "assembly": "圆弧端部围绕内部轴点自然重叠。远侧肢体 → 身体 → 近侧肢体；动作保留稳定零件身份。",
+      "actions": [
+        {
+          "id": "idle",
+          "name": "呼吸待机",
+          "duration": 2,
+          "loop": true,
+          "keyPoses": [
+            "站立",
+            "轻微呼吸",
+            "回位"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "duration": 1,
+          "loop": true,
+          "keyPoses": [
+            "落脚支撑",
+            "抬脚回摆",
+            "交换支撑"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "run",
+          "name": "快跑",
+          "duration": 0.65,
+          "loop": true,
+          "keyPoses": [
+            "蹬地",
+            "快速回摆",
+            "交替落脚"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "jump",
+          "name": "跳跃",
+          "duration": 1.2,
+          "loop": false,
+          "keyPoses": [
+            "屈腿蓄力",
+            "起跳",
+            "腾空收腿",
+            "落地缓冲"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "蓄力 → 腾空 → 落地缓冲",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "peck",
+          "name": "啄食",
+          "duration": 1.4,
+          "loop": false,
+          "keyPoses": [
+            "观察",
+            "屈颈低头",
+            "啄食",
+            "抬头"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "flap",
+          "name": "振翅",
+          "duration": 0.8,
+          "loop": true,
+          "keyPoses": [
+            "收翅",
+            "伸展",
+            "下拍",
+            "收回"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "extend",
+          "name": "单配件屈伸",
+          "duration": 1,
+          "loop": true,
+          "keyPoses": [
+            "中性",
+            "屈曲",
+            "伸展",
+            "回位"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-lower",
+            "leg-1-foot",
+            "arm-0",
+            "arm-1",
+            "tail-0"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        }
+      ],
+      "visualReview": [
+        "正常速度与0.25倍速",
+        "深浅背景检查关节裂缝",
+        "检查眼睛、脚爪、尾羽朝向",
+        "固定画布逐帧检视"
+      ],
+      "limitations": [
+        "二维关节动画；不代表物种级生物或地面摩擦仿真。",
+        "侧面资产，俯拍和背面需要独立素材。"
+      ]
+    }
+  },
+  "assetId": "chicken-side-v3",
+  "version": 3,
+  "atlas": "/art/chicken-side-parts-v3.png",
+  "atlasSha256": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de",
+  "canvas": [
+    1280,
+    720
+  ],
+  "fixedTransform": {
+    "actorScale": 1.7,
+    "camera": "fixed",
+    "anchor": [
+      256,
+      350
+    ]
+  },
+  "receipt": {
+    "requestedFPS": 12,
+    "requestedDuration": 6,
+    "requestedFrameCount": 72,
+    "capturedFrameCount": 5,
+    "actualElapsedSeconds": 0.4215999999940395,
+    "terminalRequestElapsedMs": null,
+    "cancelled": true,
+    "encodingTiming": "captureStream(0) + one requestFrame per immutable PNG bitmap, plus terminal hold; MediaRecorder PTS are real wall-clock and require FFprobe verification",
+    "timingSamples": [
+      {
+        "requestedTimeMs": 0,
+        "actualRequestElapsedMs": 5.399999976158142,
+        "latenessMs": 5.399999976158142
+      },
+      {
+        "requestedTimeMs": 83.33333333333333,
+        "actualRequestElapsedMs": 89.5,
+        "latenessMs": 6.166666666666671
+      },
+      {
+        "requestedTimeMs": 166.66666666666666,
+        "actualRequestElapsedMs": 180.69999998807907,
+        "latenessMs": 14.033333321412414
+      },
+      {
+        "requestedTimeMs": 250,
+        "actualRequestElapsedMs": 260.09999999403954,
+        "latenessMs": 10.099999994039536
+      },
+      {
+        "requestedTimeMs": 333.3333333333333,
+        "actualRequestElapsedMs": 346,
+        "latenessMs": 12.666666666666686
+      }
+    ]
+  },
+  "movie": {
+    "file": "chicken-flock.webm",
+    "sha256": "86256258b97f350b4478ef1294156fb2fb27c167ab7cb95539825586cfc1f46e",
+    "mimeType": "video/webm;codecs=vp9"
+  },
+  "frames": [
+    {
+      "name": "frames/001.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0,
+          "blend": null,
+          "offsetX": 0
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.7300000000000004,
+          "blend": null,
+          "offsetX": -4.166883259259265
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.45999999999999996,
+          "blend": null,
+          "offsetX": 13.44013274074074
+        }
+      ],
+      "sourceTime": 0,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 0,
+      "actualRequestElapsedMs": 5.399999976158142,
+      "sha256": "b0adefcc1e1e7f199c7e66a6c599d5d7068dccd2f3a5ddec321bef09fcaa4951"
+    },
+    {
+      "name": "frames/002.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.08333333333333304,
+          "blend": null,
+          "offsetX": 0.06361454046639187
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.8133333333333335,
+          "blend": null,
+          "offsetX": -5.058191626886147
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.543333333333333,
+          "blend": null,
+          "offsetX": 14.60649789849108
+        }
+      ],
+      "sourceTime": 0.08333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 83.33333333333333,
+      "actualRequestElapsedMs": 89.5,
+      "sha256": "750666faacd3eb76cb3cdb8a0140b23d60a9d6271b1cac2180dde5f1af58b54b"
+    },
+    {
+      "name": "frames/003.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.16666666666666696,
+          "blend": null,
+          "offsetX": 0.24965706447188016
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.8966666666666665,
+          "blend": null,
+          "offsetX": -6.0088415582990375
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.6266666666666669,
+          "blend": null,
+          "offsetX": 15.769118200274352
+        }
+      ],
+      "sourceTime": 0.16666666666666666,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 166.66666666666666,
+      "actualRequestElapsedMs": 180.69999998807907,
+      "sha256": "3d1a8ac764a2afbaa84ddb7073270802ca7a4e2aa155c79b3a2f352b897564db"
+    },
+    {
+      "name": "frames/004.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.25,
+          "blend": null,
+          "offsetX": 0.5509259259259259
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.9800000000000004,
+          "blend": null,
+          "offsetX": -7.011631407407412
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.71,
+          "blend": null,
+          "offsetX": 16.920792
+        }
+      ],
+      "sourceTime": 0.25,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 250,
+      "actualRequestElapsedMs": 260.09999999403954,
+      "sha256": "2e03fafd55446f4c2df66786be07961b5289f64032206d8c733b2a5c298e79f2"
+    },
+    {
+      "name": "frames/005.png",
+      "actors": [
+        {
+          "id": "chicken-1",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.33333333333333304,
+          "blend": null,
+          "offsetX": 0.9602194787379955
+        },
+        {
+          "id": "chicken-2",
+          "facing": -1,
+          "clip": "walk",
+          "phase": 0.06333333333333346,
+          "blend": null,
+          "offsetX": -8.059359528120716
+        },
+        {
+          "id": "chicken-3",
+          "facing": 1,
+          "clip": "walk",
+          "phase": 0.793333333333333,
+          "blend": null,
+          "offsetX": 18.054317651577495
+        }
+      ],
+      "sourceTime": 0.3333333333333333,
+      "durationMs": 83,
+      "width": 1280,
+      "height": 720,
+      "requestedTimeMs": 333.3333333333333,
+      "actualRequestElapsedMs": 346,
+      "sha256": "7755e9917e125d4d88b10cf1d293bedbf46073d49e800459e4bb12ef09865740"
+    }
+  ],
+  "qa": {
+    "visual": "failed",
+    "timing": "requires-decoded-video-verification",
+    "notes": "已观察到啄食喙未触地、多鸡位移未与支撑脚锁地一致；本成片保留失败供复测。"
+  }
+}

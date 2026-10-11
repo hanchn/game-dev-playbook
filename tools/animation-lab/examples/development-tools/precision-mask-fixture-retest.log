@@ -1,0 +1,13 @@
+✔ precise mask is independent of mesh topology and preserves neck layering (11.533084ms)
+✔ coarse skull and neck share every overlap vertex and stay within half a screen pixel of the old grid (456.488583ms)
+✔ cached native source bitmap removes foreign alpha, keeps fringe and reuses head/neck crop (354.08275ms)
+✔ coarse Canvas mesh uses cached source at correct atlas offset and rejects foreign pixels (292.218875ms)
+✔ SVG applies one shared source-space precision mask inside affine triangles (12648.661333ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14080.296667

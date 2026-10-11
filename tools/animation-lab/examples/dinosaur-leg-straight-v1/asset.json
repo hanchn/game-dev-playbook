@@ -1,0 +1,949 @@
+{
+  "schemaVersion": 1,
+  "id": "dinosaur-side-v12",
+  "species": "dinosaur",
+  "name": "恐龙",
+  "version": 12,
+  "design": {
+    "color": "#e1a34c",
+    "size": 1,
+    "stride": 14,
+    "view": "侧面 · 正交 · 朝右"
+  },
+  "parts": [
+    {
+      "id": "root",
+      "name": "装配原点",
+      "parent": null,
+      "shape": "anchor",
+      "rest": [
+        0,
+        0
+      ],
+      "dimensions": [
+        0,
+        0
+      ],
+      "layer": 0,
+      "tile": 0,
+      "material": "#e1a34c"
+    },
+    {
+      "id": "body",
+      "name": "躯干",
+      "parent": "root",
+      "shape": "ellipse",
+      "rest": [
+        -2,
+        -95
+      ],
+      "dimensions": [
+        94,
+        60
+      ],
+      "layer": 3,
+      "tile": 0,
+      "material": "#e1a34c"
+    },
+    {
+      "id": "neck",
+      "name": "颈部",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        24,
+        -104
+      ],
+      "dimensions": [
+        35.35533905932738,
+        12
+      ],
+      "layer": 2,
+      "tile": 5,
+      "material": "#e1a34c",
+      "role": "neck"
+    },
+    {
+      "id": "head",
+      "name": "头部",
+      "parent": "neck",
+      "shape": "ellipse",
+      "rest": [
+        58,
+        -133
+      ],
+      "dimensions": [
+        74,
+        42
+      ],
+      "layer": 5,
+      "tile": 1,
+      "material": "#e1a34c",
+      "skinAspect": true
+    },
+    {
+      "id": "leg-0-upper",
+      "name": "髋至膝股段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        -14,
+        -80
+      ],
+      "dimensions": [
+        32,
+        29
+      ],
+      "layer": 2,
+      "tile": 2,
+      "material": "#e1a34c",
+      "leg": 0,
+      "side": "near",
+      "role": "upper",
+      "phase": 0,
+      "range": [
+        -100,
+        100
+      ]
+    },
+    {
+      "id": "leg-0-middle",
+      "name": "膝至踝胫段",
+      "parent": "leg-0-upper",
+      "shape": "bone",
+      "rest": [
+        -14,
+        -70
+      ],
+      "dimensions": [
+        36,
+        22
+      ],
+      "layer": 1.9,
+      "tile": 3,
+      "material": "#e1a34c",
+      "leg": 0,
+      "side": "near",
+      "role": "middle",
+      "phase": 0,
+      "range": [
+        0,
+        150
+      ]
+    },
+    {
+      "id": "leg-0-lower",
+      "name": "踝至趾根跖段",
+      "parent": "leg-0-middle",
+      "shape": "bone",
+      "rest": [
+        -14,
+        -70
+      ],
+      "dimensions": [
+        22,
+        15
+      ],
+      "layer": 1.8,
+      "tile": 4,
+      "material": "#e1a34c",
+      "leg": 0,
+      "side": "near",
+      "role": "lower",
+      "phase": 0,
+      "range": [
+        0,
+        150
+      ]
+    },
+    {
+      "id": "leg-0-foot",
+      "name": "短趾垫与三趾爪",
+      "parent": "leg-0-lower",
+      "shape": "foot",
+      "rest": [
+        -14,
+        -5
+      ],
+      "dimensions": [
+        28,
+        16
+      ],
+      "layer": 1.7,
+      "tile": 10,
+      "material": "#e1a34c",
+      "leg": 0,
+      "side": "near",
+      "role": "foot",
+      "phase": 0,
+      "range": [
+        -20,
+        20
+      ]
+    },
+    {
+      "id": "leg-1-upper",
+      "name": "髋至膝股段",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        -10,
+        -80
+      ],
+      "dimensions": [
+        32,
+        29
+      ],
+      "layer": 1,
+      "tile": 2,
+      "material": "#e1a34c",
+      "leg": 1,
+      "side": "far",
+      "role": "upper",
+      "phase": 0.5,
+      "range": [
+        -100,
+        100
+      ]
+    },
+    {
+      "id": "leg-1-middle",
+      "name": "膝至踝胫段",
+      "parent": "leg-1-upper",
+      "shape": "bone",
+      "rest": [
+        -10,
+        -70
+      ],
+      "dimensions": [
+        36,
+        22
+      ],
+      "layer": 0.9,
+      "tile": 3,
+      "material": "#e1a34c",
+      "leg": 1,
+      "side": "far",
+      "role": "middle",
+      "phase": 0.5,
+      "range": [
+        0,
+        150
+      ]
+    },
+    {
+      "id": "leg-1-lower",
+      "name": "踝至趾根跖段",
+      "parent": "leg-1-middle",
+      "shape": "bone",
+      "rest": [
+        -10,
+        -70
+      ],
+      "dimensions": [
+        22,
+        15
+      ],
+      "layer": 0.8,
+      "tile": 4,
+      "material": "#e1a34c",
+      "leg": 1,
+      "side": "far",
+      "role": "lower",
+      "phase": 0.5,
+      "range": [
+        0,
+        150
+      ]
+    },
+    {
+      "id": "leg-1-foot",
+      "name": "短趾垫与三趾爪",
+      "parent": "leg-1-lower",
+      "shape": "foot",
+      "rest": [
+        -10,
+        -5
+      ],
+      "dimensions": [
+        28,
+        16
+      ],
+      "layer": 0.7,
+      "tile": 10,
+      "material": "#e1a34c",
+      "leg": 1,
+      "side": "far",
+      "role": "foot",
+      "phase": 0.5,
+      "range": [
+        -20,
+        20
+      ]
+    },
+    {
+      "id": "tail-0",
+      "name": "尾链 1",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        -34,
+        -95
+      ],
+      "dimensions": [
+        29,
+        36
+      ],
+      "layer": 2,
+      "tile": 6,
+      "material": "#e1a34c",
+      "role": "tail-chain",
+      "segment": 0,
+      "skinHeight": 36
+    },
+    {
+      "id": "tail-1",
+      "name": "尾链 2",
+      "parent": "tail-0",
+      "shape": "bone",
+      "rest": [
+        -34,
+        -95
+      ],
+      "dimensions": [
+        27,
+        26
+      ],
+      "layer": 2,
+      "tile": 6,
+      "material": "#e1a34c",
+      "role": "tail-chain",
+      "segment": 1,
+      "skinHeight": 26
+    },
+    {
+      "id": "tail-2",
+      "name": "尾链 3",
+      "parent": "tail-1",
+      "shape": "bone",
+      "rest": [
+        -34,
+        -95
+      ],
+      "dimensions": [
+        25,
+        19
+      ],
+      "layer": 2,
+      "tile": 6,
+      "material": "#e1a34c",
+      "role": "tail-chain",
+      "segment": 2,
+      "skinHeight": 19
+    },
+    {
+      "id": "tail-3",
+      "name": "尾链 4",
+      "parent": "tail-2",
+      "shape": "bone",
+      "rest": [
+        -34,
+        -95
+      ],
+      "dimensions": [
+        24,
+        12
+      ],
+      "layer": 2,
+      "tile": 6,
+      "material": "#e1a34c",
+      "role": "tail-chain",
+      "segment": 3,
+      "skinHeight": 12
+    },
+    {
+      "id": "tail-4",
+      "name": "尾链 5",
+      "parent": "tail-3",
+      "shape": "bone",
+      "rest": [
+        -34,
+        -95
+      ],
+      "dimensions": [
+        30,
+        7
+      ],
+      "layer": 2,
+      "tile": 13,
+      "material": "#e1a34c",
+      "role": "tail-chain",
+      "segment": 4,
+      "skinHeight": 7
+    },
+    {
+      "id": "arm-0-upper",
+      "name": "短前肢 · 上臂",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        21,
+        -96
+      ],
+      "dimensions": [
+        14,
+        8
+      ],
+      "layer": 6,
+      "tile": 7,
+      "material": "#e1a34c",
+      "arm": 0,
+      "role": "arm-upper"
+    },
+    {
+      "id": "arm-0-lower",
+      "name": "短前肢 · 前臂",
+      "parent": "arm-0-upper",
+      "shape": "bone",
+      "rest": [
+        21,
+        -96
+      ],
+      "dimensions": [
+        13,
+        5
+      ],
+      "layer": 6,
+      "tile": 8,
+      "material": "#e1a34c",
+      "arm": 0,
+      "role": "arm-lower"
+    },
+    {
+      "id": "arm-0-hand",
+      "name": "指爪",
+      "parent": "arm-0-lower",
+      "shape": "bone",
+      "rest": [
+        21,
+        -96
+      ],
+      "dimensions": [
+        8,
+        5
+      ],
+      "layer": 6,
+      "tile": 9,
+      "material": "#e1a34c",
+      "arm": 0,
+      "role": "hand"
+    },
+    {
+      "id": "arm-1-upper",
+      "name": "短前肢 · 上臂",
+      "parent": "body",
+      "shape": "bone",
+      "rest": [
+        21,
+        -96
+      ],
+      "dimensions": [
+        14,
+        8
+      ],
+      "layer": 1,
+      "tile": 7,
+      "material": "#e1a34c",
+      "arm": 1,
+      "role": "arm-upper"
+    },
+    {
+      "id": "arm-1-lower",
+      "name": "短前肢 · 前臂",
+      "parent": "arm-1-upper",
+      "shape": "bone",
+      "rest": [
+        21,
+        -96
+      ],
+      "dimensions": [
+        13,
+        5
+      ],
+      "layer": 1,
+      "tile": 8,
+      "material": "#e1a34c",
+      "arm": 1,
+      "role": "arm-lower"
+    },
+    {
+      "id": "arm-1-hand",
+      "name": "指爪",
+      "parent": "arm-1-lower",
+      "shape": "bone",
+      "rest": [
+        21,
+        -96
+      ],
+      "dimensions": [
+        8,
+        5
+      ],
+      "layer": 1,
+      "tile": 9,
+      "material": "#e1a34c",
+      "arm": 1,
+      "role": "hand"
+    },
+    {
+      "id": "jaw",
+      "name": "下颌",
+      "parent": "head",
+      "shape": "bone",
+      "rest": [
+        45,
+        -132
+      ],
+      "dimensions": [
+        39,
+        10
+      ],
+      "layer": 5,
+      "tile": 12,
+      "material": "#e1a34c",
+      "role": "jaw"
+    }
+  ],
+  "clips": [
+    "idle",
+    "walk",
+    "run",
+    "jump",
+    "roar",
+    "bite",
+    "tail",
+    "extend"
+  ],
+  "status": "draft",
+  "qa": {
+    "technical": "untested",
+    "visual": "pending"
+  },
+  "source": {
+    "kind": "generated-theropod-anatomical-atlas",
+    "description": "独立股段、胫段、踝下跖段与短三趾脚片，完整连续头颈和长尾"
+  },
+  "rendering": {
+    "rig": "animal-side-v2",
+    "atlas": "/art/dinosaur-side-parts-v8.png",
+    "view": "side",
+    "projection": "orthographic",
+    "facing": "right",
+    "frame": {
+      "anchor": [
+        256,
+        350
+      ],
+      "scale": 1.25
+    },
+    "tailMesh": {
+      "tile": 6,
+      "width": 28,
+      "sourceRange": [
+        0.92,
+        0.008
+      ]
+    },
+    "continuousNeck": true,
+    "neckUnderBody": true,
+    "dinosaurLegSegments": 3
+  },
+  "actionDesign": {
+    "title": "恐龙 · 侧面多动作",
+    "assembly": "圆弧端部围绕内部轴点自然重叠。远侧肢体 → 身体 → 近侧肢体；动作保留稳定零件身份。",
+    "actions": [
+      {
+        "id": "idle",
+        "name": "呼吸待机",
+        "duration": 2,
+        "loop": true,
+        "keyPoses": [
+          "站立",
+          "轻微呼吸",
+          "回位"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "静止双足支撑，单件测试可悬空",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      },
+      {
+        "id": "walk",
+        "name": "行走",
+        "duration": 1,
+        "loop": true,
+        "keyPoses": [
+          "落脚支撑",
+          "抬脚回摆",
+          "交换支撑"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      },
+      {
+        "id": "run",
+        "name": "快跑",
+        "duration": 0.65,
+        "loop": true,
+        "keyPoses": [
+          "蹬地",
+          "快速回摆",
+          "交替落脚"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      },
+      {
+        "id": "jump",
+        "name": "跳跃",
+        "duration": 1.2,
+        "loop": false,
+        "keyPoses": [
+          "屈腿蓄力",
+          "起跳",
+          "腾空收腿",
+          "落地缓冲"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "蓄力 → 腾空 → 落地缓冲",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      },
+      {
+        "id": "roar",
+        "name": "仰头咆哮",
+        "duration": 1.6,
+        "loop": false,
+        "keyPoses": [
+          "蓄力",
+          "仰头",
+          "张嘴咆哮",
+          "闭嘴回位"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "静止双足支撑，单件测试可悬空",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      },
+      {
+        "id": "bite",
+        "name": "咬击",
+        "duration": 0.85,
+        "loop": false,
+        "keyPoses": [
+          "观察",
+          "张嘴",
+          "快速咬合",
+          "收回"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "静止双足支撑，单件测试可悬空",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      },
+      {
+        "id": "tail",
+        "name": "摆尾",
+        "duration": 1.2,
+        "loop": true,
+        "keyPoses": [
+          "尾根驱动",
+          "波动传至尾尖",
+          "反向回摆"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "静止双足支撑，单件测试可悬空",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      },
+      {
+        "id": "extend",
+        "name": "单配件屈伸",
+        "duration": 1,
+        "loop": true,
+        "keyPoses": [
+          "中性",
+          "屈曲",
+          "伸展",
+          "回位"
+        ],
+        "participants": [
+          "body",
+          "neck",
+          "head",
+          "leg-0-upper",
+          "leg-0-middle",
+          "leg-0-lower",
+          "leg-0-foot",
+          "leg-1-upper",
+          "leg-1-middle",
+          "leg-1-lower",
+          "leg-1-foot",
+          "tail-0",
+          "tail-1",
+          "tail-2",
+          "tail-3",
+          "tail-4",
+          "arm-0-upper",
+          "arm-0-lower",
+          "arm-0-hand",
+          "arm-1-upper",
+          "arm-1-lower",
+          "arm-1-hand",
+          "jaw"
+        ],
+        "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+        "ranges": "骨段保持固定长度；按当前物种比例绑定",
+        "contact": "静止双足支撑，单件测试可悬空",
+        "acceptance": [
+          "骨长固定",
+          "连接连续",
+          "支撑稳定",
+          "轮廓完整",
+          "动作与视角一致"
+        ]
+      }
+    ],
+    "visualReview": [
+      "正常速度与0.25倍速",
+      "深浅背景检查关节裂缝",
+      "检查眼睛、脚爪、尾羽朝向",
+      "固定画布逐帧检视"
+    ],
+    "limitations": [
+      "二维关节动画；不代表物种级生物或地面摩擦仿真。",
+      "侧面资产，俯拍和背面需要独立素材。"
+    ]
+  }
+}

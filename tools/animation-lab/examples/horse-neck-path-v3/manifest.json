@@ -1,0 +1,298 @@
+{
+  "schema": "equine-neck-candidate/v1",
+  "registered": false,
+  "assetId": "horse-side-v24",
+  "assetVersion": 24,
+  "skinBindingVersion": 24,
+  "sources": {
+    "primary": {
+      "atlas": "/art/horse-side-parts-v5.png",
+      "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b"
+    },
+    "horse-cannon-material": {
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5"
+    },
+    "horse-upper-material": {
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3"
+    },
+    "horse-hoof-material": {
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d"
+    }
+  },
+  "landmarks": {
+    "root": [
+      0.31,
+      0.93
+    ],
+    "middle": [
+      0.39,
+      0.62
+    ],
+    "join": [
+      0.5,
+      0.32
+    ]
+  },
+  "landmarkStatus": "visually-estimated-from-source-not-user-accepted",
+  "camera": {
+    "canvas": [
+      1024,
+      768
+    ],
+    "translate": [
+      -100,
+      -170
+    ],
+    "scale": 2
+  },
+  "cases": [
+    {
+      "id": "baseline",
+      "baseline": true,
+      "states": [
+        {
+          "file": "baseline-graze-0.000-light.png",
+          "clip": "graze",
+          "phase": 0,
+          "metrics": null,
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "baseline-graze-0.200-light.png",
+          "clip": "graze",
+          "phase": 0.2,
+          "metrics": null,
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "baseline-graze-0.467-light.png",
+          "clip": "graze",
+          "phase": 0.467,
+          "metrics": null,
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "baseline-graze-0.730-light.png",
+          "clip": "graze",
+          "phase": 0.73,
+          "metrics": null,
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "baseline-graze-1.000-light.png",
+          "clip": "graze",
+          "phase": 1,
+          "metrics": null,
+          "visual": "not-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "path-root04",
+      "rootOrientation": "neck",
+      "rootTangentStrength": 0.4,
+      "endTangentStrength": 0.6,
+      "states": [
+        {
+          "file": "path-root04-graze-0.000-light.png",
+          "clip": "graze",
+          "phase": 0,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 66.69189369812607,
+            "centerlineScale": 1.0969479530442523,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root04-graze-0.200-light.png",
+          "clip": "graze",
+          "phase": 0.2,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.75367993748362,
+            "centerlineScale": 1.0815162175335902,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root04-graze-0.467-light.png",
+          "clip": "graze",
+          "phase": 0.467,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.77003599295892,
+            "centerlineScale": 1.0817852418569167,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root04-graze-0.730-light.png",
+          "clip": "graze",
+          "phase": 0.73,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.75978505928941,
+            "centerlineScale": 1.0816166345482614,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root04-graze-1.000-light.png",
+          "clip": "graze",
+          "phase": 1,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 66.69189369812607,
+            "centerlineScale": 1.0969479530442523,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "path-root06",
+      "rootOrientation": "neck",
+      "rootTangentStrength": 0.6,
+      "endTangentStrength": 0.6,
+      "states": [
+        {
+          "file": "path-root06-graze-0.000-light.png",
+          "clip": "graze",
+          "phase": 0,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 66.69367836185047,
+            "centerlineScale": 1.0969773071847753,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root06-graze-0.200-light.png",
+          "clip": "graze",
+          "phase": 0.2,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.76154754079965,
+            "centerlineScale": 1.0816456238358305,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root06-graze-0.467-light.png",
+          "clip": "graze",
+          "phase": 0.467,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.78133508155032,
+            "centerlineScale": 1.0819710892127843,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root06-graze-0.730-light.png",
+          "clip": "graze",
+          "phase": 0.73,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.7706755142269,
+            "centerlineScale": 1.0817957606997164,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root06-graze-1.000-light.png",
+          "clip": "graze",
+          "phase": 1,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 66.69367836185047,
+            "centerlineScale": 1.0969773071847753,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        }
+      ]
+    },
+    {
+      "id": "path-root09",
+      "rootOrientation": "neck",
+      "rootTangentStrength": 0.9,
+      "endTangentStrength": 0.6,
+      "states": [
+        {
+          "file": "path-root09-graze-0.000-light.png",
+          "clip": "graze",
+          "phase": 0,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 66.69749565710534,
+            "centerlineScale": 1.0970400940391258,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root09-graze-0.200-light.png",
+          "clip": "graze",
+          "phase": 0.2,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.7751173221029,
+            "centerlineScale": 1.0818688195347146,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root09-graze-0.467-light.png",
+          "clip": "graze",
+          "phase": 0.467,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.80146403597388,
+            "centerlineScale": 1.0823021701602198,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root09-graze-0.730-light.png",
+          "clip": "graze",
+          "phase": 0.73,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 65.79001365621413,
+            "centerlineScale": 1.0821138343679286,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        },
+        {
+          "file": "path-root09-graze-1.000-light.png",
+          "clip": "graze",
+          "phase": 1,
+          "metrics": {
+            "sourceLength": 60.797682800758764,
+            "worldLength": 66.69749565710534,
+            "centerlineScale": 1.0970400940391258,
+            "triangles": 2548
+          },
+          "visual": "not-reviewed"
+        }
+      ]
+    }
+  ]
+}

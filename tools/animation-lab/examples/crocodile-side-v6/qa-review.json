@@ -1,0 +1,30 @@
+{
+  "assetId": "crocodile-side-v6",
+  "source": "/art/crocodile-side-parts-v4.png",
+  "sourceSha256": "784a85d0e0bd3639707f4d43f37cfb9abc6202c961c5ece03c001c3c3b7f65e5",
+  "technical": "34/34 production/art-binding regression (horse/dinosaur); separate numerical per-action reports",
+  "artStatus": "failed",
+  "ui": "http://127.0.0.1:4317/lab/crocodile",
+  "status": "failed",
+  "observations": [
+    {
+      "action": "idle",
+      "phases": "16 sampled phases",
+      "background": "light",
+      "evidence": "retest/idle-light.png",
+      "status": "failed",
+      "finding": "Precision ownership current source confirmed; tail root cut reduced but longitudinal body/tail scale material transition remains visibly mismatched. Mouth closure length improved in prior source v4 review, but current bite/roar not reviewed."
+    }
+  ],
+  "notReviewed": [
+    "v6 bite/roar deep/light",
+    "v6 leg joints",
+    "browser playback",
+    "tail-root sweep all phases"
+  ],
+  "limitations": [
+    "Contact sheets auto-fit for inspection; they are not fixed-camera export proof.",
+    "Untouched old evidence referenced only when source/binding unchanged; actual version documented.",
+    "No user acceptance claimed."
+  ]
+}

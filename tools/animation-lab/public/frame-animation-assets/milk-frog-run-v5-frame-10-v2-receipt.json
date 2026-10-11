@@ -1,0 +1,34 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Localized motion-timing edit to ONLY the NEAR foreground OPEN-HAND arm. Retain original transparent1254x1254canvas, camera/scale and all exact head/eyes/face/tongue/torso/hips/BOTH airborne legs and FAR curled-fist arm on right. No recenter/rescale/wholebodymotion. This is the second flight frame. Permanent nearthighforward, farthighback identity unchanged.\nNear shoulder stays(615,410), upperarm swings BACK to imageleft, but original arm is too straight and openpalm x160 causes another abrupt pose. Keep near elbow around(400,510), then forearm bends diagonally DOWN-LEFT to wrist about(335,655), OPEN pinkpalm centered about(300,715). It is further back than preceding palm430 but not jumpingto160. Preserve original thickmuscular biceps/forearm lengths/volumes and clean rounded shoulder-elbow-wrist connection; palm open relaxed sameidentity, no fistchange. Bothfeet remainairborne with existingtoepositions. Erase oldfarleft openhand/forearm contour, no extra limb or ghost. Original yellow polished shading/blackoutlines/wristdots and untouched regions unchanged. No text/controls/floor/shadow. One corrected originalcomposition sprite on transparentalpha.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d27f7671-e23e-4bda-a45f-380de19cbf77.png",
+  "generatedFileSha256": "c797e63013722d07945c75fb3872d937361874d7f67502817e6ddcf8af0315be",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/frame-10-v1.png",
+      "sha256": "b823220d6cf3a346d80169cfe4364fd54c7dc5a9788ba5e533734312f9fdf26d"
+    }
+  ],
+  "phase": 0.8333333333333334,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      148,
+      87,
+      1057,
+      1048
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Near backswing with elbowflex and openpalm intermediateabout300 insteadof160; restflightlegsretained, wholeartfailed."
+  }
+}

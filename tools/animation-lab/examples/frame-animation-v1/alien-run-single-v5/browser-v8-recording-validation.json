@@ -1,0 +1,234 @@
+{
+  "technicalStatus": "passed",
+  "sourceArtStatus": "failed",
+  "actualOrigin": "browser UI sample import and actual shared helper MediaRecorder download, no synthetic video substitution",
+  "sourceSequence": "all-frames-reviewed-v8.json",
+  "sourceFrameCount": 12,
+  "capturedPNGs": 12,
+  "video": {
+    "codec_name": "vp9",
+    "width": 512,
+    "height": 512,
+    "disposition": {
+      "default": 1,
+      "dub": 0,
+      "original": 0,
+      "comment": 0,
+      "lyrics": 0,
+      "karaoke": 0,
+      "forced": 0,
+      "hearing_impaired": 0,
+      "visual_impaired": 0,
+      "clean_effects": 0,
+      "attached_pic": 0,
+      "timed_thumbnails": 0,
+      "non_diegetic": 0,
+      "captions": 0,
+      "descriptions": 0,
+      "metadata": 0,
+      "dependent": 0,
+      "still_image": 0,
+      "multilayer": 0
+    },
+    "tags": {
+      "language": "eng",
+      "alpha_mode": "1"
+    }
+  },
+  "videoDurationSeconds": 1.333239,
+  "requestedDurationSeconds": 1.332,
+  "decodedVideoFrameCount": 13,
+  "videoPTS": [
+    0,
+    0.115,
+    0.223,
+    0.333,
+    0.446,
+    0.559,
+    0.668,
+    0.781,
+    0.894,
+    1,
+    1.112,
+    1.223,
+    1.333
+  ],
+  "comparisons": [
+    {
+      "sourceFrameIndex": 0,
+      "videoPTS": 0,
+      "requestedSeconds": 0,
+      "ptsErrorSeconds": 0,
+      "rgbMAE255": 1.2924588521321614
+    },
+    {
+      "sourceFrameIndex": 1,
+      "videoPTS": 0.115,
+      "requestedSeconds": 0.111,
+      "ptsErrorSeconds": 0.0040000000000000036,
+      "rgbMAE255": 1.8539594014485676
+    },
+    {
+      "sourceFrameIndex": 2,
+      "videoPTS": 0.223,
+      "requestedSeconds": 0.222,
+      "ptsErrorSeconds": 0.0010000000000000009,
+      "rgbMAE255": 1.7103411356608074
+    },
+    {
+      "sourceFrameIndex": 3,
+      "videoPTS": 0.333,
+      "requestedSeconds": 0.333,
+      "ptsErrorSeconds": 0,
+      "rgbMAE255": 1.5911280314127605
+    },
+    {
+      "sourceFrameIndex": 4,
+      "videoPTS": 0.446,
+      "requestedSeconds": 0.444,
+      "ptsErrorSeconds": 0.0020000000000000018,
+      "rgbMAE255": 1.6896692911783855
+    },
+    {
+      "sourceFrameIndex": 5,
+      "videoPTS": 0.559,
+      "requestedSeconds": 0.555,
+      "ptsErrorSeconds": 0.0040000000000000036,
+      "rgbMAE255": 1.6877377827962239
+    },
+    {
+      "sourceFrameIndex": 6,
+      "videoPTS": 0.668,
+      "requestedSeconds": 0.666,
+      "ptsErrorSeconds": 0.0020000000000000018,
+      "rgbMAE255": 1.6440505981445312
+    },
+    {
+      "sourceFrameIndex": 7,
+      "videoPTS": 0.781,
+      "requestedSeconds": 0.777,
+      "ptsErrorSeconds": 0.0040000000000000036,
+      "rgbMAE255": 1.6118863423665364
+    },
+    {
+      "sourceFrameIndex": 8,
+      "videoPTS": 0.894,
+      "requestedSeconds": 0.888,
+      "ptsErrorSeconds": 0.006000000000000005,
+      "rgbMAE255": 1.6470502217610676
+    },
+    {
+      "sourceFrameIndex": 9,
+      "videoPTS": 1,
+      "requestedSeconds": 0.999,
+      "ptsErrorSeconds": 0.0010000000000000009,
+      "rgbMAE255": 1.6064033508300781
+    },
+    {
+      "sourceFrameIndex": 10,
+      "videoPTS": 1.112,
+      "requestedSeconds": 1.11,
+      "ptsErrorSeconds": 0.0020000000000000018,
+      "rgbMAE255": 1.6557197570800781
+    },
+    {
+      "sourceFrameIndex": 11,
+      "videoPTS": 1.223,
+      "requestedSeconds": 1.221,
+      "ptsErrorSeconds": 0.0020000000000000018,
+      "rgbMAE255": 1.6331596374511719
+    }
+  ],
+  "maxPTSErrorSeconds": 0.006000000000000005,
+  "maxRGBMAE255": 1.8539594014485676,
+  "timingSamples": [
+    {
+      "requestedTimeMs": 0,
+      "actualRequestElapsedMs": 0.19999998807907104,
+      "latenessMs": 0.19999998807907104
+    },
+    {
+      "requestedTimeMs": 111.1111111111111,
+      "actualRequestElapsedMs": 115.19999998807907,
+      "latenessMs": 4.088888876967971
+    },
+    {
+      "requestedTimeMs": 222.2222222222222,
+      "actualRequestElapsedMs": 223.2999999821186,
+      "latenessMs": 1.0777777598964065
+    },
+    {
+      "requestedTimeMs": 333.3333333333333,
+      "actualRequestElapsedMs": 333.39999997615814,
+      "latenessMs": 0.0666666428248277
+    },
+    {
+      "requestedTimeMs": 444.4444444444444,
+      "actualRequestElapsedMs": 446.59999999403954,
+      "latenessMs": 2.1555555495951353
+    },
+    {
+      "requestedTimeMs": 555.5555555555555,
+      "actualRequestElapsedMs": 559.2999999821186,
+      "latenessMs": 3.7444444265630636
+    },
+    {
+      "requestedTimeMs": 666.6666666666666,
+      "actualRequestElapsedMs": 668.5,
+      "latenessMs": 1.8333333333333712
+    },
+    {
+      "requestedTimeMs": 777.7777777777778,
+      "actualRequestElapsedMs": 781.6999999880791,
+      "latenessMs": 3.9222222103012427
+    },
+    {
+      "requestedTimeMs": 888.8888888888888,
+      "actualRequestElapsedMs": 893.3999999761581,
+      "latenessMs": 4.511111087269342
+    },
+    {
+      "requestedTimeMs": 1000,
+      "actualRequestElapsedMs": 1000.2999999821186,
+      "latenessMs": 0.29999998211860657
+    },
+    {
+      "requestedTimeMs": 1111.111111111111,
+      "actualRequestElapsedMs": 1112.199999988079,
+      "latenessMs": 1.0888888769679852
+    },
+    {
+      "requestedTimeMs": 1222.2222222222224,
+      "actualRequestElapsedMs": 1223.3999999761581,
+      "latenessMs": 1.177777753935743
+    }
+  ],
+  "terminalHold": "13th encoded bitmap equals final PNG; not added to12-frame animation",
+  "fixedTransform": {
+    "sourceCanvasSize": [
+      1086,
+      1448
+    ],
+    "scale": 0.3370165745856354,
+    "offset": [
+      72.99999999999997,
+      11.999999999999972
+    ]
+  },
+  "uniquePNGHashCount": 12,
+  "sourceIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "sha256Video": "01c79788536dd6bf3dbfb0d263c4b825bca18e63caac6fda3ecff4e96059ce40"
+}

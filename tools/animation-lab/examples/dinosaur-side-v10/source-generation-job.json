@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Asset type: transparent anatomical theropod sprite part atlas used for a side-facing-right skeletal animation. Input is current atlas. Keep the exact 4 rows by 4 parts layout, all independent parts and transparent gutters. Change only row1 col4 (tibia/shin) and row2 col1 (metatarsus between ankle and toe root). These currently have skinny twig shafts and overly bulbous round proximal caps. Refine them into strong anatomically credible T-rex lower leg bones clad with matching living muscle and scaly skin: tibia has muscular upper calf, smooth gradual taper to a firm ankle, about 35 percent thicker lower shaft with no tiny ball joint. Metatarsus has sturdy long continuous shaft, about 25 percent thicker midsection, compact naturally rounded overlapping end pads rather than a large round ball, no claws/feet on it. Keep their existing slanted orientation, bounding positions, end points, lengths, bronze olive scale identity, lighting, all other head/body/thigh/feet/tail pieces unchanged. Orthographic side profile, no front view, no shoes, no mechanical hardware. Preserve transparent alpha, do not merge components or add labels.",
+  "generated": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-04ec2875-8cb0-4bd2-a742-46e9097ee7fe.png",
+  "reference": "public/art/dinosaur-side-parts-v6.png",
+  "referenceSha256": "0353b0fd7195daadeb9378fd09f6c274bc894261f6839fe4e7bc9d7440f07cfd",
+  "output": "public/art/dinosaur-side-parts-v7.png",
+  "outputSha256": "7faf3fa2b00cba09016f61032f4b591232431947e92ff70780fdc80d5c3ec7a0",
+  "sourceVisualReview": "actual image viewed; changed tibia shaft broader and tapered; all new tiles rescanned exact component ownership; animation QA pending"
+}

@@ -1,0 +1,617 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "alien-squat-v2",
+  "loop": false,
+  "durationMs": 1000,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 1024,
+    "height": 512,
+    "cell": 256,
+    "columns": 4,
+    "rows": 2,
+    "padding": 12,
+    "sha256": "d7ce0eba0895ed6afe4aed0162337c53d8684562334b55e3bd5f0b9d1c37863e"
+  },
+  "provenance": {
+    "type": "imagegen",
+    "file": "alien-squat-v2.png",
+    "sha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame squat animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+    "receipt": {
+      "schema": "frame-animation-generation-receipt",
+      "schemaVersion": 1,
+      "tool": "image_gen.imagegen",
+      "mode": "identity-preserve-framing-edit",
+      "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame squat animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+      "identityReference": {
+        "file": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+        "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+      },
+      "editReference": {
+        "file": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-1de924a5-49b8-40ec-8ef1-01b6526281d9.png",
+        "sha256": "6306d0991fd2a48132bdd42866e6808052be10d4fdda89da958a44821846556c"
+      },
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-e3e5cd41-1c34-4d52-acc2-b5946e130b1a.png",
+      "generatedFileSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "projectFile": "public/frame-animation-assets/alien-squat-v2.png",
+      "projectFileSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "image": {
+        "width": 1774,
+        "height": 887,
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "cellWidth": 443.5,
+        "cellHeight": 443.5,
+        "order": "row-major",
+        "requiresIntegerGridNormalization": true,
+        "boundaryPolicy": "floor(col*width/4),floor(row*height/2); final boundary=image dimensions"
+      },
+      "playback": {
+        "fps": 8,
+        "durationSeconds": 1,
+        "loop": false
+      },
+      "qa": {
+        "visual": "needs-registration-and-playback-review",
+        "frames": [
+          {
+            "index": 0,
+            "phase": "stand",
+            "alphaBoundsLocal": [
+              168,
+              102,
+              287,
+              433
+            ],
+            "marginLocal": {
+              "left": 168,
+              "top": 102,
+              "right": 156,
+              "bottom": 10
+            },
+            "cellRect": [
+              0,
+              0,
+              443,
+              443
+            ],
+            "visualObservation": "站姿脚并拢，远腿重叠，非双腿宽站姿",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 1,
+            "phase": "down-1",
+            "alphaBoundsLocal": [
+              155,
+              124,
+              343,
+              434
+            ],
+            "marginLocal": {
+              "left": 155,
+              "top": 124,
+              "right": 101,
+              "bottom": 9
+            },
+            "cellRect": [
+              443,
+              0,
+              444,
+              443
+            ],
+            "visualObservation": "浅蹲和伸臂阶段明确",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 2,
+            "phase": "down-2",
+            "alphaBoundsLocal": [
+              144,
+              161,
+              356,
+              433
+            ],
+            "marginLocal": {
+              "left": 144,
+              "top": 161,
+              "right": 87,
+              "bottom": 10
+            },
+            "cellRect": [
+              887,
+              0,
+              443,
+              443
+            ],
+            "visualObservation": "中蹲，大腿斜向接近水平",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 3,
+            "phase": "bottom-1",
+            "alphaBoundsLocal": [
+              148,
+              191,
+              353,
+              418
+            ],
+            "marginLocal": {
+              "left": 148,
+              "top": 191,
+              "right": 91,
+              "bottom": 25
+            },
+            "cellRect": [
+              1330,
+              0,
+              444,
+              443
+            ],
+            "visualObservation": "深蹲动作有，膝前移较多且脚位相对漂移",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 4,
+            "phase": "bottom-2",
+            "alphaBoundsLocal": [
+              147,
+              165,
+              366,
+              388
+            ],
+            "marginLocal": {
+              "left": 147,
+              "top": 165,
+              "right": 77,
+              "bottom": 56
+            },
+            "cellRect": [
+              0,
+              443,
+              443,
+              444
+            ],
+            "visualObservation": "底部hold姿势有但高度与frame4不同",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 5,
+            "phase": "up-2",
+            "alphaBoundsLocal": [
+              156,
+              111,
+              347,
+              407
+            ],
+            "marginLocal": {
+              "left": 156,
+              "top": 111,
+              "right": 97,
+              "bottom": 37
+            },
+            "cellRect": [
+              443,
+              443,
+              444,
+              444
+            ],
+            "visualObservation": "起身过渡清晰，但v2脚线与firstrow不同",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 6,
+            "phase": "up-1",
+            "alphaBoundsLocal": [
+              167,
+              82,
+              310,
+              407
+            ],
+            "marginLocal": {
+              "left": 167,
+              "top": 82,
+              "right": 133,
+              "bottom": 37
+            },
+            "cellRect": [
+              887,
+              443,
+              443,
+              444
+            ],
+            "visualObservation": "浅蹲返回，手臂下放",
+            "status": "reviewed-with-open-registration-defect"
+          },
+          {
+            "index": 7,
+            "phase": "stand",
+            "alphaBoundsLocal": [
+              174,
+              90,
+              288,
+              407
+            ],
+            "marginLocal": {
+              "left": 174,
+              "top": 90,
+              "right": 156,
+              "bottom": 37
+            },
+            "cellRect": [
+              1330,
+              443,
+              444,
+              444
+            ],
+            "visualObservation": "站立恢复；不与frame1逐像素一致",
+            "status": "reviewed-with-open-registration-defect"
+          }
+        ],
+        "observations": [
+          "8阶段均可见，角色服装和朝向基本保持；逐帧视审已执行",
+          "v2留边明显改善且关节连续；仍有落脚基线、头部尺度和水平registration轻微偏移，未签收最终成片",
+          "工具黑底预览可见红黄细线；A>128红色筛查仅少量或零候选，不能仅凭预览证实source边缘污染，需真实深浅底播放验收。"
+        ],
+        "gameIntegrated": false,
+        "playbackReviewed": false,
+        "edgePixelScreening": {
+          "opaqueRedCandidates": 11,
+          "opaqueYellowCandidates": 0,
+          "criterion": "RGBA A>128 and saturated red/yellow heuristic; advisory not exact segmentation",
+          "interpretation": "少量颜色候选不能单独证明轮廓缺陷；工具黑底预览的红黄线可能为低alpha隐藏RGB，深浅底真实播放待查。"
+        }
+      }
+    },
+    "sourceQA": "not-reviewed",
+    "verification": "receipt bound by output SHA-256; generation claim supplied by importer",
+    "grid": {
+      "columns": 4,
+      "rows": 2,
+      "count": 8
+    },
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "sampleId": "alien-squat-v2",
+    "sourceQANotes": [
+      "蹲到底的脚底基线上移约45像素，可能出现悬浮",
+      "头部尺度与起止脚线尚未签收"
+    ]
+  },
+  "visualQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "alien-squat-v2.png#1",
+      "phase": "stand",
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        0,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "184d1d39f9b35f0ad59be948310c0a426e546726c4bb9c67d3a0eeb361263224"
+    },
+    {
+      "index": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-squat-v2.png#2",
+      "phase": "down-1",
+      "file": "frames/002.png",
+      "timeMs": 125,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        443,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "7313bb145bc12d9206d11eb4459bcd0aed4e2b1d2884778b9a40bdcaa726e0b2"
+    },
+    {
+      "index": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        12,
+        232,
+        232
+      ],
+      "sourceSize": [
+        443,
+        443
+      ],
+      "scale": 0.5237020316027088,
+      "name": "alien-squat-v2.png#3",
+      "phase": "down-2",
+      "file": "frames/003.png",
+      "timeMs": 250,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        887,
+        0,
+        443,
+        443
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "ec28bde97b7ff4f508615609f9263698a5b9e07d380373c0c84929c203255f46"
+    },
+    {
+      "index": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        12,
+        232,
+        231
+      ],
+      "sourceSize": [
+        444,
+        443
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-squat-v2.png#4",
+      "phase": "bottom-1",
+      "file": "frames/004.png",
+      "timeMs": 375,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        1330,
+        0,
+        444,
+        443
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "0f809d5d8b31c32049020f5536a7c36924e0fbcbbe9b9a8636cac6af417038d8"
+    },
+    {
+      "index": 4,
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        12,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-squat-v2.png#5",
+      "phase": "bottom-2",
+      "file": "frames/005.png",
+      "timeMs": 500,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        0,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "6eb05bc9c0449d6cf13a9d1f665371f359999b7796b5adff782de1a0bb66e503"
+    },
+    {
+      "index": 5,
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        268,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-squat-v2.png#6",
+      "phase": "up-2",
+      "file": "frames/006.png",
+      "timeMs": 625,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        443,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "0b73f1a2fe4700ab98e21b883da54f307cff4b73441caa2e0a6a78b371c0e746"
+    },
+    {
+      "index": 6,
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        524,
+        268,
+        231,
+        232
+      ],
+      "sourceSize": [
+        443,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-squat-v2.png#7",
+      "phase": "up-1",
+      "file": "frames/007.png",
+      "timeMs": 750,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        887,
+        443,
+        443,
+        444
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "fa1b9778a12f3bebdcc051ad9eaa09a17bfd9672306421894478cb0514eb6578"
+    },
+    {
+      "index": 7,
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "contentRect": [
+        780,
+        268,
+        232,
+        232
+      ],
+      "sourceSize": [
+        444,
+        444
+      ],
+      "scale": 0.5225225225225225,
+      "name": "alien-squat-v2.png#8",
+      "phase": "stand",
+      "file": "frames/008.png",
+      "timeMs": 875,
+      "durationMs": 125,
+      "sourceTime": null,
+      "decodedTime": null,
+      "sourceFrameIndex": null,
+      "sourceRect": [
+        1330,
+        443,
+        444,
+        444
+      ],
+      "sourceSha256": "09e76b5b707a76a2391d57586de6eac2099ea5ed97421642dbad30ae3e1a31b1",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "ed529c20af6d5b71cc2c75b49e7bc98c4b8e72d6f9f6f22820bff00181e29b42"
+    }
+  ],
+  "exportedAt": "2026-10-11T15:40:48.806Z"
+}

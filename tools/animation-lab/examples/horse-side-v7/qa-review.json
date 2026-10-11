@@ -1,0 +1,91 @@
+{
+  "assetId": "horse-side-v7",
+  "atlas": "/art/horse-side-parts-v4.png",
+  "sourceSha256": "442342bf52a94576e66bf49acbe4b87830935462b13b6ed2e94a820f30a8a8c4",
+  "visual": "failed-residual",
+  "technical": "passed",
+  "baseline": {
+    "assetId": "horse-side-v3",
+    "directory": "examples/horse-side-v4/baseline"
+  },
+  "iterations": [
+    {
+      "assetId": "horse-side-v4",
+      "directory": "examples/horse-side-v4/retest",
+      "visual": "failed-headneck-scale-and-leg-flexion"
+    },
+    {
+      "assetId": "horse-side-v5",
+      "directory": "examples/horse-side-v5/retest",
+      "visual": "failed-neck-mesh-lines-and-run-stance"
+    },
+    {
+      "assetId": "horse-side-v6",
+      "directory": "examples/horse-side-v6/retest",
+      "visual": "failed-overbent-fore-carpus"
+    }
+  ],
+  "reviewed": [
+    {
+      "clip": "idle",
+      "phases": "all16",
+      "background": "light",
+      "observation": "颈mesh横线消失；前腕站立承重、后膝与飞节方向不同。仍可见部分皮肤材质节点，须局部复测。",
+      "evidence": "examples/horse-side-v7/retest/idle-light.png"
+    },
+    {
+      "clip": "walk",
+      "phases": "all16",
+      "background": "dark",
+      "observation": "前后近远4肢参与四拍；有独立前肘腕/后膝飞节。正常慢速播放未自测。",
+      "evidence": "examples/horse-side-v7/retest/walk-dark.png"
+    },
+    {
+      "clip": "run",
+      "phases": "all16",
+      "background": "light",
+      "observation": "收腿/伸展/支撑与远侧交替可见；不等于高速运动自然度验收。",
+      "evidence": "examples/horse-side-v7/retest/run-light.png"
+    },
+    {
+      "clip": "jump",
+      "phases": "all16",
+      "background": "dark",
+      "observation": "蓄力/腾空/恢复轮廓连续，尚需固定视口慢放接地。",
+      "evidence": "examples/horse-side-v7/retest/jump-dark.png"
+    },
+    {
+      "clip": "tail",
+      "phases": "all16",
+      "background": "light",
+      "observation": "尾毛保持源原生aspect并延伸至下腿范围，tail动作完整，无短ribbon。",
+      "evidence": "examples/horse-side-v7/retest/tail-light.png"
+    }
+  ],
+  "failed": [
+    {
+      "clip": "graze",
+      "candidateViewed": "horse-side-v6",
+      "t": 0.5,
+      "observation": "最低嘴离地44.57px，不能声称吃草；v7同graze逻辑，残留未修。",
+      "evidence": "examples/horse-side-v6/retest/graze-dark.png"
+    }
+  ],
+  "notReviewed": [
+    "v7 graze/rear contactsheets",
+    "normal and .25x browser playback",
+    "every joint neutral/extreme closeups"
+  ],
+  "anatomicalReferences": [
+    "https://pressbooks.umn.edu/largeanimalanatomy/chapter/thoracic-limb-forelimb/",
+    "https://pressbooks.umn.edu/largeanimalanatomy/chapter/pelvic-limb/"
+  ],
+  "changes": [
+    "实际imagegen独立马解剖atlas v4，包括完整头颈、前humerus/radius/cannon/hoof、后femur/tibia/cannon/hoof、全尾毛",
+    "前/后leg3段+复合系部蹄，保留层级/骨长，前腕与后飞节方向相反",
+    "source地标marker与独立source宽度，不重复旧humanoid两段模板",
+    "stance3bone目标适配，target范围内固定支撑，不放宽测试threshold",
+    "extend无关尾巴固定"
+  ],
+  "status": "review-candidate-not-accepted"
+}

@@ -1,0 +1,1009 @@
+{
+  "entry": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/mcp.mjs",
+  "transport": "stdio",
+  "clientRegistration": "not-modified",
+  "definitions": [
+    {
+      "name": "game_plan",
+      "description": "按已有游戏 brief 形成关联玩法、架构、场景、角色和 UI 的制作计划，状态为 planned",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "brief": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "brief"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "ui_suite_from_game",
+      "description": "继承已生成游戏计划的核心玩法、目标、失败规则和明确 HUD，形成相连 UI 方案；不支持的引擎/玩法需扩展",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "plan": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "plan"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "world_generate",
+      "description": "可复现无限分块世界数据及限定区域通行检查；不证明游戏目标可达",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "tile",
+              "chunk",
+              "region",
+              "validate"
+            ]
+          },
+          "config": {
+            "type": "object",
+            "properties": {
+              "seed": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "scale": {
+                "type": "number",
+                "minimum": 48,
+                "maximum": 768
+              },
+              "seaLevel": {
+                "type": "number",
+                "minimum": 0.2,
+                "maximum": 0.62
+              },
+              "roughness": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "vegetation": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "point": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "integer"
+              },
+              "y": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "x",
+              "y"
+            ],
+            "additionalProperties": false
+          },
+          "chunk": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "integer"
+              },
+              "y": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "x",
+              "y"
+            ],
+            "additionalProperties": false
+          },
+          "spawn": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "integer"
+              },
+              "y": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "x",
+              "y"
+            ],
+            "additionalProperties": false
+          },
+          "region": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "integer"
+              },
+              "y": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "height": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "operation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "studio_world_generate",
+      "description": "调用本地 game-asset-studio 原地图实现的确定性块或 Tiled 数据适配",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "chunk",
+              "tiled"
+            ]
+          },
+          "world_id": {
+            "type": "string"
+          },
+          "seed": {
+            "type": "integer"
+          },
+          "chunk_x": {
+            "type": "integer",
+            "minimum": -1000000,
+            "maximum": 1000000
+          },
+          "chunk_y": {
+            "type": "integer",
+            "minimum": -1000000,
+            "maximum": 1000000
+          },
+          "chunk_size": {
+            "type": "integer",
+            "minimum": 16,
+            "maximum": 128
+          },
+          "environment_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "keyframes_create",
+      "description": "从当前角色动作采样 FK 关键帧，视觉待检查",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "species": {
+            "type": "string",
+            "enum": [
+              "human",
+              "chicken",
+              "dinosaur",
+              "horse",
+              "crocodile",
+              "centipede",
+              "spider",
+              "scorpion",
+              "snake",
+              "worm"
+            ]
+          },
+          "skin": {
+            "type": "string",
+            "enum": [
+              "classic",
+              "alien"
+            ]
+          },
+          "clip": {
+            "type": "string",
+            "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "idle",
+              "walk",
+              "run",
+              "jump",
+              "peck",
+              "flap",
+              "roar",
+              "bite",
+              "tail",
+              "graze",
+              "rear",
+              "swim",
+              "extend",
+              "probe",
+              "curl",
+              "coil",
+              "raise",
+              "strike",
+              "contract",
+              "burrow",
+              "threat",
+              "groom",
+              "pinch",
+              "sting",
+              "guard"
+            ]
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 2,
+            "maximum": 65
+          }
+        },
+        "required": [
+          "species"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "keyframes_edit",
+      "description": "编辑局部关节、根位移和时间；返回新时间轴并保持当前骨长",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeline": {
+            "type": "object",
+            "description": "sprite-keyframes schemaVersion 1，使用当前角色版本"
+          },
+          "edits": {
+            "type": "array",
+            "maxItems": 256,
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "timeline",
+          "edits"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "keyframes_validate",
+      "description": "采样验证骨长、接头和循环位置/角度；不替代美术或接地 QA",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeline": {
+            "type": "object",
+            "description": "sprite-keyframes schemaVersion 1，使用当前角色版本"
+          },
+          "samples": {
+            "type": "integer",
+            "minimum": 2,
+            "maximum": 513
+          }
+        },
+        "required": [
+          "timeline"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "keyframes_sample",
+      "description": "导出已验证格式的关键帧动画姿势数据，角色局部像素坐标",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeline": {
+            "type": "object",
+            "description": "sprite-keyframes schemaVersion 1，使用当前角色版本"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 2,
+            "maximum": 120
+          }
+        },
+        "required": [
+          "timeline"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "ui_suite_plan",
+      "description": "由名称与核心循环生成完整 UI 页面、状态、tokens、素材生产清单与 QA 方案",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "brief": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "maxLength": 100
+              },
+              "coreLoop": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "objective": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "description": {
+                        "type": "string",
+                        "maxLength": 1000
+                      },
+                      "event": {
+                        "type": "string"
+                      },
+                      "condition": {}
+                    },
+                    "required": [
+                      "description"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              },
+              "failure": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 1000
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "description": {
+                        "type": "string",
+                        "maxLength": 1000
+                      },
+                      "event": {
+                        "type": "string"
+                      },
+                      "condition": {}
+                    },
+                    "required": [
+                      "description"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              },
+              "hud": {
+                "type": "array",
+                "maxItems": 20,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "path": {
+                      "type": "string"
+                    },
+                    "event": {
+                      "type": "string"
+                    },
+                    "format": {
+                      "type": "string"
+                    },
+                    "feedback": {
+                      "type": "string"
+                    },
+                    "critical": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label",
+                    "path",
+                    "event"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "genre": {
+                "type": "string",
+                "enum": [
+                  "platformer",
+                  "runner",
+                  "puzzle",
+                  "action",
+                  "rpg",
+                  "idle",
+                  "card"
+                ]
+              },
+              "orientation": {
+                "type": "string",
+                "enum": [
+                  "landscape",
+                  "portrait"
+                ]
+              },
+              "input": {
+                "type": "string",
+                "enum": [
+                  "touch",
+                  "keyboard",
+                  "gamepad",
+                  "mixed"
+                ]
+              },
+              "engine": {
+                "type": "string",
+                "enum": [
+                  "phaser",
+                  "godot"
+                ]
+              },
+              "theme": {
+                "type": "string",
+                "enum": [
+                  "jungle",
+                  "candy",
+                  "space",
+                  "paper"
+                ]
+              },
+              "progression": {
+                "type": "string",
+                "enum": [
+                  "levels",
+                  "endless",
+                  "single-session"
+                ]
+              },
+              "audience": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "artStyle": {
+                "type": "string",
+                "maxLength": 300
+              },
+              "sessionMinutes": {
+                "type": "number",
+                "minimum": 0.5,
+                "maximum": 120
+              },
+              "references": {
+                "type": "array",
+                "maxItems": 20,
+                "items": {
+                  "type": "object"
+                }
+              }
+            },
+            "required": [
+              "name",
+              "coreLoop"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "brief"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "ui_suite_validate",
+      "description": "检查 UI 方案结构与素材状态，返回真实失败项",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "plan": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "plan"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "ui_suite_component",
+      "description": "输出独立 SVG UI 组件状态；默认不烘焙动态文字",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "plan": {
+            "type": "object"
+          },
+          "id": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value": {
+                "type": "number"
+              },
+              "includeText": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "plan",
+          "id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "ui_suite_layout",
+      "description": "计算实际视口与安全区的 UI 布局",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "plan": {
+            "type": "object"
+          },
+          "viewport": {
+            "type": "object",
+            "properties": {
+              "width": {
+                "type": "number"
+              },
+              "height": {
+                "type": "number"
+              },
+              "insets": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "items": {
+                  "type": "number"
+                }
+              },
+              "textScale": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "width",
+              "height"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "plan",
+          "viewport"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "asset_catalog",
+      "description": "列出角色零件资产类型",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "asset_create",
+      "description": "生成角色的正交侧面贴图骨架与物种专属多动作设计",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "species": {
+            "type": "string",
+            "enum": [
+              "human",
+              "chicken",
+              "dinosaur",
+              "horse",
+              "crocodile",
+              "centipede",
+              "spider",
+              "scorpion",
+              "snake",
+              "worm"
+            ]
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "skin": {
+                "type": "string",
+                "enum": [
+                  "classic",
+                  "alien"
+                ]
+              },
+              "color": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "stride": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "species"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "animation_test",
+      "description": "检查角色资产的零件、局部组合或完整动作；不替代人工视觉验收",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asset": {
+            "type": "object"
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "component",
+                  "subassembly",
+                  "character"
+                ]
+              },
+              "partId": {
+                "type": "string"
+              },
+              "clip": {
+                "type": "string",
+                "enum": [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "idle",
+                  "walk",
+                  "run",
+                  "jump",
+                  "peck",
+                  "flap",
+                  "roar",
+                  "bite",
+                  "tail",
+                  "graze",
+                  "rear",
+                  "swim",
+                  "extend",
+                  "probe",
+                  "curl",
+                  "coil",
+                  "raise",
+                  "strike",
+                  "contract",
+                  "burrow",
+                  "threat",
+                  "groom",
+                  "pinch",
+                  "sting",
+                  "guard"
+                ]
+              },
+              "fault": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "phase",
+                  "slide",
+                  "stretch",
+                  "seam",
+                  "frozen"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "asset"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "animation_generate",
+      "description": "导出角色局部坐标的骨骼动画采样帧与根运动数据",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asset": {
+            "type": "object"
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "component",
+                  "subassembly",
+                  "character"
+                ]
+              },
+              "partId": {
+                "type": "string"
+              },
+              "clip": {
+                "type": "string",
+                "enum": [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "idle",
+                  "walk",
+                  "run",
+                  "jump",
+                  "peck",
+                  "flap",
+                  "roar",
+                  "bite",
+                  "tail",
+                  "graze",
+                  "rear",
+                  "swim",
+                  "extend",
+                  "probe",
+                  "curl",
+                  "coil",
+                  "raise",
+                  "strike",
+                  "contract",
+                  "burrow",
+                  "threat",
+                  "groom",
+                  "pinch",
+                  "sting",
+                  "guard"
+                ]
+              },
+              "frames": {
+                "type": "integer",
+                "minimum": 4,
+                "maximum": 120
+              },
+              "fps": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 120
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "asset"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "sprite_generate",
+      "description": "导出固定画布 SVG 序列帧及帧元数据",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asset": {
+            "type": "object"
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "component",
+                  "subassembly",
+                  "character"
+                ]
+              },
+              "partId": {
+                "type": "string"
+              },
+              "frames": {
+                "type": "integer",
+                "minimum": 4,
+                "maximum": 64
+              },
+              "columns": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 16
+              },
+              "clip": {
+                "type": "string",
+                "enum": [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "idle",
+                  "walk",
+                  "run",
+                  "jump",
+                  "peck",
+                  "flap",
+                  "roar",
+                  "bite",
+                  "tail",
+                  "graze",
+                  "rear",
+                  "swim",
+                  "extend",
+                  "probe",
+                  "curl",
+                  "coil",
+                  "raise",
+                  "strike",
+                  "contract",
+                  "burrow",
+                  "threat",
+                  "groom",
+                  "pinch",
+                  "sting",
+                  "guard"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "asset"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "performance_analyze",
+      "description": "从实测帧耗时分析 FPS、P95 和超预算帧",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "samples": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "target": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "samples"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "knowledge_save",
+      "description": "保存资产、自动检查证据和经验备注；视觉状态保持待验收",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asset": {
+            "type": "object"
+          },
+          "options": {
+            "type": "object"
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 4000
+          }
+        },
+        "required": [
+          "asset"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "knowledge_list",
+      "description": "读取已沉淀的资产及验收记录",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "reviewStatus": "failed",
+  "registeredInProduction": false,
+  "recordedAt": "2026-10-11T20:21:30.438Z",
+  "historyNote": "Earlier prompt text is summarized from the generation history, not claimed to be exact arguments. The fifth generation stores the exact submitted arguments.",
+  "generations": [
+    {
+      "output": "source-v1.png",
+      "defaultOutput": "/Users/lemon/.codex/generated_images/01a126a8-4d56-7ba1-a63e-b73e68d63528/exec-e2d4711f-a68c-45b8-99bc-45d07221f682.png",
+      "inputReferences": [
+        "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+        "examples/human-alien-roll-v8-candidates/curl48/00.png"
+      ],
+      "promptBrief": "16 chronological forward-roll poses in equal 4x4 cells, source alien identity, true side camera, fixed physical scale and ground, transparent.",
+      "exactArgumentsAvailable": false,
+      "outputSHA256": "0c8725349a83edef896a108d6125da6add85c08c85efc260e0abee3171a821a1",
+      "references": [
+        {
+          "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+          "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+        },
+        {
+          "path": "examples/human-alien-roll-v8-candidates/curl48/00.png",
+          "sha256": "0f754d1c019a64f34721456c245cc9259ea8cecd781b068ffb80f8e1292a5d16"
+        }
+      ]
+    },
+    {
+      "output": "source-v2.png",
+      "defaultOutput": "/Users/lemon/.codex/generated_images/01a126a8-4d56-7ba1-a63e-b73e68d63528/exec-eefe58fc-397b-4da9-8630-a3cb7b850ab3.png",
+      "inputReferences": [
+        "examples/alien-direct-roll-v1/source-v1.png"
+      ],
+      "promptBrief": "Repair equal-cell layout and common physical scale/ground only; requested 1280 grid and baselines275/595/915/1235.",
+      "exactArgumentsAvailable": false,
+      "outputSHA256": "3863f5a592baeff71a519e70a74307d4707f7bb89c064393274b82de6bb64b13",
+      "references": [
+        {
+          "path": "examples/alien-direct-roll-v1/source-v1.png",
+          "sha256": "0c8725349a83edef896a108d6125da6add85c08c85efc260e0abee3171a821a1"
+        }
+      ]
+    },
+    {
+      "output": "key-0-v1.png",
+      "defaultOutput": "/Users/lemon/.codex/generated_images/01a126a8-4d56-7ba1-a63e-b73e68d63528/exec-e1f7ee64-8da2-4266-94d9-396ebf3afe50.png",
+      "inputReferences": [
+        "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png"
+      ],
+      "promptBrief": "One neutral stand, exact original identity, 1254square, true side, common floor1190, head330,40px safety.",
+      "exactArgumentsAvailable": false,
+      "outputSHA256": "6f693dbcbe2ce6a97207ed4ad0696757c60bde5452c22f3c5b67a6e5545b4816",
+      "references": [
+        {
+          "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+          "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+        }
+      ]
+    },
+    {
+      "output": "key-0-v2.png",
+      "defaultOutput": "/Users/lemon/.codex/generated_images/01a126a8-4d56-7ba1-a63e-b73e68d63528/exec-16866dc5-9137-4758-b6a8-69ddc2ad4e7e.png",
+      "inputReferences": [
+        "examples/alien-direct-roll-v1/key-0-v1.png",
+        "examples/human-alien-roll-v8-candidates/curl48/00.png"
+      ],
+      "promptBrief": "Correct camera to true one-eye side profile and common foot sole1199 only; preserve exact materials and physical proportions.",
+      "exactArgumentsAvailable": false,
+      "outputSHA256": "9880dd174340bb52ecf754b7403b6596640751c820b58075ff54e8c363d59ba4",
+      "references": [
+        {
+          "path": "examples/alien-direct-roll-v1/key-0-v1.png",
+          "sha256": "6f693dbcbe2ce6a97207ed4ad0696757c60bde5452c22f3c5b67a6e5545b4816"
+        },
+        {
+          "path": "examples/human-alien-roll-v8-candidates/curl48/00.png",
+          "sha256": "0f754d1c019a64f34721456c245cc9259ea8cecd781b068ffb80f8e1292a5d16"
+        }
+      ]
+    },
+    {
+      "output": "key-4-v1.png",
+      "defaultOutput": "/Users/lemon/.codex/generated_images/01a126a8-4d56-7ba1-a63e-b73e68d63528/exec-c1d21ef9-baf0-4660-b8a4-c7f26f331c62.png",
+      "inputReferences": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/alien-direct-roll-v1/key-0-v2.png"
+      ],
+      "exactArgumentsAvailable": true,
+      "arguments": {
+        "prompt": "Create ONE contact keyframe for a forward-roll animation of the EXACT SAME alien as image1. Image1 is the accepted camera/identity REFERENCE only, not a final animation frame. Preserve his speckled beige skin, huge bald skull with blue eye, olive sleeveless vest, white undershirt, brown cargo trousers and dark boots. Same TRUE ORTHOGRAPHIC SIDE camera facing RIGHT, only side-facing eye; no 3/4 camera turn. Output transparent RGBA 1254x1254, SAME fixed camera scale as image1: the actual skull physical diameter stays about330px, hands/boots/limbs keep original sizes, no fit-to-pose resizing. Common invisible floor is y1199. Draw preparation/contact pose BEFORE rolling: deep squat, torso leaning forward, hips above heels, BOTH palms planted flat on that same floor y1199 with near/far hand separated visibly; elbows bend naturally to support weight. Both legs bent, feet still contacting floor with separate near/far silhouettes. Chin slightly tucked to chest, head suspended CLEAR of floor and CLEAR of thighs; upper back will be next support but is NOT rolling yet. Alien oversized skull must have room forward of knees. Near hand center approx x900,y1175, far hand x835,y1175, hips approx x620,y850, toes approx x630,y1199, head center approx x880,y760 (adjust anatomical pose, do not distort limb lengths). Entire sprite within x40..1214 and y40..1214. All 2 arms, 2 hands, 2 legs, 2 boots must be physically joined, no spare parts; hidden far parts should be visible offset wherever plausible. No floor line, text, labels, shadows, grids or background. This is ONE full pose, no sprite atlas. High-quality coherent textured character render; preserve original proportions, the skeleton must bend without cut seams.",
+        "referenced_image_paths": [
+          "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/alien-direct-roll-v1/key-0-v2.png"
+        ],
+        "transparent_background": true
+      },
+      "outputSHA256": "861820e8a6fcec5ea4e9df21dc923b8d7ba41bb50e4a43a93e8b2ca8b94c236a",
+      "references": [
+        {
+          "path": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/alien-direct-roll-v1/key-0-v2.png",
+          "sha256": "9880dd174340bb52ecf754b7403b6596640751c820b58075ff54e8c363d59ba4"
+        }
+      ]
+    }
+  ]
+}

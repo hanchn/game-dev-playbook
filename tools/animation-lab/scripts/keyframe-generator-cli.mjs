@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createAsset} from '../game-core.mjs';
+import {createTimeline,validateTimeline,exportFrames,inspectTimeline,applyKeyframeEdits} from '../keyframe-generator-core.mjs';
+import {renderSkinned} from '../skin-renderer.mjs';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url))),[command,...args]=process.argv.slice(2),flags={};
+for(let i=0;i<args.length;i++){if(!args[i].startsWith('--'))throw Error(`无效参数 ${args[i]}`);const k=args[i].slice(2);flags[k]=args[i+1]&&!args[i+1].startsWith('--')?args[++i]:true;}
+const number=(key,fallback)=>flags[key]===undefined?fallback:Number(flags[key]);
+const read=async file=>{if(!file)throw Error('须指定 --input');const text=await fs.readFile(file,'utf8');if(Buffer.byteLength(text)>3000000)throw Error('JSON 超过 3 MB');return JSON.parse(text);};
+async function write(data){const text=typeof data==='string'?data:JSON.stringify(data,null,2)+'\n';if(flags.output){await fs.mkdir(path.dirname(path.resolve(flags.output)),{recursive:true});await fs.writeFile(flags.output,text);}else process.stdout.write(text);}
+function assetFor(data){return createAsset(data?.asset?.species??flags.species??'human',{skin:data?.asset?.skin??flags.skin??undefined});}
+
+try{
+ if(!command||command==='help'||flags.help){process.stdout.write(`Codex 关键帧开发辅助工具\n\ngenerate --species human --skin classic --clip run --count 9 --output timeline.json\nvalidate --input timeline.json [--samples 65] [--output report.json]\nedit --input timeline.json --edits edits.json --output edited.json\nexport --input timeline.json --format json|svg --count 32 --output frames.json\n\nedits 是操作数组：rotate / insert / move / delete / easing / translate / set-duration / set-loop / set-name / close-loop。\nrotate 使用 degrees 增量，keyIndex 从 0 开始。SVG 嵌入当前原图；图集固定 512 px 帧。\n`);}
+ else if(command==='generate'){const asset=assetFor();if(flags.clip&&!asset.clips.includes(flags.clip))throw Error('未知动作标识');const timeline=createTimeline(asset,{clip:flags.clip??'run',count:number('count',9)});if(flags.duration!==undefined)timeline.duration=number('duration');if(flags.loop!==undefined)timeline.loop=flags.loop==='true';await write(validateTimeline(asset,timeline));}
+ else if(command==='validate'){const timeline=await read(flags.input),asset=assetFor(timeline),samples=number('samples',65);if(!Number.isInteger(samples)||samples<2||samples>513)throw Error('samples 须为 2–513');const report=inspectTimeline(asset,timeline,{samples});await write(report);if(!report.passed)process.exitCode=2;}
+ else if(command==='edit'){const timeline=await read(flags.input),asset=assetFor(timeline);validateTimeline(asset,timeline);const edits=await read(flags.edits);await write(applyKeyframeEdits(asset,timeline,edits));}
+ else if(command==='export'){const timeline=await read(flags.input),asset=assetFor(timeline);validateTimeline(asset,timeline);const frames=exportFrames(asset,timeline,{count:number('count',32)}),format=flags.format??'json';if(format==='json')await write(frames);else if(format==='svg'){const skins=JSON.parse(await fs.readFile(path.join(root,'public/art/skins.json'),'utf8')),skin=skins[asset.rendering.skinKey??asset.species];if(!skin||skin.atlas!==asset.rendering.atlas)throw Error('当前贴图元数据不同步');const atlasPath=path.resolve(root,'public',skin.atlas.slice(1));if(!atlasPath.startsWith(path.resolve(root,'public')+path.sep))throw Error('贴图路径越界');skin.href='data:image/png;base64,'+(await fs.readFile(atlasPath)).toString('base64');if(skin.grips){const grip=path.resolve(root,'public',skin.grips.atlas.slice(1));skin.grips.href='data:image/png;base64,'+(await fs.readFile(grip)).toString('base64');}skin.imageId='export-atlas';const cols=4,rows=Math.ceil(frames.frames.length/cols);await write(`<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="${rows*512}" viewBox="0 0 2048 ${rows*512}"><defs><image id="export-atlas" href="${skin.href}" width="${skin.width}" height="${skin.height}"/></defs>${frames.frames.map(f=>`<defs><clipPath id="frame-${f.index}"><rect width="512" height="512"/></clipPath></defs><g transform="translate(${f.index%cols*512} ${Math.floor(f.index/cols)*512})" clip-path="url(#frame-${f.index})">${renderSkinned(asset,f,skin,{instance:'export-'+f.index})}</g>`).join('')}</svg>`);}else throw Error('format 须为 json 或 svg');}
+ else throw Error(`未知命令 ${command}`);
+}catch(e){process.stderr.write(JSON.stringify({error:e.message})+'\n');process.exitCode=1;}

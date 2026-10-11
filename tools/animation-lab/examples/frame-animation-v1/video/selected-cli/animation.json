@@ -1,0 +1,149 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "frame-animation",
+  "loop": false,
+  "durationMs": 1500,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 576,
+    "height": 192,
+    "cell": 192,
+    "columns": 3,
+    "rows": 1,
+    "padding": 12,
+    "sha256": "a404dff54c534c0cd60d60781f678260ef929168960f81587b5a6c949e5cb986"
+  },
+  "provenance": {
+    "type": "video",
+    "file": "source.mp4",
+    "sha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+    "decoder": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "timestampAccuracy": "ffprobe original decoded PTS, normalized to first frame; sample selects containing frame",
+    "sourceDuration": 2,
+    "requestedSampling": {
+      "start": ".25",
+      "end": "1.75",
+      "fps": 8,
+      "times": "1.25,.25,.75"
+    },
+    "uniqueDecodedFrames": 3,
+    "duplicateSamples": 0,
+    "verification": "actual source bytes and decoded video frames; video background retained"
+  },
+  "visualQA": "not-reviewed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        192,
+        192
+      ],
+      "contentRect": [
+        16,
+        48,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "001.png",
+      "phase": null,
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 500,
+      "sourceTime": 0.25,
+      "decodedTime": 0.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "0003dfb6df4d3af057356225aacdf699c3f0ef2745b31188a2755b666e70d77d",
+      "sourceIndex": 2,
+      "sourcePTS": 0.25
+    },
+    {
+      "index": 1,
+      "rect": [
+        192,
+        0,
+        192,
+        192
+      ],
+      "contentRect": [
+        208,
+        48,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "002.png",
+      "phase": null,
+      "file": "frames/002.png",
+      "timeMs": 500,
+      "durationMs": 500,
+      "sourceTime": 0.75,
+      "decodedTime": 0.75,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "6175f41bb639bc6b5fdb44af980268172e0de319f7cf7572495b445f27f9de7e",
+      "sourceIndex": 6,
+      "sourcePTS": 0.75
+    },
+    {
+      "index": 2,
+      "rect": [
+        384,
+        0,
+        192,
+        192
+      ],
+      "contentRect": [
+        400,
+        48,
+        160,
+        96
+      ],
+      "sourceSize": [
+        160,
+        96
+      ],
+      "scale": 1,
+      "name": "003.png",
+      "phase": null,
+      "file": "frames/003.png",
+      "timeMs": 1000,
+      "durationMs": 500,
+      "sourceTime": 1.25,
+      "decodedTime": 1.25,
+      "sourceFrameIndex": null,
+      "sourceRect": null,
+      "sourceSha256": "6dd9ac5c6c9278580b6165dd77dd4b7b2663d1b3655e49c1522e1f85c18fb6dd",
+      "review": {
+        "state": "not-reviewed",
+        "notes": ""
+      },
+      "pngSha256": "8d0f50c6f6b1e6f5a79ec33ab76f73c0493a9c05f8daf672399b9a4893b50460",
+      "sourceIndex": 10,
+      "sourcePTS": 1.25
+    }
+  ],
+  "createdAt": "2026-10-11T15:44:55.783Z"
+}

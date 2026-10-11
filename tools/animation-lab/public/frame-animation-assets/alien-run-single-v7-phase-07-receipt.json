@@ -1,0 +1,58 @@
+{
+  "i": "07",
+  "prompt": "Use case: stylized-concept. Generate ONE new actual rendered animation frame (not a sheet), exact pose of reference image2.\nReferences: image1 original alien IDENTITY, image2 single pose CONTROL, image3 accepted running frame0 for exact fixed canvas/camera registration, head/eye/face shape, skin microtexture, vest and pants material, boot size and lighting. Image3 pose must change according to image2; keep its upper body, head and canvas framing pixel-consistent. Face RIGHT, strict side orthographic view, same gentle forward lean. Image2 red=permanent NEAR foreground arm+leg, blue=permanent FAR background arm+leg. Diagram shows blue proximal arm through torso for structural clarity only; final natural clothing and skin, no colored bones or labels. TWO connected arms, TWO independent fists and TWO legs/boots must visibly participate.\nExact beige speckled bald large elongated cranium, huge blue eye, small friendly face, slim body, olive sleeveless expedition vest, cream undershirt, brown belted cargo trousers, dark brown lace-up boots. The foreground NEAR thigh carries the large outer cargo pocket; the FAR thigh must not inherit it. Track this identity permanently even when near leg swings behind or crosses in front. No camera yaw or perspective swap. No face/head/eye-size changes. Forward gaze and slight closed-mouth smile stable, no blink in this short run cycle.\nFixed 1086×1448 portrait canvas like image3. Use the same body scale, hip position, head position and planted sole baseline of image3; slight natural pelvis bob only, feet may lift in airborne phases. Raw canvas motion envelope: generous head clearance and at least64px side clearance for all hands and boots, no source crop. Keep full body inside frame. Never zoom to fill or recenter per pose. Genuine alpha transparency, no floor/shadow/text/lines. High-quality detailed coherent 3D rendering, smooth natural joints, wrists attached and fists softly closed. Render both arm gestures even when far upper arm is occluded; separate far fist visibly from near fist and torso.\nRUN7/12: FAR leg weight-loads beneath pelvis with far foot planted. NEAR cargo-pocket-bearing knee passes from behind towards hip, NEAR heel folded high behind. NEAR arm stays forward but is descending from maximum swing, elbow bent; FAR arm back with elbow down and fist behind hip. Both boots and both fists visible. This reverses which leg loads relative to frame1/12.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-17222a15-258c-4583-b089-63804b6c5470.png",
+  "tool": "image_gen.imagegen",
+  "generatedFileSha256": "ad1e531b4878daf0123f4b3db54eed97962a04b604594f4b0b5262a2e5582907",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v7-phase-07.png",
+  "references": [
+    {
+      "role": "original identity",
+      "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+      "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+    },
+    {
+      "role": "single pose diagram",
+      "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-07.png",
+      "sha256": "32d57ac2d6a6289c77c5d0df07b8f892a862b81f68bcc9b3be722bcb2292de87"
+    },
+    {
+      "role": "fixed-camera scale style face registration target",
+      "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-00.png",
+      "sha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09"
+    }
+  ],
+  "phase": 0.5833333333333334,
+  "actualPNGSize": [
+    1086,
+    1448
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      136,
+      65,
+      801,
+      1340
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "poseAdherence": "not-reviewed",
+    "notes": "远支撑/近回收姿势，与phase06变化少，近拳保持向前；跨帧皮肤微纹理改变。",
+    "evidence": [
+      "all-frames-dark.png",
+      "all-frames-light.png",
+      "all-limb-zoom-1.png",
+      "all-limb-zoom-2.png",
+      "selected-faces.png"
+    ],
+    "reviewedAt": "2026-10-11T17:02:11.904Z"
+  },
+  "index": 7,
+  "file": "alien-run-single-v7-phase-07.png"
+}

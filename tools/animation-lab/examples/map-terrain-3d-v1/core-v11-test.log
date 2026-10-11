@@ -1,0 +1,99 @@
+✔ same seed reproduces tiles independent of query order (1.838292ms)
+✔ negative coordinates use floor chunk coordinates with nonnegative local indices (0.08575ms)
+✔ adjacent chunks agree with direct global samples, including all shared boundaries (8.742334ms)
+✔ elevation and moisture have no discontinuity at chunk edges (2.109666ms)
+✔ cache never exceeds budget, evicts remote chunks, restores identical content (33.12125ms)
+✔ parameter validation rejects invalid seeds, sizes, coordinates and cache budget (0.355625ms)
+✔ export schema includes stable row-major positions, traversal and resources (1.846958ms)
+✔ connectivity avoids row-wrap, picks safe spawn and rejects inaccessible spawn (0.416875ms)
+✔ biome and resource coverage across fixed seeds (157.259875ms)
+✔ tool entry point validates operation and emits independent versioned schemas (1.84375ms)
+✔ CLI invalid arguments and blocked regions return distinct machine-readable exit codes (150.863584ms)
+✔ vendored upstream Python chunks reproduce on return and Tiled uses negative origins (73.342542ms)
+✔ vendored source hashes are locked and upstream Python behavior is preserved (99.948958ms)
+✔ isometric projection/inverse preserves negative and fractional world coordinates (0.539709ms)
+✔ seeded overlapping windows share tiles and object identity/depth (74.299292ms)
+✔ style switches choose actual different sprite pools and water policies (49.341125ms)
+✔ disc motion blocks water tile and building without tunnelling (0.404291ms)
+✔ invalid regions and styles fail visibly (0.099458ms)
+✔ offline export has PNG, source hashes, copied sprite references and collision data (317.294666ms)
+✔ castle uses an original-model-derived native 1024px PNG with a measured ground anchor (37.056042ms)
+✔ isometric castle compound walls preserve the real source arch and shared window identity (58.458916ms)
+✔ derived vegetation references actual source pixels, uses varied geometry and aligned jittered colliders (59.091125ms)
+✔ continuous source ground uses identical negative world pixels across independently clipped regions (57.313041ms)
+✔ actual water atlas renders texture detail with stable negative-world pattern across independent river windows (102.409125ms)
+✔ Wangscape C++ reference implementation compiles in a test harness and matches JS byte shares (731.036083ms)
+✔ source hashes lock upstream and all three genuinely distinct raster atlases (6.19475ms)
+✔ terrain source sampling excludes transparent atlas edges that created black horizontal seams (271.544416ms)
+✔ corner material blending matches at both sides of every positive and negative chunk boundary (4.523916ms)
+✔ independently exported chunks stitch to the exact full-region RGBA at negative coordinates (109.109542ms)
+✔ decorative props use a halo: independent image windows stitch with the same alpha ordering (120.316542ms)
+✔ styles retain identical world data and collisions; Tiled has real local artwork and unique collision IDs (16.72725ms)
+✔ real PNG export is reproducible and decorative alpha is preserved; source atlas is included (281.686791ms)
+✔ browser ZIP supports binary PNG bytes and passes independent Python ZIP CRC validation (103.448375ms)
+✔ style and pixel budget reject bad values; renderer texture cache remains bounded (564.376459ms)
+✔ registered source cells exclude foreign terrain: ocean pixels stay blue, snow avoids brown stripes (151.712ms)
+✔ LOD cache preserves all 40 visible overview chunks without per-frame rebuild and enforces byte limits (83.273208ms)
+✖ planner3 rivers stitch identical RGBA in independently queried negative windows and export their capsule width (195.633791ms)
+✔ continuous scene disc sweep blocks a thin source river, props, and leaving the exported window (0.763333ms)
+✔ same seed produces identical geometry, layers, props and negative global samples (82.515375ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (58.200833ms)
+✔ three styles change actual geometry and model sets (56.743583ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (28.000208ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.538208ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.30475ms)
+✔ water and steep ground deny actual actor movement (0.324583ms)
+✔ object colliders reflect measured source model proportions (26.218042ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.704334ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (80.891167ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (126.185625ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (226.326792ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (207.781042ms)
+✔ castle source modules form eight unique placed parts, feature range limits avoid unbounded work (21.785417ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (17.015084ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.353542ms)
+✔ barren theme uses distinct bare-rock PBR, no water/buildings and gray object materials (24.72975ms)
+✔ actual source cave fixture faces downhill with flat entrance and a passable aperture (11.350917ms)
+✔ cave ground floor remains deterministic and continuous across adjacent negative chunks (69.525917ms)
+✔ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (15.598625ms)
+✔ native cave carve rejects crossing a stream instead of raising its channel (9.549791ms)
+✔ stream ribbon rounded joints and smooth channel keep actual 1m mesh above-water holes closed (19.574583ms)
+✔ preview collision samples actual mesh triangles rather than a different bilinear surface (51.636875ms)
+✔ global feature identity survives independent chunk queries and cache eviction (52.689791ms)
+✔ buildings validate whole footprints and reject flooded/steep terrain (1.99525ms)
+✔ streams descend across negative-coordinate regions, with bounded source travel (0.999958ms)
+✔ prepared neighboring terrain chunks apply the identical global river/ground height (11.961958ms)
+✔ invalid samples fail explicitly rather than placing bad objects (0.298916ms)
+✔ unrelated foundations cannot reset an active foundation height (0.098041ms)
+✔ foundation priority is independent of river enumeration order (0.094125ms)
+✔ global river paths avoid neighboring foundations with room for water width (68.865583ms)
+✔ v3 source turns reject sharp return hooks and source curves retain downhill bank avoidance (1.14075ms)
+✔ height-only river sampling preserves full-sampler geography and foundation checks (7.043417ms)
+✔ foundation early rejection retains original accepted placements and 25-point heights (1.679083ms)
+ℹ tests 72
+ℹ suites 0
+ℹ pass 71
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2712.41025
+
+✖ failing tests:
+
+test at test/map-scene.test.mjs:19:1
+✖ planner3 rivers stitch identical RGBA in independently queried negative windows and export their capsule width (195.633791ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  4 !== 3
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/map-scene.test.mjs:19:1388)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 4,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

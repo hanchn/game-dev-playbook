@@ -1,0 +1,874 @@
+{
+  "kind": "manual-native-sprite-motion-labels",
+  "source": "milk-frog-run-sequence-v7",
+  "status": "failed-source-art",
+  "newImagegenPaused": true,
+  "definitions": {
+    "canvas": [
+      1254,
+      1254
+    ],
+    "facing": "image-right",
+    "near": "Permanent thick foreground thigh and OPEN hand arm; not foot position on the screen.",
+    "far": "Permanent rear thigh and CURLED hand arm; not automatically whichever leg is behind.",
+    "coordinates": "Approximate human marked visible joint centers on ORIGINAL RGBA images; not motion capture or fitted skeleton. Hip centers and partially visible elbows uncertain ±35..60px. Null means hidden/unresolved; no invented coordinates. Solid guide lines are estimates; dashed indicate occluded inferred origins.",
+    "direction": "Image-x delta over shoulder->elbow and hip->knee, not wrist/foot. ±70px deadband captures manual center uncertainty/near-vertical passing; observed direction stronger than70 is front/back. Counterphase is a necessary stylized running cue, not universal exact rule or numerical biology proof.",
+    "handCentroid": "Manual palm/knuckle center is a separate visible-landmark track; not a joint center."
+  },
+  "originalFrames": [
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1-receipt.json",
+      "phase": 0,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2-receipt.json",
+      "phase": 0.08333333333333333,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3-receipt.json",
+      "phase": 0.16666666666666666,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-03-v2-receipt.json",
+      "phase": 0.25,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v6-frame-04-v2.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v6-frame-04-v2-receipt.json",
+      "phase": 0.3333333333333333,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1-receipt.json",
+      "phase": 0.4166666666666667,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1-receipt.json",
+      "phase": 0.5,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v7-frame-07-v9.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v7-frame-07-v9-receipt.json",
+      "phase": 0.5833333333333334,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v7-frame-08-v4.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v7-frame-08-v4-receipt.json",
+      "phase": 0.6666666666666666,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v5-frame-09-v2.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v5-frame-09-v2-receipt.json",
+      "phase": 0.75,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v5-frame-10-v3.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v5-frame-10-v3-receipt.json",
+      "phase": 0.8333333333333334,
+      "durationMs": 125
+    },
+    {
+      "source": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2.png",
+      "receipt": "/frame-animation-assets/milk-frog-run-v4-frame-11-v2-receipt.json",
+      "phase": 0.9166666666666666,
+      "durationMs": 125
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase": 0,
+      "stage": "near contact / far folded recovery",
+      "near": {
+        "arm": [
+          [
+            625,
+            390
+          ],
+          [
+            435,
+            445
+          ],
+          [
+            280,
+            535
+          ]
+        ],
+        "leg": [
+          [
+            665,
+            750
+          ],
+          [
+            865,
+            905
+          ],
+          [
+            965,
+            1095
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          null,
+          [
+            935,
+            645
+          ],
+          [
+            1020,
+            570
+          ]
+        ],
+        "leg": [
+          [
+            630,
+            780
+          ],
+          [
+            540,
+            905
+          ],
+          [
+            320,
+            820
+          ]
+        ]
+      },
+      "notes": "Far shoulder and proximal upperarm completely occluded; elbow is estimate from visible yellow forearm. Near support front, far recovery back."
+    },
+    {
+      "index": 1,
+      "phase": 0.08333333333333333,
+      "stage": "near load / far recovery crossing",
+      "near": {
+        "arm": [
+          [
+            640,
+            405
+          ],
+          [
+            465,
+            480
+          ],
+          [
+            530,
+            575
+          ]
+        ],
+        "leg": [
+          [
+            700,
+            755
+          ],
+          [
+            870,
+            900
+          ],
+          [
+            920,
+            1090
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          null,
+          null,
+          [
+            885,
+            620
+          ]
+        ],
+        "leg": [
+          [
+            655,
+            765
+          ],
+          null,
+          [
+            605,
+            800
+          ]
+        ]
+      },
+      "notes": "Far knee hidden by near thigh; far shoulder/elbow hidden by white belly. Do not infer full opposite upperarm angle or far thigh direction from curled fist/foot alone."
+    },
+    {
+      "index": 2,
+      "phase": 0.16666666666666666,
+      "stage": "near mid-support / far forward passing",
+      "near": {
+        "arm": [
+          [
+            660,
+            400
+          ],
+          [
+            670,
+            545
+          ],
+          [
+            795,
+            665
+          ]
+        ],
+        "leg": [
+          [
+            685,
+            750
+          ],
+          [
+            735,
+            880
+          ],
+          [
+            765,
+            1080
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          [
+            535,
+            400
+          ],
+          [
+            465,
+            495
+          ],
+          [
+            425,
+            555
+          ]
+        ],
+        "leg": [
+          [
+            720,
+            755
+          ],
+          [
+            905,
+            800
+          ],
+          [
+            1000,
+            945
+          ]
+        ]
+      },
+      "notes": "Near arm/thigh near vertical passing; far thigh forward and visible far upperarm back. Visible far shoulder behind/left of near shoulder."
+    },
+    {
+      "index": 3,
+      "phase": 0.25,
+      "stage": "near back takeoff / far reaching",
+      "near": {
+        "arm": [
+          [
+            665,
+            410
+          ],
+          [
+            720,
+            550
+          ],
+          [
+            875,
+            655
+          ]
+        ],
+        "leg": [
+          [
+            645,
+            730
+          ],
+          [
+            515,
+            920
+          ],
+          [
+            305,
+            1035
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          [
+            545,
+            390
+          ],
+          [
+            430,
+            480
+          ],
+          [
+            385,
+            540
+          ]
+        ],
+        "leg": [
+          [
+            730,
+            755
+          ],
+          [
+            970,
+            785
+          ],
+          [
+            1015,
+            980
+          ]
+        ]
+      },
+      "notes": "Near thigh back versus slight-front upperarm; far thigh front versus back upperarm. Far thigh partly occluded under near arm but visible knee/front shin."
+    },
+    {
+      "index": 4,
+      "phase": 0.3333333333333333,
+      "stage": "flight A / near folded back / far forward",
+      "near": {
+        "arm": [
+          [
+            675,
+            410
+          ],
+          [
+            760,
+            550
+          ],
+          [
+            935,
+            635
+          ]
+        ],
+        "leg": [
+          [
+            645,
+            725
+          ],
+          [
+            530,
+            845
+          ],
+          [
+            430,
+            755
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          [
+            550,
+            390
+          ],
+          [
+            435,
+            460
+          ],
+          [
+            370,
+            510
+          ]
+        ],
+        "leg": [
+          [
+            735,
+            755
+          ],
+          [
+            925,
+            855
+          ],
+          [
+            1030,
+            1010
+          ]
+        ]
+      },
+      "notes": "Near thigh back, near upperarm forward; far thigh forward, far upperarm back. Both soles visibly above shared1192 target."
+    },
+    {
+      "index": 5,
+      "phase": 0.4166666666666667,
+      "stage": "far prelanding / near folded back",
+      "near": {
+        "arm": [
+          [
+            670,
+            405
+          ],
+          [
+            765,
+            530
+          ],
+          [
+            940,
+            580
+          ]
+        ],
+        "leg": [
+          [
+            645,
+            730
+          ],
+          [
+            520,
+            865
+          ],
+          [
+            410,
+            765
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          [
+            555,
+            400
+          ],
+          [
+            450,
+            470
+          ],
+          [
+            395,
+            515
+          ]
+        ],
+        "leg": [
+          [
+            735,
+            765
+          ],
+          [
+            925,
+            885
+          ],
+          [
+            1040,
+            1050
+          ]
+        ]
+      },
+      "notes": "Far upperarm and curled fist nearly stay at back peak while far leg descends. Holds are not new passing phases."
+    },
+    {
+      "index": 6,
+      "phase": 0.5,
+      "stage": "far contact / near back recovery",
+      "near": {
+        "arm": [
+          [
+            655,
+            405
+          ],
+          [
+            750,
+            530
+          ],
+          [
+            925,
+            575
+          ]
+        ],
+        "leg": [
+          [
+            655,
+            735
+          ],
+          [
+            565,
+            915
+          ],
+          [
+            390,
+            815
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          [
+            535,
+            415
+          ],
+          [
+            430,
+            490
+          ],
+          [
+            360,
+            560
+          ]
+        ],
+        "leg": [
+          [
+            735,
+            775
+          ],
+          [
+            905,
+            920
+          ],
+          [
+            985,
+            1090
+          ]
+        ]
+      },
+      "notes": "Far support still clearly forward in this frame; far upperarm back, near arm forward and near thigh back."
+    },
+    {
+      "index": 7,
+      "phase": 0.5833333333333334,
+      "stage": "far load / near vertical recovery",
+      "near": {
+        "arm": [
+          [
+            640,
+            410
+          ],
+          [
+            665,
+            555
+          ],
+          [
+            800,
+            670
+          ]
+        ],
+        "leg": [
+          [
+            665,
+            710
+          ],
+          [
+            665,
+            840
+          ],
+          [
+            585,
+            945
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          [
+            540,
+            440
+          ],
+          [
+            515,
+            555
+          ],
+          [
+            535,
+            660
+          ]
+        ],
+        "leg": [
+          [
+            720,
+            775
+          ],
+          [
+            840,
+            905
+          ],
+          [
+            850,
+            1085
+          ]
+        ]
+      },
+      "notes": "Near arm and near thigh both approximately vertical, opposite direction not a binary claim. Far arm approaches vertical but still back; far thigh remains forward. Curled fist hangsdown."
+    },
+    {
+      "index": 8,
+      "phase": 0.6666666666666666,
+      "stage": "far late-support back / near high-forward passing",
+      "near": {
+        "arm": [
+          [
+            635,
+            400
+          ],
+          [
+            515,
+            505
+          ],
+          [
+            600,
+            570
+          ]
+        ],
+        "leg": [
+          [
+            690,
+            710
+          ],
+          [
+            900,
+            745
+          ],
+          [
+            925,
+            890
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          null,
+          null,
+          [
+            955,
+            620
+          ]
+        ],
+        "leg": [
+          [
+            665,
+            765
+          ],
+          [
+            540,
+            895
+          ],
+          [
+            490,
+            1050
+          ]
+        ]
+      },
+      "notes": "Near upperarm clearly back versus near thigh front. Far thigh is now back, so far upperarm must move FORWARD through near-vertical; old sinusoid far117.5deg BACK conflicts. Far root/elbow hidden; cannot certify upperarm from right-side fist."
+    },
+    {
+      "index": 9,
+      "phase": 0.75,
+      "stage": "far back takeoff / near high-forward recovery",
+      "near": {
+        "arm": [
+          [
+            630,
+            400
+          ],
+          [
+            450,
+            535
+          ],
+          [
+            510,
+            630
+          ]
+        ],
+        "leg": [
+          [
+            700,
+            710
+          ],
+          [
+            945,
+            720
+          ],
+          [
+            785,
+            865
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          null,
+          [
+            960,
+            635
+          ],
+          [
+            1045,
+            560
+          ]
+        ],
+        "leg": [
+          [
+            665,
+            765
+          ],
+          [
+            540,
+            905
+          ],
+          [
+            340,
+            1020
+          ]
+        ]
+      },
+      "notes": "Near upperarm back versus near thigh high/front. Far thigh back, far arm should front; source exposes forearm/fist only. Root remains unknown."
+    },
+    {
+      "index": 10,
+      "phase": 0.8333333333333334,
+      "stage": "flight B / near forward / far folded back",
+      "near": {
+        "arm": [
+          [
+            640,
+            385
+          ],
+          [
+            445,
+            395
+          ],
+          [
+            395,
+            445
+          ]
+        ],
+        "leg": [
+          [
+            700,
+            715
+          ],
+          [
+            950,
+            850
+          ],
+          [
+            1055,
+            1025
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          null,
+          [
+            960,
+            635
+          ],
+          [
+            1040,
+            560
+          ]
+        ],
+        "leg": [
+          [
+            640,
+            760
+          ],
+          [
+            500,
+            850
+          ],
+          [
+            320,
+            735
+          ]
+        ]
+      },
+      "notes": "Near upperarm back/high, near thigh front. Far thigh back, far forearm/fist near-front peak again; entire upperarm occluded."
+    },
+    {
+      "index": 11,
+      "phase": 0.9166666666666666,
+      "stage": "near prelanding / far folded back",
+      "near": {
+        "arm": [
+          [
+            625,
+            390
+          ],
+          [
+            435,
+            445
+          ],
+          [
+            280,
+            535
+          ]
+        ],
+        "leg": [
+          [
+            665,
+            750
+          ],
+          [
+            865,
+            900
+          ],
+          [
+            965,
+            1065
+          ]
+        ]
+      },
+      "far": {
+        "arm": [
+          null,
+          [
+            935,
+            645
+          ],
+          [
+            1020,
+            570
+          ]
+        ],
+        "leg": [
+          [
+            630,
+            780
+          ],
+          [
+            540,
+            895
+          ],
+          [
+            320,
+            815
+          ]
+        ]
+      },
+      "notes": "Close to frame0 pose but bothfeet airborne; near sole1168->0sole1192 descent24px. Far full chain still hidden."
+    }
+  ],
+  "rejectedPreviousControl": {
+    "path": "controls.json",
+    "state": "failed-gait-coupling",
+    "reason": "Independent symmetric arm sine ignored existing source support/recovery timing. At source8 far thigh back whereas v1 far upperarm also back. Do not submit low-wrist698795 control for new source edits.",
+    "mathematicalChecksRemain": "bone lengths/fault injection valid only for the independent model; not source gait approval."
+  },
+  "rootUncertainty": "Visible far shoulder approximately535..555,400..440 in source2..7 but hidden in source0/1/8..11. Do not invent a phase0 root on outer right throat/body or fit unequal bone lengths to fake continuity. Fixed source-view far socket location remains unverified.",
+  "failure": "Existing source7 curled hand~550,725 ->8~995,665 ->9~1100,560 skips a visible complete forearm recovery; positions alone cannot decide intended upperarm. Reconstruct complete chain and occlusion from pelvis/thigh phase first.",
+  "references": [
+    {
+      "url": "https://journals.biologists.com/jeb/article/217/14/2456/12120/The-metabolic-cost-of-human-running-is-swinging",
+      "use": "Human arm swing counterbalances leg angular momentum; stylized frog physical setting not literal frog quadrupedal gait."
+    }
+  ],
+  "evidence": "All12 original native PNGs viewed individually and sourcecontact; generated source-08-joint-overlay.png is QA annotation only, original PNG bytes untouched."
+}

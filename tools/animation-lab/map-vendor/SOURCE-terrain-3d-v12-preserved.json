@@ -1,0 +1,249 @@
+{
+  "schema": "map-engine-source-provenance/v1",
+  "upstream": {
+    "url": "https://github.com/ZyFou/ProceduralTerrains",
+    "commit": "7452c2ce5dc598be020a44735d78e444ae0ed255",
+    "license": "MIT",
+    "implementedReuse": [
+      "CPU NoiseStack presets/evalStack2D",
+      "seed domain",
+      "nearest-first streaming scheduler"
+    ],
+    "notPorted": [
+      "upstream full studio",
+      "GPU noise pipeline",
+      "real geographic elevation imports"
+    ]
+  },
+  "files": [
+    {
+      "path": "map-vendor/procedural-terrains/ChunkStreamScheduler.js",
+      "sha256": "26ad5bb904819ee63763527953a3a6182cac576f0fde129f3bae585954ce8194",
+      "bytes": 3006,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/LICENSE",
+      "sha256": "9423d8f7607771ba6ef93b9e4fd4f313a2a8943f1f821b141b664d86760b8c69",
+      "bytes": 1051,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/cpuNoise.js",
+      "sha256": "92ca704f4a66ae639eda55e47fd199f37922c0efa2ac7c42d82f2f546ab75982",
+      "bytes": 12716,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/noiseStackCodegen.js",
+      "sha256": "636df5cd89ac8d7f165c9cf066dc61d4903cd5df08903a362cdf65bfe74a4d7d",
+      "bytes": 14095,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/noiseTypes.js",
+      "sha256": "62b718090ca54535678f0ab0237ece318d99034f2f36f7a016b90989907d0f0e",
+      "bytes": 27885,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/seedDomain.js",
+      "sha256": "6ad8a3066c6fa6038f2b6837ac8e4df95fae847592ad6efd2b21329c14da5a2b",
+      "bytes": 978,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/blendModes.js",
+      "sha256": "8ab505f81f72514903387194cede44dbed7e1f4d5b47e0196f7d20731f72f072",
+      "bytes": 3298,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/NoiseStack.js",
+      "sha256": "33e8e78b55bf2dfd05b76d3c1cbb7598035be12a2880e3964e7f123bbe664858",
+      "bytes": 8264,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/noisePresets.js",
+      "sha256": "d31a6fd08fc82e4d46d2a19d95b7861bba48a939469ebd3b1f473ef9e4f327ae",
+      "bytes": 10067,
+      "modified": false
+    },
+    {
+      "path": "map-vendor/procedural-terrains/noise/masks.js",
+      "sha256": "96756ff9597775bf5fdf85b64b95ce305fbefba2d272144c9828995c9aa79072",
+      "bytes": 4531,
+      "modified": false
+    }
+  ],
+  "runtime": {
+    "three": "0.185.1",
+    "gltf-validator": "2.0.0-dev.3.10",
+    "meshoptimizer": "0.25.0",
+    "source": "official npm registries; pinned map-vendor/three-runtime/package-lock.json"
+  },
+  "ownAdapters": [
+    "map-terrain-3d.mjs",
+    "public/map-generator-3d.mjs",
+    "world-feature-plan.mjs"
+  ],
+  "assets": "public/map-resources/*/source.json",
+  "derivedPolicies": [
+    "Kenney grass/dirt low-poly materials mapped via NATURE_MATERIAL_COLORS",
+    "Hexagon building base buried .102 source units to remove display hex tile",
+    "source normal map geometry tangents computed using Three official computeTangents",
+    "stochastic worldUV transforms same Diffuse/Normal/ARM",
+    "Upstream white grain height smoothing set1: continuous vnoise2 instead of floor-step height; CPU height policy v4",
+    "Barren theme rock_08 bare PBR replaces mossy rocky_terrain_02 after actual pixel review; original images retained",
+    "Moon Kenney material grass/dirt/rock/stone mapped via modelMaterialColor to gray rock",
+    "WorldFeaturePlanner v2 avoids neighboring foundations; foundation priority is independent of enumeration order",
+    "Native cliff_blockCave_rock opening faces -Z: prop adds PI to downhill normal basis; ground/collider keep downhill basis, conservative compound OBB aperture",
+    "Actual Castle Kit 8-module assembly offline Blender 5.2.1 EEVEE to pinned1024 PNG for Canvas2D isometric; origin anchor measured; ground drawn before depth-sorted objects",
+    "v7 within original planner stream capsule: flat inner bed with smooth outer shoulders prevents 1m terrain mesh cutting water; quadratic render fillets + round caps retained inside source capsule; wet bank COLOR_0 embedded in GLB",
+    "v4 original Nature Kit 8 GLBs offline EEVEE with measured anchors/coherent palette, deterministic jitter; actual first dark-shadow image failed and original GLBs rerendered with fill lights",
+    "v4 castle 8 source modules separately rendered at identical 1024 camera for measured per-module sprite depth; correct actor-wall occlusion"
+  ],
+  "acceptance": {
+    "visual": false,
+    "engineImported": false,
+    "shaderPortableGlb": false
+  },
+  "assetPacks": [
+    "kenney-hexagon-kit",
+    "kenney-isometric-tiles-buildings",
+    "polyhaven-pbr",
+    "kenney-nature-kit",
+    "polyhaven-models",
+    "kenney-isometric-tiles-vehicles",
+    "kenney-isometric-tiles-landscape",
+    "kenney-pixel-platformer",
+    "kenney-castle-kit",
+    "derived-isometric-castle",
+    "derived-isometric-nature"
+  ],
+  "ownAdapterFiles": [
+    {
+      "path": "map-terrain-3d.mjs",
+      "sha256": "509f181769625a37d13ab3f334e4ede5da715f113442f7b6d030a6978c83c861",
+      "bytes": 32038
+    },
+    {
+      "path": "public/map-generator-3d.mjs",
+      "sha256": "d352465d67dca4a85bde4f621998f1f2024f1ff7753344b7e1720a4e9f9b568b",
+      "bytes": 28652
+    },
+    {
+      "path": "map-isometric-core.mjs",
+      "sha256": "1bfad469e812b6e92897ce9e586c7f501d8183d075fbd49d4366b6ff6dba8724",
+      "bytes": 21525
+    },
+    {
+      "path": "public/map-isometric.mjs",
+      "sha256": "1ecbe1545f3bd495b2033e5de0a986bf94dabc7cb26e394811bf00b9ed745d25",
+      "bytes": 12267
+    },
+    {
+      "path": "world-feature-plan.mjs",
+      "sha256": "dbc1e95c1545d778bbb3e18e894de6c84c238c49f479d222225df53882431a33",
+      "bytes": 11660
+    },
+    {
+      "path": "scripts/terrain-3d-export.mjs",
+      "sha256": "2b47878aa056baeb3ce81a934d9d50e17dca9bbf6c27464e1f68e59b9838fb20",
+      "bytes": 17109
+    },
+    {
+      "path": "scripts/isometric-map-export.mjs",
+      "sha256": "2982946764fbf4428d742d9a21b41a88e0dc3831bbcc567963fcc97ddff2d4df",
+      "bytes": 6860
+    },
+    {
+      "path": "scripts/render-isometric-castle.py",
+      "sha256": "100a7ff250043b03165a7ff612d83cf0fd382555b5723ded4a0c3cc910f1ee08",
+      "bytes": 4536
+    },
+    {
+      "path": "scripts/render-isometric-nature.py",
+      "sha256": "43601e62e8082cad0c68346b9ebcfe50840353efbdefe01f3905d363e191bf9c",
+      "bytes": 5058
+    },
+    {
+      "path": "scripts/render-isometric-castle-parts.py",
+      "sha256": "739675c09bb25b7c63b3807901450906633602b798c9c7306364d4ac7f760d01",
+      "bytes": 4256
+    },
+    {
+      "path": "public/map-isometric-worker.mjs",
+      "sha256": "d5d3eef1a1821cbc554ba4509097d2cd4e6593838a0437f000232ae2d6fd7736",
+      "bytes": 308
+    },
+    {
+      "path": "public/map-terrain-3d-worker.mjs",
+      "sha256": "0068998f3e8c20acec06ab464fd7f0549949aebbf18a06a2e7ce4217c317cd62",
+      "bytes": 551
+    },
+    {
+      "path": "scripts/record-map-qa-report.mjs",
+      "sha256": "6947551e768a66a1998b46bd8da43323c88df1f2fcc3bd7dc59f61894f807174",
+      "bytes": 37681
+    },
+    {
+      "path": "test/map-terrain-3d.test.mjs",
+      "sha256": "7177396f9d0c1452dab4f2f59869348420a9c71cdc9dea19cc2c3f5c433bd65b",
+      "bytes": 21536
+    },
+    {
+      "path": "test/map-isometric.test.mjs",
+      "sha256": "a2202b5bfb28af2f524ac1b008c938f77457b1e095f9295f4eff8637db33a530",
+      "bytes": 9533
+    },
+    {
+      "path": "infinite-map.mjs",
+      "sha256": "a5d9f5053707b6837e895c37ee55d75a5f56657e436340d02c97fb4f142ab20e",
+      "bytes": 11110
+    },
+    {
+      "path": "map-scene.mjs",
+      "sha256": "58fa14f0b23dee22fcfc2a12f218967812bed006cbbcd1058464c546d919ad1a",
+      "bytes": 19272
+    },
+    {
+      "path": "public/map-scene-worker.mjs",
+      "sha256": "97bf248e21539fb6d2808e10d51491f7ac1702af0ce8f8b562c798b976157aa5",
+      "bytes": 3216
+    },
+    {
+      "path": "public/map-generator.mjs",
+      "sha256": "050ed944a7439ea3607f719452313ce5734656d2a4efd46f913992d83c8cf21d",
+      "bytes": 21160
+    },
+    {
+      "path": "test/world-feature-plan.test.mjs",
+      "sha256": "7dc6ccefec04bfc6a10f6f2ffb8fbc126c85afede458b6c7c69f39a4d4c15a28",
+      "bytes": 7681
+    },
+    {
+      "path": "test/map-scene.test.mjs",
+      "sha256": "a263f38a54f5ef7296f2b3835742b9b31823ccba887ebd46fa0b78ed78970a4f",
+      "bytes": 13728
+    }
+  ],
+  "currentAdapterAlgorithm": "procedural-terrains-7452c2c-cpu-planner4-castle-scenes-v12",
+  "collisionPolicy": {
+    "castleDoor": "Measured source local X arch rectangle .28 width/.45 height + compound jambs; actor height guard; not triangle mesh",
+    "cave": "Native -Z aperture + compound side/rear bounds and floor carve; omit entrance overlapping stream",
+    "isometricCastle": "Measured original camera projection of source castle modules; 9 flattened AABBs leave actual front arch clear; UI ingress/egress/jamb verified, no interior scene transfer"
+  },
+  "isometricAlgorithm": "kenney-2d-continuous-ground-planner4-river-textures-v8",
+  "currentPolicies": {
+    "riverSource": "planner4: planner3 raw max30deg turns unchanged; generated terminal depression expands final variable widths with complete neighboring foundation/cave avoidance; explicit hydrologicallyValidated=false; seed/source coordinates retained",
+    "waterPresentation": "source capsule paths, actual indexed1m terrain triangle sampler, deeper channel and endpoint plateau; source textured2D water and3D edgefade custom shader; visual pending",
+    "isometricGround": "original PolyHaven forest_leaves_02 Diffuse.jpg; runtime256 mip globalaffine pattern; branch repeat remains",
+    "isometricWater": "original painted-atlas-v1.png registered crop[10,372,354,343]; runtime256 mip globally patterned; native PNG metadata retained; caustic repeat remains",
+    "performance": "early foundation rejection with accepted25-point heights unchanged; streams height-only sampling; overviewLOD4 skips invisible props; exact original overview3035.2ms vs17987.9ms in actualChrome",
+    "fog": "forest100–165m keeps distant walls visible; rejected130–260m intermediate exposed current streaming horizon and is retained",
+    "castle": "33 original measured Castle Kit modules, sourceCastleLayoutv2; shared prop transforms for instances/collision/GLB; isometric remains8module",
+    "terrainPbr": "globalXYZ tri-planar stochastic Diffuse/Normal/ARM, fragment plane projection with smooth lighting normal and flat fast path; browser only; standardGLB usesoriginalXZUV"
+  }
+}

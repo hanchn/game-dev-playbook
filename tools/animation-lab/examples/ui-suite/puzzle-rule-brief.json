@@ -1,0 +1,47 @@
+{
+  "name": "三色棋盘",
+  "genre": "puzzle",
+  "coreLoop": "交换相邻棋子完成消除，在20步内收集12个蓝子",
+  "engine": "godot",
+  "orientation": "portrait",
+  "input": "touch",
+  "theme": "paper",
+  "progression": "levels",
+  "objective": {
+    "description": "收集12个蓝子",
+    "event": "puzzle.completed",
+    "condition": {
+      "blueCollected": {
+        "gte": 12
+      }
+    }
+  },
+  "failure": {
+    "description": "20步用尽而蓝子不足12个",
+    "event": "puzzle.failed",
+    "condition": {
+      "movesLeft": {
+        "eq": 0
+      },
+      "blueCollected": {
+        "lt": 12
+      }
+    }
+  },
+  "hud": [
+    {
+      "id": "blue",
+      "label": "蓝子",
+      "path": "puzzle.blueCollected",
+      "event": "blue_changed",
+      "format": "current / 12"
+    },
+    {
+      "id": "moves",
+      "label": "剩余步数",
+      "path": "puzzle.movesLeft",
+      "event": "moves_changed",
+      "format": "integer"
+    }
+  ]
+}

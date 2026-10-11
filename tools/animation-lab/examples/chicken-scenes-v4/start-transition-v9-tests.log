@@ -1,0 +1,26 @@
+✔ a rooster asset cannot silently substitute for a laying hen (0.619417ms)
+✔ multiple chickens retain independent phases and stable identities (0.492708ms)
+✔ egg starts behind pelvis and persists once after recovery across repeated seeks (0.350584ms)
+✔ fight requires opposing actors; feather particles are seek-safe and recover (0.313792ms)
+✔ crow distinguishes beak opening from a whole head rotation and closes on recovery (0.491791ms)
+✔ walking to pecking inbetweens rotate bones without shortening them or separating joints (1.811334ms)
+✔ flock travel holds either stance foot for both facings and the actual render scale (7.668833ms)
+✔ stop transition pins the planted foot, idle does not slide home, and scene end holds (2.680958ms)
+✔ all 1–12 actors move and their source-bound silhouettes stay in the common fixed output frame (2442.10625ms)
+✔ fight has no unsupported recovery hop and eases wings into the held idle (0.44225ms)
+✔ flocks expose true female walking and pecking with stable mixed identities (0.435209ms)
+✔ performance requires real female material and two opposing fighting actors (0.78575ms)
+✔ unmodified poses preserve original leg solution exactly (1.199708ms)
+✔ sitting hen keeps both soles planted and bones intact at every transition sample (4.267167ms)
+✔ registered open and closed heads hold the same eye in world space through neck lift (88.566084ms)
+✔ fighting hop preserves every bone and exposes no grounded foot during flight (2.7765ms)
+✔ all four mouth sources register one eye while preserving native source aspect (5.052709ms)
+✔ struck bird recoils independently and flight tucks both feet with continuous landing (0.474708ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2523.844583

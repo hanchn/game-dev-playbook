@@ -1,0 +1,192 @@
+{
+  "schema": "sprite-art-review/v1",
+  "assetId": "chicken-hen-side-v6",
+  "rendererVersion": 5,
+  "browserChoreographyVersion": 7,
+  "sourceSha256": {
+    "rooster": "bf1de03b07632e16c966f1dfee91ff73af731ab9f77029b2599c6168a69578de",
+    "hen": "c9d25daec3211116d358eecaa0f50cd8e5880ef25c45b971e78fa6c183cd5c84",
+    "extras": "08446d6d7f64ad47ac77e32f28922b480d18727cd08f0301a5ed41a4f87c32ac",
+    "intermediates": "5336454c01ebabcdf2abb26f62cf971972b5aaa254cfa69c07334e9245c1b5e2",
+    "hen:hen-leg-material": "978c0f3b480f3dd80bbaa11c73e2eea346d4acad6f1e4f999a930da629f50b39"
+  },
+  "sourcePolicy": {
+    "primary": "original hen v1",
+    "alternate": "hen-leg-material from generated v3",
+    "alternateConsumedTiles": [
+      2,
+      3
+    ],
+    "originalTilesLocked": 14
+  },
+  "overallVisual": "failed",
+  "technical": {
+    "passed": 43,
+    "failed": 0,
+    "log": "technical-tests.log",
+    "limitation": "Numerical and source ownership checks do not certify art quality"
+  },
+  "reviewed": [
+    {
+      "file": "lay-1.50.png",
+      "timeSeconds": 1.5,
+      "type": "native-full-opaque-fixed-1280x720",
+      "observation": "Folded leg correctly lies behind torso; no detached chest gold patch or large pasted feather oval. Recovering pose exposes actual replacement leg source."
+    },
+    {
+      "file": "lay-3.25.png",
+      "timeSeconds": 3.25,
+      "type": "native-full-opaque-fixed-1280x720",
+      "observation": "Folded leg correctly lies behind torso; no detached chest gold patch or large pasted feather oval. Recovering pose exposes actual replacement leg source."
+    },
+    {
+      "file": "lay-4.40.png",
+      "timeSeconds": 4.4,
+      "type": "native-full-opaque-fixed-1280x720",
+      "observation": "Folded leg correctly lies behind torso; no detached chest gold patch or large pasted feather oval. Recovering pose exposes actual replacement leg source."
+    },
+    {
+      "file": "ui-idle-0000-fullpage.png",
+      "timeSeconds": 0,
+      "type": "actual-Chrome-fullpage",
+      "asset": "chicken-hen-side-v6",
+      "choreographyVersion": 7,
+      "rendererVersion": 5,
+      "observation": "Viewed complete normal-opacity scene, fixed camera, paused exact time. Standing golden joint and leg proportions remain refinement candidates."
+    },
+    {
+      "file": "ui-lay-1500-fullpage.png",
+      "timeSeconds": 1.5,
+      "type": "actual-Chrome-fullpage",
+      "asset": "chicken-hen-side-v6",
+      "choreographyVersion": 7,
+      "rendererVersion": 5,
+      "observation": "Viewed complete normal-opacity scene, fixed camera, paused exact time. Standing golden joint and leg proportions remain refinement candidates."
+    },
+    {
+      "file": "ui-lay-3250-fullpage.png",
+      "timeSeconds": 3.25,
+      "type": "actual-Chrome-fullpage",
+      "asset": "chicken-hen-side-v6",
+      "choreographyVersion": 7,
+      "rendererVersion": 5,
+      "observation": "Viewed complete normal-opacity scene, fixed camera, paused exact time. Standing golden joint and leg proportions remain refinement candidates."
+    },
+    {
+      "file": "ui-lay-4400-fullpage.png",
+      "timeSeconds": 4.4,
+      "type": "actual-Chrome-fullpage",
+      "asset": "chicken-hen-side-v6",
+      "choreographyVersion": 7,
+      "rendererVersion": 5,
+      "observation": "Viewed complete normal-opacity scene, fixed camera, paused exact time. Standing golden joint and leg proportions remain refinement candidates."
+    },
+    {
+      "file": "leg-0-upper-isolated-light.png",
+      "type": "component-9-phase-full-opaque",
+      "observation": "Source feather-scale taper visible outside torso in extension. Old oversized bulb-and-rod silhouette absent; no disconnected source pixels observed at these samples. Extreme custom range not whole-action acceptance."
+    },
+    {
+      "file": "leg-0-lower-isolated-light.png",
+      "type": "component-9-phase-full-opaque",
+      "observation": "Source feather-scale taper visible outside torso in extension. Old oversized bulb-and-rod silhouette absent; no disconnected source pixels observed at these samples. Extreme custom range not whole-action acceptance."
+    },
+    {
+      "file": "leg-1-upper-isolated-light.png",
+      "type": "component-9-phase-full-opaque",
+      "observation": "Source feather-scale taper visible outside torso in extension. Old oversized bulb-and-rod silhouette absent; no disconnected source pixels observed at these samples. Extreme custom range not whole-action acceptance."
+    },
+    {
+      "file": "leg-1-lower-isolated-light.png",
+      "type": "component-9-phase-full-opaque",
+      "observation": "Source feather-scale taper visible outside torso in extension. Old oversized bulb-and-rod silhouette absent; no disconnected source pixels observed at these samples. Extreme custom range not whole-action acceptance."
+    },
+    {
+      "file": "../ground-retest/idle-ground-fixed-light.png",
+      "type": "native-whole-fixed-camera-ground-line",
+      "count": 8,
+      "observation": "Actual source feet lie on floor in support phases. Peck .333/.400/.467 beak reaches ground; recovery .600+ moves off floor. No detached chest patch; crouched upper/lower legs are hidden by natural torso outline."
+    },
+    {
+      "file": "../ground-retest/walk-ground-fixed-light.png",
+      "type": "native-whole-fixed-camera-ground-line",
+      "count": 8,
+      "observation": "Actual source feet lie on floor in support phases. Peck .333/.400/.467 beak reaches ground; recovery .600+ moves off floor. No detached chest patch; crouched upper/lower legs are hidden by natural torso outline."
+    },
+    {
+      "file": "../ground-retest/peck-ground-fixed-light.png",
+      "type": "native-whole-fixed-camera-ground-line",
+      "count": 16,
+      "observation": "Actual source feet lie on floor in support phases. Peck .333/.400/.467 beak reaches ground; recovery .600+ moves off floor. No detached chest patch; crouched upper/lower legs are hidden by natural torso outline."
+    },
+    {
+      "file": "../source-and-actions/hen-masked-light.png",
+      "type": "source-or-native-actual-pixels",
+      "observation": "Viewed source ownership or complete assembly; preserve scope, not whole art pass."
+    },
+    {
+      "file": "../source-and-actions/hen-v6-idle-assembled-light.png",
+      "type": "source-or-native-actual-pixels",
+      "observation": "Viewed source ownership or complete assembly; preserve scope, not whole art pass."
+    },
+    {
+      "file": "../source-and-actions/hen-v6-walk-assembled-light.png",
+      "type": "source-or-native-actual-pixels",
+      "observation": "Viewed source ownership or complete assembly; preserve scope, not whole art pass."
+    },
+    {
+      "file": "../source-and-actions/hen-v6-run-assembled-light.png",
+      "type": "source-or-native-actual-pixels",
+      "observation": "Viewed source ownership or complete assembly; preserve scope, not whole art pass."
+    },
+    {
+      "file": "three-hens-0.40.png",
+      "type": "source-or-native-actual-pixels",
+      "observation": "Viewed source ownership or complete assembly; preserve scope, not whole art pass."
+    },
+    {
+      "file": "peck-fixed-camera-light.png",
+      "type": "source-or-native-actual-pixels",
+      "observation": "Viewed source ownership or complete assembly; preserve scope, not whole art pass."
+    },
+    {
+      "file": "ui-three-hens-0400-fullpage.png",
+      "timeSeconds": 0.4,
+      "type": "actual-Chrome-fullpage-flock",
+      "asset": "chicken-hen-side-v6",
+      "choreographyVersion": 8,
+      "rendererVersion": 5,
+      "sexSelection": "hen",
+      "count": 3,
+      "observation": "Viewed whole fixed-camera three-hen scene, independent walk/idle/peck poses; original pasted chest leg pad absent. Golden hock ends still conspicuous."
+    },
+    {
+      "file": "ui-three-hens-2100-fullpage.png",
+      "timeSeconds": 2.1,
+      "type": "actual-Chrome-fullpage-flock",
+      "asset": "chicken-hen-side-v6",
+      "choreographyVersion": 8,
+      "rendererVersion": 5,
+      "sexSelection": "hen",
+      "count": 3,
+      "observation": "Viewed whole fixed-camera three-hen scene, independent walk/idle/peck poses; original pasted chest leg pad absent. Golden hock ends still conspicuous."
+    }
+  ],
+  "residuals": [
+    {
+      "status": "needs-refinement",
+      "where": "lay 4.40 / idle full opaque",
+      "finding": "Twin projected gold hock ends remain conspicuous; slender standing leg proportion needs independent review."
+    },
+    {
+      "status": "not-approved",
+      "where": "whole animation",
+      "finding": "Still not all clips/movie transitions visually accepted; do not infer complete character approval from lay correction."
+    }
+  ],
+  "preservedFailures": [
+    "../../chicken-hen-side-v4/leg-baseline/manifest.json",
+    "../../chicken-hen-side-v5/leg-retest/manifest.json",
+    "../../chicken-scenes-v4/ui-hen-v5-phase150-full.png"
+  ]
+}

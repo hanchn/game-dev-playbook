@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Generate ONE actual milk-frog inbetween frame7/12,58.33%, FAR support LOADING / NEAR recovery. Reference1 corrected50% FAR contact is exact currentcharacter/camera/material, reference2 next75% NEAR high-knee/FAR toeoff. One-third transition, not copied extreme.\nPermanent BACKGROUND FAR leg remains CONTACTING ground y1192 and flexes knee for load, far foot moves from forward-right closer UNDER pelvis. The SMALL far thigh/root stays behind foreground hip and the far knee is below/slightly in front of hip, not a new foreground limb. Permanent FOREGROUND NEAR BIG thigh still angled back/down-left but begins advancing toward hip; its bent recovering calf and pink near foot come forward from left/back toward UNDER pelvis while remaining HIGH/airborne aroundy960. Two distinct connectedlegs, near bigger/thigh in FRONT at root, far smaller/thigh behind. No support-side swap or mergedfeet.\nNEAR OPEN arm/hand travels down and BACK from full front/chest toward WAIST, near elbow less forward than50% but not full back yet. FAR CURLED arm/hand travels FORWARD from behind waist toward passing alongside hip; far hand must remain visible and curled. Samehandstates throughsequence, no extras or changes in fingers.\nPreserve exact1254canvas fixedscale/camera, headshape/eye size/green gaze/joyfulface/tongue and yellow/white/pink spotshading/blackink. Only slight knee-load bob, no neck/headrescale. Contact sole fixedy1192, all silhouette32px inside. Transparentalpha/no ground/shadow/text. Output only a distinct clean actual FAR loading sprite.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-808abedb-aa4b-4511-878d-90c1b0fcc7ea.png",
+  "generatedFileSha256": "3be6d8dc3bb606f3a81c1a9449ed8a2d0cec9348506533ab1206811629d9dcff",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+      "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+      "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+    }
+  ],
+  "phase": 1.75,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      332,
+      93,
+      798,
+      1096
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "FAILED hand identities swapped and near knee prematurely raised."
+  }
+}

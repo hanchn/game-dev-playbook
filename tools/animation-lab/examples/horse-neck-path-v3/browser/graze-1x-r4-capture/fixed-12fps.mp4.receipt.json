@@ -1,0 +1,180 @@
+{
+  "schema": "equine-neck-fixed-encode/v1",
+  "inputCapture": "examples/horse-neck-path-v3/browser/graze-1x-r4-capture",
+  "captureRevision": "r4-identical-halves",
+  "asset": "horse-side-v24",
+  "algorithm": "neck-path-v3",
+  "clip": "graze",
+  "speed": 1,
+  "inputSHA": [
+    {
+      "file": "frames/000.png",
+      "sha256": "8dbd932728e74ed55150ab5aa8b5ff8a7cccd4f4790d4930d84dab78c75a588a"
+    },
+    {
+      "file": "frames/001.png",
+      "sha256": "58c4bf3cbda890d9009b19e4e6f0783957bf3aeb2f93ae1c4d26846452cd8d58"
+    },
+    {
+      "file": "frames/002.png",
+      "sha256": "f132f7cb2174f7bb17294823a34655c085e914954fb4c511c24e45373a3dc2d3"
+    },
+    {
+      "file": "frames/003.png",
+      "sha256": "d7199cdc27dcd4631b55743a5fa1a06af784c2b87c7a9db6f61848448aa303b0"
+    },
+    {
+      "file": "frames/004.png",
+      "sha256": "bc1bcbc72b0b3b5896b8174201c765703e5742abde58f94def2cd3277915bbd7"
+    },
+    {
+      "file": "frames/005.png",
+      "sha256": "c0b8a7e34eb7c2b5af41170847b5f7158ee8fa24b80aed2791c9805b3a63ec7a"
+    },
+    {
+      "file": "frames/006.png",
+      "sha256": "1aee0e0f3c52c9dc97a0a7c2df178a733cb6448a4170826a6c553b93d8315f8b"
+    },
+    {
+      "file": "frames/007.png",
+      "sha256": "fd8ffe5de2cd5817bbaa6bdb7f68d84d43ce3584ede0a945cbecb9cf48781bab"
+    },
+    {
+      "file": "frames/008.png",
+      "sha256": "e4f085dfea830a405084be8ea9df3a9a59323dfacc126ded2aa0d3068930a297"
+    },
+    {
+      "file": "frames/009.png",
+      "sha256": "d8611a78fd83332324c5d46ea409fdae6613ed247ff42bdf99937c6c1f3d422c"
+    },
+    {
+      "file": "frames/010.png",
+      "sha256": "633b2c59ad8a5e92ab9f6ce9ecbf5793bc1eba94f1eec66e46438d8fdb29c282"
+    },
+    {
+      "file": "frames/011.png",
+      "sha256": "eaf38f15c431ecf58e0614c1447fd5bcdef2643faf1b32f8b6daf860e8bbf27f"
+    },
+    {
+      "file": "frames/012.png",
+      "sha256": "e5795abf03a2d6c8d748fdf90a461dcd0e8b515c13a09825fa1a8f972ed24e93"
+    },
+    {
+      "file": "frames/013.png",
+      "sha256": "d38d4514c93608f370bd2dc4c5297f2f6a30215919e41a4d8671804cd2b9fe9c"
+    },
+    {
+      "file": "frames/014.png",
+      "sha256": "6bd23ee4357d5cc7f87fded9c831cb04e52879e8f2c4bad140853c9a33fe7a0a"
+    },
+    {
+      "file": "frames/015.png",
+      "sha256": "61ded6a023bd72ffda59b6ecd4d20110b0ea8aa9a5b28d6f6e4db9e1ea5a770d"
+    },
+    {
+      "file": "frames/016.png",
+      "sha256": "49009ebadd90d075d76c60b71087364b8c25a14e83b0d6f18df1448b703c4b7e"
+    },
+    {
+      "file": "frames/017.png",
+      "sha256": "2b484c88250fe1953bbb3cbc0748e0b6af7c3cc24844086a07c2efb036450055"
+    },
+    {
+      "file": "frames/018.png",
+      "sha256": "aae4fcc07db69d10ba9801eca7bb316130e2130414e69769393f56807712d244"
+    },
+    {
+      "file": "frames/019.png",
+      "sha256": "43c319e7d7e6430df2394f56c3ecf2ebd8c0621d6fa3ea76711b482f96890686"
+    },
+    {
+      "file": "frames/020.png",
+      "sha256": "691d8207ec62694b9b2884081e5d901d3b37c93ac9c3f15064bc39c8f64df906"
+    },
+    {
+      "file": "frames/021.png",
+      "sha256": "827f30e969824a5ec1302bfc6ddf3c158b58c5c7cdb731416adb883dcf354208"
+    },
+    {
+      "file": "frames/022.png",
+      "sha256": "0248330a96a32e561332e156e9bcb72e4c5d8649877995596b85b62d1599a4ce"
+    },
+    {
+      "file": "frames/023.png",
+      "sha256": "b44a2f0297ccd3385b9521c15cc33ee82163c991cc47effc3f96bf254358aab2"
+    }
+  ],
+  "sourceSHA": [
+    {
+      "key": "primary",
+      "atlas": "/art/horse-side-parts-v5.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+      "file": "sources/horse-side-parts-v5.png"
+    },
+    {
+      "key": "horse-cannon-material",
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+      "file": "sources/horse-cannon-parts-v8.png"
+    },
+    {
+      "key": "horse-upper-material",
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+      "file": "sources/horse-upper-parts-v9.png"
+    },
+    {
+      "key": "horse-hoof-material",
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+      "file": "sources/horse-hoof-parts-v11.png"
+    }
+  ],
+  "fps": 12,
+  "requestedDuration": 2,
+  "encodedDuration": 2,
+  "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+  "encodedFrameCount": 24,
+  "expectedFrameCount": 24,
+  "maxPTSErrorSeconds": 3.33333333379926e-7,
+  "output": "examples/horse-neck-path-v3/browser/graze-1x-r4-capture/fixed-12fps.mp4",
+  "outputSHA256": "4f776783e64c3a850bef5a30391461d232916a91b157a247ab7ac0460c4d9414",
+  "args": [
+    "-y",
+    "-v",
+    "error",
+    "-framerate",
+    "12",
+    "-start_number",
+    "0",
+    "-i",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/horse-neck-path-v3/browser/graze-1x-r4-capture/frames/%03d.png",
+    "-map",
+    "0:v:0",
+    "-frames:v",
+    "24",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "18",
+    "-preset",
+    "veryslow",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/horse-neck-path-v3/browser/graze-1x-r4-capture/fixed-12fps.mp4"
+  ],
+  "technical": "passed",
+  "visual": "failed",
+  "gameIntegrated": false
+}

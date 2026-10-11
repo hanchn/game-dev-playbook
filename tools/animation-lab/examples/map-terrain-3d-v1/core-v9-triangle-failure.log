@@ -1,0 +1,80 @@
+✔ isometric projection/inverse preserves negative and fractional world coordinates (0.551125ms)
+✔ seeded overlapping windows share tiles and object identity/depth (2363.179625ms)
+✔ style switches choose actual different sprite pools and water policies (1734.3285ms)
+✔ disc motion blocks water tile and building without tunnelling (0.401875ms)
+✔ invalid regions and styles fail visibly (0.116208ms)
+✔ offline export has PNG, source hashes, copied sprite references and collision data (747.8335ms)
+✔ castle uses an original-model-derived native 1024px PNG with a measured ground anchor (1648.357875ms)
+✔ isometric castle compound walls preserve the real source arch and shared window identity (1521.683958ms)
+✔ derived vegetation references actual source pixels, uses varied geometry and aligned jittered colliders (2277.335291ms)
+✔ continuous source ground uses identical negative world pixels across independently clipped regions (2234.933375ms)
+✔ Wangscape C++ reference implementation compiles in a test harness and matches JS byte shares (546.078417ms)
+✔ source hashes lock upstream and all three genuinely distinct raster atlases (5.996875ms)
+✔ terrain source sampling excludes transparent atlas edges that created black horizontal seams (261.6215ms)
+✔ corner material blending matches at both sides of every positive and negative chunk boundary (4.110833ms)
+✔ independently exported chunks stitch to the exact full-region RGBA at negative coordinates (94.252042ms)
+✔ decorative props use a halo: independent image windows stitch with the same alpha ordering (2094.406833ms)
+✔ styles retain identical world data and collisions; Tiled has real local artwork and unique collision IDs (308.847292ms)
+✔ real PNG export is reproducible and decorative alpha is preserved; source atlas is included (269.779459ms)
+✔ browser ZIP supports binary PNG bytes and passes independent Python ZIP CRC validation (105.513917ms)
+✔ style and pixel budget reject bad values; renderer texture cache remains bounded (3331.570792ms)
+✔ registered source cells exclude foreign terrain: ocean pixels stay blue, snow avoids brown stripes (151.955333ms)
+✔ LOD cache preserves all 40 visible overview chunks without per-frame rebuild and enforces byte limits (83.533ms)
+✔ planner3 rivers stitch identical RGBA in independently queried negative windows and export their capsule width (3387.3255ms)
+✔ continuous scene disc sweep blocks a thin source river, props, and leaving the exported window (0.46875ms)
+✔ same seed produces identical geometry, layers, props and negative global samples (500.456917ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (214.253959ms)
+✔ three styles change actual geometry and model sets (521.986417ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (177.455334ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.584ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.144166ms)
+✔ water and steep ground deny actual actor movement (0.110666ms)
+✔ object colliders reflect measured source model proportions (178.4405ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.716792ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (70.580833ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (437.939459ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (718.455083ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (311.804042ms)
+✔ castle source modules form eight unique placed parts, feature range limits avoid unbounded work (110.907041ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (155.863917ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.336458ms)
+✔ barren theme uses distinct bare-rock PBR, no water/buildings and gray object materials (151.344958ms)
+✔ actual source cave fixture faces downhill with flat entrance and a passable aperture (173.85725ms)
+✔ cave ground floor remains deterministic and continuous across adjacent negative chunks (399.411083ms)
+✔ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (109.217209ms)
+✔ native cave carve rejects crossing a stream instead of raising its channel (167.025084ms)
+✔ stream ribbon rounded joints and smooth channel keep actual 1m mesh above-water holes closed (132.473292ms)
+✖ preview collision samples actual mesh triangles rather than a different bilinear surface (171.612333ms)
+✔ global feature identity survives independent chunk queries and cache eviction (105.769084ms)
+✔ buildings validate whole footprints and reject flooded/steep terrain (6.670916ms)
+✔ streams descend across negative-coordinate regions, with bounded source travel (1.237416ms)
+✔ prepared neighboring terrain chunks apply the identical global river/ground height (25.810292ms)
+✔ invalid samples fail explicitly rather than placing bad objects (0.292125ms)
+✔ unrelated foundations cannot reset an active foundation height (0.097334ms)
+✔ foundation priority is independent of river enumeration order (0.101417ms)
+✔ global river paths avoid neighboring foundations with room for water width (63.386167ms)
+✔ v3 source turns reject sharp return hooks and source curves retain downhill bank avoidance (1.2575ms)
+ℹ tests 56
+ℹ suites 0
+ℹ pass 55
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12592.677709
+
+✖ failing tests:
+
+test at test/map-terrain-3d.test.mjs:42:1
+✖ preview collision samples actual mesh triangles rather than a different bilinear surface (171.612333ms)
+  AssertionError [ERR_ASSERTION]: all ribbon vertices above actual triangles, measured -0.08085915523406584
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/map-terrain-3d.test.mjs:42:1140)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

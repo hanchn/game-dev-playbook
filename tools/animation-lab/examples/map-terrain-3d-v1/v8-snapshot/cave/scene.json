@@ -1,0 +1,2202 @@
+{
+  "schema": "styled-terrain-3d-export/v1",
+  "algorithm": "procedural-terrains-7452c2c-cpu-rounded-stream-endpools-v8",
+  "config": {
+    "seed": "漫游-2026",
+    "style": "forest",
+    "preset": "sharpMountains",
+    "scale": 64,
+    "height": 24,
+    "waterLevel": 0.22,
+    "vegetation": 0.65
+  },
+  "region": {
+    "x": -5,
+    "z": -4,
+    "width": 3,
+    "depth": 3
+  },
+  "resolution": 32,
+  "environmentBundle": {
+    "terrain": "forest_leaves_02",
+    "water": {
+      "color": "#315e59",
+      "roughness": 0.32,
+      "opacity": 0.87,
+      "waveScale": 2.4,
+      "waveStrength": 0.16,
+      "waveSpeed": 0.5
+    },
+    "lighting": {
+      "sky": "#a5bfcd",
+      "sun": "#fff0ce",
+      "intensity": 3
+    },
+    "models": [
+      "tree_pineTallA",
+      "tree_pineTallB",
+      "tree_oak",
+      "tree_simple",
+      "rock_largeA",
+      "rock_largeB"
+    ],
+    "assetStyle": "low-poly models + PBR ground"
+  },
+  "shader": {
+    "terrain": "global-continuous-four-corner-pbr-v1",
+    "water": "world-continuous-theme-water-v1",
+    "portableGlb": false,
+    "standardGlbUsesOriginalTextures": true
+  },
+  "chunkSize": 32,
+  "terrainFile": "scene.glb",
+  "props": [
+    {
+      "id": "-29:-25",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -144.55,
+        8.418957710266113,
+        -121.81
+      ],
+      "yaw": 1.04,
+      "height": 5.14,
+      "collider": {
+        "id": "-29:-25",
+        "type": "conservative-cylinder",
+        "x": -144.55,
+        "z": -121.81,
+        "y": 8.418957710266113,
+        "height": 5.14,
+        "radius": 0.9162697358555668,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-28:-23",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -137.87,
+        9.2117280960083,
+        -112.1
+      ],
+      "yaw": 3.38,
+      "height": 7.08,
+      "collider": {
+        "id": "-28:-23",
+        "type": "conservative-cylinder",
+        "x": -137.87,
+        "z": -112.1,
+        "y": 9.2117280960083,
+        "height": 7.08,
+        "radius": 1.0069578449880439,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-28:-20",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -138.53,
+        22.2779598236084,
+        -99.57
+      ],
+      "yaw": 4.9,
+      "height": 5.26,
+      "collider": {
+        "id": "-28:-20",
+        "type": "conservative-cylinder",
+        "x": -138.53,
+        "z": -99.57,
+        "y": 22.2779598236084,
+        "height": 5.26,
+        "radius": 0.9461864971974879,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-23:-26",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -111.23,
+        10.716307640075684,
+        -127.88
+      ],
+      "yaw": 0.72,
+      "height": 7.06,
+      "collider": {
+        "id": "-23:-26",
+        "type": "conservative-cylinder",
+        "x": -111.23,
+        "z": -127.88,
+        "y": 10.716307640075684,
+        "height": 7.06,
+        "radius": 2.816718083858678,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-24:-24",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -119.99,
+        10.726624488830566,
+        -119.93
+      ],
+      "yaw": 5.45,
+      "height": 6.51,
+      "collider": {
+        "id": "-24:-24",
+        "type": "conservative-cylinder",
+        "x": -119.99,
+        "z": -119.93,
+        "y": 10.726624488830566,
+        "height": 6.51,
+        "radius": 1.1710407028052559,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-24:-23",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -116.56,
+        16.272844314575195,
+        -113.77
+      ],
+      "yaw": 1,
+      "height": 5.96,
+      "collider": {
+        "id": "-24:-23",
+        "type": "conservative-cylinder",
+        "x": -116.56,
+        "z": -113.77,
+        "y": 16.272844314575195,
+        "height": 5.96,
+        "radius": 2.377852660028006,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-20:-23",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -98.74,
+        9.353364944458008,
+        -114.98
+      ],
+      "yaw": 5.01,
+      "height": 6.77,
+      "collider": {
+        "id": "-20:-23",
+        "type": "conservative-cylinder",
+        "x": -98.74,
+        "z": -114.98,
+        "y": 9.353364944458008,
+        "height": 6.77,
+        "radius": 1.2068377649303867,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-20:-22",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -97.28,
+        7.897497653961182,
+        -109.01
+      ],
+      "yaw": 3.47,
+      "height": 1.04,
+      "collider": {
+        "id": "-20:-22",
+        "type": "conservative-cylinder",
+        "x": -97.28,
+        "z": -109.01,
+        "y": 7.897497653961182,
+        "height": 1.04,
+        "radius": 2.569110964209214,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "漫游-2026:-1,-1:2:entrance",
+      "featureId": "漫游-2026:-1,-1:2",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/cliff_blockCave_rock.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -127.2003103017807,
+        19.00562858581543,
+        -96.55772657990455
+      ],
+      "height": 5.376,
+      "yaw": 3.8832997087832855,
+      "qa": {
+        "sourceModel": "cliff_blockCave_rock",
+        "triangleCollision": false,
+        "interiorSceneIntegrated": false,
+        "visualAccepted": false,
+        "sourceApertureFacing": "-Z"
+      },
+      "collider": {
+        "id": "漫游-2026:-1,-1:2:entrance",
+        "type": "compound-obb",
+        "parts": [
+          {
+            "x": -128.78583556714193,
+            "z": -95.10502916030843,
+            "width": 1.0752000000000002,
+            "depth": 5.376,
+            "yaw": 0.7417070551934926
+          },
+          {
+            "x": -125.61478503641948,
+            "z": -98.01042399950067,
+            "width": 1.0752000000000002,
+            "depth": 5.376,
+            "yaw": 0.7417070551934926
+          },
+          {
+            "x": -128.76196002784653,
+            "z": -98.26216624016787,
+            "width": 5.376,
+            "depth": 0.7526400000000001,
+            "yaw": 0.7417070551934926
+          }
+        ],
+        "y": 19.00562858581543,
+        "height": 5.376,
+        "qa": {
+          "sourceBoundsMeasured": true,
+          "apertureApproximation": true,
+          "triangleCollision": false
+        }
+      }
+    },
+    {
+      "id": "-15:-23",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -73.16,
+        6.5941362380981445,
+        -112.07
+      ],
+      "yaw": 1.66,
+      "height": 0.95,
+      "collider": {
+        "id": "-15:-23",
+        "type": "conservative-cylinder",
+        "x": -73.16,
+        "z": -112.07,
+        "y": 6.5941362380981445,
+        "height": 0.95,
+        "radius": 2.346784053844955,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-19:-22",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -93.82,
+        7.821895599365234,
+        -107.66
+      ],
+      "yaw": 0.03,
+      "height": 6.79,
+      "collider": {
+        "id": "-19:-22",
+        "type": "conservative-cylinder",
+        "x": -93.82,
+        "z": -107.66,
+        "y": 7.821895599365234,
+        "height": 6.79,
+        "radius": 0.9657123965351438,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-18:-22",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -87.53,
+        7.573726654052734,
+        -106.26
+      ],
+      "yaw": 2.07,
+      "height": 5.47,
+      "collider": {
+        "id": "-18:-22",
+        "type": "conservative-cylinder",
+        "x": -87.53,
+        "z": -106.26,
+        "y": 7.573726654052734,
+        "height": 5.47,
+        "radius": 0.7779744932322882,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-17:-22",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -81.2,
+        6.553379058837891,
+        -109.26
+      ],
+      "yaw": 3.45,
+      "height": 5.07,
+      "collider": {
+        "id": "-17:-22",
+        "type": "conservative-cylinder",
+        "x": -81.2,
+        "z": -109.26,
+        "y": 6.553379058837891,
+        "height": 5.07,
+        "radius": 0.9037913542388569,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-16:-22",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -79.2,
+        6.65304708480835,
+        -109.83
+      ],
+      "yaw": 4.64,
+      "height": 4.9399999999999995,
+      "collider": {
+        "id": "-16:-22",
+        "type": "conservative-cylinder",
+        "x": -79.2,
+        "z": -109.83,
+        "y": 6.65304708480835,
+        "height": 4.9399999999999995,
+        "radius": 0.8886238205618994,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-18:-21",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -88.46,
+        8.282763481140137,
+        -103.45
+      ],
+      "yaw": 5.27,
+      "height": 6.57,
+      "collider": {
+        "id": "-18:-21",
+        "type": "conservative-cylinder",
+        "x": -88.46,
+        "z": -103.45,
+        "y": 8.282763481140137,
+        "height": 6.57,
+        "radius": 2.6212234859704697,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-17:-21",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -84.07,
+        6.926769256591797,
+        -104.74
+      ],
+      "yaw": 5.61,
+      "height": 6.33,
+      "collider": {
+        "id": "-17:-21",
+        "type": "conservative-cylinder",
+        "x": -84.07,
+        "z": -104.74,
+        "y": 6.926769256591797,
+        "height": 6.33,
+        "radius": 1.1284022233396378,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-19:-20",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -92.91,
+        7.339287757873535,
+        -99.43
+      ],
+      "yaw": 5.62,
+      "height": 0.5900000000000001,
+      "collider": {
+        "id": "-19:-20",
+        "type": "conservative-cylinder",
+        "x": -92.91,
+        "z": -99.43,
+        "y": 7.339287757873535,
+        "height": 0.5900000000000001,
+        "radius": 1.4574764123879198,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-14:-20",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -66.73,
+        12.578693389892578,
+        -96.13
+      ],
+      "yaw": 1.54,
+      "height": 0.5900000000000001,
+      "collider": {
+        "id": "-14:-20",
+        "type": "conservative-cylinder",
+        "x": -66.73,
+        "z": -96.13,
+        "y": 12.578693389892578,
+        "height": 0.5900000000000001,
+        "radius": 0.8724135255297528,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-31:-19",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -151.19,
+        16.217668533325195,
+        -93.02
+      ],
+      "yaw": 1.5,
+      "height": 5.88,
+      "collider": {
+        "id": "-31:-19",
+        "type": "conservative-cylinder",
+        "x": -151.19,
+        "z": -93.02,
+        "y": 16.217668533325195,
+        "height": 5.88,
+        "radius": 1.0481840558036446,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-29:-19",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -141.04,
+        19.97059440612793,
+        -93.54
+      ],
+      "yaw": 5.67,
+      "height": 6.1899999999999995,
+      "collider": {
+        "id": "-29:-19",
+        "type": "conservative-cylinder",
+        "x": -141.04,
+        "z": -93.54,
+        "y": 19.97059440612793,
+        "height": 6.1899999999999995,
+        "radius": 1.1034454601062176,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-28:-19",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -138.38,
+        20.40005874633789,
+        -94.49
+      ],
+      "yaw": 0.04,
+      "height": 6.16,
+      "collider": {
+        "id": "-28:-19",
+        "type": "conservative-cylinder",
+        "x": -138.38,
+        "z": -94.49,
+        "y": 20.40005874633789,
+        "height": 6.16,
+        "radius": 1.108081525235081,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-29:-18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -142.82,
+        16.060440063476562,
+        -88.14
+      ],
+      "yaw": 0,
+      "height": 5.26,
+      "collider": {
+        "id": "-29:-18",
+        "type": "conservative-cylinder",
+        "x": -142.82,
+        "z": -88.14,
+        "y": 16.060440063476562,
+        "height": 5.26,
+        "radius": 2.0985746630448507,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-27:-16",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -134.84,
+        8.787773132324219,
+        -78.4
+      ],
+      "yaw": 5.7,
+      "height": 5.2,
+      "collider": {
+        "id": "-27:-16",
+        "type": "conservative-cylinder",
+        "x": -134.84,
+        "z": -78.4,
+        "y": 8.787773132324219,
+        "height": 5.2,
+        "radius": 0.9353934953283152,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-31:-15",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -152.75,
+        8.927957534790039,
+        -72.98
+      ],
+      "yaw": 2.71,
+      "height": 6.01,
+      "collider": {
+        "id": "-31:-15",
+        "type": "conservative-cylinder",
+        "x": -152.75,
+        "z": -72.98,
+        "y": 8.927957534790039,
+        "height": 6.01,
+        "radius": 1.081099020562149,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-31:-14",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -151.81,
+        9.052989959716797,
+        -67.89
+      ],
+      "yaw": 2.75,
+      "height": 0.8,
+      "collider": {
+        "id": "-31:-14",
+        "type": "conservative-cylinder",
+        "x": -151.81,
+        "z": -67.89,
+        "y": 9.052989959716797,
+        "height": 0.8,
+        "radius": 1.1829335939386478,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-24:-18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -116.89,
+        8.065397262573242,
+        -86.21
+      ],
+      "yaw": 5.79,
+      "height": 5.1899999999999995,
+      "collider": {
+        "id": "-24:-18",
+        "type": "conservative-cylinder",
+        "x": -116.89,
+        "z": -86.21,
+        "y": 8.065397262573242,
+        "height": 5.1899999999999995,
+        "radius": 0.7381513016225915,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-20:-18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -97.27,
+        7.705410957336426,
+        -86.47
+      ],
+      "yaw": 4.45,
+      "height": 4.99,
+      "collider": {
+        "id": "-20:-18",
+        "type": "conservative-cylinder",
+        "x": -97.27,
+        "z": -86.47,
+        "y": 7.705410957336426,
+        "height": 4.99,
+        "radius": 0.8976179887862101,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-24:-17",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -118.45,
+        8.010486602783203,
+        -83.09
+      ],
+      "yaw": 0.95,
+      "height": 6.529999999999999,
+      "collider": {
+        "id": "-24:-17",
+        "type": "conservative-cylinder",
+        "x": -118.45,
+        "z": -83.09,
+        "y": 8.010486602783203,
+        "height": 6.529999999999999,
+        "radius": 2.6052647432857174,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-20:-17",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -98.22,
+        7.719494819641113,
+        -84.78
+      ],
+      "yaw": 4.51,
+      "height": 6.35,
+      "collider": {
+        "id": "-20:-17",
+        "type": "conservative-cylinder",
+        "x": -98.22,
+        "z": -84.78,
+        "y": 7.719494819641113,
+        "height": 6.35,
+        "radius": 1.1422593644874617,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-20:-15",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -96.37,
+        8.459012985229492,
+        -74.92
+      ],
+      "yaw": 0.48,
+      "height": 5.279999999999999,
+      "collider": {
+        "id": "-20:-15",
+        "type": "conservative-cylinder",
+        "x": -96.37,
+        "z": -74.92,
+        "y": 8.459012985229492,
+        "height": 5.279999999999999,
+        "radius": 2.1065540343872264,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-16:-19",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -79.12,
+        7.826152324676514,
+        -91.07
+      ],
+      "yaw": 2.44,
+      "height": 5.359999999999999,
+      "collider": {
+        "id": "-16:-19",
+        "type": "conservative-cylinder",
+        "x": -79.12,
+        "z": -91.07,
+        "y": 7.826152324676514,
+        "height": 5.359999999999999,
+        "radius": 2.13847151975673,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-19:-18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -92.47,
+        7.540628433227539,
+        -88.12
+      ],
+      "yaw": 1.86,
+      "height": 6.199999999999999,
+      "collider": {
+        "id": "-19:-18",
+        "type": "conservative-cylinder",
+        "x": -92.47,
+        "z": -88.12,
+        "y": 7.540628433227539,
+        "height": 6.199999999999999,
+        "radius": 1.1052280860514618,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-16:-18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -79.76,
+        7.588828086853027,
+        -86.1
+      ],
+      "yaw": 1.86,
+      "height": 0.79,
+      "collider": {
+        "id": "-16:-18",
+        "type": "conservative-cylinder",
+        "x": -79.76,
+        "z": -86.1,
+        "y": 7.588828086853027,
+        "height": 0.79,
+        "radius": 1.951536213197384,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-15:-18",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -74.85,
+        9.329570770263672,
+        -86.96
+      ],
+      "yaw": 6.03,
+      "height": 5.29,
+      "collider": {
+        "id": "-15:-18",
+        "type": "conservative-cylinder",
+        "x": -74.85,
+        "z": -86.96,
+        "y": 9.329570770263672,
+        "height": 5.29,
+        "radius": 0.9430091250342312,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-18:-17",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -89.08,
+        7.506983757019043,
+        -81.24
+      ],
+      "yaw": 5.03,
+      "height": 0.56,
+      "collider": {
+        "id": "-18:-17",
+        "type": "conservative-cylinder",
+        "x": -89.08,
+        "z": -81.24,
+        "y": 7.506983757019043,
+        "height": 0.56,
+        "radius": 0.8280535157570535,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-17:-17",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -84.77,
+        8.500472068786621,
+        -82.19
+      ],
+      "yaw": 2.92,
+      "height": 6.1,
+      "collider": {
+        "id": "-17:-17",
+        "type": "conservative-cylinder",
+        "x": -84.77,
+        "z": -82.19,
+        "y": 8.500472068786621,
+        "height": 6.1,
+        "radius": 0.8675766743541056,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-19:-16",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -92.81,
+        8.683900833129883,
+        -77.66
+      ],
+      "yaw": 1.66,
+      "height": 5.779999999999999,
+      "collider": {
+        "id": "-19:-16",
+        "type": "conservative-cylinder",
+        "x": -92.81,
+        "z": -77.66,
+        "y": 8.683900833129883,
+        "height": 5.779999999999999,
+        "radius": 2.306038317946623,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-32:-13",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -159.16,
+        11.587550163269043,
+        -62.25
+      ],
+      "yaw": 1.84,
+      "height": 0.53,
+      "collider": {
+        "id": "-32:-13",
+        "type": "conservative-cylinder",
+        "x": -159.16,
+        "z": -62.25,
+        "y": 11.587550163269043,
+        "height": 0.53,
+        "radius": 0.7836935059843542,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-32:-12",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -156.66,
+        14.569398880004883,
+        -57.72
+      ],
+      "yaw": 5.89,
+      "height": 0.5800000000000001,
+      "collider": {
+        "id": "-32:-12",
+        "type": "conservative-cylinder",
+        "x": -156.66,
+        "z": -57.72,
+        "y": 14.569398880004883,
+        "height": 0.5800000000000001,
+        "radius": 0.8576268556055197,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-30:-12",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -148.02,
+        12.752981185913086,
+        -56.02
+      ],
+      "yaw": 1.47,
+      "height": 6.51,
+      "collider": {
+        "id": "-30:-12",
+        "type": "conservative-cylinder",
+        "x": -148.02,
+        "z": -56.02,
+        "y": 12.752981185913086,
+        "height": 6.51,
+        "radius": 0.9258892049254471,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-30:-11",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -147.94,
+        12.531821250915527,
+        -54.18
+      ],
+      "yaw": 3.37,
+      "height": 5.87,
+      "collider": {
+        "id": "-30:-11",
+        "type": "conservative-cylinder",
+        "x": -147.94,
+        "z": -54.18,
+        "y": 12.531821250915527,
+        "height": 5.87,
+        "radius": 1.0464014298584003,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-32:-10",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -159.87,
+        15.029314041137695,
+        -49.4
+      ],
+      "yaw": 0.41,
+      "height": 5.41,
+      "collider": {
+        "id": "-32:-10",
+        "type": "conservative-cylinder",
+        "x": -159.87,
+        "z": -49.4,
+        "y": 15.029314041137695,
+        "height": 5.41,
+        "radius": 0.9644006363771628,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-31:-10",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -152.44,
+        14.799073219299316,
+        -49.92
+      ],
+      "yaw": 4.68,
+      "height": 5.88,
+      "collider": {
+        "id": "-31:-10",
+        "type": "conservative-cylinder",
+        "x": -152.44,
+        "z": -49.92,
+        "y": 14.799073219299316,
+        "height": 5.88,
+        "radius": 1.057714183178941,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-30:-10",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -148.34,
+        16.507240295410156,
+        -46.12
+      ],
+      "yaw": 1.94,
+      "height": 6.66,
+      "collider": {
+        "id": "-30:-10",
+        "type": "conservative-cylinder",
+        "x": -148.34,
+        "z": -46.12,
+        "y": 16.507240295410156,
+        "height": 6.66,
+        "radius": 0.947223057573499,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-29:-9",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -143.89,
+        19.169775009155273,
+        -44.68
+      ],
+      "yaw": 4.15,
+      "height": 5.949999999999999,
+      "collider": {
+        "id": "-29:-9",
+        "type": "conservative-cylinder",
+        "x": -143.89,
+        "z": -44.68,
+        "y": 19.169775009155273,
+        "height": 5.949999999999999,
+        "radius": 1.0606624374203546,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-28:-9",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -136.25,
+        12.66664981842041,
+        -41.71
+      ],
+      "yaw": 2.15,
+      "height": 7.05,
+      "collider": {
+        "id": "-28:-9",
+        "type": "conservative-cylinder",
+        "x": -136.25,
+        "z": -41.71,
+        "y": 12.66664981842041,
+        "height": 7.05,
+        "radius": 1.0026910744584336,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-26:-7",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -129.92,
+        11.53813648223877,
+        -34.01
+      ],
+      "yaw": 0.43,
+      "height": 6.85,
+      "collider": {
+        "id": "-26:-7",
+        "type": "conservative-cylinder",
+        "x": -129.92,
+        "z": -34.01,
+        "y": 11.53813648223877,
+        "height": 6.85,
+        "radius": 2.7329346847637312,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-20:-9",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -99.31,
+        13.20784854888916,
+        -42.91
+      ],
+      "yaw": 5.61,
+      "height": 6.99,
+      "collider": {
+        "id": "-20:-9",
+        "type": "conservative-cylinder",
+        "x": -99.31,
+        "z": -42.91,
+        "y": 13.20784854888916,
+        "height": 6.99,
+        "radius": 0.9941575333992129,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-16:-13",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -76.36,
+        13.486528396606445,
+        -62.77
+      ],
+      "yaw": 3.86,
+      "height": 6.42,
+      "collider": {
+        "id": "-16:-13",
+        "type": "conservative-cylinder",
+        "x": -76.36,
+        "z": -62.77,
+        "y": 13.486528396606445,
+        "height": 6.42,
+        "radius": 1.1444458568468365,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-18:-12",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -89.44,
+        7.607478618621826,
+        -56.53
+      ],
+      "yaw": 0.62,
+      "height": 6.16,
+      "collider": {
+        "id": "-18:-12",
+        "type": "conservative-cylinder",
+        "x": -89.44,
+        "z": -56.53,
+        "y": 7.607478618621826,
+        "height": 6.16,
+        "radius": 2.4576463734517646,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-18:-11",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -88.3,
+        7.327978610992432,
+        -51.39
+      ],
+      "yaw": 6.19,
+      "height": 5.33,
+      "collider": {
+        "id": "-18:-11",
+        "type": "conservative-cylinder",
+        "x": -88.3,
+        "z": -51.39,
+        "y": 7.327978610992432,
+        "height": 5.33,
+        "radius": 2.1265024627431663,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-17:-11",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -83.21,
+        8.102356910705566,
+        -54.49
+      ],
+      "yaw": 0.6,
+      "height": 5.1,
+      "collider": {
+        "id": "-17:-11",
+        "type": "conservative-cylinder",
+        "x": -83.21,
+        "z": -54.49,
+        "y": 8.102356910705566,
+        "height": 5.1,
+        "radius": 0.9174051588796936,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-16:-11",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -77.46,
+        9.32209300994873,
+        -54.36
+      ],
+      "yaw": 6.18,
+      "height": 5.9,
+      "collider": {
+        "id": "-16:-11",
+        "type": "conservative-cylinder",
+        "x": -77.46,
+        "z": -54.36,
+        "y": 9.32209300994873,
+        "height": 5.9,
+        "radius": 1.051749307694133,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "-17:-10",
+      "model": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourcePack": "kenney-nature-kit",
+      "position": [
+        -83.46,
+        7.396553039550781,
+        -47.53
+      ],
+      "yaw": 2.62,
+      "height": 6.16,
+      "collider": {
+        "id": "-17:-10",
+        "type": "conservative-cylinder",
+        "x": -83.46,
+        "z": -47.53,
+        "y": 7.396553039550781,
+        "height": 6.16,
+        "radius": 2.4576463734517646,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "漫游-2026:-1,-1:2",
+      "type": "cave",
+      "position": {
+        "x": -127.2003103017807,
+        "z": -96.55772657990455
+      },
+      "footprint": {
+        "width": 8.96,
+        "depth": 8.96
+      },
+      "surfaceHeight": 19.00562858581543,
+      "status": "validated",
+      "validation": {
+        "placement": "terrain-sampled",
+        "visual": "not-reviewed",
+        "samples": 1
+      },
+      "collider": null
+    },
+    {
+      "id": "漫游-2026:-1,-1:3",
+      "type": "hill",
+      "position": {
+        "x": -122.90340688228608,
+        "z": -69.30252220630646
+      },
+      "footprint": {
+        "width": 20.48,
+        "depth": 20.48
+      },
+      "surfaceHeight": 14.983234405517578,
+      "status": "validated",
+      "validation": {
+        "placement": "terrain-sampled",
+        "visual": "not-reviewed",
+        "samples": 1
+      },
+      "collider": null
+    }
+  ],
+  "materials": {
+    "sourcePack": "polyhaven-pbr",
+    "id": "forest_leaves_02",
+    "metersPerRepeat": 6
+  },
+  "collision": {
+    "terrain": "global NoiseStack + deterministic feature carve/foundation sampling",
+    "objects": [
+      {
+        "id": "-29:-25",
+        "type": "conservative-cylinder",
+        "x": -144.55,
+        "z": -121.81,
+        "y": 8.418957710266113,
+        "height": 5.14,
+        "radius": 0.9162697358555668,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-28:-23",
+        "type": "conservative-cylinder",
+        "x": -137.87,
+        "z": -112.1,
+        "y": 9.2117280960083,
+        "height": 7.08,
+        "radius": 1.0069578449880439,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-28:-20",
+        "type": "conservative-cylinder",
+        "x": -138.53,
+        "z": -99.57,
+        "y": 22.2779598236084,
+        "height": 5.26,
+        "radius": 0.9461864971974879,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-23:-26",
+        "type": "conservative-cylinder",
+        "x": -111.23,
+        "z": -127.88,
+        "y": 10.716307640075684,
+        "height": 7.06,
+        "radius": 2.816718083858678,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-24:-24",
+        "type": "conservative-cylinder",
+        "x": -119.99,
+        "z": -119.93,
+        "y": 10.726624488830566,
+        "height": 6.51,
+        "radius": 1.1710407028052559,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-24:-23",
+        "type": "conservative-cylinder",
+        "x": -116.56,
+        "z": -113.77,
+        "y": 16.272844314575195,
+        "height": 5.96,
+        "radius": 2.377852660028006,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-20:-23",
+        "type": "conservative-cylinder",
+        "x": -98.74,
+        "z": -114.98,
+        "y": 9.353364944458008,
+        "height": 6.77,
+        "radius": 1.2068377649303867,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-20:-22",
+        "type": "conservative-cylinder",
+        "x": -97.28,
+        "z": -109.01,
+        "y": 7.897497653961182,
+        "height": 1.04,
+        "radius": 2.569110964209214,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "漫游-2026:-1,-1:2:entrance",
+        "type": "compound-obb",
+        "parts": [
+          {
+            "x": -128.78583556714193,
+            "z": -95.10502916030843,
+            "width": 1.0752000000000002,
+            "depth": 5.376,
+            "yaw": 0.7417070551934926
+          },
+          {
+            "x": -125.61478503641948,
+            "z": -98.01042399950067,
+            "width": 1.0752000000000002,
+            "depth": 5.376,
+            "yaw": 0.7417070551934926
+          },
+          {
+            "x": -128.76196002784653,
+            "z": -98.26216624016787,
+            "width": 5.376,
+            "depth": 0.7526400000000001,
+            "yaw": 0.7417070551934926
+          }
+        ],
+        "y": 19.00562858581543,
+        "height": 5.376,
+        "qa": {
+          "sourceBoundsMeasured": true,
+          "apertureApproximation": true,
+          "triangleCollision": false
+        }
+      },
+      {
+        "id": "-15:-23",
+        "type": "conservative-cylinder",
+        "x": -73.16,
+        "z": -112.07,
+        "y": 6.5941362380981445,
+        "height": 0.95,
+        "radius": 2.346784053844955,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-19:-22",
+        "type": "conservative-cylinder",
+        "x": -93.82,
+        "z": -107.66,
+        "y": 7.821895599365234,
+        "height": 6.79,
+        "radius": 0.9657123965351438,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-18:-22",
+        "type": "conservative-cylinder",
+        "x": -87.53,
+        "z": -106.26,
+        "y": 7.573726654052734,
+        "height": 5.47,
+        "radius": 0.7779744932322882,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-17:-22",
+        "type": "conservative-cylinder",
+        "x": -81.2,
+        "z": -109.26,
+        "y": 6.553379058837891,
+        "height": 5.07,
+        "radius": 0.9037913542388569,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-16:-22",
+        "type": "conservative-cylinder",
+        "x": -79.2,
+        "z": -109.83,
+        "y": 6.65304708480835,
+        "height": 4.9399999999999995,
+        "radius": 0.8886238205618994,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-18:-21",
+        "type": "conservative-cylinder",
+        "x": -88.46,
+        "z": -103.45,
+        "y": 8.282763481140137,
+        "height": 6.57,
+        "radius": 2.6212234859704697,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-17:-21",
+        "type": "conservative-cylinder",
+        "x": -84.07,
+        "z": -104.74,
+        "y": 6.926769256591797,
+        "height": 6.33,
+        "radius": 1.1284022233396378,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-19:-20",
+        "type": "conservative-cylinder",
+        "x": -92.91,
+        "z": -99.43,
+        "y": 7.339287757873535,
+        "height": 0.5900000000000001,
+        "radius": 1.4574764123879198,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-14:-20",
+        "type": "conservative-cylinder",
+        "x": -66.73,
+        "z": -96.13,
+        "y": 12.578693389892578,
+        "height": 0.5900000000000001,
+        "radius": 0.8724135255297528,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-31:-19",
+        "type": "conservative-cylinder",
+        "x": -151.19,
+        "z": -93.02,
+        "y": 16.217668533325195,
+        "height": 5.88,
+        "radius": 1.0481840558036446,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-29:-19",
+        "type": "conservative-cylinder",
+        "x": -141.04,
+        "z": -93.54,
+        "y": 19.97059440612793,
+        "height": 6.1899999999999995,
+        "radius": 1.1034454601062176,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-28:-19",
+        "type": "conservative-cylinder",
+        "x": -138.38,
+        "z": -94.49,
+        "y": 20.40005874633789,
+        "height": 6.16,
+        "radius": 1.108081525235081,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-29:-18",
+        "type": "conservative-cylinder",
+        "x": -142.82,
+        "z": -88.14,
+        "y": 16.060440063476562,
+        "height": 5.26,
+        "radius": 2.0985746630448507,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-27:-16",
+        "type": "conservative-cylinder",
+        "x": -134.84,
+        "z": -78.4,
+        "y": 8.787773132324219,
+        "height": 5.2,
+        "radius": 0.9353934953283152,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-31:-15",
+        "type": "conservative-cylinder",
+        "x": -152.75,
+        "z": -72.98,
+        "y": 8.927957534790039,
+        "height": 6.01,
+        "radius": 1.081099020562149,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-31:-14",
+        "type": "conservative-cylinder",
+        "x": -151.81,
+        "z": -67.89,
+        "y": 9.052989959716797,
+        "height": 0.8,
+        "radius": 1.1829335939386478,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-24:-18",
+        "type": "conservative-cylinder",
+        "x": -116.89,
+        "z": -86.21,
+        "y": 8.065397262573242,
+        "height": 5.1899999999999995,
+        "radius": 0.7381513016225915,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-20:-18",
+        "type": "conservative-cylinder",
+        "x": -97.27,
+        "z": -86.47,
+        "y": 7.705410957336426,
+        "height": 4.99,
+        "radius": 0.8976179887862101,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-24:-17",
+        "type": "conservative-cylinder",
+        "x": -118.45,
+        "z": -83.09,
+        "y": 8.010486602783203,
+        "height": 6.529999999999999,
+        "radius": 2.6052647432857174,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-20:-17",
+        "type": "conservative-cylinder",
+        "x": -98.22,
+        "z": -84.78,
+        "y": 7.719494819641113,
+        "height": 6.35,
+        "radius": 1.1422593644874617,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-20:-15",
+        "type": "conservative-cylinder",
+        "x": -96.37,
+        "z": -74.92,
+        "y": 8.459012985229492,
+        "height": 5.279999999999999,
+        "radius": 2.1065540343872264,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-16:-19",
+        "type": "conservative-cylinder",
+        "x": -79.12,
+        "z": -91.07,
+        "y": 7.826152324676514,
+        "height": 5.359999999999999,
+        "radius": 2.13847151975673,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-19:-18",
+        "type": "conservative-cylinder",
+        "x": -92.47,
+        "z": -88.12,
+        "y": 7.540628433227539,
+        "height": 6.199999999999999,
+        "radius": 1.1052280860514618,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-16:-18",
+        "type": "conservative-cylinder",
+        "x": -79.76,
+        "z": -86.1,
+        "y": 7.588828086853027,
+        "height": 0.79,
+        "radius": 1.951536213197384,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-15:-18",
+        "type": "conservative-cylinder",
+        "x": -74.85,
+        "z": -86.96,
+        "y": 9.329570770263672,
+        "height": 5.29,
+        "radius": 0.9430091250342312,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-18:-17",
+        "type": "conservative-cylinder",
+        "x": -89.08,
+        "z": -81.24,
+        "y": 7.506983757019043,
+        "height": 0.56,
+        "radius": 0.8280535157570535,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-17:-17",
+        "type": "conservative-cylinder",
+        "x": -84.77,
+        "z": -82.19,
+        "y": 8.500472068786621,
+        "height": 6.1,
+        "radius": 0.8675766743541056,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-19:-16",
+        "type": "conservative-cylinder",
+        "x": -92.81,
+        "z": -77.66,
+        "y": 8.683900833129883,
+        "height": 5.779999999999999,
+        "radius": 2.306038317946623,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-32:-13",
+        "type": "conservative-cylinder",
+        "x": -159.16,
+        "z": -62.25,
+        "y": 11.587550163269043,
+        "height": 0.53,
+        "radius": 0.7836935059843542,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-32:-12",
+        "type": "conservative-cylinder",
+        "x": -156.66,
+        "z": -57.72,
+        "y": 14.569398880004883,
+        "height": 0.5800000000000001,
+        "radius": 0.8576268556055197,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-30:-12",
+        "type": "conservative-cylinder",
+        "x": -148.02,
+        "z": -56.02,
+        "y": 12.752981185913086,
+        "height": 6.51,
+        "radius": 0.9258892049254471,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-30:-11",
+        "type": "conservative-cylinder",
+        "x": -147.94,
+        "z": -54.18,
+        "y": 12.531821250915527,
+        "height": 5.87,
+        "radius": 1.0464014298584003,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-32:-10",
+        "type": "conservative-cylinder",
+        "x": -159.87,
+        "z": -49.4,
+        "y": 15.029314041137695,
+        "height": 5.41,
+        "radius": 0.9644006363771628,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-31:-10",
+        "type": "conservative-cylinder",
+        "x": -152.44,
+        "z": -49.92,
+        "y": 14.799073219299316,
+        "height": 5.88,
+        "radius": 1.057714183178941,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-30:-10",
+        "type": "conservative-cylinder",
+        "x": -148.34,
+        "z": -46.12,
+        "y": 16.507240295410156,
+        "height": 6.66,
+        "radius": 0.947223057573499,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-29:-9",
+        "type": "conservative-cylinder",
+        "x": -143.89,
+        "z": -44.68,
+        "y": 19.169775009155273,
+        "height": 5.949999999999999,
+        "radius": 1.0606624374203546,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-28:-9",
+        "type": "conservative-cylinder",
+        "x": -136.25,
+        "z": -41.71,
+        "y": 12.66664981842041,
+        "height": 7.05,
+        "radius": 1.0026910744584336,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-26:-7",
+        "type": "conservative-cylinder",
+        "x": -129.92,
+        "z": -34.01,
+        "y": 11.53813648223877,
+        "height": 6.85,
+        "radius": 2.7329346847637312,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-20:-9",
+        "type": "conservative-cylinder",
+        "x": -99.31,
+        "z": -42.91,
+        "y": 13.20784854888916,
+        "height": 6.99,
+        "radius": 0.9941575333992129,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-16:-13",
+        "type": "conservative-cylinder",
+        "x": -76.36,
+        "z": -62.77,
+        "y": 13.486528396606445,
+        "height": 6.42,
+        "radius": 1.1444458568468365,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-18:-12",
+        "type": "conservative-cylinder",
+        "x": -89.44,
+        "z": -56.53,
+        "y": 7.607478618621826,
+        "height": 6.16,
+        "radius": 2.4576463734517646,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-18:-11",
+        "type": "conservative-cylinder",
+        "x": -88.3,
+        "z": -51.39,
+        "y": 7.327978610992432,
+        "height": 5.33,
+        "radius": 2.1265024627431663,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-17:-11",
+        "type": "conservative-cylinder",
+        "x": -83.21,
+        "z": -54.49,
+        "y": 8.102356910705566,
+        "height": 5.1,
+        "radius": 0.9174051588796936,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-16:-11",
+        "type": "conservative-cylinder",
+        "x": -77.46,
+        "z": -54.36,
+        "y": 9.32209300994873,
+        "height": 5.9,
+        "radius": 1.051749307694133,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_simple.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      },
+      {
+        "id": "-17:-10",
+        "type": "conservative-cylinder",
+        "x": -83.46,
+        "z": -47.53,
+        "y": 7.396553039550781,
+        "height": 6.16,
+        "radius": 2.4576463734517646,
+        "sourceModel": "/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    ],
+    "sweepFunction": "sweepTerrainMotion",
+    "triangleMesh": false
+  },
+  "noiseStack": {
+    "version": 1,
+    "globalSeed": 925300048,
+    "normalizeOutput": false,
+    "outputMin": 0,
+    "outputMax": 1.35,
+    "layers": [
+      {
+        "id": "layer-0",
+        "name": "Continents",
+        "enabled": true,
+        "type": "fbm",
+        "blendMode": "add",
+        "strength": 0.45,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 0.6,
+          "octaves": 4,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-1",
+        "name": "Breakup Warp",
+        "enabled": true,
+        "type": "domainWarp",
+        "blendMode": "add",
+        "strength": 0.6,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 1.2,
+          "octaves": 4
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-2",
+        "name": "Mountain Ridges",
+        "enabled": true,
+        "type": "ridged",
+        "blendMode": "add",
+        "strength": 0.9,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 2.4,
+          "octaves": 5,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "sharpness": 2.5,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      },
+      {
+        "id": "layer-3",
+        "name": "Small Details",
+        "enabled": true,
+        "type": "fbm",
+        "blendMode": "add",
+        "strength": 0.05,
+        "opacity": 1,
+        "seedOffset": 0,
+        "params": {
+          "scale": 8,
+          "octaves": 3,
+          "persistence": 0.5,
+          "lacunarity": 2,
+          "erosion": 0,
+          "warp": 0
+        },
+        "masks": [],
+        "previewSolo": false,
+        "locked": false
+      }
+    ]
+  },
+  "source": "map-vendor/SOURCE-terrain-3d.json",
+  "qa": {
+    "engineImported": false,
+    "visualAccepted": false,
+    "actorCollisionsVerified": false,
+    "realGeographicData": false
+  }
+}

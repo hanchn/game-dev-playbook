@@ -1,0 +1,43 @@
+{
+  "species": "human",
+  "version": 5,
+  "view": "side",
+  "projection": "orthographic",
+  "facing": "right",
+  "tool": "builtin-imagegen",
+  "image": "human-side-parts-v5.png",
+  "prompts": [
+    "Edit target: the supplied human sprite parts atlas. Produce a completely redrawn improved production 2D skeletal-game parts atlas, preserving the adult man identity, right-facing orthographic profile, charcoal short sleeved tee, khaki trousers, dark low shoes, natural colors and realistic painted texture. EXACTLY 4 columns and 4 rows, 16 well-separated parts with generous transparent gutters. Row-major layout must remain: 1 headless armless torso and pelvis; 2 head RIGHT profile with ONE eye and NO long neck; 3 thigh; 4 shin; 5 right-facing shoe; 6 short neck; 7 pelvis cloth patch; 8 upper arm with short tee sleeve; 9 forearm; 10 relaxed right-profile hand; 11 elbow skin patch; 12 wrist skin patch; 13 alternative relaxed hand; 14 alternative shoe; 15 knee khaki patch; 16 shoulder charcoal patch. Essential redesign: every attachment end is a SMOOTH ROUNDED 2D SILHOUETTE, like the overlap caps of polished articulated robot parts, but with HUMAN skin and cloth. NO STRAIGHT TRANSVERSE CUTS. Thigh: rounded convex hip end and semicircular knee end. Shin: semicircular knee end and rounded ankle end. Upper arm: convex shoulder dome and rounded elbow end. Forearm: semicircular elbow end and rounded wrist end. Hand: rounded wrist extending into forearm overlap. Neck: soft capsule with rounded top and bottom, same skin tone. These hidden overlap caps extend beyond the internal pivot by at least the local half-width and are fully filled with matching skin/cloth, smooth uniform local shading, no dark ring or transverse contour. No severed anatomy, cross-sections, cut faces, open tubes, plugs, metal sockets, exposed joints, ball hardware or labels. Torso has no attached arm/sleeve, neutral single-shoulder right profile; pelvis bottom is a curved khaki silhouette for thigh overlap. 11,12,15,16 are simple natural material discs with soft round silhouette, no seams or mechanical detail. Limbs straight vertical proximal TOP distal BOTTOM with natural taper. Existing atlas has bad straight cuts: replace these, do not preserve them. Flat 2D silhouette, not disconnected product photography. True transparent alpha, no colored fringes, no floating specks, no shadows cast outside parts. No complete assembled character, text, grid, watermark.",
+    "Edit target supplied rounded human atlas. Preserve its 4x4 part layout, realistic adult man with charcoal tee, khaki trousers and dark shoes, STRICT orthographic right facing profile, all existing smooth curved joint silhouettes and filled overlapping caps. Make ONLY these three improvements: (1) row1 col1 torso must be truly armless: remove the attached sleeve silhouette/protruding arm shape from torso and replace with a clean tight side torso shoulder/chest contour; sleeve exists solely on row2 col4 upper-arm sprite. Keep its curved pelvis end. (2) row4 col1 replace alternative relaxed hand with a CLOSED FIST in right-facing side profile, knuckles facing RIGHT, wrist rounded at TOP, compact natural human fist with thumb folded across fingers, matching light skin tone; sufficient smooth capsule wrist overlap. (3) row2 col1 and row4 col2 shoe ankle skin must be SHORT and narrower, with a gently rounded top and without bulbous balloon, consistent ankle proportions. All other 13 tiles unchanged. No straight horizontal cut edges on any attachment. No rings, sockets, tissue cross-section, detached visible mechanical joints, labels, text, grid, shadows or specks. True transparent background and antialiased alpha. Preserve the transparency of target.",
+    "Use case: precise-object-edit. Edit target: supplied transparent human game sprite parts atlas. Preserve the SAME adult man, realistic texture, right-facing orthographic side view, charcoal short sleeve tee, khaki trousers, shoes, 4 columns x 4 rows of exactly 16 isolated parts with generous transparent gutters. Correct three anatomical ownership mistakes: (A) row1 col1 is ONLY sleeveless torso plus pelvis: remove EVERY sleeve contour, sleeve seam, sleeve cuff, shoulder cap panel and attached arm bulge. A continuous narrow fitted charcoal shirt side torso, smooth simple shoulder-to-chest outline, no oval shoulder fabric patch; the shirt has no sleeve whatsoever in this tile. Its small khaki pelvis stays in this body tile alone. (B) row1 col3 is ONLY thigh shaft between hip joint and knee: REMOVE waistband, belt loops, zipper, pockets, buttock/butt bulge and pelvis. A slim tapered khaki trouser thigh capsule with smooth rounded filled ends, plain continuous matching khaki fabric. No butt or waist is part of this thigh. (C) row2 col4 upper arm and row3 col1 forearm must connect naturally: upper arm sleeve at top belonging ONLY to this arm piece, compact skin elbow rounded end; forearm softly tapered, compact rounded elbow/wrist ends, no balloon protrusions or swollen cap. Arms are straight vertical upper TOP lower BOTTOM, similar skin color and smooth locally uniform joint shading with no dark transverse line. Keep exact layout: row1 torso, head, thigh, shin; row2 shoe, neck, pelvis patch, sleeved upper arm; row3 forearm, relaxed hand, charcoal cloth patch, wrist skin patch; row4 closed fist, alternate shoe, knee khaki patch, shoulder cloth patch. Keep head, shin, shoes, neck, hands and other unused patches as close to source as possible, identical identity and lighting. All attachment ends are natural smooth round overlap silhouettes, no horizontal chopped cuts, no internal cut faces, no mechanical sockets, no dismemberment detail. True transparent alpha preserved. No speckles, colored halos, text, labels, shadows or background. Render production-quality separate atlas parts, never assembled body."
+  ],
+  "qa": {
+    "technical": "joint-geometry-plus-multi-action-checks",
+    "visual": "agent-reviewed-user-acceptance-pending"
+  },
+  "attachmentRule": "rounded cap; pivot lies inside cap; redraw hidden overlap; do not cut across a limb",
+  "changes": [
+    "躯干移除袖子轮廓及肩部织物面板",
+    "大腿移除裤腰、口袋及臀部",
+    "上臂肘轴移至圆弧中心；前臂轴线按真实源方向校准"
+  ],
+  "partOwnership": [
+    "躯干与骨盆；不含袖子或上臂",
+    "侧面头部；短下颌颈部重叠",
+    "大腿；不含臀部、裤腰、腰带或口袋",
+    "小腿；膝到踝",
+    "鞋与脚踝；鞋头朝右",
+    "短颈；上下端隐藏重叠",
+    "骨盆补片；备用，不参与装配",
+    "上臂与袖子；肘端仅保留必要重叠",
+    "前臂；肘端到腕端",
+    "放松手；腕端隐藏重叠",
+    "衣料补片；备用，不用作皮肤肘关节",
+    "腕皮肤补片；备用",
+    "闭拳；拳击替换放松手",
+    "替换鞋；备用",
+    "膝衣料补片；备用",
+    "肩衣料补片；备用"
+  ],
+  "calibration": "上臂、前臂、大腿、小腿、手及闭拳按源轮廓轴线重新注册；骨架节点不变"
+}

@@ -1,0 +1,944 @@
+{
+  "format": "sprite-frame-animation",
+  "schemaVersion": 1,
+  "name": "milk-frog-single-key-v1-capture",
+  "loop": false,
+  "durationMs": 1000,
+  "sheet": {
+    "file": "sheet.png",
+    "width": 2048,
+    "height": 512,
+    "cell": 512,
+    "columns": 4,
+    "rows": 1,
+    "padding": 0,
+    "fixedTransform": {
+      "mode": "sequence-common-canvas",
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "scaleXY": [
+        1,
+        1
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "sourceAnchor": [
+        256,
+        512
+      ],
+      "anchor": [
+        256,
+        512
+      ],
+      "rasterRoundingPx": 0.5,
+      "registration": "source coordinates retained; no per-frame alpha fitting or automatic recentering"
+    },
+    "sha256": "9dba88f449dd18db0a24712381d325fbdd01e688b789914f2220f14141e7f9bf"
+  },
+  "provenance": {
+    "type": "canvas-recording",
+    "recordedFrom": {
+      "format": "sprite-frame-animation",
+      "schemaVersion": 1,
+      "name": "milk-frog-single-key-v1",
+      "loop": true,
+      "durationMs": 1000,
+      "sheet": {
+        "file": "sheet.png",
+        "width": 1024,
+        "height": 256,
+        "cell": 256,
+        "columns": 4,
+        "rows": 1,
+        "padding": 12,
+        "fixedTransform": {
+          "mode": "sequence-common-canvas",
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "sourceOrigin": [
+            0,
+            0
+          ],
+          "scale": 0.1850079744816587,
+          "scaleXY": [
+            0.1850079744816587,
+            0.1850079744816587
+          ],
+          "offset": [
+            12,
+            12
+          ],
+          "sourceAnchor": [
+            627,
+            1254
+          ],
+          "anchor": [
+            128,
+            244
+          ],
+          "rasterRoundingPx": 0.5,
+          "registration": "source coordinates retained; no per-frame alpha fitting or automatic recentering"
+        }
+      },
+      "provenance": {
+        "type": "imagegen-sequence",
+        "sampleId": "milk-frog-single-key-v1",
+        "tool": "image_gen.imagegen",
+        "verification": "each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call",
+        "files": [
+          {
+            "file": "milk-frog-single-key-v1-phase-0.png",
+            "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+          },
+          {
+            "file": "milk-frog-single-key-v1-phase-1.png",
+            "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+          },
+          {
+            "file": "milk-frog-single-key-v2-phase-2.png",
+            "sha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3"
+          },
+          {
+            "file": "milk-frog-single-key-v1-phase-3.png",
+            "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+          }
+        ],
+        "sourceQA": "failed",
+        "sourceQANotes": [
+          "真实逐张imagegen,不是骨骼栅格",
+          "仅4关键姿势，尚未补中间帧",
+          "50%原版腿身份错误保留，定点修复后局部交换可见",
+          "头/轮廓注册、基线与自然循环未通过"
+        ]
+      },
+      "visualQA": "failed",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            12,
+            12,
+            232,
+            232
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "scale": 0.1850079744816587,
+          "anchor": [
+            128,
+            244
+          ],
+          "name": "milk-frog-single-key-v1-phase-0.png",
+          "phase": 0,
+          "file": "frames/001.png",
+          "timeMs": 0,
+          "durationMs": 250,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": null,
+          "sourceSha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+          "sourceProvenance": {
+            "type": "imagegen",
+            "tool": "image_gen.imagegen",
+            "prompt": "Generate ONE clean final animation sprite, not a contact sheet. Reference 1 is the exact yellow muscular humanoid milk frog identity/style. Reference 2 is a single-pose geometry guide ONLY; its gray dummy, red/blue chains and floor line MUST NOT appear anywhere in final artwork. Render the actual milk frog with its yellow muscles, white chest/belly/chin, green eyes, pink hands/feet, thick smooth black outlines and polished 2D shading, unchanged joyful open mouth and tongue. No costume or prop.\nThis is new run animation key pose 0%, NEAR leg forward contact, FAR leg in back recovery. Keep permanent foreground NEAR side and background FAR side. Follow the shoulder-elbow-wrist and hip-knee-ankle locations in guide. Near upper arm extends back toward image left while near thigh advances image right; near elbow is visibly behind shoulder. Far upper arm travels forward to the right with bent elbow and wrist in front of chest; far thigh points back and far knee bends to recover its foot visibly above the ground behind hip. Exactly TWO arms, TWO legs, both visible, fingers/toes clean; no ghosts, additional arms, unconnected hands or colored guides. Near hand keeps the same relaxed open pink shape as identity reference, far hand the same relaxed curled shape; do not change hand state when arm changes direction in future poses.\nFixed square camera/canvas, character facing image right in the same stable 3/4 side illustration as reference. Entire character fits comfortably inside 10% safe margins, sole of near contacting foot at 87% canvas height, far foot airborne, subject fixed scale and shoulder/hip pivot inherited from guide. No per-frame rescale or different camera. Transparent alpha background, no ground line or shadow, no lettering. Retain full head, hands, feet and black outline. Output only this one actual polished frog sprite.",
+            "receipt": {
+              "tool": "image_gen.imagegen",
+              "prompt": "Generate ONE clean final animation sprite, not a contact sheet. Reference 1 is the exact yellow muscular humanoid milk frog identity/style. Reference 2 is a single-pose geometry guide ONLY; its gray dummy, red/blue chains and floor line MUST NOT appear anywhere in final artwork. Render the actual milk frog with its yellow muscles, white chest/belly/chin, green eyes, pink hands/feet, thick smooth black outlines and polished 2D shading, unchanged joyful open mouth and tongue. No costume or prop.\nThis is new run animation key pose 0%, NEAR leg forward contact, FAR leg in back recovery. Keep permanent foreground NEAR side and background FAR side. Follow the shoulder-elbow-wrist and hip-knee-ankle locations in guide. Near upper arm extends back toward image left while near thigh advances image right; near elbow is visibly behind shoulder. Far upper arm travels forward to the right with bent elbow and wrist in front of chest; far thigh points back and far knee bends to recover its foot visibly above the ground behind hip. Exactly TWO arms, TWO legs, both visible, fingers/toes clean; no ghosts, additional arms, unconnected hands or colored guides. Near hand keeps the same relaxed open pink shape as identity reference, far hand the same relaxed curled shape; do not change hand state when arm changes direction in future poses.\nFixed square camera/canvas, character facing image right in the same stable 3/4 side illustration as reference. Entire character fits comfortably inside 10% safe margins, sole of near contacting foot at 87% canvas height, far foot airborne, subject fixed scale and shoulder/hip pivot inherited from guide. No per-frame rescale or different camera. Transparent alpha background, no ground line or shadow, no lettering. Retain full head, hands, feet and black outline. Output only this one actual polished frog sprite.",
+              "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+              "generatedFileSha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+              "referenceFiles": [
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v1/canonical-v1.png",
+                  "sha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d"
+                },
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-0.png",
+                  "sha256": "0210825b700d7d98ad8faec2042b0cf5998cd1fc033a26d41d53956267c09814"
+                }
+              ],
+              "phase": 0,
+              "sourceSize": [
+                1254,
+                1254
+              ],
+              "pixelBounds": {
+                "threshold": 24,
+                "bounds": [
+                  101,
+                  84,
+                  1058,
+                  1109
+                ],
+                "edgePixels": 0,
+                "hasTransparency": true,
+                "touchesEdge": false,
+                "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+              },
+              "qa": {
+                "visual": "failed",
+                "notes": "Two arms/legs visible; near arm back with near thigh forward; far recovery foot visible. Actual framing did not meet requested10% margin/87% sole line; establish measured candidate only, not full pass."
+              }
+            },
+            "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+            "file": "milk-frog-single-key-v1-phase-0.png"
+          },
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              101,
+              84,
+              1058,
+              1109
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "review": {
+            "state": "failed",
+            "notes": "Two arms/legs visible; near arm back with near thigh forward; far recovery foot visible. Actual framing did not meet requested10% margin/87% sole line; establish measured candidate only, not full pass.",
+            "origin": "SHA-bound actual single-frame receipt"
+          }
+        },
+        {
+          "index": 1,
+          "rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            268,
+            12,
+            232,
+            232
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "scale": 0.1850079744816587,
+          "anchor": [
+            128,
+            244
+          ],
+          "name": "milk-frog-single-key-v1-phase-1.png",
+          "phase": 0.25,
+          "file": "frames/002.png",
+          "timeMs": 250,
+          "durationMs": 250,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": null,
+          "sourceSha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46",
+          "sourceProvenance": {
+            "type": "imagegen",
+            "tool": "image_gen.imagegen",
+            "prompt": "Produce ONE next frame of this exact milk-frog animation. Reference1 is previous final key0: preserve its EXACT square camera, character scale, head/face shape, glossy yellow/white/pink textures and black ink style. Reference2 is ONLY pose structure and never final artwork: no red, blue, gray mannequin, floor line or markings in final output.\nKey25%: permanent foreground NEAR leg has moved BACK to toe-off; its thigh/knee are behind the hip (image LEFT) and foot reaches back low, not forward. Permanent background FAR thigh advances forward with knee HIGH (image RIGHT), its foot airborne ahead of hip. BOTH legs visible and distinct. Permanent foreground NEAR upper arm now swings FORWARD (elbow ahead of shoulder, image RIGHT), elbow flexed and pink hand at chest height IN FRONT. Its relaxed open pink hand remains OPEN exactly as key0 (do not replace it with a fist). Background FAR upper arm swings BACK (elbow behind shoulder/image LEFT) with its curled pink hand behind waist. Its curled hand remains curled, do not exchange hands/sides. Exactly two shoulder-elbow-wrist chains, two hip-knee-ankle chains. No extra limbs/ghosts. Upper arm and same-side thigh counterphase, not merely wrist moving.\nKeep the head and shoulder/hip pivot registration in same source pixels as key0, same body proportions, SAME cheerful green-eyed gaze/open mouth and tongue. Shoulder/hip subtle pose rotation only, do not change head size or white belly pattern. The guide defines pose directions, do not use its gray body proportions to redesign the frog. Fixed full square canvas 1254x1254 like first frame, source near contacting foot baseline y1190, never enlarge or crop extremities; at least32px space around entire maximum motion silhouette, preserve common camera for every next pose. Sole in toe-off may lift slightly but head scale must stay fixed.\nClean transparent alpha background; no shadows/props/text. Output one actual polished frog sprite.",
+            "receipt": {
+              "tool": "image_gen.imagegen",
+              "prompt": "Produce ONE next frame of this exact milk-frog animation. Reference1 is previous final key0: preserve its EXACT square camera, character scale, head/face shape, glossy yellow/white/pink textures and black ink style. Reference2 is ONLY pose structure and never final artwork: no red, blue, gray mannequin, floor line or markings in final output.\nKey25%: permanent foreground NEAR leg has moved BACK to toe-off; its thigh/knee are behind the hip (image LEFT) and foot reaches back low, not forward. Permanent background FAR thigh advances forward with knee HIGH (image RIGHT), its foot airborne ahead of hip. BOTH legs visible and distinct. Permanent foreground NEAR upper arm now swings FORWARD (elbow ahead of shoulder, image RIGHT), elbow flexed and pink hand at chest height IN FRONT. Its relaxed open pink hand remains OPEN exactly as key0 (do not replace it with a fist). Background FAR upper arm swings BACK (elbow behind shoulder/image LEFT) with its curled pink hand behind waist. Its curled hand remains curled, do not exchange hands/sides. Exactly two shoulder-elbow-wrist chains, two hip-knee-ankle chains. No extra limbs/ghosts. Upper arm and same-side thigh counterphase, not merely wrist moving.\nKeep the head and shoulder/hip pivot registration in same source pixels as key0, same body proportions, SAME cheerful green-eyed gaze/open mouth and tongue. Shoulder/hip subtle pose rotation only, do not change head size or white belly pattern. The guide defines pose directions, do not use its gray body proportions to redesign the frog. Fixed full square canvas 1254x1254 like first frame, source near contacting foot baseline y1190, never enlarge or crop extremities; at least32px space around entire maximum motion silhouette, preserve common camera for every next pose. Sole in toe-off may lift slightly but head scale must stay fixed.\nClean transparent alpha background; no shadows/props/text. Output one actual polished frog sprite.",
+              "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+              "generatedFileSha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46",
+              "referenceFiles": [
+                {
+                  "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+                  "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+                },
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-1.png",
+                  "sha256": "82bd741a7eafec9a60d3f0e5d165d76fa595bf5691b643489d62bda22f79808e"
+                }
+              ],
+              "phase": 0.25,
+              "sourceSize": [
+                1254,
+                1254
+              ],
+              "pixelBounds": {
+                "threshold": 24,
+                "bounds": [
+                  145,
+                  92,
+                  1068,
+                  1101
+                ],
+                "edgePixels": 0,
+                "hasTransparency": true,
+                "touchesEdge": false,
+                "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+              },
+              "qa": {
+                "visual": "failed",
+                "notes": "Near open hand swings front, near big thigh back; far curled hand behind with high far knee in front. Registration/contour consistency and sole line remain unapproved."
+              }
+            },
+            "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46",
+            "file": "milk-frog-single-key-v1-phase-1.png"
+          },
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              145,
+              92,
+              1068,
+              1101
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "review": {
+            "state": "failed",
+            "notes": "Near open hand swings front, near big thigh back; far curled hand behind with high far knee in front. Registration/contour consistency and sole line remain unapproved.",
+            "origin": "SHA-bound actual single-frame receipt"
+          }
+        },
+        {
+          "index": 2,
+          "rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            524,
+            12,
+            232,
+            232
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "scale": 0.1850079744816587,
+          "anchor": [
+            128,
+            244
+          ],
+          "name": "milk-frog-single-key-v2-phase-2.png",
+          "phase": 0.5,
+          "file": "frames/003.png",
+          "timeMs": 500,
+          "durationMs": 250,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": null,
+          "sourceSha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3",
+          "sourceProvenance": {
+            "type": "imagegen",
+            "tool": "image_gen.imagegen",
+            "prompt": "EDIT reference1 (the yellow milk-frog key25 image) into key50. Reference2 is the leg/arm pose guide only, NEVER put guide lines/colors/gray floor into final art.\nABSOLUTE RULE: Preserve the foreground near arm/hand OPEN in front at chest height, background far arm/fist CURLED behind waist, and the same head, chest, face, camera, shading,1254square canvas. DO NOT use a foreground rightward thigh with the foreground forward arm; that would be wrong same-side motion. Change only the LEG POSE as follows:\nIn reference1 the BIG FOREGROUND thigh runs from the hip near x640,y730 DOWN-LEFT to the knee around x530,y895 and long calf/foot extends to the bottom-left. This is the permanent NEAR leg. KEEP its thigh pointed down-left/back behind hip. Bend THAT knee to fold its calf BACK-UP, so its pink foot lifts well above ground behind hip around x230,y820. Near thigh MUST stay left of hip and visibly in foreground, never move this near thigh to the RIGHT.\nThe BACKGROUND FAR thigh already points RIGHT to its lifted knee around x940,y750. This remains the permanent far leg behind the near thigh. LOWER and straighten its knee/ankle enough so the far pink foot contacts the ground on the RIGHT at y1190. The far leg must emerge from behind the NEAR leftward thigh/root, not replace it with a huge foreground rightward thigh. Two clean legs, NEAR knee left, FAR knee right. Occlusion at hips makes the NEAR/back-pointing thigh visibly in front of the FAR/forward-pointing thigh.\nThis is opposite support-side contact relative key0. Upper arms already correct in reference1, don’t redesign them. Exactly two arms/two legs and no ghosts. Keep near open hand and far curled fist unchanged. Transparent background, clean polished2D anatomy, no reference colors, shadows/text or crop. Full motion silhouette at least32px inside canvas, fixedcamera andface registration. Output ONE corrected actual sprite.",
+            "receipt": {
+              "tool": "image_gen.imagegen",
+              "prompt": "EDIT reference1 (the yellow milk-frog key25 image) into key50. Reference2 is the leg/arm pose guide only, NEVER put guide lines/colors/gray floor into final art.\nABSOLUTE RULE: Preserve the foreground near arm/hand OPEN in front at chest height, background far arm/fist CURLED behind waist, and the same head, chest, face, camera, shading,1254square canvas. DO NOT use a foreground rightward thigh with the foreground forward arm; that would be wrong same-side motion. Change only the LEG POSE as follows:\nIn reference1 the BIG FOREGROUND thigh runs from the hip near x640,y730 DOWN-LEFT to the knee around x530,y895 and long calf/foot extends to the bottom-left. This is the permanent NEAR leg. KEEP its thigh pointed down-left/back behind hip. Bend THAT knee to fold its calf BACK-UP, so its pink foot lifts well above ground behind hip around x230,y820. Near thigh MUST stay left of hip and visibly in foreground, never move this near thigh to the RIGHT.\nThe BACKGROUND FAR thigh already points RIGHT to its lifted knee around x940,y750. This remains the permanent far leg behind the near thigh. LOWER and straighten its knee/ankle enough so the far pink foot contacts the ground on the RIGHT at y1190. The far leg must emerge from behind the NEAR leftward thigh/root, not replace it with a huge foreground rightward thigh. Two clean legs, NEAR knee left, FAR knee right. Occlusion at hips makes the NEAR/back-pointing thigh visibly in front of the FAR/forward-pointing thigh.\nThis is opposite support-side contact relative key0. Upper arms already correct in reference1, don’t redesign them. Exactly two arms/two legs and no ghosts. Keep near open hand and far curled fist unchanged. Transparent background, clean polished2D anatomy, no reference colors, shadows/text or crop. Full motion silhouette at least32px inside canvas, fixedcamera andface registration. Output ONE corrected actual sprite.",
+              "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-2ad097ed-fa27-4e35-8584-324755f236e7.png",
+              "generatedFileSha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3",
+              "referenceFiles": [
+                {
+                  "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+                  "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+                },
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-2.png",
+                  "sha256": "2411a2b4302a697950d610eefdd359b5c4dfe5d60632f7604a11e700625ebcd8"
+                }
+              ],
+              "phase": 0.5,
+              "sourceSize": [
+                1254,
+                1254
+              ],
+              "pixelBounds": {
+                "threshold": 24,
+                "bounds": [
+                  168,
+                  106,
+                  997,
+                  1105
+                ],
+                "edgePixels": 0,
+                "hasTransparency": true,
+                "touchesEdge": false,
+                "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+              },
+              "qa": {
+                "visual": "failed",
+                "notes": "Local correction visible: big foreground thigh down/back with folded recovery foot; background thigh forward/down for contact. Head lowered/changed against key0 and sole line needs measured review. Not whole pass."
+              }
+            },
+            "sha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3",
+            "file": "milk-frog-single-key-v2-phase-2.png"
+          },
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              168,
+              106,
+              997,
+              1105
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "review": {
+            "state": "failed",
+            "notes": "Local correction visible: big foreground thigh down/back with folded recovery foot; background thigh forward/down for contact. Head lowered/changed against key0 and sole line needs measured review. Not whole pass.",
+            "origin": "SHA-bound actual single-frame receipt"
+          }
+        },
+        {
+          "index": 3,
+          "rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "contentRect": [
+            780,
+            12,
+            232,
+            232
+          ],
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "sourceCanvasSize": [
+            1254,
+            1254
+          ],
+          "scale": 0.1850079744816587,
+          "anchor": [
+            128,
+            244
+          ],
+          "name": "milk-frog-single-key-v1-phase-3.png",
+          "phase": 0.75,
+          "file": "frames/004.png",
+          "timeMs": 750,
+          "durationMs": 250,
+          "sourceTime": null,
+          "decodedTime": null,
+          "sourceFrameIndex": null,
+          "sourceRect": null,
+          "sourceSha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe",
+          "sourceProvenance": {
+            "type": "imagegen",
+            "tool": "image_gen.imagegen",
+            "prompt": "EDIT reference1 milk-frog key0 into run key75%. Reference2 is pose directions ONLY, no guide pixels/colors/ground/gray dummy in final.\nPreserve reference1 exact head size, facial shape and green-eyed cheerful gaze/open mouth/tongue, muscular yellow/white/pink glossy2D style/blackink, same camera and1254square canvas. Preserve the NEAR foreground open pink hand BEHIND the shoulder/waist on imageLEFT with upper arm swinging BACK, and FAR curled pink fist IN FRONT on imageRIGHT with upper arm swinging FORWARD. Those arm states from reference1 are already correct; do not swap hands or turn open hand into fist.\nChange LEGS: BIG NEAR FOREGROUND leg currently extending front/right toward ground must now be in high-knee recovery: NEAR thigh points FORWARD/right almost horizontally to the raised knee, lowerleg folds down/back and near pink FOOT remains AIRBORNE above ground in front of hip. Keep that big near thigh on TOP at hip overlap and in front of far leg. FAR BACKGROUND leg goes BACK/left in toe-off: far thigh points LEFT behind hip, its knee unfolds and lowerleg/pinkfoot reaches down/back to source ground baseline y1190 on left. The far leg is visible below/behind near thigh, not lost or a duplicate near leg.\nExactly two connected arms and two legs, open near hand behind, curled far fist forward; near high knee forward and far supporting leg back. Upper arms opposite same-side thigh directions. Preserve head/shoulder/hip pivot registration, no different head scale or torso fit. Full outline inside32px safety margins. Transparent alpha background, no shadow/text/reference lines/extra anatomy. Output ONE actual clean key75% frog sprite.",
+            "receipt": {
+              "tool": "image_gen.imagegen",
+              "prompt": "EDIT reference1 milk-frog key0 into run key75%. Reference2 is pose directions ONLY, no guide pixels/colors/ground/gray dummy in final.\nPreserve reference1 exact head size, facial shape and green-eyed cheerful gaze/open mouth/tongue, muscular yellow/white/pink glossy2D style/blackink, same camera and1254square canvas. Preserve the NEAR foreground open pink hand BEHIND the shoulder/waist on imageLEFT with upper arm swinging BACK, and FAR curled pink fist IN FRONT on imageRIGHT with upper arm swinging FORWARD. Those arm states from reference1 are already correct; do not swap hands or turn open hand into fist.\nChange LEGS: BIG NEAR FOREGROUND leg currently extending front/right toward ground must now be in high-knee recovery: NEAR thigh points FORWARD/right almost horizontally to the raised knee, lowerleg folds down/back and near pink FOOT remains AIRBORNE above ground in front of hip. Keep that big near thigh on TOP at hip overlap and in front of far leg. FAR BACKGROUND leg goes BACK/left in toe-off: far thigh points LEFT behind hip, its knee unfolds and lowerleg/pinkfoot reaches down/back to source ground baseline y1190 on left. The far leg is visible below/behind near thigh, not lost or a duplicate near leg.\nExactly two connected arms and two legs, open near hand behind, curled far fist forward; near high knee forward and far supporting leg back. Upper arms opposite same-side thigh directions. Preserve head/shoulder/hip pivot registration, no different head scale or torso fit. Full outline inside32px safety margins. Transparent alpha background, no shadow/text/reference lines/extra anatomy. Output ONE actual clean key75% frog sprite.",
+              "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+              "generatedFileSha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe",
+              "referenceFiles": [
+                {
+                  "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+                  "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+                },
+                {
+                  "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-3.png",
+                  "sha256": "555f768dea98c130b4c6d7213de52062cd0ca135789d4ad3acb1a9b76c030836"
+                }
+              ],
+              "phase": 0.75,
+              "sourceSize": [
+                1254,
+                1254
+              ],
+              "pixelBounds": {
+                "threshold": 24,
+                "bounds": [
+                  96,
+                  88,
+                  1085,
+                  1114
+                ],
+                "edgePixels": 0,
+                "hasTransparency": true,
+                "touchesEdge": false,
+                "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+              },
+              "qa": {
+                "visual": "failed",
+                "notes": "Near arm back/open and high near knee forward; far curled arm forward and far leg back/down. Leg identity visibly swaps compared key25. Camera/ground/texture consistency pending full playback."
+              }
+            },
+            "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe",
+            "file": "milk-frog-single-key-v1-phase-3.png"
+          },
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              96,
+              88,
+              1085,
+              1114
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "review": {
+            "state": "failed",
+            "notes": "Near arm back/open and high near knee forward; far curled arm forward and far leg back/down. Leg identity visibly swaps compared key25. Camera/ground/texture consistency pending full playback.",
+            "origin": "SHA-bound actual single-frame receipt"
+          }
+        }
+      ]
+    },
+    "requestedFPS": 4,
+    "requestedDuration": 1,
+    "requestedFrameCount": 4,
+    "capturedFrameCount": 4,
+    "actualElapsedSeconds": 1.064,
+    "terminalRequestElapsedMs": 1001,
+    "cancelled": false,
+    "encodingTiming": "captureStream(0) + one requestFrame per immutable PNG bitmap, plus terminal hold; MediaRecorder PTS are real wall-clock and require FFprobe verification",
+    "timingSamples": [
+      {
+        "requestedTimeMs": 0,
+        "actualRequestElapsedMs": 0.29999998211860657,
+        "latenessMs": 0.29999998211860657
+      },
+      {
+        "requestedTimeMs": 250,
+        "actualRequestElapsedMs": 251.09999999403954,
+        "latenessMs": 1.0999999940395355
+      },
+      {
+        "requestedTimeMs": 500,
+        "actualRequestElapsedMs": 501.19999998807907,
+        "latenessMs": 1.199999988079071
+      },
+      {
+        "requestedTimeMs": 750,
+        "actualRequestElapsedMs": 750.1999999880791,
+        "latenessMs": 0.19999998807907104
+      }
+    ],
+    "mimeType": "video/webm;codecs=vp9",
+    "background": "dark",
+    "videoFile": "recording.webm",
+    "videoSha256": "170c7583bc072d07907cb9a82ca4a0444ea8bb2b33f555ecb3ec687924968b89",
+    "fixedTransform": {
+      "sourceCanvasSize": [
+        1254,
+        1254
+      ],
+      "scale": 0.38915470494417864,
+      "offset": [
+        12,
+        12
+      ]
+    },
+    "sourceQA": "failed"
+  },
+  "visualQA": "failed",
+  "frames": [
+    {
+      "index": 0,
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "anchor": [
+        256,
+        512
+      ],
+      "name": "capture-1.png",
+      "phase": 0,
+      "file": "frames/001.png",
+      "timeMs": 0,
+      "durationMs": 250,
+      "sourceTime": 0,
+      "decodedTime": null,
+      "sourceFrameIndex": 0,
+      "sourceRect": null,
+      "sourceSha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+      "sourceProvenance": {
+        "type": "imagegen",
+        "tool": "image_gen.imagegen",
+        "prompt": "Generate ONE clean final animation sprite, not a contact sheet. Reference 1 is the exact yellow muscular humanoid milk frog identity/style. Reference 2 is a single-pose geometry guide ONLY; its gray dummy, red/blue chains and floor line MUST NOT appear anywhere in final artwork. Render the actual milk frog with its yellow muscles, white chest/belly/chin, green eyes, pink hands/feet, thick smooth black outlines and polished 2D shading, unchanged joyful open mouth and tongue. No costume or prop.\nThis is new run animation key pose 0%, NEAR leg forward contact, FAR leg in back recovery. Keep permanent foreground NEAR side and background FAR side. Follow the shoulder-elbow-wrist and hip-knee-ankle locations in guide. Near upper arm extends back toward image left while near thigh advances image right; near elbow is visibly behind shoulder. Far upper arm travels forward to the right with bent elbow and wrist in front of chest; far thigh points back and far knee bends to recover its foot visibly above the ground behind hip. Exactly TWO arms, TWO legs, both visible, fingers/toes clean; no ghosts, additional arms, unconnected hands or colored guides. Near hand keeps the same relaxed open pink shape as identity reference, far hand the same relaxed curled shape; do not change hand state when arm changes direction in future poses.\nFixed square camera/canvas, character facing image right in the same stable 3/4 side illustration as reference. Entire character fits comfortably inside 10% safe margins, sole of near contacting foot at 87% canvas height, far foot airborne, subject fixed scale and shoulder/hip pivot inherited from guide. No per-frame rescale or different camera. Transparent alpha background, no ground line or shadow, no lettering. Retain full head, hands, feet and black outline. Output only this one actual polished frog sprite.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "Generate ONE clean final animation sprite, not a contact sheet. Reference 1 is the exact yellow muscular humanoid milk frog identity/style. Reference 2 is a single-pose geometry guide ONLY; its gray dummy, red/blue chains and floor line MUST NOT appear anywhere in final artwork. Render the actual milk frog with its yellow muscles, white chest/belly/chin, green eyes, pink hands/feet, thick smooth black outlines and polished 2D shading, unchanged joyful open mouth and tongue. No costume or prop.\nThis is new run animation key pose 0%, NEAR leg forward contact, FAR leg in back recovery. Keep permanent foreground NEAR side and background FAR side. Follow the shoulder-elbow-wrist and hip-knee-ankle locations in guide. Near upper arm extends back toward image left while near thigh advances image right; near elbow is visibly behind shoulder. Far upper arm travels forward to the right with bent elbow and wrist in front of chest; far thigh points back and far knee bends to recover its foot visibly above the ground behind hip. Exactly TWO arms, TWO legs, both visible, fingers/toes clean; no ghosts, additional arms, unconnected hands or colored guides. Near hand keeps the same relaxed open pink shape as identity reference, far hand the same relaxed curled shape; do not change hand state when arm changes direction in future poses.\nFixed square camera/canvas, character facing image right in the same stable 3/4 side illustration as reference. Entire character fits comfortably inside 10% safe margins, sole of near contacting foot at 87% canvas height, far foot airborne, subject fixed scale and shoulder/hip pivot inherited from guide. No per-frame rescale or different camera. Transparent alpha background, no ground line or shadow, no lettering. Retain full head, hands, feet and black outline. Output only this one actual polished frog sprite.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "generatedFileSha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+          "referenceFiles": [
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v1/canonical-v1.png",
+              "sha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d"
+            },
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-0.png",
+              "sha256": "0210825b700d7d98ad8faec2042b0cf5998cd1fc033a26d41d53956267c09814"
+            }
+          ],
+          "phase": 0,
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              101,
+              84,
+              1058,
+              1109
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Two arms/legs visible; near arm back with near thigh forward; far recovery foot visible. Actual framing did not meet requested10% margin/87% sole line; establish measured candidate only, not full pass."
+          }
+        },
+        "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+        "file": "milk-frog-single-key-v1-phase-0.png"
+      },
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "Two arms/legs visible; near arm back with near thigh forward; far recovery foot visible. Actual framing did not meet requested10% margin/87% sole line; establish measured candidate only, not full pass.",
+        "origin": "SHA-bound actual single-frame receipt"
+      },
+      "pngSha256": "a9dc579832ef5bb4ffd35dec64576f233d9c304944ea3c464a1b0ff251573eca"
+    },
+    {
+      "index": 1,
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "anchor": [
+        256,
+        512
+      ],
+      "name": "capture-2.png",
+      "phase": 0.25,
+      "file": "frames/002.png",
+      "timeMs": 250,
+      "durationMs": 250,
+      "sourceTime": 0.25,
+      "decodedTime": null,
+      "sourceFrameIndex": 1,
+      "sourceRect": null,
+      "sourceSha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46",
+      "sourceProvenance": {
+        "type": "imagegen",
+        "tool": "image_gen.imagegen",
+        "prompt": "Produce ONE next frame of this exact milk-frog animation. Reference1 is previous final key0: preserve its EXACT square camera, character scale, head/face shape, glossy yellow/white/pink textures and black ink style. Reference2 is ONLY pose structure and never final artwork: no red, blue, gray mannequin, floor line or markings in final output.\nKey25%: permanent foreground NEAR leg has moved BACK to toe-off; its thigh/knee are behind the hip (image LEFT) and foot reaches back low, not forward. Permanent background FAR thigh advances forward with knee HIGH (image RIGHT), its foot airborne ahead of hip. BOTH legs visible and distinct. Permanent foreground NEAR upper arm now swings FORWARD (elbow ahead of shoulder, image RIGHT), elbow flexed and pink hand at chest height IN FRONT. Its relaxed open pink hand remains OPEN exactly as key0 (do not replace it with a fist). Background FAR upper arm swings BACK (elbow behind shoulder/image LEFT) with its curled pink hand behind waist. Its curled hand remains curled, do not exchange hands/sides. Exactly two shoulder-elbow-wrist chains, two hip-knee-ankle chains. No extra limbs/ghosts. Upper arm and same-side thigh counterphase, not merely wrist moving.\nKeep the head and shoulder/hip pivot registration in same source pixels as key0, same body proportions, SAME cheerful green-eyed gaze/open mouth and tongue. Shoulder/hip subtle pose rotation only, do not change head size or white belly pattern. The guide defines pose directions, do not use its gray body proportions to redesign the frog. Fixed full square canvas 1254x1254 like first frame, source near contacting foot baseline y1190, never enlarge or crop extremities; at least32px space around entire maximum motion silhouette, preserve common camera for every next pose. Sole in toe-off may lift slightly but head scale must stay fixed.\nClean transparent alpha background; no shadows/props/text. Output one actual polished frog sprite.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "Produce ONE next frame of this exact milk-frog animation. Reference1 is previous final key0: preserve its EXACT square camera, character scale, head/face shape, glossy yellow/white/pink textures and black ink style. Reference2 is ONLY pose structure and never final artwork: no red, blue, gray mannequin, floor line or markings in final output.\nKey25%: permanent foreground NEAR leg has moved BACK to toe-off; its thigh/knee are behind the hip (image LEFT) and foot reaches back low, not forward. Permanent background FAR thigh advances forward with knee HIGH (image RIGHT), its foot airborne ahead of hip. BOTH legs visible and distinct. Permanent foreground NEAR upper arm now swings FORWARD (elbow ahead of shoulder, image RIGHT), elbow flexed and pink hand at chest height IN FRONT. Its relaxed open pink hand remains OPEN exactly as key0 (do not replace it with a fist). Background FAR upper arm swings BACK (elbow behind shoulder/image LEFT) with its curled pink hand behind waist. Its curled hand remains curled, do not exchange hands/sides. Exactly two shoulder-elbow-wrist chains, two hip-knee-ankle chains. No extra limbs/ghosts. Upper arm and same-side thigh counterphase, not merely wrist moving.\nKeep the head and shoulder/hip pivot registration in same source pixels as key0, same body proportions, SAME cheerful green-eyed gaze/open mouth and tongue. Shoulder/hip subtle pose rotation only, do not change head size or white belly pattern. The guide defines pose directions, do not use its gray body proportions to redesign the frog. Fixed full square canvas 1254x1254 like first frame, source near contacting foot baseline y1190, never enlarge or crop extremities; at least32px space around entire maximum motion silhouette, preserve common camera for every next pose. Sole in toe-off may lift slightly but head scale must stay fixed.\nClean transparent alpha background; no shadows/props/text. Output one actual polished frog sprite.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+          "generatedFileSha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46",
+          "referenceFiles": [
+            {
+              "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+              "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+            },
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-1.png",
+              "sha256": "82bd741a7eafec9a60d3f0e5d165d76fa595bf5691b643489d62bda22f79808e"
+            }
+          ],
+          "phase": 0.25,
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              145,
+              92,
+              1068,
+              1101
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Near open hand swings front, near big thigh back; far curled hand behind with high far knee in front. Registration/contour consistency and sole line remain unapproved."
+          }
+        },
+        "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46",
+        "file": "milk-frog-single-key-v1-phase-1.png"
+      },
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "Near open hand swings front, near big thigh back; far curled hand behind with high far knee in front. Registration/contour consistency and sole line remain unapproved.",
+        "origin": "SHA-bound actual single-frame receipt"
+      },
+      "pngSha256": "18f397d3809f6064dcd3fc32328e0219d1ce8f1f8ba833a179cc0865f174b963"
+    },
+    {
+      "index": 2,
+      "rect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "anchor": [
+        256,
+        512
+      ],
+      "name": "capture-3.png",
+      "phase": 0.5,
+      "file": "frames/003.png",
+      "timeMs": 500,
+      "durationMs": 250,
+      "sourceTime": 0.5,
+      "decodedTime": null,
+      "sourceFrameIndex": 2,
+      "sourceRect": null,
+      "sourceSha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3",
+      "sourceProvenance": {
+        "type": "imagegen",
+        "tool": "image_gen.imagegen",
+        "prompt": "EDIT reference1 (the yellow milk-frog key25 image) into key50. Reference2 is the leg/arm pose guide only, NEVER put guide lines/colors/gray floor into final art.\nABSOLUTE RULE: Preserve the foreground near arm/hand OPEN in front at chest height, background far arm/fist CURLED behind waist, and the same head, chest, face, camera, shading,1254square canvas. DO NOT use a foreground rightward thigh with the foreground forward arm; that would be wrong same-side motion. Change only the LEG POSE as follows:\nIn reference1 the BIG FOREGROUND thigh runs from the hip near x640,y730 DOWN-LEFT to the knee around x530,y895 and long calf/foot extends to the bottom-left. This is the permanent NEAR leg. KEEP its thigh pointed down-left/back behind hip. Bend THAT knee to fold its calf BACK-UP, so its pink foot lifts well above ground behind hip around x230,y820. Near thigh MUST stay left of hip and visibly in foreground, never move this near thigh to the RIGHT.\nThe BACKGROUND FAR thigh already points RIGHT to its lifted knee around x940,y750. This remains the permanent far leg behind the near thigh. LOWER and straighten its knee/ankle enough so the far pink foot contacts the ground on the RIGHT at y1190. The far leg must emerge from behind the NEAR leftward thigh/root, not replace it with a huge foreground rightward thigh. Two clean legs, NEAR knee left, FAR knee right. Occlusion at hips makes the NEAR/back-pointing thigh visibly in front of the FAR/forward-pointing thigh.\nThis is opposite support-side contact relative key0. Upper arms already correct in reference1, don’t redesign them. Exactly two arms/two legs and no ghosts. Keep near open hand and far curled fist unchanged. Transparent background, clean polished2D anatomy, no reference colors, shadows/text or crop. Full motion silhouette at least32px inside canvas, fixedcamera andface registration. Output ONE corrected actual sprite.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "EDIT reference1 (the yellow milk-frog key25 image) into key50. Reference2 is the leg/arm pose guide only, NEVER put guide lines/colors/gray floor into final art.\nABSOLUTE RULE: Preserve the foreground near arm/hand OPEN in front at chest height, background far arm/fist CURLED behind waist, and the same head, chest, face, camera, shading,1254square canvas. DO NOT use a foreground rightward thigh with the foreground forward arm; that would be wrong same-side motion. Change only the LEG POSE as follows:\nIn reference1 the BIG FOREGROUND thigh runs from the hip near x640,y730 DOWN-LEFT to the knee around x530,y895 and long calf/foot extends to the bottom-left. This is the permanent NEAR leg. KEEP its thigh pointed down-left/back behind hip. Bend THAT knee to fold its calf BACK-UP, so its pink foot lifts well above ground behind hip around x230,y820. Near thigh MUST stay left of hip and visibly in foreground, never move this near thigh to the RIGHT.\nThe BACKGROUND FAR thigh already points RIGHT to its lifted knee around x940,y750. This remains the permanent far leg behind the near thigh. LOWER and straighten its knee/ankle enough so the far pink foot contacts the ground on the RIGHT at y1190. The far leg must emerge from behind the NEAR leftward thigh/root, not replace it with a huge foreground rightward thigh. Two clean legs, NEAR knee left, FAR knee right. Occlusion at hips makes the NEAR/back-pointing thigh visibly in front of the FAR/forward-pointing thigh.\nThis is opposite support-side contact relative key0. Upper arms already correct in reference1, don’t redesign them. Exactly two arms/two legs and no ghosts. Keep near open hand and far curled fist unchanged. Transparent background, clean polished2D anatomy, no reference colors, shadows/text or crop. Full motion silhouette at least32px inside canvas, fixedcamera andface registration. Output ONE corrected actual sprite.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-2ad097ed-fa27-4e35-8584-324755f236e7.png",
+          "generatedFileSha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3",
+          "referenceFiles": [
+            {
+              "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+              "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+            },
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-2.png",
+              "sha256": "2411a2b4302a697950d610eefdd359b5c4dfe5d60632f7604a11e700625ebcd8"
+            }
+          ],
+          "phase": 0.5,
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              168,
+              106,
+              997,
+              1105
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Local correction visible: big foreground thigh down/back with folded recovery foot; background thigh forward/down for contact. Head lowered/changed against key0 and sole line needs measured review. Not whole pass."
+          }
+        },
+        "sha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3",
+        "file": "milk-frog-single-key-v2-phase-2.png"
+      },
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "Local correction visible: big foreground thigh down/back with folded recovery foot; background thigh forward/down for contact. Head lowered/changed against key0 and sole line needs measured review. Not whole pass.",
+        "origin": "SHA-bound actual single-frame receipt"
+      },
+      "pngSha256": "49a6a4bea1e92ef8b8d5a5998d20de373471e93d25feed00cd2ab4a519395da1"
+    },
+    {
+      "index": 3,
+      "rect": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "contentRect": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sourceSize": [
+        512,
+        512
+      ],
+      "sourceCanvasSize": [
+        512,
+        512
+      ],
+      "scale": 1,
+      "anchor": [
+        256,
+        512
+      ],
+      "name": "capture-4.png",
+      "phase": 0.75,
+      "file": "frames/004.png",
+      "timeMs": 750,
+      "durationMs": 250,
+      "sourceTime": 0.75,
+      "decodedTime": null,
+      "sourceFrameIndex": 3,
+      "sourceRect": null,
+      "sourceSha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe",
+      "sourceProvenance": {
+        "type": "imagegen",
+        "tool": "image_gen.imagegen",
+        "prompt": "EDIT reference1 milk-frog key0 into run key75%. Reference2 is pose directions ONLY, no guide pixels/colors/ground/gray dummy in final.\nPreserve reference1 exact head size, facial shape and green-eyed cheerful gaze/open mouth/tongue, muscular yellow/white/pink glossy2D style/blackink, same camera and1254square canvas. Preserve the NEAR foreground open pink hand BEHIND the shoulder/waist on imageLEFT with upper arm swinging BACK, and FAR curled pink fist IN FRONT on imageRIGHT with upper arm swinging FORWARD. Those arm states from reference1 are already correct; do not swap hands or turn open hand into fist.\nChange LEGS: BIG NEAR FOREGROUND leg currently extending front/right toward ground must now be in high-knee recovery: NEAR thigh points FORWARD/right almost horizontally to the raised knee, lowerleg folds down/back and near pink FOOT remains AIRBORNE above ground in front of hip. Keep that big near thigh on TOP at hip overlap and in front of far leg. FAR BACKGROUND leg goes BACK/left in toe-off: far thigh points LEFT behind hip, its knee unfolds and lowerleg/pinkfoot reaches down/back to source ground baseline y1190 on left. The far leg is visible below/behind near thigh, not lost or a duplicate near leg.\nExactly two connected arms and two legs, open near hand behind, curled far fist forward; near high knee forward and far supporting leg back. Upper arms opposite same-side thigh directions. Preserve head/shoulder/hip pivot registration, no different head scale or torso fit. Full outline inside32px safety margins. Transparent alpha background, no shadow/text/reference lines/extra anatomy. Output ONE actual clean key75% frog sprite.",
+        "receipt": {
+          "tool": "image_gen.imagegen",
+          "prompt": "EDIT reference1 milk-frog key0 into run key75%. Reference2 is pose directions ONLY, no guide pixels/colors/ground/gray dummy in final.\nPreserve reference1 exact head size, facial shape and green-eyed cheerful gaze/open mouth/tongue, muscular yellow/white/pink glossy2D style/blackink, same camera and1254square canvas. Preserve the NEAR foreground open pink hand BEHIND the shoulder/waist on imageLEFT with upper arm swinging BACK, and FAR curled pink fist IN FRONT on imageRIGHT with upper arm swinging FORWARD. Those arm states from reference1 are already correct; do not swap hands or turn open hand into fist.\nChange LEGS: BIG NEAR FOREGROUND leg currently extending front/right toward ground must now be in high-knee recovery: NEAR thigh points FORWARD/right almost horizontally to the raised knee, lowerleg folds down/back and near pink FOOT remains AIRBORNE above ground in front of hip. Keep that big near thigh on TOP at hip overlap and in front of far leg. FAR BACKGROUND leg goes BACK/left in toe-off: far thigh points LEFT behind hip, its knee unfolds and lowerleg/pinkfoot reaches down/back to source ground baseline y1190 on left. The far leg is visible below/behind near thigh, not lost or a duplicate near leg.\nExactly two connected arms and two legs, open near hand behind, curled far fist forward; near high knee forward and far supporting leg back. Upper arms opposite same-side thigh directions. Preserve head/shoulder/hip pivot registration, no different head scale or torso fit. Full outline inside32px safety margins. Transparent alpha background, no shadow/text/reference lines/extra anatomy. Output ONE actual clean key75% frog sprite.",
+          "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+          "generatedFileSha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe",
+          "referenceFiles": [
+            {
+              "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+              "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+            },
+            {
+              "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-3.png",
+              "sha256": "555f768dea98c130b4c6d7213de52062cd0ca135789d4ad3acb1a9b76c030836"
+            }
+          ],
+          "phase": 0.75,
+          "sourceSize": [
+            1254,
+            1254
+          ],
+          "pixelBounds": {
+            "threshold": 24,
+            "bounds": [
+              96,
+              88,
+              1085,
+              1114
+            ],
+            "edgePixels": 0,
+            "hasTransparency": true,
+            "touchesEdge": false,
+            "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+          },
+          "qa": {
+            "visual": "failed",
+            "notes": "Near arm back/open and high near knee forward; far curled arm forward and far leg back/down. Leg identity visibly swaps compared key25. Camera/ground/texture consistency pending full playback."
+          }
+        },
+        "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe",
+        "file": "milk-frog-single-key-v1-phase-3.png"
+      },
+      "pixelBounds": null,
+      "review": {
+        "state": "failed",
+        "notes": "Near arm back/open and high near knee forward; far curled arm forward and far leg back/down. Leg identity visibly swaps compared key25. Camera/ground/texture consistency pending full playback.",
+        "origin": "SHA-bound actual single-frame receipt"
+      },
+      "pngSha256": "9d28e45fd36321300fbf01fa2343bec7b3cc4b74fd245e765cf57b277e5dc3f2"
+    }
+  ],
+  "exportedAt": "2026-10-11T19:04:50.025Z"
+}

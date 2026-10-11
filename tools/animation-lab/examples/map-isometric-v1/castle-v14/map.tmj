@@ -1,0 +1,1107 @@
+{
+  "type": "map",
+  "version": "1.10",
+  "tiledversion": "1.11.2",
+  "orientation": "isometric",
+  "renderorder": "right-down",
+  "width": 32,
+  "height": 32,
+  "tilewidth": 48,
+  "tileheight": 24,
+  "infinite": false,
+  "layers": [
+    {
+      "id": 1,
+      "type": "imagelayer",
+      "name": "flattened scene candidate",
+      "image": "scene.png",
+      "offsetx": -960,
+      "offsety": -240
+    },
+    {
+      "id": 2,
+      "type": "objectgroup",
+      "name": "object colliders",
+      "objects": [
+        {
+          "id": 1,
+          "name": "25:27",
+          "x": 73.68,
+          "y": 158.928,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"25:27\",\"type\":\"circle\",\"x\":25.535,\"y\":27.311,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "24:29",
+          "x": 20.735999999999933,
+          "y": 257.856,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"24:29\",\"type\":\"circle\",\"x\":24.432,\"y\":29.372,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "24:30",
+          "x": -6.239999999999952,
+          "y": 281.76000000000005,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"24:30\",\"type\":\"aabb\",\"x\":23.87,\"y\":29.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "30:25",
+          "x": 281.76000000000005,
+          "y": 41.76000000000005,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"30:25\",\"type\":\"aabb\",\"x\":29.87,\"y\":24.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "28:28",
+          "x": 219.02399999999994,
+          "y": 210.72000000000003,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"28:28\",\"type\":\"circle\",\"x\":28.563,\"y\":28.39,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "29:30",
+          "x": 233.76000000000005,
+          "y": 281.76000000000005,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"29:30\",\"type\":\"aabb\",\"x\":28.87,\"y\":29.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "27:33",
+          "x": 137.76000000000005,
+          "y": 425.7599999999999,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"27:33\",\"type\":\"aabb\",\"x\":26.87,\"y\":32.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "30:32",
+          "x": 281.76000000000005,
+          "y": 377.76000000000005,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"30:32\",\"type\":\"aabb\",\"x\":29.87,\"y\":31.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "35:30",
+          "x": 552.9119999999999,
+          "y": 303.45599999999996,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"35:30\",\"type\":\"circle\",\"x\":35.519,\"y\":30.322,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "30:35",
+          "x": 281.76000000000005,
+          "y": 521.7599999999999,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"30:35\",\"type\":\"aabb\",\"x\":29.87,\"y\":34.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "38:28",
+          "x": 692.8800000000001,
+          "y": 211.536,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"38:28\",\"type\":\"circle\",\"x\":38.435,\"y\":28.407,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "34:32",
+          "x": 473.7599999999999,
+          "y": 377.76000000000005,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"34:32\",\"type\":\"aabb\",\"x\":33.87,\"y\":31.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "33:34",
+          "x": 456.3840000000001,
+          "y": 502.17600000000016,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"33:34\",\"type\":\"circle\",\"x\":33.508,\"y\":34.462,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "36:32",
+          "x": 608.5439999999999,
+          "y": 400.03200000000015,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"36:32\",\"type\":\"circle\",\"x\":36.678,\"y\":32.334,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "name": "38:32",
+          "x": 689.0399999999998,
+          "y": 404.0160000000001,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"38:32\",\"type\":\"circle\",\"x\":38.355,\"y\":32.417,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "name": "29:42",
+          "x": 268.464,
+          "y": 879.1680000000001,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"29:42\",\"type\":\"circle\",\"x\":29.593,\"y\":42.316,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "name": "47:25",
+          "x": 1097.7599999999998,
+          "y": 41.76000000000005,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"47:25\",\"type\":\"aabb\",\"x\":46.87,\"y\":24.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "name": "30:43",
+          "x": 304.41599999999994,
+          "y": 927.1199999999999,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"30:43\",\"type\":\"circle\",\"x\":30.342,\"y\":43.315,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "49:24",
+          "x": 1228.4640000000002,
+          "y": 20.160000000000082,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"49:24\",\"type\":\"circle\",\"x\":49.593,\"y\":24.42,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "43:30",
+          "x": 944.8800000000001,
+          "y": 307.63199999999995,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"43:30\",\"type\":\"circle\",\"x\":43.685,\"y\":30.409,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "name": "42:33",
+          "x": 890.8800000000001,
+          "y": 446.928,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"42:33\",\"type\":\"circle\",\"x\":42.56,\"y\":33.311,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "43:34",
+          "x": 933.8880000000001,
+          "y": 499.67999999999984,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"43:34\",\"type\":\"circle\",\"x\":43.456,\"y\":34.41,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "漫游-2026:0,0:0:0:part:0",
+          "x": 450.59717532691957,
+          "y": 631.5523189693447,
+          "width": 77.4144,
+          "height": 77.4144,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:0\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":33.38744115264416,\"y\":37.157339978528015,\"width\":1.6128,\"height\":1.6128,\"part\":\"corner-tower:base\",\"sourcePropIndex\":0,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "漫游-2026:0,0:0:0:part:1",
+          "x": 804.4915753269195,
+          "y": 631.5523189693447,
+          "width": 77.4144,
+          "height": 77.4144,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:1\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":40.760241152644156,\"y\":37.157339978528015,\"width\":1.6128,\"height\":1.6128,\"part\":\"corner-tower:base\",\"sourcePropIndex\":3,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "name": "漫游-2026:0,0:0:0:part:2",
+          "x": 450.59717532691957,
+          "y": 985.4467189693446,
+          "width": 77.4144,
+          "height": 77.4144,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:2\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":33.38744115264416,\"y\":44.53013997852801,\"width\":1.6128,\"height\":1.6128,\"part\":\"corner-tower:base\",\"sourcePropIndex\":6,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "name": "漫游-2026:0,0:0:0:part:3",
+          "x": 804.4915753269195,
+          "y": 985.4467189693446,
+          "width": 77.4144,
+          "height": 77.4144,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:3\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":40.760241152644156,\"y\":44.53013997852801,\"width\":1.6128,\"height\":1.6128,\"part\":\"corner-tower:base\",\"sourcePropIndex\":9,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "name": "漫游-2026:0,0:0:0:part:4",
+          "x": 533.5411753269196,
+          "y": 990.9763189693447,
+          "width": 66.3552,
+          "height": 66.3552,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:4\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":35.11544115264416,\"y\":44.645339978528014,\"width\":1.3823999999999999,\"height\":1.3823999999999999,\"part\":\"gate-tower:base\",\"sourcePropIndex\":12,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "name": "漫游-2026:0,0:0:0:part:5",
+          "x": 732.6067753269195,
+          "y": 990.9763189693447,
+          "width": 66.3552,
+          "height": 66.3552,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:5\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":39.26264115264416,\"y\":44.645339978528014,\"width\":1.3823999999999999,\"height\":1.3823999999999999,\"part\":\"gate-tower:base\",\"sourcePropIndex\":15,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "name": "漫游-2026:0,0:0:0:part:6",
+          "x": 613.7203753269197,
+          "y": 742.1443189693448,
+          "width": 105.0624,
+          "height": 105.0624,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:6\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":36.78584115264416,\"y\":39.46133997852802,\"width\":2.1888,\"height\":2.1888,\"part\":\"courtyard-keep:base\",\"sourcePropIndex\":18,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "漫游-2026:0,0:0:0:part:7",
+          "x": 489.30437532691974,
+          "y": 640.7683189601272,
+          "width": 117.96480003686398,
+          "height": 58.98240001843509,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:7\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":34.19384115264416,\"y\":37.34933997833598,\"width\":2.4576000007679997,\"height\":1.2288000003840642,\"part\":\"curtain-wall\",\"sourcePropIndex\":21,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "漫游-2026:0,0:0:0:part:8",
+          "x": 459.8131753177021,
+          "y": 670.2595189693449,
+          "width": 58.98240001843507,
+          "height": 117.96480003686398,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:8\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":33.57944115245213,\"y\":37.96373997852802,\"width\":1.228800000384064,\"height\":2.4576000007679997,\"part\":\"curtain-wall\",\"sourcePropIndex\":22,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "漫游-2026:0,0:0:0:part:9",
+          "x": 813.707575317702,
+          "y": 670.2595189693449,
+          "width": 58.98240001843507,
+          "height": 117.96480003686398,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:9\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":40.952241152452125,\"y\":37.96373997852802,\"width\":1.228800000384064,\"height\":2.4576000007679997,\"part\":\"curtain-wall\",\"sourcePropIndex\":23,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "漫游-2026:0,0:0:0:part:10",
+          "x": 607.2691753084878,
+          "y": 640.7683189601272,
+          "width": 117.96480003686398,
+          "height": 58.98240001843509,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:10\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":36.65144115226016,\"y\":37.34933997833598,\"width\":2.4576000007679997,\"height\":1.2288000003840642,\"part\":\"curtain-wall\",\"sourcePropIndex\":24,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "name": "漫游-2026:0,0:0:0:part:11",
+          "x": 459.8131753177021,
+          "y": 788.2243189509129,
+          "width": 58.98240001843507,
+          "height": 117.96480003686398,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:11\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":33.57944115245213,\"y\":40.42133997814402,\"width\":1.228800000384064,\"height\":2.4576000007679997,\"part\":\"curtain-wall\",\"sourcePropIndex\":25,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "name": "漫游-2026:0,0:0:0:part:12",
+          "x": 813.707575317702,
+          "y": 788.2243189509129,
+          "width": 58.98240001843507,
+          "height": 117.96480003686398,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:12\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":40.952241152452125,\"y\":40.42133997814402,\"width\":1.228800000384064,\"height\":2.4576000007679997,\"part\":\"curtain-wall\",\"sourcePropIndex\":26,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "name": "漫游-2026:0,0:0:0:part:13",
+          "x": 725.2339752900558,
+          "y": 640.7683189601272,
+          "width": 117.96480003686398,
+          "height": 58.98240001843509,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:13\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":39.10904115187616,\"y\":37.34933997833598,\"width\":2.4576000007679997,\"height\":1.2288000003840642,\"part\":\"curtain-wall\",\"sourcePropIndex\":27,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "name": "漫游-2026:0,0:0:0:part:14",
+          "x": 459.8131753177021,
+          "y": 906.1891189324809,
+          "width": 58.98240001843507,
+          "height": 117.96480003686398,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:14\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":33.57944115245213,\"y\":42.87893997776002,\"width\":1.228800000384064,\"height\":2.4576000007679997,\"part\":\"curtain-wall\",\"sourcePropIndex\":28,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "漫游-2026:0,0:0:0:part:15",
+          "x": 813.707575317702,
+          "y": 906.1891189324809,
+          "width": 58.98240001843507,
+          "height": 117.96480003686398,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:15\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":40.952241152452125,\"y\":42.87893997776002,\"width\":1.228800000384064,\"height\":2.4576000007679997,\"part\":\"curtain-wall\",\"sourcePropIndex\":29,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "name": "漫游-2026:0,0:0:0:part:16",
+          "x": 489.30437532691974,
+          "y": 995.1235189693432,
+          "width": 116.1216,
+          "height": 58.06080000000304,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:16\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":34.19384115264416,\"y\":44.73173997852798,\"width\":2.4192,\"height\":1.2096000000000633,\"part\":\"gate-wall\",\"sourcePropIndex\":30,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "name": "漫游-2026:0,0:0:0:part:17",
+          "x": 727.0771753269195,
+          "y": 995.1235189693432,
+          "width": 116.1216,
+          "height": 58.06080000000304,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:17\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":39.147441152644156,\"y\":44.73173997852798,\"width\":2.4192,\"height\":1.2096000000000633,\"part\":\"gate-wall\",\"sourcePropIndex\":31,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "name": "漫游-2026:0,0:0:0:part:18",
+          "x": 605.4259753269196,
+          "y": 1015.0300789693447,
+          "width": 43.79443199999999,
+          "height": 18.24768,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:18\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":36.61304115264416,\"y\":45.146459978528014,\"width\":0.9123839999999999,\"height\":0.38016,\"part\":\"gate-arch\",\"sourcePropIndex\":32,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "漫游-2026:0,0:0:0:part:19",
+          "x": 683.2827433269197,
+          "y": 1015.0300789693447,
+          "width": 43.79443199999999,
+          "height": 18.24768,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"漫游-2026:0,0:0:0:part:19\",\"parentId\":\"漫游-2026:0,0:0:0\",\"sourceAssembly\":true,\"type\":\"aabb\",\"x\":38.23505715264416,\"y\":45.146459978528014,\"width\":0.9123839999999999,\"height\":0.38016,\"part\":\"gate-arch\",\"sourcePropIndex\":32,\"sourceModule\":\"/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb\",\"sourceBoundsMeasured\":true}"
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "name": "28:51",
+          "x": 219.50400000000002,
+          "y": 1310.784,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"28:51\",\"type\":\"circle\",\"x\":28.573,\"y\":51.308,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "name": "45:34",
+          "x": 1038.768,
+          "y": 498.81600000000014,
+          "width": 28.799999999999997,
+          "height": 28.799999999999997,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"45:34\",\"type\":\"circle\",\"x\":45.641,\"y\":34.392,\"radius\":0.3}"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "name": "51:29",
+          "x": 1312.2240000000002,
+          "y": 257.47200000000004,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"51:29\",\"type\":\"circle\",\"x\":51.338,\"y\":29.364,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "47:34",
+          "x": 1133.28,
+          "y": 495.2639999999999,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"47:34\",\"type\":\"circle\",\"x\":47.61,\"y\":34.318,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "48:33",
+          "x": 1183.44,
+          "y": 447.1199999999999,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"48:33\",\"type\":\"circle\",\"x\":48.655,\"y\":33.315,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "29:53",
+          "x": 264.38399999999996,
+          "y": 1406.784,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"29:53\",\"type\":\"circle\",\"x\":29.508,\"y\":53.308,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "45:38",
+          "x": 1034.304,
+          "y": 691.008,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"45:38\",\"type\":\"circle\",\"x\":45.548,\"y\":38.396,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "48:37",
+          "x": 1171.056,
+          "y": 640.6560000000001,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"48:37\",\"type\":\"circle\",\"x\":48.397,\"y\":37.347,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "34:53",
+          "x": 503.9520000000001,
+          "y": 1406.496,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"34:53\",\"type\":\"circle\",\"x\":34.499,\"y\":53.302,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "46:41",
+          "x": 1077.696,
+          "y": 833.8080000000001,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"46:41\",\"type\":\"circle\",\"x\":46.452,\"y\":41.371,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "name": "55:32",
+          "x": 1517.6640000000002,
+          "y": 400.46400000000017,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"55:32\",\"type\":\"circle\",\"x\":55.618,\"y\":32.343,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "name": "48:44",
+          "x": 1166.88,
+          "y": 975.4079999999999,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"48:44\",\"type\":\"circle\",\"x\":48.31,\"y\":44.321,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "name": "46:46",
+          "x": 1087.344,
+          "y": 1072.08,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"46:46\",\"type\":\"circle\",\"x\":46.653,\"y\":46.335,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "name": "44:50",
+          "x": 980.352,
+          "y": 1263.216,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"44:50\",\"type\":\"circle\",\"x\":44.424,\"y\":50.317,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "name": "55:40",
+          "x": 1515.12,
+          "y": 785.136,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"55:40\",\"type\":\"circle\",\"x\":55.565,\"y\":40.357,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "name": "49:47",
+          "x": 1227.0720000000001,
+          "y": 1121.9520000000002,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"49:47\",\"type\":\"circle\",\"x\":49.564,\"y\":47.374,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "name": "47:49",
+          "x": 1097.7599999999998,
+          "y": 1193.7599999999998,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"47:49\",\"type\":\"aabb\",\"x\":46.87,\"y\":48.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "name": "54:43",
+          "x": 1433.7599999999998,
+          "y": 905.7599999999999,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"54:43\",\"type\":\"aabb\",\"x\":53.87,\"y\":42.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "name": "50:48",
+          "x": 1241.7599999999998,
+          "y": 1145.7599999999998,
+          "width": 60.480000000000004,
+          "height": 60.480000000000004,
+          "ellipse": false,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"50:48\",\"type\":\"aabb\",\"x\":49.87,\"y\":47.87,\"width\":1.26,\"height\":1.26}"
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "name": "53:46",
+          "x": 1415.1839999999997,
+          "y": 1074.3359999999998,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"53:46\",\"type\":\"circle\",\"x\":53.483,\"y\":46.382,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "name": "48:54",
+          "x": 1185.408,
+          "y": 1456.56,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"48:54\",\"type\":\"circle\",\"x\":48.696,\"y\":54.345,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "name": "50:53",
+          "x": 1274.448,
+          "y": 1408.656,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"50:53\",\"type\":\"circle\",\"x\":50.551,\"y\":53.347,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 65,
+          "name": "54:49",
+          "x": 1470.144,
+          "y": 1215.792,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"54:49\",\"type\":\"circle\",\"x\":54.628,\"y\":49.329,\"radius\":0.2}"
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "name": "54:51",
+          "x": 1469.136,
+          "y": 1311.408,
+          "width": 19.200000000000003,
+          "height": 19.200000000000003,
+          "ellipse": true,
+          "properties": [
+            {
+              "name": "sourceCollider",
+              "type": "string",
+              "value": "{\"id\":\"54:51\",\"type\":\"circle\",\"x\":54.607,\"y\":51.321,\"radius\":0.2}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "name": "sourceGridX",
+      "type": "int",
+      "value": 24
+    },
+    {
+      "name": "sourceGridY",
+      "type": "int",
+      "value": 24
+    },
+    {
+      "name": "collisionAuthoritative",
+      "type": "string",
+      "value": "collision.json (global grid coordinates)"
+    },
+    {
+      "name": "engineImported",
+      "type": "bool",
+      "value": false
+    }
+  ]
+}

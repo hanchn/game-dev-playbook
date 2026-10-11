@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-10-11T14:52:39.416Z",
+  "hashes": {
+    "skin-renderer.mjs": "6480ea61cb4941920022a8b792ed0aeeb908c6be505a0a464f57af20572868b7",
+    "human-soft-skin.mjs": "9d1a5f8787ac294b8ad8e2f83bb8a0cc1eac6ddcdaf08539239b31b6b2b07ed5",
+    "public/art/skins.json": "9e258d2f45fe97b2e9684dc9895c460afeb762965366691c57fdc1e682b78174"
+  },
+  "localNeckReview": "passed-local-defect-retest",
+  "overallCharacterVisual": "failed-see-dinosaur-art-report",
+  "retests": [
+    "dinosaur-v5-adaptive-neck-rest-01.png",
+    "dinosaur-v5-adaptive-neck-extend-05.png",
+    "dinosaur-v5-adaptive-neck-extend-13-light.png"
+  ],
+  "invalidCapture": "dinosaur-v5-adaptive-neck-idle-01.png",
+  "performance": {
+    "file": "dinosaur-optimized-browser-telemetry.json",
+    "averageFps": 30,
+    "p95Ms": 33.5,
+    "scope": "180 workbench scheduling intervals; IAB cadence near 30 FPS, excludes isolation of renderer vs browser scheduling",
+    "targetGame60Fps": "not-verified"
+  },
+  "pending": [
+    "Tail root contour/lighting",
+    "Tail strip seams",
+    "Ankle bulge",
+    "Mouth depth material",
+    "Jump far-leg visibility"
+  ]
+}

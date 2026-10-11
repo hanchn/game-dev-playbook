@@ -1,0 +1,219 @@
+{
+  "schema": "actual-generated-key-pose-review",
+  "status": "not-accepted-as-complete-animation",
+  "poseStage": "four near/far limb poses locally match after one phase09 repair",
+  "faceStage": "not-reviewed-across-sequence",
+  "framingStage": "all selected originals1086x1448,alpha24edgePixels0; safe minimum side clearance64px selectedphase09 but individualscale/hipregistration still unmeasured",
+  "selected": [
+    {
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Generate ONE actual fully rendered game sprite frame, not a sprite sheet. Image1 is IDENTITY only: exact speckled beige bald alien explorer with very large elongated cranium, huge blue eye, small friendly face, slim adult body, olive sleeveless expedition vest over cream undershirt, brown belted cargo trousers and dark brown lace-up boots. Image2 is EXACT SINGLE POSE control: RED is foreground NEAR arm+leg; BLUE is background FAR arm+leg. Render these two arms and two legs with natural matching skin/clothes, never red/blue; the colored control shows structural chains through torso for clarity, final occlusion is natural but both independent fists and boots must be clearly visible. Face RIGHT, strict side profile, fixed orthographic camera. Repose the original identity to match image2 exactly; original is not pose reference. Same cranium and eye shape, constant forward gaze and slight closed-mouth smile; no identity/face changes, no forced blink in this short running frame. Full body, genuine transparent alpha, no shadow, floor, guides, text or labels. Output fixed portrait 768×1024 canvas. Match control's x registration, hip near47% width, planted sole line89.6% height. Constant 90% overall visual extent height, generous safe margins above cranium and around hands/boots. Never fill/crop to canvas; all head/hands/boots fit with at least5% width side margins and3% height head clearance. Detailed coherent high-quality 3D render, smooth organic joints, two connected arms and two connected legs. Both shoulders/elbows/wrists and hips/knees/ankles follow the assigned colored chains; do not omit the hidden side limb.\nRUN PHASE0: NEAR leg extended forward/down with boot contacting ground; FAR heel folded behind/up. NEAR shoulder→elbow→fist sweeps BACK/LEFT, with near fist well behind hip. FAR shoulder→elbow→fist bends FORWARD/RIGHT with fist at chest height. Two fists on opposite sides of torso, two clearly distinct boots. This is the backward NEAR arm key pose, not the original reference's front fist.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-728f6c23-110d-465b-a4a6-9cd9fac05f19.png",
+      "generatedFileSha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09",
+      "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-00.png",
+      "references": [
+        {
+          "role": "identity",
+          "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+          "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+        },
+        {
+          "role": "code-native-single-pose-control",
+          "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-00.png",
+          "sha256": "ec18200a4bc7032a89110fd8b80b86275ad65ea337604fe14348eea2759eda3d"
+        }
+      ],
+      "phase": 0,
+      "actualPNGSize": [
+        1086,
+        1448
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          131,
+          64,
+          863,
+          1311
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "not-reviewed",
+        "poseAdherence": "passed-local-only",
+        "notes": "两拳/两靴可见，近侧手臂/腿方向符合控制图；脸部尺度与全循环尚待跨帧验收"
+      }
+    },
+    {
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Generate ONE actual fully rendered game sprite frame, not a sprite sheet. Image1 is IDENTITY only: exact speckled beige bald alien explorer with very large elongated cranium, huge blue eye, small friendly face, slim adult body, olive sleeveless expedition vest over cream undershirt, brown belted cargo trousers and dark brown lace-up boots. Image2 is EXACT SINGLE POSE control: RED is foreground NEAR arm+leg; BLUE is background FAR arm+leg. Render these two arms and two legs with natural matching skin/clothes, never red/blue; the colored control shows structural chains through torso for clarity, final occlusion is natural but both independent fists and boots must be clearly visible. Face RIGHT, strict side profile, fixed orthographic camera. Repose the original identity to match image2 exactly; original is not pose reference. Same cranium and eye shape, constant forward gaze and slight closed-mouth smile; no identity/face changes, no forced blink in this short running frame. Full body, genuine transparent alpha, no shadow, floor, guides, text or labels. Output fixed portrait 768×1024 canvas. Match control's x registration, hip near47% width, planted sole line89.6% height. Constant 90% overall visual extent height, generous safe margins above cranium and around hands/boots. Never fill/crop to canvas; all head/hands/boots fit with at least5% width side margins and3% height head clearance. Detailed coherent high-quality 3D render, smooth organic joints, two connected arms and two connected legs. Both shoulders/elbows/wrists and hips/knees/ankles follow the assigned colored chains; do not omit the hidden side limb.\nRUN PHASE25% airborne passing: NEAR thigh points BACK/LEFT, near leg extended diagonally back boot above ground. FAR thigh points FORWARD/RIGHT with high knee, shin vertical down and far boot suspended. NEAR upper arm near-vertical down, forearm points FORWARD/RIGHT at waist level. FAR elbow behind torso and forearm folded up/forward, FAR fist nearer chest above near fist. Both fists separated and visible, exactly like red/blue control. No legs contact ground.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-df66bdc0-77fc-4573-a5c1-5f0bbce12886.png",
+      "generatedFileSha256": "98179283af46c0f637aa1ee37318ead610afa5710e5581a41a1677bc6e188337",
+      "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-03.png",
+      "references": [
+        {
+          "role": "identity",
+          "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+          "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+        },
+        {
+          "role": "code-native-single-pose-control",
+          "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-03.png",
+          "sha256": "42f70f21a0477d079425fed50b00d7e77ed38fb897dd5e8efcc7bfc1747781d6"
+        }
+      ],
+      "phase": 0.25,
+      "actualPNGSize": [
+        1086,
+        1448
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          114,
+          55,
+          711,
+          1295
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "not-reviewed",
+        "poseAdherence": "passed-local-only",
+        "notes": "两拳/两靴可见，近侧手臂/腿方向符合控制图；脸部尺度与全循环尚待跨帧验收"
+      }
+    },
+    {
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Generate ONE actual fully rendered game sprite frame, not a sprite sheet. Image1 is IDENTITY only: exact speckled beige bald alien explorer with very large elongated cranium, huge blue eye, small friendly face, slim adult body, olive sleeveless expedition vest over cream undershirt, brown belted cargo trousers and dark brown lace-up boots. Image2 is EXACT SINGLE POSE control: RED is foreground NEAR arm+leg; BLUE is background FAR arm+leg. Render these two arms and two legs with natural matching skin/clothes, never red/blue; the colored control shows structural chains through torso for clarity, final occlusion is natural but both independent fists and boots must be clearly visible. Face RIGHT, strict side profile, fixed orthographic camera. Repose the original identity to match image2 exactly; original is not pose reference. Same cranium and eye shape, constant forward gaze and slight closed-mouth smile; no identity/face changes, no forced blink in this short running frame. Full body, genuine transparent alpha, no shadow, floor, guides, text or labels. Output fixed portrait 768×1024 canvas. Match control's x registration, hip near47% width, planted sole line89.6% height. Constant 90% overall visual extent height, generous safe margins above cranium and around hands/boots. Never fill/crop to canvas; all head/hands/boots fit with at least5% width side margins and3% height head clearance. Detailed coherent high-quality 3D render, smooth organic joints, two connected arms and two connected legs. Both shoulders/elbows/wrists and hips/knees/ankles follow the assigned colored chains; do not omit the hidden side limb.\nRUN PHASE50%: FAR leg extended forward/down with far boot contacting ground. NEAR heel folds far behind/up, near knee down/back. NEAR upper arm points FORWARD/RIGHT, forearm folds up with near fist clearly in front at chest level. FAR upper arm sweeps BACK/LEFT, far elbow/fist behind hip. This reverses the limb identities compared with phase0. TWO distinct fists, TWO distinct boots. Do not keep near leg supporting.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-8ead6d02-f648-4f91-9e2d-bf74af970bb6.png",
+      "generatedFileSha256": "53564a5a18d59a128ebb312f0fcb6754038083fa114de980ca94a2853cd99cb1",
+      "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-06.png",
+      "references": [
+        {
+          "role": "identity",
+          "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+          "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+        },
+        {
+          "role": "code-native-single-pose-control",
+          "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-06.png",
+          "sha256": "10476f3f346e3f46e4486e21d6d9f73f6208b3bc09f86fba1d579570fcafc164"
+        }
+      ],
+      "phase": 0.5,
+      "actualPNGSize": [
+        1086,
+        1448
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          81,
+          84,
+          932,
+          1287
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "not-reviewed",
+        "poseAdherence": "passed-local-only",
+        "notes": "两拳/两靴可见，近侧手臂/腿方向符合控制图；脸部尺度与全循环尚待跨帧验收"
+      }
+    },
+    {
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. Image1 is the single alien run phase75% frame to edit. Image2 is its pose control. Correct ONLY the permanent near/far LEG identities. Keep original canvas framing, head/eyes/face, torso/vest, both arm poses, exact two fist positions, lighting, materials and transparent background unchanged.\nImage2 RED leg is the foreground NEAR leg: hip→thigh goes FORWARD/RIGHT, near knee lifted high, shin points down, near boot forward and airborne. This FOREGROUND raised thigh must visibly carry the large outer cargo pocket. The shin and boot on the right/high-knee leg belong to that same NEAR leg.\nImage2 BLUE leg is the background FAR leg: hip→thigh extends BACK/LEFT, knee nearly extended, far boot trailing behind/left in air. That trailing far thigh is partly behind the near hip and MUST NOT show the large foreground outer cargo pocket. Right now image1 incorrectly puts the outer cargo pocket on the trailing/back leg, so the near/far legs don't exchange in the running cycle. Make nearest cargo-pocket-bearing leg the FORWARD HIGH-KNEE leg, and the far/smooth-sided leg the REAR EXTENDED leg. Two physically complete legs attached to the correct sides of the pelvis, no third legs or copied pockets on both thighs.\nBoth feet remain airborne like image2. Preserve the current hands: near fist higher at low chest, far fist lower at waist, both visible. Preserve large blue eye, beige speckled cranium and stable forward gaze. Strict right facing side profile. Full body remains within original fixed canvas with safe margins, no enlarging, recentering, cropping or camera changes. Detailed smooth 3D-rendered anatomy. Genuine alpha transparency, no guides/text or floor shadow.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-cb78eee0-9dd6-4bbe-9564-cb71d79cdcd5.png",
+      "generatedFileSha256": "a56f38d51ae7d8d654629ec22e9e45eececff4da3dd90699d09e815155fed3ba",
+      "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v6-phase-09.png",
+      "references": [
+        {
+          "role": "edit-target",
+          "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-09.png",
+          "sha256": "b53647ace820f0b6aeed774c5d5f79e6e927c53f81f1ec27bfaebaa3d8106662"
+        },
+        {
+          "role": "code-native-single-pose-control",
+          "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-09.png",
+          "sha256": "9e788ed73386476c29eedf9ef617b2046b1fe8333592b37cf354853123146c08"
+        }
+      ],
+      "phase": 0.75,
+      "actualPNGSize": [
+        1086,
+        1448
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          109,
+          62,
+          913,
+          1301
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "not-reviewed",
+        "poseAdherence": "passed-local-only",
+        "notes": "大号外侧cargo pocket已移到前方抬膝近腿，后伸远腿平整；双拳保留。面部/服装纹理在修复中有所改变，全序列身份、尺度、注册和循环尚未验收"
+      }
+    }
+  ],
+  "retainedFailed": {
+    "tool": "image_gen.imagegen",
+    "prompt": "Use case: stylized-concept. Generate ONE actual fully rendered game sprite frame, not a sprite sheet. Image1 is IDENTITY only: exact speckled beige bald alien explorer with very large elongated cranium, huge blue eye, small friendly face, slim adult body, olive sleeveless expedition vest over cream undershirt, brown belted cargo trousers and dark brown lace-up boots. Image2 is EXACT SINGLE POSE control: RED is foreground NEAR arm+leg; BLUE is background FAR arm+leg. Render these two arms and two legs with natural matching skin/clothes, never red/blue; the colored control shows structural chains through torso for clarity, final occlusion is natural but both independent fists and boots must be clearly visible. Face RIGHT, strict side profile, fixed orthographic camera. Repose the original identity to match image2 exactly; original is not pose reference. Same cranium and eye shape, constant forward gaze and slight closed-mouth smile; no identity/face changes, no forced blink in this short running frame. Full body, genuine transparent alpha, no shadow, floor, guides, text or labels. Output fixed portrait 768×1024 canvas. Match control's x registration, hip near47% width, planted sole line89.6% height. Constant 90% overall visual extent height, generous safe margins above cranium and around hands/boots. Never fill/crop to canvas; all head/hands/boots fit with at least5% width side margins and3% height head clearance. Detailed coherent high-quality 3D render, smooth organic joints, two connected arms and two connected legs. Both shoulders/elbows/wrists and hips/knees/ankles follow the assigned colored chains; do not omit the hidden side limb.\nRUN PHASE75% airborne passing: NEAR thigh points FORWARD/RIGHT with high knee, shin vertical down and near boot suspended. FAR leg points BACK/LEFT diagonally with far boot suspended. NEAR elbow down/back with near fist folded up/forward to low chest, FAR upper arm near vertical with forearm pointing forward at waist level below near fist. Both fists distinctly visible at separate heights. This reverses near/far legs of phase25%, both boots above ground.",
+    "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e0e2d76e-026f-49db-8160-bd43b075eea5.png",
+    "generatedFileSha256": "b53647ace820f0b6aeed774c5d5f79e6e927c53f81f1ec27bfaebaa3d8106662",
+    "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-09.png",
+    "references": [
+      {
+        "role": "identity",
+        "path": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+        "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+      },
+      {
+        "role": "code-native-single-pose-control",
+        "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-09.png",
+        "sha256": "9e788ed73386476c29eedf9ef617b2046b1fe8333592b37cf354853123146c08"
+      }
+    ],
+    "phase": 0.75,
+    "actualPNGSize": [
+      1086,
+      1448
+    ],
+    "pixelBounds": {
+      "threshold": 24,
+      "bounds": [
+        106,
+        61,
+        883,
+        1261
+      ],
+      "edgePixels": 0,
+      "hasTransparency": true,
+      "touchesEdge": false,
+      "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+    },
+    "qa": {
+      "visual": "failed",
+      "poseAdherence": "failed",
+      "notes": "双臂高低匹配，但前抬膝仍是远腿：大号外侧cargo pocket在后伸近腿，未交换腿身份"
+    }
+  }
+}

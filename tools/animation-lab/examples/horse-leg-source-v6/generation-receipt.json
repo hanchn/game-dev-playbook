@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen.imagegen",
+  "kind": "edit",
+  "reference": "public/art/horse-side-parts-v5.png",
+  "referenceSha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+  "promptFile": "prompt.txt",
+  "transparent_background": true,
+  "originalToolPath": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-fc82b216-b501-4075-b4ef-765c4e2bec8c.png",
+  "output": "public/art/horse-side-parts-v6.png",
+  "outputSha256": "ab0939da446592bb481eb5a37aa09d9895af3808aa2379b17bd4f4bf8c3e7cb7",
+  "candidateTiles": [
+    2,
+    3,
+    4,
+    7,
+    8,
+    9
+  ],
+  "registered": false,
+  "visual": "failed",
+  "observations": [
+    "Actual source viewed: lower cannon proximal material/tendon contour improved, but some bulbous endpoints remain.",
+    "Non-requested parts drifted; if consumed use alternate source only for reviewed limbs."
+  ],
+  "assembledEvidence": "assembled-candidates-light.png",
+  "findings": [
+    "Actual source and baseline vs six-piece/four-distal candidate idle/walk.25/run.25/graze.467 reviewed.",
+    "Some caps remain balloon-shaped; generated rear cannon incorrectly added chestnut proximal patch.",
+    "No candidate registered; preserve original v5 source current."
+  ]
+}

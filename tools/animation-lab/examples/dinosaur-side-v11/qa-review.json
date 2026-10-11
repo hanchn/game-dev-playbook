@@ -1,0 +1,57 @@
+{
+  "assetId": "dinosaur-side-v11",
+  "source": "/art/dinosaur-side-parts-v7.png",
+  "sourceSha256": "7faf3fa2b00cba09016f61032f4b591232431947e92ff70780fdc80d5c3ec7a0",
+  "technical": "34/34 production/art-binding regression (horse/dinosaur); separate numerical per-action reports",
+  "artStatus": "failed",
+  "ui": "http://127.0.0.1:4317/lab/dinosaur",
+  "status": "failed",
+  "observations": [
+    {
+      "action": "walk",
+      "phases": "16 sampled phases",
+      "background": "light",
+      "evidence": "retest/walk-light.png",
+      "status": "improved",
+      "finding": "Exact masks exclude adjacent torso source from nape. Side foot claws retain toe profile. Repainting tibia/metatarsus gives stronger shaft; no shoe sole."
+    },
+    {
+      "action": "extend",
+      "joint": "leg-0-middle",
+      "phases": [
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1
+      ],
+      "background": "light",
+      "evidence": "joints/leg-0-middle-light.png",
+      "status": "failed",
+      "finding": "Moving source cap under femur avoids simple top overlay, but folded calf/femur material mismatch and large round knee pad remain visible. Anatomical chain validation cannot accept this texture seam."
+    },
+    {
+      "action": "extend",
+      "joint": "neck",
+      "phases": "9 sampled poses",
+      "evidence": "../dinosaur-side-v10/joints/neck-light.png",
+      "status": "improved",
+      "finding": "Same unchanged head-neck metadata/source as v11; foreign component nape spike eliminated. Tested crop clips far head at its own fixed joint crop boundary; not export truncation evidence."
+    }
+  ],
+  "notReviewed": [
+    "v11 run/jump/bite/roar full sequences",
+    "all far-side joint extremes",
+    "actual v11 browser normal/slow playback",
+    "complete fixed-frame alpha envelope"
+  ],
+  "limitations": [
+    "Contact sheets auto-fit for inspection; they are not fixed-camera export proof.",
+    "Untouched old evidence referenced only when source/binding unchanged; actual version documented.",
+    "No user acceptance claimed."
+  ]
+}

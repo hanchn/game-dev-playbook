@@ -1,0 +1,1395 @@
+{
+  "schema": "source-castle-layout/v2",
+  "feature": {
+    "id": "castle-template-v2",
+    "type": "castle",
+    "position": {
+      "x": 0,
+      "z": 0
+    },
+    "footprint": {
+      "width": 24,
+      "depth": 24
+    },
+    "surfaceHeight": 0,
+    "validation": {
+      "placement": "template-flat",
+      "visual": "not-reviewed"
+    }
+  },
+  "props": [
+    {
+      "id": "castle-template-v2:castle-v2:0",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        0,
+        -7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:0",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": -7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:1",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        3.3935999679565434,
+        -7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:1",
+        "type": "compound-obb",
+        "radius": 2.209567286845333,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": -7.68,
+            "width": 3.1248000240325933,
+            "depth": 3.1248000240325933,
+            "yaw": 0
+          }
+        ],
+        "y": 3.3935999679565434,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:2",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        6.787199935913087,
+        -7.68
+      ],
+      "height": 4.53599967956543,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:2",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": -7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 6.787199935913087,
+        "height": 4.53599967956543,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:3",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        0,
+        -7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:3",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": -7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:4",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        3.3935999679565434,
+        -7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:4",
+        "type": "compound-obb",
+        "radius": 2.209567286845333,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": -7.68,
+            "width": 3.1248000240325933,
+            "depth": 3.1248000240325933,
+            "yaw": 0
+          }
+        ],
+        "y": 3.3935999679565434,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:5",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        6.787199935913087,
+        -7.68
+      ],
+      "height": 4.53599967956543,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:5",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": -7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 6.787199935913087,
+        "height": 4.53599967956543,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:6",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        0,
+        7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:6",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": 7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:7",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        3.3935999679565434,
+        7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:7",
+        "type": "compound-obb",
+        "radius": 2.209567286845333,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": 7.68,
+            "width": 3.1248000240325933,
+            "depth": 3.1248000240325933,
+            "yaw": 0
+          }
+        ],
+        "y": 3.3935999679565434,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:8",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        6.787199935913087,
+        7.68
+      ],
+      "height": 1.0080000400543214,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:8",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": 7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 6.787199935913087,
+        "height": 1.0080000400543214,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:9",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        0,
+        7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:9",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": 7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:10",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        3.3935999679565434,
+        7.68
+      ],
+      "height": 3.3935999679565434,
+      "yaw": 0,
+      "sceneRole": "corner-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:10",
+        "type": "compound-obb",
+        "radius": 2.209567286845333,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": 7.68,
+            "width": 3.1248000240325933,
+            "depth": 3.1248000240325933,
+            "yaw": 0
+          }
+        ],
+        "y": 3.3935999679565434,
+        "height": 3.3935999679565434,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:11",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        6.787199935913087,
+        7.68
+      ],
+      "height": 1.0080000400543214,
+      "yaw": 0,
+      "sceneRole": "corner-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:11",
+        "type": "compound-obb",
+        "radius": 2.3758787847868,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": 7.68,
+            "width": 3.3600000000000003,
+            "depth": 3.3600000000000003,
+            "yaw": 0
+          }
+        ],
+        "y": 6.787199935913087,
+        "height": 1.0080000400543214,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:12",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -4.32,
+        0,
+        7.68
+      ],
+      "height": 2.9087999725341795,
+      "yaw": 0,
+      "sceneRole": "gate-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:12",
+        "type": "compound-obb",
+        "radius": 2.0364675298172568,
+        "parts": [
+          {
+            "x": -4.32,
+            "z": 7.68,
+            "width": 2.88,
+            "depth": 2.88,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 2.9087999725341795,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:13",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -4.32,
+        2.9087999725341795,
+        7.68
+      ],
+      "height": 2.9087999725341795,
+      "yaw": 0,
+      "sceneRole": "gate-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:13",
+        "type": "compound-obb",
+        "radius": 1.8939148172959996,
+        "parts": [
+          {
+            "x": -4.32,
+            "z": 7.68,
+            "width": 2.678400020599365,
+            "depth": 2.678400020599365,
+            "yaw": 0
+          }
+        ],
+        "y": 2.9087999725341795,
+        "height": 2.9087999725341795,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:14",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -4.32,
+        5.817599945068359,
+        7.68
+      ],
+      "height": 0.8640000343322753,
+      "yaw": 0,
+      "sceneRole": "gate-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:14",
+        "type": "compound-obb",
+        "radius": 2.0364675298172568,
+        "parts": [
+          {
+            "x": -4.32,
+            "z": 7.68,
+            "width": 2.88,
+            "depth": 2.88,
+            "yaw": 0
+          }
+        ],
+        "y": 5.817599945068359,
+        "height": 0.8640000343322753,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:15",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        4.32,
+        0,
+        7.68
+      ],
+      "height": 2.9087999725341795,
+      "yaw": 0,
+      "sceneRole": "gate-tower:base",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:15",
+        "type": "compound-obb",
+        "radius": 2.0364675298172568,
+        "parts": [
+          {
+            "x": 4.32,
+            "z": 7.68,
+            "width": 2.88,
+            "depth": 2.88,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 2.9087999725341795,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:16",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        4.32,
+        2.9087999725341795,
+        7.68
+      ],
+      "height": 2.9087999725341795,
+      "yaw": 0,
+      "sceneRole": "gate-tower:windows",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:16",
+        "type": "compound-obb",
+        "radius": 1.8939148172959996,
+        "parts": [
+          {
+            "x": 4.32,
+            "z": 7.68,
+            "width": 2.678400020599365,
+            "depth": 2.678400020599365,
+            "yaw": 0
+          }
+        ],
+        "y": 2.9087999725341795,
+        "height": 2.9087999725341795,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:17",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        4.32,
+        5.817599945068359,
+        7.68
+      ],
+      "height": 0.8640000343322753,
+      "yaw": 0,
+      "sceneRole": "gate-tower:top",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:17",
+        "type": "compound-obb",
+        "radius": 2.0364675298172568,
+        "parts": [
+          {
+            "x": 4.32,
+            "z": 7.68,
+            "width": 2.88,
+            "depth": 2.88,
+            "yaw": 0
+          }
+        ],
+        "y": 5.817599945068359,
+        "height": 0.8640000343322753,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:18",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        0,
+        0,
+        -2.2800000000000002
+      ],
+      "height": 4.605599956512451,
+      "yaw": 0,
+      "sceneRole": "courtyard-keep:base",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:18",
+        "type": "compound-obb",
+        "radius": 3.2244069222106573,
+        "parts": [
+          {
+            "x": 0,
+            "z": -2.2800000000000002,
+            "width": 4.5600000000000005,
+            "depth": 4.5600000000000005,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 4.605599956512451,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-base.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:19",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        0,
+        4.605599956512451,
+        -2.2800000000000002
+      ],
+      "height": 4.605599956512451,
+      "yaw": 0,
+      "sceneRole": "courtyard-keep:windows",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:19",
+        "type": "compound-obb",
+        "radius": 2.9986984607186664,
+        "parts": [
+          {
+            "x": 0,
+            "z": -2.2800000000000002,
+            "width": 4.240800032615662,
+            "depth": 4.240800032615662,
+            "yaw": 0
+          }
+        ],
+        "y": 4.605599956512451,
+        "height": 4.605599956512451,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-mid-windows.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:20",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        0,
+        9.211199913024902,
+        -2.2800000000000002
+      ],
+      "height": 6.155999565124512,
+      "yaw": 0,
+      "sceneRole": "courtyard-keep:top",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:20",
+        "type": "compound-obb",
+        "radius": 3.2244069222106573,
+        "parts": [
+          {
+            "x": 0,
+            "z": -2.2800000000000002,
+            "width": 4.5600000000000005,
+            "depth": 4.5600000000000005,
+            "yaw": 0
+          }
+        ],
+        "y": 9.211199913024902,
+        "height": 6.155999565124512,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/tower-square-top-roof-high.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:21",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -5.1199999992,
+        0,
+        -7.68
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:21",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": -5.1199999992,
+            "z": -7.68,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:22",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        0,
+        -5.1199999992
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:22",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": -5.1199999992,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:23",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        0,
+        -5.1199999992
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:23",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": -5.1199999992,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:24",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        0,
+        0,
+        -7.68
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:24",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": 0,
+            "z": -7.68,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:25",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        0,
+        0
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:25",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": 0,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:26",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        0,
+        0
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:26",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": 0,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:27",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        5.1199999992,
+        0,
+        -7.68
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:27",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": 5.1199999992,
+            "z": -7.68,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:28",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -7.68,
+        0,
+        5.1199999992
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:28",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": -7.68,
+            "z": 5.1199999992,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:29",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        7.68,
+        0,
+        5.1199999992
+      ],
+      "height": 6.7071997091272495,
+      "yaw": 0,
+      "sceneRole": "curtain-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:29",
+        "type": "compound-obb",
+        "radius": 2.862167012094188,
+        "parts": [
+          {
+            "x": 7.68,
+            "z": 5.1199999992,
+            "width": 2.5600000008001333,
+            "depth": 5.120000001599999,
+            "yaw": 0
+          }
+        ],
+        "y": 0,
+        "height": 6.7071997091272495,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:30",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        -5.16,
+        0,
+        7.68
+      ],
+      "height": 6.602399711608887,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "gate-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:30",
+        "type": "compound-obb",
+        "radius": 2.817445651649765,
+        "parts": [
+          {
+            "x": -5.16,
+            "z": 7.68,
+            "width": 2.5200000000001315,
+            "depth": 5.04,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 0,
+        "height": 6.602399711608887,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:31",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        5.16,
+        0,
+        7.68
+      ],
+      "height": 6.602399711608887,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "gate-wall",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:31",
+        "type": "compound-obb",
+        "radius": 2.817445651649765,
+        "parts": [
+          {
+            "x": 5.16,
+            "z": 7.68,
+            "width": 2.5200000000001315,
+            "depth": 5.04,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "y": 0,
+        "height": 6.602399711608887,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-narrow.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false
+      }
+    },
+    {
+      "id": "castle-template-v2:castle-v2:32",
+      "featureId": "castle-template-v2",
+      "model": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+      "sourcePack": "kenney-castle-kit",
+      "position": [
+        0,
+        0,
+        7.68
+      ],
+      "height": 6.91679969904,
+      "yaw": 1.5707963267948966,
+      "sceneRole": "gate-arch",
+      "qa": {
+        "placement": {
+          "placement": "template-flat",
+          "visual": "not-reviewed"
+        },
+        "assembly": "source-measured-castle-v2",
+        "visualAccepted": false
+      },
+      "collider": {
+        "id": "castle-template-v2:castle-v2:32",
+        "type": "compound-obb",
+        "parts": [
+          {
+            "x": -1.6896000000000002,
+            "z": 7.68,
+            "width": 2.64,
+            "depth": 1.9008,
+            "yaw": 1.5707963267948966
+          },
+          {
+            "x": 1.6896000000000002,
+            "z": 7.68,
+            "width": 2.64,
+            "depth": 1.9008,
+            "yaw": 1.5707963267948966
+          }
+        ],
+        "overheadBounds": {
+          "x": 0,
+          "z": 7.68,
+          "width": 2.64,
+          "depth": 5.28,
+          "yaw": 1.5707963267948966
+        },
+        "apertureHeight": 2.3760000000000003,
+        "apertureWidth": 1.4784000000000002,
+        "y": 0,
+        "height": 6.91679969904,
+        "sourceModel": "/map-resources/kenney-castle-kit/assets/Models/GLB format/wall-doorway.glb",
+        "sourceBoundsMeasured": true,
+        "triangleCollision": false,
+        "qa": {
+          "sourceApertureAxis": "X",
+          "conservativeArchRectangle": true,
+          "sourceApertureMeasured": true
+        }
+      }
+    }
+  ]
+}

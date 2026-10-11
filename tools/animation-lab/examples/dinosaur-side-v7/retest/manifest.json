@@ -1,0 +1,5228 @@
+{
+  "asset": {
+    "schemaVersion": 1,
+    "id": "dinosaur-side-v7",
+    "species": "dinosaur",
+    "name": "恐龙",
+    "version": 7,
+    "design": {
+      "color": "#e1a34c",
+      "size": 1,
+      "stride": 14,
+      "view": "侧面 · 正交 · 朝右"
+    },
+    "parts": [
+      {
+        "id": "root",
+        "name": "装配原点",
+        "parent": null,
+        "shape": "anchor",
+        "rest": [
+          0,
+          0
+        ],
+        "dimensions": [
+          0,
+          0
+        ],
+        "layer": 0,
+        "tile": 0,
+        "material": "#e1a34c"
+      },
+      {
+        "id": "body",
+        "name": "躯干",
+        "parent": "root",
+        "shape": "ellipse",
+        "rest": [
+          -2,
+          -95
+        ],
+        "dimensions": [
+          94,
+          60
+        ],
+        "layer": 3,
+        "tile": 0,
+        "material": "#e1a34c"
+      },
+      {
+        "id": "neck",
+        "name": "颈部",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          24,
+          -104
+        ],
+        "dimensions": [
+          35.35533905932738,
+          12
+        ],
+        "layer": 2,
+        "tile": 5,
+        "material": "#e1a34c",
+        "role": "neck"
+      },
+      {
+        "id": "head",
+        "name": "头部",
+        "parent": "neck",
+        "shape": "ellipse",
+        "rest": [
+          58,
+          -133
+        ],
+        "dimensions": [
+          74,
+          42
+        ],
+        "layer": 5,
+        "tile": 1,
+        "material": "#e1a34c",
+        "skinAspect": true
+      },
+      {
+        "id": "leg-0-upper",
+        "name": "髋至膝股段",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -14,
+          -80
+        ],
+        "dimensions": [
+          32,
+          29
+        ],
+        "layer": 2,
+        "tile": 2,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "upper",
+        "phase": 0,
+        "range": [
+          -100,
+          100
+        ]
+      },
+      {
+        "id": "leg-0-middle",
+        "name": "膝至踝胫段",
+        "parent": "leg-0-upper",
+        "shape": "bone",
+        "rest": [
+          -14,
+          -70
+        ],
+        "dimensions": [
+          36,
+          22
+        ],
+        "layer": 6,
+        "tile": 3,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "middle",
+        "phase": 0,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-0-lower",
+        "name": "踝至趾根跖段",
+        "parent": "leg-0-middle",
+        "shape": "bone",
+        "rest": [
+          -14,
+          -70
+        ],
+        "dimensions": [
+          22,
+          15
+        ],
+        "layer": 6,
+        "tile": 4,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "lower",
+        "phase": 0,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-0-foot",
+        "name": "短趾垫与三趾爪",
+        "parent": "leg-0-lower",
+        "shape": "foot",
+        "rest": [
+          -14,
+          -5
+        ],
+        "dimensions": [
+          28,
+          16
+        ],
+        "layer": 6,
+        "tile": 10,
+        "material": "#e1a34c",
+        "leg": 0,
+        "side": "near",
+        "role": "foot",
+        "phase": 0,
+        "range": [
+          -20,
+          20
+        ]
+      },
+      {
+        "id": "leg-1-upper",
+        "name": "髋至膝股段",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -10,
+          -80
+        ],
+        "dimensions": [
+          32,
+          29
+        ],
+        "layer": 1,
+        "tile": 2,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "upper",
+        "phase": 0.5,
+        "range": [
+          -100,
+          100
+        ]
+      },
+      {
+        "id": "leg-1-middle",
+        "name": "膝至踝胫段",
+        "parent": "leg-1-upper",
+        "shape": "bone",
+        "rest": [
+          -10,
+          -70
+        ],
+        "dimensions": [
+          36,
+          22
+        ],
+        "layer": 1,
+        "tile": 3,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "middle",
+        "phase": 0.5,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-1-lower",
+        "name": "踝至趾根跖段",
+        "parent": "leg-1-middle",
+        "shape": "bone",
+        "rest": [
+          -10,
+          -70
+        ],
+        "dimensions": [
+          22,
+          15
+        ],
+        "layer": 1,
+        "tile": 4,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "lower",
+        "phase": 0.5,
+        "range": [
+          0,
+          150
+        ]
+      },
+      {
+        "id": "leg-1-foot",
+        "name": "短趾垫与三趾爪",
+        "parent": "leg-1-lower",
+        "shape": "foot",
+        "rest": [
+          -10,
+          -5
+        ],
+        "dimensions": [
+          28,
+          16
+        ],
+        "layer": 1,
+        "tile": 10,
+        "material": "#e1a34c",
+        "leg": 1,
+        "side": "far",
+        "role": "foot",
+        "phase": 0.5,
+        "range": [
+          -20,
+          20
+        ]
+      },
+      {
+        "id": "tail-0",
+        "name": "尾链 1",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          -34,
+          -95
+        ],
+        "dimensions": [
+          29,
+          36
+        ],
+        "layer": 2,
+        "tile": 6,
+        "material": "#e1a34c",
+        "role": "tail-chain",
+        "segment": 0,
+        "skinHeight": 36
+      },
+      {
+        "id": "tail-1",
+        "name": "尾链 2",
+        "parent": "tail-0",
+        "shape": "bone",
+        "rest": [
+          -34,
+          -95
+        ],
+        "dimensions": [
+          27,
+          26
+        ],
+        "layer": 2,
+        "tile": 6,
+        "material": "#e1a34c",
+        "role": "tail-chain",
+        "segment": 1,
+        "skinHeight": 26
+      },
+      {
+        "id": "tail-2",
+        "name": "尾链 3",
+        "parent": "tail-1",
+        "shape": "bone",
+        "rest": [
+          -34,
+          -95
+        ],
+        "dimensions": [
+          25,
+          19
+        ],
+        "layer": 2,
+        "tile": 6,
+        "material": "#e1a34c",
+        "role": "tail-chain",
+        "segment": 2,
+        "skinHeight": 19
+      },
+      {
+        "id": "tail-3",
+        "name": "尾链 4",
+        "parent": "tail-2",
+        "shape": "bone",
+        "rest": [
+          -34,
+          -95
+        ],
+        "dimensions": [
+          24,
+          12
+        ],
+        "layer": 2,
+        "tile": 6,
+        "material": "#e1a34c",
+        "role": "tail-chain",
+        "segment": 3,
+        "skinHeight": 12
+      },
+      {
+        "id": "tail-4",
+        "name": "尾链 5",
+        "parent": "tail-3",
+        "shape": "bone",
+        "rest": [
+          -34,
+          -95
+        ],
+        "dimensions": [
+          30,
+          7
+        ],
+        "layer": 2,
+        "tile": 13,
+        "material": "#e1a34c",
+        "role": "tail-chain",
+        "segment": 4,
+        "skinHeight": 7
+      },
+      {
+        "id": "arm-0-upper",
+        "name": "短前肢 · 上臂",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          21,
+          -96
+        ],
+        "dimensions": [
+          14,
+          8
+        ],
+        "layer": 6,
+        "tile": 7,
+        "material": "#e1a34c",
+        "arm": 0,
+        "role": "arm-upper"
+      },
+      {
+        "id": "arm-0-lower",
+        "name": "短前肢 · 前臂",
+        "parent": "arm-0-upper",
+        "shape": "bone",
+        "rest": [
+          21,
+          -96
+        ],
+        "dimensions": [
+          13,
+          5
+        ],
+        "layer": 6,
+        "tile": 8,
+        "material": "#e1a34c",
+        "arm": 0,
+        "role": "arm-lower"
+      },
+      {
+        "id": "arm-0-hand",
+        "name": "指爪",
+        "parent": "arm-0-lower",
+        "shape": "bone",
+        "rest": [
+          21,
+          -96
+        ],
+        "dimensions": [
+          8,
+          5
+        ],
+        "layer": 6,
+        "tile": 9,
+        "material": "#e1a34c",
+        "arm": 0,
+        "role": "hand"
+      },
+      {
+        "id": "arm-1-upper",
+        "name": "短前肢 · 上臂",
+        "parent": "body",
+        "shape": "bone",
+        "rest": [
+          21,
+          -96
+        ],
+        "dimensions": [
+          14,
+          8
+        ],
+        "layer": 1,
+        "tile": 7,
+        "material": "#e1a34c",
+        "arm": 1,
+        "role": "arm-upper"
+      },
+      {
+        "id": "arm-1-lower",
+        "name": "短前肢 · 前臂",
+        "parent": "arm-1-upper",
+        "shape": "bone",
+        "rest": [
+          21,
+          -96
+        ],
+        "dimensions": [
+          13,
+          5
+        ],
+        "layer": 1,
+        "tile": 8,
+        "material": "#e1a34c",
+        "arm": 1,
+        "role": "arm-lower"
+      },
+      {
+        "id": "arm-1-hand",
+        "name": "指爪",
+        "parent": "arm-1-lower",
+        "shape": "bone",
+        "rest": [
+          21,
+          -96
+        ],
+        "dimensions": [
+          8,
+          5
+        ],
+        "layer": 1,
+        "tile": 9,
+        "material": "#e1a34c",
+        "arm": 1,
+        "role": "hand"
+      },
+      {
+        "id": "jaw",
+        "name": "下颌",
+        "parent": "head",
+        "shape": "bone",
+        "rest": [
+          45,
+          -132
+        ],
+        "dimensions": [
+          39,
+          10
+        ],
+        "layer": 5,
+        "tile": 12,
+        "material": "#e1a34c",
+        "role": "jaw"
+      }
+    ],
+    "clips": [
+      "idle",
+      "walk",
+      "run",
+      "jump",
+      "roar",
+      "bite",
+      "tail",
+      "extend"
+    ],
+    "status": "draft",
+    "qa": {
+      "technical": "untested",
+      "visual": "pending"
+    },
+    "source": {
+      "kind": "generated-theropod-anatomical-atlas",
+      "description": "独立股段、胫段、踝下跖段与短三趾脚片，完整连续头颈和长尾"
+    },
+    "rendering": {
+      "rig": "animal-side-v2",
+      "atlas": "/art/dinosaur-side-parts-v6.png",
+      "view": "side",
+      "projection": "orthographic",
+      "facing": "right",
+      "frame": {
+        "anchor": [
+          256,
+          350
+        ],
+        "scale": 1.25
+      },
+      "tailMesh": {
+        "tile": 6,
+        "width": 34,
+        "sourceRange": [
+          0.92,
+          0.008
+        ]
+      },
+      "continuousNeck": true,
+      "neckUnderBody": true,
+      "dinosaurLegSegments": 3
+    },
+    "actionDesign": {
+      "title": "恐龙 · 侧面多动作",
+      "assembly": "圆弧端部围绕内部轴点自然重叠。远侧肢体 → 身体 → 近侧肢体；动作保留稳定零件身份。",
+      "actions": [
+        {
+          "id": "idle",
+          "name": "呼吸待机",
+          "duration": 2,
+          "loop": true,
+          "keyPoses": [
+            "站立",
+            "轻微呼吸",
+            "回位"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "walk",
+          "name": "行走",
+          "duration": 1,
+          "loop": true,
+          "keyPoses": [
+            "落脚支撑",
+            "抬脚回摆",
+            "交换支撑"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "run",
+          "name": "快跑",
+          "duration": 0.65,
+          "loop": true,
+          "keyPoses": [
+            "蹬地",
+            "快速回摆",
+            "交替落脚"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "逐脚支撑锁地，抬脚期间向前回摆",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "jump",
+          "name": "跳跃",
+          "duration": 1.2,
+          "loop": false,
+          "keyPoses": [
+            "屈腿蓄力",
+            "起跳",
+            "腾空收腿",
+            "落地缓冲"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "蓄力 → 腾空 → 落地缓冲",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "roar",
+          "name": "仰头咆哮",
+          "duration": 1.6,
+          "loop": false,
+          "keyPoses": [
+            "蓄力",
+            "仰头",
+            "张嘴咆哮",
+            "闭嘴回位"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "bite",
+          "name": "咬击",
+          "duration": 0.85,
+          "loop": false,
+          "keyPoses": [
+            "观察",
+            "张嘴",
+            "快速咬合",
+            "收回"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "tail",
+          "name": "摆尾",
+          "duration": 1.2,
+          "loop": true,
+          "keyPoses": [
+            "尾根驱动",
+            "波动传至尾尖",
+            "反向回摆"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        },
+        {
+          "id": "extend",
+          "name": "单配件屈伸",
+          "duration": 1,
+          "loop": true,
+          "keyPoses": [
+            "中性",
+            "屈曲",
+            "伸展",
+            "回位"
+          ],
+          "participants": [
+            "body",
+            "neck",
+            "head",
+            "leg-0-upper",
+            "leg-0-middle",
+            "leg-0-lower",
+            "leg-0-foot",
+            "leg-1-upper",
+            "leg-1-middle",
+            "leg-1-lower",
+            "leg-1-foot",
+            "tail-0",
+            "tail-1",
+            "tail-2",
+            "tail-3",
+            "tail-4",
+            "arm-0-upper",
+            "arm-0-lower",
+            "arm-0-hand",
+            "arm-1-upper",
+            "arm-1-lower",
+            "arm-1-hand",
+            "jaw"
+          ],
+          "timing": "按独立动作时长播放；关节缓入缓出；完整动作与单件测试分开",
+          "ranges": "骨段保持固定长度；按当前物种比例绑定",
+          "contact": "静止双足支撑，单件测试可悬空",
+          "acceptance": [
+            "骨长固定",
+            "连接连续",
+            "支撑稳定",
+            "轮廓完整",
+            "动作与视角一致"
+          ]
+        }
+      ],
+      "visualReview": [
+        "正常速度与0.25倍速",
+        "深浅背景检查关节裂缝",
+        "检查眼睛、脚爪、尾羽朝向",
+        "固定画布逐帧检视"
+      ],
+      "limitations": [
+        "二维关节动画；不代表物种级生物或地面摩擦仿真。",
+        "侧面资产，俯拍和背面需要独立素材。"
+      ]
+    }
+  },
+  "skin": {
+    "width": 1448,
+    "height": 1086,
+    "transparent": true,
+    "tiles": [
+      {
+        "rect": [
+          27,
+          20,
+          465,
+          287
+        ],
+        "clip": [
+          [
+            27,
+            150
+          ],
+          [
+            28,
+            145
+          ],
+          [
+            29,
+            141
+          ],
+          [
+            31,
+            135
+          ],
+          [
+            35,
+            127
+          ],
+          [
+            45,
+            114
+          ],
+          [
+            49,
+            109
+          ],
+          [
+            54,
+            104
+          ],
+          [
+            62,
+            97
+          ],
+          [
+            65,
+            95
+          ],
+          [
+            78,
+            88
+          ],
+          [
+            86,
+            84
+          ],
+          [
+            93,
+            81
+          ],
+          [
+            193,
+            46
+          ],
+          [
+            241,
+            31
+          ],
+          [
+            251,
+            28
+          ],
+          [
+            258,
+            26
+          ],
+          [
+            262,
+            25
+          ],
+          [
+            271,
+            23
+          ],
+          [
+            277,
+            22
+          ],
+          [
+            287,
+            21
+          ],
+          [
+            304,
+            20
+          ],
+          [
+            324,
+            20
+          ],
+          [
+            342,
+            21
+          ],
+          [
+            354,
+            22
+          ],
+          [
+            364,
+            23
+          ],
+          [
+            382,
+            26
+          ],
+          [
+            415,
+            32
+          ],
+          [
+            420,
+            33
+          ],
+          [
+            431,
+            36
+          ],
+          [
+            440,
+            39
+          ],
+          [
+            448,
+            42
+          ],
+          [
+            453,
+            44
+          ],
+          [
+            461,
+            48
+          ],
+          [
+            464,
+            50
+          ],
+          [
+            472,
+            58
+          ],
+          [
+            475,
+            62
+          ],
+          [
+            477,
+            65
+          ],
+          [
+            483,
+            77
+          ],
+          [
+            485,
+            82
+          ],
+          [
+            486,
+            86
+          ],
+          [
+            488,
+            95
+          ],
+          [
+            489,
+            100
+          ],
+          [
+            491,
+            116
+          ],
+          [
+            491,
+            146
+          ],
+          [
+            490,
+            198
+          ],
+          [
+            488,
+            206
+          ],
+          [
+            484,
+            214
+          ],
+          [
+            478,
+            220
+          ],
+          [
+            474,
+            223
+          ],
+          [
+            471,
+            225
+          ],
+          [
+            370,
+            285
+          ],
+          [
+            350,
+            295
+          ],
+          [
+            342,
+            298
+          ],
+          [
+            333,
+            301
+          ],
+          [
+            326,
+            303
+          ],
+          [
+            318,
+            305
+          ],
+          [
+            310,
+            306
+          ],
+          [
+            276,
+            306
+          ],
+          [
+            267,
+            305
+          ],
+          [
+            261,
+            304
+          ],
+          [
+            251,
+            302
+          ],
+          [
+            247,
+            301
+          ],
+          [
+            238,
+            298
+          ],
+          [
+            224,
+            293
+          ],
+          [
+            205,
+            285
+          ],
+          [
+            178,
+            273
+          ],
+          [
+            146,
+            257
+          ],
+          [
+            124,
+            245
+          ],
+          [
+            93,
+            228
+          ],
+          [
+            77,
+            219
+          ],
+          [
+            63,
+            211
+          ],
+          [
+            55,
+            206
+          ],
+          [
+            52,
+            204
+          ],
+          [
+            48,
+            201
+          ],
+          [
+            42,
+            196
+          ],
+          [
+            38,
+            192
+          ],
+          [
+            36,
+            189
+          ],
+          [
+            31,
+            181
+          ],
+          [
+            30,
+            179
+          ],
+          [
+            29,
+            176
+          ],
+          [
+            28,
+            172
+          ],
+          [
+            27,
+            166
+          ]
+        ],
+        "pivot": [
+          0.08,
+          0.5
+        ],
+        "distal": [
+          0.92,
+          0.5
+        ],
+        "alphaArea": 91112,
+        "ownership": "纯躯干，移除原贴图内附着的大腿"
+      },
+      {
+        "rect": [
+          434,
+          22,
+          519,
+          296
+        ],
+        "clip": [
+          [
+            434,
+            260
+          ],
+          [
+            435,
+            257
+          ],
+          [
+            438,
+            251
+          ],
+          [
+            440,
+            248
+          ],
+          [
+            561,
+            84
+          ],
+          [
+            567,
+            77
+          ],
+          [
+            577,
+            67
+          ],
+          [
+            587,
+            59
+          ],
+          [
+            594,
+            54
+          ],
+          [
+            597,
+            52
+          ],
+          [
+            605,
+            47
+          ],
+          [
+            611,
+            44
+          ],
+          [
+            632,
+            35
+          ],
+          [
+            641,
+            32
+          ],
+          [
+            649,
+            30
+          ],
+          [
+            654,
+            29
+          ],
+          [
+            660,
+            28
+          ],
+          [
+            669,
+            27
+          ],
+          [
+            742,
+            22
+          ],
+          [
+            750,
+            22
+          ],
+          [
+            755,
+            23
+          ],
+          [
+            758,
+            24
+          ],
+          [
+            877,
+            69
+          ],
+          [
+            910,
+            85
+          ],
+          [
+            914,
+            87
+          ],
+          [
+            929,
+            96
+          ],
+          [
+            932,
+            98
+          ],
+          [
+            933,
+            99
+          ],
+          [
+            940,
+            111
+          ],
+          [
+            942,
+            115
+          ],
+          [
+            947,
+            128
+          ],
+          [
+            948,
+            131
+          ],
+          [
+            952,
+            149
+          ],
+          [
+            952,
+            160
+          ],
+          [
+            951,
+            165
+          ],
+          [
+            948,
+            171
+          ],
+          [
+            942,
+            181
+          ],
+          [
+            938,
+            187
+          ],
+          [
+            935,
+            191
+          ],
+          [
+            929,
+            197
+          ],
+          [
+            927,
+            198
+          ],
+          [
+            911,
+            205
+          ],
+          [
+            661,
+            311
+          ],
+          [
+            655,
+            313
+          ],
+          [
+            647,
+            315
+          ],
+          [
+            641,
+            316
+          ],
+          [
+            629,
+            317
+          ],
+          [
+            521,
+            317
+          ],
+          [
+            507,
+            316
+          ],
+          [
+            497,
+            315
+          ],
+          [
+            489,
+            314
+          ],
+          [
+            484,
+            313
+          ],
+          [
+            472,
+            310
+          ],
+          [
+            469,
+            309
+          ],
+          [
+            464,
+            307
+          ],
+          [
+            456,
+            303
+          ],
+          [
+            450,
+            299
+          ],
+          [
+            444,
+            294
+          ],
+          [
+            441,
+            291
+          ],
+          [
+            438,
+            287
+          ],
+          [
+            435,
+            281
+          ],
+          [
+            434,
+            278
+          ]
+        ],
+        "pivot": [
+          0.08,
+          0.5
+        ],
+        "distal": [
+          0.92,
+          0.5
+        ],
+        "alphaArea": 81460,
+        "neckRoot": [
+          0.24,
+          0.95
+        ],
+        "neckMask": {
+          "start": 0.56,
+          "span": 0.35,
+          "maxU": 0.62,
+          "fade": 0.12
+        },
+        "ownership": "完整颅面与连续肌肉颈部；颈根柔性蒙皮埋入身体"
+      },
+      {
+        "rect": [
+          954,
+          11,
+          264,
+          312
+        ],
+        "clip": [
+          [
+            954,
+            67
+          ],
+          [
+            956,
+            59
+          ],
+          [
+            958,
+            53
+          ],
+          [
+            961,
+            47
+          ],
+          [
+            963,
+            44
+          ],
+          [
+            966,
+            40
+          ],
+          [
+            974,
+            32
+          ],
+          [
+            978,
+            29
+          ],
+          [
+            990,
+            23
+          ],
+          [
+            1004,
+            17
+          ],
+          [
+            1012,
+            15
+          ],
+          [
+            1021,
+            13
+          ],
+          [
+            1027,
+            12
+          ],
+          [
+            1036,
+            11
+          ],
+          [
+            1056,
+            11
+          ],
+          [
+            1065,
+            12
+          ],
+          [
+            1077,
+            14
+          ],
+          [
+            1082,
+            15
+          ],
+          [
+            1090,
+            17
+          ],
+          [
+            1093,
+            18
+          ],
+          [
+            1105,
+            23
+          ],
+          [
+            1111,
+            26
+          ],
+          [
+            1120,
+            31
+          ],
+          [
+            1126,
+            35
+          ],
+          [
+            1130,
+            38
+          ],
+          [
+            1139,
+            45
+          ],
+          [
+            1144,
+            49
+          ],
+          [
+            1146,
+            51
+          ],
+          [
+            1160,
+            66
+          ],
+          [
+            1169,
+            78
+          ],
+          [
+            1173,
+            84
+          ],
+          [
+            1206,
+            144
+          ],
+          [
+            1215,
+            162
+          ],
+          [
+            1217,
+            170
+          ],
+          [
+            1217,
+            196
+          ],
+          [
+            1216,
+            201
+          ],
+          [
+            1214,
+            209
+          ],
+          [
+            1209,
+            222
+          ],
+          [
+            1204,
+            232
+          ],
+          [
+            1200,
+            239
+          ],
+          [
+            1161,
+            306
+          ],
+          [
+            1156,
+            311
+          ],
+          [
+            1152,
+            314
+          ],
+          [
+            1140,
+            320
+          ],
+          [
+            1136,
+            321
+          ],
+          [
+            1125,
+            322
+          ],
+          [
+            1116,
+            322
+          ],
+          [
+            1111,
+            321
+          ],
+          [
+            1105,
+            319
+          ],
+          [
+            1099,
+            316
+          ],
+          [
+            1092,
+            309
+          ],
+          [
+            964,
+            116
+          ],
+          [
+            960,
+            108
+          ],
+          [
+            958,
+            103
+          ],
+          [
+            956,
+            97
+          ],
+          [
+            955,
+            93
+          ],
+          [
+            954,
+            88
+          ]
+        ],
+        "pivot": [
+          0.33,
+          0.22
+        ],
+        "distal": [
+          0.68,
+          0.87
+        ],
+        "alphaArea": 41305,
+        "visualWidth": 29
+      },
+      {
+        "rect": [
+          1267,
+          11,
+          166,
+          303
+        ],
+        "clip": [
+          [
+            1267,
+            57
+          ],
+          [
+            1268,
+            51
+          ],
+          [
+            1269,
+            48
+          ],
+          [
+            1271,
+            43
+          ],
+          [
+            1273,
+            39
+          ],
+          [
+            1277,
+            33
+          ],
+          [
+            1285,
+            25
+          ],
+          [
+            1289,
+            22
+          ],
+          [
+            1292,
+            20
+          ],
+          [
+            1302,
+            15
+          ],
+          [
+            1310,
+            13
+          ],
+          [
+            1320,
+            11
+          ],
+          [
+            1345,
+            11
+          ],
+          [
+            1352,
+            12
+          ],
+          [
+            1360,
+            14
+          ],
+          [
+            1366,
+            16
+          ],
+          [
+            1372,
+            19
+          ],
+          [
+            1377,
+            22
+          ],
+          [
+            1380,
+            24
+          ],
+          [
+            1390,
+            34
+          ],
+          [
+            1394,
+            40
+          ],
+          [
+            1398,
+            48
+          ],
+          [
+            1401,
+            57
+          ],
+          [
+            1402,
+            62
+          ],
+          [
+            1432,
+            270
+          ],
+          [
+            1432,
+            288
+          ],
+          [
+            1431,
+            292
+          ],
+          [
+            1428,
+            298
+          ],
+          [
+            1426,
+            301
+          ],
+          [
+            1421,
+            306
+          ],
+          [
+            1416,
+            309
+          ],
+          [
+            1414,
+            310
+          ],
+          [
+            1411,
+            311
+          ],
+          [
+            1407,
+            312
+          ],
+          [
+            1401,
+            313
+          ],
+          [
+            1390,
+            313
+          ],
+          [
+            1386,
+            312
+          ],
+          [
+            1383,
+            311
+          ],
+          [
+            1379,
+            309
+          ],
+          [
+            1375,
+            306
+          ],
+          [
+            1373,
+            304
+          ],
+          [
+            1328,
+            216
+          ],
+          [
+            1326,
+            212
+          ],
+          [
+            1271,
+            95
+          ],
+          [
+            1269,
+            90
+          ],
+          [
+            1268,
+            86
+          ],
+          [
+            1267,
+            80
+          ]
+        ],
+        "pivot": [
+          0.33,
+          0.19
+        ],
+        "distal": [
+          0.84,
+          0.9
+        ],
+        "alphaArea": 26437,
+        "visualWidth": 22
+      },
+      {
+        "rect": [
+          33,
+          322,
+          302,
+          269
+        ],
+        "clip": [
+          [
+            33,
+            356
+          ],
+          [
+            34,
+            353
+          ],
+          [
+            36,
+            349
+          ],
+          [
+            38,
+            346
+          ],
+          [
+            46,
+            338
+          ],
+          [
+            49,
+            336
+          ],
+          [
+            51,
+            335
+          ],
+          [
+            60,
+            331
+          ],
+          [
+            65,
+            329
+          ],
+          [
+            68,
+            328
+          ],
+          [
+            75,
+            326
+          ],
+          [
+            83,
+            324
+          ],
+          [
+            93,
+            322
+          ],
+          [
+            111,
+            322
+          ],
+          [
+            117,
+            324
+          ],
+          [
+            121,
+            326
+          ],
+          [
+            124,
+            328
+          ],
+          [
+            128,
+            331
+          ],
+          [
+            130,
+            333
+          ],
+          [
+            321,
+            527
+          ],
+          [
+            327,
+            536
+          ],
+          [
+            331,
+            544
+          ],
+          [
+            333,
+            549
+          ],
+          [
+            334,
+            553
+          ],
+          [
+            334,
+            564
+          ],
+          [
+            333,
+            569
+          ],
+          [
+            332,
+            572
+          ],
+          [
+            330,
+            575
+          ],
+          [
+            322,
+            583
+          ],
+          [
+            318,
+            585
+          ],
+          [
+            315,
+            586
+          ],
+          [
+            307,
+            588
+          ],
+          [
+            301,
+            589
+          ],
+          [
+            291,
+            590
+          ],
+          [
+            247,
+            590
+          ],
+          [
+            239,
+            589
+          ],
+          [
+            232,
+            588
+          ],
+          [
+            227,
+            587
+          ],
+          [
+            221,
+            585
+          ],
+          [
+            215,
+            582
+          ],
+          [
+            209,
+            578
+          ],
+          [
+            206,
+            575
+          ],
+          [
+            40,
+            387
+          ],
+          [
+            37,
+            383
+          ],
+          [
+            34,
+            377
+          ],
+          [
+            33,
+            374
+          ]
+        ],
+        "pivot": [
+          0.16,
+          0.15
+        ],
+        "distal": [
+          0.84,
+          0.86
+        ],
+        "alphaArea": 35056,
+        "ownership": "三趾长爪足，短实心踝根，非鞋或长筒袖口",
+        "visualWidth": 15
+      },
+      {
+        "rect": [
+          509,
+          324,
+          180,
+          270
+        ],
+        "clip": [
+          [
+            509,
+            539
+          ],
+          [
+            510,
+            533
+          ],
+          [
+            541,
+            361
+          ],
+          [
+            543,
+            355
+          ],
+          [
+            547,
+            347
+          ],
+          [
+            555,
+            339
+          ],
+          [
+            561,
+            335
+          ],
+          [
+            566,
+            332
+          ],
+          [
+            568,
+            331
+          ],
+          [
+            578,
+            327
+          ],
+          [
+            582,
+            326
+          ],
+          [
+            587,
+            325
+          ],
+          [
+            594,
+            324
+          ],
+          [
+            625,
+            324
+          ],
+          [
+            631,
+            325
+          ],
+          [
+            635,
+            326
+          ],
+          [
+            641,
+            328
+          ],
+          [
+            648,
+            331
+          ],
+          [
+            657,
+            336
+          ],
+          [
+            663,
+            340
+          ],
+          [
+            668,
+            345
+          ],
+          [
+            672,
+            350
+          ],
+          [
+            675,
+            356
+          ],
+          [
+            677,
+            362
+          ],
+          [
+            678,
+            366
+          ],
+          [
+            688,
+            444
+          ],
+          [
+            688,
+            473
+          ],
+          [
+            687,
+            481
+          ],
+          [
+            686,
+            486
+          ],
+          [
+            683,
+            498
+          ],
+          [
+            667,
+            557
+          ],
+          [
+            666,
+            560
+          ],
+          [
+            662,
+            568
+          ],
+          [
+            657,
+            574
+          ],
+          [
+            654,
+            577
+          ],
+          [
+            650,
+            580
+          ],
+          [
+            644,
+            584
+          ],
+          [
+            639,
+            586
+          ],
+          [
+            626,
+            590
+          ],
+          [
+            616,
+            592
+          ],
+          [
+            609,
+            593
+          ],
+          [
+            572,
+            593
+          ],
+          [
+            563,
+            592
+          ],
+          [
+            553,
+            590
+          ],
+          [
+            549,
+            589
+          ],
+          [
+            537,
+            585
+          ],
+          [
+            529,
+            581
+          ],
+          [
+            526,
+            579
+          ],
+          [
+            522,
+            576
+          ],
+          [
+            513,
+            567
+          ],
+          [
+            512,
+            565
+          ],
+          [
+            510,
+            560
+          ],
+          [
+            509,
+            556
+          ]
+        ],
+        "pivot": [
+          0.5,
+          0.83
+        ],
+        "distal": [
+          0.5,
+          0.17
+        ],
+        "alphaArea": 34415,
+        "visualWidth": 34
+      },
+      {
+        "rect": [
+          691,
+          381,
+          585,
+          187
+        ],
+        "clip": [
+          [
+            691,
+            502
+          ],
+          [
+            694,
+            499
+          ],
+          [
+            696,
+            498
+          ],
+          [
+            708,
+            494
+          ],
+          [
+            722,
+            490
+          ],
+          [
+            726,
+            489
+          ],
+          [
+            1079,
+            404
+          ],
+          [
+            1092,
+            401
+          ],
+          [
+            1127,
+            393
+          ],
+          [
+            1142,
+            390
+          ],
+          [
+            1158,
+            387
+          ],
+          [
+            1184,
+            383
+          ],
+          [
+            1199,
+            381
+          ],
+          [
+            1222,
+            381
+          ],
+          [
+            1227,
+            382
+          ],
+          [
+            1236,
+            385
+          ],
+          [
+            1242,
+            388
+          ],
+          [
+            1246,
+            391
+          ],
+          [
+            1254,
+            399
+          ],
+          [
+            1259,
+            406
+          ],
+          [
+            1267,
+            422
+          ],
+          [
+            1272,
+            437
+          ],
+          [
+            1273,
+            443
+          ],
+          [
+            1274,
+            450
+          ],
+          [
+            1275,
+            458
+          ],
+          [
+            1275,
+            490
+          ],
+          [
+            1274,
+            500
+          ],
+          [
+            1273,
+            506
+          ],
+          [
+            1272,
+            511
+          ],
+          [
+            1271,
+            515
+          ],
+          [
+            1268,
+            524
+          ],
+          [
+            1266,
+            529
+          ],
+          [
+            1263,
+            535
+          ],
+          [
+            1257,
+            545
+          ],
+          [
+            1254,
+            549
+          ],
+          [
+            1245,
+            558
+          ],
+          [
+            1241,
+            561
+          ],
+          [
+            1238,
+            563
+          ],
+          [
+            1233,
+            565
+          ],
+          [
+            1225,
+            567
+          ],
+          [
+            1196,
+            567
+          ],
+          [
+            716,
+            519
+          ],
+          [
+            708,
+            518
+          ],
+          [
+            703,
+            517
+          ],
+          [
+            699,
+            516
+          ],
+          [
+            693,
+            513
+          ],
+          [
+            691,
+            511
+          ]
+        ],
+        "pivot": [
+          0.91,
+          0.5
+        ],
+        "distal": [
+          0.02,
+          0.5
+        ],
+        "alphaArea": 45717
+      },
+      {
+        "rect": [
+          1315,
+          366,
+          87,
+          190
+        ],
+        "clip": [
+          [
+            1315,
+            508
+          ],
+          [
+            1316,
+            396
+          ],
+          [
+            1317,
+            392
+          ],
+          [
+            1320,
+            386
+          ],
+          [
+            1322,
+            383
+          ],
+          [
+            1325,
+            379
+          ],
+          [
+            1327,
+            377
+          ],
+          [
+            1332,
+            373
+          ],
+          [
+            1338,
+            370
+          ],
+          [
+            1343,
+            368
+          ],
+          [
+            1351,
+            366
+          ],
+          [
+            1369,
+            366
+          ],
+          [
+            1378,
+            369
+          ],
+          [
+            1382,
+            371
+          ],
+          [
+            1385,
+            373
+          ],
+          [
+            1389,
+            376
+          ],
+          [
+            1392,
+            379
+          ],
+          [
+            1394,
+            382
+          ],
+          [
+            1398,
+            390
+          ],
+          [
+            1399,
+            393
+          ],
+          [
+            1400,
+            398
+          ],
+          [
+            1401,
+            510
+          ],
+          [
+            1401,
+            524
+          ],
+          [
+            1400,
+            529
+          ],
+          [
+            1396,
+            537
+          ],
+          [
+            1394,
+            540
+          ],
+          [
+            1390,
+            544
+          ],
+          [
+            1385,
+            548
+          ],
+          [
+            1382,
+            550
+          ],
+          [
+            1380,
+            551
+          ],
+          [
+            1375,
+            553
+          ],
+          [
+            1367,
+            555
+          ],
+          [
+            1349,
+            555
+          ],
+          [
+            1343,
+            554
+          ],
+          [
+            1339,
+            553
+          ],
+          [
+            1335,
+            551
+          ],
+          [
+            1332,
+            549
+          ],
+          [
+            1320,
+            537
+          ],
+          [
+            1318,
+            534
+          ],
+          [
+            1317,
+            532
+          ],
+          [
+            1316,
+            529
+          ],
+          [
+            1315,
+            525
+          ]
+        ],
+        "pivot": [
+          0.5,
+          0.18
+        ],
+        "distal": [
+          0.5,
+          0.84
+        ],
+        "alphaArea": 10994,
+        "visualWidth": 8
+      },
+      {
+        "rect": [
+          148,
+          628,
+          88,
+          189
+        ],
+        "clip": [
+          [
+            148,
+            662
+          ],
+          [
+            149,
+            658
+          ],
+          [
+            150,
+            655
+          ],
+          [
+            152,
+            650
+          ],
+          [
+            156,
+            644
+          ],
+          [
+            160,
+            639
+          ],
+          [
+            162,
+            637
+          ],
+          [
+            168,
+            633
+          ],
+          [
+            172,
+            631
+          ],
+          [
+            177,
+            629
+          ],
+          [
+            182,
+            628
+          ],
+          [
+            198,
+            628
+          ],
+          [
+            203,
+            629
+          ],
+          [
+            207,
+            630
+          ],
+          [
+            210,
+            631
+          ],
+          [
+            214,
+            633
+          ],
+          [
+            219,
+            636
+          ],
+          [
+            222,
+            638
+          ],
+          [
+            225,
+            641
+          ],
+          [
+            228,
+            645
+          ],
+          [
+            231,
+            651
+          ],
+          [
+            233,
+            656
+          ],
+          [
+            234,
+            660
+          ],
+          [
+            235,
+            665
+          ],
+          [
+            235,
+            678
+          ],
+          [
+            232,
+            786
+          ],
+          [
+            231,
+            791
+          ],
+          [
+            226,
+            801
+          ],
+          [
+            218,
+            809
+          ],
+          [
+            213,
+            812
+          ],
+          [
+            209,
+            814
+          ],
+          [
+            206,
+            815
+          ],
+          [
+            201,
+            816
+          ],
+          [
+            179,
+            816
+          ],
+          [
+            175,
+            815
+          ],
+          [
+            170,
+            813
+          ],
+          [
+            166,
+            811
+          ],
+          [
+            163,
+            809
+          ],
+          [
+            158,
+            804
+          ],
+          [
+            152,
+            795
+          ],
+          [
+            150,
+            789
+          ],
+          [
+            148,
+            681
+          ]
+        ],
+        "pivot": [
+          0.5,
+          0.18
+        ],
+        "distal": [
+          0.5,
+          0.84
+        ],
+        "alphaArea": 10882,
+        "visualWidth": 6
+      },
+      {
+        "rect": [
+          532,
+          611,
+          116,
+          210
+        ],
+        "clip": [
+          [
+            532,
+            714
+          ],
+          [
+            544,
+            636
+          ],
+          [
+            545,
+            632
+          ],
+          [
+            546,
+            629
+          ],
+          [
+            549,
+            623
+          ],
+          [
+            556,
+            616
+          ],
+          [
+            564,
+            612
+          ],
+          [
+            569,
+            611
+          ],
+          [
+            587,
+            611
+          ],
+          [
+            592,
+            612
+          ],
+          [
+            596,
+            613
+          ],
+          [
+            600,
+            615
+          ],
+          [
+            606,
+            619
+          ],
+          [
+            614,
+            627
+          ],
+          [
+            617,
+            631
+          ],
+          [
+            619,
+            635
+          ],
+          [
+            645,
+            723
+          ],
+          [
+            647,
+            731
+          ],
+          [
+            647,
+            748
+          ],
+          [
+            645,
+            766
+          ],
+          [
+            644,
+            771
+          ],
+          [
+            642,
+            778
+          ],
+          [
+            636,
+            790
+          ],
+          [
+            632,
+            796
+          ],
+          [
+            628,
+            801
+          ],
+          [
+            622,
+            807
+          ],
+          [
+            618,
+            810
+          ],
+          [
+            609,
+            816
+          ],
+          [
+            605,
+            818
+          ],
+          [
+            542,
+            820
+          ],
+          [
+            534,
+            820
+          ],
+          [
+            532,
+            818
+          ]
+        ],
+        "pivot": [
+          0.5,
+          0.18
+        ],
+        "distal": [
+          0.5,
+          0.83
+        ],
+        "alphaArea": 14074,
+        "visualWidth": 7
+      },
+      {
+        "rect": [
+          770,
+          638,
+          341,
+          194
+        ],
+        "clip": [
+          [
+            770,
+            761
+          ],
+          [
+            774,
+            658
+          ],
+          [
+            775,
+            655
+          ],
+          [
+            776,
+            653
+          ],
+          [
+            781,
+            648
+          ],
+          [
+            787,
+            645
+          ],
+          [
+            790,
+            644
+          ],
+          [
+            798,
+            642
+          ],
+          [
+            803,
+            641
+          ],
+          [
+            809,
+            640
+          ],
+          [
+            816,
+            639
+          ],
+          [
+            827,
+            638
+          ],
+          [
+            840,
+            638
+          ],
+          [
+            847,
+            639
+          ],
+          [
+            850,
+            640
+          ],
+          [
+            1069,
+            721
+          ],
+          [
+            1074,
+            723
+          ],
+          [
+            1080,
+            726
+          ],
+          [
+            1085,
+            729
+          ],
+          [
+            1088,
+            731
+          ],
+          [
+            1092,
+            734
+          ],
+          [
+            1096,
+            738
+          ],
+          [
+            1103,
+            746
+          ],
+          [
+            1106,
+            751
+          ],
+          [
+            1107,
+            753
+          ],
+          [
+            1109,
+            758
+          ],
+          [
+            1110,
+            761
+          ],
+          [
+            1110,
+            772
+          ],
+          [
+            1108,
+            829
+          ],
+          [
+            1106,
+            831
+          ],
+          [
+            1100,
+            831
+          ],
+          [
+            1074,
+            830
+          ],
+          [
+            807,
+            805
+          ],
+          [
+            799,
+            804
+          ],
+          [
+            791,
+            802
+          ],
+          [
+            785,
+            799
+          ],
+          [
+            781,
+            796
+          ],
+          [
+            777,
+            792
+          ],
+          [
+            774,
+            788
+          ],
+          [
+            773,
+            786
+          ],
+          [
+            771,
+            780
+          ],
+          [
+            770,
+            774
+          ]
+        ],
+        "pivot": [
+          0.14,
+          0.22
+        ],
+        "distal": [
+          0.93,
+          0.7
+        ],
+        "alphaArea": 23508,
+        "attachment": "short-toe-pad-only"
+      },
+      {
+        "rect": [
+          1162,
+          596,
+          275,
+          247
+        ],
+        "clip": [
+          [
+            1162,
+            646
+          ],
+          [
+            1163,
+            642
+          ],
+          [
+            1165,
+            636
+          ],
+          [
+            1168,
+            630
+          ],
+          [
+            1172,
+            624
+          ],
+          [
+            1181,
+            615
+          ],
+          [
+            1196,
+            605
+          ],
+          [
+            1201,
+            602
+          ],
+          [
+            1209,
+            598
+          ],
+          [
+            1212,
+            597
+          ],
+          [
+            1217,
+            596
+          ],
+          [
+            1239,
+            596
+          ],
+          [
+            1243,
+            597
+          ],
+          [
+            1246,
+            598
+          ],
+          [
+            1252,
+            601
+          ],
+          [
+            1255,
+            603
+          ],
+          [
+            1410,
+            724
+          ],
+          [
+            1418,
+            732
+          ],
+          [
+            1426,
+            743
+          ],
+          [
+            1428,
+            746
+          ],
+          [
+            1433,
+            756
+          ],
+          [
+            1435,
+            762
+          ],
+          [
+            1436,
+            766
+          ],
+          [
+            1436,
+            782
+          ],
+          [
+            1405,
+            829
+          ],
+          [
+            1403,
+            830
+          ],
+          [
+            1275,
+            842
+          ],
+          [
+            1269,
+            842
+          ],
+          [
+            1267,
+            841
+          ],
+          [
+            1207,
+            789
+          ],
+          [
+            1202,
+            784
+          ],
+          [
+            1198,
+            779
+          ],
+          [
+            1193,
+            772
+          ],
+          [
+            1189,
+            764
+          ],
+          [
+            1187,
+            758
+          ],
+          [
+            1163,
+            666
+          ],
+          [
+            1162,
+            662
+          ]
+        ],
+        "pivot": [
+          0.08,
+          0.5
+        ],
+        "distal": [
+          0.92,
+          0.5
+        ],
+        "alphaArea": 34369
+      },
+      {
+        "rect": [
+          42,
+          867,
+          392,
+          202
+        ],
+        "clip": [
+          [
+            42,
+            910
+          ],
+          [
+            43,
+            904
+          ],
+          [
+            44,
+            899
+          ],
+          [
+            45,
+            895
+          ],
+          [
+            46,
+            892
+          ],
+          [
+            47,
+            890
+          ],
+          [
+            51,
+            884
+          ],
+          [
+            58,
+            877
+          ],
+          [
+            63,
+            873
+          ],
+          [
+            67,
+            871
+          ],
+          [
+            76,
+            868
+          ],
+          [
+            81,
+            867
+          ],
+          [
+            95,
+            867
+          ],
+          [
+            396,
+            926
+          ],
+          [
+            399,
+            927
+          ],
+          [
+            411,
+            932
+          ],
+          [
+            413,
+            933
+          ],
+          [
+            418,
+            937
+          ],
+          [
+            419,
+            938
+          ],
+          [
+            422,
+            942
+          ],
+          [
+            425,
+            947
+          ],
+          [
+            428,
+            953
+          ],
+          [
+            431,
+            961
+          ],
+          [
+            433,
+            969
+          ],
+          [
+            433,
+            986
+          ],
+          [
+            432,
+            991
+          ],
+          [
+            431,
+            995
+          ],
+          [
+            429,
+            1001
+          ],
+          [
+            421,
+            1017
+          ],
+          [
+            419,
+            1020
+          ],
+          [
+            416,
+            1024
+          ],
+          [
+            409,
+            1032
+          ],
+          [
+            402,
+            1039
+          ],
+          [
+            392,
+            1047
+          ],
+          [
+            386,
+            1051
+          ],
+          [
+            379,
+            1055
+          ],
+          [
+            375,
+            1057
+          ],
+          [
+            366,
+            1061
+          ],
+          [
+            361,
+            1063
+          ],
+          [
+            352,
+            1066
+          ],
+          [
+            347,
+            1067
+          ],
+          [
+            340,
+            1068
+          ],
+          [
+            261,
+            1068
+          ],
+          [
+            230,
+            1067
+          ],
+          [
+            198,
+            1065
+          ],
+          [
+            167,
+            1063
+          ],
+          [
+            155,
+            1061
+          ],
+          [
+            147,
+            1059
+          ],
+          [
+            133,
+            1055
+          ],
+          [
+            130,
+            1054
+          ],
+          [
+            118,
+            1048
+          ],
+          [
+            113,
+            1045
+          ],
+          [
+            109,
+            1042
+          ],
+          [
+            104,
+            1038
+          ],
+          [
+            95,
+            1029
+          ],
+          [
+            92,
+            1025
+          ],
+          [
+            88,
+            1019
+          ],
+          [
+            48,
+            943
+          ],
+          [
+            45,
+            937
+          ],
+          [
+            43,
+            929
+          ],
+          [
+            42,
+            921
+          ]
+        ],
+        "pivot": [
+          0.13,
+          0.32
+        ],
+        "distal": [
+          0.85,
+          0.6
+        ],
+        "alphaArea": 40691
+      },
+      {
+        "rect": [
+          445,
+          907,
+          429,
+          143
+        ],
+        "clip": [
+          [
+            445,
+            983
+          ],
+          [
+            446,
+            981
+          ],
+          [
+            450,
+            977
+          ],
+          [
+            456,
+            974
+          ],
+          [
+            464,
+            971
+          ],
+          [
+            468,
+            970
+          ],
+          [
+            500,
+            963
+          ],
+          [
+            514,
+            960
+          ],
+          [
+            529,
+            957
+          ],
+          [
+            777,
+            909
+          ],
+          [
+            785,
+            908
+          ],
+          [
+            796,
+            907
+          ],
+          [
+            828,
+            907
+          ],
+          [
+            836,
+            909
+          ],
+          [
+            841,
+            911
+          ],
+          [
+            849,
+            915
+          ],
+          [
+            860,
+            926
+          ],
+          [
+            862,
+            929
+          ],
+          [
+            868,
+            941
+          ],
+          [
+            871,
+            950
+          ],
+          [
+            872,
+            955
+          ],
+          [
+            873,
+            961
+          ],
+          [
+            873,
+            996
+          ],
+          [
+            872,
+            1001
+          ],
+          [
+            870,
+            1009
+          ],
+          [
+            867,
+            1017
+          ],
+          [
+            863,
+            1025
+          ],
+          [
+            859,
+            1031
+          ],
+          [
+            855,
+            1036
+          ],
+          [
+            851,
+            1040
+          ],
+          [
+            848,
+            1042
+          ],
+          [
+            840,
+            1046
+          ],
+          [
+            837,
+            1047
+          ],
+          [
+            833,
+            1048
+          ],
+          [
+            826,
+            1049
+          ],
+          [
+            808,
+            1049
+          ],
+          [
+            798,
+            1048
+          ],
+          [
+            790,
+            1047
+          ],
+          [
+            491,
+            1005
+          ],
+          [
+            470,
+            1002
+          ],
+          [
+            465,
+            1001
+          ],
+          [
+            457,
+            999
+          ],
+          [
+            451,
+            996
+          ],
+          [
+            447,
+            993
+          ],
+          [
+            446,
+            992
+          ],
+          [
+            445,
+            990
+          ]
+        ],
+        "pivot": [
+          0.86,
+          0.5
+        ],
+        "distal": [
+          0.08,
+          0.5
+        ],
+        "alphaArea": 32146
+      },
+      {
+        "rect": [
+          907,
+          873,
+          258,
+          207
+        ],
+        "clip": [
+          [
+            907,
+            972
+          ],
+          [
+            909,
+            962
+          ],
+          [
+            910,
+            958
+          ],
+          [
+            912,
+            952
+          ],
+          [
+            914,
+            947
+          ],
+          [
+            918,
+            939
+          ],
+          [
+            923,
+            931
+          ],
+          [
+            929,
+            923
+          ],
+          [
+            934,
+            917
+          ],
+          [
+            947,
+            904
+          ],
+          [
+            954,
+            898
+          ],
+          [
+            965,
+            890
+          ],
+          [
+            981,
+            882
+          ],
+          [
+            993,
+            878
+          ],
+          [
+            997,
+            877
+          ],
+          [
+            1006,
+            875
+          ],
+          [
+            1011,
+            874
+          ],
+          [
+            1018,
+            873
+          ],
+          [
+            1053,
+            873
+          ],
+          [
+            1061,
+            874
+          ],
+          [
+            1073,
+            877
+          ],
+          [
+            1079,
+            879
+          ],
+          [
+            1089,
+            883
+          ],
+          [
+            1107,
+            892
+          ],
+          [
+            1110,
+            894
+          ],
+          [
+            1125,
+            905
+          ],
+          [
+            1143,
+            923
+          ],
+          [
+            1145,
+            926
+          ],
+          [
+            1154,
+            940
+          ],
+          [
+            1156,
+            944
+          ],
+          [
+            1160,
+            954
+          ],
+          [
+            1162,
+            962
+          ],
+          [
+            1163,
+            967
+          ],
+          [
+            1164,
+            977
+          ],
+          [
+            1164,
+            992
+          ],
+          [
+            1163,
+            1001
+          ],
+          [
+            1161,
+            1009
+          ],
+          [
+            1159,
+            1015
+          ],
+          [
+            1157,
+            1020
+          ],
+          [
+            1154,
+            1025
+          ],
+          [
+            1152,
+            1028
+          ],
+          [
+            1146,
+            1036
+          ],
+          [
+            1135,
+            1047
+          ],
+          [
+            1127,
+            1054
+          ],
+          [
+            1124,
+            1056
+          ],
+          [
+            1114,
+            1062
+          ],
+          [
+            1104,
+            1067
+          ],
+          [
+            1093,
+            1071
+          ],
+          [
+            1090,
+            1072
+          ],
+          [
+            1079,
+            1075
+          ],
+          [
+            1075,
+            1076
+          ],
+          [
+            1065,
+            1078
+          ],
+          [
+            1058,
+            1079
+          ],
+          [
+            1020,
+            1079
+          ],
+          [
+            1013,
+            1078
+          ],
+          [
+            999,
+            1075
+          ],
+          [
+            995,
+            1074
+          ],
+          [
+            981,
+            1070
+          ],
+          [
+            969,
+            1065
+          ],
+          [
+            965,
+            1063
+          ],
+          [
+            951,
+            1055
+          ],
+          [
+            937,
+            1044
+          ],
+          [
+            924,
+            1031
+          ],
+          [
+            916,
+            1021
+          ],
+          [
+            912,
+            1013
+          ],
+          [
+            910,
+            1007
+          ],
+          [
+            908,
+            1000
+          ],
+          [
+            907,
+            993
+          ]
+        ],
+        "pivot": [
+          0.08,
+          0.5
+        ],
+        "distal": [
+          0.92,
+          0.5
+        ],
+        "alphaArea": 41240
+      },
+      {
+        "rect": [
+          1220,
+          873,
+          204,
+          203
+        ],
+        "clip": [
+          [
+            1220,
+            963
+          ],
+          [
+            1221,
+            957
+          ],
+          [
+            1225,
+            943
+          ],
+          [
+            1227,
+            937
+          ],
+          [
+            1231,
+            928
+          ],
+          [
+            1234,
+            922
+          ],
+          [
+            1241,
+            911
+          ],
+          [
+            1245,
+            906
+          ],
+          [
+            1255,
+            896
+          ],
+          [
+            1263,
+            890
+          ],
+          [
+            1266,
+            888
+          ],
+          [
+            1282,
+            880
+          ],
+          [
+            1287,
+            878
+          ],
+          [
+            1290,
+            877
+          ],
+          [
+            1297,
+            875
+          ],
+          [
+            1302,
+            874
+          ],
+          [
+            1309,
+            873
+          ],
+          [
+            1338,
+            873
+          ],
+          [
+            1345,
+            874
+          ],
+          [
+            1353,
+            876
+          ],
+          [
+            1365,
+            880
+          ],
+          [
+            1371,
+            883
+          ],
+          [
+            1378,
+            887
+          ],
+          [
+            1384,
+            891
+          ],
+          [
+            1391,
+            897
+          ],
+          [
+            1402,
+            908
+          ],
+          [
+            1408,
+            917
+          ],
+          [
+            1411,
+            922
+          ],
+          [
+            1414,
+            928
+          ],
+          [
+            1417,
+            936
+          ],
+          [
+            1419,
+            942
+          ],
+          [
+            1422,
+            954
+          ],
+          [
+            1423,
+            960
+          ],
+          [
+            1423,
+            989
+          ],
+          [
+            1422,
+            995
+          ],
+          [
+            1421,
+            1000
+          ],
+          [
+            1419,
+            1007
+          ],
+          [
+            1417,
+            1013
+          ],
+          [
+            1410,
+            1027
+          ],
+          [
+            1404,
+            1036
+          ],
+          [
+            1401,
+            1040
+          ],
+          [
+            1385,
+            1056
+          ],
+          [
+            1382,
+            1058
+          ],
+          [
+            1372,
+            1064
+          ],
+          [
+            1366,
+            1067
+          ],
+          [
+            1361,
+            1069
+          ],
+          [
+            1351,
+            1072
+          ],
+          [
+            1346,
+            1073
+          ],
+          [
+            1340,
+            1074
+          ],
+          [
+            1332,
+            1075
+          ],
+          [
+            1311,
+            1075
+          ],
+          [
+            1302,
+            1074
+          ],
+          [
+            1292,
+            1072
+          ],
+          [
+            1288,
+            1071
+          ],
+          [
+            1285,
+            1070
+          ],
+          [
+            1278,
+            1067
+          ],
+          [
+            1270,
+            1063
+          ],
+          [
+            1262,
+            1058
+          ],
+          [
+            1256,
+            1054
+          ],
+          [
+            1242,
+            1040
+          ],
+          [
+            1239,
+            1036
+          ],
+          [
+            1235,
+            1030
+          ],
+          [
+            1232,
+            1025
+          ],
+          [
+            1226,
+            1013
+          ],
+          [
+            1224,
+            1008
+          ],
+          [
+            1223,
+            1005
+          ],
+          [
+            1222,
+            1001
+          ],
+          [
+            1220,
+            991
+          ]
+        ],
+        "pivot": [
+          0.08,
+          0.5
+        ],
+        "distal": [
+          0.92,
+          0.5
+        ],
+        "alphaArea": 31699
+      }
+    ],
+    "qa": {
+      "sourceRegions": "measured-alpha",
+      "anatomy": "pending",
+      "pivots": "editable-estimates",
+      "visual": "pending"
+    },
+    "atlas": "/art/dinosaur-side-parts-v6.png",
+    "version": 7,
+    "origin": {
+      "tool": "image_gen.imagegen",
+      "sourceSha256": "0353b0fd7195daadeb9378fd09f6c274bc894261f6839fe4e7bc9d7440f07cfd",
+      "job": "examples/dinosaur-side-v6/source-generation-job.json",
+      "visual": "candidate-not-accepted"
+    }
+  },
+  "sourceSha256": "0353b0fd7195daadeb9378fd09f6c274bc894261f6839fe4e7bc9d7440f07cfd",
+  "actions": [
+    {
+      "clip": "idle",
+      "frames": [
+        {
+          "frame": 1,
+          "name": "idle-01.png",
+          "t": 0
+        },
+        {
+          "frame": 2,
+          "name": "idle-02.png",
+          "t": 0.0625
+        },
+        {
+          "frame": 3,
+          "name": "idle-03.png",
+          "t": 0.125
+        },
+        {
+          "frame": 4,
+          "name": "idle-04.png",
+          "t": 0.1875
+        },
+        {
+          "frame": 5,
+          "name": "idle-05.png",
+          "t": 0.25
+        },
+        {
+          "frame": 6,
+          "name": "idle-06.png",
+          "t": 0.3125
+        },
+        {
+          "frame": 7,
+          "name": "idle-07.png",
+          "t": 0.375
+        },
+        {
+          "frame": 8,
+          "name": "idle-08.png",
+          "t": 0.4375
+        },
+        {
+          "frame": 9,
+          "name": "idle-09.png",
+          "t": 0.5
+        },
+        {
+          "frame": 10,
+          "name": "idle-10.png",
+          "t": 0.5625
+        },
+        {
+          "frame": 11,
+          "name": "idle-11.png",
+          "t": 0.625
+        },
+        {
+          "frame": 12,
+          "name": "idle-12.png",
+          "t": 0.6875
+        },
+        {
+          "frame": 13,
+          "name": "idle-13.png",
+          "t": 0.75
+        },
+        {
+          "frame": 14,
+          "name": "idle-14.png",
+          "t": 0.8125
+        },
+        {
+          "frame": 15,
+          "name": "idle-15.png",
+          "t": 0.875
+        },
+        {
+          "frame": 16,
+          "name": "idle-16.png",
+          "t": 0.9375
+        }
+      ]
+    },
+    {
+      "clip": "walk",
+      "frames": [
+        {
+          "frame": 1,
+          "name": "walk-01.png",
+          "t": 0
+        },
+        {
+          "frame": 2,
+          "name": "walk-02.png",
+          "t": 0.0625
+        },
+        {
+          "frame": 3,
+          "name": "walk-03.png",
+          "t": 0.125
+        },
+        {
+          "frame": 4,
+          "name": "walk-04.png",
+          "t": 0.1875
+        },
+        {
+          "frame": 5,
+          "name": "walk-05.png",
+          "t": 0.25
+        },
+        {
+          "frame": 6,
+          "name": "walk-06.png",
+          "t": 0.3125
+        },
+        {
+          "frame": 7,
+          "name": "walk-07.png",
+          "t": 0.375
+        },
+        {
+          "frame": 8,
+          "name": "walk-08.png",
+          "t": 0.4375
+        },
+        {
+          "frame": 9,
+          "name": "walk-09.png",
+          "t": 0.5
+        },
+        {
+          "frame": 10,
+          "name": "walk-10.png",
+          "t": 0.5625
+        },
+        {
+          "frame": 11,
+          "name": "walk-11.png",
+          "t": 0.625
+        },
+        {
+          "frame": 12,
+          "name": "walk-12.png",
+          "t": 0.6875
+        },
+        {
+          "frame": 13,
+          "name": "walk-13.png",
+          "t": 0.75
+        },
+        {
+          "frame": 14,
+          "name": "walk-14.png",
+          "t": 0.8125
+        },
+        {
+          "frame": 15,
+          "name": "walk-15.png",
+          "t": 0.875
+        },
+        {
+          "frame": 16,
+          "name": "walk-16.png",
+          "t": 0.9375
+        }
+      ]
+    },
+    {
+      "clip": "run",
+      "frames": [
+        {
+          "frame": 1,
+          "name": "run-01.png",
+          "t": 0
+        },
+        {
+          "frame": 2,
+          "name": "run-02.png",
+          "t": 0.0625
+        },
+        {
+          "frame": 3,
+          "name": "run-03.png",
+          "t": 0.125
+        },
+        {
+          "frame": 4,
+          "name": "run-04.png",
+          "t": 0.1875
+        },
+        {
+          "frame": 5,
+          "name": "run-05.png",
+          "t": 0.25
+        },
+        {
+          "frame": 6,
+          "name": "run-06.png",
+          "t": 0.3125
+        },
+        {
+          "frame": 7,
+          "name": "run-07.png",
+          "t": 0.375
+        },
+        {
+          "frame": 8,
+          "name": "run-08.png",
+          "t": 0.4375
+        },
+        {
+          "frame": 9,
+          "name": "run-09.png",
+          "t": 0.5
+        },
+        {
+          "frame": 10,
+          "name": "run-10.png",
+          "t": 0.5625
+        },
+        {
+          "frame": 11,
+          "name": "run-11.png",
+          "t": 0.625
+        },
+        {
+          "frame": 12,
+          "name": "run-12.png",
+          "t": 0.6875
+        },
+        {
+          "frame": 13,
+          "name": "run-13.png",
+          "t": 0.75
+        },
+        {
+          "frame": 14,
+          "name": "run-14.png",
+          "t": 0.8125
+        },
+        {
+          "frame": 15,
+          "name": "run-15.png",
+          "t": 0.875
+        },
+        {
+          "frame": 16,
+          "name": "run-16.png",
+          "t": 0.9375
+        }
+      ]
+    },
+    {
+      "clip": "jump",
+      "frames": [
+        {
+          "frame": 1,
+          "name": "jump-01.png",
+          "t": 0
+        },
+        {
+          "frame": 2,
+          "name": "jump-02.png",
+          "t": 0.06666666666666667
+        },
+        {
+          "frame": 3,
+          "name": "jump-03.png",
+          "t": 0.13333333333333333
+        },
+        {
+          "frame": 4,
+          "name": "jump-04.png",
+          "t": 0.2
+        },
+        {
+          "frame": 5,
+          "name": "jump-05.png",
+          "t": 0.26666666666666666
+        },
+        {
+          "frame": 6,
+          "name": "jump-06.png",
+          "t": 0.3333333333333333
+        },
+        {
+          "frame": 7,
+          "name": "jump-07.png",
+          "t": 0.4
+        },
+        {
+          "frame": 8,
+          "name": "jump-08.png",
+          "t": 0.4666666666666667
+        },
+        {
+          "frame": 9,
+          "name": "jump-09.png",
+          "t": 0.5333333333333333
+        },
+        {
+          "frame": 10,
+          "name": "jump-10.png",
+          "t": 0.6
+        },
+        {
+          "frame": 11,
+          "name": "jump-11.png",
+          "t": 0.6666666666666666
+        },
+        {
+          "frame": 12,
+          "name": "jump-12.png",
+          "t": 0.7333333333333333
+        },
+        {
+          "frame": 13,
+          "name": "jump-13.png",
+          "t": 0.8
+        },
+        {
+          "frame": 14,
+          "name": "jump-14.png",
+          "t": 0.8666666666666667
+        },
+        {
+          "frame": 15,
+          "name": "jump-15.png",
+          "t": 0.9333333333333333
+        },
+        {
+          "frame": 16,
+          "name": "jump-16.png",
+          "t": 1
+        }
+      ]
+    },
+    {
+      "clip": "roar",
+      "frames": [
+        {
+          "frame": 1,
+          "name": "roar-01.png",
+          "t": 0
+        },
+        {
+          "frame": 2,
+          "name": "roar-02.png",
+          "t": 0.06666666666666667
+        },
+        {
+          "frame": 3,
+          "name": "roar-03.png",
+          "t": 0.13333333333333333
+        },
+        {
+          "frame": 4,
+          "name": "roar-04.png",
+          "t": 0.2
+        },
+        {
+          "frame": 5,
+          "name": "roar-05.png",
+          "t": 0.26666666666666666
+        },
+        {
+          "frame": 6,
+          "name": "roar-06.png",
+          "t": 0.3333333333333333
+        },
+        {
+          "frame": 7,
+          "name": "roar-07.png",
+          "t": 0.4
+        },
+        {
+          "frame": 8,
+          "name": "roar-08.png",
+          "t": 0.4666666666666667
+        },
+        {
+          "frame": 9,
+          "name": "roar-09.png",
+          "t": 0.5333333333333333
+        },
+        {
+          "frame": 10,
+          "name": "roar-10.png",
+          "t": 0.6
+        },
+        {
+          "frame": 11,
+          "name": "roar-11.png",
+          "t": 0.6666666666666666
+        },
+        {
+          "frame": 12,
+          "name": "roar-12.png",
+          "t": 0.7333333333333333
+        },
+        {
+          "frame": 13,
+          "name": "roar-13.png",
+          "t": 0.8
+        },
+        {
+          "frame": 14,
+          "name": "roar-14.png",
+          "t": 0.8666666666666667
+        },
+        {
+          "frame": 15,
+          "name": "roar-15.png",
+          "t": 0.9333333333333333
+        },
+        {
+          "frame": 16,
+          "name": "roar-16.png",
+          "t": 1
+        }
+      ]
+    },
+    {
+      "clip": "bite",
+      "frames": [
+        {
+          "frame": 1,
+          "name": "bite-01.png",
+          "t": 0
+        },
+        {
+          "frame": 2,
+          "name": "bite-02.png",
+          "t": 0.06666666666666667
+        },
+        {
+          "frame": 3,
+          "name": "bite-03.png",
+          "t": 0.13333333333333333
+        },
+        {
+          "frame": 4,
+          "name": "bite-04.png",
+          "t": 0.2
+        },
+        {
+          "frame": 5,
+          "name": "bite-05.png",
+          "t": 0.26666666666666666
+        },
+        {
+          "frame": 6,
+          "name": "bite-06.png",
+          "t": 0.3333333333333333
+        },
+        {
+          "frame": 7,
+          "name": "bite-07.png",
+          "t": 0.4
+        },
+        {
+          "frame": 8,
+          "name": "bite-08.png",
+          "t": 0.4666666666666667
+        },
+        {
+          "frame": 9,
+          "name": "bite-09.png",
+          "t": 0.5333333333333333
+        },
+        {
+          "frame": 10,
+          "name": "bite-10.png",
+          "t": 0.6
+        },
+        {
+          "frame": 11,
+          "name": "bite-11.png",
+          "t": 0.6666666666666666
+        },
+        {
+          "frame": 12,
+          "name": "bite-12.png",
+          "t": 0.7333333333333333
+        },
+        {
+          "frame": 13,
+          "name": "bite-13.png",
+          "t": 0.8
+        },
+        {
+          "frame": 14,
+          "name": "bite-14.png",
+          "t": 0.8666666666666667
+        },
+        {
+          "frame": 15,
+          "name": "bite-15.png",
+          "t": 0.9333333333333333
+        },
+        {
+          "frame": 16,
+          "name": "bite-16.png",
+          "t": 1
+        }
+      ]
+    },
+    {
+      "clip": "tail",
+      "frames": [
+        {
+          "frame": 1,
+          "name": "tail-01.png",
+          "t": 0
+        },
+        {
+          "frame": 2,
+          "name": "tail-02.png",
+          "t": 0.0625
+        },
+        {
+          "frame": 3,
+          "name": "tail-03.png",
+          "t": 0.125
+        },
+        {
+          "frame": 4,
+          "name": "tail-04.png",
+          "t": 0.1875
+        },
+        {
+          "frame": 5,
+          "name": "tail-05.png",
+          "t": 0.25
+        },
+        {
+          "frame": 6,
+          "name": "tail-06.png",
+          "t": 0.3125
+        },
+        {
+          "frame": 7,
+          "name": "tail-07.png",
+          "t": 0.375
+        },
+        {
+          "frame": 8,
+          "name": "tail-08.png",
+          "t": 0.4375
+        },
+        {
+          "frame": 9,
+          "name": "tail-09.png",
+          "t": 0.5
+        },
+        {
+          "frame": 10,
+          "name": "tail-10.png",
+          "t": 0.5625
+        },
+        {
+          "frame": 11,
+          "name": "tail-11.png",
+          "t": 0.625
+        },
+        {
+          "frame": 12,
+          "name": "tail-12.png",
+          "t": 0.6875
+        },
+        {
+          "frame": 13,
+          "name": "tail-13.png",
+          "t": 0.75
+        },
+        {
+          "frame": 14,
+          "name": "tail-14.png",
+          "t": 0.8125
+        },
+        {
+          "frame": 15,
+          "name": "tail-15.png",
+          "t": 0.875
+        },
+        {
+          "frame": 16,
+          "name": "tail-16.png",
+          "t": 0.9375
+        }
+      ]
+    }
+  ],
+  "visual": "not-reviewed"
+}

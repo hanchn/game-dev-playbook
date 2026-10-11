@@ -1,0 +1,174 @@
+{
+  "schema": "ui-art-qa-review",
+  "schemaVersion": 2,
+  "date": "2026-10-11T15:38:54.719Z",
+  "sourceKit": "dinosaur-jade-amber-v2",
+  "technical": {
+    "status": "passed",
+    "tests": 26,
+    "log": "tools/animation-lab/examples/ui-kit-solution/regression.log"
+  },
+  "production": {
+    "status": "produced",
+    "sources": 12,
+    "pages": 12,
+    "statePngs": 73,
+    "receipt": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/production-receipt.json",
+    "originalSourcesInspected": true,
+    "pressedVariants": "3 actual imagegen edits",
+    "otherStates": "derived rendering recipes; not separate imagegen"
+  },
+  "pages": [
+    {
+      "id": "loading",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/loading.png",
+      "sha256": "5f11c6f27c14541d4726acf5e79b8665104ab3d561106c8cb01d6ab3252b9e13",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "65%进度显示；ready视觉与交互禁用，不提前进入"
+    },
+    {
+      "id": "load-error",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/load-error.png",
+      "sha256": "6a50718e51a0c115b0818100afe64a9d400dc6f6adcfd4775d9399982f27f5e3",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "资源错误玩家文案和重试/返回可见"
+    },
+    {
+      "id": "home",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/home.png",
+      "sha256": "2e0c4c8f7a88b9bb94b282780c01b5faefddd93ad81a084a2449369e28cf327b",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "菜单背景与琥珀CTA统一，中文标题与操作分离，角色未烘焙入背景"
+    },
+    {
+      "id": "level-select",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/level-select.png",
+      "sha256": "f4c3a110db81113a1513b1ecf954aad7bcba3977c8d4899ca99b28c0233a5597",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "三个clearings节点和独立锁定/完成状态，背景没有烘焙节点文案"
+    },
+    {
+      "id": "tutorial",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/tutorial.png",
+      "sha256": "110ca0bcc09aba28f4d552ad343e7fe627dd1ceac51145331de077d5aa6b9afe",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "教程说明、触控引导与开始独立，面板内可读"
+    },
+    {
+      "id": "playing",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/playing.png",
+      "sha256": "e3f3d0a7d4adc7140d0440e5894a222b38a764cfc15320ec5b92bed44cb507bb",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "独立场景背景，HUD和触控圆盘真实源图组合；小设备art浏览器待实际确认"
+    },
+    {
+      "id": "pause",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/pause.png",
+      "sha256": "e6cbf7c22eb4ba4e72216564662e63c7677fe07bb152654eb98e024f47f285de",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "标题下移避开琥珀装饰，继续和设置层次明确"
+    },
+    {
+      "id": "settings",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/settings.png",
+      "sha256": "db2320c4b6d20b5a1df763818e49d3dde038a8a51ba67ab30127aa610d9ec453",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "滑杆/开关有实际控件底图和功能叠层，返回可见"
+    },
+    {
+      "id": "failure",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/failure.png",
+      "sha256": "74eaf9f3bebee5e41416e22e0a5051269c9fab0aafd86e0357cc513a03155e00",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "独立裂纹足迹徽章，未知失败条件不作为开发提示显示，重试/返回清晰"
+    },
+    {
+      "id": "success",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/success.png",
+      "sha256": "6e3c4d7c9de994d211e8d5086c97719b6054482b1e76190a3dfe3bafc8397389",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "真实琥珀脚印徽章，未强加积分/星级奖励"
+    },
+    {
+      "id": "confirm-restart",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/confirm-restart.png",
+      "sha256": "ef11ca7adaf3fe9fe10ef8c17479d813a873b793062dcee20c8d5ee7cf4d93c9",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "完整页已实际view检查，标题、图底与操作连续"
+    },
+    {
+      "id": "confirm-exit",
+      "file": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/confirm-exit.png",
+      "sha256": "fc98aa974beff36ed08c4279207a7ba38dd2e70e71fe45ff35e3a62aa18eb15b",
+      "method": "view_image actual exported PNG",
+      "status": "visually-reviewed-local",
+      "observation": "完整页已实际view检查，标题、图底与操作连续"
+    }
+  ],
+  "failures": [
+    {
+      "id": "modal-title-decoration-overlap",
+      "status": "failed-then-fixed",
+      "before": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/qa-before-header-fix",
+      "fix": "标题从panel高度18%下移至25%；正文至37%",
+      "retest": [
+        "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/pause.png",
+        "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/settings.png",
+        "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/success.png"
+      ]
+    },
+    {
+      "id": "loading-ready-before-complete",
+      "status": "fixed-and-viewed",
+      "fix": "65%阶段ready disabled，文案资源准备中",
+      "retest": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/loading.png"
+    },
+    {
+      "id": "failure-technical-copy",
+      "status": "fixed-and-viewed",
+      "fix": "玩家文案替代开发条件提示；assumptions保留未知玩法条件",
+      "retest": "tools/animation-lab/examples/ui-kit-solution/dinosaur-complete-art/pages/failure.png"
+    },
+    {
+      "id": "hud-world-event-test-scope",
+      "status": "invalid-assertion-corrected",
+      "log": "tools/animation-lab/examples/ui-kit-solution/art-regression-before-hud-test-scope.log",
+      "reason": "fail/win为世界事件，不要求HUD可见按钮；保留原错误日志"
+    }
+  ],
+  "browser": {
+    "status": "reviewed-current-brief-mobile-layout",
+    "route": "http://127.0.0.1:4317/ui-kit-solution",
+    "required": [
+      "actual art navigation",
+      "actual art safearea740x360 text1.35",
+      "full actual PNG ZIP download"
+    ],
+    "historicalSpecsEvidence": "tools/animation-lab/examples/ui-kit-solution/qa-review.json",
+    "note": "历史规格截图不是新art模式实际浏览器证据",
+    "report": "examples/ui-suite-art-mobile-v3/qa-report.json",
+    "reviewScope": "actual art 740x360 text1.35, actual page flow and SHA-verified browser ZIP; no game integration",
+    "history": "previous parent browser review was pending until this layout3 run"
+  },
+  "targetDevice": {
+    "status": "not-run"
+  },
+  "gameIntegrated": false,
+  "browserMobileLayoutRetest": {
+    "status": "reviewed-current-brief-mobile-layout",
+    "report": "examples/ui-suite-art-mobile-v3/qa-report.json",
+    "scope": "current dinosaur brief at 740x360 safe insets [16,44,16,44], text 1.35; development tool preview, not playable game",
+    "productAcceptance": false
+  }
+}

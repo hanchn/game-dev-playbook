@@ -1,0 +1,103 @@
+{
+  "assetId": "horse-side-v24",
+  "primaryAtlas": "/art/horse-side-parts-v5.png",
+  "primarySourceSha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+  "alternateSources": {
+    "horse-cannon-material": {
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "width": 1536,
+      "height": 1024,
+      "sourceSha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5"
+    },
+    "horse-upper-material": {
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "width": 1774,
+      "height": 887,
+      "sourceSha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3"
+    },
+    "horse-hoof-material": {
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "width": 1774,
+      "height": 887,
+      "sourceSha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d"
+    }
+  },
+  "visual": "failed",
+  "change": "Only original5/10 hoof composites replaced with real mini source11; all other14 currenttiles andparts/bone lengths remain v23. Source-aware sole offsets, bodydrop4 and graze angle114.3 recalibrated reach without stretching.",
+  "technical": {
+    "log": "technical-tests.log",
+    "passed": 40,
+    "failed": 0,
+    "scope": "allsource identities exactfreshmasks, 96phase actual opaque soles eachidle/walk/run/graze, neck precision budget, bone length/isolation. Not artistic acceptance"
+  },
+  "reviewed": [
+    {
+      "kind": "native-actual-drawCanvas",
+      "files": [
+        "idle-light.png",
+        "walk-light.png",
+        "run-light.png",
+        "run-dark.png",
+        "graze-light.png",
+        "graze-dark.png"
+      ],
+      "framesPerClip": 16,
+      "frame": "fixed512 anchor256,350 scale1.3 no perframefit normalopaque"
+    },
+    {
+      "kind": "Chrome-production",
+      "url": "http://127.0.0.1:4317/lab/horse",
+      "header": "马 零件资产 / v24",
+      "files": [
+        "../ui-run-phase05-light-detail.png",
+        "../ui-graze-phase0467-light-detail.png",
+        "../ui-graze-phase0467-fullpage.png"
+      ],
+      "phases": [
+        0.5,
+        0.4666666666666667,
+        0.4666666666666667
+      ],
+      "zoom": [
+        1.65,
+        1.65,
+        1
+      ],
+      "background": "light",
+      "opacity": "normal"
+    }
+  ],
+  "findings": [
+    {
+      "area": "hoof keratin",
+      "status": "improved-not-accepted",
+      "observation": "Silver glare reduced and shorter pastern produces compact matte foot; true sole follows ground. Source hair portion still ~1/2 instead requested1/3; assembled feet still blocky and legs narrow."
+    },
+    {
+      "area": "neck graze .467",
+      "status": "failed",
+      "observation": "Samebody-neck acute foldedsleeve persists in actualv24 UI; angle calibration prevents mouth ground penetration, not naturality fix."
+    },
+    {
+      "area": "wrist/hock/fetlock",
+      "status": "failed",
+      "observation": "Prominent distal cap and source stubs remain; front dark joint prominence visible at run .5; not covered by sole contact test."
+    },
+    {
+      "area": "upper-leg/body proportions",
+      "status": "failed",
+      "observation": "Hip/shoulder oval material and slender shafts stillread assembled. Original torso sourceunchanged."
+    }
+  ],
+  "notReviewed": [
+    "jump/rear/tail currentv24 native sheets",
+    "idle/walk native dark",
+    "currentv24 all independentjoint sheets",
+    "UI idle/walk/jump/rear/tail"
+  ],
+  "baseline": "../../horse-side-v23/retest/visual-review.json",
+  "next": "Preservev24 failures; parentrequest chickenlegroot anatomy source ownership next."
+}

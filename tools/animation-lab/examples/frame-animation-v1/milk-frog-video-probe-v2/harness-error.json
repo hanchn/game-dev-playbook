@@ -1,0 +1,6 @@
+{
+  "harnessError": "prepare command yielded a live shell session; following dry-run/submit read attempted before body existed",
+  "actualNetworkSubmission": false,
+  "proof": "submit returned local ENOENT, no body / no taskId",
+  "correctiveAction": "Wait for prepare session completion, rerun actual zero estimate then single network submit"
+}

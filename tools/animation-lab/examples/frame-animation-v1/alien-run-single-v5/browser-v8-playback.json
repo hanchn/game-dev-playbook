@@ -1,0 +1,48 @@
+{
+  "phaseNotes": [
+    {
+      "index": 0,
+      "qa": "failed",
+      "notes": "近腿前触地、远腿后折；近拳后/远拳前可见。全段身份/纹理漂移导致此源序列未通过，不能单帧局部通过推定循环通过。",
+      "source": "alien-run-single-v5-phase-00.png · 独立帧图 · each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call"
+    },
+    {
+      "index": 2,
+      "qa": "failed",
+      "notes": "近拳已移到腰/髋旁形成passing，远拳前方清晰；定点生成同时使头、皮纹和画面比例偏移，原图注册仍不合格，不可当成像素局部修复通过。",
+      "source": "alien-run-single-v8-phase-02.png · 独立帧图 · each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call"
+    },
+    {
+      "index": 6,
+      "qa": "failed",
+      "notes": "远侧腿前支撑、近腿后折，双拳方向与phase00互换；头颅更圆且眼形皮纹偏移，身份连续性未通过。",
+      "source": "alien-run-single-v5-phase-06.png · 独立帧图 · each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call"
+    },
+    {
+      "index": 8,
+      "qa": "failed",
+      "notes": "远拳已移到腰旁形成passing，近拳前方清晰；定点生成同时使头、皮纹和画面比例偏移，原图注册仍不合格，不可当成像素局部修复通过。",
+      "source": "alien-run-single-v8-phase-08.png · 独立帧图 · each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call"
+    },
+    {
+      "index": 11,
+      "qa": "failed",
+      "notes": "近拳后/远拳前、近腿前伸；原图右15px，安全包络不足，右下靴边还需查杂点，不能靠逐帧缩放通过。",
+      "source": "alien-run-single-v7-phase-11.png · 独立帧图 · each actual source PNG SHA matches separate generation receipt; packing is deterministic, not an imagegen sheet call"
+    }
+  ],
+  "seen": [
+    "1 / 12",
+    "2 / 12",
+    "3 / 12",
+    "4 / 12",
+    "5 / 12",
+    "6 / 12",
+    "7 / 12",
+    "8 / 12",
+    "9 / 12",
+    "10 / 12",
+    "11 / 12",
+    "12 / 12"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "animal-art-review/v1",
+  "assetId": "horse-side-v24",
+  "assetVersion": 24,
+  "skinBindingVersion": 24,
+  "productionChanged": false,
+  "candidateCoreSha256": "b1b30549cc24f6cfc656d4e2e99acafb6b6f025c0f630094c74884376a16ee2e",
+  "sourceSha256": {
+    "primary": {
+      "atlas": "/art/horse-side-parts-v5.png",
+      "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b"
+    },
+    "horse-cannon-material": {
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5"
+    },
+    "horse-upper-material": {
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3"
+    },
+    "horse-hoof-material": {
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d"
+    }
+  },
+  "landmarks": {
+    "root": [
+      0.31,
+      0.93
+    ],
+    "middle": [
+      0.39,
+      0.62
+    ],
+    "join": [
+      0.5,
+      0.32
+    ],
+    "status": "visually estimated source coordinates; source skull junction is not a verified anatomical poll"
+  },
+  "technical": {
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "log": "examples/horse-neck-path-v3/technical-tests.log",
+    "sourceCenters": {
+      "cases": 80,
+      "maxErrorRigPx": 0.07453020470331255,
+      "threshold": 0.25,
+      "triangles": 2548,
+      "budgetExclusive": 4000,
+      "diagnostic": "examples/horse-neck-path-v3/mesh-precision-diagnostic.json"
+    }
+  },
+  "visual": "failed",
+  "actualReviewed": [
+    {
+      "path": "examples/horse-neck-path-v3/suite/graze-16-light.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "light",
+      "clip": "graze",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/graze-16-dark.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "dark",
+      "clip": "graze",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/walk-16-light.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "light",
+      "clip": "walk",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/walk-16-dark.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "dark",
+      "clip": "walk",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/run-16-light.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "light",
+      "clip": "run",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/run-16-dark.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "dark",
+      "clip": "run",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/jump-16-light.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "light",
+      "clip": "jump",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/jump-16-dark.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "dark",
+      "clip": "jump",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/rear-16-light.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "light",
+      "clip": "rear",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/suite/rear-16-dark.png",
+      "scope": "16 fixed 512x420 frames, common camera, normal opaque, actual drawCanvas",
+      "background": "dark",
+      "clip": "rear",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/path-root06-graze-0.000-light.png",
+      "scope": "1024x768 same fixed enlarged native camera, normal opaque",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/path-root06-graze-0.200-light.png",
+      "scope": "1024x768 same fixed enlarged native camera, normal opaque",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/path-root06-graze-0.467-light.png",
+      "scope": "1024x768 same fixed enlarged native camera, normal opaque",
+      "status": "failed"
+    },
+    {
+      "path": "examples/horse-neck-path-v3/path-root06-graze-0.730-light.png",
+      "scope": "1024x768 same fixed enlarged native camera, normal opaque",
+      "status": "failed"
+    }
+  ],
+  "improved": [
+    "Thin triangular source-neck sleeve at max graze is reduced by centerline mapping.",
+    "Eye/muzzle source region remains rigid, and source normal offset radius outside the face guard is preserved; these are scoped mathematical checks."
+  ],
+  "remaining": [
+    "Front throat/jaw block and mane edge step persist in graze.",
+    "Horse fore/hind lower segments, carpal/hock knobs and near/far leg separation remain visibly mechanical in walk/run.",
+    "Jump lacks natural grouped leg tuck and body trajectory; rear forelegs behave as a rigid rod.",
+    "Whole body proportions and shoulder/hip visible material are still not accepted."
+  ],
+  "notReviewed": [
+    "candidate actual browser live/slow playback",
+    "candidate production SVG/PNG export",
+    "all other actions"
+  ],
+  "history": [
+    {
+      "path": "examples/horse-neck-weights-v25/candidates",
+      "productionAssetId": "horse-side-v24",
+      "visual": "failed",
+      "registered": false
+    },
+    {
+      "path": "examples/horse-neck-path-v1",
+      "visual": "failed",
+      "registered": false,
+      "note": "Initial piecewise source axis math regenerated from saved legacy core after intermediate overwrite; no original pixel hash assertion made."
+    },
+    {
+      "path": "examples/horse-neck-path-v2",
+      "visual": "failed",
+      "technical": "failed",
+      "sourcePointMaxError": 1.0977119653459206,
+      "diagnostic": "examples/horse-neck-path-v2/mesh-precision-diagnostic.json",
+      "registered": false
+    }
+  ],
+  "registration": "None. Production horse-side-v24 preserved."
+}

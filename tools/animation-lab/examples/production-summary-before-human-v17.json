@@ -1,0 +1,184 @@
+{
+  "species": 10,
+  "completeActions": 66,
+  "frames": 1056,
+  "activityComponents": 307,
+  "minimumMargin": 20,
+  "tool": "built-in image_gen",
+  "sourcePrompts": "public/art/*-source-prompt.json",
+  "characters": [
+    {
+      "species": "human",
+      "assetId": "human-side-v10",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "jump",
+        "punch",
+        "squat",
+        "bend",
+        "roll"
+      ],
+      "components": 14,
+      "minimumMargin": 20,
+      "technical": "passed",
+      "visual": "candidate-user-acceptance-pending",
+      "textureJointSamples": 65,
+      "handStates": 3,
+      "qaRoutes": 36,
+      "regressions": 68
+    },
+    {
+      "species": "chicken",
+      "assetId": "chicken-side-v2",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "jump",
+        "peck",
+        "flap"
+      ],
+      "components": 10,
+      "minimumMargin": 118,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "dinosaur",
+      "assetId": "dinosaur-side-v2",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "jump",
+        "roar",
+        "bite",
+        "tail"
+      ],
+      "components": 19,
+      "minimumMargin": 46,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "horse",
+      "assetId": "horse-side-v2",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "jump",
+        "graze",
+        "rear",
+        "tail"
+      ],
+      "components": 14,
+      "minimumMargin": 80,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "crocodile",
+      "assetId": "crocodile-side-v2",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "bite",
+        "roar",
+        "tail",
+        "swim"
+      ],
+      "components": 18,
+      "minimumMargin": 69,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "centipede",
+      "assetId": "centipede-side-v2",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "probe",
+        "curl"
+      ],
+      "components": 72,
+      "minimumMargin": 67,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "snake",
+      "assetId": "snake-side-v3",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "probe",
+        "coil",
+        "raise",
+        "strike"
+      ],
+      "components": 14,
+      "minimumMargin": 33,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "worm",
+      "assetId": "worm-side-v3",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "contract",
+        "raise",
+        "burrow"
+      ],
+      "components": 12,
+      "minimumMargin": 103,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "spider",
+      "assetId": "spider-side-v2",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "jump",
+        "threat",
+        "groom"
+      ],
+      "components": 63,
+      "minimumMargin": 99,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    },
+    {
+      "species": "scorpion",
+      "assetId": "scorpion-side-v2",
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "pinch",
+        "sting",
+        "guard",
+        "tail"
+      ],
+      "components": 71,
+      "minimumMargin": 106,
+      "technical": "passed",
+      "visual": "representative-poses-reviewed-user-acceptance-pending"
+    }
+  ],
+  "status": "human-visual-candidate-other-characters-require-updated-joint-review",
+  "next": "先完成人的视觉验收，再逐个复核其他角色。",
+  "qaPaths": "docs/qa-paths.md"
+}

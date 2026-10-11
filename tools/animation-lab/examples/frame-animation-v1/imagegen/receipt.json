@@ -1,0 +1,21 @@
+{
+  "format": "imagegen-frame-output",
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Asset type: game sprite animation sheet, 8 frames exactly. A single cute small blue jellyfish with a rounded translucent bell and six short curled tentacles, polished soft 3D game art. Show one complete pulse/swim cycle from relaxed bell through compressed bell then relaxed, chronological frame progression. Exactly four columns and two rows of equal sized cells on a genuinely transparent alpha background. Each cell contains exactly one whole jellyfish, identical scale, same face and tentacle count, same fixed center and camera, ample clear margins; no overlap between cells. Tentacles trail and flex as the bell pulses. Read left to right, top row then bottom row. No text, numbering, borders, lines, shadows crossing cells, or extra objects. Image aspect ratio 2:1 so each of the 8 cells is square. This is a bitmap frame animation, not a skeleton.",
+  "generatedFile": "jellyfish-original.png",
+  "generatedFileSha256": "c38ee82d4e953201f72247deb101b9d267e36196d42c434329da64aa59a43a12",
+  "generatedAt": "2026-10-11T15:15:57.241Z",
+  "transparent_background": true,
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "count": 8
+  },
+  "visualQA": "failed",
+  "knownIssues": [
+    "Prompt requested six tentacles but visible silhouettes show four dominant tentacles; anatomy consistency requires a review.",
+    "Cell centers and silhouette size vary across the pulse; fixed-scale continuity has not passed."
+  ],
+  "sourceToolPath": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-dbe11029-db1e-4c15-9c45-2c1c7ad367b6.png"
+}

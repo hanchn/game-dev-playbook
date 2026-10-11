@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Edit target: supplied alien run frame phase 09. Change only one defect: REMOVE the entire extra third arm and third fist visible on the LEFT behind the olive vest, from left shoulder down to the hip (the dangling arm x435..510,y510..826). Fill that removed silhouette with genuine transparent background; where it overlays vest/pants restore the existing vest side/pant waist. Keep the TWO legitimate arms pointing toward the RIGHT exactly intact: large near forearm/fist around y550-690, smaller far forearm/fist around y685-740. Final anatomy exactly two shoulders, two elbows, two wrists, two fists; do not add any hand on the left of waist. Preserve the entire large skull/eye/face/neck, body, costume skin texture, BOTH LEGS, boots, all camera/scale and placement pixel unchanged as much as possible. Keep native 1086x1448 portrait canvas and existing transparent alpha background. This is a local anatomy repair, not a restyling, pose reconstruction, resizing or recentering. No labels, no shadow, no ground.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-fa80b6b0-5b36-4fef-b96a-71e1ece73788.png",
+  "generatedFileSha256": "504cd837c517050215088c6707e0cdaab684f9332c6a48e9e5004f99c174e160",
+  "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v10-phase-09.png",
+  "references": [
+    {
+      "role": "precise-object-edit-target",
+      "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v9-phase-09.png",
+      "sha256": "f6dc1584c4982853c55ffbfbedfc2bb358bd616eee76a03a5c1c7fd197ebf856"
+    }
+  ],
+  "phase": 0.75,
+  "actualPNGSize": [
+    1086,
+    1448
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      111,
+      65,
+      879,
+      1257
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "第三条左侧幽灵手臂已经去除，保留双前拳与双腿。但头颅/眼形、画面注册、材质发生变化，局部去臂修复不是整帧身份通过。",
+    "evidence": [
+      "v10-edit-inputs.json"
+    ],
+    "reviewedAt": "2026-10-11T17:58:17.868Z"
+  }
+}

@@ -1,0 +1,1080 @@
+{
+  "artStatus": "failed",
+  "type": "actual imagegen independent key sprites",
+  "allSources": [
+    {
+      "index": 0,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Generate ONE clean final animation sprite, not a contact sheet. Reference 1 is the exact yellow muscular humanoid milk frog identity/style. Reference 2 is a single-pose geometry guide ONLY; its gray dummy, red/blue chains and floor line MUST NOT appear anywhere in final artwork. Render the actual milk frog with its yellow muscles, white chest/belly/chin, green eyes, pink hands/feet, thick smooth black outlines and polished 2D shading, unchanged joyful open mouth and tongue. No costume or prop.\nThis is new run animation key pose 0%, NEAR leg forward contact, FAR leg in back recovery. Keep permanent foreground NEAR side and background FAR side. Follow the shoulder-elbow-wrist and hip-knee-ankle locations in guide. Near upper arm extends back toward image left while near thigh advances image right; near elbow is visibly behind shoulder. Far upper arm travels forward to the right with bent elbow and wrist in front of chest; far thigh points back and far knee bends to recover its foot visibly above the ground behind hip. Exactly TWO arms, TWO legs, both visible, fingers/toes clean; no ghosts, additional arms, unconnected hands or colored guides. Near hand keeps the same relaxed open pink shape as identity reference, far hand the same relaxed curled shape; do not change hand state when arm changes direction in future poses.\nFixed square camera/canvas, character facing image right in the same stable 3/4 side illustration as reference. Entire character fits comfortably inside 10% safe margins, sole of near contacting foot at 87% canvas height, far foot airborne, subject fixed scale and shoulder/hip pivot inherited from guide. No per-frame rescale or different camera. Transparent alpha background, no ground line or shadow, no lettering. Retain full head, hands, feet and black outline. Output only this one actual polished frog sprite.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+      "generatedFileSha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v1/canonical-v1.png",
+          "sha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d"
+        },
+        {
+          "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-0.png",
+          "sha256": "0210825b700d7d98ad8faec2042b0cf5998cd1fc033a26d41d53956267c09814"
+        }
+      ],
+      "phase": 0,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          101,
+          84,
+          1058,
+          1109
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near contact; same original four-key source reused."
+      }
+    },
+    {
+      "index": 1,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Generate ONE actual new inbetween run-frame of the EXACT milk-frog animation, frame1/12 (8.33% near-side LOADING). Reference1 is preceding key0 contact; Reference2 is next key25% toe-off. Preserve reference1 character face size, headtop around84px, pink/yellow/white materials, ink,1254 square fixed camera; do not invent another style or scale. These are final art references, no colored guide.\nMake a distinct TRANSITION one third of the way from reference1 to reference2, not an identical extreme. NEAR foreground thigh is still forward/right but less extended; near knee bends for WEIGHT LOADING, near foot remains contacting at COMMON source y1192, directly below and slightly in front of hip. FAR background recovering foot comes forward under pelvis, still lifted; far knee advances from left/back toward vertical below hip, distinctly visible behind near leg. Permanent two hip-knee-ankle chains, big foreground near thigh stays in FRONT at root.\nNEAR open pink hand/upper arm travels from BACK toward downward passing, halfway down/behind waist; near elbow less far-left than key0. It must not jump to full front-extreme chest pose yet. FAR curled hand arm travels from chest toward waist, distinct behind torso, it must not jump fully behind. Same permanent near OPEN hand and far CURLED hand in every frame. Exactly2arms2legs, no extra limbs/fingers or merged feet.\nHead/torso SAME size and surface markings as reference1; only subtle anatomical bob and limb motion. Running support load is slight knee flexion, not squatting. Both eyes open, stable cheerful face/gaze, no compulsory blink. Original canvas camera/sourceorigin never changes; max silhouette stays at least32px inside. Transparent alpha background, no floor/shadow/text. Output ONE clean rendered sprite, genuine intermediate frame.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+      "generatedFileSha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+          "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+        }
+      ],
+      "phase": 0.25,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          253,
+          96,
+          872,
+          1103
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Loading geometry present, wrist travel overly large before repair."
+      }
+    },
+    {
+      "index": 1,
+      "version": 2,
+      "tool": "image_gen.imagegen",
+      "prompt": "Local EDIT of reference1 loading sprite to improve continuousARM travel ONLY. Keep its face/head/body/leggeometry, nearfootground/farfootairborne, source1254camera/materialidentical. Reference2 nextpassingframe shows nextwaisthandposition.\nNear foreground OPEN hand currentlylow/backx350,y735 mustbend UP/slightlyFORWARD around SAMEnearELBOW x445,y520 to NEARWRISTx475,y595 and openpink HANDCENTERx525,y650. Preserve nearupperarmbackward angle/shoulder x650,395, onlyFLEX its elbow/forearm naturally. Remove old lowlefthand/forearm, no ghost; nearhandOPENsamefourdigits. Its centerstaysleft/behindhip, not chestfrontextreme.\nFar background CURLED hand currentlyfarfrontx980,y600 moves DOWN/BACK towardWAIST centerx800,y650. Farshoulder/upperarmstaysfrombehindtorso, farelbow bendsappropriately, curledhandvisibleonrightbellyedge. Removeoldfullfrontextremefist, no extrahand; farhandCURLED notopen.\nThis fixes smoothhandtravel acrosskey0→loading→passing, keeping sameboneproportions, stable near/far armidentity. DO NOT redraw legstates, head/face/gaze/whitebelly/pinkfeet orrescale. Exactly2arms2legs, originalslightloadingpose. Transparentalpha/no shadows/marks/crop. OutputONEactualcleanintermediateloadingframe.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-a9fdbb3c-5fcb-4982-b732-17fc63b112d1.png",
+      "generatedFileSha256": "be4af1d1076988b4074acbb8b8cc1e254af68bfd8a15f7147da737a4f2a085f0",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+          "sha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-809290e9-ed52-4cff-a2f0-87074f6b9ffb.png",
+          "sha256": "21008c3948ef2087be76dde1c5f21fe8121db7ab3caefb64de1c8a81f639aa8b"
+        }
+      ],
+      "phase": 0.25,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          411,
+          96,
+          714,
+          1104
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Local elbow/forearm repair shows near open hand between back and waist, retains near support."
+      }
+    },
+    {
+      "index": 2,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Draw ONE actual inbetween milk-frog run sprite frame2/12,16.67%, NEAR midstance/FAR passing. Reference1 previous loading frame, reference2 next25% toeoff. Same exact1254squarecamera, scale, head/face, yellow/white/pink materials, polished2D highlights and outlines. Keep torso/neck/head shape, permanent near foreground OPEN hand and far background CURLED hand.\nThis must be visibly different from both references: near supporting BIG foreground thigh now moves back toward vertical UNDER HIP, near knee flexed below hip, near foot contacting fixedsourceground y1192 UNDER hip rather than far in front. Far background knee travels forward past near leg toward imageRIGHT; far pink ankle/foot is raised under/front pelvis at about y1000, NEVER on ground, so a clear passing leg is visible. Near big thigh/root occludes far hip; do not make near knee still hugely frontward. Exactlytwohip-knee-ankle chains, no merged limbs.\nArms continue smooth travel: NEAR upper arm now nearly vertical/slightly forward, near elbow ahead of shoulder, OPEN near hand passes WAIST in front of hip, not yet chest/front extreme. FAR curled arm now behind with far elbow behind shoulder and curled hand behind waist. Arm directions opposite same-side thighs. No pink hand state swaps, extra fingers or ghosts.\nCommon camera/floor y1192/sourceorigin, at least32px motion margin, full feet/head/hands. Preserve face size/expression/gaze with no blink or style change. Source material/surface spots stay consistent. Transparent alpha background, no shadow/text/line. Output only one clean actual distinct passing/loading pose.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-0378dbfe-e9e4-4157-8fcf-ba95dc0136bd.png",
+      "generatedFileSha256": "bd7839bffcd8f75947c00fea4326dd2359856fee58eb1828e83042d83c30f12c",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+          "sha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+          "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+        }
+      ],
+      "phase": 0.5,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          336,
+          93,
+          766,
+          1113
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Far recovered foot still behind hip, did not truly pass front."
+      }
+    },
+    {
+      "index": 2,
+      "version": 2,
+      "tool": "image_gen.imagegen",
+      "prompt": "Precise local EDIT of reference1 passing frame: KEEP the head/face, body/arms/hands, near support leg and common1254camera EXACTLY AS DRAWN. Repair ONLY FAR BACKGROUND LOWERLEG/FOOT passing visibility.\nThe far thigh is the SMALL background yellow thigh visible on the RIGHT of the foreground big thigh, ending in the FAR knee around source x940,y790. It is correctly advancing forward. Its far calf should run DOWN from that knee to a LIFTED pink foot around x895,y1000 on the RIGHT/front of the near support shin. In reference1 the far pink foot incorrectly remains folded behind the hip on LEFT around x565,y875; REMOVE that old left far foot and connected wrong fold, then redraw ONE continuous far calf from the far knee down to the new airborne RIGHT foot. This is the permanent BACKGROUND far leg, not an extra3rdleg or a swap with big foreground near support thigh.\nThe BIG FOREGROUND near thigh and straight support shin remain untouched, sole contacts sameground y1192. Do not change near foot, head/body registration, open near hand in front and curled far hand behind. Exactly TWO legs, TWO arms, no ghost/floating ankle. Maintain yellow muscle proportions and pink webbedfoot identity, no severe length change. Background calf can hide partially behind foreground leg, but new lifted foot must visibly clear on RIGHT. Transparentalpha, no shadows/marks, fixedcamera/texture. Reference2 next toeoff shows same permanent far raised leg identity only. Output one clean corrected passing sprite.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-93de17a4-618b-4d40-9e40-d7efcfa7394d.png",
+      "generatedFileSha256": "3d22f36af149ff6e02c7b32eca5cc63036bfad31035f3f4b4f7b23f47c95784a",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-0378dbfe-e9e4-4157-8fcf-ba95dc0136bd.png",
+          "sha256": "bd7839bffcd8f75947c00fea4326dd2359856fee58eb1828e83042d83c30f12c"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+          "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+        }
+      ],
+      "phase": 0.5,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          336,
+          93,
+          806,
+          1114
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Far foot now moves down/front under far knee, airborne."
+      }
+    },
+    {
+      "index": 2,
+      "version": 3,
+      "tool": "image_gen.imagegen",
+      "prompt": "Precise local EDIT reference1 passing frame ONLY NEAR arm pose, preserving its corrected FAR forward-airborne foot and NEAR grounded support leg, head/body/camera1254/muscles/material/face unchanged. Reference2 previousloading shows where near arm camefrom.\nThe foreground NEAR open pink hand is too far forward at x1000,y650, it jumped from back swing. Redraw this NEAR arm in TRUE WAIST-PASSING pose: near shoulder stays at SOURCE x650,y395; near upperarm drops nearlyVERTICAL to near ELBOW aroundx645,y600; near forearm folds slightlyFORWARD/down to WRISTaroundx705,y745, with OPEN pink handcenteraroundx735,y795 in front of waist/topthigh. Remove the OLD right-extremeopenhand and its originalforearm, no thirdarm/ghost. Do NOT move near shoulder orresizebone/torso; maintain connectedupperarm/elbow/wrist anatomy. Near hand staysrelaxedOPEN samefourpinkdigits.\nPermanent BACKGROUND FAR curled hand behindleft atx400,y600 stays curled and EXACTLYinplace; leave far arm alone. Its foregroundnear supportleg stays grounded, farfootstillraisedrightabouty1000 exactlyasinreference1. Preserveleg identity/supportside; no footchanges.\nSame fixedhead/facegreeneyes/happyexpression, originalshading/ink/pattern, transparentalpha and32pxmotionmargin. This isonlypassingarmqualityfix, not newfullfrontextreme orperframefit. OutputONE clean actual correctedintermediate with nearOPENhand atwaist.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-809290e9-ed52-4cff-a2f0-87074f6b9ffb.png",
+      "generatedFileSha256": "21008c3948ef2087be76dde1c5f21fe8121db7ab3caefb64de1c8a81f639aa8b",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-93de17a4-618b-4d40-9e40-d7efcfa7394d.png",
+          "sha256": "3d22f36af149ff6e02c7b32eca5cc63036bfad31035f3f4b4f7b23f47c95784a"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+          "sha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3"
+        }
+      ],
+      "phase": 0.5,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          337,
+          94,
+          807,
+          1114
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near open hand reduced toward waist rather than extreme front; support side retained."
+      }
+    },
+    {
+      "index": 3,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Produce ONE next frame of this exact milk-frog animation. Reference1 is previous final key0: preserve its EXACT square camera, character scale, head/face shape, glossy yellow/white/pink textures and black ink style. Reference2 is ONLY pose structure and never final artwork: no red, blue, gray mannequin, floor line or markings in final output.\nKey25%: permanent foreground NEAR leg has moved BACK to toe-off; its thigh/knee are behind the hip (image LEFT) and foot reaches back low, not forward. Permanent background FAR thigh advances forward with knee HIGH (image RIGHT), its foot airborne ahead of hip. BOTH legs visible and distinct. Permanent foreground NEAR upper arm now swings FORWARD (elbow ahead of shoulder, image RIGHT), elbow flexed and pink hand at chest height IN FRONT. Its relaxed open pink hand remains OPEN exactly as key0 (do not replace it with a fist). Background FAR upper arm swings BACK (elbow behind shoulder/image LEFT) with its curled pink hand behind waist. Its curled hand remains curled, do not exchange hands/sides. Exactly two shoulder-elbow-wrist chains, two hip-knee-ankle chains. No extra limbs/ghosts. Upper arm and same-side thigh counterphase, not merely wrist moving.\nKeep the head and shoulder/hip pivot registration in same source pixels as key0, same body proportions, SAME cheerful green-eyed gaze/open mouth and tongue. Shoulder/hip subtle pose rotation only, do not change head size or white belly pattern. The guide defines pose directions, do not use its gray body proportions to redesign the frog. Fixed full square canvas 1254x1254 like first frame, source near contacting foot baseline y1190, never enlarge or crop extremities; at least32px space around entire maximum motion silhouette, preserve common camera for every next pose. Sole in toe-off may lift slightly but head scale must stay fixed.\nClean transparent alpha background; no shadows/props/text. Output one actual polished frog sprite.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+      "generatedFileSha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+        },
+        {
+          "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-1.png",
+          "sha256": "82bd741a7eafec9a60d3f0e5d165d76fa595bf5691b643489d62bda22f79808e"
+        }
+      ],
+      "phase": 0.75,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          145,
+          92,
+          1068,
+          1101
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near toeoff / far high recovery; same key25 reused."
+      }
+    },
+    {
+      "index": 4,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "ONE clean actual inbetween milk-frog frame4/12,33.33%, FIRST FLIGHT after near-leg toeoff. Reference1 key25% is exact character/camera/material starting frame. Reference2 corrected key50% shows upcoming far contact/near folded recovery. Interpolate one-third of their limb pose while preserving foreground/background permanent identities, exact1254 square scale and same face/head size/white material shape.\nCRITICAL both feet AIRBORNE above fixedground y1192: foreground NEAR big thigh still BACK/LEFT; near knee flexes and its old low-left pink foot LIFTS up to about y1030 while curling back under it. BACKGROUND FAR thigh continues FORWARD/right and FAR knee starts to extend for future landing; far foot advances right/down but remains above ground around y1110. Near footleft, far footright, both clearly visible and unattached to ground. Do not keep the previous left support toe on y1192; this frame is truly aerial. Body may rise by only~10px with same camera/scale, no big jump/zoom.\nNear OPEN hand remains forward but begins backswing slightly, far CURLED hand behind begins coming forward slightly; same hand anatomy/near/far identity, never trade open/fist. Exactlytwoarms/twolegs, correct hip/knee/ankle connections/occlusion; near backward big thigh in front at hip, far forward small thigh behind.\nPreserve green-eye gaze and happy open mouth/tongue, all colors/textures/outlines, no blink or restyle. Full silhouette inside32px fixedmotionenvelope, no crop. Transparentalpha background, no floor/marks/shadow. Output only ONE genuine distinct flight pose.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba654e65-9bc9-41dd-8212-f7fb5432a6eb.png",
+      "generatedFileSha256": "56d7e074ba758d96d672866da707c085ebcba7ca005dbb711d535c4b54bf1cea",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+          "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+          "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+        }
+      ],
+      "phase": 1,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          249,
+          92,
+          954,
+          1027
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Both feet visibly airborne after near toeoff; foreground near recovery back, far forward extension."
+      }
+    },
+    {
+      "index": 5,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "ONE distinct clean inbetween frame5/12,41.67%, FAR pre-landing. Reference1 previous flight sprite, reference2 upcoming corrected50% FAR contact. Preserve exact1254 fixedcamera/scale, headshape/gaze/joyfulface/yellowwhitepink material and near OPEN/front hand plus far CURLED/backhand.\nThe permanent BACKGROUND FAR leg extends FORWARD/right further than reference1, its knee straighter and pink foot lowers close to commonground y1192 but stays AIRBORNE at sole y1168 (24px before contact). Far toes point forward/right, ankle neutral ready to land; no ground penetration or current footstillhigh at1110. Permanent FOREGROUND NEAR big thigh stays BACK/LEFT with bent knee/recovering calf and near footraised atleft abouty870. Near recovery thigh occludes far hip root, bothlimbs distinctlyvisible. Do not flip big foreground thigh forward; reference2 has correct leftnear/rightfar identity.\nNear open arm begins moving back slightly fromfront extreme; far curled arm begins moving forward but still behindtorso. Handstateandfinger/toe anatomy constant. Exactlytwoarms/twolegs, no floating/pinkghosts. No change head/torso proportions/texture; face stable with no blink. Full silhouette32px safeedge, transparentalpha/no shadow/floor/text. Output single ACTUAL clean prelanding transition, different from both neighbors.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-83a10fc0-12be-4a21-98f3-2b53533af8ae.png",
+      "generatedFileSha256": "e2241087da407cbd4c108af35c855edd4e135d66a92216a6c9b6ac51d27aa265",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-ba654e65-9bc9-41dd-8212-f7fb5432a6eb.png",
+          "sha256": "56d7e074ba758d96d672866da707c085ebcba7ca005dbb711d535c4b54bf1cea"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+          "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+        }
+      ],
+      "phase": 1.25,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          209,
+          91,
+          993,
+          1070
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Far foot descends toward ground; source actual alpha sole must be measured."
+      }
+    },
+    {
+      "index": 6,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Precise animation registration repair of REFERENCE1, the corrected50% milk-frog key. Reference2 is key0 identity/camera/groundline ONLY, don't copy its leg support pose.\nPreserve reference1's exact foreground near thigh pointing DOWN-LEFT/back with folded near calf and pink recovery foot up at left. Preserve its background far thigh/rightward supporting leg, foreground open hand front and far curled hand behind. Exactly2arms2legs, no side exchange. This pose geometry is correct and MUST NOT be redesigned.\nFix ONLY fixed-camera registration: reference1 far contacting RIGHT foot sole is at source y1210, while the animation fixed ground is y1192. Bring the contacting foot sole to y1192, and the headtop from y106 back to y88 (same original1254square source pixels). This is a carefully drawn new source frame at the COMMON sequence camera/ground line, not auto-fit/rescale. Keep entire character at same SCALE and same neck/head proportions; move the connected pose UP18px, preserving all geometry and shading exactly, no new forehead/eye/mouth/hand anatomy. No stretching, no resizing. Maintain source head/torso width identical to key0 reference, same green eyes, cheerful expression and original yellow/white/pink materials.\nReference2 is provided for exact camera/face/material consistency. The near folding leg remains foreground LEFT, far supporting leg stays on RIGHT behind it. Do not change open pink fingers into a fist. Transparent background and no markings/line/shadow. Output one clean 1254x1254 sprite, no crop.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+      "generatedFileSha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-2ad097ed-fa27-4e35-8584-324755f236e7.png",
+          "sha256": "b3e5dc22960caa3bd5f4e4003319a21609861b8e8b1425f5dac89b2afc220bd3"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+        }
+      ],
+      "phase": 1.5,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          169,
+          91,
+          996,
+          1098
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "True far support from corrected50% source. Sole improved1210→1188 vsfixed1192, original18px failure retained."
+      }
+    },
+    {
+      "index": 7,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Generate ONE actual milk-frog inbetween frame7/12,58.33%, FAR support LOADING / NEAR recovery. Reference1 corrected50% FAR contact is exact currentcharacter/camera/material, reference2 next75% NEAR high-knee/FAR toeoff. One-third transition, not copied extreme.\nPermanent BACKGROUND FAR leg remains CONTACTING ground y1192 and flexes knee for load, far foot moves from forward-right closer UNDER pelvis. The SMALL far thigh/root stays behind foreground hip and the far knee is below/slightly in front of hip, not a new foreground limb. Permanent FOREGROUND NEAR BIG thigh still angled back/down-left but begins advancing toward hip; its bent recovering calf and pink near foot come forward from left/back toward UNDER pelvis while remaining HIGH/airborne aroundy960. Two distinct connectedlegs, near bigger/thigh in FRONT at root, far smaller/thigh behind. No support-side swap or mergedfeet.\nNEAR OPEN arm/hand travels down and BACK from full front/chest toward WAIST, near elbow less forward than50% but not full back yet. FAR CURLED arm/hand travels FORWARD from behind waist toward passing alongside hip; far hand must remain visible and curled. Samehandstates throughsequence, no extras or changes in fingers.\nPreserve exact1254canvas fixedscale/camera, headshape/eye size/green gaze/joyfulface/tongue and yellow/white/pink spotshading/blackink. Only slight knee-load bob, no neck/headrescale. Contact sole fixedy1192, all silhouette32px inside. Transparentalpha/no ground/shadow/text. Output only a distinct clean actual FAR loading sprite.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-808abedb-aa4b-4511-878d-90c1b0fcc7ea.png",
+      "generatedFileSha256": "3be6d8dc3bb606f3a81c1a9449ed8a2d0cec9348506533ab1206811629d9dcff",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+          "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+          "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+        }
+      ],
+      "phase": 1.75,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          332,
+          93,
+          798,
+          1096
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "FAILED hand identities swapped and near knee prematurely raised."
+      }
+    },
+    {
+      "index": 7,
+      "version": 2,
+      "tool": "image_gen.imagegen",
+      "prompt": "Local EDIT of reference1 frame7 only HAND STATES; all original leg geometry,body,head,camera1254square and materials remain as reference1. It accidentally swapped the permanent hands. Reference2 key0 shows correct hand identities.\nThe hand on IMAGE LEFT at source x405,y600 attached to the foreground NEAR shoulder/upperarm on left is the permanent NEAR hand. Replace its current curled FIST with the same relaxed OPEN pink four-digit hand from reference2; its wrist and armposition stay atleft/down-back. Do not move arm forward.\nThe hand on IMAGE RIGHT at x1000,y680 attached to the BACKGROUND FAR arm is the permanent FAR hand. Replace its current open palm with the same relaxed CURLED pink fist from reference2. Keep wrist/root at right/waist and preserve far arm/neararm occlusion; do not swap limbs.\nExactlytwoarms/twolegs; one open NEAR left-hand, one curled FAR right-hand. Keep existing near foreground recovery thigh/calf/foot and backgroundfar supportingleg SAME pose/shape, sole fixedsamebaseline. No finger ghosts or detachedpinkblobs. Same green-eyedface,gaze,scale/pose/shading/blackoutline/sourcepixelregistration. Transparentalpha, no crop/shadow/marks. OutputONE clean correctedframe with permanently correcthands.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3618ec19-3629-437f-b1de-0dea2a0d86e9.png",
+      "generatedFileSha256": "de05ef2d576c0b982b76fa9e061193ce6a213bffbf88135f03ba9c02b9827978",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-808abedb-aa4b-4511-878d-90c1b0fcc7ea.png",
+          "sha256": "3be6d8dc3bb606f3a81c1a9449ed8a2d0cec9348506533ab1206811629d9dcff"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+        }
+      ],
+      "phase": 1.75,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          233,
+          86,
+          874,
+          1104
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Hand states locally restored, still overly early extreme knee/arm transition."
+      }
+    },
+    {
+      "index": 7,
+      "version": 3,
+      "tool": "image_gen.imagegen",
+      "prompt": "Precise SECOND local transition repair of reference1 far-loading milkfrog. Keep exactlegpose, head, torso,scale1254camera and material. Its current arms jumped too rapidly from preceding50% reference2. Bring arms to INTERMEDIATE passing positions, NOT full back/front extremes.\nFOREGROUND NEAR OPEN hand remains OPEN and moves to SOURCE x470,y760 behind/alongside hip at WAIST. Its near upperarm starts shoulder x625,y390, near ELBOW aroundx515,y570, near WRIST aroundx470,y705. This yields modest backward/downward upperarm, connected bentforearm; remove its old far-left open hand at x290,y590, no ghosts. Near hand pointsdown naturalrunning, fourpinkdigits clean.\nBACKGROUND FAR CURLED hand remains CURLED and moves to SOURCE x830,y750, passing in front/alongside belly at WAIST. Its far upperarm emerges from behindshoulder nearx560,y380, far elbow under/infront atx700,y570, wristnearx790,y715. Remove the old far-right fist atx1030,y660. Keep fararm behindnearshoulder/torso occlusion with wrist/fist visibleonright, don't addthirdarm.\nThis source is58.33%transition, halfwaypassing upperarms insteadfull75%extreme. Both hand identity states preserved, botharmscontinuous/visible. LEGS/face stay asreference1, far support foot contactsunchangedcommonground, nearfootairborne. Transparentalpha, no shadows/coloredmarks/overspill. Preserve facial features and texture EXACT, outputone clean actual intermediateload sprite.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-70a02e58-32fe-40df-9b57-da43b0c14707.png",
+      "generatedFileSha256": "bd436bdf547f16c4535920fad05d1a773f6b2433af00f452e319f450f17546aa",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-3618ec19-3629-437f-b1de-0dea2a0d86e9.png",
+          "sha256": "de05ef2d576c0b982b76fa9e061193ce6a213bffbf88135f03ba9c02b9827978"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+          "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+        }
+      ],
+      "phase": 1.75,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          335,
+          85,
+          761,
+          1105
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near arm moves moderately toward passing, near knee still premature high."
+      }
+    },
+    {
+      "index": 7,
+      "version": 4,
+      "tool": "image_gen.imagegen",
+      "prompt": "Generate corrected58.33% FAR-loading inbetween, not a high-knee extreme. Reference1 corrected50% contact is exact identity/material/camera; reference2 next66.67% passing is target later. SAME1254squarecamera, headscale/face/yellowwhitepinktexture/headtoparound90px, no restyle.\nPermanent FOREGROUND NEAR bigthigh is still DOWN/back toward VERTICAL, nearhipsource~675,750→NEAR KNEE~640,930. Near calf foldsback/up to liftednear pinkfootaroundx500,y1010, above ground, slightlybehindhip. Do NOT raise the nearthigh horizontallyrightyet; that happensnextframe. The NEARthigh remainsinFRONTathip.\nPermanent BACKGROUND FAR support thigh/leg staysbehind; farhip~780,750→FARKNEE~790,950→FARcontactfoot~900,1192. Knee flexesonlyslightlyload. This is FARsupport, NEARrecovering; do not copynearfrontlegofkey0.\nNearupperarm travelsfromfronttowardpassing: NEAR SHOULDER~650,395→NEARELBOW~680,580→WRIST~775,665→NEAR OPENhandcenter~820,700 infront/alongsidewaist. Openhandnotfist, stillfront butlessfarforwardthan50%, notteleport toleftbackextreme. FAR SHOULDERbehind~590,395→FARELBOW~560,580→FARcurledhand~500,720 behindleftwaist. Keep FARhandCURLED, nearOPEN, twoarmsonly. Neitherhandgoesfullyfrontextreme/backextreme. Exacttheseproximalcounterphase/transitionalangles.\nCleanconnectedknees/ankles/wrists, samebones/proportions/pink webhandfeet. Fullbody32pxinside, transparentalpha/no marks/shadow. OutputONE true qualityintermediate farload pose with two visiblefeet/handidentities and moderatearmtravel.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png",
+      "generatedFileSha256": "22dd8460c63ce2db381403c4b7f99abc27cdd4089a2234666b970370f4e01868",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c43595a7-3546-46cd-84c9-851478337f1a.png",
+          "sha256": "4073bf93c4a7a1585813992266d423d98c26c8e44d35dbbe35687244801156e1"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png",
+          "sha256": "b706df3588033f8194ad483a07ab22ebee281961cb2d32e0bb0d9537a04af9fb"
+        }
+      ],
+      "phase": 1.75,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          260,
+          88,
+          846,
+          1121
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near thigh remains down/back but foot stays behind; local intermediate next repair needed."
+      }
+    },
+    {
+      "index": 7,
+      "version": 5,
+      "tool": "image_gen.imagegen",
+      "prompt": "Precise local EDIT reference1 FAR-load sprite nearrecoveryLEG only, to make true intermediate knee/footpassing insteadrepeating folded-back extreme. Keep torso/head/arms/opennearhandfront/curledfarhandback, camera1254 and materialsunchanged.\nForeground NEAR bigthighcurrentlyrootaroundx650,y730 pointsleft/backtoknee~580,y900 and pinkfootfolds farbehindleft~320,y840. AdvanceTHISpermanentNEARknee to just UNDER/infrontHIP aroundx690,y920; thighnownearlyVERTICAL ratherbackwardorhorizontalfronthigh. Keep samefemurlength/muscularwidth. UnfoldnearcalfDOWN fromnearknee to NEARANKLE~x610,y1040, pinknearFOOTsole~y1090 aroundx640, stillAIRBORNE102pxaboveground1192 and belowhip. This footispassing UNDERpelvis, notleftrearhighfold. REMOVEoldleftpinknearfootandfoldedcalf, no3rdfoot/ghost. Nearrootstillforegroundoverfarhip.\nBackground FAR leg remainsgrounded onright exactlyasinreference1, samekneeshin/sole and permanentfaridentity. This correctionshowsnearlegfrombackrecoverytoUNDERpelvisbeforeNEXTforwardhighpassingframe (reference2), notinstantfront-highkey. Preserveexacthandstates/face/headscale/shading/yellowwhitepinkmaterial/blackink, no sourceresize/fit. Transparentalpha/no shadow/text/line/crop. Outputonecleanactualunderpelvisrecoverytransition.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-31d9394e-ec67-47ea-8b8f-ad595e47738e.png",
+      "generatedFileSha256": "5ddc455a56471c85857d1f7e5cbe29c8de55806d9c626fee54c7409acc1bbeb8",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png",
+          "sha256": "22dd8460c63ce2db381403c4b7f99abc27cdd4089a2234666b970370f4e01868"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e1665353-efbe-4f47-903d-aee79bcdba5a.png",
+          "sha256": "2fb470bb97e1c8f7d5a2ac79684d72ef7f337b33bacac10ba3fb2c15276791c3"
+        }
+      ],
+      "phase": 1.75,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          367,
+          88,
+          740,
+          1122
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near recovery foot now under pelvis and airborne; far support remains grounded; hand identity retained. Proportion/continuity still needs sequence QA."
+      }
+    },
+    {
+      "index": 8,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "ONE true passing inbetween milk-frog frame8/12,66.67%, FAR support/NEAR passing. Reference1 currentfar-load sprite andreference2 future75% highnear-knee are finalart. Preserve SAME exact1254camera/head/face proportions/style/colors/whitebelly spots/yellow muscles/pink handandfeet/blackink.\nPermanent FOREGROUND NEAR BIG thigh advances FORWARD/right but near knee atonlymediumheight, not full high-knee extreme. Bend near calf DOWN, pink near footpasses in FRONT/right of hip at source~x830,y1010, clearly ABOVEGROUND1192. Remove old left/back near recovery foot atx450,y900; there is only ONE nearfoot, now forwardunderrightknee. Foreground near thigh in front atroot, background far hip behind.\nPermanent BACKGROUND FAR support leg shifts BACK/LEFT underbody, knee nearvertical/slightlybehindhip, footstillcontactsourceground1192 aroundx620 onleft. This lowerleft supportleg is the FAR leg, don't trade with nearbigthigh. Exactly2legs, far sole grounded while nearsole airborne, bothvisible with correctkneeanklechain.\nNear OPEN armnowmoderatelybackswing, openhandonleft/down aboutx470,y700; farelbow/curledFISTmoderatelyforward nearx920,y660. SameOPENnear/CURLEDfarstates, twoarms only, proximalcounterphase. Arms should not duplicatefull75%extreme yet. No hand/fingerghosts, no colorcontrols.\nStableheadscale,gaze/happyface/tongue; movementis passing/runnotstandingposeorjump. Groundline1192fixedsourcecanvas nofit, allsilhouette32pxinside, transparentalpha/no shadows/text. Outputonecleanactualforward-passingnearfootpose.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png",
+      "generatedFileSha256": "b706df3588033f8194ad483a07ab22ebee281961cb2d32e0bb0d9537a04af9fb",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-70a02e58-32fe-40df-9b57-da43b0c14707.png",
+          "sha256": "bd436bdf547f16c4535920fad05d1a773f6b2433af00f452e319f450f17546aa"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+          "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+        }
+      ],
+      "phase": 2,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          271,
+          86,
+          876,
+          1117
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near forward foot now visibly passing; near arm too early full back."
+      }
+    },
+    {
+      "index": 8,
+      "version": 2,
+      "tool": "image_gen.imagegen",
+      "prompt": "Local EDIT of reference1 near-passing sprite ONLY foreground NEAR arm to smooth motion from preceding reference2 FAR-load. Keep legpose/supportside/head/body/camera1254/colors/materialunchanged.\nNEAR OPENhand atleftx360,y650 currentlyjumps tooquickly back. ChangeONLYforearm/elbowangle to a WAIST-PASSING NEAR OPENhand center aroundSOURCE x680,y740. NearSHOULDER staysx625,y380; near UPPERARM still swingsBACK to nearELBOWaroundx500,y540 (behindshoulder), then bendFOREARM FORWARD/down towardWRISTx620,y690→openpalm680740. UpperarmBACK remainsoppositeforegroundnearTHIGHforward even ifwristsinfrontofhip; don't rotateupperarm forward. This is physical elbowflexion, not detachedfloatinghand or thirdarm. Removeoldleftopenhand/forearm entirely, keepONEopennearhand.\nBACKGROUND FAR CURLEDhand atfront/right~1050,550 and its arm remainunchanged. Preserve fullNEARraisedforwardfoot/FARgroundedsupportfootasreference1; sourceground1192fixed, no legredesign. Exactly2arms2legs, no pinkghosts/fingerchanges. Sameface size/gaze/smile/tongue/shading/ink/whitepattern, no sourcefit/rescale. Transparentalpha/no shadow/text/crop. OutputONEcorrectedpassingarmtransitiononly.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e1665353-efbe-4f47-903d-aee79bcdba5a.png",
+      "generatedFileSha256": "2fb470bb97e1c8f7d5a2ac79684d72ef7f337b33bacac10ba3fb2c15276791c3",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png",
+          "sha256": "b706df3588033f8194ad483a07ab22ebee281961cb2d32e0bb0d9537a04af9fb"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png",
+          "sha256": "22dd8460c63ce2db381403c4b7f99abc27cdd4089a2234666b970370f4e01868"
+        }
+      ],
+      "phase": 2,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          418,
+          86,
+          730,
+          1117
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near upper arm remains back while forearm flexes/open hand passes waist; far support unchanged."
+      }
+    },
+    {
+      "index": 9,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "EDIT reference1 milk-frog key0 into run key75%. Reference2 is pose directions ONLY, no guide pixels/colors/ground/gray dummy in final.\nPreserve reference1 exact head size, facial shape and green-eyed cheerful gaze/open mouth/tongue, muscular yellow/white/pink glossy2D style/blackink, same camera and1254square canvas. Preserve the NEAR foreground open pink hand BEHIND the shoulder/waist on imageLEFT with upper arm swinging BACK, and FAR curled pink fist IN FRONT on imageRIGHT with upper arm swinging FORWARD. Those arm states from reference1 are already correct; do not swap hands or turn open hand into fist.\nChange LEGS: BIG NEAR FOREGROUND leg currently extending front/right toward ground must now be in high-knee recovery: NEAR thigh points FORWARD/right almost horizontally to the raised knee, lowerleg folds down/back and near pink FOOT remains AIRBORNE above ground in front of hip. Keep that big near thigh on TOP at hip overlap and in front of far leg. FAR BACKGROUND leg goes BACK/left in toe-off: far thigh points LEFT behind hip, its knee unfolds and lowerleg/pinkfoot reaches down/back to source ground baseline y1190 on left. The far leg is visible below/behind near thigh, not lost or a duplicate near leg.\nExactly two connected arms and two legs, open near hand behind, curled far fist forward; near high knee forward and far supporting leg back. Upper arms opposite same-side thigh directions. Preserve head/shoulder/hip pivot registration, no different head scale or torso fit. Full outline inside32px safety margins. Transparent alpha background, no shadow/text/reference lines/extra anatomy. Output ONE actual clean key75% frog sprite.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+      "generatedFileSha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+        },
+        {
+          "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-single-key-v1/control-3.png",
+          "sha256": "555f768dea98c130b4c6d7213de52062cd0ca135789d4ad3acb1a9b76c030836"
+        }
+      ],
+      "phase": 2.25,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          96,
+          88,
+          1085,
+          1114
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Far toeoff / near high recovery, same key75 source reused."
+      }
+    },
+    {
+      "index": 10,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "Generate ONE actual inbetween milkfrog run frame10/12,83.33%, SECOND FLIGHT after FAR leg toeoff. Reference1 preceding75% highNEARknee/fartoeoff, reference2 upcoming0% NEARcontact defines exactsameidentity/scale/camera/material.\nBothfeet mustbe AIRBORNE above commonfloor y1192. Permanent BACKGROUND FAR leg left/backsupport foot LEAVES ground and curls UP behindhip to soleabouty1040 (leftside). Permanent FOREGROUND NEAR BIG thigh remainsforward/right; highnearKNEE opens/lowers slightly, lowerlegEXTENDS forward/down so nearpinkfoot reachesright aboutx1080,y1110, stillaboveground. Don'tkeep farleftfoot grounded, don't leave nearcalf foldedunderhiplike75%. Two visible connectedlegchains withnearrootforeground/farroothiddenbehind.\nArms transitiongradually from75% to0%: nearOPENhand stillbehindleft butstartingforward frombackextreme, wristaroundx300,y700; fareCURLEDhandstillfrontbutstartingback fromfrontextreme aroundx1040,y650. Neitherhandstate swaps; foreupperarm/oppositethighcounterphase, nobigteleport tootherextreme, exactlytwoarms/twolegs, no additionalpinkfeet/fingers/ghosts.\nSAME1254squarecanvas/scale/headsize/face/gaze/expression/blackink/muscleshading; bodyriseonly10pxnotzoom. Stableyellowskin/whitebelly/pinkwebhandsfeet. Allsilhouette32pxinside, transparentalpha/no floor/shadow/lettering/controlcolors. OutputONE cleangenuineaerialtransition readyfornextnearlanding.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e866957e-10b8-4c63-aee6-b4d820a28d74.png",
+      "generatedFileSha256": "b823220d6cf3a346d80169cfe4364fd54c7dc5a9788ba5e533734312f9fdf26d",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-d5a0947a-27cc-4a6f-b673-2d27509f563a.png",
+          "sha256": "2d131d88f634416af26fe822864005bbbf33bcd8d2550a802d3b5aaf54699efe"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+        }
+      ],
+      "phase": 2.5,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          85,
+          88,
+          1119,
+          1047
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Both feet visibly airborne, near leg extending forward for landing, far foot curled behind."
+      }
+    },
+    {
+      "index": 11,
+      "version": 1,
+      "tool": "image_gen.imagegen",
+      "prompt": "ONE actual clean milkfrog frame11/12,91.67%, NEAR prelanding that closes seamlessly to nextkey0. Reference1 previousflight83.33%; reference2 next0% nearcontact is exact finaltargetidentity/camera.\nPermanent FOREGROUND NEAR bigthigh extends forward/right and knee opens slightly more, near pinkfoot LOWERS to sole SOURCE y1168, just24pxabove fixedground1192 beforelanding. Sameforegroundnearroot/nearlegfromreference1, never swap. Permanent BACKGROUND FAR leg remains folded/recovering BEHIND hip with farpinkfoot raisedatleft near y870. Bothfeetvisible, no groundpenetration, two connectedchains. Nearprelanding footshould be closeinshape/position to reference2 contacting foot butstillairborne. This is notrepeatfullcontact.\nNEAR OPEN hand stays back/left but upperarm lowersslightlytowardcontact, handcenteraroundx240,y650 matchingnextkey0; FAR CURLED fist stays frontandlowersslightlyaroundx1060,y600 matchingnextkey0. Samepermanenthandstates/fingertoes, no ghosts/extraarms. Avoidlargearmteleport andface/material redraw. Faceheadscale/gaze/expression/whitebelly/headregistrationexactmatchingnextreference2, preserved1254squarecamera/sourceorigin.\nFullsilhouette32pxinside, transparentalpha/no shadow/line/lettering; stableyellowmuscularfrogwhitebellygreeneyespinkhandfeet polished2Dink. OutputONEgenuinecleanprelanding source that transitions tokey0 naturally.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-69af362b-1efe-4614-8874-a157177d22f2.png",
+      "generatedFileSha256": "25a7c1506814c065eb06f544c2dcb22ea624672cf3f7babde151f00bd553734f",
+      "referenceFiles": [
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e866957e-10b8-4c63-aee6-b4d820a28d74.png",
+          "sha256": "b823220d6cf3a346d80169cfe4364fd54c7dc5a9788ba5e533734312f9fdf26d"
+        },
+        {
+          "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+          "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+        }
+      ],
+      "phase": 2.75,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          95,
+          91,
+          1108,
+          1113
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "notes": "Near foot lowered toward landing and cycle0; actual source contact line to measure, not assert prompt target."
+      }
+    }
+  ],
+  "selectedSourceOrder": [
+    {
+      "index": 0,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-00-v1.png"
+    },
+    {
+      "index": 1,
+      "version": 2,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-01-v2.png"
+    },
+    {
+      "index": 2,
+      "version": 3,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-02-v3.png"
+    },
+    {
+      "index": 3,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-03-v1.png"
+    },
+    {
+      "index": 4,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-04-v1.png"
+    },
+    {
+      "index": 5,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-05-v1.png"
+    },
+    {
+      "index": 6,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-06-v1.png"
+    },
+    {
+      "index": 7,
+      "version": 5,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-07-v5.png"
+    },
+    {
+      "index": 8,
+      "version": 2,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-08-v2.png"
+    },
+    {
+      "index": 9,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-09-v1.png"
+    },
+    {
+      "index": 10,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-10-v1.png"
+    },
+    {
+      "index": 11,
+      "version": 1,
+      "source": "/frame-animation-assets/milk-frog-run-v2-frame-11-v1.png"
+    }
+  ],
+  "limitations": [
+    "Twelve actual source frames; source baseline/limb proportions/material continuity and complete cycle still unapproved",
+    "Prior four-key50% identity/18px registration failures retained; intermediate failed variants retained, not selected",
+    "No per-frame rescale/recenter or original source pixel editing",
+    "Actual headtop/sole/envelope/geometry consistency must be judged at common source coordinates"
+  ],
+  "reviewedEvidence": [
+    "contact-light.png",
+    "contact-dark.png",
+    "movie-normal-contact.png",
+    "movie-slow-contact.png",
+    "ui-native-00.png through ui-native-11.png"
+  ],
+  "pixelMeasurementDefinition": "Original1254²RGBA alpha>=24 before padding; these are whole-sprite lowest pixels. Visual inspection confirms planted foot for contact cases; airborne values are flight envelopes, not ground error.",
+  "selectedActualReview": [
+    {
+      "index": 0,
+      "stageObserved": "near contact",
+      "sourceSoleY": 1192,
+      "headTopY": 84,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192."
+      ]
+    },
+    {
+      "index": 1,
+      "stageObserved": "near load",
+      "sourceSoleY": 1199,
+      "headTopY": 96,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192."
+      ]
+    },
+    {
+      "index": 2,
+      "stageObserved": "far passing; near support",
+      "sourceSoleY": 1207,
+      "headTopY": 94,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192."
+      ]
+    },
+    {
+      "index": 3,
+      "stageObserved": "near takeoff",
+      "sourceSoleY": 1192,
+      "headTopY": 92,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192.",
+        "Arm hand progression remains a large step vs prior2."
+      ]
+    },
+    {
+      "index": 4,
+      "stageObserved": "flight A",
+      "sourceSoleY": 1118,
+      "headTopY": 92,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Both feet airborne / descending transition seen."
+      ]
+    },
+    {
+      "index": 5,
+      "stageObserved": "far prelanding",
+      "sourceSoleY": 1160,
+      "headTopY": 91,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Both feet airborne / descending transition seen."
+      ]
+    },
+    {
+      "index": 6,
+      "stageObserved": "far contact",
+      "sourceSoleY": 1188,
+      "headTopY": 91,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192."
+      ]
+    },
+    {
+      "index": 7,
+      "stageObserved": "far load; near recovery",
+      "sourceSoleY": 1209,
+      "headTopY": 88,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192.",
+        "Foreground thigh narrows abruptly vs6; near recovery under pelvis now visible."
+      ]
+    },
+    {
+      "index": 8,
+      "stageObserved": "near passing; far support",
+      "sourceSoleY": 1202,
+      "headTopY": 86,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192.",
+        "Near upper arm points back although flexed forearm puts open hand near waist; wrist alone is not swing direction."
+      ]
+    },
+    {
+      "index": 9,
+      "stageObserved": "far takeoff",
+      "sourceSoleY": 1201,
+      "headTopY": 88,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192.",
+        "Near high knee changes rapidly from8; torso/thigh highlights change."
+      ]
+    },
+    {
+      "index": 10,
+      "stageObserved": "flight B",
+      "sourceSoleY": 1134,
+      "headTopY": 88,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Both feet airborne / descending transition seen."
+      ]
+    },
+    {
+      "index": 11,
+      "stageObserved": "near landing (earlier than requested prelanding)",
+      "sourceSoleY": 1203,
+      "headTopY": 91,
+      "nearHand": "open",
+      "farHand": "curled",
+      "sourceState": "failed",
+      "nearFarIdentityBasis": "manual foreground hip/thigh occlusion and fixed hand states, not file phase or source control coordinates",
+      "notes": [
+        "Contact foot varies from common1192.",
+        "Actual foot already reaches1203, not intended1168 prelanding; first-frame1192 and near calf angle/foot x shift on loop."
+      ]
+    }
+  ],
+  "failedChecks": {
+    "contactBaseline": {
+      "commonRequestedSoleY": 1192,
+      "plantedIndices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "rangePixels": 21,
+      "status": "failed"
+    },
+    "materialRegistration": {
+      "status": "failed",
+      "observed": "Head top varies84..96, shoulder/abdominal highlights and wrist/ankle dot density change across independently edited source frames. Top range alone is not head-size proof; full-source visible shape comparison also required."
+    },
+    "motion": {
+      "status": "failed",
+      "observed": "Actual passing/load/flight now exist and support side swaps; arm transitions2→3 and7→8→9 still visibly abrupt. 11→0 leg angle/contact foot position and shine change. Not a signed-off game loop."
+    },
+    "facialAnimation": {
+      "status": "not-produced",
+      "observed": "All12 wide-eyed smile, no blink track; short1.5s run does not require a blink, dedicated facial animation remains outstanding."
+    },
+    "alphaClipping": {
+      "status": "passed-local",
+      "observed": "All original chosen1254²RGBA alpha>=24 has zero edge pixels. 10% requested margin not achieved; minimum actual margin32px. Alpha0 hiddenRGB is not asset contamination."
+    }
+  },
+  "technicalReport": "technical-qa.json"
+}

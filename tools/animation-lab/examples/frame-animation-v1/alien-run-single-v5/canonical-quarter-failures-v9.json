@@ -1,0 +1,143 @@
+{
+  "visualQA": "failed",
+  "frames": [
+    {
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Edit reference image1 into ONE actual game animation PNG. Image1 is the accepted canonical camera and alien face/skin/clothing reference, image2 is the assigned limb pose diagram only. Keep the ENTIRE HEAD FACE EYE NECK AND TORSO of image1 at the exact same original position, apparent size, skin microtexture and lighting. Do not regenerate, enlarge, round or recenter the head. Repose only both arms and legs. True alpha background. Canvas 1086×1448 same as image1, no zoom/fit/crop. Actual baseline of image1 is y1375 for ground contact; use y1375 precisely for contacting toe, not bottom canvas y1448. The hip/belt remains at same height and x as image1. Red means permanent near foreground limb, blue far background limb. Real skin/clothing, no colors/bones/labels. Same olive sleeveless vest, cream undershirt, brown cargo pants, dark brown boots; large outer cargo thigh pocket stays on near leg, never transfers to far leg. Same gaze/expression/speckle pattern/eye shape. Every hand and boot inside canvas with at least64px lateral margin and64px below lowest foot. Independent two fists and two boots, no body crossing discontinuity. Return a single actual 3D rendered sprite, not sheet.\nPhase3/12 airborne: NEAR pocket thigh and leg extend diagonally BACK/LEFT with boot above y1375; FAR thigh points forward/right high knee, shin hangs down, far boot also above y1375. NEAR upper arm near vertical down with elbow at waist and forearm forward/right at waist. FAR elbow behind torso, forearm folded strongly up/forward and far fist near chest above near fist. Two independently visible fists separated vertically. Keep canonical head/face/microtexture and torso from image1 EXACT same scale/location. Both feet airborne; do not plant them.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-8a9b24f3-6385-486c-abb9-69c69f0311f9.png",
+      "generatedFileSha256": "751892f7e1594b8ccde68fca68f5044d4c438322bfd6c4ffbe8047eda728002a",
+      "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v9-phase-03.png",
+      "references": [
+        {
+          "role": "canonical frame0 identity/camera/style",
+          "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-00.png",
+          "sha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09"
+        },
+        {
+          "role": "single pose control",
+          "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-03.png",
+          "sha256": "42f70f21a0477d079425fed50b00d7e77ed38fb897dd5e8efcc7bfc1747781d6"
+        }
+      ],
+      "phase": 0.25,
+      "actualPNGSize": [
+        1086,
+        1448
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          102,
+          64,
+          833,
+          1277
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "poseAdherence": "partial-local-only",
+        "notes": "canonical重姿势头部尺度改善、两拳分离/两脚腾空；皮纹逐像素一致和全循环连续性仍不合格",
+        "upperSilhouetteMaxRun": 399,
+        "reviewedAt": "2026-10-11T17:33:27.325Z"
+      },
+      "index": 3,
+      "file": "alien-run-single-v9-phase-03.png"
+    },
+    {
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Edit reference image1 into ONE actual game animation PNG. Image1 is the accepted canonical camera and alien face/skin/clothing reference, image2 is the assigned limb pose diagram only. Keep the ENTIRE HEAD FACE EYE NECK AND TORSO of image1 at the exact same original position, apparent size, skin microtexture and lighting. Do not regenerate, enlarge, round or recenter the head. Repose only both arms and legs. True alpha background. Canvas 1086×1448 same as image1, no zoom/fit/crop. Actual baseline of image1 is y1375 for ground contact; use y1375 precisely for contacting toe, not bottom canvas y1448. The hip/belt remains at same height and x as image1. Red means permanent near foreground limb, blue far background limb. Real skin/clothing, no colors/bones/labels. Same olive sleeveless vest, cream undershirt, brown cargo pants, dark brown boots; large outer cargo thigh pocket stays on near leg, never transfers to far leg. Same gaze/expression/speckle pattern/eye shape. Every hand and boot inside canvas with at least64px lateral margin and64px below lowest foot. Independent two fists and two boots, no body crossing discontinuity. Return a single actual 3D rendered sprite, not sheet.\nPhase6/12 opposite support: FAR plain-side thigh extends forward/down to contact y1375, FAR boot in front. NEAR pocket-bearing thigh trails back/down, near knee bent and heel recovered behind/up. NEAR arm bends FORWARD/right fist at chest; FAR arm extends BACK/left with distinct fist behind hip. Exactly opposite arm/leg identities of image1. Large outer thigh cargo pocket on the REAR near thigh, not front far thigh. Keep canonical head/face/microtexture and torso from image1 unchanged in size/location, same toe line1375.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-cde58e79-772c-42a5-980f-4e5f4313eff5.png",
+      "generatedFileSha256": "ac22450458e18b4d04a89bbc183dcc9980f51478841f0bc120ef67e2fc95156c",
+      "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v9-phase-06.png",
+      "references": [
+        {
+          "role": "canonical frame0 identity/camera/style",
+          "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-00.png",
+          "sha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09"
+        },
+        {
+          "role": "single pose control",
+          "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-06.png",
+          "sha256": "10476f3f346e3f46e4486e21d6d9f73f6208b3bc09f86fba1d579570fcafc164"
+        }
+      ],
+      "phase": 0.5,
+      "actualPNGSize": [
+        1086,
+        1448
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          116,
+          65,
+          910,
+          1338
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "poseAdherence": "partial-local-only",
+        "notes": "canonical头形改善、两臂腿对侧交换；前靴接地比canonical1375线低约30px，原图未达固定地线",
+        "upperSilhouetteMaxRun": 396,
+        "reviewedAt": "2026-10-11T17:33:27.350Z"
+      },
+      "index": 6,
+      "file": "alien-run-single-v9-phase-06.png"
+    },
+    {
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Edit reference image1 into ONE actual game animation PNG. Image1 is the accepted canonical camera and alien face/skin/clothing reference, image2 is the assigned limb pose diagram only. Keep the ENTIRE HEAD FACE EYE NECK AND TORSO of image1 at the exact same original position, apparent size, skin microtexture and lighting. Do not regenerate, enlarge, round or recenter the head. Repose only both arms and legs. True alpha background. Canvas 1086×1448 same as image1, no zoom/fit/crop. Actual baseline of image1 is y1375 for ground contact; use y1375 precisely for contacting toe, not bottom canvas y1448. The hip/belt remains at same height and x as image1. Red means permanent near foreground limb, blue far background limb. Real skin/clothing, no colors/bones/labels. Same olive sleeveless vest, cream undershirt, brown cargo pants, dark brown boots; large outer cargo thigh pocket stays on near leg, never transfers to far leg. Same gaze/expression/speckle pattern/eye shape. Every hand and boot inside canvas with at least64px lateral margin and64px below lowest foot. Independent two fists and two boots, no body crossing discontinuity. Return a single actual 3D rendered sprite, not sheet.\nPhase9/12 airborne opposite passing: NEAR cargo-pocket thigh is the FRONT high-knee leg, near shin hangs down and boot airborne above1375; FAR plain-side leg extends diagonally BACK/left boot airborne. NEAR elbow down at waist, near forearm folded UP/forward toward chest. FAR upper arm near-vertical down behind shoulder, FAR forearm forward/right at waist. Both independent fists visible, near upper fist above far waist-level fist. Big thigh cargo pocket ONLY on front raised near thigh. Keep canonical head/face/microtexture and torso from image1 unchanged in size/location. No ground contact.",
+      "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-5fce00e6-087d-4619-9775-22b0159f17ee.png",
+      "generatedFileSha256": "f6dc1584c4982853c55ffbfbedfc2bb358bd616eee76a03a5c1c7fd197ebf856",
+      "projectFile": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v9-phase-09.png",
+      "references": [
+        {
+          "role": "canonical frame0 identity/camera/style",
+          "path": "tools/animation-lab/public/frame-animation-assets/alien-run-single-v5-phase-00.png",
+          "sha256": "0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09"
+        },
+        {
+          "role": "single pose control",
+          "path": "tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/control-09.png",
+          "sha256": "9e788ed73386476c29eedf9ef617b2046b1fe8333592b37cf354853123146c08"
+        }
+      ],
+      "phase": 0.75,
+      "actualPNGSize": [
+        1086,
+        1448
+      ],
+      "pixelBounds": {
+        "threshold": 24,
+        "bounds": [
+          109,
+          65,
+          849,
+          1215
+        ],
+        "edgePixels": 0,
+        "hasTransparency": true,
+        "touchesEdge": false,
+        "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+      },
+      "qa": {
+        "visual": "failed",
+        "poseAdherence": "failed-extra-arm",
+        "notes": "失败：除了前方两拳，腰后还残留第三拳/手臂，违反two arms；不能签收或放入修复序列。源图和失败证据保留。",
+        "upperSilhouetteMaxRun": 396,
+        "reviewedAt": "2026-10-11T17:33:27.369Z"
+      },
+      "index": 9,
+      "file": "alien-run-single-v9-phase-09.png"
+    }
+  ]
+}

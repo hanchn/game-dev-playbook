@@ -1,0 +1,253 @@
+{
+  "schema": "frame-animation-generation-receipt",
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "mode": "identity-preserve-framing-edit",
+  "prompt": "Use case: identity-preserve. Image1 is the edit target, an eight-frame jump animation sheet. Keep EXACTLY this character identity, outfit, all eight phases, right-facing side profile, realistic 3D details and 4columns2rows chronological arrangement. Change ONLY the framing/registration of all sprites so the sheet is production usable. Inside EACH equal cell, make character significantly smaller: upright character height MUST be at most 65% of cell height, leaving top and side transparent padding >=12% cell width. Standing/grounded boot bottom baseline is exactly 90% of each cell height, center of ankle/groundcontact at55% of cellwidth. Grounded poses all share exact bootbottomline. Keep SAME scale all8frames; do not vertically align crouch/bend heads to standing heads. Every head, hand, boot fully inside cell. Jump airborne stages4and5 elevated relative to the groundbaseline and never approach topcell boundary. Reduce jump peakheight if needed. Do NOT redraw outfit or add anything, NO lines/frames/text/labels, TRUE TRANSPARENCY, keeporiginalalpha. Clean smooth antialiased edges without red or yellow outline fringe. Cell geometry remains perfect4x2equalgrid. This is a framing cleanup, not a new animation or new character.",
+  "identityReference": {
+    "file": "/var/folders/ht/fxlk64qd1n5295122_f9x0tr0000gn/T/codex-clipboard-46b92074-c402-4f79-8798-021fb74f66f1.png",
+    "sha256": "a5aac5db4f27260ead6e6a8e29cba3aacb08f34024fef82252363a690eab2c2e"
+  },
+  "editReference": {
+    "file": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-2ef649f0-83df-4e88-883b-76091fde0e3f.png",
+    "sha256": "17c923dc8ec3cbb593391c499f61334b85df1578ceea53f72863fa6efde29023"
+  },
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b3d-36f6-7940-9b76-4af3dbeb70dc/exec-d49e6d67-d252-4896-a1dd-1d0f286f6225.png",
+  "generatedFileSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+  "projectFile": "public/frame-animation-assets/alien-jump-v2.png",
+  "projectFileSha256": "105acc4501f1652ef67710a2ccb6480af120fbc7ee74667365854f77661b6596",
+  "image": {
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "count": 8,
+    "cellWidth": 443.5,
+    "cellHeight": 443.5,
+    "order": "row-major",
+    "requiresIntegerGridNormalization": true,
+    "boundaryPolicy": "floor(col*width/4),floor(row*height/2); final boundary=image dimensions"
+  },
+  "playback": {
+    "fps": 8,
+    "durationSeconds": 1,
+    "loop": false
+  },
+  "qa": {
+    "visual": "needs-registration-and-playback-review",
+    "frames": [
+      {
+        "index": 0,
+        "phase": "ready",
+        "alphaBoundsLocal": [
+          189,
+          106,
+          305,
+          425
+        ],
+        "marginLocal": {
+          "left": 189,
+          "top": 106,
+          "right": 138,
+          "bottom": 18
+        },
+        "cellRect": [
+          0,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "站立准备，手低；首尾头部尺度略有变化",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 1,
+        "phase": "crouch",
+        "alphaBoundsLocal": [
+          130,
+          160,
+          324,
+          425
+        ],
+        "marginLocal": {
+          "left": 130,
+          "top": 160,
+          "right": 120,
+          "bottom": 18
+        },
+        "cellRect": [
+          443,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "蓄力蹲低，胳膊向后；两靴叠合",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 2,
+        "phase": "takeoff",
+        "alphaBoundsLocal": [
+          169,
+          137,
+          322,
+          425
+        ],
+        "marginLocal": {
+          "left": 169,
+          "top": 137,
+          "right": 121,
+          "bottom": 18
+        },
+        "cellRect": [
+          887,
+          0,
+          443,
+          443
+        ],
+        "visualObservation": "起跳伸腿有限，尚呈蹲姿；离地辨识需播放",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 3,
+        "phase": "rise",
+        "alphaBoundsLocal": [
+          156,
+          101,
+          324,
+          380
+        ],
+        "marginLocal": {
+          "left": 156,
+          "top": 101,
+          "right": 120,
+          "bottom": 63
+        },
+        "cellRect": [
+          1330,
+          0,
+          444,
+          443
+        ],
+        "visualObservation": "离地抬臂，腿收；头部留边v2改善",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 4,
+        "phase": "apex",
+        "alphaBoundsLocal": [
+          172,
+          90,
+          341,
+          355
+        ],
+        "marginLocal": {
+          "left": 172,
+          "top": 90,
+          "right": 102,
+          "bottom": 89
+        },
+        "cellRect": [
+          0,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "顶点收腿；最高点脚线低于期望轨迹，需播放判断",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 5,
+        "phase": "fall",
+        "alphaBoundsLocal": [
+          179,
+          103,
+          335,
+          391
+        ],
+        "marginLocal": {
+          "left": 179,
+          "top": 103,
+          "right": 109,
+          "bottom": 53
+        },
+        "cellRect": [
+          443,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "下降姿，腿逐步伸，手臂仍前伸",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 6,
+        "phase": "landing",
+        "alphaBoundsLocal": [
+          166,
+          154,
+          303,
+          403
+        ],
+        "marginLocal": {
+          "left": 166,
+          "top": 154,
+          "right": 140,
+          "bottom": 41
+        },
+        "cellRect": [
+          887,
+          443,
+          443,
+          444
+        ],
+        "visualObservation": "落地缓冲可见，groundline与起始站姿偏移",
+        "status": "reviewed-with-open-registration-defect"
+      },
+      {
+        "index": 7,
+        "phase": "recovery",
+        "alphaBoundsLocal": [
+          167,
+          99,
+          277,
+          404
+        ],
+        "marginLocal": {
+          "left": 167,
+          "top": 99,
+          "right": 167,
+          "bottom": 40
+        },
+        "cellRect": [
+          1330,
+          443,
+          444,
+          444
+        ],
+        "visualObservation": "恢复站立，头部/boot尺度与frame1轻微不同",
+        "status": "reviewed-with-open-registration-defect"
+      }
+    ],
+    "observations": [
+      "8阶段均可见，角色服装和朝向基本保持；逐帧视审已执行",
+      "v2留边明显改善且关节连续；仍有落脚基线、头部尺度和水平registration轻微偏移，未签收最终成片",
+      "工具黑底预览可见红黄细线；A>128红色筛查仅少量或零候选，不能仅凭预览证实source边缘污染，需真实深浅底播放验收。"
+    ],
+    "gameIntegrated": false,
+    "playbackReviewed": false,
+    "edgePixelScreening": {
+      "opaqueRedCandidates": 10,
+      "opaqueYellowCandidates": 0,
+      "criterion": "RGBA A>128 and saturated red/yellow heuristic; advisory not exact segmentation",
+      "interpretation": "少量颜色候选不能单独证明轮廓缺陷；工具黑底预览的红黄线可能为低alpha隐藏RGB，深浅底真实播放待查。"
+    }
+  }
+}

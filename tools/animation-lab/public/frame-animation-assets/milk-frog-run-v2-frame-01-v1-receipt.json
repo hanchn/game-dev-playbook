@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Generate ONE actual new inbetween run-frame of the EXACT milk-frog animation, frame1/12 (8.33% near-side LOADING). Reference1 is preceding key0 contact; Reference2 is next key25% toe-off. Preserve reference1 character face size, headtop around84px, pink/yellow/white materials, ink,1254 square fixed camera; do not invent another style or scale. These are final art references, no colored guide.\nMake a distinct TRANSITION one third of the way from reference1 to reference2, not an identical extreme. NEAR foreground thigh is still forward/right but less extended; near knee bends for WEIGHT LOADING, near foot remains contacting at COMMON source y1192, directly below and slightly in front of hip. FAR background recovering foot comes forward under pelvis, still lifted; far knee advances from left/back toward vertical below hip, distinctly visible behind near leg. Permanent two hip-knee-ankle chains, big foreground near thigh stays in FRONT at root.\nNEAR open pink hand/upper arm travels from BACK toward downward passing, halfway down/behind waist; near elbow less far-left than key0. It must not jump to full front-extreme chest pose yet. FAR curled hand arm travels from chest toward waist, distinct behind torso, it must not jump fully behind. Same permanent near OPEN hand and far CURLED hand in every frame. Exactly2arms2legs, no extra limbs/fingers or merged feet.\nHead/torso SAME size and surface markings as reference1; only subtle anatomical bob and limb motion. Running support load is slight knee flexion, not squatting. Both eyes open, stable cheerful face/gaze, no compulsory blink. Original canvas camera/sourceorigin never changes; max silhouette stays at least32px inside. Transparent alpha background, no floor/shadow/text. Output ONE clean rendered sprite, genuine intermediate frame.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-af1060bb-294c-4292-9616-d3c768a6ca15.png",
+  "generatedFileSha256": "1ed608e3baf2c56b365476e8f04a2f0895b85b0018617152390c04f0b00805a3",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-96c618b6-5d94-49ef-9bbf-57b176c55bee.png",
+      "sha256": "d1bfd8fbaa401770a7d11785a8018dfaaf6d753b10944120bf1f986d76abdd9d"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-7b87dd0a-1aaa-4988-855d-064ac0529151.png",
+      "sha256": "87825841e204357e2455bb303916294c51cb5ceb97d20a1a541651470d4bea46"
+    }
+  ],
+  "phase": 0.25,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      253,
+      96,
+      872,
+      1103
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Loading geometry present, wrist travel overly large before repair."
+  }
+}

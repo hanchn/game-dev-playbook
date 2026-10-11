@@ -1,0 +1,9 @@
+### Result
+{"seen":["0","1","2","3","4","5","6","7","8","9","10","11"],"slowSourceDuration":"12 unchanged original PNGs x500ms=6sec; capture8fps48holdPNGs, not48uniquegeneratedframes","status":"拍摄包已导出：WEBM 视频 + 48 张 PNG + 图集 + 时序。视频时长需用 FFprobe 核查。"}
+### Ran Playwright code
+```js
+await (async(page)=>{await page.locator("#frame-duration").fill("500");await page.locator("#apply-duration").click();await page.locator("#play").click();const seen=new Set();for(let i=0;i<76;i++){seen.add(await page.locator("#scrub").inputValue());await page.waitForTimeout(160);}await page.locator("#play").click();const d=page.waitForEvent("download");await page.locator("#record").click();await(await d).saveAs("/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-run-sequence-v2/browser-slow-capture.zip");return {seen:[...seen].sort((a,b)=>+a-+b),slowSourceDuration:"12 unchanged original PNGs x500ms=6sec; capture8fps48holdPNGs, not48uniquegeneratedframes",status:await page.locator("#status").textContent()};})(page);
+```
+### Events
+- Downloading file animation-capture.zip ...
+- Downloaded file animation-capture.zip to ".playwright-cli/animation-capture.zip"

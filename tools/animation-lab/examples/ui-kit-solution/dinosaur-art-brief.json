@@ -1,0 +1,26 @@
+{
+  "name": "恐龙跃迁",
+  "genre": "platformer",
+  "coreLoop": "移动与跳跃，避开陷阱、收集晶石，抵达关卡终点",
+  "audience": "轻度玩家，短时间游玩",
+  "orientation": "landscape",
+  "input": "touch",
+  "engine": "phaser",
+  "artStyle": "HD 半写实预渲染恐龙与柔和史前丛林",
+  "theme": "jungle",
+  "progression": "levels",
+  "sessionMinutes": 3,
+  "productionKit": "dinosaur-jade-amber-v2",
+  "references": [
+    {
+      "role": "player",
+      "path": "/lab/dinosaur",
+      "kind": "existing-character"
+    },
+    {
+      "role": "menu-background",
+      "path": "/ui-suite/dinosaur-jungle-home-v1.png",
+      "kind": "generated-bitmap"
+    }
+  ]
+}

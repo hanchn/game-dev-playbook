@@ -1,0 +1,93 @@
+{
+  "canvasId": "2104953051498848257",
+  "targetType": "NODE",
+  "targetId": "node_1790705168690_3nm52je",
+  "canvas": {
+    "nodes": [
+      {
+        "data": {
+          "aspectRatio": "16:9",
+          "height": 320,
+          "label": "赵家锅屋土灶-v001",
+          "sourceObjects": [
+            "https://rh-canvas-files.xiaoyaoyou.com/958c82e5aa39e5c908f82fd3b15d10ee/uploads/86ca3d90ff469ee4c3adcde37334e2aa.png"
+          ],
+          "status": "success",
+          "subType": "text-image",
+          "title": "赵家锅屋土灶-v001",
+          "width": 180
+        },
+        "id": "node_1790705404157_lyb4j8h",
+        "position": {
+          "x": -34.19592702160628,
+          "y": 1524.014343734655
+        },
+        "selectable": true,
+        "style": {
+          "height": 220,
+          "width": 380
+        },
+        "type": "rh-image"
+      },
+      {
+        "data": {
+          "generateNum": 1,
+          "height": 645,
+          "label": "视频",
+          "maxConnect": {
+            "image": null,
+            "text": null,
+            "video": null
+          },
+          "modelCode": "multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+          "output": null,
+          "params": {
+            "aspectRatio": "3:4",
+            "audioMode": "native",
+            "duration": "4",
+            "prompt": "One continuous side-profile 3D game character animation, using reference image1 as the exact alien explorer identity, clothes, boots, face, eye, skin detail and camera/scale reference. Large speckled beige bald elongated cranium, blue eye, olive sleeveless vest, cream undershirt, brown cargo trousers and dark boots. Strict orthographic right-facing side view, camera entirely locked, character pelvis remains in the same horizontal location and stable body size, tiny natural pelvis bob only. Run in place for four seconds with about three complete natural left/right cycles. Show TWO arms and TWO legs at all times, permanent near/far identities; foreground near thigh carries the same outside cargo pocket. NEAR thigh swings forward as NEAR arm swings backward, then near thigh recovers backward as NEAR arm swings forward. FAR arm and leg alternate in opposite phases; far knee, far foot and far fist visibly emerge each cycle, never stay hidden/frozen. Each shoulder-elbow-wrist follows a continuous back-passing-front-passing arc with bent elbows and softly closed independent fists. Feet must pass through contact, weight bearing, toe-off, folded-heel recovery, high-knee passing, airborne phase, landing approach; alternate which foot supports. No extra hands/feet, no cycling two extreme still poses. Keep same head/eye/microtexture throughout, forward gaze and same friendly slight smile, no forced blink. Entire full body, every head/hand/boot remain within one fixed movement envelope with at least8% safe canvas margin; no zoom, no camera pan, no camera yaw, no recentering, no cuts. Ground plane and foot sole baseline stay fixed; no sliding supporting foot and no floating contact. Simple constant flat light-gray background, no props, text, graphics or additional person. This video is a real continuous motion probe; final transparency is not claimed.",
+            "refAudio1": "",
+            "refAudio2": "",
+            "refAudio3": "",
+            "refImage1": "https://rh-canvas-files.xiaoyaoyou.com/958c82e5aa39e5c908f82fd3b15d10ee/uploads/0e7ce0a70eca180a9d079d8386e974481e6fcee6185de5c03e459c9a2f95ec09.png",
+            "refImage2": "",
+            "refImage3": "",
+            "refImage4": "",
+            "refImage5": "",
+            "refImage6": "",
+            "refImage7": "",
+            "refImage8": "",
+            "refImage9": "",
+            "resolution": "768p"
+          },
+          "prompt": "One continuous side-profile 3D game character animation, using reference image1 as the exact alien explorer identity, clothes, boots, face, eye, skin detail and camera/scale reference. Large speckled beige bald elongated cranium, blue eye, olive sleeveless vest, cream undershirt, brown cargo trousers and dark boots. Strict orthographic right-facing side view, camera entirely locked, character pelvis remains in the same horizontal location and stable body size, tiny natural pelvis bob only. Run in place for four seconds with about three complete natural left/right cycles. Show TWO arms and TWO legs at all times, permanent near/far identities; foreground near thigh carries the same outside cargo pocket. NEAR thigh swings forward as NEAR arm swings backward, then near thigh recovers backward as NEAR arm swings forward. FAR arm and leg alternate in opposite phases; far knee, far foot and far fist visibly emerge each cycle, never stay hidden/frozen. Each shoulder-elbow-wrist follows a continuous back-passing-front-passing arc with bent elbows and softly closed independent fists. Feet must pass through contact, weight bearing, toe-off, folded-heel recovery, high-knee passing, airborne phase, landing approach; alternate which foot supports. No extra hands/feet, no cycling two extreme still poses. Keep same head/eye/microtexture throughout, forward gaze and same friendly slight smile, no forced blink. Entire full body, every head/hand/boot remain within one fixed movement envelope with at least8% safe canvas margin; no zoom, no camera pan, no camera yaw, no recentering, no cuts. Ground plane and foot sole baseline stay fixed; no sliding supporting foot and no floating contact. Simple constant flat light-gray background, no props, text, graphics or additional person. This video is a real continuous motion probe; final transparency is not claimed.",
+          "status": "idle",
+          "subType": "multimodal-video",
+          "title": "视频",
+          "width": 360
+        },
+        "id": "node_1790705168690_3nm52je",
+        "position": {
+          "x": 415.8040729783937,
+          "y": 1624.014343734655
+        },
+        "selectable": true,
+        "style": {
+          "height": 220,
+          "width": 380
+        },
+        "type": "rh-video"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-node_1790705404157_lyb4j8h-node_1790705168690_3nm52je",
+        "source": "node_1790705404157_lyb4j8h",
+        "sourceHandle": "output",
+        "target": "node_1790705168690_3nm52je",
+        "targetHandle": "input",
+        "type": "default"
+      }
+    ]
+  }
+}

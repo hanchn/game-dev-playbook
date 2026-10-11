@@ -1,0 +1,217 @@
+{
+  "schema": "derived-isometric-nature/v1",
+  "id": "derived-isometric-nature",
+  "upstreamPage": "https://kenney.nl/assets/nature-kit",
+  "renderer": {
+    "blender": "5.2.1 LTS",
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      512,
+      512
+    ],
+    "azimuthDegrees": 45,
+    "elevationDegrees": 30,
+    "bitwiseRerenderGuaranteed": false,
+    "lighting": "key700 + front fill1800 + back fill1200; no black unlit faces"
+  },
+  "derivation": "Retained GLB meshes rendered offline with coherent forest material palette; originals unmodified",
+  "palette": {
+    "grass": "596e33",
+    "dirt": "88735b",
+    "leafsGreen": "426d38",
+    "leafsGreenDark": "355637",
+    "leafsDark": "355637",
+    "leafs": "426d38"
+  },
+  "rockGrassOverride": "84817b",
+  "assets": [
+    {
+      "name": "tree_pineTallA",
+      "path": "tree_pineTallA-6322d9bff729.png",
+      "sha256": "6322d9bff729120034e4cd248338365b448e645097cc0170eb03282238c230dc",
+      "bytes": 107012,
+      "rect": [
+        187,
+        69,
+        133,
+        362
+      ],
+      "anchorY": 0.9771284661898956,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallA.glb",
+      "sourceSHA256": "e0a56eb196d8a64ba86c7304d607136e17e6f9ad748dffcf86bd53b18b91b196",
+      "sourceSize": [
+        0.3862729072570801,
+        0.39195001125335693,
+        1.5296059846878052
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    },
+    {
+      "name": "tree_pineTallB",
+      "path": "tree_pineTallB-dd70d362a48b.png",
+      "sha256": "dd70d362a48bb9c76d938222a97bdfb74e36876336f0f51b4bedd2fdd8d47e25",
+      "bytes": 101249,
+      "rect": [
+        201,
+        69,
+        106,
+        361
+      ],
+      "anchorY": 0.9798350030365413,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_pineTallB.glb",
+      "sourceSHA256": "49b54146351e1e009e97ee592f997a90a16b10c5467baf734d352df1cddec5d1",
+      "sourceSize": [
+        0.3862729072570801,
+        0.39195001125335693,
+        1.9346060752868652
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    },
+    {
+      "name": "tree_oak",
+      "path": "tree_oak-8b8205b6ab5d.png",
+      "sha256": "8b8205b6ab5d771c90a652a316372ae1632137a7f59d5b08e04188bd0909d0d8",
+      "bytes": 140055,
+      "rect": [
+        136,
+        42,
+        240,
+        416
+      ],
+      "anchorY": 0.9151933926802415,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_oak.glb",
+      "sourceSHA256": "d7fd8773674928c50c11b66d12c636d49bdcc15a8b1c7fbb98e6f63a3439a3f3",
+      "sourceSize": [
+        0.6405540108680725,
+        0.7396479845046997,
+        1.2262399196624756
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    },
+    {
+      "name": "tree_small",
+      "path": "tree_small-af85e5755093.png",
+      "sha256": "af85e5755093b0213c0a228cfd0c3f13ece1e573bd32589345fd4cae4f607e10",
+      "bytes": 115906,
+      "rect": [
+        182,
+        67,
+        148,
+        367
+      ],
+      "anchorY": 0.9692656597584405,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/tree_small.glb",
+      "sourceSHA256": "d26c0eeed65cc681667f50042ef23ec72ce47ae3b39837bfeec170b05ba6ab6a",
+      "sourceSize": [
+        0.35463735461235046,
+        0.4094999432563782,
+        1.1100374460220337
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    },
+    {
+      "name": "plant_bushLarge",
+      "path": "plant_bushLarge-1580af72199e.png",
+      "sha256": "1580af72199e575bee0388b15eaa7837d92bf53548f1f97faacfbe95f473c6c4",
+      "bytes": 125804,
+      "rect": [
+        102,
+        108,
+        308,
+        263
+      ],
+      "anchorY": 0.881712590786894,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/plant_bushLarge.glb",
+      "sourceSHA256": "10e1d9fbf29d96d1d1a56fb2ce25ae66537505101759229afe01ae22c6c45e02",
+      "sourceSize": [
+        0.3743099868297577,
+        0.3356877863407135,
+        0.2429330199956894
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    },
+    {
+      "name": "rock_largeA",
+      "path": "rock_largeA-8cb5b4c48c69.png",
+      "sha256": "8cb5b4c48c6958b5ed2930793e42f3ed3ce8cf158381ab998295df2f2b53c5f5",
+      "bytes": 106421,
+      "rect": [
+        175,
+        158,
+        238,
+        211
+      ],
+      "anchorY": 0.6321178996732449,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeA.glb",
+      "sourceSHA256": "6dd15390fd96501dcd1454765a17ba61dbbd8d47705dfe5149c8dd92b353ce25",
+      "sourceSize": [
+        0.7849066853523254,
+        1.0154614448547363,
+        0.25977596640586853
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    },
+    {
+      "name": "rock_largeB",
+      "path": "rock_largeB-f85b58854034.png",
+      "sha256": "f85b588540344023601b13b84212c10c530a390b130896bae4116e5648771057",
+      "bytes": 116733,
+      "rect": [
+        176,
+        129,
+        241,
+        266
+      ],
+      "anchorY": 0.6999661438447192,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/rock_largeB.glb",
+      "sourceSHA256": "caa8b025833d4dabf6d98fe2e96cf2fbd886693ac990df0db75f9d827194374b",
+      "sourceSize": [
+        0.7667151093482971,
+        1.0154614448547363,
+        0.4302540123462677
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    },
+    {
+      "name": "mushroom_redGroup",
+      "path": "mushroom_redGroup-722674709c06.png",
+      "sha256": "722674709c069bbe0ae3c713ce9e33b57366bbb1832795d39c9131e6f9304fb1",
+      "bytes": 109532,
+      "rect": [
+        81,
+        91,
+        302,
+        357
+      ],
+      "anchorY": 0.7905915417924982,
+      "source": "public/map-resources/kenney-nature-kit/assets/Models/GLTF format/mushroom_redGroup.glb",
+      "sourceSHA256": "29f02df0589dd2b09e8d2aff6a4662394dac5cfcf1fec701640dcbd6127e0802",
+      "sourceSize": [
+        0.2696309983730316,
+        0.2541965842247009,
+        0.2504880130290985
+      ],
+      "qa": {
+        "visualAccepted": false
+      }
+    }
+  ],
+  "script": {
+    "path": "scripts/render-isometric-nature.py",
+    "sha256": "43601e62e8082cad0c68346b9ebcfe50840353efbdefe01f3905d363e191bf9c"
+  }
+}

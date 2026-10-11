@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use REFERENCE 1 as the EXACT FAR-ARM GEOMETRY priority; it is a code-native pose diagram, not final art. Edit the transparent yellow milk frog in REFERENCE 2. One single 1254x1254 frame. Correct only its whole far/rear curled-fist arm. The last result is STILL TOO FAR BACK: its visible rear elbow sits around (425,510) and fist around (505,665), making an extreme backswing instead of phase 8 passing. Replace that ENTIRE rear arm with the BLUE SHOULDER-ELBOW-WRIST chain of reference 1: shoulder pivot (650,430) behind the large foreground deltoid, upper arm running down-left to ELBOW (546,630), then forearm running diagonally DOWN-RIGHT to WRIST (698,795), a relaxed PINK CURLED FIST centered near (700,805). This is a large change of the whole arm's elbow and wrist, not a hand-only translation. The elbow must be LOWER and CLOSER TO THE BODY than the current extreme-back elbow. The fist must be LOWER by about 130px and FORWARD by about 190px from the current pink rear fist, near the lower-left belly/hip; it is just under the foreground open hand and before the raised front thigh. Far upper arm is hidden behind foreground deltoid and near upper arm where appropriate; show its yellow elbow and connected forearm and pink curled fist coherently. Do not attach the arm to a new point on the waist. Remove all old rear arm/fist pixels, no duplicated limb. Render the arm in the EXACT same natural YELLOW muscle/PINK fist/black-outline material as the source. No blue/red guides, no gray diagram shapes, no labels. STRICT INVARIANTS: keep the SAME near foreground arm and OPEN HAND, head/eyes/smile, torso/white belly, full BOTH legs and toes including raised leg and planted foot, pose, canvas/camera/scale/ground and alpha transparency. Do not rescale, crop, translate or alter face/body/feet. Only one clean natural character frame, no diagram.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-686f2b59-3add-45f3-bbad-17e7e47b9ffd.png",
+  "generatedFileSha256": "9c50fde1315f47afbb3da8e25f5b8b12c9367498676ce55ce094b33f4cc36aa9",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-arm-control-v1/control-08.png",
+      "sha256": "aa0fa011d98d683f83a60aafd7f984ad9329e9173a8a9d7f6df3fcf9611b74d7"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-1e644f27-056e-43f8-b219-991704b5b15d.png",
+      "sha256": "72797f1c2badbfbe142eb590a0098ab57d54cd40ce576234d37c3403f03a43b2"
+    }
+  ],
+  "phase": 0.6666666666666666,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      417,
+      85,
+      716,
+      1121
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": [
+      "Repair fails permanent hand identity: near OPEN palm changed into rounded curled-looking fingers; far fist no longer separately visible. Whole-arm guide not followed. Not selected."
+    ]
+  }
+}

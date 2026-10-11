@@ -1,0 +1,69 @@
+{
+  "assetId": "horse-side-v13",
+  "source": "/art/horse-side-parts-v5.png",
+  "sourceSha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+  "technical": "34/34 production/art-binding regression (horse/dinosaur); separate numerical per-action reports",
+  "artStatus": "failed",
+  "ui": "http://127.0.0.1:4317/lab/horse",
+  "status": "failed",
+  "observations": [
+    {
+      "action": "extend",
+      "joint": "neck",
+      "phases": [
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1
+      ],
+      "background": "light",
+      "evidence": "joints/neck-light.png",
+      "status": "improved",
+      "finding": "Source-derived back-root cut exposed in v10/v11 now tucked inside shoulder by revised native root landmark and posterior-only weighting. Front root remains tucked under torso; neck is continuous in this tested sweep."
+    },
+    {
+      "action": "run",
+      "phases": "16 sampled phases",
+      "background": "dark",
+      "evidence": "retest/run-dark.png",
+      "status": "failed",
+      "finding": "Parent-over-child ordering and black source material remove brown cuff bands; carpal and hock knobs remain prominent and overall legs still read as assembled pieces in close view."
+    },
+    {
+      "action": "graze",
+      "phases": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "background": "light",
+      "evidence": "../horse-side-v11/retest/graze-light.png",
+      "status": "failed",
+      "finding": "v11 old calibration evidence only. Current v13 source contour measure still lowest head at -36.2557 world px. Grazing mouth cannot reach ground; no claim of action completion."
+    },
+    {
+      "action": "run",
+      "background": "dark",
+      "speed": 0.25,
+      "evidence": "ui-run-dark-slow-paused.png",
+      "status": "reviewed-partial",
+      "finding": "Actual Chrome /lab/horse heading v13. Full-frame screenshot paused at late run phase; normal source opacity, complete body. Reopened playback but continuous slow playback coverage incomplete."
+    }
+  ],
+  "notReviewed": [
+    "full graze v13 deep/light sequences",
+    "full rear/jump/tail v13",
+    "all remaining far-side joint sheets",
+    "normal-speed browser loop and fixed-camera export envelope"
+  ],
+  "limitations": [
+    "Contact sheets auto-fit for inspection; they are not fixed-camera export proof.",
+    "Untouched old evidence referenced only when source/binding unchanged; actual version documented.",
+    "No user acceptance claimed."
+  ]
+}

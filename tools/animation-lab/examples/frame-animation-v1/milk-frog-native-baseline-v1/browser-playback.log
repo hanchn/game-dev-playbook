@@ -1,0 +1,13 @@
+### Result
+{"seen":["0","1","2","3","4","5"],"status":"ZIP 已导出，包含真实单帧 PNG、sheet.png 和 animation.json。","identity":"6 帧 · 原项目已有帧（非新生成） · 580 × 540"}
+### Ran Playwright code
+```js
+await (async(page)=>{const base="/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/milk-frog-native-baseline-v1/";let d=page.waitForEvent("download");await page.locator("#export-zip").click();await(await d).saveAs(base+"browser-v15-v16-frames.zip");await page.locator("#samples").selectOption("milk-frog-native-v15-v1");await page.locator("#load-sample").click();await page.waitForFunction(()=>document.querySelector("#scrub").max==="5");await page.locator("#play").click();const seen=new Set();for(let i=0;i<42;i++){seen.add(await page.locator("#scrub").inputValue());await page.waitForTimeout(40);}await page.locator("#play").click();await page.locator("#record-fps").fill("6");d=page.waitForEvent("download");await page.locator("#record").click();await(await d).saveAs(base+"browser-v15-capture.zip");d=page.waitForEvent("download");await page.locator("#export-zip").click();await(await d).saveAs(base+"browser-v15-frames.zip");return {seen:[...seen].sort((a,b)=>+a-+b),status:await page.locator("#status").textContent(),identity:await page.locator("#identity").textContent()};})(page);
+```
+### Events
+- Downloading file milk-frog-native-v15-v16-v1.zip ...
+- Downloaded file milk-frog-native-v15-v16-v1.zip to ".playwright-cli/milk-frog-native-v15-v16-v1.zip"
+- Downloading file animation-capture.zip ...
+- Downloaded file animation-capture.zip to ".playwright-cli/animation-capture.zip"
+- Downloading file milk-frog-native-v15-v1.zip ...
+- Downloaded file milk-frog-native-v15-v1.zip to ".playwright-cli/milk-frog-native-v15-v1.zip"

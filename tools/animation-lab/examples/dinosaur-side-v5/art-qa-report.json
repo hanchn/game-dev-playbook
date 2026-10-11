@@ -1,0 +1,759 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-11T14:52:46.800975+00:00",
+  "assetId": "dinosaur-side-v5",
+  "source": {
+    "atlas": "/art/dinosaur-side-parts-v5.png",
+    "sha256": "2a3ab3e9fbc6463694c10bc42ae6585f8ab0391962accb25b11d360c1bc879ad",
+    "bytes": 1631049,
+    "size": [
+      1448,
+      1086
+    ],
+    "skinSha256": "78d18baa6ced43c258905a206d5cf109a2597077828db233789bdf6987b37a3f",
+    "implementationSha256": {
+      "animal-rig.mjs": "ba0df7a5d51d59c53554450b33298169e40a0193a76854191cdd7e8c70f6d515",
+      "game-core.mjs": "f32c6f32b90dc69eb83b4deeaa65b9555222f21a5865a3eddd35394b63974335",
+      "human-soft-skin.mjs": "9d1a5f8787ac294b8ad8e2f83bb8a0cc1eac6ddcdaf08539239b31b6b2b07ed5",
+      "skin-renderer.mjs": "6480ea61cb4941920022a8b792ed0aeeb908c6be505a0a464f57af20572868b7",
+      "strip-skin.mjs": "24deab7ec45ebe3a3e0027734c628e1c9fd33796a676adc2a6c4beb1d050225a",
+      "scripts/audit-gait.mjs": "0f07e1ef8d7f31cc4bde15d3083fbaa06967cf428614301b0a43fac000364012"
+    }
+  },
+  "status": "visual-failed",
+  "userAccepted": false,
+  "technical": "passed",
+  "renderedFrames": 112,
+  "actions": [
+    {
+      "clip": "idle",
+      "status": "failed",
+      "findings": [
+        {
+          "id": "tail-root-band",
+          "status": "failed",
+          "observation": "尾根仍有深色圆套边，尾段下缘在身体后形成小台阶。",
+          "frame": 1,
+          "t": 0,
+          "evidence": "review/idle-01-light-3x.png",
+          "fallback": "idle-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "tail-strip-seams",
+          "status": "failed",
+          "observation": "尾巴出现规则竖向浅线，源图没有这些等距条纹，疑似 strip 三角形抗锯齿接边。",
+          "frame": 1,
+          "t": 0,
+          "evidence": "review/idle-01-light-3x.png",
+          "fallback": "idle-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "ankle-bulge",
+          "status": "failed",
+          "observation": "踝与足件相接的后侧有凸起球块，站姿看起来像粗大的脚跟。",
+          "frame": 1,
+          "t": 0,
+          "evidence": "review/idle-01-light-3x.png",
+          "fallback": "idle-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        }
+      ]
+    },
+    {
+      "clip": "walk",
+      "status": "failed",
+      "findings": [
+        {
+          "id": "tail-root-band",
+          "status": "failed",
+          "observation": "尾根圆套边及尾巴规则竖线仍存在。",
+          "frame": 5,
+          "t": 0.25,
+          "evidence": "review/walk-05-light-3x.png",
+          "fallback": "walk-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "swing-foot-flat",
+          "status": "failed",
+          "observation": "脚爪整个步行回摆保持水平；高抬脚帧形成端部球块与平脚爪，并缺少踝回收变化。",
+          "frame": 5,
+          "t": 0.25,
+          "evidence": "review/walk-05-light-3x.png",
+          "fallback": "walk-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "thigh-cuff",
+          "status": "failed",
+          "observation": "腿高抬时远侧大腿/膝部呈圆头短块，与小腿的细长轮廓接合生硬。",
+          "frame": 5,
+          "t": 0.25,
+          "evidence": "review/walk-05-light-3x.png",
+          "fallback": "walk-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        }
+      ]
+    },
+    {
+      "clip": "run",
+      "status": "failed",
+      "findings": [
+        {
+          "id": "tail-strip-seams",
+          "status": "failed",
+          "observation": "同样存在尾根套边和尾巴规则竖线。",
+          "frame": 4,
+          "t": 0.1875,
+          "evidence": "review/run-04-light-3x.png",
+          "fallback": "run-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "swing-foot-flat",
+          "status": "failed",
+          "observation": "快跑高回收仍保持平脚爪，与膝踝屈曲不相随。",
+          "frame": 4,
+          "t": 0.1875,
+          "evidence": "review/run-04-light-3x.png",
+          "fallback": "run-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "thigh-cuff",
+          "status": "failed",
+          "observation": "高回收远侧膝部近乎圆块，看起来是独立接头；需改善宽度、轴点及遮盖。",
+          "frame": 4,
+          "t": 0.1875,
+          "evidence": "review/run-04-light-3x.png",
+          "fallback": "run-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        }
+      ]
+    },
+    {
+      "clip": "jump",
+      "status": "failed",
+      "findings": [
+        {
+          "id": "inner-leg-unreadable",
+          "status": "failed",
+          "observation": "16 帧两腿轮廓几乎完全重合，起跳/腾空/落地都主要读成单腿；这不是腿冻结，属于同向跳跃的近远腿展示与造型问题。",
+          "frame": 8,
+          "t": 0.4666666666666667,
+          "evidence": "review/jump-08-light-3x.png",
+          "fallback": "jump-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "tail-strip-seams",
+          "status": "failed",
+          "observation": "腾空时尾根套边和规则竖向浅线仍明显。",
+          "frame": 8,
+          "t": 0.4666666666666667,
+          "evidence": "review/jump-08-light-3x.png",
+          "fallback": "jump-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "ankle-bulge",
+          "status": "failed",
+          "observation": "足爪在腾空时转下，但踝后方球块仍凸出。",
+          "frame": 8,
+          "t": 0.4666666666666667,
+          "evidence": "review/jump-08-light-3x.png",
+          "fallback": "jump-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        }
+      ]
+    },
+    {
+      "clip": "roar",
+      "status": "failed",
+      "findings": [
+        {
+          "id": "tail-strip-seams",
+          "status": "failed",
+          "observation": "咆哮仍有尾根套边与规则竖线。",
+          "frame": 6,
+          "t": 0.3333333333333333,
+          "evidence": "review/roar-06-light-3x.png",
+          "fallback": "roar-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "neck-transition",
+          "status": "failed",
+          "observation": "颈部仰起后身体上缘至后颈有较硬的角折，颈前缘缺少咆哮拉伸的柔和过渡。尖刺已经不在本轮图中出现。",
+          "frame": 6,
+          "t": 0.3333333333333333,
+          "evidence": "review/roar-06-light-3x.png",
+          "fallback": "roar-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "mouth-cavity-background",
+          "status": "failed",
+          "observation": "张嘴时口腔直接透出舞台背景，只有上颌、下颌、牙齿，无舌头/口腔深度；当前是剪纸开口效果。",
+          "frame": 6,
+          "t": 0.3333333333333333,
+          "evidence": "review/roar-06-light-3x.png",
+          "fallback": "roar-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        }
+      ]
+    },
+    {
+      "clip": "bite",
+      "status": "failed",
+      "findings": [
+        {
+          "id": "tail-strip-seams",
+          "status": "failed",
+          "observation": "前探咬击时尾根套边和尾巴竖向浅线仍在。",
+          "frame": 5,
+          "t": 0.26666666666666666,
+          "evidence": "review/bite-05-light-3x.png",
+          "fallback": "bite-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "mouth-cavity-background",
+          "status": "failed",
+          "observation": "张嘴最大帧直接透背景，缺口腔素材；牙齿归属已正确，放大未确认重复闭合嘴条。",
+          "frame": 5,
+          "t": 0.26666666666666666,
+          "evidence": "review/bite-05-light-3x.png",
+          "fallback": "bite-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "bite-stationary",
+          "status": "failed",
+          "observation": "咬击主要为原地俯身和转下颌，缺少明确向前冲量/接触点和恢复节奏；这里只看帧序列，速度自然度未播放审查。",
+          "frame": 5,
+          "t": 0.26666666666666666,
+          "evidence": "review/bite-05-light-3x.png",
+          "fallback": "bite-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        }
+      ]
+    },
+    {
+      "clip": "tail",
+      "status": "failed",
+      "findings": [
+        {
+          "id": "tail-root-band",
+          "status": "failed",
+          "observation": "尾根在正反摆动时保持圆套边和下缘台阶。",
+          "frame": 5,
+          "t": 0.25,
+          "evidence": "review/tail-05-light-3x.png",
+          "fallback": "tail-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "tail-strip-seams",
+          "status": "failed",
+          "observation": "波动过程中尾巴整段有规则竖向浅线，浅色背景更明显。",
+          "frame": 5,
+          "t": 0.25,
+          "evidence": "review/tail-05-light-3x.png",
+          "fallback": "tail-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        },
+        {
+          "id": "tail-body-response",
+          "status": "failed",
+          "observation": "尾巴变化而身体与后腿几乎完全固定，缺少摆尾蓄力/躯干反向补偿；若只定义局部尾巴展示可接受，但不足以作为全身攻击动作。",
+          "frame": 13,
+          "t": 0.75,
+          "evidence": "review/tail-13-light-3x.png",
+          "fallback": "tail-light-contact.png",
+          "retest": "same phase and framing after correction; neighboring frames and full clip on dark/light background"
+        }
+      ]
+    }
+  ],
+  "reviewed": [
+    {
+      "path": "idle-dark-contact.png",
+      "clip": "idle",
+      "background": "dark",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "idle-light-contact.png",
+      "clip": "idle",
+      "background": "light",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "walk-dark-contact.png",
+      "clip": "walk",
+      "background": "dark",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "walk-light-contact.png",
+      "clip": "walk",
+      "background": "light",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "run-dark-contact.png",
+      "clip": "run",
+      "background": "dark",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "run-light-contact.png",
+      "clip": "run",
+      "background": "light",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "jump-dark-contact.png",
+      "clip": "jump",
+      "background": "dark",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "jump-light-contact.png",
+      "clip": "jump",
+      "background": "light",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "roar-dark-contact.png",
+      "clip": "roar",
+      "background": "dark",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "roar-light-contact.png",
+      "clip": "roar",
+      "background": "light",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "bite-dark-contact.png",
+      "clip": "bite",
+      "background": "dark",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "bite-light-contact.png",
+      "clip": "bite",
+      "background": "light",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "tail-dark-contact.png",
+      "clip": "tail",
+      "background": "dark",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "tail-light-contact.png",
+      "clip": "tail",
+      "background": "light",
+      "frames": [
+        1,
+        16
+      ],
+      "viewed": true,
+      "method": "view_image, complete contact sheet at normal opaque assembly",
+      "scale": "512 px frame, displayed contact sheet may be downsampled"
+    },
+    {
+      "path": "review/bite-05-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/bite-05-light-3x.png",
+      "viewed": true,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/idle-01-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/idle-01-light-3x.png",
+      "viewed": true,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/jump-08-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/jump-08-light-3x.png",
+      "viewed": true,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/roar-06-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/roar-06-light-3x.png",
+      "viewed": true,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/run-04-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/run-04-light-3x.png",
+      "viewed": true,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/run-12-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/run-12-light-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/tail-05-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/tail-05-light-3x.png",
+      "viewed": true,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/tail-13-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/tail-13-light-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/walk-05-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/walk-05-light-3x.png",
+      "viewed": true,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/walk-13-dark-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    },
+    {
+      "path": "review/walk-13-light-3x.png",
+      "viewed": false,
+      "method": "3x enlargement of derived rendered PNG; source atlas unchanged",
+      "scale": 3,
+      "crop": [
+        40,
+        115,
+        360,
+        250
+      ],
+      "validFor": "Only local joints inside crop. jump high skull is partly cropped; use full frame for silhouette margins."
+    }
+  ],
+  "uiPaths": [
+    "/lab/dinosaur",
+    "/lab/dinosaur?view=frames"
+  ],
+  "liveBrowser": false,
+  "playbackReviewed": false,
+  "scope": "Every whole action contact sheet, 16 normal opaque frames, dark/light; selected 3x joint and root inspection. This does not replace independent extend/subassembly range tests.",
+  "resolvedInThisReceipt": [
+    "No neighboring body spike at neck root observed in all 112 whole-character frames. Precision source mask is active.",
+    "Feet contain claws rather than shoes in source and actual PNG.",
+    "Walk/run each leg has genuine half-cycle alternation; each inner freeze/same-phase injection was rejected.",
+    "No extra third bone node exists: upper and lower plus foot. Source shape still creates a secondary kink impression.",
+    "Roar/bite source skull is upper jaw and separate jaw owns lower teeth; no duplicated closed-jaw strip was confirmed in enlarged output."
+  ],
+  "notReviewed": [
+    "Live normal/0.25x playback naturalness",
+    "Every independently isolated joint extreme",
+    "Actual game collision, slopes and world motion",
+    "Browser SVG/Canvas visual equivalence and measured frame rate"
+  ],
+  "limitations": [
+    "Near/far legs may correctly hide locally; jumping obstruction finding concerns whole-clip readability, not a rule requiring both legs visible in every frame.",
+    "No real T-rex locomotion footage exists. Motion quality is an animation design judgment, not a scientific dinosaur gait validation."
+  ],
+  "comparison": {
+    "baseline": "baseline-20x8/art-qa-report.json",
+    "actualPNGRaster": "post-grid-raster-comparison.json",
+    "sourceGridProbe": "neck-grid-probe/report.json",
+    "observed": "All 14 new contact sheets and 7 selected 3x light views inspected after grid optimization. No newly visible neck gap or spike; retained failures remain.",
+    "changes": "Head/neck 536 to 122 mesh triangles. Skull less washed out by mesh antialiasing; geometry within 0.4043 screen px of reference.",
+    "status": "optimization-regression-reviewed-not-whole-art-approved"
+  },
+  "externalBrowserReceipt": {
+    "path": "../development-tools/dinosaur-adaptive-browser-review.json",
+    "sha256": "5f14c2d1d398ee9cc184364f5ee6bdbdc69f8d377ff0b667f0c06735ff59f8df",
+    "author": "parent CUA reviewer",
+    "localNeckReview": "passed-local-defect-retest",
+    "overallCharacterVisual": "failed-see-dinosaur-art-report",
+    "invalidCaptureExcluded": "dinosaur-v5-adaptive-neck-idle-01.png",
+    "performance": {
+      "file": "dinosaur-optimized-browser-telemetry.json",
+      "averageFps": 30,
+      "p95Ms": 33.5,
+      "scope": "180 workbench scheduling intervals; IAB cadence near 30 FPS, excludes isolation of renderer vs browser scheduling",
+      "targetGame60Fps": "not-verified"
+    },
+    "scope": "Separate parent browser rest/.25/.75 retests. Does not change this report to whole-character pass."
+  }
+}

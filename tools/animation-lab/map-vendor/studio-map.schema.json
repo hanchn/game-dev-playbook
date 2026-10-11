@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://game-asset-studio.local/schema/map-v1.json",
+  "title": "Low-code generated map document",
+  "type": "object",
+  "required": ["schema_version", "map_id", "map_family", "environment_ref", "realm_ref", "world", "style_ref", "component_pack_refs"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "map_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "map_family": {"enum": ["world", "region", "settlement", "dungeon", "indoor", "tactical", "side-scroll", "node-route"]},
+    "environment_ref": {"type": "string"},
+    "realm_ref": {"type": "string"},
+    "style_ref": {"type": "string"},
+    "component_pack_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "world": {
+      "type": "object",
+      "required": ["seed", "generator_version", "chunk_size", "meters_per_unit", "bounded"],
+      "properties": {
+        "seed": {"type": "integer"},
+        "generator_version": {"type": "string"},
+        "chunk_size": {"type": "integer", "minimum": 16, "maximum": 512},
+        "meters_per_unit": {"type": "number", "exclusiveMinimum": 0},
+        "bounded": {"type": "boolean"},
+        "extent": {
+          "type": ["object", "null"],
+          "properties": {"min_x":{"type":"integer"},"min_y":{"type":"integer"},"max_x":{"type":"integer"},"max_y":{"type":"integer"}},
+          "required": ["min_x", "min_y", "max_x", "max_y"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "generator": {
+      "type": "object",
+      "properties": {
+        "height": {"type": "object"},
+        "biomes": {"type": "object"},
+        "hydrology": {"type": "object"},
+        "roads": {"type": "object"},
+        "scatter": {"type": "array", "items": {"type": "object"}},
+        "constraints": {"type": "array", "items": {"type": "object"}}
+      },
+      "additionalProperties": false
+    },
+    "pinned_instances": {"type": "array", "items": {"type": "object"}},
+    "overrides": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": false
+}

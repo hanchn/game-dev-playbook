@@ -1,0 +1,84 @@
+{
+  "tool": "rh-canvas / multimodal-video-rhart-video-minimax-h3-rh-enhanced-ref2va-app",
+  "prompt": "Animate EXACT provided yellow muscular humanoid MILK FROG into one coherent 4 second RUN-IN-PLACE animation. The provided image is the permanent character identity and first pose, not a real frog. Retain original glossy yellow muscles, white chest/belly/chin, green eyes, pink broad three-toed feet and pink hands, cheerful open-mouth/tongue face and thick BLACK 2D cartoon outlines. No realistic amphibian, no 3D restyling, no costume. Keep fixed square camera and unchanged frontal-side angle facing RIGHT, constant scale and center/pivot, white flat background without scenery or cast shadow. The entire head, every hand and all toes must remain fully inside a fixed motion envelope with at least 10% canvas margin. Do not pan, zoom, turn, shrink or expand over time. Exactly TWO anatomical arms and TWO legs. Permanent foreground NEAR arm+leg and background FAR arm+leg must swap forward/back continuously, never only one visible moving side. Run as humanoid biped with natural successive contact, loading, passing, toe-off, bent recovering knee/heel, high knee, forward extension and landing. Near leg forward means near arm back; half-cycle later far leg forward means near arm forward. Both hands must travel behind, past and ahead of hip, remain attached at wrist with the same fingers; both feet alternate between genuine support and swing, retain identical pink toe count. Keep far hands/feet visibly separated when passing with slight safe lateral offset; never merge hands into torso or collapse far limb to sliver. Foot support sole stays on one constant invisible groundline; only airborne phases lift both feet. Include 3 complete gait cycles over 4 seconds with intermediate motion, finish matching the exact initial pose and camera for a seamless run loop. Constant forward gaze and cheerful stable mouth, eyes stay open during this short run (no repetitive blink synchronized to footfalls). No motion blur, floating fingers, extra limbs, duplicate character, changing anatomy, text, labels, music or speech. This is a true generated continuous raster animation video, not a sprite sheet or skeleton demonstration.",
+  "generatedFile": "tools/animation-lab/examples/frame-animation-v1/milk-frog-video-probe-v1/download/2109345232162926593-1.mp4",
+  "generatedFileSha256": "1d1b51730f661075374ce1438b1d76f6773042bd3bcb9a648e9646f4c667c973",
+  "taskId": "2109345232162926593",
+  "requestSha256": "e101b5c9e8424671394e234f402f262ecce3b932c5a5199c941b977eaff116d2",
+  "referenceSha256": "86dc688589bf152f1f21d8ad69b53750ec980e4d19adf9d1e3418b4f7ab7b60d",
+  "actualVideo": {
+    "codec": "h264",
+    "size": [
+      1024,
+      1024
+    ],
+    "frameCount": 107,
+    "durationSeconds": 4.458008,
+    "fps": 24
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "真实奶蛙2D黄色肌肉白腹绿眼粉手脚身份与双侧摆臂/抬腿改善；passing出现手指、远脚/膝/髋的大块形变与幽灵碎片；原白背景无alpha、侧面转身、10%包络不足、首末未闭环，未达到游戏素材质量。",
+    "reviewedAllOriginalFrames": 107,
+    "evidence": [
+      "native-contact-1.png",
+      "native-contact-2.png",
+      "native-contact-3.png",
+      "native-contact-4.png",
+      "native-frames/010.png",
+      "native-frames/031.png",
+      "native-frames/048.png",
+      "native-frames/065.png"
+    ],
+    "observations": [
+      {
+        "frames": [
+          0,
+          6,
+          9,
+          17,
+          24,
+          32,
+          43,
+          51,
+          59,
+          68,
+          77,
+          85,
+          94,
+          102
+        ],
+        "finding": "原角色粗黑线/glossy黄肌肉白腹绿眼粉色手脚保持；近臂后摆/经过/前摆和两腿交换存在，局部改善不是全片通过。"
+      },
+      {
+        "frames": [
+          13,
+          14,
+          30,
+          47,
+          64,
+          81,
+          98
+        ],
+        "finding": "周期passing出现粉色远脚和黄色膝/髋混融、大块碎片，030对应031.png最清楚；近远手指也发生模糊幽灵重叠。"
+      },
+      {
+        "frames": [
+          0,
+          106
+        ],
+        "finding": "首末姿势不同，原素材不是闭合循环；背景原生白色opaque，无alpha。"
+      },
+      {
+        "frames": [
+          9,
+          30,
+          47,
+          64
+        ],
+        "finding": "真实全尺寸复查有脚趾数和手指形态波动、视角转身。固定原镜头/轮廓身份和支撑链自然度未通过。"
+      }
+    ],
+    "sourceBackground": "original white opaque video; not transparent sprite frames"
+  }
+}

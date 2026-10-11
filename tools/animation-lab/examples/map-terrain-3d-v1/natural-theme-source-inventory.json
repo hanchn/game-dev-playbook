@@ -1,0 +1,330 @@
+{
+  "schema": "natural-theme-source-inventory/v1",
+  "catalog": {
+    "items": 1349,
+    "packs": 11,
+    "sourcePackCounts": {
+      "kenney-hexagon-kit": 72,
+      "kenney-isometric-tiles-buildings": 129,
+      "polyhaven-pbr": 18,
+      "kenney-nature-kit": 329,
+      "polyhaven-models": 2,
+      "kenney-isometric-tiles-vehicles": 544,
+      "kenney-isometric-tiles-landscape": 128,
+      "kenney-pixel-platformer": 0,
+      "kenney-castle-kit": 76,
+      "derived-isometric-castle": 43,
+      "derived-isometric-nature": 8
+    }
+  },
+  "actualPhotoreal3D": [
+    {
+      "id": "polyhaven-models/boulder_01",
+      "name": "boulder_01",
+      "pack": "polyhaven-models",
+      "category": "rocks",
+      "kind": "model3d",
+      "url": "/map-resources/polyhaven-models/boulder_01/boulder_01_1k.gltf",
+      "preview": null,
+      "status": "available-local-textured-model",
+      "sha256": "51487934db898b4c24072780a451e34eca5c02e3ada24a62bbc600bbc4019e92",
+      "bytes": 2773,
+      "sourceMetadata": "public/map-resources/polyhaven-models/source.json",
+      "actualNativeMaterialReview": "retained PBR model; prior real GPU candidate"
+    },
+    {
+      "id": "polyhaven-models/pine_sapling_small",
+      "name": "pine_sapling_small",
+      "pack": "polyhaven-models",
+      "category": "vegetation",
+      "kind": "model3d",
+      "url": "/map-resources/polyhaven-models/pine_sapling_small/pine_sapling_small_1k.gltf",
+      "preview": null,
+      "status": "available-local-textured-model",
+      "sha256": "f358c01926861dd082f32dba60f7c9fba232b585a985cf38c0d2229eecf4bc48",
+      "bytes": 11442,
+      "sourceMetadata": "public/map-resources/polyhaven-models/source.json",
+      "actualNativeMaterialReview": "retained PBR model; prior real GPU candidate"
+    }
+  ],
+  "upstream": {
+    "root": "/Users/lemon/Desktop/game-asset-studio",
+    "commit": "391b9dc2941056831d7a1823ceb17fed8e10fcc4",
+    "metadata": [
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/AGENTS.md",
+        "sha256": "cdd06544124c5db736ebb9a0637023d9d40111e84fd223642100bc0a46fe8697"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/docs/project-memory.md",
+        "sha256": "603ede6abb641a961ebaea15a5484fbc1ff593082f811cfae6ff4e5cc5538e26"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/data/map-component-packs/accident-ascension-realistic-v1.json",
+        "sha256": "ac11fc2cdd48ed6f43ff37ef511a5909208ceb2e2c7a04349fa0bbaee3c6a345"
+      }
+    ],
+    "standaloneRasterFiles": [
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/river-bend.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/river-bend.png",
+        "sha256": "c48332c044a352250aa5aa8a07f48b5d4bd78ced542dbda89487a53563943849",
+        "bytes": 1498670,
+        "pixels": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/agriculture/field-fertile-summer-day-sunny-v1.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/agriculture/field-fertile-summer-day-sunny-v1.png",
+        "sha256": "2890eabdc9cb5def2cfbaf7ba515f7374c64413789724c73ca8384dd02be155e",
+        "bytes": 3295812,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/buildings/house-earth-tile-summer-day-sunny-v1.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/buildings/house-earth-tile-summer-day-sunny-v1.png",
+        "sha256": "f7ce4aaa0719eafc551fed5a12a5c82d582fd1978b01b1bbf143e23098a4dcd2",
+        "bytes": 2428728,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/vegetation/tree-broadleaf-summer-day-sunny-v1.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/vegetation/tree-broadleaf-summer-day-sunny-v1.png",
+        "sha256": "0bf86776f524c2387be2ca43159a5185ee044d94dbbbc6c51d90b60449057f55",
+        "bytes": 2622886,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/vegetation/temperate-forest-stand-v1.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/vegetation/temperate-forest-stand-v1.png",
+        "sha256": "4a200567a8aaf02d2adec2b28747d3293c3dafb4288d57678fd0165596c8eb83",
+        "bytes": 3031257,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-east-peak-base-v2.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-east-peak-base-v2.png",
+        "sha256": "7430af7e757f0baa92b57d0db52c95511d6ee3bb0ea910001d8b37a3e8f5c3b4",
+        "bytes": 2844048,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-east-peak-v1.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-east-peak-v1.png",
+        "sha256": "22a5de250ed951fb887d512e636908c9beb6f77acdb7d7379bc28a599e9e3669",
+        "bytes": 2674806,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-west-peak-base-v2.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-west-peak-base-v2.png",
+        "sha256": "7e3888b4380806a6e0a37db32febd26cb653019b9f1965170105183254ad7afd",
+        "bytes": 2943503,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-west-peak-v1.png",
+        "upstreamRelativePath": "apps/web/assets/studio/map-components/accident-realistic-v1/mountains/shuanggu-west-peak-v1.png",
+        "sha256": "1e07568530c058f4dadff4491297c9ffd06b2a2667e8d3f75697f3ea1d6602b6",
+        "bytes": 2693462,
+        "pixels": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "sourceUnmodified": true,
+        "projection": "single existing2D sprite; required direction families not proven",
+        "visualStatus": "candidate; native tree/house reviewed; wide soft edge/baked ground halo needs composition QA"
+      }
+    ],
+    "nativeImagesInspected": [
+      "tree-broadleaf-summer-day-sunny-v1.png",
+      "house-earth-tile-summer-day-sunny-v1.png"
+    ],
+    "packStatusClaim": "atomic-planning with subset ready PNG; direction families remain planned",
+    "groundRasterMaterials": [
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-materials/accident-realistic-v1/grass-temperate-v1.png",
+        "sha256": "efd5dea5e0e9235bf4518815fd855feea216fece9050acb3da98fff117000111",
+        "pixels": [
+          1254,
+          1254
+        ],
+        "kind": "standalone2D diffuse raster; not fullPBR",
+        "sourceUnmodified": true
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-materials/accident-realistic-v1/soil-yellow-earth-v1.png",
+        "sha256": "717411d984d18610fdd78e1cc5c6780289a4bb3789f6c7e8032570c637d9e149",
+        "pixels": [
+          1254,
+          1254
+        ],
+        "kind": "standalone2D diffuse raster; not fullPBR",
+        "sourceUnmodified": true
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-materials/accident-realistic-v1/sand-yellow-v1.png",
+        "sha256": "352de14fb335c2a7ff7b9ba74c926914f8e9258625bbda6bf405c4e16eecc3be",
+        "pixels": [
+          1254,
+          1254
+        ],
+        "kind": "standalone2D diffuse raster; not fullPBR",
+        "sourceUnmodified": true
+      },
+      {
+        "path": "/Users/lemon/Desktop/game-asset-studio/apps/web/assets/studio/map-materials/accident-realistic-v1/gravel-mixed-ground-v1.png",
+        "sha256": "2c420a3759702bb390d8a402bd1a56798499109c0336fffefd4708b2a6c067bb",
+        "pixels": [
+          1254,
+          1254
+        ],
+        "kind": "standalone2D diffuse raster; not fullPBR",
+        "sourceUnmodified": true
+      }
+    ]
+  },
+  "missingForCoherentPhotoreal2D": [
+    "verified clean isolated boulder/rock sprite set",
+    "matched mature/conifer/understory variants",
+    "castle wall/tower/gate/roof parts and cave entrance sprites",
+    "consistent road/path straight/bend/intersection connectors",
+    "water repeatable continuous texture or source-proven shader; existing river-bend is one raster assembly"
+  ],
+  "missingForCoherentPhotoreal3D": [
+    "mature broadleaf/conifer and understory model pools",
+    "rural house and stone castle modular PBR geometry",
+    "textured cave entrance geometry and tested native aperture",
+    "theme-aligned water/shore material suite; current scanned ground plus2models is incomplete"
+  ],
+  "candidateUse": "upstream2D tree/house are obtainable raster sources; not3D geometry and not accepted complete theme",
+  "qa": {
+    "overallThemeAccepted": false,
+    "engineImported": false,
+    "sourceImagesModified": false
+  },
+  "verifiedExternalCandidates": [
+    {
+      "url": "https://polyhaven.com/collections/pine_forest",
+      "type": "official original Blender scene + nature assets collection",
+      "status": "official page checked; not downloaded/imported/tested"
+    },
+    {
+      "url": "https://polyhaven.com/a/pine_tree_01",
+      "type": "actual mature pine model with PBR/LODs",
+      "status": "official page checked; not in local1349catalog"
+    },
+    {
+      "url": "https://polyhaven.com/a/tree_small_02",
+      "type": "actual broadleaf model with PBR/LODs",
+      "status": "official page checked; 5M native triangles documented; not downloaded/imported/tested"
+    }
+  ],
+  "discoveryFailures": [
+    {
+      "source": "https://api.polyhaven.com/assets?type=all&collection=pine_forest",
+      "status": 403,
+      "effect": "public metadata API unavailable in this session; model dependencies/LOD bytes not obtained"
+    },
+    {
+      "source": "https://api.polyhaven.com/files/pine_tree_01",
+      "status": 403
+    },
+    {
+      "source": "https://api.polyhaven.com/files/tree_small_02",
+      "status": 403
+    }
+  ]
+}

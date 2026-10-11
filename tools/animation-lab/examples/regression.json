@@ -1,0 +1,2008 @@
+{
+  "results": [
+    {
+      "species": "human",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "human-kit",
+        "version": 1,
+        "species": "human",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "12 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.42 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 2.50 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.953Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "human-kit",
+        "version": 1,
+        "species": "human",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "12 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 14.67 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.955Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "human-kit",
+        "version": 1,
+        "species": "human",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "12 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 14.67 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "左右腿交替；支撑脚锁地，摆动脚抬起向前"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.955Z"
+      }
+    },
+    {
+      "species": "chicken",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "chicken-kit",
+        "version": 1,
+        "species": "chicken",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "12 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 154.8° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.00 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.27 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.956Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "chicken-kit",
+        "version": 1,
+        "species": "chicken",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "12 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 2.86 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.956Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "chicken-kit",
+        "version": 1,
+        "species": "chicken",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "12 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 2.86 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "双足交替，短步幅快速迈步"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.957Z"
+      }
+    },
+    {
+      "species": "dinosaur",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "dinosaur-kit",
+        "version": 1,
+        "species": "dinosaur",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "17 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 154.8° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.00 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.27 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.957Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "dinosaur-kit",
+        "version": 1,
+        "species": "dinosaur",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "17 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 6.78 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.958Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "dinosaur-kit",
+        "version": 1,
+        "species": "dinosaur",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "17 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 6.78 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "双足交替，股骨与胫骨两段运动"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.959Z"
+      }
+    },
+    {
+      "species": "horse",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "horse-kit",
+        "version": 1,
+        "species": "horse",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "16 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 143.8° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.00 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.27 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.959Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "horse-kit",
+        "version": 1,
+        "species": "horse",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "16 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 153.9° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 3.43 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.960Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "horse-kit",
+        "version": 1,
+        "species": "horse",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "16 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 153.9° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 3.43 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "对角小跑：左前/右后同相，右前/左后同相"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.961Z"
+      }
+    },
+    {
+      "species": "crocodile",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "crocodile-kit",
+        "version": 1,
+        "species": "crocodile",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "20 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 154.8° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.00 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.27 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.962Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "crocodile-kit",
+        "version": 1,
+        "species": "crocodile",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "20 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 142.4° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.96 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.962Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "crocodile-kit",
+        "version": 1,
+        "species": "crocodile",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "20 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 142.4° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.96 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "对角交替的低姿态行走"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.963Z"
+      }
+    },
+    {
+      "species": "centipede",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "centipede-kit",
+        "version": 1,
+        "species": "centipede",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "63 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 151.0° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.00 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.27 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.966Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "centipede-kit",
+        "version": 1,
+        "species": "centipede",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "63 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 136.5° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.54 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.969Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "centipede-kit",
+        "version": 1,
+        "species": "centipede",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "63 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 136.5° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.54 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "左右配对反相，相邻腿对逐段延迟"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.971Z"
+      }
+    },
+    {
+      "species": "spider",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "spider-kit",
+        "version": 1,
+        "species": "spider",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "27 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 151.0° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.00 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.27 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.972Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "spider-kit",
+        "version": 1,
+        "species": "spider",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "27 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 2.59 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.972Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "spider-kit",
+        "version": 1,
+        "species": "spider",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "27 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 155.0° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 2.59 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "交替四足组；先验证每条腿伸展，再验证协调"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.973Z"
+      }
+    },
+    {
+      "species": "scorpion",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "scorpion-kit",
+        "version": 1,
+        "species": "scorpion",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "36 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 151.0° / 上限 155°"
+          },
+          {
+            "id": "extension",
+            "label": "配件伸展幅度",
+            "passed": true,
+            "detail": "脚端横向范围 26.00 px / 最低 10 px"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 1.27 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.974Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "scorpion-kit",
+        "version": 1,
+        "species": "scorpion",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "leg-0-upper",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "36 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 149.9° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 2.24 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.975Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "scorpion-kit",
+        "version": 1,
+        "species": "scorpion",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "36 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "joint-range",
+            "label": "膝关节活动范围",
+            "passed": true,
+            "detail": "最大弯折 149.9° / 上限 155°"
+          },
+          {
+            "id": "motion",
+            "label": "脚端实际运动",
+            "passed": true,
+            "detail": "最大相邻帧位移 2.24 px"
+          },
+          {
+            "id": "contact",
+            "label": "接地不滑步",
+            "passed": true,
+            "detail": "支撑帧最大世界位移 0.000 px"
+          },
+          {
+            "id": "ground",
+            "label": "脚端不穿地",
+            "passed": true,
+            "detail": "最大穿地 0.000 px"
+          },
+          {
+            "id": "phase",
+            "label": "物种步态分组与相位",
+            "passed": true,
+            "detail": "交替四足组，低位抬脚"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.976Z"
+      }
+    },
+    {
+      "species": "snake",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "snake-kit",
+        "version": 1,
+        "species": "snake",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "segment-3",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "14 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "segment-length",
+            "label": "身体节段长度范围",
+            "passed": true,
+            "detail": "相对静息长度 1.00–1.00"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.976Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "snake-kit",
+        "version": 1,
+        "species": "snake",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "segment-0",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "14 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "segment-length",
+            "label": "身体节段长度范围",
+            "passed": true,
+            "detail": "相对静息长度 1.00–1.00"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.976Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "snake-kit",
+        "version": 1,
+        "species": "snake",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "14 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "segment-length",
+            "label": "身体节段长度范围",
+            "passed": true,
+            "detail": "相对静息长度 1.00–1.00"
+          },
+          {
+            "id": "wave",
+            "label": "身体波随时间传播",
+            "passed": true,
+            "detail": "检查节段位置变化；不作为生物真实性验收"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.977Z"
+      }
+    },
+    {
+      "species": "worm",
+      "component": {
+        "schemaVersion": 1,
+        "assetId": "worm-kit",
+        "version": 1,
+        "species": "worm",
+        "clip": "extend",
+        "scope": "component",
+        "partId": "segment-3",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "14 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "segment-length",
+            "label": "身体节段长度范围",
+            "passed": true,
+            "detail": "相对静息长度 1.00–1.00"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.977Z"
+      },
+      "subassembly": {
+        "schemaVersion": 1,
+        "assetId": "worm-kit",
+        "version": 1,
+        "species": "worm",
+        "clip": "walk",
+        "scope": "subassembly",
+        "partId": "segment-0",
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "14 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "segment-length",
+            "label": "身体节段长度范围",
+            "passed": true,
+            "detail": "相对静息长度 0.80–1.20"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.978Z"
+      },
+      "character": {
+        "schemaVersion": 1,
+        "assetId": "worm-kit",
+        "version": 1,
+        "species": "worm",
+        "clip": "walk",
+        "scope": "character",
+        "partId": null,
+        "fault": "none",
+        "samples": 65,
+        "passed": true,
+        "checks": [
+          {
+            "id": "assembly",
+            "label": "零件身份与父级连接",
+            "passed": true,
+            "detail": "14 个稳定 ID，无缺失父级或循环"
+          },
+          {
+            "id": "rigidity",
+            "label": "刚性骨段长度",
+            "passed": true,
+            "detail": "最大漂移 0.000 px"
+          },
+          {
+            "id": "attachment",
+            "label": "关节连接点",
+            "passed": true,
+            "detail": "最大脱离 0.000 px"
+          },
+          {
+            "id": "segment-length",
+            "label": "身体节段长度范围",
+            "passed": true,
+            "detail": "相对静息长度 0.80–1.20"
+          },
+          {
+            "id": "wave",
+            "label": "身体波随时间传播",
+            "passed": true,
+            "detail": "检查节段位置变化；不作为生物真实性验收"
+          },
+          {
+            "id": "loop",
+            "label": "末首循环接缝",
+            "passed": true,
+            "detail": "最大接缝 0.000 px"
+          }
+        ],
+        "visualStatus": "pending",
+        "limitations": [
+          "程序化二维示意资产，非照片或原画自动拆分",
+          "运动学测试不等于生物真实性或用户美术验收",
+          "没有实现 Spine / Blender 导出适配器"
+        ],
+        "timestamp": "2026-10-10T13:10:28.978Z"
+      }
+    }
+  ]
+}

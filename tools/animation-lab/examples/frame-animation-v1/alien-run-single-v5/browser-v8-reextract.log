@@ -1,0 +1,9 @@
+### Result
+{"status":"ZIP 已导出，包含真实单帧 PNG、sheet.png 和 animation.json。","identity":"12 帧 · 视频抽帧 · 512 × 512","duration":"1.333 秒"}
+### Ran Playwright code
+```js
+await (async (page) => {await page.locator("#start").fill("0");await page.locator("#end").fill("1.333239");await page.locator("#times").fill("0,.115,.223,.333,.446,.559,.668,.780,.894,1,1.112,1.223");await page.locator("#extract").click();await page.waitForFunction(()=>document.querySelector("#timeline").children.length===12&&document.querySelector("#status").textContent.startsWith("完成"));const download=page.waitForEvent("download");await page.locator("#export-zip").click();await(await download).saveAs("/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-reextracted12.zip");return {status:await page.locator("#status").textContent(),identity:await page.locator("#identity").textContent(),duration:await page.locator("#total").textContent()};})(page);
+```
+### Events
+- Downloading file recording.zip ...
+- Downloaded file recording.zip to ".playwright-cli/recording.zip"

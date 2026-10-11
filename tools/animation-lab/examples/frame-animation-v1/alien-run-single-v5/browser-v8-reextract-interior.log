@@ -1,0 +1,9 @@
+### Result
+{"status":"ZIP 已导出，包含真实单帧 PNG、sheet.png 和 animation.json。","duration":"1.328 秒"}
+### Ran Playwright code
+```js
+await (async (page) => {await page.locator("#times").fill(".005,.120,.228,.338,.451,.564,.673,.786,.899,1.005,1.117,1.228");await page.locator("#extract").click();await page.waitForFunction(()=>document.querySelector("#timeline").children.length===12&&document.querySelector("#status").textContent.startsWith("完成"));const download=page.waitForEvent("download");await page.locator("#export-zip").click();await(await download).saveAs("/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/frame-animation-v1/alien-run-single-v5/browser-v8-reextracted12-interior.zip");return {status:await page.locator("#status").textContent(),duration:await page.locator("#total").textContent()};})(page);
+```
+### Events
+- Downloading file recording.zip ...
+- Downloaded file recording.zip to ".playwright-cli/recording.zip"

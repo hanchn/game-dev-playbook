@@ -1,0 +1,23 @@
+✔ half-open video sampling, explicit sorted times, invalid/oversized sampling rejected (1.113417ms)
+✔ chronology is numeric, per-frame durations affect playback, exact source rectangles and safe sheet bounds (8.200666ms)
+✔ decoded PTS follows containing source frame, reports duplicates without inventing timestamps (0.1565ms)
+✔ source failed QA and individual frame observations survive export without upgrading loop approval (0.100375ms)
+✔ generation requests remain pending until actual outputs; layout and limb continuity specified (0.176334ms)
+✔ odd source sheet is partitioned without lost or overlapping pixels (0.129375ms)
+✔ ZIP store files pass native CRC validation and preserve Unicode names and exact bytes (41.612834ms)
+✔ real H264 video -> eight distinct exact decoded PNGs -> alpha-padded sheet; existing outputs rejected (1547.131459ms)
+✔ receipt per-frame QA transfers notes without upgrading overall playback acceptance (0.275042ms)
+✔ unequal source frames share a fixed affine transform and source anchor; no individual fitting (0.203625ms)
+✔ original alpha boundary rejects clipped transparent sprite before padding; opaque video and faint border are distinguished (0.187416ms)
+✔ real unequal PNGs retain identical source-marker placement after one sequence transform (284.839083ms)
+✔ mixed-version generated PNGs follow receipt chronology; mismatched provenance rejects before output (245.792917ms)
+✔ existing project crops bind exact source PNG SHA and remain imports, not new generation (0.485833ms)
+✔ fractional FPS recording boundaries choose every frame once without rounding to prior frame (0.508958ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2185.162792

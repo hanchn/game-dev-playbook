@@ -1,0 +1,24 @@
+{
+  "status": "failed",
+  "source": "original controls.json and actual control-08.png viewed",
+  "observations": [
+    {
+      "phaseIndex": 2,
+      "file": "control-02.png",
+      "nearUpperArmRelativeShoulderX": -21.20524888619147,
+      "nearThighRelativeHipX": -15.628335990023743,
+      "sameProximalDirection": true,
+      "finding": "控制图自身近上臂与近大腿指同一前后侧；腕相对髋因屈肘可在前方，不能用腕字段误判上臂反相。局部跟随控制不等于合理跑步。"
+    },
+    {
+      "phaseIndex": 8,
+      "file": "control-08.png",
+      "nearUpperArmRelativeShoulderX": 21.20524888619147,
+      "nearThighRelativeHipX": 38.03564355666293,
+      "sameProximalDirection": true,
+      "finding": "控制图自身近上臂与近大腿指同一前后侧；腕相对髋因屈肘可在前方，不能用腕字段误判上臂反相。局部跟随控制不等于合理跑步。"
+    }
+  ],
+  "materialImplication": "Old prompt/controls provenance retained, but these control local checks cannot promote source art. Next control must inspect shoulder→elbow and hip→knee plus complete wrist recovery, not only wrist sign.",
+  "scope": "source guidance audit only, no shared game-core/rig edit"
+}

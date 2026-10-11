@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "entry": "/lab/chicken-scene",
+  "observedVersions": {
+    "choreography": 5,
+    "renderer": 4,
+    "rooster": "chicken-side-v4",
+    "hen": "chicken-hen-side-v2"
+  },
+  "camera": {
+    "canvas": [
+      1280,
+      720
+    ],
+    "perFrameFit": false,
+    "scale": {
+      "lay": 2.5,
+      "crow": 2.5,
+      "fight": 1.6
+    }
+  },
+  "technical": {
+    "lay": {
+      "zipCRC": true,
+      "pngCount": 60,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 4,
+      "choreographyVersion": 5,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "61"
+          }
+        ],
+        "format": {
+          "duration": "5.004316"
+        }
+      },
+      "visual": "failed",
+      "notes": "实际影片候选，母鸡源颈根、腿根材质、四档头纹理轻微跳变、格斗受击差异与羽毛来源仍待美术修复。",
+      "decodedVideo": {
+        "frames": 61,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.0583460768711421,
+          "max": 2.012467086226852
+        },
+        "ptsMaxErrorSeconds": 0.0086666666666666,
+        "pts": [
+          0,
+          0.084,
+          0.174,
+          0.249,
+          0.338,
+          0.42,
+          0.501,
+          0.588,
+          0.668,
+          0.754,
+          0.835,
+          0.921,
+          1.007,
+          1.088,
+          1.168,
+          1.253,
+          1.34,
+          1.42,
+          1.506,
+          1.587,
+          1.674,
+          1.754,
+          1.836,
+          1.921,
+          2.008,
+          2.088,
+          2.169,
+          2.254,
+          2.339,
+          2.422,
+          2.506,
+          2.587,
+          2.672,
+          2.754,
+          2.842,
+          2.921,
+          3.006,
+          3.088,
+          3.172,
+          3.254,
+          3.34,
+          3.42,
+          3.508,
+          3.587,
+          3.672,
+          3.754,
+          3.834,
+          3.92,
+          4.008,
+          4.088,
+          4.174,
+          4.253,
+          4.34,
+          4.421,
+          4.501,
+          4.587,
+          4.671,
+          4.754,
+          4.84,
+          4.92,
+          5.004
+        ]
+      }
+    },
+    "crow": {
+      "zipCRC": true,
+      "pngCount": 36,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 4,
+      "choreographyVersion": 5,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "37"
+          }
+        ],
+        "format": {
+          "duration": "3.001885"
+        }
+      },
+      "visual": "failed",
+      "notes": "实际影片候选，母鸡源颈根、腿根材质、四档头纹理轻微跳变、格斗受击差异与羽毛来源仍待美术修复。",
+      "decodedVideo": {
+        "frames": 37,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.155204163853523,
+          "max": 1.9048433883101852
+        },
+        "ptsMaxErrorSeconds": 0.020000000000000018,
+        "pts": [
+          0,
+          0.088,
+          0.172,
+          0.256,
+          0.339,
+          0.421,
+          0.499,
+          0.589,
+          0.673,
+          0.77,
+          0.839,
+          0.917,
+          1.004,
+          1.089,
+          1.172,
+          1.255,
+          1.339,
+          1.418,
+          1.503,
+          1.589,
+          1.671,
+          1.755,
+          1.836,
+          1.922,
+          2.005,
+          2.089,
+          2.175,
+          2.254,
+          2.34,
+          2.423,
+          2.503,
+          2.589,
+          2.673,
+          2.755,
+          2.839,
+          2.918,
+          3.001
+        ]
+      }
+    },
+    "fight": {
+      "zipCRC": true,
+      "pngCount": 48,
+      "sourceSHA": true,
+      "movieSHA": true,
+      "rendererVersion": 4,
+      "choreographyVersion": 5,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "vp9",
+            "width": 1280,
+            "height": 720,
+            "nb_read_frames": "49"
+          }
+        ],
+        "format": {
+          "duration": "3.998827"
+        }
+      },
+      "visual": "failed",
+      "notes": "实际影片候选，母鸡源颈根、腿根材质、四档头纹理轻微跳变、格斗受击差异与羽毛来源仍待美术修复。",
+      "decodedVideo": {
+        "frames": 49,
+        "terminalHoldFrames": 1,
+        "rgbMAE": {
+          "mean": 1.3159514853395067,
+          "max": 1.892394748263889
+        },
+        "ptsMaxErrorSeconds": 0.022666666666666835,
+        "pts": [
+          0,
+          0.083,
+          0.175,
+          0.252,
+          0.337,
+          0.417,
+          0.498,
+          0.584,
+          0.673,
+          0.751,
+          0.848,
+          0.918,
+          1.005,
+          1.085,
+          1.172,
+          1.251,
+          1.356,
+          1.418,
+          1.506,
+          1.586,
+          1.673,
+          1.751,
+          1.84,
+          1.92,
+          2.006,
+          2.088,
+          2.173,
+          2.251,
+          2.34,
+          2.42,
+          2.506,
+          2.586,
+          2.673,
+          2.752,
+          2.84,
+          2.919,
+          3.004,
+          3.083,
+          3.173,
+          3.251,
+          3.339,
+          3.418,
+          3.506,
+          3.584,
+          3.67,
+          3.752,
+          3.841,
+          3.918,
+          3.998
+        ]
+      }
+    }
+  },
+  "visual": "failed",
+  "actualReview": [
+    "native/lay-1.20.png",
+    "native/lay-3.25.png",
+    "native/lay-4.40.png",
+    "native/crow-0.74.png",
+    "native/crow-1.50.png",
+    "native/fight-1.00.png",
+    "native/fight-1.30.png",
+    "native/fight-2.60.png",
+    "ui-lay-phase440-full.png",
+    "ui-crow-phase150-full.png",
+    "ui-fight-phase150-full.png"
+  ],
+  "remaining": [
+    "母鸡颈根扇形源下缘与躯干错层/材质硬边，v3候选继续复测",
+    "腿根肉盖与身体材质反差、黄鳞段像独立杆",
+    "四档嘴型真实源约1.2%颈高差、羽毛纹理在切换时跳变，不是精确同一原头",
+    "格斗两角色起势/受击同步，缺少专用受击和爪收缩源",
+    "接触为喙对喙，现羽毛从翅端脱落，目标/脱落部位仍需匹配",
+    "鸡群首次起步过渡及真实近远腿/羽毛材质未全通过"
+  ],
+  "references": [
+    {
+      "url": "https://poultry.extension.org/articles/poultry-behavior/normal-behaviors-of-chickens-in-small-and-backyard-poultry-flocks/",
+      "use": "坐窝与产蛋行为顺序；压缩成5秒为游戏编排，不是测量真实时长"
+    }
+  ],
+  "sourceFiles": {
+    "chicken-scene-core.mjs": "13e1b5e9764c27606920cae862b9c5b1e0a2bb0911dc621ef97120389922247f",
+    "chicken-scene-renderer.mjs": "fc3562ead4c9d54225e16f0cd720b13d7625a7ee30eda93c6b6e5d972b265866",
+    "public/chicken-scene.mjs": "b1ef236873468bf51212ff11aa91efc0335c8c510c8e54ab7b19af0a88c29405",
+    "public/chicken-scene.html": "1830a2a81b4469b3eab576519b16531eb0d68a554e8cc95fb20e14087b3aa6cf",
+    "human-soft-skin.mjs": "af8c7e6bec77138e455ba28649bca2542cf7b1c59e0a154a76120d0aa6daee2c",
+    "skin-renderer.mjs": "4106c70e2def48c3e4d56f03d733498b899003410897208f3de48359fe13e864"
+  }
+}

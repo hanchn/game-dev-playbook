@@ -1,0 +1,144 @@
+{
+  "schema": "equine-neck-fixed-encode/v1",
+  "inputCapture": "examples/horse-neck-path-v3/browser/jump-1x-r4-capture",
+  "captureRevision": "r4-identical-halves",
+  "asset": "horse-side-v24",
+  "algorithm": "neck-path-v3",
+  "clip": "jump",
+  "speed": 1,
+  "inputSHA": [
+    {
+      "file": "frames/000.png",
+      "sha256": "a3479adcfcb0dbc58895a81749d5d9a7fb9c5c7ccf547afd1817a5cf0fc40a0c"
+    },
+    {
+      "file": "frames/001.png",
+      "sha256": "bd312637841d6cacad24c9350b38ab1194e392488cfdf82a0b8792b920607243"
+    },
+    {
+      "file": "frames/002.png",
+      "sha256": "48c7dc49c34511d7fd6817d4327160250149f6879049d5dac6b5c00acb41bab7"
+    },
+    {
+      "file": "frames/003.png",
+      "sha256": "46f93a24b09dc405e492c533ee6bf3412cf43e76f4f18aefa5cc5e1f7b334321"
+    },
+    {
+      "file": "frames/004.png",
+      "sha256": "9672a9a014aedf9125eaf218f5b0d1e0e2a702bc3b039ff0284017ff6dafbdb4"
+    },
+    {
+      "file": "frames/005.png",
+      "sha256": "cc1f16ca6f047eff0dbe872e4874a6e43ffc8960c64d8a7eb6601fc74a21ef5a"
+    },
+    {
+      "file": "frames/006.png",
+      "sha256": "97545a753a2ea3fd8b16079be47469a339815431c8a3c40ab12a11644afc8860"
+    },
+    {
+      "file": "frames/007.png",
+      "sha256": "97c31a36a97297e69b0ee6602bc170c931b8d4292dbc86599b6cd367cd1a7fce"
+    },
+    {
+      "file": "frames/008.png",
+      "sha256": "34ab7e2e189d8f77c42dffc8946fb78a1971c86297c159a03090eb7adcedd91d"
+    },
+    {
+      "file": "frames/009.png",
+      "sha256": "1066c1873ff09a4998d5226c74706c70211f23f23e6089a97f7d03e46404e2e9"
+    },
+    {
+      "file": "frames/010.png",
+      "sha256": "90338815cdc30dc791a9fd536835ddbfd68a5d30b102d041717d149bbb9a01f2"
+    },
+    {
+      "file": "frames/011.png",
+      "sha256": "dea9ae6f38f106bef4a1ef58a5b6ec00b3c2523cc90ec14aa8eb5ed0eec325bb"
+    },
+    {
+      "file": "frames/012.png",
+      "sha256": "60d296582f51c6c1309fb329e52af7965ad1096c10a75d238ac4957ce4a15d16"
+    },
+    {
+      "file": "frames/013.png",
+      "sha256": "7b5e695a5317bfb44fdb7d223c84fa8c80f694712479272cc8d2e9c22febc489"
+    },
+    {
+      "file": "frames/014.png",
+      "sha256": "601bc558701c7dd038a41f12ed763efee6ed70281b396c1cfbe6a70e0d16803f"
+    }
+  ],
+  "sourceSHA": [
+    {
+      "key": "primary",
+      "atlas": "/art/horse-side-parts-v5.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d2f4e311ff597e7d2694d86dd34c16543be75d689a79191dda45315956eb092b",
+      "file": "sources/horse-side-parts-v5.png"
+    },
+    {
+      "key": "horse-cannon-material",
+      "atlas": "/art/horse-cannon-parts-v8.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4175a4b91fc1c0b0504e23e6e6aa427d03386d11ef2cadde3cc5fa62516e25f5",
+      "file": "sources/horse-cannon-parts-v8.png"
+    },
+    {
+      "key": "horse-upper-material",
+      "atlas": "/art/horse-upper-parts-v9.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "91b798e2b1db920a134879e20912db19927930cfabfd2218f0fa0675f145b7d3",
+      "file": "sources/horse-upper-parts-v9.png"
+    },
+    {
+      "key": "horse-hoof-material",
+      "atlas": "/art/horse-hoof-parts-v11.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "9d66362002923f2821521cb8bb68a9c36e61bcbe5d94761573e3b9649ad38a7d",
+      "file": "sources/horse-hoof-parts-v11.png"
+    }
+  ],
+  "fps": 12,
+  "requestedDuration": 1.2,
+  "encodedDuration": 1.25,
+  "durationPolicy": "CFR: one actual PNG per sample; final hold is quantized to one frame. No invented endpoint or interpolation.",
+  "encodedFrameCount": 15,
+  "expectedFrameCount": 15,
+  "maxPTSErrorSeconds": 3.33333333379926e-7,
+  "output": "examples/horse-neck-path-v3/browser/jump-1x-r4-capture/fixed-12fps.mp4",
+  "outputSHA256": "0dcf18670ff8935f03837789b58b5e7906029cc8ffbc31daf01f55978cbf6b9f",
+  "args": [
+    "-y",
+    "-v",
+    "error",
+    "-framerate",
+    "12",
+    "-start_number",
+    "0",
+    "-i",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/horse-neck-path-v3/browser/jump-1x-r4-capture/frames/%03d.png",
+    "-map",
+    "0:v:0",
+    "-frames:v",
+    "15",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "18",
+    "-preset",
+    "veryslow",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/examples/horse-neck-path-v3/browser/jump-1x-r4-capture/fixed-12fps.mp4"
+  ],
+  "technical": "passed",
+  "visual": "failed",
+  "gameIntegrated": false
+}

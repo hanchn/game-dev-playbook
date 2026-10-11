@@ -1,0 +1,54 @@
+✔ same seed produces identical geometry, layers, props and negative global samples (73.96025ms)
+✔ neighboring negative chunks have exact shared heights normals and PBR tangents (55.282417ms)
+✔ three styles change actual geometry and model sets (51.786791ms)
+✔ chunk indices face upward, tangent unit vectors orthogonal to global normals (26.480667ms)
+✔ invalid configs, fractional chunk coordinates and oversized movement rejected (0.558209ms)
+✔ continuous object sweep prevents tunneling at large delta, permits clear movement (0.133417ms)
+✔ water and steep ground deny actual actor movement (0.091875ms)
+✔ object colliders reflect measured source model proportions (25.192375ms)
+✔ retained scheduler bounded circular nearest-first set and cancellation (0.723042ms)
+✔ all 477 downloaded GLBs have actual valid containers and original hashes (66.541959ms)
+✔ complete scene GLB includes embedded PBR pixels and real models, official Khronos validator (115.889875ms)
+✔ semantic foundations and stream geometry share global boundaries and measured building colliders (216.987ms)
+✔ semantic village GLB embeds source external textures instead of writing null buffer views (191.031625ms)
+✔ castle source modules form 33 unique layered parts, feature range limits avoid unbounded work (11.040209ms)
+✔ global river surface blocks walking even above sea level and keeps solid props off banks (16.274375ms)
+✔ dune grain uses smooth source noise rather than half-meter discontinuous grid heights (0.305917ms)
+✔ barren theme uses distinct bare-rock PBR, no water/buildings and gray object materials (20.593417ms)
+✔ actual source cave fixture faces downhill with flat entrance and a passable aperture (11.58675ms)
+✔ cave ground floor remains deterministic and continuous across adjacent negative chunks (65.675167ms)
+✔ real source arch stays empty below conservative clearance; castle ingress, exit and jamb collision (25.068833ms)
+✔ native cave carve rejects crossing a stream instead of raising its channel (6.633208ms)
+✔ stream ribbon rounded joints and smooth channel keep actual 1m mesh above-water holes closed (18.89325ms)
+✔ preview collision samples actual mesh triangles rather than a different bilinear surface (52.589875ms)
+✖ layered castle native bounds, stack continuity, complete gate and exported source layout (134.554667ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 23
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1286.178834
+
+✖ failing tests:
+
+test at test/map-terrain-3d.test.mjs:44:1
+✖ layered castle native bounds, stack continuity, complete gate and exported source layout (134.554667ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 5.068800000853025
+  - 5.0687999999999995
+         ^
+  
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/test/map-terrain-3d.test.mjs:50:783)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 5.068800000853025,
+    expected: 5.0687999999999995,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

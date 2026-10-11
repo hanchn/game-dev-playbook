@@ -1,0 +1,168 @@
+{
+  "schema": "infinite-map-qa/v1",
+  "reviewedAt": "2026-10-11T14:13:01.731Z",
+  "algorithm": "studio-simplex-biomes-v1",
+  "scope": "Codex game-development data tool; diagnostic preview, not finished game art",
+  "sourceReuse": "map-vendor/SOURCE.json",
+  "implementationHashes": {
+    "infinite-map.mjs": "9c7dca663c9a77ad23308f7260f84981c5df1f7b686defdc1f23adbbd65c817f",
+    "public/map-generator.html": "20c5cb30cfa58eb0bc1cbd5038086bd19ac6f071be729269cb12ebde61f217c0",
+    "public/map-generator.mjs": "feaf738686e897751ef694826b6342b3b5451cdc33b7a53b5114140b28797a28",
+    "public/map-generator.css": "10fc4af2cb1d5e0c838c3b266656629802d2a85bd111b019f69d311066acaef9",
+    "scripts/infinite-map-cli.mjs": "6c2106295fb47232e1f1b7fb6341484bf8ad5b1d18e81f6a7f19378d228194a4",
+    "scripts/studio-map-adapter.mjs": "8006007ae8f070a2f8133a4bbe111ff8a16f74245e4a3e409586b48bf82a0f56",
+    "test/infinite-map.test.mjs": "61a2fed22a6044233e03ebfd92ca294d318332f9ce331e92e6ea72cbcc8abc3e",
+    "map-vendor/SOURCE.json": "7d437bdc826e428d376943ff0d1a741d3878d5d98ed89dd0137c72d1eb06385e"
+  },
+  "technical": {
+    "passed": 13,
+    "failed": 0,
+    "log": "core-test.log",
+    "tests": [
+      "seed determinism/order independence",
+      "negative coordinate floor mapping",
+      "all sampled chunk borders/direct global agreement",
+      "continuous field deltas",
+      "bounded cache eviction/recreation",
+      "invalid parameters/schema/coordinates",
+      "row-major semantic data export",
+      "four-neighbour connectivity/no row wrap",
+      "9 biomes and wood/stone/fiber coverage",
+      "tool operation schemas",
+      "CLI exit codes",
+      "upstream chunk-size consistency and Tiled negative origin",
+      "vendored source hashes + original upstream four-environment equality"
+    ]
+  },
+  "ui": {
+    "viewport": [
+      1280,
+      720
+    ],
+    "captures": [
+      {
+        "file": "preview-default.png",
+        "test": "Final desktop layout and validated origin",
+        "cache": "缓存 8 / 192 块 · 已生成 24 · 已回收 16 · 绘制 1.5 ms",
+        "camera": "X 0 · Y 0",
+        "grid": false,
+        "inspectedCoordinates": "0, 0",
+        "layer": "biomes",
+        "status": "区域检查完成；黄框标记可通行出生点",
+        "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=0&y=0&zoom=12.00",
+        "validation": "建议出生点 (0, 0) · 可达 2476 格 / 区域 84% · 1 个陆地分区",
+        "viewport": [
+          1280,
+          720
+        ],
+        "zoom": "12 px / 格",
+        "sha256": "8a9924edb096ff59ada0eb0035e2ddb594c8bbb0c1378ba1040694bedc1e45db"
+      },
+      {
+        "file": "preview-negative-chunks.png",
+        "test": "Negative chunk coordinates, far-cache eviction and old analysis invalidation",
+        "cache": "缓存 8 / 192 块 · 已生成 32 · 已回收 24 · 绘制 1.4 ms",
+        "camera": "X -1,000 · Y -750",
+        "grid": true,
+        "inspectedCoordinates": "0, 0",
+        "layer": "biomes",
+        "status": "已前往 -1000, -750",
+        "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=-1000&y=-750&zoom=12.00",
+        "validation": "检视区域已改变，请重新检查可达性。",
+        "viewport": [
+          1280,
+          720
+        ],
+        "zoom": "12 px / 格",
+        "sha256": "f85e459b2fb9075cdf7331b878b96c196fc041ce3127996973d5b74ea7c97d15"
+      },
+      {
+        "file": "preview-height.png",
+        "test": "Height layer at fixed negative coordinates",
+        "cache": "缓存 8 / 192 块 · 已生成 32 · 已回收 24 · 绘制 1.0 ms",
+        "camera": "X -1,000 · Y -750",
+        "grid": true,
+        "inspectedCoordinates": "0, 0",
+        "layer": "height",
+        "status": "已前往 -1000, -750",
+        "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=-1000&y=-750&zoom=12.00",
+        "validation": "检视区域已改变，请重新检查可达性。",
+        "viewport": [
+          1280,
+          720
+        ],
+        "zoom": "12 px / 格",
+        "sha256": "6eebf56cd28ea2a13fa968544746692d513c9168fe897d7a20b90f2f3f767bf2"
+      },
+      {
+        "file": "preview-pan-keyboard.png",
+        "test": "Single keyboard tap and drag update actual world coordinates",
+        "cache": "缓存 8 / 192 块 · 已生成 40 · 已回收 32 · 绘制 1.2 ms",
+        "camera": "X 12 · Y -6",
+        "grid": false,
+        "inspectedCoordinates": "0, 0",
+        "layer": "biomes",
+        "status": "已回到原点",
+        "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=12&y=-6&zoom=12.00",
+        "validation": "检视区域已改变，请重新检查可达性。",
+        "viewport": [
+          1280,
+          720
+        ],
+        "zoom": "12 px / 格",
+        "sha256": "7315a0a7d3a70d8709c269cdb91317cd9a2fdc776d9dd7b0cccd652df8aaa810"
+      },
+      {
+        "file": "preview-inspection-validation.png",
+        "test": "Spawn and visible inspector both select global coordinate 0,0",
+        "cache": "缓存 8 / 192 块 · 已生成 40 · 已回收 32 · 绘制 1.3 ms",
+        "camera": "X 0 · Y 0",
+        "grid": false,
+        "inspectedCoordinates": "0, 0",
+        "layer": "biomes",
+        "status": "区域检查完成；黄框标记可通行出生点",
+        "url": "http://127.0.0.1:4317/map-generator?seed=%E6%BC%AB%E6%B8%B8-2026&scale=192&seaLevel=0.38&roughness=0.45&vegetation=0.65&x=0&y=0&zoom=12.00",
+        "validation": "建议出生点 (0, 0) · 可达 2476 格 / 区域 84% · 1 个陆地分区",
+        "viewport": [
+          1280,
+          720
+        ],
+        "zoom": "12 px / 格",
+        "sha256": "7fdaba3062d731b2099667a3c9495691e92e6da77c2ea1d9e495393e9fd494bc"
+      }
+    ],
+    "consoleErrorsAtFinalReview": [],
+    "export": {
+      "file": "ui-export.json",
+      "tileCount": 2952,
+      "region": {
+        "x": -28,
+        "y": -23,
+        "width": 82,
+        "height": 36
+      },
+      "camera": {
+        "x": 11.833333333333332,
+        "y": -5.833333333333333,
+        "tileSize": 12
+      },
+      "verified": "Downloaded via actual browser button; exact headless export equality"
+    }
+  },
+  "dataArtifacts": [
+    "region.json",
+    "playability.json",
+    "studio-chunk.json",
+    "tiled.json"
+  ],
+  "failures": "failures.json",
+  "limits": [
+    "Desktop browser reviewed; mobile and gamepad not visually tested",
+    "Region traversal is four-neighbour point-grid only; no character size or goal route",
+    "No global infinite-world connectivity claim",
+    "Browser simplex and upstream Python algorithms remain separate",
+    "Tiled external tileset not supplied; no Godot/Phaser import claim",
+    "No production map art/atomic asset pack made by this diagnostic renderer",
+    "No saved coordinate-patch editor or cross-chunk road/water ports implemented"
+  ]
+}

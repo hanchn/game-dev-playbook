@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Local EDIT of reference1 near-passing sprite ONLY foreground NEAR arm to smooth motion from preceding reference2 FAR-load. Keep legpose/supportside/head/body/camera1254/colors/materialunchanged.\nNEAR OPENhand atleftx360,y650 currentlyjumps tooquickly back. ChangeONLYforearm/elbowangle to a WAIST-PASSING NEAR OPENhand center aroundSOURCE x680,y740. NearSHOULDER staysx625,y380; near UPPERARM still swingsBACK to nearELBOWaroundx500,y540 (behindshoulder), then bendFOREARM FORWARD/down towardWRISTx620,y690→openpalm680740. UpperarmBACK remainsoppositeforegroundnearTHIGHforward even ifwristsinfrontofhip; don't rotateupperarm forward. This is physical elbowflexion, not detachedfloatinghand or thirdarm. Removeoldleftopenhand/forearm entirely, keepONEopennearhand.\nBACKGROUND FAR CURLEDhand atfront/right~1050,550 and its arm remainunchanged. Preserve fullNEARraisedforwardfoot/FARgroundedsupportfootasreference1; sourceground1192fixed, no legredesign. Exactly2arms2legs, no pinkghosts/fingerchanges. Sameface size/gaze/smile/tongue/shading/ink/whitepattern, no sourcefit/rescale. Transparentalpha/no shadow/text/crop. OutputONEcorrectedpassingarmtransitiononly.",
+  "generatedFile": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-e1665353-efbe-4f47-903d-aee79bcdba5a.png",
+  "generatedFileSha256": "2fb470bb97e1c8f7d5a2ac79684d72ef7f337b33bacac10ba3fb2c15276791c3",
+  "referenceFiles": [
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-434c0467-4ef0-47d5-8032-985b74c63cf0.png",
+      "sha256": "b706df3588033f8194ad483a07ab22ebee281961cb2d32e0bb0d9537a04af9fb"
+    },
+    {
+      "file": "/Users/lemon/.codex/generated_images/01a12b40-14b8-79e1-9b27-1bb729597d46/exec-c505b7d4-238b-4f93-9ba8-611f83c51df9.png",
+      "sha256": "22dd8460c63ce2db381403c4b7f99abc27cdd4089a2234666b970370f4e01868"
+    }
+  ],
+  "phase": 2,
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "pixelBounds": {
+    "threshold": 24,
+    "bounds": [
+      418,
+      86,
+      730,
+      1117
+    ],
+    "edgePixels": 0,
+    "hasTransparency": true,
+    "touchesEdge": false,
+    "definition": "original bitmap alpha, before export padding/scale; opaque video borders are not sprite clipping"
+  },
+  "qa": {
+    "visual": "failed",
+    "notes": "Near upper arm remains back while forearm flexes/open hand passes waist; far support unchanged."
+  }
+}
