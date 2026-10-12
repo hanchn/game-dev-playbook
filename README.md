@@ -56,3 +56,7 @@ npm start
 ## 动画与游戏资产工作台
 
 [2026-10-12收工、经验与未完成项](docs/closeout-2026-10-12.md)记录当前范围；[工作台](tools/animation-lab/README.md)包含角色分件、帧动画、拍摄、地图与UI生产工具。当前整体美术和游戏集成尚未验收。运行素材使用Git LFS，新克隆先执行 `git lfs pull`；历史大体积QA媒体保留本地，远程保存来源、报告和路径索引。
+
+## 蚯蚓冒险实战
+
+[蚯蚓平台冒险案例](docs/cases/worm-run-platform-adventure.md)记录连续蒙皮回头/竖井堆叠、即时断体、有限追击、鸟鸡跳飞、树间平台、季节天气和完整UI。[规则样本](examples/worm-platformer-core/README.md)提供实际提取源码和32条回归。

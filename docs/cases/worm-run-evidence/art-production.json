@@ -1,0 +1,44 @@
+{
+  "provider": "built-in image_gen; no SDK/API fallback",
+  "policy": "Original output preserved; alpha ownership/crops are deterministic registration, runtime palettes are material settings",
+  "prompts": [
+    {
+      "assets": [
+        "background-forest",
+        "background-snow",
+        "background-desert",
+        "background-waterfall"
+      ],
+      "prompt": "Production background bitmap for WORM RUN cute painted storybook side scrolling platform game. Wide landscape 3:2. [lush forest / winter woodland / desert dunes sandstone / mossy waterfall]. Camera ground-level in a tiny worm world, generous open central space and clear distant layers; detailed brush painting matching glossy cute pink worm and mossy storybook tree. Background only, no character, no foreground platform, no UI/text/frame. Ground horizon at lower 85 percent, sky above. Depth layers, scrolling cover and crossfade.",
+      "alpha": false
+    },
+    {
+      "assets": [
+        "robin-cute-v1",
+        "sparrow-cute-v1"
+      ],
+      "prompt": "Edit exact six-part bird atlas into [robin: russet wings and orange-red breast / sparrow: sandy beige chocolate feathers, cream cheek and black bib]. Preserve six isolated components, 3-column by 2-row layout, poses, size, ownership: torso/head/near-wing then tail/far-wing/two feet. Detailed cute painted storybook style, no labels or extra elements. Genuine transparent alpha, no haze outside parts. Six pieces separable.",
+      "reference": "public/art/bird-cute-v1.png",
+      "alpha": true
+    },
+    {
+      "assets": [
+        "boot",
+        "bottle",
+        "can",
+        "newspaper",
+        "tree-oak",
+        "tree-birch",
+        "tree-maple",
+        "rock-moss",
+        "rock-round",
+        "rock-slate",
+        "menu-panel",
+        "menu-button",
+        "loading-frame"
+      ],
+      "specificationSummary": "Detailed cute storybook: mossy side-view abandoned boot with climbable toe/shaft; broken amber bottle and shards; crushed sage can without branding; wrinkled unreadable newspaper; 4 usable branches preserved across oak/birch/maple; faceted moss/round/slate stones; oak-leaf parchment frame, wooden CTA and empty trough. Isolated assets, no baked labels. Earlier exact tool prompts remain in conversation; this is retained production intent, not an exact transcript.",
+      "alpha": true
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema": "worm-ui-suite/v3",
+  "plannerReference": "ui-planner-reference.json",
+  "style": "actual imagegen oak/leaf frame + parchment + honey-wood controls",
+  "tokens": {
+    "font": "PingFang SC / Microsoft YaHei / system-ui",
+    "touchMinCssPixels": 44,
+    "safeArea": "env(safe-area-inset-*) plus 10–18 CSS pixels",
+    "foreground": "#fff5d9",
+    "surface": "generated parchment",
+    "primary": "generated honey wood",
+    "danger": "#ffb1a5"
+  },
+  "screens": {
+    "loading": {
+      "to": [
+        "menu",
+        "load-error"
+      ],
+      "binding": "decoded image count + actual skeleton frame baking"
+    },
+    "menu": {
+      "to": [
+        "playing"
+      ],
+      "actions": [
+        "start",
+        "sound"
+      ]
+    },
+    "playing": {
+      "to": [
+        "paused",
+        "result"
+      ],
+      "hud": [
+        "lives",
+        "durability",
+        "distance",
+        "diamonds",
+        "zone"
+      ],
+      "tutorial": "temporary event-driven toast"
+    },
+    "paused": {
+      "to": [
+        "playing",
+        "confirm-restart",
+        "confirm-home"
+      ],
+      "clock": "model and animation frozen"
+    },
+    "confirm-restart": {
+      "to": [
+        "playing",
+        "paused"
+      ],
+      "cancel": "no reset"
+    },
+    "confirm-home": {
+      "to": [
+        "menu",
+        "paused"
+      ],
+      "confirm": "end current run and return to fresh start"
+    },
+    "result": {
+      "to": [
+        "playing"
+      ],
+      "actions": [
+        "same-seed-retry"
+      ]
+    },
+    "load-error": {
+      "to": [
+        "loading"
+      ],
+      "action": "reload"
+    }
+  },
+  "components": [
+    {
+      "id": "primary",
+      "source": "public/assets/menu-button.png",
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "pressedSource": "public/assets/menu-button-pressed.png"
+    },
+    {
+      "id": "secondary",
+      "source": "public/assets/menu-button-trim.png",
+      "states": [
+        "default",
+        "pressed",
+        "focus"
+      ],
+      "kind": "imagegen-source-component"
+    },
+    {
+      "id": "direction-pad",
+      "source": "public/assets/dpad.png",
+      "states": [
+        "default",
+        "pressed"
+      ],
+      "pressedRecipe": "translucent gold touch region"
+    },
+    {
+      "id": "action-round",
+      "source": "public/assets/action-button.png",
+      "states": [
+        "default",
+        "pressed",
+        "disabled",
+        "focus"
+      ],
+      "pressedRecipe": "translate 3px, scale .96, brightness .85"
+    },
+    {
+      "id": "zone",
+      "source": "src/style.css",
+      "states": [
+        "default",
+        "selected"
+      ]
+    },
+    {
+      "id": "dialog",
+      "source": "public/assets/menu-panel.png",
+      "states": [
+        "default"
+      ],
+      "kind": "imagegen-frame-nine-slice"
+    },
+    {
+      "id": "durability",
+      "source": "src/style.css",
+      "states": [
+        "normal",
+        "critical"
+      ]
+    },
+    {
+      "id": "loading",
+      "source": "public/assets/loading-frame-trim.png",
+      "fill": "native dynamic count-based fill within registered trough",
+      "states": [
+        "empty",
+        "partial",
+        "complete",
+        "failure"
+      ]
+    }
+  ],
+  "productionPolicy": "Source PNG bytes preserved. Deterministic alpha crop registers button ratio; actual imagegen panel is nine-sliced. Dynamic Chinese text/numbers are native DOM. Runtime pages/states are actual Chromium screenshots, never planner previews.",
+  "runtimeEvidence": "../../output/playwright/*-v3.png"
+}

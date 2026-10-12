@@ -1,0 +1,243 @@
+{
+  "schema": "worm-browser-qa/v1",
+  "checks": [
+    {
+      "id": "underground-rewards",
+      "passed": true,
+      "detail": {
+        "screen": "playing",
+        "player": {
+          "x": 833.3824166666689,
+          "y": 525.8749999999993,
+          "vx": 174.99999999999946,
+          "vy": 0,
+          "lives": 3,
+          "durability": 85.67590999999888,
+          "length": 1,
+          "stun": 0,
+          "protect": 0,
+          "facing": 1,
+          "headingX": 1,
+          "headingY": 0,
+          "zone": "underground",
+          "roll": false,
+          "cover": 0
+        },
+        "coins": 5,
+        "seed": 42,
+        "time": 4.324089999999981,
+        "chunks": 3
+      }
+    },
+    {
+      "id": "surface-exit",
+      "passed": true,
+      "detail": {
+        "x": 833.3824166666689,
+        "y": 407,
+        "vx": 0,
+        "vy": 0,
+        "lives": 3,
+        "durability": 84.74203999999888,
+        "length": 1,
+        "stun": 0,
+        "protect": 0,
+        "facing": 1,
+        "headingX": 0,
+        "headingY": 1,
+        "zone": "ground",
+        "roll": false,
+        "cover": 0,
+        "fallPeak": 407
+      }
+    },
+    {
+      "id": "pause-freezes-world",
+      "passed": true,
+      "detail": {
+        "screen": "paused",
+        "player": {
+          "x": 833.3824166666689,
+          "y": 407,
+          "vx": 0,
+          "vy": 0,
+          "lives": 3,
+          "durability": 84.67553999999885,
+          "length": 1,
+          "stun": 0,
+          "protect": 0,
+          "facing": 1,
+          "headingX": 0,
+          "headingY": 1,
+          "zone": "ground",
+          "roll": false,
+          "cover": 0,
+          "fallPeak": 407
+        },
+        "coins": 5,
+        "seed": 42,
+        "time": 5.324459999999975,
+        "chunks": 3
+      }
+    },
+    {
+      "id": "confirm-cancel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "same-seed-restart",
+      "passed": true,
+      "detail": {
+        "screen": "playing",
+        "player": {
+          "x": 170,
+          "y": 407,
+          "vx": 0,
+          "vy": 0,
+          "lives": 3,
+          "durability": 90,
+          "length": 1,
+          "stun": 0,
+          "protect": 0,
+          "facing": 1,
+          "headingX": 1,
+          "headingY": 0,
+          "zone": "ground",
+          "roll": false
+        },
+        "coins": 0,
+        "seed": 42,
+        "time": 0,
+        "chunks": 3
+      }
+    },
+    {
+      "id": "attached-branch-landing",
+      "passed": true,
+      "detail": {
+        "x": 484.2650000000007,
+        "y": 265.25,
+        "vx": 204.99999999999994,
+        "vy": 0,
+        "lives": 3,
+        "durability": 88.4670000000003,
+        "length": 1,
+        "stun": 0,
+        "protect": 997.4669999999957,
+        "facing": 1,
+        "headingX": 1,
+        "headingY": 0,
+        "zone": "air",
+        "roll": false,
+        "cover": 0,
+        "fallPeak": 265.25
+      }
+    },
+    {
+      "id": "three-lives-result",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "result-retry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "default-start-menu",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "default-fresh-run",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "mobile-touch-targets",
+      "passed": true,
+      "detail": [
+        {
+          "id": "暂停",
+          "w": 44,
+          "h": 44,
+          "x": 782,
+          "y": 20.0546875
+        },
+        {
+          "id": "向上",
+          "w": 50.75,
+          "h": 50.75,
+          "x": 65.125,
+          "y": 235
+        },
+        {
+          "id": "向左",
+          "w": 50.75,
+          "h": 50.75,
+          "x": 18,
+          "y": 282.125
+        },
+        {
+          "id": "向右",
+          "w": 50.75,
+          "h": 50.75,
+          "x": 112.25,
+          "y": 282.125
+        },
+        {
+          "id": "向下",
+          "w": 50.75,
+          "h": 50.75,
+          "x": 65.125,
+          "y": 329.25
+        },
+        {
+          "id": "跳起",
+          "w": 108.15625,
+          "h": 107.25,
+          "x": 717.84375,
+          "y": 272.75
+        }
+      ]
+    },
+    {
+      "id": "simultaneous-touch",
+      "passed": true,
+      "detail": [
+        "right",
+        "jump"
+      ]
+    },
+    {
+      "id": "touch-cancel-releases",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "portrait-dialog-fits",
+      "passed": true,
+      "detail": {
+        "x": 11.703125,
+        "y": 196.8984375,
+        "width": 366.59375,
+        "height": 450.1953125
+      }
+    },
+    {
+      "id": "runtime-no-exceptions",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "perf": {
+    "samples": 45,
+    "renderMedianMs": 1.100000023841858,
+    "renderP95Ms": 9.100000023841858,
+    "terrainCanvases": 2,
+    "bakedFrames": 200
+  },
+  "fixture": "Result accelerated by three direct damage calls; all traversal used actual keyboard/touch input.",
+  "hardware": "Desktop Chromium, mobile viewport emulation; physical mobile/gamepad not tested."
+}

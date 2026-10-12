@@ -1,0 +1,120 @@
+{
+  "schema": "worm-run-game-plan/v3",
+  "status": "game-integrated",
+  "title": {
+    "zh": "蚓力狂奔",
+    "en": "Worm Run"
+  },
+  "genre": "side-scrolling-platform-adventure",
+  "design": "docs/design/product-design.md",
+  "visualReference": "docs/design/gameplay-ui-v1.png",
+  "input": {
+    "direction": "four-way",
+    "actions": [
+      {
+        "id": "jump",
+        "status": "confirmed"
+      },
+      {
+        "id": "action-a",
+        "status": "undecided"
+      },
+      {
+        "id": "action-b",
+        "status": "undecided"
+      }
+    ]
+  },
+  "world": {
+    "generation": "seeded-constrained-chunks",
+    "regions": [
+      "underground",
+      "ground",
+      "air"
+    ],
+    "layers": [
+      "sky",
+      "background",
+      "gameplay",
+      "foreground",
+      "hud"
+    ],
+    "validation": "actual-movement-and-body-clearance",
+    "status": "game-integrated",
+    "branchingUnderground": true,
+    "attachedTreeBranches": true,
+    "biomes": [
+      "garden",
+      "forest",
+      "waterfall",
+      "autumn",
+      "snow",
+      "desert"
+    ],
+    "regionChunks": 3,
+    "weatherSeconds": 35,
+    "seed": 42,
+    "props": [
+      "boot",
+      "bottle",
+      "can",
+      "newspaper"
+    ],
+    "treeKinds": [
+      "oak",
+      "birch",
+      "maple"
+    ],
+    "rockKinds": [
+      "moss",
+      "round",
+      "slate"
+    ]
+  },
+  "characters": {
+    "player": "worm",
+    "hazards": [
+      "chicken",
+      "centipede",
+      "snake",
+      "bird"
+    ],
+    "deferred": [],
+    "birdTypes": [
+      "bluebird",
+      "robin",
+      "sparrow"
+    ]
+  },
+  "assumptions": [
+    "manual-directional-movement",
+    "limited-backtracking",
+    "endless-first-mode"
+  ],
+  "acceptance": {
+    "technical": "32 gameplay invariants + desktop Chromium runtime QA",
+    "visual": "runtime screenshots reviewed; no user acceptance claimed",
+    "gameplay": "keyboard route, jump, retry, pause, simultaneous touch verified"
+  },
+  "durability": {
+    "lives": 3,
+    "timed": true,
+    "collisionDamage": true,
+    "onEmpty": "split-keep-longer-reset-durability",
+    "onThirdEmpty": "game-over",
+    "tuning": "implemented",
+    "seconds": 90,
+    "fallDamage": 12,
+    "glassDamage": 6,
+    "rockDamage": 8
+  },
+  "enemyRules": {
+    "noticeRadius": 170,
+    "releaseRadius": 240,
+    "searchMaxSeconds": 5,
+    "senseCooldownSeconds": 20,
+    "consumption": "instant-split-and-retreat",
+    "birdMaxPerScreen": 1,
+    "chickenReach": "lowest-tier-only"
+  }
+}
