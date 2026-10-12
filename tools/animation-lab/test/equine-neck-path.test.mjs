@@ -1,6 +1,16 @@
-import test from 'node:test';import assert from 'node:assert/strict';import fs from'node:fs';import{createAsset,pose}from'../game-core.mjs';import{commands}from'../skin-renderer.mjs';import{sourcePointWorld}from'../human-soft-skin.mjs';import{createEquineNeckPath,buildEquineNeckCommandCandidate,buildEquineReviewBaseCommands,packEquineReviewVertices}from'../equine-neck-path.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';import fs from'node:fs';import{createAsset,pose}from'../game-core.mjs';import{commands}from'../skin-renderer.mjs';import{sourcePointWorld}from'../human-soft-skin.mjs';import{createEquineNeckPath,buildEquineNeckCommandCandidate,buildEquineReviewBaseCommands,packEquineReviewVertices,createEquineReviewEpoch}from'../equine-neck-path.mjs';
 const a=createAsset('horse'),skin=JSON.parse(fs.readFileSync(new URL('../public/art/skins.json',import.meta.url))).horse,landmarks={root:[.31,.93],middle:[.39,.62],join:[.50,.32]};
 const distance=(p,q)=>Math.hypot(p[0]-q[0],p[1]-q[1]);
+test('cancelled preview generations reject out-of-order worker replies after reset, seek, and setting changes',async()=>{
+ const epoch=createEquineReviewEpoch(),pending=[];
+ const queue=label=>{const token=epoch.capture();return new Promise(resolve=>pending.push(()=>resolve(epoch.accepts(token)?label:null)));};
+ const beforeReset=queue('old-playing-frame');epoch.invalidate();
+ const afterReset=queue('start-frame');epoch.invalidate();
+ const afterSeek=queue('selected-frame');epoch.invalidate();
+ const current=queue('new-clip-frame');
+ for(const i of[3,0,2,1])pending[i]();
+ assert.deepEqual(await Promise.all([beforeReset,afterReset,afterSeek,current]),[null,null,null,'new-clip-frame']);
+});
 function mapper(phase,extra={}){const nodes=pose(a,phase,{clip:'graze'}).nodes,template=commands(a,{nodes,clip:'graze'},skin).find(c=>c.id==='head').bind.template;return createEquineNeckPath({template,nodes,landmarks,...extra});}
 test('candidate neck binds visually calibrated root and skull junction without moving facial pixels',()=>{for(const phase of[0,.2,.467,.73,1]){const m=mapper(phase);assert.ok(distance(m.map(landmarks.root),m.worldRoot)<1e-7);assert.ok(distance(m.map(landmarks.join),m.worldJoin)<1e-7);for(const uv of[[.66,.34],[.9,.65],[.8,.4]]){const x=m.map(uv),y=m.rigidUv(uv);assert.ok(distance(x,y)<1e-7,'actual eye/muzzle region must remain rigid');}assert.ok(Number.isFinite(m.centerlineScale));}});
 test('curved neck preserves perpendicular source cross-section radius instead of shrinking it',()=>{const m=mapper(.467,{faceGuard:{start:2,end:3}}),direction=m.sourceTangent(.25),n=[-direction[1],direction[0]],center=m.sourceAt(.25),uv=m.sourceLocalToUv,c=m.map(uv(center));for(const radius of[-7,-3,3,7]){const point=[center[0]+n[0]*radius,center[1]+n[1]*radius];assert.ok(Math.abs(distance(m.map(uv(point)),c)-Math.abs(radius))<1e-6);}});

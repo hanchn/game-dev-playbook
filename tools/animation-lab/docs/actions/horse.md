@@ -64,3 +64,6 @@
 `examples/horse-neck-path-performance-v1/review.json` 汇总所有实际路径和代码字节快照。7项测试通过；新 Canvas 映射与冻结r4参考100张完整深浅底 RGBA 相等，源点最大 .07453rigpx/2548源三角不变。GPU浮点顶点误差最大 .00002622rigpx；50张1024×420 WebGL与Canvas对照仍有AA/过滤差异（最坏平均 .026663/255、个别通道110），严格像素相等 FAILED，因此参考路径保持可用并默认。
 
 最终80个关键帧操作逐一确认相位/暂停，五张实际 UI 第8帧均已看；当前 WebGL 吃草导出32PNG+4源的SHA全部匹配，实际第8帧已看。路径 `actual-80-step-final.json`、`*-step07-final.png`、`final-walk-{normal,slow}.{json,png}`、`final-graze-slow.{json,png}`、`backend-qa-v3/backend-qa.json`、`graze-r5-export/actual-artifact-check.json`。马比例、模块状肩髋、腕飞节和吃草支撑仍美术 FAILED，性能改善不覆盖这些问题。
+# 2026-10-12：诊断播放取消复测
+
+`/lab/horse-neck-review` 的 reset、Worker 回包、异步胶片条和拍摄锁定已作独立修复。详见 [播放取消与拍摄锁定](../horse-neck-playback-control-qa-2026-10-12.md)；证据在 `examples/horse-neck-playback-control-v1/qa-report.json`。本轮不更换源图或生产 horse24，整马美术及稳定帧间节拍仍失败。

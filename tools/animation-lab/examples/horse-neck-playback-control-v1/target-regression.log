@@ -1,0 +1,16 @@
+✔ cancelled preview generations reject out-of-order worker replies after reset, seek, and setting changes (0.784709ms)
+✔ candidate neck binds visually calibrated root and skull junction without moving facial pixels (36.358625ms)
+✔ curved neck preserves perpendicular source cross-section radius instead of shrinking it (4.595209ms)
+✔ invalid neck paths and tangent values fail rather than silently producing pixels (14.311666ms)
+✔ candidate preserves all other part commands and actual source mapping stays within production precision budget (586.815166ms)
+✔ cached source geometry remains pose-independent and cannot be changed through output commands (23.266291ms)
+✔ diagnostic accelerated production commands retain every adaptive triangle and source transform (298.960333ms)
+✔ worker vertex packs preserve native source identities, all batches, and subpixel GPU coordinate precision (301.881083ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1349.151417

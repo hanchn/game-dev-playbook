@@ -1,0 +1,138 @@
+{
+  "clock": "2.000 / 2.000s · 相位 1.0000 · 2548 三角形",
+  "control": {
+    "clip": "graze",
+    "generation": 2,
+    "playing": true,
+    "reason": "play",
+    "requestedPhase": 0
+  },
+  "performance": "实际呈现 24 FPS · P95 66.7ms（目标24FPS）",
+  "phase": "10000",
+  "pipeline": {
+    "clip": "graze",
+    "generation": 2,
+    "lastIndex": 48,
+    "nextRequested": 49,
+    "presented": 49,
+    "ready": 0,
+    "recentIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "skippedIndices": 0,
+    "sourcePhase": 1,
+    "speed": 1,
+    "startPhase": 0,
+    "targetFPS": 24,
+    "workers": 2
+  },
+  "play": "播放",
+  "profile": {
+    "backend": "webgl",
+    "clip": "graze",
+    "last": {
+      "baselineDraw": 0.699999988079071,
+      "baselineGL": {
+        "drawCalls": 20,
+        "maxVertexRoundingRigPx": 0.00001513539582935509,
+        "triangles": 2192
+      },
+      "candidateCommands": 1.9000000357627869,
+      "candidateDraw": 1.199999988079071,
+      "candidateGL": {
+        "drawCalls": 20,
+        "maxVertexRoundingRigPx": 0.00002584563698664404,
+        "triangles": 3783
+      },
+      "mainSubmit": 0.09999996423721312,
+      "pose": 0,
+      "productionCommands": 2.5,
+      "total": 6.300000011920929,
+      "workerLatency": 200.0999999642372
+    },
+    "phase": 1,
+    "samples": 49,
+    "window": {
+      "baselineDraw": {
+        "p50": 1,
+        "p95": 3.399999976158142
+      },
+      "candidateCommands": {
+        "p50": 2.5,
+        "p95": 3.699999988079071
+      },
+      "candidateDraw": {
+        "p50": 1.600000023841858,
+        "p95": 3
+      },
+      "mainSubmit": {
+        "p50": 0.10000002384185792,
+        "p95": 0.19999998807907104
+      },
+      "pose": {
+        "p50": 0.09999996423721312,
+        "p95": 0.19999998807907104
+      },
+      "productionCommands": {
+        "p50": 4,
+        "p95": 5.700000047683716
+      },
+      "total": {
+        "p50": 9.300000011920927,
+        "p95": 14.599999964237211
+      },
+      "workerLatency": {
+        "p50": 200.19999998807907,
+        "p95": 233.5
+      }
+    }
+  }
+}

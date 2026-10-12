@@ -1,0 +1,635 @@
+{
+  "assetId": "dinosaur-side-v12",
+  "frame": {
+    "anchor": [
+      256,
+      350
+    ],
+    "scale": 1.25
+  },
+  "sources": [
+    {
+      "key": "original",
+      "file": "public/art/dinosaur-side-parts-v8.png",
+      "sha256": "87fc5cc6d6003250fd2b0b84e5acf78baf08e3dc8fafc65644e512edb3f16c3d"
+    },
+    {
+      "key": "neutralLeg",
+      "file": "examples/dinosaur-leg-straight-v1/leg-parts-v1.png",
+      "sha256": "943ccc2adb1289af74d101500551e2f9403cddf86047195cce7f640b0e11c9b6"
+    }
+  ],
+  "implementation": [
+    {
+      "file": "animal-rig.mjs",
+      "url": "/animal-rig.mjs",
+      "sha256": "b1937e404d967a2c8a489a6c82f4da8dad6125fdc3abea816bfdc5ebd61d0d04"
+    },
+    {
+      "file": "game-core.mjs",
+      "url": "/game-core.mjs",
+      "sha256": "f32c6f32b90dc69eb83b4deeaa65b9555222f21a5865a3eddd35394b63974335"
+    },
+    {
+      "file": "skin-renderer.mjs",
+      "url": "/skin-renderer.mjs",
+      "sha256": "23db7a7bb735b444f8954b2564dae881855b16a631d58c7e63738db29f299ebf"
+    },
+    {
+      "file": "strip-skin.mjs",
+      "url": "/strip-skin.mjs",
+      "sha256": "24deab7ec45ebe3a3e0027734c628e1c9fd33796a676adc2a6c4beb1d050225a"
+    },
+    {
+      "file": "human-soft-skin.mjs",
+      "url": "/human-soft-skin.mjs",
+      "sha256": "af8c7e6bec77138e455ba28649bca2542cf7b1c59e0a154a76120d0aa6daee2c"
+    }
+  ],
+  "landmarks": [
+    [
+      [
+        357,
+        185
+      ],
+      [
+        469,
+        870
+      ]
+    ],
+    [
+      [
+        827,
+        225
+      ],
+      [
+        859,
+        870
+      ]
+    ],
+    [
+      [
+        1224.5,
+        400
+      ],
+      [
+        1229,
+        870
+      ]
+    ]
+  ],
+  "items": [
+    {
+      "file": "idle-0-light-pair.png",
+      "clip": "idle",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-4-light-pair.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-8-light-pair.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-12-light-pair.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-light-sheet.png",
+      "clip": "idle",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "idle-0-dark-pair.png",
+      "clip": "idle",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-4-dark-pair.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-8-dark-pair.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-12-dark-pair.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-dark-sheet.png",
+      "clip": "idle",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "walk-0-light-pair.png",
+      "clip": "walk",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-4-light-pair.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-8-light-pair.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-12-light-pair.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-light-sheet.png",
+      "clip": "walk",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "walk-0-dark-pair.png",
+      "clip": "walk",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-4-dark-pair.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-8-dark-pair.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-12-dark-pair.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-dark-sheet.png",
+      "clip": "walk",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "run-0-light-pair.png",
+      "clip": "run",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-4-light-pair.png",
+      "clip": "run",
+      "phase": 0.25,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-8-light-pair.png",
+      "clip": "run",
+      "phase": 0.5,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-12-light-pair.png",
+      "clip": "run",
+      "phase": 0.75,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-light-sheet.png",
+      "clip": "run",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "run-0-dark-pair.png",
+      "clip": "run",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-4-dark-pair.png",
+      "clip": "run",
+      "phase": 0.25,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-8-dark-pair.png",
+      "clip": "run",
+      "phase": 0.5,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-12-dark-pair.png",
+      "clip": "run",
+      "phase": 0.75,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-dark-sheet.png",
+      "clip": "run",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "jump-0-light-pair.png",
+      "clip": "jump",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-4-light-pair.png",
+      "clip": "jump",
+      "phase": 0.26666666666666666,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-8-light-pair.png",
+      "clip": "jump",
+      "phase": 0.5333333333333333,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-12-light-pair.png",
+      "clip": "jump",
+      "phase": 0.8,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-light-sheet.png",
+      "clip": "jump",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "jump-0-dark-pair.png",
+      "clip": "jump",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-4-dark-pair.png",
+      "clip": "jump",
+      "phase": 0.26666666666666666,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-8-dark-pair.png",
+      "clip": "jump",
+      "phase": 0.5333333333333333,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-12-dark-pair.png",
+      "clip": "jump",
+      "phase": 0.8,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-dark-sheet.png",
+      "clip": "jump",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "roar-0-light-pair.png",
+      "clip": "roar",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-4-light-pair.png",
+      "clip": "roar",
+      "phase": 0.25,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-8-light-pair.png",
+      "clip": "roar",
+      "phase": 0.5,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-12-light-pair.png",
+      "clip": "roar",
+      "phase": 0.75,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-light-sheet.png",
+      "clip": "roar",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "roar-0-dark-pair.png",
+      "clip": "roar",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-4-dark-pair.png",
+      "clip": "roar",
+      "phase": 0.25,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-8-dark-pair.png",
+      "clip": "roar",
+      "phase": 0.5,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-12-dark-pair.png",
+      "clip": "roar",
+      "phase": 0.75,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "roar-dark-sheet.png",
+      "clip": "roar",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "bite-0-light-pair.png",
+      "clip": "bite",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-4-light-pair.png",
+      "clip": "bite",
+      "phase": 0.25,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-8-light-pair.png",
+      "clip": "bite",
+      "phase": 0.5,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-12-light-pair.png",
+      "clip": "bite",
+      "phase": 0.75,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-light-sheet.png",
+      "clip": "bite",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "bite-0-dark-pair.png",
+      "clip": "bite",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-4-dark-pair.png",
+      "clip": "bite",
+      "phase": 0.25,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-8-dark-pair.png",
+      "clip": "bite",
+      "phase": 0.5,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-12-dark-pair.png",
+      "clip": "bite",
+      "phase": 0.75,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "bite-dark-sheet.png",
+      "clip": "bite",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "tail-0-light-pair.png",
+      "clip": "tail",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-4-light-pair.png",
+      "clip": "tail",
+      "phase": 0.25,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-8-light-pair.png",
+      "clip": "tail",
+      "phase": 0.5,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-12-light-pair.png",
+      "clip": "tail",
+      "phase": 0.75,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-light-sheet.png",
+      "clip": "tail",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "tail-0-dark-pair.png",
+      "clip": "tail",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-4-dark-pair.png",
+      "clip": "tail",
+      "phase": 0.25,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-8-dark-pair.png",
+      "clip": "tail",
+      "phase": 0.5,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-12-dark-pair.png",
+      "clip": "tail",
+      "phase": 0.75,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "tail-dark-sheet.png",
+      "clip": "tail",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "extend-0-light-pair.png",
+      "clip": "extend",
+      "phase": 0,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-4-light-pair.png",
+      "clip": "extend",
+      "phase": 0.25,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-8-light-pair.png",
+      "clip": "extend",
+      "phase": 0.5,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-12-light-pair.png",
+      "clip": "extend",
+      "phase": 0.75,
+      "background": "light",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-light-sheet.png",
+      "clip": "extend",
+      "background": "light",
+      "kind": "diagnostic-sheet"
+    },
+    {
+      "file": "extend-0-dark-pair.png",
+      "clip": "extend",
+      "phase": 0,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-4-dark-pair.png",
+      "clip": "extend",
+      "phase": 0.25,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-8-dark-pair.png",
+      "clip": "extend",
+      "phase": 0.5,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-12-dark-pair.png",
+      "clip": "extend",
+      "phase": 0.75,
+      "background": "dark",
+      "kind": "native-pair"
+    },
+    {
+      "file": "extend-dark-sheet.png",
+      "clip": "extend",
+      "background": "dark",
+      "kind": "diagnostic-sheet"
+    }
+  ],
+  "visual": "not-reviewed",
+  "productionChanged": false,
+  "implementationCompatibility": {
+    "date": "2026-10-12",
+    "scope": "optional footContactOffsets and neutral-angle reads, production defaults unchanged",
+    "defaultPoseSamples": 128,
+    "changed": 0
+  }
+}

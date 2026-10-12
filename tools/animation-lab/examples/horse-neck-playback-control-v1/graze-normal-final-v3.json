@@ -1,0 +1,129 @@
+{
+  "performance": "实际呈现 24 FPS · P95 66.7ms（目标24FPS）",
+  "phase": "10000",
+  "pipeline": {
+    "clip": "graze",
+    "generation": 11,
+    "lastIndex": 48,
+    "nextRequested": 49,
+    "presented": 49,
+    "ready": 0,
+    "recentIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "skippedIndices": 0,
+    "sourcePhase": 1,
+    "speed": 1,
+    "startPhase": 0,
+    "targetFPS": 24,
+    "workers": 2
+  },
+  "profile": {
+    "backend": "webgl",
+    "clip": "graze",
+    "last": {
+      "baselineDraw": 0.800000011920929,
+      "baselineGL": {
+        "drawCalls": 20,
+        "maxVertexRoundingRigPx": 0.00001513539582935509,
+        "triangles": 2192
+      },
+      "candidateCommands": 2,
+      "candidateDraw": 1.2999999523162842,
+      "candidateGL": {
+        "drawCalls": 20,
+        "maxVertexRoundingRigPx": 0.00002584563698664404,
+        "triangles": 3783
+      },
+      "mainSubmit": 0.10000002384185792,
+      "pose": 0,
+      "productionCommands": 3.100000023841858,
+      "total": 7.199999988079071,
+      "workerLatency": 200.10000002384183
+    },
+    "phase": 1,
+    "samples": 49,
+    "window": {
+      "baselineDraw": {
+        "p50": 1,
+        "p95": 3
+      },
+      "candidateCommands": {
+        "p50": 2.5,
+        "p95": 3.699999988079071
+      },
+      "candidateDraw": {
+        "p50": 1.5,
+        "p95": 3.100000023841858
+      },
+      "mainSubmit": {
+        "p50": 0.10000002384185792,
+        "p95": 0.19999998807907104
+      },
+      "pose": {
+        "p50": 0.09999996423721312,
+        "p95": 0.19999998807907104
+      },
+      "productionCommands": {
+        "p50": 4.5,
+        "p95": 6.5
+      },
+      "total": {
+        "p50": 9.900000035762789,
+        "p95": 13.399999976158142
+      },
+      "workerLatency": {
+        "p50": 200.19999998807907,
+        "p95": 233.5999999642372
+      }
+    }
+  }
+}

@@ -1,0 +1,1087 @@
+{
+  "schema": "source-backed-local-map-patch/v1",
+  "version": "source-rooted-natural-patch-v2",
+  "yaw": 0,
+  "units": "meters; GLB Y-up, original Blender Z-up",
+  "objects": [
+    {
+      "id": 0,
+      "assetId": "tree-mid",
+      "x": 0,
+      "z": 0,
+      "yaw": 0,
+      "view": {
+        "yaw": 0,
+        "path": "tree-mid-yaw0.png",
+        "sha256": "2f11dc0a10dfe866a59fd80243a608fcf28e694b9708f508bfb512bbea7b9522",
+        "bytes": 234814,
+        "rect": [
+          70,
+          65,
+          334,
+          346
+        ],
+        "groundPixel": [
+          255.99989318847656,
+          406.9807434082031
+        ],
+        "orthoMeters": 6.3,
+        "renderSeconds": 1.155,
+        "clipped": false
+      },
+      "collider": {
+        "type": "circle",
+        "radius": 0.16,
+        "height": 4.65,
+        "policy": "trunk-only conservative approximation; canopy pass-through",
+        "x": 0,
+        "z": 0
+      }
+    },
+    {
+      "id": 1,
+      "assetId": "shrub-a",
+      "x": -1.5,
+      "z": 1,
+      "yaw": 0,
+      "view": {
+        "yaw": 0,
+        "path": "shrub-a-yaw0.png",
+        "sha256": "d4247fb4e306e134c1e3524617d58a3464c48f9d4cef50d137e9ce89462509b5",
+        "bytes": 110191,
+        "rect": [
+          209,
+          120,
+          116,
+          266
+        ],
+        "groundPixel": [
+          255.99998474121094,
+          385.13916015625
+        ],
+        "orthoMeters": 0.65,
+        "renderSeconds": 0.194,
+        "clipped": false
+      },
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall",
+        "x": -1.5,
+        "z": 1
+      }
+    },
+    {
+      "id": 2,
+      "assetId": "shrub-b",
+      "x": 1.8,
+      "z": 1.1,
+      "yaw": 0,
+      "view": {
+        "yaw": 0,
+        "path": "shrub-b-yaw0.png",
+        "sha256": "22ccab537f9f2b86dbda3dba123a0c109150edebc92adc1af8b41d604ad79f86",
+        "bytes": 104901,
+        "rect": [
+          190,
+          122,
+          130,
+          248
+        ],
+        "groundPixel": [
+          256,
+          369.01890563964844
+        ],
+        "orthoMeters": 0.65,
+        "renderSeconds": 0.241,
+        "clipped": false
+      },
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall",
+        "x": 1.8,
+        "z": 1.1
+      }
+    },
+    {
+      "id": 3,
+      "assetId": "shrub-c",
+      "x": -1.8,
+      "z": -1.4,
+      "yaw": 0,
+      "view": {
+        "yaw": 0,
+        "path": "shrub-c-yaw0.png",
+        "sha256": "da449d42235abb9452790b986ee165ecade28b5766a57d392ac2ab817c7efb3a",
+        "bytes": 89052,
+        "rect": [
+          231,
+          144,
+          58,
+          211
+        ],
+        "groundPixel": [
+          256,
+          353.59449768066406
+        ],
+        "orthoMeters": 0.65,
+        "renderSeconds": 0.244,
+        "clipped": false
+      },
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall",
+        "x": -1.8,
+        "z": -1.4
+      }
+    },
+    {
+      "id": 4,
+      "assetId": "shrub-d",
+      "x": 0.8,
+      "z": -1.5,
+      "yaw": 0,
+      "view": {
+        "yaw": 0,
+        "path": "shrub-d-yaw0.png",
+        "sha256": "fbb0671938e84f52db5330fae4fc0709290f6767b0b9494ef607c2b7daa0da63",
+        "bytes": 85842,
+        "rect": [
+          225,
+          167,
+          80,
+          172
+        ],
+        "groundPixel": [
+          256,
+          337.9342498779297
+        ],
+        "orthoMeters": 0.65,
+        "renderSeconds": 0.237,
+        "clipped": false
+      },
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall",
+        "x": 0.8,
+        "z": -1.5
+      }
+    },
+    {
+      "id": 5,
+      "assetId": "boulder",
+      "x": 2.1,
+      "z": -0.9,
+      "yaw": 0,
+      "view": {
+        "yaw": 0,
+        "path": "boulder-yaw0.png",
+        "sha256": "940f3776ef841f77563aa9c6881f392ca438757263348ccdd6a8952b1586e383",
+        "bytes": 184346,
+        "rect": [
+          119,
+          172,
+          300,
+          230
+        ],
+        "groundPixel": [
+          256,
+          335.40185546875
+        ],
+        "orthoMeters": 0.6586727932095527,
+        "renderSeconds": 0.858,
+        "clipped": false
+      },
+      "collider": {
+        "type": "circle",
+        "radius": 0.22845277190208435,
+        "height": 0.25095754861831665,
+        "policy": "conservative horizontal bbox-centred circle; plant median-root rule is not used for a rock",
+        "x": 2.1,
+        "z": -0.9
+      }
+    },
+    {
+      "id": 6,
+      "assetId": "boulder",
+      "x": -2.2,
+      "z": 0.1,
+      "yaw": 0,
+      "view": {
+        "yaw": 0,
+        "path": "boulder-yaw0.png",
+        "sha256": "940f3776ef841f77563aa9c6881f392ca438757263348ccdd6a8952b1586e383",
+        "bytes": 184346,
+        "rect": [
+          119,
+          172,
+          300,
+          230
+        ],
+        "groundPixel": [
+          256,
+          335.40185546875
+        ],
+        "orthoMeters": 0.6586727932095527,
+        "renderSeconds": 0.858,
+        "clipped": false
+      },
+      "collider": {
+        "type": "circle",
+        "radius": 0.22845277190208435,
+        "height": 0.25095754861831665,
+        "policy": "conservative horizontal bbox-centred circle; plant median-root rule is not used for a rock",
+        "x": -2.2,
+        "z": 0.1
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "tree-lod",
+      "source": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/tree_small_02_1k.gltf",
+      "sourceSHA256": "3062a709614c05b80fdc1e56583998bc3cb1027b0d52f956c8ecfb882ff8ca6d",
+      "glb": "tree-lod.glb",
+      "sha256": "476ae030840f9266ac3c108cc68a00200bab5a54a60f6c3d43dfc968414a1326",
+      "bytes": 12861552,
+      "triangles": 55998,
+      "boundsBlenderZUp": [
+        [
+          -1.3228884935379028,
+          -2.9187774658203125,
+          -0.0002629738301038742
+        ],
+        [
+          1.603644847869873,
+          1.376828670501709,
+          4.570430755615234
+        ]
+      ],
+      "sizeMeters": [
+        2.926533341407776,
+        4.2956061363220215,
+        4.570693729445338
+      ],
+      "collider": {
+        "type": "circle",
+        "radius": 0.16,
+        "height": 4.65,
+        "policy": "trunk-only conservative approximation; canopy pass-through"
+      },
+      "lodParts": [
+        {
+          "material": "tree_small_02_trunk",
+          "before": 28293,
+          "after": 4999,
+          "target": 5000
+        },
+        {
+          "material": "tree_small_02_branches",
+          "before": 94814,
+          "after": 5999,
+          "target": 6000
+        },
+        {
+          "material": "tree_small_02_leaves",
+          "before": 1939380,
+          "after": 45000,
+          "target": 45000
+        }
+      ],
+      "views": [
+        {
+          "yaw": 0,
+          "path": "tree-lod-yaw0.png",
+          "sha256": "e52e6e8572dce3ad2e9c18494ef8b07d9a95439d7ab04f864a9a4cc110964df3",
+          "bytes": 227100,
+          "rect": [
+            71,
+            67,
+            330,
+            344
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 0.632,
+          "clipped": false
+        },
+        {
+          "yaw": 90,
+          "path": "tree-lod-yaw90.png",
+          "sha256": "d1b92cb13205be3d038780c3edeacef45b385255952345ea8c305e674d45ae62",
+          "bytes": 199840,
+          "rect": [
+            181,
+            74,
+            251,
+            337
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 0.606,
+          "clipped": false
+        },
+        {
+          "yaw": 180,
+          "path": "tree-lod-yaw180.png",
+          "sha256": "d2f972e664a7cc8da23280e8067a4f9b61a4198921ceb256712de77568af39a2",
+          "bytes": 240202,
+          "rect": [
+            111,
+            32,
+            329,
+            378
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 0.597,
+          "clipped": false
+        },
+        {
+          "yaw": 270,
+          "path": "tree-lod-yaw270.png",
+          "sha256": "5a98fd6d4b13fc33bd9265ef0fb1d7cf370979779fa2e9e3a3f8fe3172ec483c",
+          "bytes": 220271,
+          "rect": [
+            80,
+            30,
+            251,
+            381
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 0.602,
+          "clipped": false
+        }
+      ],
+      "visualAccepted": false
+    },
+    {
+      "id": "shrub-a",
+      "source": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/shrub_03_1k.gltf",
+      "sourceSHA256": "b76d7c14bc027e834e82d3f984c32b5d060e62908aa90ff9420a637ca253a8ea",
+      "glb": "shrub-a.glb",
+      "sha256": "e5b3699f451272b75dd680c69b429fe34578d5565a9b2a3f240e13fa33d28405",
+      "bytes": 2263764,
+      "triangles": 2385,
+      "boundsBlenderZUp": [
+        [
+          -0.07359695434570312,
+          -0.07854191958904266,
+          0
+        ],
+        [
+          0.12702688574790955,
+          0.07266110926866531,
+          0.4027838110923767
+        ]
+      ],
+      "sizeMeters": [
+        0.20062384009361267,
+        0.15120302885770798,
+        0.4027838110923767
+      ],
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall"
+      },
+      "lodParts": [],
+      "views": [
+        {
+          "yaw": 0,
+          "path": "shrub-a-yaw0.png",
+          "sha256": "d4247fb4e306e134c1e3524617d58a3464c48f9d4cef50d137e9ce89462509b5",
+          "bytes": 110191,
+          "rect": [
+            209,
+            120,
+            116,
+            266
+          ],
+          "groundPixel": [
+            255.99998474121094,
+            385.13916015625
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.194,
+          "clipped": false
+        },
+        {
+          "yaw": 90,
+          "path": "shrub-a-yaw90.png",
+          "sha256": "daa0240fcf434fd54441b686bce7c0e69fd28189c8b0f34877311459df071fc4",
+          "bytes": 113168,
+          "rect": [
+            209,
+            105,
+            126,
+            281
+          ],
+          "groundPixel": [
+            255.99998474121094,
+            385.13916015625
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.241,
+          "clipped": false
+        },
+        {
+          "yaw": 180,
+          "path": "shrub-a-yaw180.png",
+          "sha256": "7d55e284769cc5b79bc50cfd3a7119de62d12fb856aaa9e27beeb0f68a371965",
+          "bytes": 111973,
+          "rect": [
+            187,
+            100,
+            116,
+            286
+          ],
+          "groundPixel": [
+            255.99998474121094,
+            385.13916015625
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.234,
+          "clipped": false
+        },
+        {
+          "yaw": 270,
+          "path": "shrub-a-yaw270.png",
+          "sha256": "3cfd0e256d5fd853bdbb9f3d45b17448afb18797b93111b1a926e457b8e06204",
+          "bytes": 113746,
+          "rect": [
+            177,
+            115,
+            126,
+            271
+          ],
+          "groundPixel": [
+            255.99998474121094,
+            385.13916015625
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.239,
+          "clipped": false
+        }
+      ],
+      "visualAccepted": false
+    },
+    {
+      "id": "shrub-b",
+      "source": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/shrub_03_1k.gltf",
+      "sourceSHA256": "b76d7c14bc027e834e82d3f984c32b5d060e62908aa90ff9420a637ca253a8ea",
+      "glb": "shrub-b.glb",
+      "sha256": "a79c37c5aeaa607dd1926f2a7a28cd5c95bf5d4180afb974e25df9677910aba0",
+      "bytes": 2253140,
+      "triangles": 2134,
+      "boundsBlenderZUp": [
+        [
+          -0.09264697134494781,
+          -0.06116412580013275,
+          0
+        ],
+        [
+          0.09165610373020172,
+          0.0613960362970829,
+          0.35250383615493774
+        ]
+      ],
+      "sizeMeters": [
+        0.18430307507514954,
+        0.12256016209721565,
+        0.35250383615493774
+      ],
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall"
+      },
+      "lodParts": [],
+      "views": [
+        {
+          "yaw": 0,
+          "path": "shrub-b-yaw0.png",
+          "sha256": "22ccab537f9f2b86dbda3dba123a0c109150edebc92adc1af8b41d604ad79f86",
+          "bytes": 104901,
+          "rect": [
+            190,
+            122,
+            130,
+            248
+          ],
+          "groundPixel": [
+            256,
+            369.01890563964844
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.241,
+          "clipped": false
+        },
+        {
+          "yaw": 90,
+          "path": "shrub-b-yaw90.png",
+          "sha256": "db55cb99035925835404c2db96d766866b8017730d7cc52318f8853d3f62dcc7",
+          "bytes": 101797,
+          "rect": [
+            213,
+            131,
+            101,
+            239
+          ],
+          "groundPixel": [
+            256,
+            369.01890563964844
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.241,
+          "clipped": false
+        },
+        {
+          "yaw": 180,
+          "path": "shrub-b-yaw180.png",
+          "sha256": "5b8bd937aba9dc0796aa58f5b6510ee61a437cd33f7b7eb9fa107be3b9eb6832",
+          "bytes": 103288,
+          "rect": [
+            192,
+            134,
+            130,
+            236
+          ],
+          "groundPixel": [
+            256,
+            369.01890563964844
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.239,
+          "clipped": false
+        },
+        {
+          "yaw": 270,
+          "path": "shrub-b-yaw270.png",
+          "sha256": "63c09193c9fdcac36ec9f1f5856c983d99e92c7e50259bbe101158a74dd5f885",
+          "bytes": 103986,
+          "rect": [
+            198,
+            124,
+            101,
+            246
+          ],
+          "groundPixel": [
+            256,
+            369.01890563964844
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.238,
+          "clipped": false
+        }
+      ],
+      "visualAccepted": false
+    },
+    {
+      "id": "shrub-c",
+      "source": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/shrub_03_1k.gltf",
+      "sourceSHA256": "b76d7c14bc027e834e82d3f984c32b5d060e62908aa90ff9420a637ca253a8ea",
+      "glb": "shrub-c.glb",
+      "sha256": "8d0f9f78c5d6d43d86b1674001f1a4654331975fe56f409f754f051f1f998499",
+      "bytes": 2239128,
+      "triangles": 1790,
+      "boundsBlenderZUp": [
+        [
+          -0.03540327399969101,
+          -0.060980260372161865,
+          0
+        ],
+        [
+          0.060409918427467346,
+          0.052175577729940414,
+          0.30439478158950806
+        ]
+      ],
+      "sizeMeters": [
+        0.09581319242715836,
+        0.11315583810210228,
+        0.30439478158950806
+      ],
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall"
+      },
+      "lodParts": [],
+      "views": [
+        {
+          "yaw": 0,
+          "path": "shrub-c-yaw0.png",
+          "sha256": "da449d42235abb9452790b986ee165ecade28b5766a57d392ac2ab817c7efb3a",
+          "bytes": 89052,
+          "rect": [
+            231,
+            144,
+            58,
+            211
+          ],
+          "groundPixel": [
+            256,
+            353.59449768066406
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.244,
+          "clipped": false
+        },
+        {
+          "yaw": 90,
+          "path": "shrub-c-yaw90.png",
+          "sha256": "15d323a29cdd62132bd80da9718abc552d324682fcde5b1fc7d72fea10ea630c",
+          "bytes": 93239,
+          "rect": [
+            207,
+            140,
+            101,
+            215
+          ],
+          "groundPixel": [
+            256,
+            353.59449768066406
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.238,
+          "clipped": false
+        },
+        {
+          "yaw": 180,
+          "path": "shrub-c-yaw180.png",
+          "sha256": "5dbee36fc6fd5df352938a955c1bdb91de56598ec45ce87e7579b8de98a83760",
+          "bytes": 90757,
+          "rect": [
+            223,
+            146,
+            58,
+            209
+          ],
+          "groundPixel": [
+            256,
+            353.59449768066406
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.24,
+          "clipped": false
+        },
+        {
+          "yaw": 270,
+          "path": "shrub-c-yaw270.png",
+          "sha256": "f0f77bc0b83f3db44815557f12548c3fbd04dac24dc934a094683a18164029e6",
+          "bytes": 93802,
+          "rect": [
+            204,
+            149,
+            101,
+            206
+          ],
+          "groundPixel": [
+            256,
+            353.59449768066406
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.239,
+          "clipped": false
+        }
+      ],
+      "visualAccepted": false
+    },
+    {
+      "id": "shrub-d",
+      "source": "public/map-resources/polyhaven-nature-expansion-v1/shrub_03/shrub_03_1k.gltf",
+      "sourceSHA256": "b76d7c14bc027e834e82d3f984c32b5d060e62908aa90ff9420a637ca253a8ea",
+      "glb": "shrub-d.glb",
+      "sha256": "d65a580fe0ef886777f43701c1879ffc6b54b31b64285a8e316e2e2f5ad07518",
+      "bytes": 2245628,
+      "triangles": 1978,
+      "boundsBlenderZUp": [
+        [
+          -0.04773751273751259,
+          -0.0549948513507843,
+          0
+        ],
+        [
+          0.06503496319055557,
+          0.034283727407455444,
+          0.25555121898651123
+        ]
+      ],
+      "sizeMeters": [
+        0.11277247592806816,
+        0.08927857875823975,
+        0.25555121898651123
+      ],
+      "collider": {
+        "type": "none",
+        "policy": "low foliage is pass-through; no invented hard wall"
+      },
+      "lodParts": [],
+      "views": [
+        {
+          "yaw": 0,
+          "path": "shrub-d-yaw0.png",
+          "sha256": "fbb0671938e84f52db5330fae4fc0709290f6767b0b9494ef607c2b7daa0da63",
+          "bytes": 85842,
+          "rect": [
+            225,
+            167,
+            80,
+            172
+          ],
+          "groundPixel": [
+            256,
+            337.9342498779297
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.237,
+          "clipped": false
+        },
+        {
+          "yaw": 90,
+          "path": "shrub-d-yaw90.png",
+          "sha256": "afe2fd85b56cc40845bb0e972c2d7faad191e7f5555a81735143b2f4167a0610",
+          "bytes": 82074,
+          "rect": [
+            225,
+            161,
+            72,
+            178
+          ],
+          "groundPixel": [
+            256,
+            337.9342498779297
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.234,
+          "clipped": false
+        },
+        {
+          "yaw": 180,
+          "path": "shrub-d-yaw180.png",
+          "sha256": "4d47ae30788018d1c7bc8defd2b0ad924e885e5e7c07a52966506536a3aadf6a",
+          "bytes": 84603,
+          "rect": [
+            207,
+            159,
+            80,
+            180
+          ],
+          "groundPixel": [
+            256,
+            337.9342498779297
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.235,
+          "clipped": false
+        },
+        {
+          "yaw": 270,
+          "path": "shrub-d-yaw270.png",
+          "sha256": "45496ff99db267303696aaf01529459c5c665a5523054743d6cfa2984acf9edb",
+          "bytes": 81887,
+          "rect": [
+            216,
+            164,
+            71,
+            175
+          ],
+          "groundPixel": [
+            256,
+            337.9342498779297
+          ],
+          "orthoMeters": 0.65,
+          "renderSeconds": 0.238,
+          "clipped": false
+        }
+      ],
+      "visualAccepted": false
+    },
+    {
+      "id": "tree-mid",
+      "source": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/tree_small_02_1k.gltf",
+      "sourceSHA256": "3062a709614c05b80fdc1e56583998bc3cb1027b0d52f956c8ecfb882ff8ca6d",
+      "glb": "tree-mid.glb",
+      "sha256": "de5aeb0ea6790269f5567771d94a660e88a831b90ac193575103eb571828ff5a",
+      "bytes": 27548696,
+      "triangles": 159999,
+      "boundsBlenderZUp": [
+        [
+          -1.3171311616897583,
+          -2.9187774658203125,
+          -0.0002629738301038742
+        ],
+        [
+          1.598441243171692,
+          1.376828670501709,
+          4.563928127288818
+        ]
+      ],
+      "sizeMeters": [
+        2.91557240486145,
+        4.2956061363220215,
+        4.564191101118922
+      ],
+      "collider": {
+        "type": "circle",
+        "radius": 0.16,
+        "height": 4.65,
+        "policy": "trunk-only conservative approximation; canopy pass-through"
+      },
+      "lodParts": [
+        {
+          "material": "tree_small_02_trunk",
+          "before": 28293,
+          "after": 5999,
+          "target": 6000
+        },
+        {
+          "material": "tree_small_02_branches",
+          "before": 94814,
+          "after": 9000,
+          "target": 9000
+        },
+        {
+          "material": "tree_small_02_leaves",
+          "before": 1939380,
+          "after": 145000,
+          "target": 145000
+        }
+      ],
+      "views": [
+        {
+          "yaw": 0,
+          "path": "tree-mid-yaw0.png",
+          "sha256": "2f11dc0a10dfe866a59fd80243a608fcf28e694b9708f508bfb512bbea7b9522",
+          "bytes": 234814,
+          "rect": [
+            70,
+            65,
+            334,
+            346
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 1.155,
+          "clipped": false
+        },
+        {
+          "yaw": 90,
+          "path": "tree-mid-yaw90.png",
+          "sha256": "39c9aa4faeb63a8e8aab9a062a9965fefb834b0c04919dba6234732f17806023",
+          "bytes": 204944,
+          "rect": [
+            180,
+            72,
+            254,
+            339
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 1.112,
+          "clipped": false
+        },
+        {
+          "yaw": 180,
+          "path": "tree-mid-yaw180.png",
+          "sha256": "8e57a43d1057d9c46e209862269ecb7e66d70ab71e6d70325c65ed579c826d15",
+          "bytes": 250461,
+          "rect": [
+            108,
+            30,
+            334,
+            380
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 1.023,
+          "clipped": false
+        },
+        {
+          "yaw": 270,
+          "path": "tree-mid-yaw270.png",
+          "sha256": "b96743ff405e094057be0a1561b4e0439991edeead2758dab4094a803683fed5",
+          "bytes": 228758,
+          "rect": [
+            78,
+            30,
+            254,
+            381
+          ],
+          "groundPixel": [
+            255.99989318847656,
+            406.9807434082031
+          ],
+          "orthoMeters": 6.3,
+          "renderSeconds": 1.043,
+          "clipped": false
+        }
+      ],
+      "visualAccepted": false
+    },
+    {
+      "id": "boulder",
+      "source": "public/map-resources/polyhaven-models/boulder_01/boulder_01_lod1.glb",
+      "sourceSHA256": "523f0ca8ad290cee887ca94ef812ab202a7ff8313a58220a5ae9943dc88e087c",
+      "glb": "boulder.glb",
+      "sha256": "e8802e8329daba8534b1cf00600308efbd7c8323f45e864b76b25a641d511efc",
+      "bytes": 8404976,
+      "triangles": 54098,
+      "boundsBlenderZUp": [
+        [
+          -0.15900181233882904,
+          -0.22845277190208435,
+          0
+        ],
+        [
+          0.15900181233882904,
+          0.22845277190208435,
+          0.25095754861831665
+        ]
+      ],
+      "sizeMeters": [
+        0.3180036246776581,
+        0.4569055438041687,
+        0.25095754861831665
+      ],
+      "collider": {
+        "type": "circle",
+        "radius": 0.22845277190208435,
+        "height": 0.25095754861831665,
+        "policy": "conservative horizontal bbox-centred circle; plant median-root rule is not used for a rock"
+      },
+      "lodParts": [],
+      "views": [
+        {
+          "yaw": 0,
+          "path": "boulder-yaw0.png",
+          "sha256": "940f3776ef841f77563aa9c6881f392ca438757263348ccdd6a8952b1586e383",
+          "bytes": 184346,
+          "rect": [
+            119,
+            172,
+            300,
+            230
+          ],
+          "groundPixel": [
+            256,
+            335.40185546875
+          ],
+          "orthoMeters": 0.6586727932095527,
+          "renderSeconds": 0.858,
+          "clipped": false
+        },
+        {
+          "yaw": 90,
+          "path": "boulder-yaw90.png",
+          "sha256": "9e8179751165bc35da1f57881bd90273ae357de0bcdb37f6ee73578929ee7fe5",
+          "bytes": 167608,
+          "rect": [
+            117,
+            148,
+            324,
+            205
+          ],
+          "groundPixel": [
+            256,
+            335.40185546875
+          ],
+          "orthoMeters": 0.6586727932095527,
+          "renderSeconds": 0.267,
+          "clipped": false
+        },
+        {
+          "yaw": 180,
+          "path": "boulder-yaw180.png",
+          "sha256": "4508965f7f1c3499b3cf43e4d8f98f710add5fb3987b59d64ed9cc521315743f",
+          "bytes": 192181,
+          "rect": [
+            93,
+            107,
+            300,
+            297
+          ],
+          "groundPixel": [
+            256,
+            335.40185546875
+          ],
+          "orthoMeters": 0.6586727932095527,
+          "renderSeconds": 0.268,
+          "clipped": false
+        },
+        {
+          "yaw": 270,
+          "path": "boulder-yaw270.png",
+          "sha256": "e1381b35f17d33cc81e86e5819235454a9e291acc58eb4967320cef6031f5841",
+          "bytes": 214708,
+          "rect": [
+            71,
+            127,
+            324,
+            279
+          ],
+          "groundPixel": [
+            256,
+            335.40185546875
+          ],
+          "orthoMeters": 0.6586727932095527,
+          "renderSeconds": 0.268,
+          "clipped": false
+        }
+      ],
+      "visualAccepted": false,
+      "derivativeTangentRepair": {
+        "beforeSHA256": "d8d1ce9e26bc524c448c052abcf2b49953e01b7f4759930947f44a1031031230",
+        "afterSHA256": "e8802e8329daba8534b1cf00600308efbd7c8323f45e864b76b25a641d511efc",
+        "zeroVectors": 3,
+        "otherBytesUnchanged": true,
+        "sourceUnmodified": true
+      }
+    }
+  ],
+  "sourceCamera": {
+    "position": [
+      8,
+      -8,
+      8.6771424649477
+    ],
+    "target": [
+      0,
+      0,
+      2.1451698175258933
+    ],
+    "orthoMeters": 6.3,
+    "resolution": [
+      512,
+      512
+    ],
+    "fixedNativeLowMid": true,
+    "scriptSHA256": "d592c87342027143baa7ea4963151b4640dae913e8dda196b1d7ffb1f35d2872"
+  },
+  "collisionPolicy": "shared source-rooted trunk/circle; low foliage pass-through; conservative rocks",
+  "qa": {
+    "visualAccepted": false,
+    "engineImported": false,
+    "completeNaturalTheme": false,
+    "infiniteStreamed": false
+  }
+}

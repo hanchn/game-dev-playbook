@@ -1,0 +1,112 @@
+{
+  "id": "boulder",
+  "source": "public/map-resources/polyhaven-models/boulder_01/boulder_01_lod1.glb",
+  "sourceSHA256": "523f0ca8ad290cee887ca94ef812ab202a7ff8313a58220a5ae9943dc88e087c",
+  "glb": "boulder.glb",
+  "sha256": "1f31bbd01e0c2fceedf1ada1644f6b0e8f353a0db2fd9fd2e2315a5bc81cd91c",
+  "bytes": 8404976,
+  "triangles": 54098,
+  "boundsBlenderZUp": [
+    [
+      -0.1281144917011261,
+      -0.44022515416145325,
+      0.0
+    ],
+    [
+      0.18988913297653198,
+      0.01668037474155426,
+      0.25095754861831665
+    ]
+  ],
+  "sizeMeters": [
+    0.3180036246776581,
+    0.4569055289030075,
+    0.25095754861831665
+  ],
+  "collider": {
+    "type": "circle",
+    "radius": 0.22845276445150375,
+    "height": 0.25095754861831665,
+    "policy": "conservative horizontal bounding circle"
+  },
+  "lodParts": [],
+  "views": [
+    {
+      "yaw": 0,
+      "path": "boulder-yaw0.png",
+      "sha256": "b8097feeb4333f6bb483f5e335302619d3c3ae0aad2f6422528ba5ce274d83c8",
+      "bytes": 183483,
+      "rect": [
+        20,
+        239,
+        299,
+        230
+      ],
+      "groundPixel": [
+        256.0,
+        335.40185546875
+      ],
+      "orthoMeters": 0.6586727805435657,
+      "renderSeconds": 0.261,
+      "clipped": false
+    },
+    {
+      "yaw": 90,
+      "path": "boulder-yaw90.png",
+      "sha256": "b79951ebb7f3530dd8c85f14d343d352ec6ffdc6dd34d82d5e8e3f8810f957e6",
+      "bytes": 153036,
+      "rect": [
+        251,
+        198,
+        261,
+        205
+      ],
+      "groundPixel": [
+        256.0,
+        335.40185546875
+      ],
+      "orthoMeters": 0.6586727805435657,
+      "renderSeconds": 0.249,
+      "clipped": true
+    },
+    {
+      "yaw": 180,
+      "path": "boulder-yaw180.png",
+      "sha256": "2662b91079dd280e702ba61d9553e2eb4da36c8a14e88663e552756af5cccb0a",
+      "bytes": 192062,
+      "rect": [
+        192,
+        40,
+        300,
+        298
+      ],
+      "groundPixel": [
+        256.0,
+        335.40185546875
+      ],
+      "orthoMeters": 0.6586727805435657,
+      "renderSeconds": 0.249,
+      "clipped": false
+    },
+    {
+      "yaw": 270,
+      "path": "boulder-yaw270.png",
+      "sha256": "ff9dcec3b3b828a12ed54287ac3d18e16aa60b6032230c1f941c4b18bc53b61c",
+      "bytes": 199856,
+      "rect": [
+        0,
+        77,
+        261,
+        279
+      ],
+      "groundPixel": [
+        256.0,
+        335.40185546875
+      ],
+      "orthoMeters": 0.6586727805435657,
+      "renderSeconds": 0.25,
+      "clipped": true
+    }
+  ],
+  "visualAccepted": false
+}

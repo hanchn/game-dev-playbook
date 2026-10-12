@@ -1,0 +1,74 @@
+{
+  "clock": "0.000 / 1.000s · 相位 0.0000 · 2548 三角形",
+  "control": {
+    "clip": "walk",
+    "generation": 8,
+    "playing": false,
+    "reason": "reset",
+    "requestedPhase": 0
+  },
+  "performance": "预览已暂停（最多24FPS）",
+  "phase": "0",
+  "pipeline": null,
+  "playing": "播放",
+  "profile": {
+    "backend": "webgl",
+    "clip": "walk",
+    "last": {
+      "baselineDraw": 2.800000011920929,
+      "baselineGL": {
+        "drawCalls": 20,
+        "maxVertexRoundingRigPx": 0.000016057033057712755,
+        "triangles": 2192
+      },
+      "candidateCommands": 28.69999998807907,
+      "candidateDraw": 4.300000011920929,
+      "candidateGL": {
+        "drawCalls": 20,
+        "maxVertexRoundingRigPx": 0.000026071639031473677,
+        "triangles": 3783
+      },
+      "mainSubmit": 0.10000002384185792,
+      "pose": 0.800000011920929,
+      "productionCommands": 10.599999964237211,
+      "total": 47.19999998807907,
+      "workerLatency": 70
+    },
+    "phase": 0,
+    "samples": 1,
+    "window": {
+      "baselineDraw": {
+        "p50": 2.800000011920929,
+        "p95": 2.800000011920929
+      },
+      "candidateCommands": {
+        "p50": 28.69999998807907,
+        "p95": 28.69999998807907
+      },
+      "candidateDraw": {
+        "p50": 4.300000011920929,
+        "p95": 4.300000011920929
+      },
+      "mainSubmit": {
+        "p50": 0.10000002384185792,
+        "p95": 0.10000002384185792
+      },
+      "pose": {
+        "p50": 0.800000011920929,
+        "p95": 0.800000011920929
+      },
+      "productionCommands": {
+        "p50": 10.599999964237211,
+        "p95": 10.599999964237211
+      },
+      "total": {
+        "p50": 47.19999998807907,
+        "p95": 47.19999998807907
+      },
+      "workerLatency": {
+        "p50": 70,
+        "p95": 70
+      }
+    }
+  }
+}

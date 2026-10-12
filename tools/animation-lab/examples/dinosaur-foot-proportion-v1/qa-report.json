@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-12",
+  "assetId": "dinosaur-side-v14",
+  "status": "partial-foot-fix-overall-visual-failed",
+  "actualGuiRoutes": 32,
+  "conditions": {
+    "nearFar": true,
+    "joints": [
+      "upper",
+      "middle",
+      "lower",
+      "foot"
+    ],
+    "phases": [
+      0.25,
+      0.75
+    ],
+    "backgrounds": [
+      "light",
+      "dark"
+    ],
+    "variant": 3,
+    "localZoom": 3.4,
+    "frames": [
+      512,
+      512
+    ]
+  },
+  "rootActuallyViewed": {
+    "nativeJointSheets": 8,
+    "nativeJointFrames": 32,
+    "productionMotionAtlases": 7,
+    "atlasViewing": "2048px exports viewed resized by tool, not native-pixel acceptance",
+    "sameFailedAnkleRetest": "review-v2/browser/near-ankle-0250-light-native.png vs review-v3/browser/near-ankle-0250-light-native.png"
+  },
+  "productionSourceScope": {
+    "changedTiles": [
+      4,
+      10
+    ],
+    "otherRoleMetadataUnchanged": true,
+    "allPNGBytesUneditedAfterImagegen": true,
+    "metatarsus20": true,
+    "footWidth25": true,
+    "hipY": -88,
+    "femurNeutralDeg": 65,
+    "contactRatio": 0.36464088397790057,
+    "measuredFootSourceBottomY": 778,
+    "footSourcePivotY": 448,
+    "footSourceWidth": 905
+  },
+  "sources": [
+    {
+      "file": "public/art/dinosaur-side-parts-v8.png",
+      "bytes": 1685239,
+      "sha256": "87fc5cc6d6003250fd2b0b84e5acf78baf08e3dc8fafc65644e512edb3f16c3d"
+    },
+    {
+      "file": "public/art/dinosaur-leg-parts-v1.png",
+      "bytes": 1976019,
+      "sha256": "943ccc2adb1289af74d101500551e2f9403cddf86047195cce7f640b0e11c9b6"
+    },
+    {
+      "file": "public/art/dinosaur-foot-parts-v1.png",
+      "bytes": 929481,
+      "sha256": "ffa500af1ac673d1500cf8a8c54b8a186cd0c48674b8dce50fcb9915f8697404"
+    },
+    {
+      "file": "public/art/dinosaur-metatarsus-v3.png",
+      "bytes": 536006,
+      "sha256": "22232b4fc6bc2ba16785a30f75bc65191b598728a5d639978d4e2e529188e621"
+    }
+  ],
+  "technical": {
+    "targetedTests": 4,
+    "productionMotionAndIsolatedRoutesPassed": 15,
+    "projectRegression": 337,
+    "projectRegressionLog": "full-production14-regression.log",
+    "frozen13PoseSamplesUnchanged": 128,
+    "fixedExportFrames": 112,
+    "minimumTransparentMarginPx": 44
+  },
+  "failuresPreserved": [
+    "parts-v1.png first metatarsal still too slender",
+    "metatarsus-v2.png visibly swollen distal cap in actual ankle flex",
+    "review-v2/local-ankle-failure.json",
+    "review-v2/candidate-technical-reports.json initial extend without selected joint gave no movement; proper eight part routes later passed"
+  ],
+  "partialImprovement": [
+    "shorter and tapered metatarsal with low toe root",
+    "three visible overlapping forward toe-claw silhouettes",
+    "less shoe-like foot block",
+    "source-specific contact and editable foot width"
+  ],
+  "remainingFailed": [
+    "thigh/knee visible rounded caps and material scale differences",
+    "neck throat/root seam",
+    "tail-root patch transition",
+    "running crossed folded legs and jump lacks proper anticipation/tuck/landing"
+  ],
+  "normalAndSlowFullCycles": "pending generic workbench capture integration; static exports not a playback acceptance",
+  "productComplete": false,
+  "artAccepted": false,
+  "uiProof": [
+    "ui-production13-source-gallery.png",
+    "ui-production14-idle-light.png"
+  ],
+  "implementationHashes": {
+    "animal-rig.mjs": "e98637fe4df099ad65c0f5999d468adb0d9ab3734cd0d0d22ea10add39e4aa8a",
+    "skin-renderer.mjs": "23db7a7bb735b444f8954b2564dae881855b16a631d58c7e63738db29f299ebf",
+    "public/app.mjs": "5201e520669a0b151d8634d2b6e6fcebcd549fe74d082b7194a4a029782f7a68",
+    "public/dinosaur-leg-review.mjs": "fd7e77420618358df4a08b3538449057ccebd0b5ef99a1b0379cf2c87b59bf27",
+    "server.mjs": "7c892aaa05dca2e30e6a10b186b63c5545dcb74bb107060680e9dfd7f2bf558a",
+    "public/art/skins.json": "33d860c542ff966d6351c21ca2ec19b18cdabb6f4060a4089b0124fb9fe837b4"
+  }
+}

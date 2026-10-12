@@ -1,0 +1,1168 @@
+[
+  {
+    "source": "public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/tree_small_02_1k.gltf",
+    "sha256": "3062a709614c05b80fdc1e56583998bc3cb1027b0d52f956c8ecfb882ff8ca6d",
+    "materials": [
+      {
+        "name": "tree_small_02_branches",
+        "surfaceRenderMethod": "DITHERED",
+        "useNodes": true,
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": {
+              "Base Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Metallic": 0.0,
+              "Roughness": 0.5,
+              "IOR": 1.5,
+              "Alpha": 1.0,
+              "Thin Wall": false,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0,
+              "Diffuse Roughness": 0.0,
+              "Subsurface Weight": 0.0,
+              "Subsurface Radius": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "Subsurface Scale": 0.004999999888241291,
+              "Subsurface IOR": 1.399999976158142,
+              "Subsurface Anisotropy": 0.0,
+              "Specular IOR Level": 0.5,
+              "Specular Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Anisotropic": 0.0,
+              "Anisotropic Rotation": 0.0,
+              "Tangent": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Transmission Weight": 0.0,
+              "Coat Weight": 0.0,
+              "Coat Roughness": 0.029999999329447746,
+              "Coat IOR": 1.5,
+              "Coat Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Coat Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Sheen Weight": 0.0,
+              "Sheen Roughness": 0.5,
+              "Sheen Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Strength": 0.0,
+              "Thin Film Thickness": 0.0,
+              "Thin Film IOR": 1.3300000429153442
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_branch_diff",
+            "colorspace": "sRGB",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_branch_diff_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Mapping",
+            "type": "MAPPING"
+          },
+          {
+            "name": "UV Map",
+            "type": "UVMAP"
+          },
+          {
+            "name": "Math",
+            "type": "MATH"
+          },
+          {
+            "name": "Separate Color",
+            "type": "SEPARATE_COLOR"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_branch_rough",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_branch_arm_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Mapping.001",
+            "type": "MAPPING"
+          },
+          {
+            "name": "UV Map.001",
+            "type": "UVMAP"
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP"
+          },
+          {
+            "name": "Image Texture.002",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_branch_nor_gl",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_branch_nor_gl_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Mapping.002",
+            "type": "MAPPING"
+          },
+          {
+            "name": "UV Map.002",
+            "type": "UVMAP"
+          }
+        ],
+        "links": [
+          {
+            "from": "Principled BSDF:BSDF",
+            "to": "Material Output:Surface"
+          },
+          {
+            "from": "Image Texture:Color",
+            "to": "Principled BSDF:Base Color"
+          },
+          {
+            "from": "Mapping:Vector",
+            "to": "Image Texture:Vector"
+          },
+          {
+            "from": "UV Map:UV",
+            "to": "Mapping:Vector"
+          },
+          {
+            "from": "Math:Value",
+            "to": "Principled BSDF:Metallic"
+          },
+          {
+            "from": "Separate Color:Blue",
+            "to": "Math:Value"
+          },
+          {
+            "from": "Separate Color:Green",
+            "to": "Principled BSDF:Roughness"
+          },
+          {
+            "from": "Image Texture.001:Color",
+            "to": "Separate Color:Color"
+          },
+          {
+            "from": "Mapping.001:Vector",
+            "to": "Image Texture.001:Vector"
+          },
+          {
+            "from": "UV Map.001:UV",
+            "to": "Mapping.001:Vector"
+          },
+          {
+            "from": "Normal Map:Normal",
+            "to": "Principled BSDF:Normal"
+          },
+          {
+            "from": "Image Texture.002:Color",
+            "to": "Normal Map:Color"
+          },
+          {
+            "from": "Mapping.002:Vector",
+            "to": "Image Texture.002:Vector"
+          },
+          {
+            "from": "UV Map.002:UV",
+            "to": "Mapping.002:Vector"
+          }
+        ]
+      },
+      {
+        "name": "tree_small_02_leaves",
+        "surfaceRenderMethod": "BLENDED",
+        "useNodes": true,
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": {
+              "Base Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Metallic": 0.0,
+              "Roughness": 0.5,
+              "IOR": 1.5,
+              "Alpha": 1.0,
+              "Thin Wall": false,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0,
+              "Diffuse Roughness": 0.0,
+              "Subsurface Weight": 0.0,
+              "Subsurface Radius": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "Subsurface Scale": 0.004999999888241291,
+              "Subsurface IOR": 1.399999976158142,
+              "Subsurface Anisotropy": 0.0,
+              "Specular IOR Level": 0.5,
+              "Specular Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Anisotropic": 0.0,
+              "Anisotropic Rotation": 0.0,
+              "Tangent": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Transmission Weight": 0.0,
+              "Coat Weight": 0.0,
+              "Coat Roughness": 0.029999999329447746,
+              "Coat IOR": 1.5,
+              "Coat Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Coat Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Sheen Weight": 0.0,
+              "Sheen Roughness": 0.5,
+              "Sheen Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Strength": 0.0,
+              "Thin Film Thickness": 0.0,
+              "Thin Film IOR": 1.3300000429153442
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha",
+            "colorspace": "sRGB",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_leaves_diff_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Math",
+            "type": "MATH"
+          },
+          {
+            "name": "Separate Color",
+            "type": "SEPARATE_COLOR"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_leaves_rough",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_leaves_arm_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP"
+          },
+          {
+            "name": "Image Texture.002",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_leaves_nor_gl",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_leaves_nor_gl_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          }
+        ],
+        "links": [
+          {
+            "from": "Principled BSDF:BSDF",
+            "to": "Material Output:Surface"
+          },
+          {
+            "from": "Image Texture:Color",
+            "to": "Principled BSDF:Base Color"
+          },
+          {
+            "from": "Image Texture:Alpha",
+            "to": "Principled BSDF:Alpha"
+          },
+          {
+            "from": "Math:Value",
+            "to": "Principled BSDF:Metallic"
+          },
+          {
+            "from": "Separate Color:Blue",
+            "to": "Math:Value"
+          },
+          {
+            "from": "Separate Color:Green",
+            "to": "Principled BSDF:Roughness"
+          },
+          {
+            "from": "Image Texture.001:Color",
+            "to": "Separate Color:Color"
+          },
+          {
+            "from": "Normal Map:Normal",
+            "to": "Principled BSDF:Normal"
+          },
+          {
+            "from": "Image Texture.002:Color",
+            "to": "Normal Map:Color"
+          }
+        ]
+      },
+      {
+        "name": "tree_small_02_trunk",
+        "surfaceRenderMethod": "DITHERED",
+        "useNodes": true,
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": {
+              "Base Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Metallic": 0.0,
+              "Roughness": 0.5,
+              "IOR": 1.5,
+              "Alpha": 1.0,
+              "Thin Wall": false,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0,
+              "Diffuse Roughness": 0.0,
+              "Subsurface Weight": 0.0,
+              "Subsurface Radius": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "Subsurface Scale": 0.004999999888241291,
+              "Subsurface IOR": 1.399999976158142,
+              "Subsurface Anisotropy": 0.0,
+              "Specular IOR Level": 0.5,
+              "Specular Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Anisotropic": 0.0,
+              "Anisotropic Rotation": 0.0,
+              "Tangent": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Transmission Weight": 0.0,
+              "Coat Weight": 0.0,
+              "Coat Roughness": 0.029999999329447746,
+              "Coat IOR": 1.5,
+              "Coat Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Coat Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Sheen Weight": 0.0,
+              "Sheen Roughness": 0.5,
+              "Sheen Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Strength": 0.0,
+              "Thin Film Thickness": 0.0,
+              "Thin Film IOR": 1.3300000429153442
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_diff",
+            "colorspace": "sRGB",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_diff_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Math",
+            "type": "MATH"
+          },
+          {
+            "name": "Separate Color",
+            "type": "SEPARATE_COLOR"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_rough",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_arm_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP"
+          },
+          {
+            "name": "Image Texture.002",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_nor_gl",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "/Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/tree_small_02/textures/tree_small_02_nor_gl_1k.jpg",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          }
+        ],
+        "links": [
+          {
+            "from": "Principled BSDF:BSDF",
+            "to": "Material Output:Surface"
+          },
+          {
+            "from": "Image Texture:Color",
+            "to": "Principled BSDF:Base Color"
+          },
+          {
+            "from": "Math:Value",
+            "to": "Principled BSDF:Metallic"
+          },
+          {
+            "from": "Separate Color:Blue",
+            "to": "Math:Value"
+          },
+          {
+            "from": "Separate Color:Green",
+            "to": "Principled BSDF:Roughness"
+          },
+          {
+            "from": "Image Texture.001:Color",
+            "to": "Separate Color:Color"
+          },
+          {
+            "from": "Normal Map:Normal",
+            "to": "Principled BSDF:Normal"
+          },
+          {
+            "from": "Image Texture.002:Color",
+            "to": "Normal Map:Color"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "public/map-resources/polyhaven-nature-candidate-v2/tree-mid.glb",
+    "sha256": "de5aeb0ea6790269f5567771d94a660e88a831b90ac193575103eb571828ff5a",
+    "materials": [
+      {
+        "name": "tree_small_02_branches",
+        "surfaceRenderMethod": "DITHERED",
+        "useNodes": true,
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": {
+              "Base Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Metallic": 0.0,
+              "Roughness": 0.5,
+              "IOR": 1.5,
+              "Alpha": 1.0,
+              "Thin Wall": false,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0,
+              "Diffuse Roughness": 0.0,
+              "Subsurface Weight": 0.0,
+              "Subsurface Radius": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "Subsurface Scale": 0.004999999888241291,
+              "Subsurface IOR": 1.399999976158142,
+              "Subsurface Anisotropy": 0.0,
+              "Specular IOR Level": 0.5,
+              "Specular Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Anisotropic": 0.0,
+              "Anisotropic Rotation": 0.0,
+              "Tangent": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Transmission Weight": 0.0,
+              "Coat Weight": 0.0,
+              "Coat Roughness": 0.029999999329447746,
+              "Coat IOR": 1.5,
+              "Coat Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Coat Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Sheen Weight": 0.0,
+              "Sheen Roughness": 0.5,
+              "Sheen Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Strength": 0.0,
+              "Thin Film Thickness": 0.0,
+              "Thin Film IOR": 1.3300000429153442
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_branch_diff_1k",
+            "colorspace": "sRGB",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Mapping",
+            "type": "MAPPING"
+          },
+          {
+            "name": "UV Map",
+            "type": "UVMAP"
+          },
+          {
+            "name": "Math",
+            "type": "MATH"
+          },
+          {
+            "name": "Separate Color",
+            "type": "SEPARATE_COLOR"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_branch_arm_1k",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Mapping.001",
+            "type": "MAPPING"
+          },
+          {
+            "name": "UV Map.001",
+            "type": "UVMAP"
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP"
+          },
+          {
+            "name": "Image Texture.002",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_branch_nor_gl_1k",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Mapping.002",
+            "type": "MAPPING"
+          },
+          {
+            "name": "UV Map.002",
+            "type": "UVMAP"
+          }
+        ],
+        "links": [
+          {
+            "from": "Principled BSDF:BSDF",
+            "to": "Material Output:Surface"
+          },
+          {
+            "from": "Image Texture:Color",
+            "to": "Principled BSDF:Base Color"
+          },
+          {
+            "from": "Mapping:Vector",
+            "to": "Image Texture:Vector"
+          },
+          {
+            "from": "UV Map:UV",
+            "to": "Mapping:Vector"
+          },
+          {
+            "from": "Math:Value",
+            "to": "Principled BSDF:Metallic"
+          },
+          {
+            "from": "Separate Color:Blue",
+            "to": "Math:Value"
+          },
+          {
+            "from": "Separate Color:Green",
+            "to": "Principled BSDF:Roughness"
+          },
+          {
+            "from": "Image Texture.001:Color",
+            "to": "Separate Color:Color"
+          },
+          {
+            "from": "Mapping.001:Vector",
+            "to": "Image Texture.001:Vector"
+          },
+          {
+            "from": "UV Map.001:UV",
+            "to": "Mapping.001:Vector"
+          },
+          {
+            "from": "Normal Map:Normal",
+            "to": "Principled BSDF:Normal"
+          },
+          {
+            "from": "Image Texture.002:Color",
+            "to": "Normal Map:Color"
+          },
+          {
+            "from": "Mapping.002:Vector",
+            "to": "Image Texture.002:Vector"
+          },
+          {
+            "from": "UV Map.002:UV",
+            "to": "Mapping.002:Vector"
+          }
+        ]
+      },
+      {
+        "name": "tree_small_02_leaves",
+        "surfaceRenderMethod": "BLENDED",
+        "useNodes": true,
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": {
+              "Base Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Metallic": 0.0,
+              "Roughness": 0.5,
+              "IOR": 1.5,
+              "Alpha": 1.0,
+              "Thin Wall": false,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0,
+              "Diffuse Roughness": 0.0,
+              "Subsurface Weight": 0.0,
+              "Subsurface Radius": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "Subsurface Scale": 0.004999999888241291,
+              "Subsurface IOR": 1.399999976158142,
+              "Subsurface Anisotropy": 0.0,
+              "Specular IOR Level": 0.5,
+              "Specular Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Anisotropic": 0.0,
+              "Anisotropic Rotation": 0.0,
+              "Tangent": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Transmission Weight": 0.0,
+              "Coat Weight": 0.0,
+              "Coat Roughness": 0.029999999329447746,
+              "Coat IOR": 1.5,
+              "Coat Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Coat Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Sheen Weight": 0.0,
+              "Sheen Roughness": 0.5,
+              "Sheen Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Strength": 0.0,
+              "Thin Film Thickness": 0.0,
+              "Thin Film IOR": 1.3300000429153442
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_leaves_diff_1k",
+            "colorspace": "sRGB",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Math",
+            "type": "MATH"
+          },
+          {
+            "name": "Separate Color",
+            "type": "SEPARATE_COLOR"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_leaves_arm_1k",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP"
+          },
+          {
+            "name": "Image Texture.002",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_leaves_nor_gl_1k",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          }
+        ],
+        "links": [
+          {
+            "from": "Principled BSDF:BSDF",
+            "to": "Material Output:Surface"
+          },
+          {
+            "from": "Image Texture:Color",
+            "to": "Principled BSDF:Base Color"
+          },
+          {
+            "from": "Image Texture:Alpha",
+            "to": "Principled BSDF:Alpha"
+          },
+          {
+            "from": "Math:Value",
+            "to": "Principled BSDF:Metallic"
+          },
+          {
+            "from": "Separate Color:Blue",
+            "to": "Math:Value"
+          },
+          {
+            "from": "Separate Color:Green",
+            "to": "Principled BSDF:Roughness"
+          },
+          {
+            "from": "Image Texture.001:Color",
+            "to": "Separate Color:Color"
+          },
+          {
+            "from": "Normal Map:Normal",
+            "to": "Principled BSDF:Normal"
+          },
+          {
+            "from": "Image Texture.002:Color",
+            "to": "Normal Map:Color"
+          }
+        ]
+      },
+      {
+        "name": "tree_small_02_trunk",
+        "surfaceRenderMethod": "DITHERED",
+        "useNodes": true,
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": {
+              "Base Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Metallic": 0.0,
+              "Roughness": 0.5,
+              "IOR": 1.5,
+              "Alpha": 1.0,
+              "Thin Wall": false,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0,
+              "Diffuse Roughness": 0.0,
+              "Subsurface Weight": 0.0,
+              "Subsurface Radius": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "Subsurface Scale": 0.004999999888241291,
+              "Subsurface IOR": 1.399999976158142,
+              "Subsurface Anisotropy": 0.0,
+              "Specular IOR Level": 0.5,
+              "Specular Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Anisotropic": 0.0,
+              "Anisotropic Rotation": 0.0,
+              "Tangent": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Transmission Weight": 0.0,
+              "Coat Weight": 0.0,
+              "Coat Roughness": 0.029999999329447746,
+              "Coat IOR": 1.5,
+              "Coat Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Coat Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Sheen Weight": 0.0,
+              "Sheen Roughness": 0.5,
+              "Sheen Tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Emission Strength": 0.0,
+              "Thin Film Thickness": 0.0,
+              "Thin Film IOR": 1.3300000429153442
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_diff_1k",
+            "colorspace": "sRGB",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Math",
+            "type": "MATH"
+          },
+          {
+            "name": "Separate Color",
+            "type": "SEPARATE_COLOR"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_arm_1k",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP"
+          },
+          {
+            "name": "Image Texture.002",
+            "type": "TEX_IMAGE",
+            "image": "tree_small_02_nor_gl_1k",
+            "colorspace": "Non-Color",
+            "alphaMode": "CHANNEL_PACKED",
+            "filepath": "",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "channels": 4
+          }
+        ],
+        "links": [
+          {
+            "from": "Principled BSDF:BSDF",
+            "to": "Material Output:Surface"
+          },
+          {
+            "from": "Image Texture:Color",
+            "to": "Principled BSDF:Base Color"
+          },
+          {
+            "from": "Math:Value",
+            "to": "Principled BSDF:Metallic"
+          },
+          {
+            "from": "Separate Color:Blue",
+            "to": "Math:Value"
+          },
+          {
+            "from": "Separate Color:Green",
+            "to": "Principled BSDF:Roughness"
+          },
+          {
+            "from": "Image Texture.001:Color",
+            "to": "Separate Color:Color"
+          },
+          {
+            "from": "Normal Map:Normal",
+            "to": "Principled BSDF:Normal"
+          },
+          {
+            "from": "Image Texture.002:Color",
+            "to": "Normal Map:Color"
+          }
+        ]
+      }
+    ]
+  }
+]

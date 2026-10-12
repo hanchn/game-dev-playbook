@@ -1,0 +1,827 @@
+{
+  "assetId": "dinosaur-side-v13",
+  "study": "foot",
+  "sources": [
+    {
+      "key": "primary",
+      "url": "/art/dinosaur-side-parts-v8.png",
+      "file": "public/art/dinosaur-side-parts-v8.png",
+      "sha256": "87fc5cc6d6003250fd2b0b84e5acf78baf08e3dc8fafc65644e512edb3f16c3d"
+    },
+    {
+      "key": "neutralLeg",
+      "url": "/art/dinosaur-leg-parts-v1.png",
+      "file": "public/art/dinosaur-leg-parts-v1.png",
+      "sha256": "943ccc2adb1289af74d101500551e2f9403cddf86047195cce7f640b0e11c9b6"
+    },
+    {
+      "key": "compactFoot",
+      "url": "/qa-evidence/dinosaur-foot-proportion-v1/parts-v1.png",
+      "file": "examples/dinosaur-foot-proportion-v1/parts-v1.png",
+      "sha256": "ffa500af1ac673d1500cf8a8c54b8a186cd0c48674b8dce50fcb9915f8697404"
+    },
+    {
+      "key": "stoutMetatarsus",
+      "url": "/qa-evidence/dinosaur-foot-proportion-v1/metatarsus-v3.png",
+      "file": "examples/dinosaur-foot-proportion-v1/metatarsus-v3.png",
+      "sha256": "22232b4fc6bc2ba16785a30f75bc65191b598728a5d639978d4e2e529188e621"
+    }
+  ],
+  "implementation": [
+    {
+      "file": "animal-rig.mjs",
+      "url": "/animal-rig.mjs",
+      "sha256": "e98637fe4df099ad65c0f5999d468adb0d9ab3734cd0d0d22ea10add39e4aa8a"
+    },
+    {
+      "file": "game-core.mjs",
+      "url": "/game-core.mjs",
+      "sha256": "f32c6f32b90dc69eb83b4deeaa65b9555222f21a5865a3eddd35394b63974335"
+    },
+    {
+      "file": "skin-renderer.mjs",
+      "url": "/skin-renderer.mjs",
+      "sha256": "23db7a7bb735b444f8954b2564dae881855b16a631d58c7e63738db29f299ebf"
+    },
+    {
+      "file": "strip-skin.mjs",
+      "url": "/strip-skin.mjs",
+      "sha256": "24deab7ec45ebe3a3e0027734c628e1c9fd33796a676adc2a6c4beb1d050225a"
+    },
+    {
+      "file": "human-soft-skin.mjs",
+      "url": "/human-soft-skin.mjs",
+      "sha256": "af8c7e6bec77138e455ba28649bca2542cf7b1c59e0a154a76120d0aa6daee2c"
+    }
+  ],
+  "variants": [
+    {
+      "label": "脚25 / 旧跖22",
+      "metatarsus": 22,
+      "footWidth": 25,
+      "newMetatarsus": false
+    },
+    {
+      "label": "粗跖20 / 脚25",
+      "metatarsus": 20,
+      "footWidth": 25,
+      "newMetatarsus": true
+    },
+    {
+      "label": "粗跖18 / 脚25",
+      "metatarsus": 18,
+      "footWidth": 25,
+      "newMetatarsus": true
+    },
+    {
+      "label": "髋-88 / 股65° / 粗跖20",
+      "metatarsus": 20,
+      "footWidth": 25,
+      "newMetatarsus": true,
+      "hip": -88,
+      "neutral": 65
+    },
+    {
+      "label": "髋-88 / 股65° / 粗跖18",
+      "metatarsus": 18,
+      "footWidth": 25,
+      "newMetatarsus": true,
+      "hip": -88,
+      "neutral": 65
+    },
+    {
+      "label": "髋-90 / 股68° / 粗跖20",
+      "metatarsus": 20,
+      "footWidth": 25,
+      "newMetatarsus": true,
+      "hip": -90,
+      "neutral": 68
+    }
+  ],
+  "contactRatio": 0.36464088397790057,
+  "sourceFootBottom": 778,
+  "landmarks": [
+    [
+      [
+        409,
+        180
+      ],
+      [
+        417,
+        721
+      ]
+    ],
+    [
+      [
+        874,
+        448
+      ],
+      [
+        1510,
+        700
+      ]
+    ]
+  ],
+  "items": [
+    {
+      "file": "idle-variant0-phase0-native.png",
+      "clip": "idle",
+      "phase": 0,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant0-phase1-native.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant0-phase2-native.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant0-phase3-native.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant1-phase0-native.png",
+      "clip": "idle",
+      "phase": 0,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant1-phase1-native.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant1-phase2-native.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant1-phase3-native.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant2-phase0-native.png",
+      "clip": "idle",
+      "phase": 0,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant2-phase1-native.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant2-phase2-native.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant2-phase3-native.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant3-phase0-native.png",
+      "clip": "idle",
+      "phase": 0,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant3-phase1-native.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant3-phase2-native.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant3-phase3-native.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant4-phase0-native.png",
+      "clip": "idle",
+      "phase": 0,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant4-phase1-native.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant4-phase2-native.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant4-phase3-native.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant5-phase0-native.png",
+      "clip": "idle",
+      "phase": 0,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant5-phase1-native.png",
+      "clip": "idle",
+      "phase": 0.25,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant5-phase2-native.png",
+      "clip": "idle",
+      "phase": 0.5,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-variant5-phase3-native.png",
+      "clip": "idle",
+      "phase": 0.75,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "idle-proportion-sheet.png",
+      "clip": "idle",
+      "kind": "diagnostic-scaled-sheet"
+    },
+    {
+      "file": "walk-variant0-phase0-native.png",
+      "clip": "walk",
+      "phase": 0,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant0-phase1-native.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant0-phase2-native.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant0-phase3-native.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant1-phase0-native.png",
+      "clip": "walk",
+      "phase": 0,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant1-phase1-native.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant1-phase2-native.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant1-phase3-native.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant2-phase0-native.png",
+      "clip": "walk",
+      "phase": 0,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant2-phase1-native.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant2-phase2-native.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant2-phase3-native.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant3-phase0-native.png",
+      "clip": "walk",
+      "phase": 0,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant3-phase1-native.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant3-phase2-native.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant3-phase3-native.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant4-phase0-native.png",
+      "clip": "walk",
+      "phase": 0,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant4-phase1-native.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant4-phase2-native.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant4-phase3-native.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant5-phase0-native.png",
+      "clip": "walk",
+      "phase": 0,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant5-phase1-native.png",
+      "clip": "walk",
+      "phase": 0.25,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant5-phase2-native.png",
+      "clip": "walk",
+      "phase": 0.5,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-variant5-phase3-native.png",
+      "clip": "walk",
+      "phase": 0.75,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "walk-proportion-sheet.png",
+      "clip": "walk",
+      "kind": "diagnostic-scaled-sheet"
+    },
+    {
+      "file": "run-variant0-phase0-native.png",
+      "clip": "run",
+      "phase": 0,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant0-phase1-native.png",
+      "clip": "run",
+      "phase": 0.25,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant0-phase2-native.png",
+      "clip": "run",
+      "phase": 0.5,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant0-phase3-native.png",
+      "clip": "run",
+      "phase": 0.75,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant1-phase0-native.png",
+      "clip": "run",
+      "phase": 0,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant1-phase1-native.png",
+      "clip": "run",
+      "phase": 0.25,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant1-phase2-native.png",
+      "clip": "run",
+      "phase": 0.5,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant1-phase3-native.png",
+      "clip": "run",
+      "phase": 0.75,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant2-phase0-native.png",
+      "clip": "run",
+      "phase": 0,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant2-phase1-native.png",
+      "clip": "run",
+      "phase": 0.25,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant2-phase2-native.png",
+      "clip": "run",
+      "phase": 0.5,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant2-phase3-native.png",
+      "clip": "run",
+      "phase": 0.75,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant3-phase0-native.png",
+      "clip": "run",
+      "phase": 0,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant3-phase1-native.png",
+      "clip": "run",
+      "phase": 0.25,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant3-phase2-native.png",
+      "clip": "run",
+      "phase": 0.5,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant3-phase3-native.png",
+      "clip": "run",
+      "phase": 0.75,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant4-phase0-native.png",
+      "clip": "run",
+      "phase": 0,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant4-phase1-native.png",
+      "clip": "run",
+      "phase": 0.25,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant4-phase2-native.png",
+      "clip": "run",
+      "phase": 0.5,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant4-phase3-native.png",
+      "clip": "run",
+      "phase": 0.75,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant5-phase0-native.png",
+      "clip": "run",
+      "phase": 0,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant5-phase1-native.png",
+      "clip": "run",
+      "phase": 0.25,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant5-phase2-native.png",
+      "clip": "run",
+      "phase": 0.5,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-variant5-phase3-native.png",
+      "clip": "run",
+      "phase": 0.75,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "run-proportion-sheet.png",
+      "clip": "run",
+      "kind": "diagnostic-scaled-sheet"
+    },
+    {
+      "file": "jump-variant0-phase0-native.png",
+      "clip": "jump",
+      "phase": 0,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant0-phase1-native.png",
+      "clip": "jump",
+      "phase": 0.3333333333333333,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant0-phase2-native.png",
+      "clip": "jump",
+      "phase": 0.6666666666666666,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant0-phase3-native.png",
+      "clip": "jump",
+      "phase": 1,
+      "variant": 0,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant1-phase0-native.png",
+      "clip": "jump",
+      "phase": 0,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant1-phase1-native.png",
+      "clip": "jump",
+      "phase": 0.3333333333333333,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant1-phase2-native.png",
+      "clip": "jump",
+      "phase": 0.6666666666666666,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant1-phase3-native.png",
+      "clip": "jump",
+      "phase": 1,
+      "variant": 1,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant2-phase0-native.png",
+      "clip": "jump",
+      "phase": 0,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant2-phase1-native.png",
+      "clip": "jump",
+      "phase": 0.3333333333333333,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant2-phase2-native.png",
+      "clip": "jump",
+      "phase": 0.6666666666666666,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant2-phase3-native.png",
+      "clip": "jump",
+      "phase": 1,
+      "variant": 2,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant3-phase0-native.png",
+      "clip": "jump",
+      "phase": 0,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant3-phase1-native.png",
+      "clip": "jump",
+      "phase": 0.3333333333333333,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant3-phase2-native.png",
+      "clip": "jump",
+      "phase": 0.6666666666666666,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant3-phase3-native.png",
+      "clip": "jump",
+      "phase": 1,
+      "variant": 3,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant4-phase0-native.png",
+      "clip": "jump",
+      "phase": 0,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant4-phase1-native.png",
+      "clip": "jump",
+      "phase": 0.3333333333333333,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant4-phase2-native.png",
+      "clip": "jump",
+      "phase": 0.6666666666666666,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant4-phase3-native.png",
+      "clip": "jump",
+      "phase": 1,
+      "variant": 4,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant5-phase0-native.png",
+      "clip": "jump",
+      "phase": 0,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant5-phase1-native.png",
+      "clip": "jump",
+      "phase": 0.3333333333333333,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant5-phase2-native.png",
+      "clip": "jump",
+      "phase": 0.6666666666666666,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-variant5-phase3-native.png",
+      "clip": "jump",
+      "phase": 1,
+      "variant": 5,
+      "kind": "native-pair"
+    },
+    {
+      "file": "jump-proportion-sheet.png",
+      "clip": "jump",
+      "kind": "diagnostic-scaled-sheet"
+    }
+  ],
+  "visual": "not-reviewed",
+  "productionChanged": false,
+  "implementationCompatibility": {
+    "date": "2026-10-12",
+    "scope": "production factory now v14, frozen v13 asset poses unchanged; explicit captured foot offsets keep source-mapping recipe",
+    "samples": 128,
+    "changed": 0
+  }
+}

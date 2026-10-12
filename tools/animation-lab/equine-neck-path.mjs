@@ -1,5 +1,11 @@
 import {commands as productionCommands,frameFor as reviewFrameFor,maskedSource as reviewMaskedSource} from './skin-renderer.mjs';
 import {warpSkinPoint,affine,clipPolygon,partitionSkinLayer,transform,rasterPolygon as reviewRasterPolygon} from './human-soft-skin.mjs';
+// Every async preview operation belongs to one UI generation. Returning to the
+// start, seeking, or changing settings must reject even already queued replies.
+export function createEquineReviewEpoch(){
+ let generation=0;
+ return Object.freeze({capture:()=>generation,invalidate:()=>++generation,accepts:token=>token===generation});
+}
 // Experimental, source-locked equine neck mapping. Not enabled in production.
 // Normal distances are preserved; only the centerline follows a curved path.
 const projectionCaches=new Map(),geometryCaches=new Map(),layerCaches=new Map(),normalizedProjectionCaches=new Map();

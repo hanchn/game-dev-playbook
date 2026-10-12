@@ -1,0 +1,32 @@
+{
+  "productionVersion": 16,
+  "overallVisual": "failed-incomplete",
+  "userPaused": true,
+  "localReview": "new source representative frames and browser magnified comparison; not all joint routes",
+  "newSourceJoint32Paths": "not-reviewed",
+  "wholeLegPreviousJoint32Paths": "reviewed v15 source only",
+  "production16CanvasUI": "loaded, PNG enabled, no source error",
+  "technical15Routes": "passed",
+  "prompt": "generation-job.json",
+  "retainedFailures": [
+    "v14 too long",
+    "v15 still too thin",
+    "whole-leg variant4 support slip",
+    "earlier code test missing canvas runtime",
+    "stocky offline image baseline caption wrong; JSON v15 is authoritative"
+  ],
+  "pending": [
+    "new-source 32 joint paths",
+    "full normal and slow motion visual review",
+    "new-source export boundaries",
+    "knee/hock material transition",
+    "neck and tail root",
+    "other characters and product-wide acceptance"
+  ],
+  "finalCodeRegression": {
+    "passed": 338,
+    "failed": 0,
+    "skipped": 0,
+    "log": "final-code-tests.log"
+  }
+}

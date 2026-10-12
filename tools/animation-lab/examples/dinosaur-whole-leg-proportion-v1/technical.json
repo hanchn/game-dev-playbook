@@ -1,0 +1,1542 @@
+[
+  {
+    "variant": 0,
+    "clip": "idle",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "6.25 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 0,
+    "clip": "walk",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "28.00 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "28.00 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 0,
+    "clip": "run",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "37.45 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "33.25 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 0,
+    "clip": "jump",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "43.99 px"
+      },
+      {
+        "id": "air",
+        "label": "有离地与落地",
+        "passed": true,
+        "detail": "蓄力、腾空、缓冲分段"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 0,
+    "clip": "roar",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "20.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 0,
+    "clip": "bite",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "41.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 0,
+    "clip": "tail",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "40.87 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 1,
+    "clip": "idle",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "6.25 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 1,
+    "clip": "walk",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "28.00 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "28.00 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 1,
+    "clip": "run",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "38.45 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "33.25 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 1,
+    "clip": "jump",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "43.99 px"
+      },
+      {
+        "id": "air",
+        "label": "有离地与落地",
+        "passed": true,
+        "detail": "蓄力、腾空、缓冲分段"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 1,
+    "clip": "roar",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "20.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 1,
+    "clip": "bite",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "41.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 1,
+    "clip": "tail",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "40.87 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 2,
+    "clip": "idle",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "6.25 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 2,
+    "clip": "walk",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "28.00 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "28.00 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 2,
+    "clip": "run",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "40.06 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "33.25 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 2,
+    "clip": "jump",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "43.99 px"
+      },
+      {
+        "id": "air",
+        "label": "有离地与落地",
+        "passed": true,
+        "detail": "蓄力、腾空、缓冲分段"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 2,
+    "clip": "roar",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "20.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 2,
+    "clip": "bite",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "41.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 2,
+    "clip": "tail",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "40.87 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 3,
+    "clip": "idle",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "6.25 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 3,
+    "clip": "walk",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "28.30 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "28.00 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 3,
+    "clip": "run",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "41.02 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "33.25 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 3,
+    "clip": "jump",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "43.99 px"
+      },
+      {
+        "id": "air",
+        "label": "有离地与落地",
+        "passed": true,
+        "detail": "蓄力、腾空、缓冲分段"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 3,
+    "clip": "roar",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "20.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 3,
+    "clip": "bite",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "41.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 3,
+    "clip": "tail",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "40.87 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 4,
+    "clip": "idle",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "6.25 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 4,
+    "clip": "walk",
+    "passed": false,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "27.41 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": false,
+        "detail": "0.1577 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "27.29 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 4,
+    "clip": "run",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "38.21 px"
+      },
+      {
+        "id": "support",
+        "label": "支撑脚世界坐标稳定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "participation",
+        "label": "每条腿参与步态",
+        "passed": true,
+        "detail": "33.25 px"
+      },
+      {
+        "id": "phase",
+        "label": "物种步态相位",
+        "passed": true,
+        "detail": "实测近远腿的相位分组"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 4,
+    "clip": "jump",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "43.99 px"
+      },
+      {
+        "id": "air",
+        "label": "有离地与落地",
+        "passed": true,
+        "detail": "蓄力、腾空、缓冲分段"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 4,
+    "clip": "roar",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "20.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 4,
+    "clip": "bite",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "41.56 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  },
+  {
+    "variant": 4,
+    "clip": "tail",
+    "passed": true,
+    "checks": [
+      {
+        "id": "length",
+        "label": "骨段长度固定",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "join",
+        "label": "逐关节连接连续",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "loop",
+        "label": "末首或动作回位",
+        "passed": true,
+        "detail": "0.0000 px"
+      },
+      {
+        "id": "movement",
+        "label": "选中关节确实运动",
+        "passed": true,
+        "detail": "40.87 px"
+      }
+    ],
+    "scope": "character",
+    "fault": "none",
+    "samples": 97,
+    "qa": {
+      "technical": "sampled",
+      "visual": "pending"
+    }
+  }
+]

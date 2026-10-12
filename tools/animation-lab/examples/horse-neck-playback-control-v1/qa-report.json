@@ -1,0 +1,184 @@
+{
+  "schema": "equine-preview-control-qa/v1",
+  "date": "2026-10-12",
+  "route": "/lab/horse-neck-review",
+  "productionAsset": "horse-side-v24",
+  "productionHorseMetadataUnchanged": true,
+  "sourceChanges": false,
+  "implementation": "equine-review-worker-pool2-control-v3",
+  "implementationFiles": [
+    {
+      "file": "equine-neck-path.mjs",
+      "sha256": "9ae235aec792db60a59609b64a9607caa4790ef95d300336e4066486be129b04",
+      "snapshot": "implementation/equine-neck-path.mjs"
+    },
+    {
+      "file": "public/horse-neck-review.mjs",
+      "sha256": "ae367d7ff9fa0c237aba5607e4092fc76d0ca7d6338fad998424c35cfb093883",
+      "snapshot": "implementation/public/horse-neck-review.mjs"
+    },
+    {
+      "file": "public/horse-neck-review.html",
+      "sha256": "7aad5a6a4495a8eb75bb91aaddf8df1632b25a916267b0095dd7495c1f12f5c3",
+      "snapshot": "implementation/public/horse-neck-review.html"
+    },
+    {
+      "file": "public/horse-neck-review.css",
+      "sha256": "bf7f0b12f3661d93c241b6239e440b7d02b53a1c620e3677123569eae4e7b6cc",
+      "snapshot": "implementation/public/horse-neck-review.css"
+    },
+    {
+      "file": "test/equine-neck-path.test.mjs",
+      "sha256": "e165fb21fcd08c4d7585015c78dc0a7b850e525298d9936c6b30737eb44a2539",
+      "snapshot": "implementation/test/equine-neck-path.test.mjs"
+    },
+    {
+      "file": "scripts/audit-equine-neck-performance.mjs",
+      "sha256": "ec7794274ec7a4018290f9aa0a9d3ba8e5552bf53051a85b1cdcabfe3a1d19eb",
+      "snapshot": "implementation/scripts/audit-equine-neck-performance.mjs"
+    }
+  ],
+  "failures": [
+    {
+      "id": "reset-plan-overwrites-start",
+      "status": "fixed",
+      "before": "before-reset-failure.json",
+      "beforeScreenshot": "ui-reset-failure.png",
+      "observed": "While WebGL walk was playing, reset preserved the old plan: last index 382 advanced to 393 and phase was overwritten to .375.",
+      "after": "reset-final-v3.json",
+      "afterScreenshot": "ui-reset-final-v3.png",
+      "semantics": "Reset pauses at phase 0; all pending single-frame/playback workers terminated and queued results rejected by generation."
+    },
+    {
+      "id": "strip-build-bypasses-recording-lock",
+      "status": "fixed",
+      "before": "strip-recording-race-before.json",
+      "beforeScreenshot": "ui-strip-recording-race-before.png",
+      "observed": "After switching to rear and immediately recording, 4 existing strip buttons disabled but 9 asynchronously appended buttons remained enabled.",
+      "after": "strip-recording-race-fixed.json",
+      "afterScreenshot": "ui-strip-recording-race-fixed.png",
+      "restoration": "strip-recording-finish-fixed.json",
+      "semantics": "Invalidate thumbnail construction when capture/export/audit begins; rebuild the complete strip when finished."
+    },
+    {
+      "id": "cold-ready-controls",
+      "status": "fixed-by-initial-load-gate",
+      "observed": "Immediate reload/select/record occurred before runtime/source initialization; recording did not begin and no control receipt existed.",
+      "evidence": "Tool observation only; no source-failure injection in this round.",
+      "semantics": "All HTML form controls start disabled and enable only after all four sources decode."
+    }
+  ],
+  "technical": {
+    "targetTests": {
+      "passed": 8,
+      "file": "target-regression.log"
+    },
+    "nativeGeometryRegression": {
+      "frames": 100,
+      "differentRGBAChannels": 0,
+      "against": "frozen r4 reference mapping",
+      "file": "geometry-retet/native-full-rgba.json",
+      "priorReceiptsPreserved": "geometry-retet/prior-evidence-restored.json"
+    },
+    "uiSteps": {
+      "count": 80,
+      "phaseAndClipMismatch": 0,
+      "allPaused": true,
+      "allOldPipelineCleared": true,
+      "file": "actual-80-step-control-v2.json",
+      "scope": "control v2 before final strip-build/load-gate changes; final reset, source-backed capture and strip reconstruction independently retested in control v3"
+    },
+    "seekAndClip": {
+      "files": [
+        "seek-fixed.json",
+        "clip-fixed.json"
+      ],
+      "oldDefect": "Not reproduced for these controls before the reset fix; these are strengthened cancellation semantics, not separate proven original defects."
+    },
+    "playback": {
+      "normal": "graze-normal-final-v3.json",
+      "slow": "graze-slow-final-v3.json",
+      "targetFPS": 24,
+      "cadence": "failed; measured P95 66.7ms exceeds target frame period 41.67ms; not a 60FPS/game release acceptance",
+      "normalActual": {
+        "presented": 49,
+        "lastIndex": 48,
+        "sourcePhase": 1,
+        "skippedIndices": 0,
+        "performance": "实际呈现 24 FPS · P95 66.7ms（目标24FPS）"
+      },
+      "slowActual": {
+        "presented": 193,
+        "lastIndex": 192,
+        "sourcePhase": 1,
+        "skippedIndices": 0,
+        "performance": "实际呈现 24 FPS · P95 66.7ms（目标24FPS）"
+      }
+    },
+    "export": {
+      "package": "actual-graze-control-v2.zip",
+      "check": "artifact-check.json",
+      "pngCount": 32,
+      "nativeSize": [
+        512,
+        420
+      ],
+      "fourSourcesSHAValid": true
+    },
+    "captures": [
+      {
+        "package": "actual-capture-control-v2.zip",
+        "receipt": "actual-capture-control-v2/artifact-and-probe.json",
+        "png": 24,
+        "coded": 25,
+        "duration": 2.001743
+      },
+      {
+        "package": "actual-rear-capture-control-v3.zip",
+        "receipt": "actual-rear-capture-control-v3/artifact-and-probe.json",
+        "png": 20,
+        "coded": 21,
+        "duration": 1.599572,
+        "uiPlayedToEnd": "actual-rear-capture-control-v3/ui-movie-end.json"
+      }
+    ]
+  },
+  "visual": {
+    "status": "failed",
+    "reviewed": [
+      "actual-graze-control-v2/candidate/07.png",
+      "ui-graze-step08-full.png",
+      "ui-walk-step08-full.png",
+      "ui-run-step08-full.png",
+      "ui-jump-step08-full.png",
+      "ui-rear-step08-full.png"
+    ],
+    "residuals": [
+      "oversized modular shoulder and hip masses",
+      "thin mechanical cannon segments and wrist/hock knots",
+      "graze neck/legs deep folding and discontinuous throat transition",
+      "jump/rear limbs not convincingly tucked or supported"
+    ],
+    "viewportWarnings": "Earlier ui-*-step08.png are scrolled viewport snapshots that cut off some heads; use the supplemental full-page files for entire-stage review. Export PNGs retain full fixed camera."
+  },
+  "notAccepted": [
+    "Whole-horse artwork",
+    "stable frame cadence",
+    "WebGL/Canvas strict pixel equality (prior AA differences retained)",
+    "Production adoption of neck-path-v3"
+  ],
+  "downloadReceipts": [
+    {
+      "package": "actual-graze-control-v2.zip",
+      "actualBrowserPath": "/Users/lemon/Downloads/horse24-neck-path-v3-graze-light-r5-16frames (1).zip"
+    },
+    {
+      "package": "actual-capture-control-v2.zip",
+      "actualBrowserPath": "/Users/lemon/Downloads/horse24-neck-path-v3-graze-1x-r5-capture.zip"
+    },
+    {
+      "package": "actual-rear-capture-control-v3.zip",
+      "actualBrowserPath": "/Users/lemon/Downloads/horse24-neck-path-v3-rear-1x-r5-capture.zip"
+    }
+  ]
+}

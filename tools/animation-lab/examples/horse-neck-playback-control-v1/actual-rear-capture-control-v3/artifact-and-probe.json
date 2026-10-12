@@ -1,0 +1,111 @@
+{
+  "implementation": "equine-review-worker-pool2-control-v3",
+  "sourcePNGs": 20,
+  "codedFrames": 21,
+  "duration": "1.599572",
+  "pts": [
+    0.0,
+    0.088,
+    0.166,
+    0.258,
+    0.334,
+    0.424,
+    0.502,
+    0.592,
+    0.669,
+    0.75,
+    0.832,
+    0.925,
+    1.002,
+    1.092,
+    1.169,
+    1.258,
+    1.335,
+    1.425,
+    1.501,
+    1.591,
+    1.599
+  ],
+  "manifestFirstFrame": {
+    "phase": 0,
+    "clip": "rear",
+    "algorithm": "neck-path-v3",
+    "metrics": {
+      "sourceLength": 60.797682800758764,
+      "worldLength": 66.69367836185047,
+      "centerlineScale": 1.0969773071847753,
+      "triangles": 2548,
+      "timings": {
+        "pose": 0,
+        "productionCommands": 6,
+        "candidateCommands": 4.100000023841858,
+        "baselineGL": {
+          "drawCalls": 20,
+          "triangles": 2192,
+          "maxVertexRoundingRigPx": 1.513539582935509e-05
+        },
+        "candidateGL": {
+          "drawCalls": 20,
+          "triangles": 3783,
+          "maxVertexRoundingRigPx": 2.584563698664404e-05
+        },
+        "packedDraw": 0.19999998807907104,
+        "total": 20.80000001192093
+      }
+    },
+    "preRendered": true,
+    "sourceTime": 0,
+    "durationMs": 83.33333333333333,
+    "width": 1024,
+    "height": 420,
+    "requestedTimeMs": 0,
+    "actualRequestElapsedMs": 0.10000002384185791,
+    "file": "frames/000.png",
+    "sha256": "4d2369a40f30a811373d11f62e17fcacf2cc6e534722144be8efe0d5cfee9f62"
+  },
+  "manifestLastFrame": {
+    "phase": 0.9895833333333333,
+    "clip": "rear",
+    "algorithm": "neck-path-v3",
+    "metrics": {
+      "sourceLength": 60.797682800758764,
+      "worldLength": 66.69367836185046,
+      "centerlineScale": 1.096977307184775,
+      "triangles": 2548,
+      "timings": {
+        "pose": 0,
+        "productionCommands": 4.199999988079071,
+        "candidateCommands": 4.199999988079071,
+        "baselineGL": {
+          "drawCalls": 20,
+          "triangles": 2192,
+          "maxVertexRoundingRigPx": 1.6174209108749557e-05
+        },
+        "candidateGL": {
+          "drawCalls": 20,
+          "triangles": 3783,
+          "maxVertexRoundingRigPx": 2.584563698664404e-05
+        },
+        "packedDraw": 0.10000002384185791,
+        "total": 13.199999988079071
+      }
+    },
+    "preRendered": true,
+    "sourceTime": 1.5833333333333333,
+    "durationMs": 16.666666666666828,
+    "width": 1024,
+    "height": 420,
+    "requestedTimeMs": 1583.3333333333333,
+    "actualRequestElapsedMs": 1592,
+    "file": "frames/019.png",
+    "sha256": "280dc0b17cba09096f6d1a215eef97c64d060efdc4d0fb5a2db3f05bc830774d"
+  },
+  "allPNGSHAValid": true,
+  "movieSHAValid": true,
+  "sourcesUnchanged": true,
+  "visual": "failed",
+  "timing": "requires-separate-analysis",
+  "maxSourcePTSerrorMs": 8.666666666666822,
+  "requestedDuration": 1.6,
+  "note": "Raw MediaRecorder timestamps measured against immutable source PNG times; not a constant-frame-rate claim. Last coded frame is the final bitmap hold."
+}

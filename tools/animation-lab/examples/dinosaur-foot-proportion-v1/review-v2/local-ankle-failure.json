@@ -1,0 +1,48 @@
+{
+  "asset": "dinosaur-side-v13",
+  "candidateSourceRevision": 2,
+  "variant": 3,
+  "clip": "extend",
+  "joint": "leg-0-lower",
+  "phase": 0.25,
+  "background": "light",
+  "frame": [
+    512,
+    512
+  ],
+  "zoom": 3.4,
+  "evidence": "examples/dinosaur-foot-proportion-v1/review-v2/browser/near-ankle-0250-light-native.png",
+  "evidenceSHA": "eca9eab24b84a6c2e6ff56a3dd5902317aee66a07f193af7ce2c2575bfcbfaec",
+  "sources": [
+    {
+      "key": "primary",
+      "url": "/art/dinosaur-side-parts-v8.png",
+      "file": "public/art/dinosaur-side-parts-v8.png",
+      "sha256": "87fc5cc6d6003250fd2b0b84e5acf78baf08e3dc8fafc65644e512edb3f16c3d"
+    },
+    {
+      "key": "neutralLeg",
+      "url": "/art/dinosaur-leg-parts-v1.png",
+      "file": "public/art/dinosaur-leg-parts-v1.png",
+      "sha256": "943ccc2adb1289af74d101500551e2f9403cddf86047195cce7f640b0e11c9b6"
+    },
+    {
+      "key": "compactFoot",
+      "url": "/qa-evidence/dinosaur-foot-proportion-v1/parts-v1.png",
+      "file": "examples/dinosaur-foot-proportion-v1/parts-v1.png",
+      "sha256": "ffa500af1ac673d1500cf8a8c54b8a186cd0c48674b8dce50fcb9915f8697404"
+    },
+    {
+      "key": "stoutMetatarsus",
+      "url": "/qa-evidence/dinosaur-foot-proportion-v1/metatarsus-v2.png",
+      "file": "examples/dinosaur-foot-proportion-v1/metatarsus-v2.png",
+      "sha256": "d7af94bce27b87cc7246dfbc8e5f30b6feb06e2ca6578be6a6833f3f8405b2ed"
+    }
+  ],
+  "visual": "failed",
+  "observations": [
+    "Lower metatarsus round cap visibly swollen when bent; overlap forms club-like ankle above toe root.",
+    "Whole-body thumbnails hid this silhouette defect; no production registration."
+  ],
+  "next": "Taper lower source third, retain failed frame and repeat identical phase before other joints."
+}

@@ -1,0 +1,33 @@
+✔ dinosaur anatomical bone edits drive both near and far chains in every action and isolated joint bend (7.752ms)
+✔ edited dinosaur child pivots stay attached and unselected leg is fixed during isolated flexion (0.789291ms)
+✔ dinosaur alternate foot contact follows each measured source and default scales with edited foot width (0.370917ms)
+✔ dinosaur configured femur neutral angle is shared by whole pose and isolated rest pose (0.183875ms)
+✖ dinosaur stance height moves the trunk assembly together and preserves foot ground and jump lift (0.788708ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 75.991125
+
+✖ failing tests:
+
+test at tests/dinosaur-configured-chain.test.mjs:34:1
+✖ dinosaur stance height moves the trunk assembly together and preserves foot ground and jump lift (0.788708ms)
+  AssertionError [ERR_ASSERTION]: idle: body did not follow the trunk height
+      at TestContext.<anonymous> (file:///Users/lemon/Desktop/game-dev-playbook/tools/animation-lab/tests/dinosaur-configured-chain.test.mjs:38:205)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

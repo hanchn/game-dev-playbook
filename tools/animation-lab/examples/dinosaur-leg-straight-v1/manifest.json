@@ -23,7 +23,7 @@
     {
       "file": "animal-rig.mjs",
       "url": "/animal-rig.mjs",
-      "sha256": "70f95c44b783f60043d59d384a6bbd9c5d86471fb2144d963df01083dcd74ede"
+      "sha256": "629435b3384ae4e9d9799d34076eceb5bcc06529497bdea4af8764d6a3d21d94"
     },
     {
       "file": "game-core.mjs",
@@ -625,5 +625,12 @@
     }
   ],
   "visual": "not-reviewed",
-  "productionChanged": false
+  "productionChanged": false,
+  "implementationCompatibility": {
+    "date": "2026-10-12",
+    "scope": "production factory now v14, frozen v13 asset poses unchanged; explicit captured foot offsets keep source-mapping recipe",
+    "samples": 128,
+    "changed": 0
+  },
+  "compatibilityNote": "Frozen assets drive these historical studies. v13 128 recorded poses unchanged after optional height binding; production16 uses explicit shorter lengths, bodyDrop16 and hip-80."
 }
