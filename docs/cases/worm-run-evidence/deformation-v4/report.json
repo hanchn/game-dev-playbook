@@ -1,0 +1,77 @@
+{
+  "schema": "worm-deformation-regression/v4",
+  "fixtures": [
+    {
+      "name": "crawl-exit",
+      "exitVelocity": -120,
+      "skinBounds": {
+        "x": 237,
+        "y": 249,
+        "width": 54,
+        "height": 137
+      },
+      "chainLength": 132.00000000000006,
+      "expectedLength": 132,
+      "minJointDistance": 10.999999999999975,
+      "firstExitSpan": 121.97530019882151,
+      "triangleCount": 96,
+      "allFinite": true
+    },
+    {
+      "name": "jump-exit",
+      "exitVelocity": -560,
+      "skinBounds": {
+        "x": 236,
+        "y": 249,
+        "width": 75,
+        "height": 127
+      },
+      "chainLength": 131.99999999999997,
+      "expectedLength": 132,
+      "minJointDistance": 10.999999999999972,
+      "firstExitSpan": 112.2475922841212,
+      "triangleCount": 96,
+      "allFinite": true
+    },
+    {
+      "name": "exit-turn-left",
+      "exitVelocity": -120,
+      "skinBounds": {
+        "x": 193,
+        "y": 231,
+        "width": 71,
+        "height": 119
+      },
+      "chainLength": 132.00000000000003,
+      "expectedLength": 132,
+      "minJointDistance": 10.999999999999986,
+      "firstExitSpan": 121.97530019882151,
+      "triangleCount": 94,
+      "allFinite": true
+    },
+    {
+      "name": "exit-turn-right",
+      "exitVelocity": -120,
+      "skinBounds": {
+        "x": 193,
+        "y": 231,
+        "width": 71,
+        "height": 119
+      },
+      "chainLength": 132.00000000000006,
+      "expectedLength": 132,
+      "minJointDistance": 10.999999999999979,
+      "firstExitSpan": 121.97530019882151,
+      "triangleCount": 94,
+      "allFinite": true
+    }
+  ],
+  "zeroSizeBoot": {
+    "textureWidth": 1,
+    "textureHeight": 1,
+    "displayWidth": 0
+  },
+  "realKeyboardExitAndTurn": true,
+  "runtimeErrors": [],
+  "nativeInAppBrowser": "Also operated Down/Up/Right in the actual in-app tab; body kept visible and finite. Original boot IndexSizeError fixed by positive texture sizes and ResizeObserver."
+}

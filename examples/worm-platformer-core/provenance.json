@@ -2,7 +2,7 @@
   {
     "source": "worm-run/src/model.js",
     "target": "examples/worm-platformer-core/src/model.js",
-    "sha256": "28a3c0fc3df8c033a05cc479e89d29415a5a8b4f1fdda3cb1cb82de09d64202d"
+    "sha256": "5b0e1f376cb9d7c9267547b8bf3bf10825d6d869cc3d660101beb8ca21f91272"
   },
   {
     "source": "worm-run/src/world.js",
@@ -43,5 +43,95 @@
     "source": "worm-run/tests/interactions.test.js",
     "target": "examples/worm-platformer-core/tests/interactions.test.js",
     "sha256": "7912ff1bc4f6e7c4e2935710b140dc90f58b92f76527216fa75171432e3fa2d3"
+  },
+  {
+    "source": "worm-run/src/render.js",
+    "target": "examples/worm-platformer-core/src/render.js",
+    "sha256": "04abb6b1138c3549a8e079f2f86caa85ec5cbd947ea9d321ea872dbaec0ea6c7"
+  },
+  {
+    "source": "worm-run/tests/deformation.test.js",
+    "target": "examples/worm-platformer-core/tests/deformation.test.js",
+    "sha256": "0ac646c9fafc8262592410ec6cf8e8acfb3ee42714a360718d6d76dfffb7df10"
+  },
+  {
+    "source": "worm-run/public/art/skins-cute.json",
+    "target": "examples/worm-platformer-core/public/art/skins-cute.json",
+    "sha256": "756ca08c256da43744e21bbc231b9268382fca4a0e03da010d2b9ba784e51886"
+  },
+  {
+    "source": "worm-run/src/vendor/game-core.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/game-core.mjs",
+    "sha256": "f32c6f32b90dc69eb83b4deeaa65b9555222f21a5865a3eddd35394b63974335"
+  },
+  {
+    "source": "worm-run/src/vendor/flex-rig.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/flex-rig.mjs",
+    "sha256": "949559889e5bf4b1b8d8e092f77c2277ef8599921de5919bc96a21391cc221dd"
+  },
+  {
+    "source": "worm-run/src/vendor/animal-rig.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/animal-rig.mjs",
+    "sha256": "70f95c44b783f60043d59d384a6bbd9c5d86471fb2144d963df01083dcd74ede"
+  },
+  {
+    "source": "worm-run/src/vendor/strip-skin.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/strip-skin.mjs",
+    "sha256": "aea162b9b8f88e2376b23c8cf7b6c55e9d6d3f48b430059a1e44e52a76df6489"
+  },
+  {
+    "source": "worm-run/src/vendor/worm-hydrostat.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/worm-hydrostat.mjs",
+    "sha256": "b280a8a0204a1045fa12474f0aca26e653b2cda6352f9023564c62760f99b868"
+  },
+  {
+    "source": "worm-run/src/vendor/human-alien-calibration.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/human-alien-calibration.mjs",
+    "sha256": "f0379e6b173a5d1cd42aa2e29129fda5dca0ac54a541feb5d4810a4dd638cdd5"
+  },
+  {
+    "source": "worm-run/src/vendor/human-soft-skin.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/human-soft-skin.mjs",
+    "sha256": "af8c7e6bec77138e455ba28649bca2542cf7b1c59e0a154a76120d0aa6daee2c"
+  },
+  {
+    "source": "worm-run/src/vendor/core.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/core.mjs",
+    "sha256": "ede0f77d7bcf2496e1750b50a23b12b113a7f2ba1f5f26c83fcafe800e2255e3"
+  },
+  {
+    "source": "worm-run/src/vendor/human-actions.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/human-actions.mjs",
+    "sha256": "8870617c5151b24e7b3bb567fa51af4fa74fd0c4236a72772e4465466ee74a87"
+  },
+  {
+    "source": "worm-run/src/vendor/arthropod-rig.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/arthropod-rig.mjs",
+    "sha256": "205e477550b70052e80bd29cc6d59e7e7bac29b35bb63745771d02cccbd3d0d6"
+  },
+  {
+    "source": "worm-run/src/vendor/skin-renderer.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/skin-renderer.mjs",
+    "sha256": "23db7a7bb735b444f8954b2564dae881855b16a631d58c7e63738db29f299ebf"
+  },
+  {
+    "source": "worm-run/src/vendor/human-rig.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/human-rig.mjs",
+    "sha256": "e3050b32ce23d928ee177a3d719115e2c6896d91e9c8383e586fd814dd228f1e"
+  },
+  {
+    "source": "worm-run/src/vendor/human-contact.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/human-contact.mjs",
+    "sha256": "960f2248b4bb99618db2ff7d63cae5e0bc56c887b849b1511c65479c53fe78c3"
+  },
+  {
+    "source": "worm-run/src/vendor/human-alien-contact-profiles.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/human-alien-contact-profiles.mjs",
+    "sha256": "1e079416e8de38cbd98e70eb28634b36abf91b9540331ecda94cf31aa1764cfe"
+  },
+  {
+    "source": "worm-run/src/vendor/human-contact-profiles.mjs",
+    "target": "examples/worm-platformer-core/src/vendor/human-contact-profiles.mjs",
+    "sha256": "b9cc2ac83e23a06a2611b90b66d6d93f7df391d82f1bf9e15b3e1ca6c5421f3d"
   }
 ]
