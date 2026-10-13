@@ -60,3 +60,7 @@ npm start
 ## 蚯蚓冒险实战
 
 [蚯蚓平台冒险案例](docs/cases/worm-run-platform-adventure.md)记录连续蒙皮回头/竖井堆叠、即时断体、有限追击、鸟鸡跳飞、树间平台、季节天气和完整UI。[规则样本](examples/worm-platformer-core/README.md)提供实际提取源码和34条回归。
+
+## 消息框、断体扣命与分层地图经验
+
+[2026-10-13 蚓力狂奔 UI 与玩法经验](docs/cases/worm-run-ui-life-loss-2026-10-13.md)：三段横幅接缝、长文字纸面安全区、断体扣命过场、地下分叉卫兵、连续蒙皮和复用边界。
