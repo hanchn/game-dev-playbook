@@ -18,6 +18,7 @@
 
 - [骨骼资产储备与逆向提取知识](docs/skeletal-asset-recovery.md)：筛选可获得的 Spine／DragonBones／3D 骨骼与特效工程，记录 REA 调查路线、依赖、格式和未验证边界。
 
+- [hunyuan-3d](skills/hunyuan-3d/SKILL.md)：复用腾讯混元官网会话，直接通过API上传八视角、提交建模、查询状态；仅在明确要求时下载。挖掘机真实建模已成功。
 - [game-production-experience](skills/game-production-experience/SKILL.md)：从视觉锁定到 UI、动画、加载、性能验收的通用生产流程。
 - [sprite-animation-production](skills/sprite-animation-production/SKILL.md)：处理裁切、朝向、循环跳帧、角色比例与车辆形变，附只读 PNG 检查工具。
 - [Skill 能力索引](docs/skills-index.md)：其他可配合的游戏、引擎和设计技能；索引不代表这些第三方技能已被打包进本仓库。
