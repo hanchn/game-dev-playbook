@@ -1,5 +1,7 @@
 # 恐龙消防员：失败画面与持续修正
 
+完整沉淀见[开发、设计与动作经验总册](dinosaur-firefighter-handbook.md)，包括[动作语义](../action-semantics.md)、[场景合成](../side-scroller-composition.md)、[UI与资源集成](../ui/art-runtime-integration.md)及[源码与证据索引](dinosaur-firefighter-evidence/source-index.json)。下方台账保留各轮历史状态，不能将早期方案当作当前规则；总册明确最新需求与待验收边界。
+
 ## 2026-10-14 火山底部外露
 
 问题：火山贴图完整底边露出，像独立悬放的山。原图高度285，且草地树林透明度0.75、砂石地0.35，让远景山脚透出来。

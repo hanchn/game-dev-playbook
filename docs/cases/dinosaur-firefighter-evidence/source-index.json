@@ -1,0 +1,131 @@
+{
+  "compiledOn": "2026-10-14",
+  "sourceRepository": "https://github.com/hanchn/dinosaur-firefighter",
+  "sourceCommit": "5183fda08efb4b3ee2013c1f3dbf1469627dd81d",
+  "scope": "Documentation synthesis only; game service was not started.",
+  "validation": {
+    "modelTests": {
+      "count": 31,
+      "status": "historical-passed-record",
+      "rerunDuringThisTask": false,
+      "evidence": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/art/qa/verification.md",
+      "names": [
+        "water is finite and replenishes only after cooldown with a fresh capacity",
+        "mud slows walking but jumping bypasses slowdown",
+        "pit fall animates before life loss and returns outside the rim",
+        "extinguishing rewards once and water cannot go negative",
+        "infinite chunks remain bounded during exploration",
+        "pause freezes water cooldown and gameplay",
+        "reused dinosaur rig provides finite walk, idle and jump joint positions",
+        "volcano meteor has warning time and damages once on impact",
+        "crocodile remains peaceful while scooping and punches only when its pond becomes empty",
+        "jump lands on multi-hill terrain",
+        "fire sparks ignite scenery at impact rather than spawning a detached fire point",
+        "weather changes and does not advance while paused",
+        "pool/fire/hazard placement reserves clear spacing and room for a crocodile",
+        "holding scoop does not provoke a crocodile when the pond still contains water",
+        "rabbit and deer leave narrow pool/building gaps and keep walking in a safe corridor",
+        "shore wildlife does not alternate facing on successive frames",
+        "bird avoids landing on burning trees and remains perched before its next flight",
+        "rain fills dry ponds, reduces large fires and pacifies crocodiles during scooping",
+        "stepping into a wet pond triggers a fish jump once per entry",
+        "ground snake reacts only to being stepped on and empty bucket notice does not repeat while held",
+        "empty pond finishes one crocodile punch then hides it until water returns",
+        "a branch snake does not repeatedly force every newly perched bird back into flight",
+        "mud surface lets feet sink smoothly instead of hovering over its basin",
+        "a large fire preserves partial progress and requires repeated buckets before scoring",
+        "mud and pits reserve their full artwork footprint across random chunks and boundaries",
+        "cave roof is a one-way platform reachable by jumping and walking off resumes falling",
+        "jumping out of a drained pond dodges the warned crocodile punch",
+        "two jumps increase air travel and a third press cannot refresh vertical velocity",
+        "rain suppresses the dry-pond punch and refilling re-arms exactly one future punch",
+        "scooping requires feet on the pond bottom and gives one shared entry notice from the bank",
+        "pouring inside a pond returns bucket water without extinguishing or overflowing"
+      ]
+    },
+    "visualAcceptance": "pending",
+    "volcanoScaleFix": "implemented; new runtime view not reviewed"
+  },
+  "files": [
+    {
+      "path": "src/config.mjs",
+      "sha256": "e86002ad5ea949af4a51a96e9c45721ca6aa1f621e74bade80fe6211426ace39",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/config.mjs"
+    },
+    {
+      "path": "src/model.mjs",
+      "sha256": "d0fe349b4b070d91b8b2aaf8a63d423cc79694318b1afa614cb7cb0fd27f187b",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/model.mjs"
+    },
+    {
+      "path": "src/characters.mjs",
+      "sha256": "c6437db3b7b08f617969fa0dd94a05762fe9f402cfa7cb7d6d428f78f4c84717",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/characters.mjs"
+    },
+    {
+      "path": "src/renderer.mjs",
+      "sha256": "d2cf618342b4f419cb806a86bfbed9096f3be1b71b49152eb26664a843463c11",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/renderer.mjs"
+    },
+    {
+      "path": "src/parallax.mjs",
+      "sha256": "ae100190ab672de4f9d7eda5bebc27a800eca755a54629cca92fa127f9717afc",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/parallax.mjs"
+    },
+    {
+      "path": "src/app.mjs",
+      "sha256": "7a90b8a578166bb1c56f333ffad78510f86846bcc6a5476f8b74045df4e93101",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/app.mjs"
+    },
+    {
+      "path": "src/bootstrap.mjs",
+      "sha256": "d965fc39096e3cf4d088afc62a16320c9be5e96c63415a3d306890bb4035d7d5",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/bootstrap.mjs"
+    },
+    {
+      "path": "src/feedback.mjs",
+      "sha256": "17598b4048b576ef58c9e10531fa8e714e4a6994d885d958e07c066d73d4fe7d",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/feedback.mjs"
+    },
+    {
+      "path": "src/demo.mjs",
+      "sha256": "7ee0493da0efb887ae862a5c6c420ef3c1ca2979967ee57eeb4c5840cc75fb87",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/src/demo.mjs"
+    },
+    {
+      "path": "style.css",
+      "sha256": "583772de23fa0303809adc56261a5bdcf8d5efbd931c0f68786d003ebf88e248",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/style.css"
+    },
+    {
+      "path": "scripts/calibrate-sheets.mjs",
+      "sha256": "ad7d74b1580979e3b773a4aed1e045ab4aed3a4dafd849154a356129f5e9cd75",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/scripts/calibrate-sheets.mjs"
+    },
+    {
+      "path": "tests/game.test.mjs",
+      "sha256": "f5e1e8e21d731a416e33ecd6b65c652df810d1ed05b74e0e13d1dc6d11bd848f",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/tests/game.test.mjs"
+    },
+    {
+      "path": "data/scenery-anchors.json",
+      "sha256": "84ccd90dedf66c820f0c20c4d98bf1ca5f23756895eacdcd5afbd9b27efd224d",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/data/scenery-anchors.json"
+    },
+    {
+      "path": "data/sprite-calibration.json",
+      "sha256": "1524a6d7868504f942ef1dbbc95f497aa71431e2f1a5401656446b0c569108fc",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/data/sprite-calibration.json"
+    },
+    {
+      "path": "data/asset-manifest.json",
+      "sha256": "b798cb51a758caafc5753e683272b61b5ac5c62d87ebc95f08a27ab8e2555b3c",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/data/asset-manifest.json"
+    },
+    {
+      "path": "art/qa/verification.md",
+      "sha256": "2286142690b9dea53e12a2a516fc9406e81c9457d6c75c62acd8f3f7e4ff6003",
+      "url": "https://github.com/hanchn/dinosaur-firefighter/blob/5183fda08efb4b3ee2013c1f3dbf1469627dd81d/art/qa/verification.md"
+    }
+  ]
+}
