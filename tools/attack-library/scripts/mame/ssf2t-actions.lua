@@ -1,5 +1,6 @@
 -- SSF2T World 940223 on MAME 0.289. Inputs only; no game-memory writes.
 -- Captures native viewports and raw RAM observations, NOT transparent sprite canvases.
+local observe_snapshot = ...
 local out = assert(os.getenv('NAIFROG_TRACE_DIR'), 'NAIFROG_TRACE_DIR required')
 local machine = manager.machine
 local ram = machine.devices[':maincpu'].spaces['program']
@@ -104,7 +105,11 @@ emu.register_frame_done(function()
   trace:write(table.concat(row,',')..'\n');trace:flush()
   readBoxes(frame,1,0xff844e,p1);readBoxes(frame,2,0xff884e,p2)
   local signature=phase..'-'..p1[8]..'-'..p1[2]..'-'..p2[2]
-  if signature~=previous or tick%15==0 then screen:snapshot(out..'/snap/'..string.format('%05d',frame)..'-'..phase..'.png') end
+  if signature~=previous or tick%15==0 then
+   local path=out..'/snap/'..string.format('%05d',frame)..'-'..phase..'.png'
+   screen:snapshot(path)
+   if type(observe_snapshot)=='function' then observe_snapshot(frame,phase,path) end
+  end
   previous=signature
  end
  if frame>=6500 then boxes:close();trace:close();machine:exit() end

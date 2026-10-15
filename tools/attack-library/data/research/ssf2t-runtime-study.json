@@ -10,7 +10,7 @@
   ],
   "screenRefreshHz": 59.637405,
   "phaseScreenTicks": 96,
-  "scriptSHA256": "e9dc9a50592a23a15d6f11eb8ea2282ca30ad5088c9835e71af17f2cf2bc392c",
+  "scriptSHA256": "f8c1d2423ff51e03f98050e88ab26689f638f0aaf969b3f7110eb76d0fda32da",
   "limitations": [
     "Only Ryu P1 versus Ken P2; not all sixteen fighters.",
     "Full viewport observations are not native transparent character frames, original skeletons or authoring canvases.",
@@ -33,7 +33,7 @@
   "runs": [
     {
       "id": "motions",
-      "sourceOutput": "output/attack-library/mame-study/reproduction1/motions",
+      "sourceOutput": "output/attack-library/mame-study/native-reproduction1/motions",
       "samples": 2112,
       "snapshots": 691,
       "phases": [
@@ -409,7 +409,7 @@
     },
     {
       "id": "contact",
-      "sourceOutput": "output/attack-library/mame-study/reproduction1/contact",
+      "sourceOutput": "output/attack-library/mame-study/native-reproduction1/contact",
       "samples": 1248,
       "snapshots": 397,
       "phases": [
@@ -642,5 +642,10 @@
     ],
     "screenshot": "output/attack-library/qa/original-study-ko.png",
     "screenshotSHA256": "24afdd1fdc1c9bb0731142dc2ef5d2b6d8c73133fddd4a98e20a4f5ff91c7dca"
+  },
+  "reproduction": {
+    "status": "passed complete --native wrapper including motion/contact reruns",
+    "originalRuntimeCSVsIdentical": true,
+    "archivePolicy": "Preserve first accepted raw ZIPs; re-run member content matched, avoid replacement due solely to ZIP member timestamps"
   }
 }

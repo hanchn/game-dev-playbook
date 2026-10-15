@@ -1,0 +1,57 @@
+{
+  "set": "ssf2t World 940223",
+  "status": "source-validated transparent render objects; not complete game art",
+  "emulator": "MAME 0.289",
+  "acceptedFrameObservations": 1287,
+  "rejectedFrameObservations": 95,
+  "uniqueRGBAFrames": 66,
+  "ryu": {
+    "accepted": 678,
+    "unique": 62,
+    "blockCanvasWidthRange": [
+      64,
+      160
+    ],
+    "blockCanvasHeightRange": [
+      64,
+      128
+    ]
+  },
+  "ken": {
+    "accepted": 609,
+    "unique": 4,
+    "scope": "idle poses only; no complete attack/reaction set"
+  },
+  "validation": [
+    "All accepted samples use actual latched m_cps2_buffered_obj, not guessed active bank",
+    "Every visible opaque pixel equals the native screenshot",
+    "1287 atlas references retain exact RGBA SHA256 after packing",
+    "Binary alpha 0/255 from hardware pen15; no chroma key",
+    "No accepted sample viewport-clipped",
+    "Full --native wrapper reproduced same count and identical atlas SHA256"
+  ],
+  "detail": "assets/research/ssf2t-native/ryu-native-motions.json",
+  "atlasSHA256": "1ea38d386844d6eae868e3365a3d755202d763b017ecf86e947fda5660683aec",
+  "sources": [
+    "https://github.com/mamedev/mame/blob/mame0289/src/mame/capcom/cps2.cpp",
+    "https://github.com/mamedev/mame/blob/mame0289/src/mame/capcom/cps1.cpp",
+    "https://docs.mamedev.org/luascript/ref-mem.html"
+  ],
+  "limitations": [
+    "Only observed Ryu P1 actions and Ken P2 idle poses, not complete reactions or full roster.",
+    "Renderer block canvases and RAM anchors are not original authoring canvases or recovered bones.",
+    "No source timing decomposition or complete action animation claim.",
+    "Only visible opaque pixels are compared; clipped content is explicitly marked.",
+    "A sparse sample can miss changing poses when the original animation pointer is unchanged."
+  ],
+  "browserVerification": {
+    "checks": [
+      "transparent toggle loads",
+      "stand HK sample shows Ryu kick and Ken idle on checkerboard",
+      "both displayed as pixel validation passed",
+      "error logs empty"
+    ],
+    "screenshot": "output/attack-library/qa/original-native-frames.png",
+    "screenshotSHA256": "4bedcd224c6b2dc9b86bae5dbd1a7cc4527e66ecb00c4adf010f653a7b39d38a"
+  }
+}

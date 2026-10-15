@@ -88,3 +88,19 @@ python3 tools/attack-library/scripts/run-ssf2t-study.py --output output/attack-l
 - 将只读观察与采样查看器保留在资源库，不把原版视口/改编角色混进奶蛙正式美术。未采样的画面通过最近样本保持，播放不是完整录像。
 
 下一关仍是原生角色画布/透明边/轴心、动作与判定时序精确关联、其余角色及大招、纯2D自有角色生产。当前原版运行成功不代表这些条件已满足。
+
+## 10. 透明原版角色帧与真实图块画布：E03b
+
+本批从MAME已解码gfx region、原版调色板和锁存渲染对象列表重建RGBA。依据 [MAME 0.289 CPS2渲染器](https://github.com/mamedev/mame/blob/mame0289/src/mame/capcom/cps2.cpp) 与 [16×16布局](https://github.com/mamedev/mame/blob/mame0289/src/mame/capcom/cps1.cpp)，按图块码、组合行列、翻转、对象偏移和色号拼接；透明来自pen15，而非按黑色抠图。全程只读ROM/RAM/模拟器渲染保存项，不修改游戏或调色板。
+
+先用单帧验证：隆3176个不透明像素全部与原始截图一致。批量直接读取两块对象RAM会因缓冲时序错位，许多空中姿势校验失败；改为通过 `manager.machine.devices[':'].items['0/m_cps2_buffered_obj']` 定位保存项，使用 `emu.item(index):read(wordIndex)` 读取实际锁存渲染对象。保存项索引不能硬编码为131：版本可变，要按名字解析并校验元素宽度2字节。其接口通过同版本 `src/frontend/mame/luaengine.cpp` 核对。
+
+当前严格通过1287条角色帧观察：隆678条、62个不同RGBA姿势；肯609条、4个待机姿势。95条未通过逐像素核验的观察单独保留拒收记录，不放宽阈值凑数。每条接受记录的不透明可见像素100%匹配原截图，采用真实锁存buffer（bank0），没有视口裁切。66个不同RGBA按图像去重打包，1287条引用仍保留各自时间、对象位置和元数据；逐项裁回图集校验RGBA SHA，不把重复观察报成1287套动作。
+
+隆的实际渲染图块画布宽64–160、高64–128，取决于姿势；保留每帧图块画布、可见alpha边界、屏幕位置及RAM投影原点。例：最初待机为64×96组合图块画布。它是原版渲染对象的组合范围，不是Capcom原始绘制文件画布。RAM原点投影也不是恢复出的美术轴心，渲染到RAM的帧差仍未校准。
+
+复现：需MAME 0.289、Pillow、NumPy及已核验包，运行 `python3 tools/attack-library/scripts/run-ssf2t-study.py --output output/attack-library/mame-study/new-native-run --native`。完整封装已实际跑通并重现相同计数与完全一致的图集SHA。gfx region可以由原ROM和脚本重建，未重复归档16MB的region；保存其SHA与所需原始对象/调色板CSV。查看器增加透明帧开关，缺少严格验证的采样明确提示，而不替换成别的姿势。
+
+两个工具误区：Lua `dofile` 的环境使外层脚本全局回调未被子脚本看到，首批只得到CSV表头；改用 `loadfile(actions)(capture)` 显式传闭包。系统Python不带Pillow，素材工具使用已提供的工作区Python；不要把错误解释成解码失败。
+
+本批透明图块进入外部研究库，没有成为奶蛙正式角色。后续需要完整密集逐帧捕获、动作/判定/时间关联、自有角色按源姿势生产，以及其余参考人物与大招。

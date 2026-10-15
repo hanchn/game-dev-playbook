@@ -1,0 +1,5 @@
+// Read-only visualization of source-validated CPS2 render objects.
+export class NativeSpriteLayer {
+ async load(){if(this.ready)return;const response=await fetch('assets/research/ssf2t-native/ryu-native-motions.json');if(!response.ok)throw Error('透明帧数据读取失败');const data=await response.json();this.image=new Image();this.image.src='assets/research/ssf2t-native/'+data.atlas;await this.image.decode();this.frames=new Map();for(const f of data.frames){if(!this.frames.has(f.frame))this.frames.set(f.frame,[]);this.frames.get(f.frame).push(f);}this.ready=true;}
+ draw(ctx,frame){for(let y=0;y<448;y+=16)for(let x=0;x<768;x+=16){ctx.fillStyle=((x+y)/16)%2?'#233247':'#1c293b';ctx.fillRect(x,y,16,16);}if(!this.ready)return '透明帧载入中';const bodies=this.frames.get(frame)||[];for(const f of bodies){const [x,y]=f.screenBounds;ctx.drawImage(this.image,...f.atlasRect,x*2,y*2,f.rendererBlockCanvas[0]*2,f.rendererBlockCanvas[1]*2);}return ['ryu','ken'].map(id=>`${id==='ryu'?'隆':'肯'} ${bodies.some(f=>f.character===id)?'像素核验通过':'此采样未通过核验'}`).join(' / ');}
+}
