@@ -1,0 +1,16 @@
+{
+  "name": "CPSS",
+  "source": "https://github.com/fabiensanglard/cpss",
+  "commit": "a7f46ad2c7087fd485ae3d9d88aafd2b75cdd437",
+  "snapshot": "assets/research/cpss-source.zip",
+  "sha256": "7082ed46f560131a7053e0703006ee01cbc7ef05c21b61f6aa430ca8532db8e6",
+  "article": "https://fabiensanglard.net/cpss/",
+  "role": "CPS tile-sheet reconstruction and palette research",
+  "status": "source inspected; Go unavailable locally; not compiled or executed",
+  "limitations": [
+    "Reconstructed tile sheets are not original control rigs or complete animation timelines",
+    "Palette bases and some metadata carry uncertainty in source comments",
+    "sf2.go contains two final code banks with identical base 0xc0000; verify map before trusting output",
+    "Primary Capcom interview link returned HTTP403; original paper-sheet authoring details not directly verified here"
+  ]
+}
