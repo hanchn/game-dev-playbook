@@ -1,4 +1,6 @@
 const entries=[
+  ['/keyframe-animation-test','关键帧动画测试','二维关键姿势与连续位图播放'],
+  ['/model-frame-extraction','建模抽帧','模型、绑骨与格斗序列帧'],
   ['/lab','角色动画','零件、骨骼与贴图动作'],
   ['/frame-animation','帧动画与拍摄','视频抽帧、图片序列、录制与导出'],
   ['/keyframe-generator','骨骼关键帧','姿势编辑与动作时序'],
