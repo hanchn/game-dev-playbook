@@ -11,7 +11,13 @@ export function fixedCanvasTransform(sizes,target=512){
  return {scale,x:(target-w*scale)/2,y:(target-h*scale)/2,width:w*scale,height:h*scale};
 }
 export function manifestClip(manifest){
- return manifest.clips?.[0]??(Array.isArray(manifest.frames)?manifest:null);
+ const clip=manifest.clips?.[0]??(Array.isArray(manifest.frames)?manifest:null);
+ if(manifest.clips?.length===1){
+  const path=f=>modelAssetUrl(typeof f==='string'?f:f.path);
+  if(Array.isArray(manifest.frames)&&Array.isArray(clip.frames)&&(manifest.frames.length!==clip.frames.length||manifest.frames.some((f,i)=>path(f)!==path(clip.frames[i]))))throw Error('manifest版本不一致：顶层帧与播放帧指向不同产物');
+  for(const field of ['sheet','contactSheet','video'])if(manifest[field]&&clip[field]&&path(manifest[field])!==path(clip[field]))throw Error(`manifest版本不一致：${field}与播放版本不匹配`);
+ }
+ return clip;
 }
 export function modelAssetUrl(path){
  const base='/model-frame-assets/';
