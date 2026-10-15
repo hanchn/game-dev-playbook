@@ -1,5 +1,7 @@
 # 游戏开发经验包
 
+- [Codex + Blender + Sprite Sheet 标准化流水线](docs/blender-sprite-pipeline.md)：母版与动作工程、固定镜头/尺度/地面锚点、透明帧导出、Phaser接入和分阶段验收；含首轮真实导出与旧模型比例失败记录。
+
 - [街霸式纯2D游戏的Epic复盘](docs/cases/street-fighter-phaser-epics.md)：Phaser迁移、功能验证、单帧/姿势研究、字典与背景规划、拒收候选和未完成边界。
 
 - 街霸奶蛙按Epic执行“实现 → 测试 → 知识沉淀 → 提交推送”。本轮方法分别见[动作与判定](docs/action-semantics.md)、[单帧规格与导入](docs/asset-pipeline.md)、[姿势/骨架与出图研究](docs/skeletal-asset-recovery.md)、[失败案例](docs/troubleshooting.md)；原作、改编、重建试验和验收状态分开记录。
