@@ -1,0 +1,6840 @@
+{
+  "game": "sf2ce World 920513",
+  "source": "https://github.com/ROMArchaeology/sf2-lineage",
+  "sourceCommit": "d88f5624835ea8d35346f7a95ba583f2ebc2cd8c",
+  "romSHA256": "c87d54a02d29853ec1f02cd261b6312548fa0c9150c3e1ff62b4a2c4ddf33193",
+  "limitations": [
+    "CPS1 Champion Edition only; do not apply these addresses to CPS2 Super Turbo",
+    "Geometry/damage-category records only; no startup/active/recovery timing",
+    "Standard six-slot headers only; skipped characters require separate analysis",
+    "No original runtime validation or move-to-record association yet"
+  ],
+  "characters": [
+    {
+      "id": 0,
+      "name": "Ryu",
+      "pushboxHalfWidth": 29,
+      "recordCount": 48,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xa8420",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa842c",
+          "boxOffset": [
+            -33,
+            85
+          ],
+          "halfExtent": [
+            19,
+            8
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8438",
+          "boxOffset": [
+            -35,
+            75
+          ],
+          "halfExtent": [
+            25,
+            9
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8444",
+          "boxOffset": [
+            -50,
+            77
+          ],
+          "halfExtent": [
+            34,
+            7
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8450",
+          "boxOffset": [
+            -40,
+            71
+          ],
+          "halfExtent": [
+            26,
+            13
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa845c",
+          "boxOffset": [
+            -43,
+            71
+          ],
+          "halfExtent": [
+            31,
+            13
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8468",
+          "boxOffset": [
+            -44,
+            88
+          ],
+          "halfExtent": [
+            36,
+            20
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8474",
+          "boxOffset": [
+            -39,
+            46
+          ],
+          "halfExtent": [
+            31,
+            7
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8480",
+          "boxOffset": [
+            -44,
+            42
+          ],
+          "halfExtent": [
+            36,
+            11
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa848c",
+          "boxOffset": [
+            -37,
+            68
+          ],
+          "halfExtent": [
+            28,
+            20
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8498",
+          "boxOffset": [
+            -34,
+            85
+          ],
+          "halfExtent": [
+            21,
+            30
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84a4",
+          "boxOffset": [
+            -29,
+            74
+          ],
+          "halfExtent": [
+            21,
+            16
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84b0",
+          "boxOffset": [
+            -30,
+            81
+          ],
+          "halfExtent": [
+            31,
+            11
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84bc",
+          "boxOffset": [
+            -30,
+            81
+          ],
+          "halfExtent": [
+            31,
+            11
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84c8",
+          "boxOffset": [
+            -52,
+            21
+          ],
+          "halfExtent": [
+            33,
+            21
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84d4",
+          "boxOffset": [
+            -16,
+            83
+          ],
+          "halfExtent": [
+            33,
+            14
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84e0",
+          "boxOffset": [
+            -22,
+            83
+          ],
+          "halfExtent": [
+            40,
+            14
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84ec",
+          "boxOffset": [
+            -53,
+            57
+          ],
+          "halfExtent": [
+            20,
+            21
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa84f8",
+          "boxOffset": [
+            -34,
+            82
+          ],
+          "halfExtent": [
+            20,
+            16
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8504",
+          "boxOffset": [
+            -51,
+            84
+          ],
+          "halfExtent": [
+            31,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8510",
+          "boxOffset": [
+            -43,
+            87
+          ],
+          "halfExtent": [
+            22,
+            33
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa851c",
+          "boxOffset": [
+            -62,
+            67
+          ],
+          "halfExtent": [
+            33,
+            18
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8528",
+          "boxOffset": [
+            -56,
+            9
+          ],
+          "halfExtent": [
+            33,
+            12
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8534",
+          "boxOffset": [
+            -58,
+            9
+          ],
+          "halfExtent": [
+            40,
+            12
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8540",
+          "boxOffset": [
+            -58,
+            9
+          ],
+          "halfExtent": [
+            43,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa854c",
+          "boxOffset": [
+            -18,
+            70
+          ],
+          "halfExtent": [
+            25,
+            20
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8558",
+          "boxOffset": [
+            -34,
+            56
+          ],
+          "halfExtent": [
+            46,
+            25
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8564",
+          "boxOffset": [
+            -10,
+            75
+          ],
+          "halfExtent": [
+            34,
+            19
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8570",
+          "boxOffset": [
+            -16,
+            75
+          ],
+          "halfExtent": [
+            39,
+            19
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa857c",
+          "boxOffset": [
+            -24,
+            61
+          ],
+          "halfExtent": [
+            49,
+            12
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8588",
+          "boxOffset": [
+            -30,
+            55
+          ],
+          "halfExtent": [
+            56,
+            18
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8594",
+          "boxOffset": [
+            -30,
+            45
+          ],
+          "halfExtent": [
+            28,
+            22
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa85a0",
+          "boxOffset": [
+            -25,
+            88
+          ],
+          "halfExtent": [
+            24,
+            35
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa85ac",
+          "boxOffset": [
+            -35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa85b8",
+          "boxOffset": [
+            35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa85c4",
+          "boxOffset": [
+            -13,
+            56
+          ],
+          "halfExtent": [
+            26,
+            15
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa85d0",
+          "boxOffset": [
+            -54,
+            77
+          ],
+          "halfExtent": [
+            38,
+            7
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa85dc",
+          "boxOffset": [
+            -35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa85e8",
+          "boxOffset": [
+            35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa85f4",
+          "boxOffset": [
+            -35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8600",
+          "boxOffset": [
+            35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa860c",
+          "boxOffset": [
+            -30,
+            45
+          ],
+          "halfExtent": [
+            28,
+            22
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8618",
+          "boxOffset": [
+            -25,
+            88
+          ],
+          "halfExtent": [
+            24,
+            35
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8624",
+          "boxOffset": [
+            -30,
+            45
+          ],
+          "halfExtent": [
+            28,
+            22
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa8630",
+          "boxOffset": [
+            -25,
+            88
+          ],
+          "halfExtent": [
+            24,
+            35
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa863c",
+          "boxOffset": [
+            -29,
+            77
+          ],
+          "halfExtent": [
+            21,
+            19
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8648",
+          "boxOffset": [
+            -33,
+            59
+          ],
+          "halfExtent": [
+            31,
+            9
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8654",
+          "boxOffset": [
+            -33,
+            59
+          ],
+          "halfExtent": [
+            31,
+            9
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Honda",
+      "pushboxHalfWidth": 28,
+      "recordCount": 60,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xa8824",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8830",
+          "boxOffset": [
+            -56,
+            65
+          ],
+          "halfExtent": [
+            35,
+            11
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa883c",
+          "boxOffset": [
+            -61,
+            67
+          ],
+          "halfExtent": [
+            40,
+            11
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8848",
+          "boxOffset": [
+            -34,
+            87
+          ],
+          "halfExtent": [
+            27,
+            19
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8854",
+          "boxOffset": [
+            -63,
+            60
+          ],
+          "halfExtent": [
+            47,
+            16
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8860",
+          "boxOffset": [
+            -42,
+            50
+          ],
+          "halfExtent": [
+            34,
+            15
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa886c",
+          "boxOffset": [
+            -65,
+            81
+          ],
+          "halfExtent": [
+            37,
+            12
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8878",
+          "boxOffset": [
+            -44,
+            12
+          ],
+          "halfExtent": [
+            40,
+            12
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8884",
+          "boxOffset": [
+            -59,
+            12
+          ],
+          "halfExtent": [
+            48,
+            12
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8890",
+          "boxOffset": [
+            -34,
+            51
+          ],
+          "halfExtent": [
+            29,
+            15
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa889c",
+          "boxOffset": [
+            -42,
+            57
+          ],
+          "halfExtent": [
+            33,
+            23
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88a8",
+          "boxOffset": [
+            -81,
+            18
+          ],
+          "halfExtent": [
+            30,
+            13
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88b4",
+          "boxOffset": [
+            -84,
+            18
+          ],
+          "halfExtent": [
+            41,
+            13
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88c0",
+          "boxOffset": [
+            -83,
+            18
+          ],
+          "halfExtent": [
+            52,
+            13
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88cc",
+          "boxOffset": [
+            -53,
+            11
+          ],
+          "halfExtent": [
+            36,
+            13
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88d8",
+          "boxOffset": [
+            94,
+            11
+          ],
+          "halfExtent": [
+            36,
+            13
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88e4",
+          "boxOffset": [
+            -49,
+            46
+          ],
+          "halfExtent": [
+            29,
+            20
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88f0",
+          "boxOffset": [
+            -33,
+            40
+          ],
+          "halfExtent": [
+            28,
+            15
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa88fc",
+          "boxOffset": [
+            -60,
+            46
+          ],
+          "halfExtent": [
+            37,
+            20
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8908",
+          "boxOffset": [
+            -75,
+            44
+          ],
+          "halfExtent": [
+            37,
+            12
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8914",
+          "boxOffset": [
+            -75,
+            44
+          ],
+          "halfExtent": [
+            39,
+            23
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8920",
+          "boxOffset": [
+            -72,
+            17
+          ],
+          "halfExtent": [
+            47,
+            16
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa892c",
+          "boxOffset": [
+            -40,
+            63
+          ],
+          "halfExtent": [
+            32,
+            16
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8938",
+          "boxOffset": [
+            -39,
+            101
+          ],
+          "halfExtent": [
+            31,
+            23
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8944",
+          "boxOffset": [
+            -42,
+            74
+          ],
+          "halfExtent": [
+            35,
+            15
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8950",
+          "boxOffset": [
+            -49,
+            56
+          ],
+          "halfExtent": [
+            39,
+            10
+          ],
+          "damageCategory": 12,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa895c",
+          "boxOffset": [
+            -5,
+            30
+          ],
+          "halfExtent": [
+            33,
+            16
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8968",
+          "boxOffset": [
+            11,
+            50
+          ],
+          "halfExtent": [
+            53,
+            22
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8974",
+          "boxOffset": [
+            -42,
+            60
+          ],
+          "halfExtent": [
+            24,
+            15
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8980",
+          "boxOffset": [
+            -49,
+            60
+          ],
+          "halfExtent": [
+            31,
+            15
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa898c",
+          "boxOffset": [
+            -54,
+            60
+          ],
+          "halfExtent": [
+            36,
+            15
+          ],
+          "damageCategory": 12,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8998",
+          "boxOffset": [
+            -69,
+            61
+          ],
+          "halfExtent": [
+            56,
+            14
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89a4",
+          "boxOffset": [
+            -55,
+            57
+          ],
+          "halfExtent": [
+            30,
+            18
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89b0",
+          "boxOffset": [
+            -72,
+            26
+          ],
+          "halfExtent": [
+            48,
+            24
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89bc",
+          "boxOffset": [
+            -48,
+            46
+          ],
+          "halfExtent": [
+            48,
+            18
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89c8",
+          "boxOffset": [
+            -80,
+            59
+          ],
+          "halfExtent": [
+            44,
+            18
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89d4",
+          "boxOffset": [
+            -45,
+            18
+          ],
+          "halfExtent": [
+            39,
+            18
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89e0",
+          "boxOffset": [
+            -69,
+            61
+          ],
+          "halfExtent": [
+            56,
+            14
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89ec",
+          "boxOffset": [
+            -55,
+            57
+          ],
+          "halfExtent": [
+            30,
+            18
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa89f8",
+          "boxOffset": [
+            -72,
+            26
+          ],
+          "halfExtent": [
+            48,
+            24
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a04",
+          "boxOffset": [
+            -48,
+            46
+          ],
+          "halfExtent": [
+            48,
+            18
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a10",
+          "boxOffset": [
+            -80,
+            59
+          ],
+          "halfExtent": [
+            44,
+            18
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a1c",
+          "boxOffset": [
+            -45,
+            18
+          ],
+          "halfExtent": [
+            39,
+            18
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a28",
+          "boxOffset": [
+            -69,
+            61
+          ],
+          "halfExtent": [
+            56,
+            14
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a34",
+          "boxOffset": [
+            -55,
+            57
+          ],
+          "halfExtent": [
+            30,
+            18
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a40",
+          "boxOffset": [
+            -72,
+            26
+          ],
+          "halfExtent": [
+            48,
+            24
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a4c",
+          "boxOffset": [
+            -48,
+            46
+          ],
+          "halfExtent": [
+            48,
+            18
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a58",
+          "boxOffset": [
+            -80,
+            59
+          ],
+          "halfExtent": [
+            44,
+            18
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a64",
+          "boxOffset": [
+            -45,
+            18
+          ],
+          "halfExtent": [
+            39,
+            18
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 22
+        },
+        {
+          "address": "0xa8a70",
+          "boxOffset": [
+            -41,
+            63
+          ],
+          "halfExtent": [
+            33,
+            16
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8a7c",
+          "boxOffset": [
+            -39,
+            101
+          ],
+          "halfExtent": [
+            31,
+            23
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8a88",
+          "boxOffset": [
+            -42,
+            74
+          ],
+          "halfExtent": [
+            35,
+            15
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8a94",
+          "boxOffset": [
+            -49,
+            56
+          ],
+          "halfExtent": [
+            39,
+            10
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8aa0",
+          "boxOffset": [
+            -54,
+            60
+          ],
+          "halfExtent": [
+            36,
+            15
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8aac",
+          "boxOffset": [
+            -41,
+            71
+          ],
+          "halfExtent": [
+            32,
+            18
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8ab8",
+          "boxOffset": [
+            -24,
+            62
+          ],
+          "halfExtent": [
+            36,
+            23
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8ac4",
+          "boxOffset": [
+            -41,
+            71
+          ],
+          "halfExtent": [
+            32,
+            18
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8ad0",
+          "boxOffset": [
+            -24,
+            62
+          ],
+          "halfExtent": [
+            36,
+            23
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8adc",
+          "boxOffset": [
+            -41,
+            71
+          ],
+          "halfExtent": [
+            32,
+            18
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa8ae8",
+          "boxOffset": [
+            -24,
+            62
+          ],
+          "halfExtent": [
+            36,
+            23
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Blanka",
+      "pushboxHalfWidth": 30,
+      "recordCount": 49,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xa8c5c",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8c68",
+          "boxOffset": [
+            -40,
+            73
+          ],
+          "halfExtent": [
+            37,
+            15
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8c74",
+          "boxOffset": [
+            -51,
+            67
+          ],
+          "halfExtent": [
+            51,
+            24
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8c80",
+          "boxOffset": [
+            -66,
+            67
+          ],
+          "halfExtent": [
+            51,
+            13
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8c8c",
+          "boxOffset": [
+            -66,
+            67
+          ],
+          "halfExtent": [
+            38,
+            13
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8c98",
+          "boxOffset": [
+            -60,
+            78
+          ],
+          "halfExtent": [
+            43,
+            10
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8ca4",
+          "boxOffset": [
+            -57,
+            95
+          ],
+          "halfExtent": [
+            30,
+            19
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8cb0",
+          "boxOffset": [
+            -60,
+            88
+          ],
+          "halfExtent": [
+            43,
+            16
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8cbc",
+          "boxOffset": [
+            -56,
+            73
+          ],
+          "halfExtent": [
+            40,
+            12
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8cc8",
+          "boxOffset": [
+            -76,
+            12
+          ],
+          "halfExtent": [
+            51,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8cd4",
+          "boxOffset": [
+            -75,
+            60
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8ce0",
+          "boxOffset": [
+            -76,
+            82
+          ],
+          "halfExtent": [
+            39,
+            8
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8cec",
+          "boxOffset": [
+            -40,
+            71
+          ],
+          "halfExtent": [
+            27,
+            15
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8cf8",
+          "boxOffset": [
+            -39,
+            54
+          ],
+          "halfExtent": [
+            31,
+            15
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d04",
+          "boxOffset": [
+            -39,
+            67
+          ],
+          "halfExtent": [
+            40,
+            20
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d10",
+          "boxOffset": [
+            -69,
+            79
+          ],
+          "halfExtent": [
+            42,
+            10
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d1c",
+          "boxOffset": [
+            -43,
+            90
+          ],
+          "halfExtent": [
+            37,
+            19
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d28",
+          "boxOffset": [
+            -71,
+            69
+          ],
+          "halfExtent": [
+            44,
+            20
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d34",
+          "boxOffset": [
+            -43,
+            90
+          ],
+          "halfExtent": [
+            37,
+            19
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d40",
+          "boxOffset": [
+            -49,
+            44
+          ],
+          "halfExtent": [
+            32,
+            26
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d4c",
+          "boxOffset": [
+            -50,
+            62
+          ],
+          "halfExtent": [
+            36,
+            15
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d58",
+          "boxOffset": [
+            -50,
+            62
+          ],
+          "halfExtent": [
+            42,
+            24
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d64",
+          "boxOffset": [
+            -52,
+            14
+          ],
+          "halfExtent": [
+            39,
+            12
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d70",
+          "boxOffset": [
+            -64,
+            14
+          ],
+          "halfExtent": [
+            49,
+            12
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d7c",
+          "boxOffset": [
+            -76,
+            17
+          ],
+          "halfExtent": [
+            49,
+            12
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d88",
+          "boxOffset": [
+            -77,
+            39
+          ],
+          "halfExtent": [
+            48,
+            12
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8d94",
+          "boxOffset": [
+            -93,
+            50
+          ],
+          "halfExtent": [
+            49,
+            12
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8da0",
+          "boxOffset": [
+            -66,
+            79
+          ],
+          "halfExtent": [
+            45,
+            16
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8dac",
+          "boxOffset": [
+            -59,
+            51
+          ],
+          "halfExtent": [
+            35,
+            20
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8db8",
+          "boxOffset": [
+            -59,
+            45
+          ],
+          "halfExtent": [
+            43,
+            16
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8dc4",
+          "boxOffset": [
+            -49,
+            46
+          ],
+          "halfExtent": [
+            27,
+            16
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8dd0",
+          "boxOffset": [
+            -56,
+            49
+          ],
+          "halfExtent": [
+            34,
+            20
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8ddc",
+          "boxOffset": [
+            -67,
+            49
+          ],
+          "halfExtent": [
+            46,
+            20
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8de8",
+          "boxOffset": [
+            -58,
+            45
+          ],
+          "halfExtent": [
+            31,
+            16
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8df4",
+          "boxOffset": [
+            -59,
+            75
+          ],
+          "halfExtent": [
+            22,
+            21
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8e00",
+          "boxOffset": [
+            -81,
+            41
+          ],
+          "halfExtent": [
+            39,
+            15
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8e0c",
+          "boxOffset": [
+            -74,
+            15
+          ],
+          "halfExtent": [
+            53,
+            15
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8e18",
+          "boxOffset": [
+            -5,
+            33
+          ],
+          "halfExtent": [
+            48,
+            33
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 26
+        },
+        {
+          "address": "0xa8e24",
+          "boxOffset": [
+            -4,
+            34
+          ],
+          "halfExtent": [
+            53,
+            35
+          ],
+          "damageCategory": 141,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 26
+        },
+        {
+          "address": "0xa8e30",
+          "boxOffset": [
+            -5,
+            39
+          ],
+          "halfExtent": [
+            57,
+            40
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 26
+        },
+        {
+          "address": "0xa8e3c",
+          "boxOffset": [
+            -6,
+            66
+          ],
+          "halfExtent": [
+            31,
+            31
+          ],
+          "damageCategory": 136,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa8e48",
+          "boxOffset": [
+            -6,
+            66
+          ],
+          "halfExtent": [
+            31,
+            31
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa8e54",
+          "boxOffset": [
+            -6,
+            66
+          ],
+          "halfExtent": [
+            31,
+            31
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa8e60",
+          "boxOffset": [
+            -50,
+            62
+          ],
+          "halfExtent": [
+            36,
+            15
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8e6c",
+          "boxOffset": [
+            -50,
+            62
+          ],
+          "halfExtent": [
+            42,
+            24
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa8e78",
+          "boxOffset": [
+            -5,
+            33
+          ],
+          "halfExtent": [
+            48,
+            33
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 26
+        },
+        {
+          "address": "0xa8e84",
+          "boxOffset": [
+            -4,
+            34
+          ],
+          "halfExtent": [
+            53,
+            35
+          ],
+          "damageCategory": 141,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 26
+        },
+        {
+          "address": "0xa8e90",
+          "boxOffset": [
+            -5,
+            39
+          ],
+          "halfExtent": [
+            57,
+            40
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 26
+        },
+        {
+          "address": "0xa8e9c",
+          "boxOffset": [
+            -76,
+            12
+          ],
+          "halfExtent": [
+            51,
+            12
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Guile",
+      "pushboxHalfWidth": 30,
+      "recordCount": 40,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xa9090",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa909c",
+          "boxOffset": [
+            -55,
+            72
+          ],
+          "halfExtent": [
+            25,
+            9
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90a8",
+          "boxOffset": [
+            -58,
+            74
+          ],
+          "halfExtent": [
+            38,
+            5
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90b4",
+          "boxOffset": [
+            -40,
+            72
+          ],
+          "halfExtent": [
+            31,
+            9
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90c0",
+          "boxOffset": [
+            -60,
+            74
+          ],
+          "halfExtent": [
+            30,
+            6
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90cc",
+          "boxOffset": [
+            -57,
+            73
+          ],
+          "halfExtent": [
+            30,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90d8",
+          "boxOffset": [
+            -101,
+            78
+          ],
+          "halfExtent": [
+            31,
+            7
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90e4",
+          "boxOffset": [
+            -48,
+            40
+          ],
+          "halfExtent": [
+            38,
+            12
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90f0",
+          "boxOffset": [
+            -43,
+            87
+          ],
+          "halfExtent": [
+            29,
+            28
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa90fc",
+          "boxOffset": [
+            -56,
+            46
+          ],
+          "halfExtent": [
+            30,
+            17
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9108",
+          "boxOffset": [
+            -60,
+            76
+          ],
+          "halfExtent": [
+            40,
+            10
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9114",
+          "boxOffset": [
+            -42,
+            76
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9120",
+          "boxOffset": [
+            -67,
+            74
+          ],
+          "halfExtent": [
+            56,
+            20
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa912c",
+          "boxOffset": [
+            -63,
+            89
+          ],
+          "halfExtent": [
+            42,
+            13
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9138",
+          "boxOffset": [
+            -51,
+            50
+          ],
+          "halfExtent": [
+            25,
+            2
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9144",
+          "boxOffset": [
+            -52,
+            37
+          ],
+          "halfExtent": [
+            25,
+            10
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9150",
+          "boxOffset": [
+            -48,
+            71
+          ],
+          "halfExtent": [
+            27,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa915c",
+          "boxOffset": [
+            -42,
+            90
+          ],
+          "halfExtent": [
+            20,
+            21
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9168",
+          "boxOffset": [
+            -49,
+            13
+          ],
+          "halfExtent": [
+            44,
+            13
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9174",
+          "boxOffset": [
+            -72,
+            13
+          ],
+          "halfExtent": [
+            58,
+            13
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9180",
+          "boxOffset": [
+            -52,
+            13
+          ],
+          "halfExtent": [
+            53,
+            13
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa918c",
+          "boxOffset": [
+            -73,
+            13
+          ],
+          "halfExtent": [
+            67,
+            13
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9198",
+          "boxOffset": [
+            -50,
+            62
+          ],
+          "halfExtent": [
+            22,
+            18
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91a4",
+          "boxOffset": [
+            -58,
+            53
+          ],
+          "halfExtent": [
+            22,
+            18
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91b0",
+          "boxOffset": [
+            -60,
+            48
+          ],
+          "halfExtent": [
+            31,
+            23
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91bc",
+          "boxOffset": [
+            -43,
+            65
+          ],
+          "halfExtent": [
+            21,
+            31
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91c8",
+          "boxOffset": [
+            -49,
+            65
+          ],
+          "halfExtent": [
+            31,
+            31
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91d4",
+          "boxOffset": [
+            -67,
+            67
+          ],
+          "halfExtent": [
+            52,
+            13
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91e0",
+          "boxOffset": [
+            -34,
+            87
+          ],
+          "halfExtent": [
+            25,
+            14
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91ec",
+          "boxOffset": [
+            -38,
+            84
+          ],
+          "halfExtent": [
+            36,
+            14
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa91f8",
+          "boxOffset": [
+            -38,
+            81
+          ],
+          "halfExtent": [
+            42,
+            20
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9204",
+          "boxOffset": [
+            -28,
+            64
+          ],
+          "halfExtent": [
+            25,
+            17
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9210",
+          "boxOffset": [
+            -45,
+            51
+          ],
+          "halfExtent": [
+            40,
+            15
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa921c",
+          "boxOffset": [
+            -67,
+            67
+          ],
+          "halfExtent": [
+            52,
+            13
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9228",
+          "boxOffset": [
+            -46,
+            41
+          ],
+          "halfExtent": [
+            42,
+            34
+          ],
+          "damageCategory": 141,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa9234",
+          "boxOffset": [
+            -71,
+            53
+          ],
+          "halfExtent": [
+            43,
+            48
+          ],
+          "damageCategory": 141,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa9240",
+          "boxOffset": [
+            -46,
+            41
+          ],
+          "halfExtent": [
+            42,
+            34
+          ],
+          "damageCategory": 141,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa924c",
+          "boxOffset": [
+            -71,
+            53
+          ],
+          "halfExtent": [
+            43,
+            48
+          ],
+          "damageCategory": 141,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa9258",
+          "boxOffset": [
+            -46,
+            41
+          ],
+          "halfExtent": [
+            42,
+            34
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa9264",
+          "boxOffset": [
+            -71,
+            53
+          ],
+          "halfExtent": [
+            43,
+            48
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ken",
+      "pushboxHalfWidth": 29,
+      "recordCount": 48,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xa9428",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9434",
+          "boxOffset": [
+            -33,
+            85
+          ],
+          "halfExtent": [
+            19,
+            8
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9440",
+          "boxOffset": [
+            -35,
+            75
+          ],
+          "halfExtent": [
+            25,
+            9
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa944c",
+          "boxOffset": [
+            -50,
+            77
+          ],
+          "halfExtent": [
+            34,
+            7
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9458",
+          "boxOffset": [
+            -40,
+            71
+          ],
+          "halfExtent": [
+            26,
+            13
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9464",
+          "boxOffset": [
+            -43,
+            71
+          ],
+          "halfExtent": [
+            31,
+            13
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9470",
+          "boxOffset": [
+            -44,
+            88
+          ],
+          "halfExtent": [
+            36,
+            20
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa947c",
+          "boxOffset": [
+            -39,
+            46
+          ],
+          "halfExtent": [
+            31,
+            7
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9488",
+          "boxOffset": [
+            -44,
+            42
+          ],
+          "halfExtent": [
+            36,
+            11
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9494",
+          "boxOffset": [
+            -37,
+            68
+          ],
+          "halfExtent": [
+            28,
+            20
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94a0",
+          "boxOffset": [
+            -34,
+            85
+          ],
+          "halfExtent": [
+            21,
+            30
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94ac",
+          "boxOffset": [
+            -29,
+            74
+          ],
+          "halfExtent": [
+            21,
+            16
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94b8",
+          "boxOffset": [
+            -30,
+            81
+          ],
+          "halfExtent": [
+            31,
+            11
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94c4",
+          "boxOffset": [
+            -30,
+            81
+          ],
+          "halfExtent": [
+            31,
+            11
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94d0",
+          "boxOffset": [
+            -52,
+            21
+          ],
+          "halfExtent": [
+            33,
+            21
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94dc",
+          "boxOffset": [
+            -16,
+            83
+          ],
+          "halfExtent": [
+            33,
+            14
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94e8",
+          "boxOffset": [
+            -22,
+            83
+          ],
+          "halfExtent": [
+            40,
+            14
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa94f4",
+          "boxOffset": [
+            -53,
+            57
+          ],
+          "halfExtent": [
+            20,
+            21
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9500",
+          "boxOffset": [
+            -34,
+            82
+          ],
+          "halfExtent": [
+            20,
+            16
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa950c",
+          "boxOffset": [
+            -51,
+            84
+          ],
+          "halfExtent": [
+            31,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9518",
+          "boxOffset": [
+            -43,
+            87
+          ],
+          "halfExtent": [
+            22,
+            33
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9524",
+          "boxOffset": [
+            -62,
+            67
+          ],
+          "halfExtent": [
+            33,
+            18
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9530",
+          "boxOffset": [
+            -56,
+            9
+          ],
+          "halfExtent": [
+            33,
+            12
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa953c",
+          "boxOffset": [
+            -58,
+            9
+          ],
+          "halfExtent": [
+            40,
+            12
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9548",
+          "boxOffset": [
+            -58,
+            9
+          ],
+          "halfExtent": [
+            43,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9554",
+          "boxOffset": [
+            -18,
+            70
+          ],
+          "halfExtent": [
+            25,
+            20
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9560",
+          "boxOffset": [
+            -34,
+            56
+          ],
+          "halfExtent": [
+            46,
+            25
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa956c",
+          "boxOffset": [
+            -10,
+            75
+          ],
+          "halfExtent": [
+            34,
+            19
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9578",
+          "boxOffset": [
+            -16,
+            75
+          ],
+          "halfExtent": [
+            39,
+            19
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9584",
+          "boxOffset": [
+            -24,
+            61
+          ],
+          "halfExtent": [
+            49,
+            12
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9590",
+          "boxOffset": [
+            -30,
+            55
+          ],
+          "halfExtent": [
+            56,
+            18
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa959c",
+          "boxOffset": [
+            -30,
+            45
+          ],
+          "halfExtent": [
+            28,
+            22
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa95a8",
+          "boxOffset": [
+            -27,
+            79
+          ],
+          "halfExtent": [
+            26,
+            44
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa95b4",
+          "boxOffset": [
+            -35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 128,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa95c0",
+          "boxOffset": [
+            35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 128,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa95cc",
+          "boxOffset": [
+            -13,
+            56
+          ],
+          "halfExtent": [
+            26,
+            15
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa95d8",
+          "boxOffset": [
+            -54,
+            77
+          ],
+          "halfExtent": [
+            38,
+            7
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa95e4",
+          "boxOffset": [
+            -35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 128,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa95f0",
+          "boxOffset": [
+            35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 128,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa95fc",
+          "boxOffset": [
+            -35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 128,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa9608",
+          "boxOffset": [
+            35,
+            67
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 128,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa9614",
+          "boxOffset": [
+            -30,
+            45
+          ],
+          "halfExtent": [
+            28,
+            22
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa9620",
+          "boxOffset": [
+            -27,
+            79
+          ],
+          "halfExtent": [
+            26,
+            44
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa962c",
+          "boxOffset": [
+            -30,
+            45
+          ],
+          "halfExtent": [
+            28,
+            22
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 20
+        },
+        {
+          "address": "0xa9638",
+          "boxOffset": [
+            -27,
+            79
+          ],
+          "halfExtent": [
+            26,
+            44
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 28
+        },
+        {
+          "address": "0xa9644",
+          "boxOffset": [
+            -29,
+            77
+          ],
+          "halfExtent": [
+            21,
+            19
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa9650",
+          "boxOffset": [
+            -33,
+            59
+          ],
+          "halfExtent": [
+            31,
+            9
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xa965c",
+          "boxOffset": [
+            -33,
+            59
+          ],
+          "halfExtent": [
+            31,
+            9
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Chun-Li",
+      "pushboxHalfWidth": 25,
+      "recordCount": 0,
+      "status": "nonstandard header skipped",
+      "records": []
+    },
+    {
+      "id": 6,
+      "name": "Zangief",
+      "pushboxHalfWidth": 45,
+      "recordCount": 0,
+      "status": "nonstandard header skipped",
+      "records": []
+    },
+    {
+      "id": 7,
+      "name": "Dhalsim",
+      "pushboxHalfWidth": 35,
+      "recordCount": 44,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xaa004",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa010",
+          "boxOffset": [
+            -30,
+            86
+          ],
+          "halfExtent": [
+            22,
+            12
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa01c",
+          "boxOffset": [
+            -44,
+            80
+          ],
+          "halfExtent": [
+            35,
+            6
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa028",
+          "boxOffset": [
+            -62,
+            69
+          ],
+          "halfExtent": [
+            34,
+            9
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa034",
+          "boxOffset": [
+            -47,
+            50
+          ],
+          "halfExtent": [
+            17,
+            15
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa040",
+          "boxOffset": [
+            -55,
+            56
+          ],
+          "halfExtent": [
+            16,
+            15
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa04c",
+          "boxOffset": [
+            0,
+            40
+          ],
+          "halfExtent": [
+            26,
+            14
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa058",
+          "boxOffset": [
+            -42,
+            59
+          ],
+          "halfExtent": [
+            24,
+            17
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa064",
+          "boxOffset": [
+            -54,
+            56
+          ],
+          "halfExtent": [
+            35,
+            17
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa070",
+          "boxOffset": [
+            0,
+            40
+          ],
+          "halfExtent": [
+            41,
+            14
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa07c",
+          "boxOffset": [
+            -74,
+            83
+          ],
+          "halfExtent": [
+            40,
+            14
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa088",
+          "boxOffset": [
+            -72,
+            81
+          ],
+          "halfExtent": [
+            42,
+            13
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa094",
+          "boxOffset": [
+            -127,
+            86
+          ],
+          "halfExtent": [
+            35,
+            13
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0a0",
+          "boxOffset": [
+            0,
+            93
+          ],
+          "halfExtent": [
+            35,
+            13
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0ac",
+          "boxOffset": [
+            -50,
+            57
+          ],
+          "halfExtent": [
+            37,
+            20
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0b8",
+          "boxOffset": [
+            0,
+            93
+          ],
+          "halfExtent": [
+            36,
+            17
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0c4",
+          "boxOffset": [
+            -64,
+            48
+          ],
+          "halfExtent": [
+            33,
+            12
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0d0",
+          "boxOffset": [
+            -68,
+            48
+          ],
+          "halfExtent": [
+            41,
+            12
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0dc",
+          "boxOffset": [
+            0,
+            15
+          ],
+          "halfExtent": [
+            30,
+            12
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0e8",
+          "boxOffset": [
+            0,
+            15
+          ],
+          "halfExtent": [
+            39,
+            12
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa0f4",
+          "boxOffset": [
+            0,
+            15
+          ],
+          "halfExtent": [
+            48,
+            12
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa100",
+          "boxOffset": [
+            -24,
+            15
+          ],
+          "halfExtent": [
+            38,
+            13
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa10c",
+          "boxOffset": [
+            -27,
+            15
+          ],
+          "halfExtent": [
+            41,
+            13
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa118",
+          "boxOffset": [
+            -31,
+            15
+          ],
+          "halfExtent": [
+            45,
+            13
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa124",
+          "boxOffset": [
+            -53,
+            13
+          ],
+          "halfExtent": [
+            45,
+            13
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa130",
+          "boxOffset": [
+            -53,
+            13
+          ],
+          "halfExtent": [
+            45,
+            13
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa13c",
+          "boxOffset": [
+            -93,
+            61
+          ],
+          "halfExtent": [
+            27,
+            13
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa148",
+          "boxOffset": [
+            -106,
+            53
+          ],
+          "halfExtent": [
+            27,
+            13
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa154",
+          "boxOffset": [
+            -119,
+            45
+          ],
+          "halfExtent": [
+            27,
+            13
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa160",
+          "boxOffset": [
+            -48,
+            64
+          ],
+          "halfExtent": [
+            29,
+            19
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa16c",
+          "boxOffset": [
+            -48,
+            64
+          ],
+          "halfExtent": [
+            29,
+            19
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa178",
+          "boxOffset": [
+            0,
+            58
+          ],
+          "halfExtent": [
+            21,
+            14
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa184",
+          "boxOffset": [
+            0,
+            54
+          ],
+          "halfExtent": [
+            33,
+            19
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa190",
+          "boxOffset": [
+            -125,
+            98
+          ],
+          "halfExtent": [
+            36,
+            23
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa19c",
+          "boxOffset": [
+            -30,
+            32
+          ],
+          "halfExtent": [
+            32,
+            20
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1a8",
+          "boxOffset": [
+            -30,
+            32
+          ],
+          "halfExtent": [
+            32,
+            20
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1b4",
+          "boxOffset": [
+            -112,
+            40
+          ],
+          "halfExtent": [
+            26,
+            14
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1c0",
+          "boxOffset": [
+            -110,
+            40
+          ],
+          "halfExtent": [
+            26,
+            14
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1cc",
+          "boxOffset": [
+            -93,
+            61
+          ],
+          "halfExtent": [
+            27,
+            13
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1d8",
+          "boxOffset": [
+            -106,
+            53
+          ],
+          "halfExtent": [
+            27,
+            13
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1e4",
+          "boxOffset": [
+            -119,
+            45
+          ],
+          "halfExtent": [
+            27,
+            13
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1f0",
+          "boxOffset": [
+            0,
+            58
+          ],
+          "halfExtent": [
+            21,
+            14
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa1fc",
+          "boxOffset": [
+            0,
+            54
+          ],
+          "halfExtent": [
+            33,
+            19
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa208",
+          "boxOffset": [
+            -125,
+            98
+          ],
+          "halfExtent": [
+            36,
+            23
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "M.Bison(dictator)",
+      "pushboxHalfWidth": 28,
+      "recordCount": 67,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xaa31c",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa328",
+          "boxOffset": [
+            -45,
+            77
+          ],
+          "halfExtent": [
+            28,
+            6
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa334",
+          "boxOffset": [
+            -47,
+            56
+          ],
+          "halfExtent": [
+            35,
+            5
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa340",
+          "boxOffset": [
+            -2,
+            8
+          ],
+          "halfExtent": [
+            33,
+            8
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa34c",
+          "boxOffset": [
+            -27,
+            65
+          ],
+          "halfExtent": [
+            44,
+            15
+          ],
+          "damageCategory": 135,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa358",
+          "boxOffset": [
+            -23,
+            25
+          ],
+          "halfExtent": [
+            29,
+            22
+          ],
+          "damageCategory": 138,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa364",
+          "boxOffset": [
+            -67,
+            64
+          ],
+          "halfExtent": [
+            46,
+            8
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa370",
+          "boxOffset": [
+            -37,
+            44
+          ],
+          "halfExtent": [
+            31,
+            5
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa37c",
+          "boxOffset": [
+            -46,
+            62
+          ],
+          "halfExtent": [
+            31,
+            15
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa388",
+          "boxOffset": [
+            -29,
+            58
+          ],
+          "halfExtent": [
+            43,
+            12
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa394",
+          "boxOffset": [
+            -8,
+            1
+          ],
+          "halfExtent": [
+            18,
+            21
+          ],
+          "damageCategory": 132,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 36
+        },
+        {
+          "address": "0xaa3a0",
+          "boxOffset": [
+            -9,
+            20
+          ],
+          "halfExtent": [
+            18,
+            26
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa3ac",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa3b8",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa3c4",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa3d0",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 138,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa3dc",
+          "boxOffset": [
+            -33,
+            57
+          ],
+          "halfExtent": [
+            21,
+            19
+          ],
+          "damageCategory": 136,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa3e8",
+          "boxOffset": [
+            36,
+            57
+          ],
+          "halfExtent": [
+            50,
+            16
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa3f4",
+          "boxOffset": [
+            -53,
+            56
+          ],
+          "halfExtent": [
+            41,
+            5
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa400",
+          "boxOffset": [
+            -72,
+            64
+          ],
+          "halfExtent": [
+            51,
+            8
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa40c",
+          "boxOffset": [
+            -79,
+            64
+          ],
+          "halfExtent": [
+            58,
+            8
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa418",
+          "boxOffset": [
+            -42,
+            48
+          ],
+          "halfExtent": [
+            36,
+            9
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa424",
+          "boxOffset": [
+            -46,
+            52
+          ],
+          "halfExtent": [
+            40,
+            13
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa430",
+          "boxOffset": [
+            -5,
+            8
+          ],
+          "halfExtent": [
+            34,
+            8
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa43c",
+          "boxOffset": [
+            -9,
+            8
+          ],
+          "halfExtent": [
+            38,
+            8
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa448",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa454",
+          "boxOffset": [
+            -44,
+            56
+          ],
+          "halfExtent": [
+            26,
+            8
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa460",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa46c",
+          "boxOffset": [
+            -48,
+            61
+          ],
+          "halfExtent": [
+            30,
+            13
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa478",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa484",
+          "boxOffset": [
+            -51,
+            67
+          ],
+          "halfExtent": [
+            33,
+            19
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa490",
+          "boxOffset": [
+            -51,
+            62
+          ],
+          "halfExtent": [
+            36,
+            15
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa49c",
+          "boxOffset": [
+            -57,
+            62
+          ],
+          "halfExtent": [
+            42,
+            15
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4a8",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4b4",
+          "boxOffset": [
+            -44,
+            56
+          ],
+          "halfExtent": [
+            26,
+            8
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4c0",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4cc",
+          "boxOffset": [
+            -48,
+            61
+          ],
+          "halfExtent": [
+            30,
+            13
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4d8",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4e4",
+          "boxOffset": [
+            -51,
+            67
+          ],
+          "halfExtent": [
+            33,
+            19
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4f0",
+          "boxOffset": [
+            -33,
+            58
+          ],
+          "halfExtent": [
+            48,
+            12
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa4fc",
+          "boxOffset": [
+            -38,
+            58
+          ],
+          "halfExtent": [
+            52,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa508",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 138,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa514",
+          "boxOffset": [
+            -38,
+            57
+          ],
+          "halfExtent": [
+            26,
+            19
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa520",
+          "boxOffset": [
+            36,
+            57
+          ],
+          "halfExtent": [
+            50,
+            16
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa52c",
+          "boxOffset": [
+            -28,
+            40
+          ],
+          "halfExtent": [
+            28,
+            16
+          ],
+          "damageCategory": 138,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa538",
+          "boxOffset": [
+            -45,
+            57
+          ],
+          "halfExtent": [
+            33,
+            19
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa544",
+          "boxOffset": [
+            36,
+            57
+          ],
+          "halfExtent": [
+            50,
+            16
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa550",
+          "boxOffset": [
+            -27,
+            65
+          ],
+          "halfExtent": [
+            44,
+            15
+          ],
+          "damageCategory": 136,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa55c",
+          "boxOffset": [
+            -23,
+            25
+          ],
+          "halfExtent": [
+            29,
+            22
+          ],
+          "damageCategory": 138,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa568",
+          "boxOffset": [
+            -27,
+            65
+          ],
+          "halfExtent": [
+            44,
+            15
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa574",
+          "boxOffset": [
+            -23,
+            25
+          ],
+          "halfExtent": [
+            29,
+            22
+          ],
+          "damageCategory": 138,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa580",
+          "boxOffset": [
+            -8,
+            16
+          ],
+          "halfExtent": [
+            18,
+            21
+          ],
+          "damageCategory": 133,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 36
+        },
+        {
+          "address": "0xaa58c",
+          "boxOffset": [
+            -8,
+            16
+          ],
+          "halfExtent": [
+            18,
+            21
+          ],
+          "damageCategory": 134,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 36
+        },
+        {
+          "address": "0xaa598",
+          "boxOffset": [
+            -34,
+            12
+          ],
+          "halfExtent": [
+            34,
+            9
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa5a4",
+          "boxOffset": [
+            -47,
+            12
+          ],
+          "halfExtent": [
+            44,
+            9
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa5b0",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa5bc",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa5c8",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa5d4",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa5e0",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa5ec",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa5f8",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa604",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa610",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa61c",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa628",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 34
+        },
+        {
+          "address": "0xaa634",
+          "boxOffset": [
+            0,
+            55
+          ],
+          "halfExtent": [
+            81,
+            15
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 34
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Sagat",
+      "pushboxHalfWidth": 32,
+      "recordCount": 37,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xaa73c",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa748",
+          "boxOffset": [
+            -69,
+            80
+          ],
+          "halfExtent": [
+            35,
+            12
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa754",
+          "boxOffset": [
+            -76,
+            75
+          ],
+          "halfExtent": [
+            43,
+            12
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa760",
+          "boxOffset": [
+            -57,
+            44
+          ],
+          "halfExtent": [
+            29,
+            11
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa76c",
+          "boxOffset": [
+            -39,
+            58
+          ],
+          "halfExtent": [
+            28,
+            17
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa778",
+          "boxOffset": [
+            -96,
+            99
+          ],
+          "halfExtent": [
+            31,
+            17
+          ],
+          "damageCategory": 7,
+          "damageBaseRow": 7,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa784",
+          "boxOffset": [
+            -38,
+            58
+          ],
+          "halfExtent": [
+            27,
+            15
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa790",
+          "boxOffset": [
+            -80,
+            78
+          ],
+          "halfExtent": [
+            49,
+            12
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa79c",
+          "boxOffset": [
+            -44,
+            23
+          ],
+          "halfExtent": [
+            21,
+            21
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa7a8",
+          "boxOffset": [
+            -77,
+            44
+          ],
+          "halfExtent": [
+            44,
+            13
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa7b4",
+          "boxOffset": [
+            -65,
+            65
+          ],
+          "halfExtent": [
+            35,
+            8
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa7c0",
+          "boxOffset": [
+            -65,
+            65
+          ],
+          "halfExtent": [
+            35,
+            8
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa7cc",
+          "boxOffset": [
+            -42,
+            64
+          ],
+          "halfExtent": [
+            25,
+            18
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa7d8",
+          "boxOffset": [
+            -42,
+            44
+          ],
+          "halfExtent": [
+            28,
+            14
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 28
+        },
+        {
+          "address": "0xaa7e4",
+          "boxOffset": [
+            -57,
+            68
+          ],
+          "halfExtent": [
+            42,
+            18
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 28
+        },
+        {
+          "address": "0xaa7f0",
+          "boxOffset": [
+            -61,
+            118
+          ],
+          "halfExtent": [
+            33,
+            39
+          ],
+          "damageCategory": 142,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 28
+        },
+        {
+          "address": "0xaa7fc",
+          "boxOffset": [
+            -42,
+            44
+          ],
+          "halfExtent": [
+            28,
+            14
+          ],
+          "damageCategory": 143,
+          "damageBaseRow": 15,
+          "baseDamageTier0": 30,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa808",
+          "boxOffset": [
+            -57,
+            68
+          ],
+          "halfExtent": [
+            42,
+            18
+          ],
+          "damageCategory": 143,
+          "damageBaseRow": 15,
+          "baseDamageTier0": 30,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa814",
+          "boxOffset": [
+            -61,
+            118
+          ],
+          "halfExtent": [
+            33,
+            39
+          ],
+          "damageCategory": 143,
+          "damageBaseRow": 15,
+          "baseDamageTier0": 30,
+          "hitClass": 28
+        },
+        {
+          "address": "0xaa820",
+          "boxOffset": [
+            -42,
+            44
+          ],
+          "halfExtent": [
+            28,
+            14
+          ],
+          "damageCategory": 144,
+          "damageBaseRow": 16,
+          "baseDamageTier0": 34,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa82c",
+          "boxOffset": [
+            -57,
+            68
+          ],
+          "halfExtent": [
+            42,
+            18
+          ],
+          "damageCategory": 144,
+          "damageBaseRow": 16,
+          "baseDamageTier0": 34,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa838",
+          "boxOffset": [
+            -61,
+            118
+          ],
+          "halfExtent": [
+            33,
+            39
+          ],
+          "damageCategory": 144,
+          "damageBaseRow": 16,
+          "baseDamageTier0": 34,
+          "hitClass": 28
+        },
+        {
+          "address": "0xaa844",
+          "boxOffset": [
+            -52,
+            10
+          ],
+          "halfExtent": [
+            33,
+            10
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa850",
+          "boxOffset": [
+            -62,
+            10
+          ],
+          "halfExtent": [
+            41,
+            10
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa85c",
+          "boxOffset": [
+            -67,
+            10
+          ],
+          "halfExtent": [
+            53,
+            10
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa868",
+          "boxOffset": [
+            -86,
+            78
+          ],
+          "halfExtent": [
+            53,
+            9
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa874",
+          "boxOffset": [
+            -62,
+            44
+          ],
+          "halfExtent": [
+            34,
+            11
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa880",
+          "boxOffset": [
+            -65,
+            44
+          ],
+          "halfExtent": [
+            40,
+            11
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa88c",
+          "boxOffset": [
+            -71,
+            61
+          ],
+          "halfExtent": [
+            42,
+            12
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa898",
+          "boxOffset": [
+            -41,
+            67
+          ],
+          "halfExtent": [
+            20,
+            15
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa8a4",
+          "boxOffset": [
+            -71,
+            61
+          ],
+          "halfExtent": [
+            42,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa8b0",
+          "boxOffset": [
+            -27,
+            67
+          ],
+          "halfExtent": [
+            29,
+            15
+          ],
+          "damageCategory": 131,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa8bc",
+          "boxOffset": [
+            -43,
+            70
+          ],
+          "halfExtent": [
+            32,
+            22
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 28
+        },
+        {
+          "address": "0xaa8c8",
+          "boxOffset": [
+            -27,
+            67
+          ],
+          "halfExtent": [
+            29,
+            15
+          ],
+          "damageCategory": 131,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa8d4",
+          "boxOffset": [
+            -43,
+            70
+          ],
+          "halfExtent": [
+            32,
+            22
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 28
+        },
+        {
+          "address": "0xaa8e0",
+          "boxOffset": [
+            -27,
+            67
+          ],
+          "halfExtent": [
+            29,
+            15
+          ],
+          "damageCategory": 131,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaa8ec",
+          "boxOffset": [
+            -43,
+            70
+          ],
+          "halfExtent": [
+            32,
+            22
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Balrog(boxer)",
+      "pushboxHalfWidth": 27,
+      "recordCount": 29,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xaa9d8",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa9e4",
+          "boxOffset": [
+            -49,
+            84
+          ],
+          "halfExtent": [
+            39,
+            8
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa9f0",
+          "boxOffset": [
+            -68,
+            86
+          ],
+          "halfExtent": [
+            48,
+            9
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaa9fc",
+          "boxOffset": [
+            -41,
+            53
+          ],
+          "halfExtent": [
+            29,
+            10
+          ],
+          "damageCategory": 11,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa08",
+          "boxOffset": [
+            -65,
+            102
+          ],
+          "halfExtent": [
+            26,
+            26
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa14",
+          "boxOffset": [
+            -41,
+            53
+          ],
+          "halfExtent": [
+            29,
+            10
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa20",
+          "boxOffset": [
+            -63,
+            87
+          ],
+          "halfExtent": [
+            26,
+            10
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa2c",
+          "boxOffset": [
+            -44,
+            66
+          ],
+          "halfExtent": [
+            21,
+            16
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa38",
+          "boxOffset": [
+            -44,
+            53
+          ],
+          "halfExtent": [
+            34,
+            9
+          ],
+          "damageCategory": 10,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa44",
+          "boxOffset": [
+            -73,
+            103
+          ],
+          "halfExtent": [
+            18,
+            23
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa50",
+          "boxOffset": [
+            -74,
+            82
+          ],
+          "halfExtent": [
+            41,
+            10
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa5c",
+          "boxOffset": [
+            -92,
+            102
+          ],
+          "halfExtent": [
+            30,
+            27
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa68",
+          "boxOffset": [
+            -94,
+            70
+          ],
+          "halfExtent": [
+            55,
+            9
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa74",
+          "boxOffset": [
+            -64,
+            53
+          ],
+          "halfExtent": [
+            31,
+            13
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaa80",
+          "boxOffset": [
+            -56,
+            97
+          ],
+          "halfExtent": [
+            17,
+            25
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaaa8c",
+          "boxOffset": [
+            -62,
+            71
+          ],
+          "halfExtent": [
+            49,
+            3
+          ],
+          "damageCategory": 137,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaaa98",
+          "boxOffset": [
+            -59,
+            58
+          ],
+          "halfExtent": [
+            52,
+            13
+          ],
+          "damageCategory": 144,
+          "damageBaseRow": 16,
+          "baseDamageTier0": 34,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaaaa4",
+          "boxOffset": [
+            -46,
+            38
+          ],
+          "halfExtent": [
+            26,
+            12
+          ],
+          "damageCategory": 9,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaab0",
+          "boxOffset": [
+            -46,
+            53
+          ],
+          "halfExtent": [
+            23,
+            16
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaabc",
+          "boxOffset": [
+            -38,
+            46
+          ],
+          "halfExtent": [
+            34,
+            16
+          ],
+          "damageCategory": 6,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaac8",
+          "boxOffset": [
+            -51,
+            53
+          ],
+          "halfExtent": [
+            40,
+            9
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaad4",
+          "boxOffset": [
+            -44,
+            66
+          ],
+          "halfExtent": [
+            21,
+            16
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaae0",
+          "boxOffset": [
+            -46,
+            53
+          ],
+          "halfExtent": [
+            23,
+            16
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaaec",
+          "boxOffset": [
+            -46,
+            38
+          ],
+          "halfExtent": [
+            26,
+            12
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaaf8",
+          "boxOffset": [
+            -62,
+            71
+          ],
+          "halfExtent": [
+            49,
+            3
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaab04",
+          "boxOffset": [
+            -62,
+            71
+          ],
+          "halfExtent": [
+            49,
+            3
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaab10",
+          "boxOffset": [
+            -56,
+            97
+          ],
+          "halfExtent": [
+            17,
+            25
+          ],
+          "damageCategory": 139,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaab1c",
+          "boxOffset": [
+            -56,
+            97
+          ],
+          "halfExtent": [
+            17,
+            25
+          ],
+          "damageCategory": 140,
+          "damageBaseRow": 12,
+          "baseDamageTier0": 18,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaab28",
+          "boxOffset": [
+            -57,
+            47
+          ],
+          "halfExtent": [
+            47,
+            14
+          ],
+          "damageCategory": 8,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Vega(claw)",
+      "pushboxHalfWidth": 28,
+      "recordCount": 26,
+      "status": "decoded geometry; move association unverified",
+      "records": [
+        {
+          "address": "0xaad4c",
+          "boxOffset": [
+            0,
+            0
+          ],
+          "halfExtent": [
+            0,
+            0
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaad58",
+          "boxOffset": [
+            -70,
+            70
+          ],
+          "halfExtent": [
+            42,
+            16
+          ],
+          "damageCategory": 74,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaad64",
+          "boxOffset": [
+            -79,
+            52
+          ],
+          "halfExtent": [
+            52,
+            7
+          ],
+          "damageCategory": 70,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaad70",
+          "boxOffset": [
+            -97,
+            54
+          ],
+          "halfExtent": [
+            56,
+            7
+          ],
+          "damageCategory": 74,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaad7c",
+          "boxOffset": [
+            -41,
+            8
+          ],
+          "halfExtent": [
+            34,
+            8
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaad88",
+          "boxOffset": [
+            -52,
+            8
+          ],
+          "halfExtent": [
+            44,
+            8
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaad94",
+          "boxOffset": [
+            -26,
+            67
+          ],
+          "halfExtent": [
+            32,
+            11
+          ],
+          "damageCategory": 1,
+          "damageBaseRow": 1,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaada0",
+          "boxOffset": [
+            -29,
+            57
+          ],
+          "halfExtent": [
+            15,
+            13
+          ],
+          "damageCategory": 0,
+          "damageBaseRow": 0,
+          "baseDamageTier0": 4,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaadac",
+          "boxOffset": [
+            -98,
+            63
+          ],
+          "halfExtent": [
+            58,
+            20
+          ],
+          "damageCategory": 205,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaadb8",
+          "boxOffset": [
+            -3,
+            20
+          ],
+          "halfExtent": [
+            19,
+            36
+          ],
+          "damageCategory": 200,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 38
+        },
+        {
+          "address": "0xaadc4",
+          "boxOffset": [
+            13,
+            40
+          ],
+          "halfExtent": [
+            86,
+            18
+          ],
+          "damageCategory": 200,
+          "damageBaseRow": 8,
+          "baseDamageTier0": 12,
+          "hitClass": 38
+        },
+        {
+          "address": "0xaadd0",
+          "boxOffset": [
+            -74,
+            70
+          ],
+          "halfExtent": [
+            47,
+            16
+          ],
+          "damageCategory": 67,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaaddc",
+          "boxOffset": [
+            -100,
+            54
+          ],
+          "halfExtent": [
+            58,
+            7
+          ],
+          "damageCategory": 67,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaade8",
+          "boxOffset": [
+            -104,
+            54
+          ],
+          "halfExtent": [
+            62,
+            7
+          ],
+          "damageCategory": 70,
+          "damageBaseRow": 6,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaadf4",
+          "boxOffset": [
+            -45,
+            8
+          ],
+          "halfExtent": [
+            38,
+            8
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaae00",
+          "boxOffset": [
+            -34,
+            67
+          ],
+          "halfExtent": [
+            39,
+            11
+          ],
+          "damageCategory": 3,
+          "damageBaseRow": 3,
+          "baseDamageTier0": 7,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaae0c",
+          "boxOffset": [
+            -38,
+            61
+          ],
+          "halfExtent": [
+            44,
+            16
+          ],
+          "damageCategory": 5,
+          "damageBaseRow": 5,
+          "baseDamageTier0": 10,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaae18",
+          "boxOffset": [
+            -36,
+            50
+          ],
+          "halfExtent": [
+            18,
+            15
+          ],
+          "damageCategory": 2,
+          "damageBaseRow": 2,
+          "baseDamageTier0": 5,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaae24",
+          "boxOffset": [
+            -48,
+            41
+          ],
+          "halfExtent": [
+            24,
+            17
+          ],
+          "damageCategory": 4,
+          "damageBaseRow": 4,
+          "baseDamageTier0": 8,
+          "hitClass": 0
+        },
+        {
+          "address": "0xaae30",
+          "boxOffset": [
+            -98,
+            63
+          ],
+          "halfExtent": [
+            58,
+            20
+          ],
+          "damageCategory": 205,
+          "damageBaseRow": 13,
+          "baseDamageTier0": 22,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaae3c",
+          "boxOffset": [
+            -98,
+            63
+          ],
+          "halfExtent": [
+            58,
+            20
+          ],
+          "damageCategory": 206,
+          "damageBaseRow": 14,
+          "baseDamageTier0": 26,
+          "hitClass": 20
+        },
+        {
+          "address": "0xaae48",
+          "boxOffset": [
+            -3,
+            20
+          ],
+          "halfExtent": [
+            19,
+            36
+          ],
+          "damageCategory": 201,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 38
+        },
+        {
+          "address": "0xaae54",
+          "boxOffset": [
+            13,
+            40
+          ],
+          "halfExtent": [
+            86,
+            18
+          ],
+          "damageCategory": 201,
+          "damageBaseRow": 9,
+          "baseDamageTier0": 15,
+          "hitClass": 38
+        },
+        {
+          "address": "0xaae60",
+          "boxOffset": [
+            -3,
+            20
+          ],
+          "halfExtent": [
+            19,
+            36
+          ],
+          "damageCategory": 203,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 38
+        },
+        {
+          "address": "0xaae6c",
+          "boxOffset": [
+            13,
+            40
+          ],
+          "halfExtent": [
+            86,
+            18
+          ],
+          "damageCategory": 203,
+          "damageBaseRow": 11,
+          "baseDamageTier0": 17,
+          "hitClass": 38
+        },
+        {
+          "address": "0xaae78",
+          "boxOffset": [
+            -15,
+            32
+          ],
+          "halfExtent": [
+            17,
+            18
+          ],
+          "damageCategory": 138,
+          "damageBaseRow": 10,
+          "baseDamageTier0": 4,
+          "hitClass": 20
+        }
+      ]
+    }
+  ]
+}

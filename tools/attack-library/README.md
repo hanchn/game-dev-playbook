@@ -31,3 +31,11 @@
 导入：`scripts/import-sff.py --kyo` 或 `--pack Benimaru`；默认源文件路径见脚本。随后执行 `pack-arcade-atlases.py` 压图集。`import-arcade-fx.py` 导入原生特效；`import-kof-stage.py` / `--sf` 导入场景。
 
 `validate-library.py` 检查资源路径、裁切范围与时间；`audit-pixels.py` 检查可选动作是否存在非透明帧。这些检查不能代替视觉确认。重新导入可能覆盖手工整理的招式名称，需重新执行相应整理并检查数据差异；不要并行运行会改写同一 manifest 的导入脚本。
+
+## 2026-10-15 街霸复刻对照批次
+
+新增罗兰多、伊格尔的Jmorphman改编SFF/AIR动作解码、原始7z源包和44组包内效果动画；保留轴心、帧时长、原始AIR碰撞字段。需要未实现CNS物理的动作只供研究，不进入简化自动对战。AIR含非UTF-8注释时保留原始文件哈希并用Latin-1无损读入字节值，避免丢失可解析的数值行。
+
+原作研究包新增SSF2T World 940223和SF2CE World 920513。SSF2T对照FBNeo有23/24项匹配，密钥缺失，尚未启动或提取招式动画。SF2CE经sf2-lineage身份门控与两项字节检查通过；保守复现提取448条几何记录，覆盖10个角色，两个非标准表头跳过。几何记录没有招式关联和起手/有效/收招时序，不能标作完整frame data，更不能直接套用到SSF2T。报告见 data/research 和 data/original-ssf2t-validation.json。
+
+已按固定提交归档sf2-lineage、sf2-hitbox-extractor和sf2-recompile源码研究快照，见 data/research/street-fighter-sources.json；其中原作运行时和逐帧追踪均尚未验证。奶蛙研发与外部研究并行，每项移植须记录版本、来源、已复现证据和缺口。

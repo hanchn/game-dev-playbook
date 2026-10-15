@@ -4,6 +4,9 @@ Unsupported compression fails explicitly. AIR collision metadata retained separa
 """
 import pathlib,struct,json,io,re,hashlib,sys
 from PIL import Image
+def read_air(path):
+ try:return path.read_text(encoding='utf-8-sig')
+ except UnicodeDecodeError:return path.read_text(encoding='latin-1')
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 RAW=ROOT.parents[1]/'output/attack-library/arcade-kfm'
 PACK=sys.argv[sys.argv.index('--pack')+1] if '--pack' in sys.argv else None
@@ -18,7 +21,7 @@ sprites=load_sff(SFF)
 out=ROOT/f'assets/arcade/{KEY}';out.mkdir(parents=True,exist_ok=True)
 labels={0:'idle',20:'walk',21:'walk-back',40:'jump-start',41:'jump',42:'jump-forward',43:'jump-back',47:'jump-land',100:'run',120:'block-start',130:'block',140:'block-end',11:'crouch',200:'attack-punch-light',210:'attack-punch-medium',220:'attack-punch-heavy',230:'attack-kick-light',240:'attack-kick-medium',250:'attack-kick-heavy',5000:'hurt',5100:'fall',5110:'dead',5120:'get-up'}
 sections={};current=None;comment='';names={}
-for line in AIR.read_text(encoding='utf-8-sig').splitlines():
+for line in read_air(AIR).splitlines():
  if line.startswith(';') and len(line.strip('; -'))>2:comment=line.strip('; ')
  match=re.match(r'\[Begin Action\s+(\d+)\]',line,re.I)
  if match:current=int(match[1]);sections[current]=[];names[current]=comment

@@ -1,0 +1,32 @@
+{
+  "sf2ce": {
+    "status": "VERIFIED",
+    "image_crc32": "737d1b2a",
+    "identity_ok": true,
+    "identity_notes": [],
+    "by_layer": {
+      "structure": [
+        2,
+        2
+      ]
+    },
+    "results": [
+      {
+        "id": "engine-ce-reset",
+        "pass": true,
+        "confidence": "VERIFIED",
+        "type": "structure",
+        "got": "00000236",
+        "title": "Champion Edition reset entry differs from WW ($236)"
+      },
+      {
+        "id": "health-ce-init",
+        "pass": true,
+        "confidence": "DERIVED",
+        "type": "structure",
+        "got": "3b7c",
+        "title": "Champion Edition keeps max health 144, init at $2EBC"
+      }
+    ]
+  }
+}

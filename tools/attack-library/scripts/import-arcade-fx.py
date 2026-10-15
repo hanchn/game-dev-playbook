@@ -1,9 +1,14 @@
-import pathlib,re,json
+import pathlib,re,json,sys
 from PIL import Image
 from sff_codec import load_sff
+def read_air(path):
+ try:return path.read_text(encoding='utf-8-sig')
+ except UnicodeDecodeError:return path.read_text(encoding='latin-1')
 ROOT=pathlib.Path(__file__).resolve().parents[1];RAW=ROOT.parents[1]/'output/attack-library/arcade-kfm';result={}
-for pack in ['Kyo','Benimaru','Joe','Kim','King','Vice','Shingo','Ryo','Chun-Li','Ken','Guile']:
- p=RAW/pack;sprites=load_sff(p/'Sprite.sff');text=(p/'Anim.air').read_text(encoding='utf-8-sig');sections={};current=None
+if '--packs' in sys.argv and (ROOT/'data/arcade-fx.json').exists():result=json.loads((ROOT/'data/arcade-fx.json').read_text())
+packs=sys.argv[sys.argv.index('--packs')+1:] if '--packs' in sys.argv else ['Kyo','Benimaru','Joe','Kim','King','Vice','Shingo','Ryo','Chun-Li','Ken','Guile','Rolento','Eagle']
+for pack in packs:
+ p=RAW/pack;sprites=load_sff(p/'Sprite.sff');text=read_air(p/'Anim.air');sections={};current=None
  for line in text.splitlines():
   m=re.match(r'\[Begin Action (\d+)\]',line,re.I)
   if m:current=int(m[1]);sections[current]=[]
