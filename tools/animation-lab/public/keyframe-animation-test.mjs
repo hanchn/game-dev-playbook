@@ -39,3 +39,17 @@ async function mountFx(body){
   fxStop=()=>{playing=false;cancelAnimationFrame(request);};drawFx();request=requestAnimationFrame(tickFx);
  }catch(error){if(session===fxSession){fxAssetsPromise=null;control('status').textContent='无法显示完整演出：'+error.message;}}
 }
+
+// Saved source candidates remain inspectable even when production is stopped.
+const stoppedPanel=document.createElement('section');stoppedPanel.className='panel';stoppedPanel.hidden=true;stoppedPanel.style.marginTop='22px';
+const stoppedTitle=document.createElement('h2'),stoppedNote=document.createElement('p'),stoppedGrid=document.createElement('div');stoppedGrid.className='compare';
+const stoppedControls=document.createElement('div');stoppedControls.className='controls';const stoppedBg=document.createElement('select');stoppedBg.setAttribute('aria-label','受阻素材背景');stoppedBg.append(new Option('深底检查','dark'),new Option('浅底检查','light'));
+const stoppedSpec=document.createElement('a');stoppedSpec.href=asset('blocked-source-handoff-20261016.json');stoppedSpec.textContent='缺图规格与停止记录';stoppedSpec.download='';stoppedControls.append(stoppedBg,stoppedSpec);stoppedPanel.append(stoppedTitle,stoppedNote,stoppedControls,stoppedGrid);$('models').parentElement.before(stoppedPanel);
+let stoppedPreviews=[];function paintStoppedBackground(){for(const img of stoppedGrid.querySelectorAll('img'))img.style.background=stoppedBg.value==='light'?'#f4f2eb':'#172631';}
+function renderStoppedSources(){
+ const entry=stoppedPreviews.find(x=>x.action===$('action').value);stoppedPanel.hidden=!entry;stoppedGrid.replaceChildren();if(!entry)return;
+ stoppedTitle.textContent=entry.label;stoppedNote.textContent=entry.note;
+ for(const item of entry.images){const figure=document.createElement('figure');figure.style.margin='0';const caption=document.createElement('p');caption.textContent=item.label;const img=new Image();img.alt=item.label;img.src=asset(item.path);img.style.width='100%';img.style.display='block';const link=document.createElement('a');link.href=asset(item.path);link.target='_blank';link.rel='noopener';link.textContent='打开原尺寸 PNG';figure.append(caption,img,link);stoppedGrid.append(figure);}paintStoppedBackground();
+}
+stoppedBg.onchange=paintStoppedBackground;const changeAction=$('action').onchange;$('action').onchange=event=>{changeAction(event);renderStoppedSources();};
+fetch(asset('blocked-source-handoff-20261016.json'),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Source status unavailable');return r.json();}).then(data=>{stoppedPreviews=data.previews||[];renderStoppedSources();}).catch(()=>{});
