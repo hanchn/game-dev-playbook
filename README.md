@@ -1,5 +1,7 @@
 # 游戏开发经验包
 
+- 街霸奶蛙按Epic执行“实现 → 测试 → 知识沉淀 → 提交推送”。本轮方法分别见[动作与判定](docs/action-semantics.md)、[单帧规格与导入](docs/asset-pipeline.md)、[姿势/骨架与出图研究](docs/skeletal-asset-recovery.md)、[失败案例](docs/troubleshooting.md)；原作、改编、重建试验和验收状态分开记录。
+
 - [恐龙消防员：失败画面与持续修正](docs/cases/dinosaur-firefighter.md)：十字方向盘、水池尺度、附着火焰、倾桶取水动作、火山可见性、地面锚点与首页/HUD 的实际审图记录（尚未验收）。
 
 从实际小游戏迭代中整理的可复用方法：游戏架构、主视觉与审美、素材出图顺序、序列帧、固定化 UI、加载、结算、性能与问题排查。这里包含经验、Skill，以及可调用的制作与验收工具。
