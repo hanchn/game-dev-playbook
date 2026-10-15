@@ -48,6 +48,7 @@ for aid,lines in sections.items():
 rejected=sorted(set(x[0] for x in missing))
 for aid in rejected:
  action=labels.get(aid,('attack-' if 200<=aid<5000 else 'state-')+str(aid));clips.pop(action,None);actions.pop(action,None);metadata.pop(action,None)
+ for partial in out.glob(f'{aid}-*.png'):partial.unlink()
 c={'id':'arcade-kfm','name':'Kung Fu Man · 原版','kind':'人类 / 格斗','style':'街机 / 精细像素','series':'IKEMEN · Kung Fu Man','perspective':'横版 / 原生左右','source':'https://github.com/ikemen-engine/Ikemen-GO-Screenpack/tree/master/chars/kfm','license':'保留原始来源；授权另行处理','layout':'clips','directions':{'right':0,'left':1},'actions':actions,'clips':clips,'width':200,'height':200,'image':clips['idle'][0]['image'],'recommended':True,'notes':'原始SFF/AIR解码；保留轴心、帧偏移、镜像和60Hz时序。当前是同角色双实例练习，并非两个不同角色。'}
 if IS_KYO:
  c.update(id='arcade-kyo',name='草薙京 · Jmorphman',series='拳皇改编 · Jmorphman',source='https://network.mugenguild.com/jmorphman/characters/kyo-kusanagi/',notes='MUGEN改编版本，不冒充拳皇原版。SFF v1与AIR保留原生帧轴心和时间；CNS招式逻辑尚未模拟。')
