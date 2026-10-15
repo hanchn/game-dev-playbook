@@ -1,0 +1,6761 @@
+{
+  "reason": "动作不足；只有走动或单姿势攻击，不纳入正式库",
+  "candidates": [
+    {
+      "id": "ninja",
+      "name": "蓝忍者",
+      "kind": "人形",
+      "image": "assets/ninja.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://github.com/pixel-boy/NinjaAdventure",
+      "license": "CC0",
+      "notes": "攻击、跳跃、倒地各为单姿势，非多帧连续动作；倒地固定第0列"
+    },
+    {
+      "id": "samurai",
+      "name": "蓝武士",
+      "kind": "人形",
+      "image": "assets/samurai.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://github.com/pixel-boy/NinjaAdventure",
+      "license": "CC0",
+      "notes": "攻击、跳跃、倒地各为单姿势，非多帧连续动作；倒地固定第0列"
+    },
+    {
+      "id": "green",
+      "name": "绿武士",
+      "kind": "人形",
+      "image": "assets/green.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://github.com/pixel-boy/NinjaAdventure",
+      "license": "CC0",
+      "notes": "攻击、跳跃、倒地各为单姿势，非多帧连续动作；倒地固定第0列"
+    },
+    {
+      "id": "pig",
+      "name": "猪",
+      "kind": "动物",
+      "image": "assets/pig.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://github.com/pixel-boy/NinjaAdventure",
+      "license": "CC0",
+      "notes": "左右镜像；无前后帧"
+    },
+    {
+      "id": "na-animal-cat",
+      "name": "Cat",
+      "kind": "动物",
+      "image": "assets/na-animal-cat.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Cat/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-catblack",
+      "name": "CatBlack",
+      "kind": "动物",
+      "image": "assets/na-animal-catblack.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/CatBlack/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-catblack-yellow",
+      "name": "CatBlack · Yellow",
+      "kind": "动物",
+      "image": "assets/na-animal-catblack-yellow.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/CatBlack/SpriteSheetYellow.png"
+    },
+    {
+      "id": "na-animal-catcyclop",
+      "name": "CatCyclop",
+      "kind": "动物",
+      "image": "assets/na-animal-catcyclop.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/CatCyclop/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-catorange",
+      "name": "CatOrange",
+      "kind": "动物",
+      "image": "assets/na-animal-catorange.png",
+      "width": 44,
+      "height": 17,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/CatOrange/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-catorange-faceset",
+      "name": "CatOrange · Faceset",
+      "kind": "动物",
+      "image": "assets/na-animal-catorange-faceset.png",
+      "width": 44,
+      "height": 17,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/CatOrange/SpriteSheetFaceset.png"
+    },
+    {
+      "id": "na-animal-catwhite",
+      "name": "CatWhite",
+      "kind": "动物",
+      "image": "assets/na-animal-catwhite.png",
+      "width": 34,
+      "height": 15,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/CatWhite/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-catwhite-gray",
+      "name": "CatWhite · Gray",
+      "kind": "动物",
+      "image": "assets/na-animal-catwhite-gray.png",
+      "width": 34,
+      "height": 15,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/CatWhite/SpriteSheetGray.png"
+    },
+    {
+      "id": "na-animal-chicken-black",
+      "name": "Chicken · Black",
+      "kind": "鸟类",
+      "image": "assets/na-animal-chicken-black.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Chicken/SpriteSheetBlack.png"
+    },
+    {
+      "id": "na-animal-chicken-brown",
+      "name": "Chicken · Brown",
+      "kind": "鸟类",
+      "image": "assets/na-animal-chicken-brown.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Chicken/SpriteSheetBrown.png"
+    },
+    {
+      "id": "na-animal-chicken-cute",
+      "name": "Chicken · Cute",
+      "kind": "鸟类",
+      "image": "assets/na-animal-chicken-cute.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Chicken/SpriteSheetCute.png"
+    },
+    {
+      "id": "na-animal-chicken-white",
+      "name": "Chicken · White",
+      "kind": "鸟类",
+      "image": "assets/na-animal-chicken-white.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Chicken/SpriteSheetWhite.png"
+    },
+    {
+      "id": "na-animal-cow-white",
+      "name": "Cow · White",
+      "kind": "动物",
+      "image": "assets/na-animal-cow-white.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Cow/SpriteSheetWhite.png"
+    },
+    {
+      "id": "na-animal-cow-whiteside",
+      "name": "Cow · WhiteSide",
+      "kind": "动物",
+      "image": "assets/na-animal-cow-whiteside.png",
+      "width": 48,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Cow/SpriteSheetWhiteSide.png"
+    },
+    {
+      "id": "na-animal-dog",
+      "name": "Dog",
+      "kind": "动物",
+      "image": "assets/na-animal-dog.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Dog/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-dog2",
+      "name": "Dog2",
+      "kind": "动物",
+      "image": "assets/na-animal-dog2.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Dog2/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-dogblack",
+      "name": "DogBlack",
+      "kind": "动物",
+      "image": "assets/na-animal-dogblack.png",
+      "width": 36,
+      "height": 17,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/DogBlack/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-dogblack-white",
+      "name": "DogBlack · White",
+      "kind": "动物",
+      "image": "assets/na-animal-dogblack-white.png",
+      "width": 36,
+      "height": 17,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/DogBlack/SpriteSheetWhite.png"
+    },
+    {
+      "id": "na-animal-dogorange",
+      "name": "DogOrange",
+      "kind": "动物",
+      "image": "assets/na-animal-dogorange.png",
+      "width": 36,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/DogOrange/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-dogorange-brown",
+      "name": "DogOrange · Brown",
+      "kind": "动物",
+      "image": "assets/na-animal-dogorange-brown.png",
+      "width": 36,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/DogOrange/SpriteSheetBrown.png"
+    },
+    {
+      "id": "na-animal-dogyellow",
+      "name": "DogYellow",
+      "kind": "动物",
+      "image": "assets/na-animal-dogyellow.png",
+      "width": 42,
+      "height": 17,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/DogYellow/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-dogyellow-black",
+      "name": "DogYellow · Black",
+      "kind": "动物",
+      "image": "assets/na-animal-dogyellow-black.png",
+      "width": 42,
+      "height": 17,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/DogYellow/SpriteSheetBlack.png"
+    },
+    {
+      "id": "na-animal-donkey-grey",
+      "name": "Donkey · Grey",
+      "kind": "动物",
+      "image": "assets/na-animal-donkey-grey.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Donkey/SpriteSheetGrey.png"
+    },
+    {
+      "id": "na-animal-fish-red",
+      "name": "Fish · Red",
+      "kind": "动物",
+      "image": "assets/na-animal-fish-red.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Fish/SpriteSheetRed.png"
+    },
+    {
+      "id": "na-animal-fish-white",
+      "name": "Fish · White",
+      "kind": "动物",
+      "image": "assets/na-animal-fish-white.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Fish/SpriteSheetWhite.png"
+    },
+    {
+      "id": "na-animal-fish-yellow",
+      "name": "Fish · Yellow",
+      "kind": "动物",
+      "image": "assets/na-animal-fish-yellow.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Fish/SpriteSheetYellow.png"
+    },
+    {
+      "id": "na-animal-frog",
+      "name": "Frog",
+      "kind": "动物",
+      "image": "assets/na-animal-frog.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Frog/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-hamster",
+      "name": "Hamster",
+      "kind": "动物",
+      "image": "assets/na-animal-hamster.png",
+      "width": 30,
+      "height": 15,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Hamster/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-hamster-brown",
+      "name": "Hamster · Brown",
+      "kind": "动物",
+      "image": "assets/na-animal-hamster-brown.png",
+      "width": 30,
+      "height": 13,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Hamster/SpriteSheetBrown.png"
+    },
+    {
+      "id": "na-animal-hamster-dark",
+      "name": "Hamster · Dark",
+      "kind": "动物",
+      "image": "assets/na-animal-hamster-dark.png",
+      "width": 30,
+      "height": 14,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Hamster/SpriteSheetDark.png"
+    },
+    {
+      "id": "na-animal-hamster-gray",
+      "name": "Hamster · Gray",
+      "kind": "动物",
+      "image": "assets/na-animal-hamster-gray.png",
+      "width": 30,
+      "height": 15,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Hamster/SpriteSheetGray.png"
+    },
+    {
+      "id": "na-animal-horse-black",
+      "name": "Horse · Black",
+      "kind": "动物",
+      "image": "assets/na-animal-horse-black.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Horse/SpriteSheetBlack.png"
+    },
+    {
+      "id": "na-animal-horse-blackside",
+      "name": "Horse · BlackSide",
+      "kind": "动物",
+      "image": "assets/na-animal-horse-blackside.png",
+      "width": 46,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Horse/SpriteSheetBlackSide.png"
+    },
+    {
+      "id": "na-animal-horse-brown",
+      "name": "Horse · Brown",
+      "kind": "动物",
+      "image": "assets/na-animal-horse-brown.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Horse/SpriteSheetBrown.png"
+    },
+    {
+      "id": "na-animal-horse-brownside",
+      "name": "Horse · BrownSide",
+      "kind": "动物",
+      "image": "assets/na-animal-horse-brownside.png",
+      "width": 46,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Horse/SpriteSheetBrownSide.png"
+    },
+    {
+      "id": "na-animal-hyena",
+      "name": "Hyena",
+      "kind": "动物",
+      "image": "assets/na-animal-hyena.png",
+      "width": 28,
+      "height": 13,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Hyena/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-hyena-brown",
+      "name": "Hyena · Brown",
+      "kind": "动物",
+      "image": "assets/na-animal-hyena-brown.png",
+      "width": 28,
+      "height": 13,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Hyena/SpriteSheetBrown.png"
+    },
+    {
+      "id": "na-animal-lion-orange",
+      "name": "Lion · Orange",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-orange.png",
+      "width": 32,
+      "height": 23,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetOrange.png"
+    },
+    {
+      "id": "na-animal-lion-orangeside",
+      "name": "Lion · OrangeSide",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-orangeside.png",
+      "width": 60,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetOrangeSide.png"
+    },
+    {
+      "id": "na-animal-lion-red",
+      "name": "Lion · Red",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-red.png",
+      "width": 32,
+      "height": 23,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetRed.png"
+    },
+    {
+      "id": "na-animal-lion-redside",
+      "name": "Lion · RedSide",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-redside.png",
+      "width": 60,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetRedSide.png"
+    },
+    {
+      "id": "na-animal-lion-white",
+      "name": "Lion · White",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-white.png",
+      "width": 32,
+      "height": 23,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetWhite.png"
+    },
+    {
+      "id": "na-animal-lion-whiteside",
+      "name": "Lion · WhiteSide",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-whiteside.png",
+      "width": 60,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetWhiteSide.png"
+    },
+    {
+      "id": "na-animal-lion-yellow",
+      "name": "Lion · Yellow",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-yellow.png",
+      "width": 32,
+      "height": 23,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetYellow.png"
+    },
+    {
+      "id": "na-animal-lion-yellowside",
+      "name": "Lion · YellowSide",
+      "kind": "动物",
+      "image": "assets/na-animal-lion-yellowside.png",
+      "width": 60,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lion/SpriteSheetYellowSide.png"
+    },
+    {
+      "id": "na-animal-lioncub",
+      "name": "LionCub",
+      "kind": "动物",
+      "image": "assets/na-animal-lioncub.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/LionCub/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-lioncub-2",
+      "name": "LionCub · 2",
+      "kind": "动物",
+      "image": "assets/na-animal-lioncub-2.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/LionCub/SpriteSheet2.png"
+    },
+    {
+      "id": "na-animal-lioness-lioness2side",
+      "name": "Lioness · Lioness2Side",
+      "kind": "动物",
+      "image": "assets/na-animal-lioness-lioness2side.png",
+      "width": 60,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lioness/SpriteSheetLioness2Side.png"
+    },
+    {
+      "id": "na-animal-lioness-lionessside",
+      "name": "Lioness · LionessSide",
+      "kind": "动物",
+      "image": "assets/na-animal-lioness-lionessside.png",
+      "width": 60,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Lioness/SpriteSheetLionessSide.png"
+    },
+    {
+      "id": "na-animal-monkey-black",
+      "name": "Monkey · Black",
+      "kind": "动物",
+      "image": "assets/na-animal-monkey-black.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Monkey/SpriteSheetBlack.png"
+    },
+    {
+      "id": "na-animal-monkey-brown",
+      "name": "Monkey · Brown",
+      "kind": "动物",
+      "image": "assets/na-animal-monkey-brown.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Monkey/SpriteSheetBrown.png"
+    },
+    {
+      "id": "na-animal-monkey-grey",
+      "name": "Monkey · Grey",
+      "kind": "动物",
+      "image": "assets/na-animal-monkey-grey.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Monkey/SpriteSheetGrey.png"
+    },
+    {
+      "id": "na-animal-parrot-blue",
+      "name": "Parrot · Blue",
+      "kind": "动物",
+      "image": "assets/na-animal-parrot-blue.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Parrot/SpriteSheetBlue.png"
+    },
+    {
+      "id": "na-animal-parrot-red",
+      "name": "Parrot · Red",
+      "kind": "动物",
+      "image": "assets/na-animal-parrot-red.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Parrot/SpriteSheetRed.png"
+    },
+    {
+      "id": "na-animal-pig-black",
+      "name": "Pig · Black",
+      "kind": "动物",
+      "image": "assets/na-animal-pig-black.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Pig/SpriteSheetBlack.png"
+    },
+    {
+      "id": "na-animal-pig-pink",
+      "name": "Pig · Pink",
+      "kind": "动物",
+      "image": "assets/na-animal-pig-pink.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Pig/SpriteSheetPink.png"
+    },
+    {
+      "id": "na-animal-pig-red",
+      "name": "Pig · Red",
+      "kind": "动物",
+      "image": "assets/na-animal-pig-red.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Pig/SpriteSheetRed.png"
+    },
+    {
+      "id": "na-animal-racoon",
+      "name": "Racoon",
+      "kind": "动物",
+      "image": "assets/na-animal-racoon.png",
+      "width": 32,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/Racoon/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-wildboar",
+      "name": "WildBoar",
+      "kind": "动物",
+      "image": "assets/na-animal-wildboar.png",
+      "width": 34,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/WildBoar/SpriteSheet.png"
+    },
+    {
+      "id": "na-animal-wildboar-gray",
+      "name": "WildBoar · Gray",
+      "kind": "动物",
+      "image": "assets/na-animal-wildboar-gray.png",
+      "width": 34,
+      "height": 16,
+      "columns": 2,
+      "rows": 1,
+      "directions": {
+        "left": 0,
+        "right": 0
+      },
+      "layout": "horizontal",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "2帧移动；左右镜像；没有前后与攻击动作。基础动作资源。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Animal/WildBoar/SpriteSheetGray.png"
+    },
+    {
+      "id": "na-character-boy",
+      "name": "Boy",
+      "kind": "人形",
+      "image": "assets/na-character-boy.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Boy/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-camouflagegreen",
+      "name": "CamouflageGreen",
+      "kind": "人形",
+      "image": "assets/na-character-camouflagegreen.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/CamouflageGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-camouflagered",
+      "name": "CamouflageRed",
+      "kind": "人形",
+      "image": "assets/na-character-camouflagered.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/CamouflageRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-cavegirl",
+      "name": "Cavegirl",
+      "kind": "人形",
+      "image": "assets/na-character-cavegirl.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Cavegirl/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-cavegirl2",
+      "name": "Cavegirl2",
+      "kind": "人形",
+      "image": "assets/na-character-cavegirl2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Cavegirl2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-cavelion",
+      "name": "CaveLion",
+      "kind": "人形",
+      "image": "assets/na-character-cavelion.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/CaveLion/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-cavelion2",
+      "name": "CaveLion2",
+      "kind": "人形",
+      "image": "assets/na-character-cavelion2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/CaveLion2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-caveman",
+      "name": "Caveman",
+      "kind": "人形",
+      "image": "assets/na-character-caveman.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Caveman/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-caveman2",
+      "name": "Caveman2",
+      "kind": "人形",
+      "image": "assets/na-character-caveman2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Caveman2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-demongreen",
+      "name": "DemonGreen",
+      "kind": "人形",
+      "image": "assets/na-character-demongreen.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/DemonGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-demonred",
+      "name": "DemonRed",
+      "kind": "人形",
+      "image": "assets/na-character-demonred.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/DemonRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-eggboy",
+      "name": "EggBoy",
+      "kind": "人形",
+      "image": "assets/na-character-eggboy.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/EggBoy/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-egggirl",
+      "name": "EggGirl",
+      "kind": "人形",
+      "image": "assets/na-character-egggirl.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/EggGirl/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-eskimo",
+      "name": "Eskimo",
+      "kind": "人形",
+      "image": "assets/na-character-eskimo.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Eskimo/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-fighterred",
+      "name": "FighterRed",
+      "kind": "人形",
+      "image": "assets/na-character-fighterred.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/FighterRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-fighterwhite",
+      "name": "FighterWhite",
+      "kind": "人形",
+      "image": "assets/na-character-fighterwhite.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/FighterWhite/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-flam",
+      "name": "Flam",
+      "kind": "人形",
+      "image": "assets/na-character-flam.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Flam/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-gladiatorblue",
+      "name": "GladiatorBlue",
+      "kind": "人形",
+      "image": "assets/na-character-gladiatorblue.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/GladiatorBlue/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-goldstatue",
+      "name": "GoldStatue",
+      "kind": "人形",
+      "image": "assets/na-character-goldstatue.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/GoldStatue/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-greenpig",
+      "name": "GreenPig",
+      "kind": "人形",
+      "image": "assets/na-character-greenpig.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/GreenPig/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-hunter",
+      "name": "Hunter",
+      "kind": "人形",
+      "image": "assets/na-character-hunter.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Hunter/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-inspector",
+      "name": "Inspector",
+      "kind": "人形",
+      "image": "assets/na-character-inspector.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Inspector/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-knight",
+      "name": "Knight",
+      "kind": "人形",
+      "image": "assets/na-character-knight.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Knight/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-knightgold",
+      "name": "KnightGold",
+      "kind": "人形",
+      "image": "assets/na-character-knightgold.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/KnightGold/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-lion",
+      "name": "Lion",
+      "kind": "人形",
+      "image": "assets/na-character-lion.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Lion/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-lionboy",
+      "name": "LionBoy",
+      "kind": "人形",
+      "image": "assets/na-character-lionboy.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/LionBoy/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-lionorange",
+      "name": "LionOrange",
+      "kind": "人形",
+      "image": "assets/na-character-lionorange.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/LionOrange/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-lionyellow",
+      "name": "LionYellow",
+      "kind": "人形",
+      "image": "assets/na-character-lionyellow.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/LionYellow/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-mangreen",
+      "name": "ManGreen",
+      "kind": "人形",
+      "image": "assets/na-character-mangreen.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/ManGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-maskfrog",
+      "name": "MaskFrog",
+      "kind": "人形",
+      "image": "assets/na-character-maskfrog.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/MaskFrog/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-maskgoldracoon",
+      "name": "MaskGoldRacoon",
+      "kind": "动物",
+      "image": "assets/na-character-maskgoldracoon.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/MaskGoldRacoon/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-maskracoon",
+      "name": "MaskRacoon",
+      "kind": "动物",
+      "image": "assets/na-character-maskracoon.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/MaskRacoon/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-master",
+      "name": "Master",
+      "kind": "人形",
+      "image": "assets/na-character-master.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Master/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-monk",
+      "name": "Monk",
+      "kind": "人形",
+      "image": "assets/na-character-monk.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Monk/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-monk2",
+      "name": "Monk2",
+      "kind": "人形",
+      "image": "assets/na-character-monk2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Monk2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-monkey",
+      "name": "Monkey",
+      "kind": "人形",
+      "image": "assets/na-character-monkey.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Monkey/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-monkeyboxerblue",
+      "name": "MonkeyBoxerBlue",
+      "kind": "人形",
+      "image": "assets/na-character-monkeyboxerblue.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/MonkeyBoxerBlue/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-monkeyboxerred",
+      "name": "MonkeyBoxerRed",
+      "kind": "人形",
+      "image": "assets/na-character-monkeyboxerred.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/MonkeyBoxerRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjablue",
+      "name": "NinjaBlue",
+      "kind": "人形",
+      "image": "assets/na-character-ninjablue.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaBlue/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjablue2",
+      "name": "NinjaBlue2",
+      "kind": "人形",
+      "image": "assets/na-character-ninjablue2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaBlue2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjabomb",
+      "name": "NinjaBomb",
+      "kind": "人形",
+      "image": "assets/na-character-ninjabomb.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaBomb/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjadark",
+      "name": "NinjaDark",
+      "kind": "人形",
+      "image": "assets/na-character-ninjadark.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaDark/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjaeskimo",
+      "name": "NinjaEskimo",
+      "kind": "人形",
+      "image": "assets/na-character-ninjaeskimo.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaEskimo/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjafire",
+      "name": "NinjaFire",
+      "kind": "人形",
+      "image": "assets/na-character-ninjafire.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaFire/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjagray",
+      "name": "NinjaGray",
+      "kind": "人形",
+      "image": "assets/na-character-ninjagray.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaGray/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjagreen",
+      "name": "NinjaGreen",
+      "kind": "人形",
+      "image": "assets/na-character-ninjagreen.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjaleaf",
+      "name": "NinjaLeaf",
+      "kind": "人形",
+      "image": "assets/na-character-ninjaleaf.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaLeaf/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjamageblack",
+      "name": "NinjaMageBlack",
+      "kind": "人形",
+      "image": "assets/na-character-ninjamageblack.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaMageBlack/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjamageorange",
+      "name": "NinjaMageOrange",
+      "kind": "人形",
+      "image": "assets/na-character-ninjamageorange.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaMageOrange/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjamasked",
+      "name": "NinjaMasked",
+      "kind": "人形",
+      "image": "assets/na-character-ninjamasked.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaMasked/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjared",
+      "name": "NinjaRed",
+      "kind": "人形",
+      "image": "assets/na-character-ninjared.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjared2",
+      "name": "NinjaRed2",
+      "kind": "人形",
+      "image": "assets/na-character-ninjared2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaRed2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjathunder",
+      "name": "NinjaThunder",
+      "kind": "人形",
+      "image": "assets/na-character-ninjathunder.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaThunder/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjawater",
+      "name": "NinjaWater",
+      "kind": "人形",
+      "image": "assets/na-character-ninjawater.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaWater/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-ninjayellow",
+      "name": "NinjaYellow",
+      "kind": "人形",
+      "image": "assets/na-character-ninjayellow.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/NinjaYellow/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-noble",
+      "name": "Noble",
+      "kind": "人形",
+      "image": "assets/na-character-noble.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Noble/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-oldman",
+      "name": "OldMan",
+      "kind": "人形",
+      "image": "assets/na-character-oldman.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/OldMan/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-oldman2",
+      "name": "OldMan2",
+      "kind": "人形",
+      "image": "assets/na-character-oldman2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/OldMan2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-oldman3",
+      "name": "OldMan3",
+      "kind": "人形",
+      "image": "assets/na-character-oldman3.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/OldMan3/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-pig",
+      "name": "Pig",
+      "kind": "人形",
+      "image": "assets/na-character-pig.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Pig/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-princess",
+      "name": "Princess",
+      "kind": "人形",
+      "image": "assets/na-character-princess.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Princess/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-redgladiator",
+      "name": "RedGladiator",
+      "kind": "人形",
+      "image": "assets/na-character-redgladiator.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/RedGladiator/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-redninja3",
+      "name": "RedNinja3",
+      "kind": "人形",
+      "image": "assets/na-character-redninja3.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/RedNinja3/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-robotcamouflage",
+      "name": "RobotCamouflage",
+      "kind": "人形",
+      "image": "assets/na-character-robotcamouflage.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/RobotCamouflage/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-robotgreen",
+      "name": "RobotGreen",
+      "kind": "人形",
+      "image": "assets/na-character-robotgreen.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/RobotGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-robotgrey",
+      "name": "RobotGrey",
+      "kind": "人形",
+      "image": "assets/na-character-robotgrey.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/RobotGrey/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-samurai",
+      "name": "Samurai",
+      "kind": "人形",
+      "image": "assets/na-character-samurai.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Samurai/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-samuraiblue",
+      "name": "SamuraiBlue",
+      "kind": "人形",
+      "image": "assets/na-character-samuraiblue.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/SamuraiBlue/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-shaman",
+      "name": "Shaman",
+      "kind": "人形",
+      "image": "assets/na-character-shaman.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Shaman/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-shamanlion",
+      "name": "ShamanLion",
+      "kind": "人形",
+      "image": "assets/na-character-shamanlion.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/ShamanLion/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-skeleton",
+      "name": "Skeleton",
+      "kind": "人形",
+      "image": "assets/na-character-skeleton.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Skeleton/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-skeletondemon",
+      "name": "SkeletonDemon",
+      "kind": "人形",
+      "image": "assets/na-character-skeletondemon.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/SkeletonDemon/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-sorcererblack",
+      "name": "SorcererBlack",
+      "kind": "人形",
+      "image": "assets/na-character-sorcererblack.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/SorcererBlack/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-sorcererorange",
+      "name": "SorcererOrange",
+      "kind": "人形",
+      "image": "assets/na-character-sorcererorange.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/SorcererOrange/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-spirit",
+      "name": "Spirit",
+      "kind": "人形",
+      "image": "assets/na-character-spirit.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Spirit/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-statue",
+      "name": "Statue",
+      "kind": "人形",
+      "image": "assets/na-character-statue.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Statue/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-sultan",
+      "name": "Sultan",
+      "kind": "人形",
+      "image": "assets/na-character-sultan.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Sultan/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-sultan2",
+      "name": "Sultan2",
+      "kind": "人形",
+      "image": "assets/na-character-sultan2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Sultan2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-tengu",
+      "name": "Tengu",
+      "kind": "人形",
+      "image": "assets/na-character-tengu.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Tengu/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-tengu2",
+      "name": "Tengu2",
+      "kind": "人形",
+      "image": "assets/na-character-tengu2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Tengu2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-vampire",
+      "name": "Vampire",
+      "kind": "人形",
+      "image": "assets/na-character-vampire.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Vampire/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-village6",
+      "name": "Village6",
+      "kind": "人形",
+      "image": "assets/na-character-village6.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Village6/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-villager",
+      "name": "Villager",
+      "kind": "人形",
+      "image": "assets/na-character-villager.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Villager/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-villager2",
+      "name": "Villager2",
+      "kind": "人形",
+      "image": "assets/na-character-villager2.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Villager2/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-villager3",
+      "name": "Villager3",
+      "kind": "人形",
+      "image": "assets/na-character-villager3.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Villager3/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-villager4",
+      "name": "Villager4",
+      "kind": "人形",
+      "image": "assets/na-character-villager4.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Villager4/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-villager5",
+      "name": "Villager5",
+      "kind": "人形",
+      "image": "assets/na-character-villager5.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Villager5/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-villager6",
+      "name": "Villager6",
+      "kind": "人形",
+      "image": "assets/na-character-villager6.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Villager6/SpriteSheet.png"
+    },
+    {
+      "id": "na-character-woman",
+      "name": "Woman",
+      "kind": "人形",
+      "image": "assets/na-character-woman.png",
+      "width": 64,
+      "height": 112,
+      "columns": 4,
+      "rows": 7,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "attack": [
+          4
+        ],
+        "jump": [
+          5
+        ],
+        "dead": [
+          6
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。攻击、跳跃、倒地各1姿势；倒地固定第0列。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Character/Woman/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-axolot",
+      "name": "Axolot",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-axolot.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Axolot/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-axolotblue",
+      "name": "AxolotBlue",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-axolotblue.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/AxolotBlue/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-bamboo",
+      "name": "Bamboo",
+      "kind": "怪物",
+      "image": "assets/na-monster-bamboo.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Bamboo/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-bambooyellow",
+      "name": "BambooYellow",
+      "kind": "怪物",
+      "image": "assets/na-monster-bambooyellow.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/BambooYellow/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-bear",
+      "name": "Bear",
+      "kind": "动物",
+      "image": "assets/na-monster-bear.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Bear/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-bluebat",
+      "name": "BlueBat",
+      "kind": "飞行生物",
+      "image": "assets/na-monster-bluebat.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/BlueBat/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-butterfly",
+      "name": "Butterfly",
+      "kind": "飞行生物",
+      "image": "assets/na-monster-butterfly.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Butterfly/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-butterflyblue",
+      "name": "ButterflyBlue",
+      "kind": "飞行生物",
+      "image": "assets/na-monster-butterflyblue.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/ButterflyBlue/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-cyclope",
+      "name": "Cyclope",
+      "kind": "怪物",
+      "image": "assets/na-monster-cyclope.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Cyclope/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-cyclope2",
+      "name": "Cyclope2",
+      "kind": "怪物",
+      "image": "assets/na-monster-cyclope2.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Cyclope2/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-dragon",
+      "name": "Dragon",
+      "kind": "龙类",
+      "image": "assets/na-monster-dragon.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Dragon/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-dragonyellow",
+      "name": "DragonYellow",
+      "kind": "龙类",
+      "image": "assets/na-monster-dragonyellow.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/DragonYellow/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-fish",
+      "name": "Fish",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-fish.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Fish/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-fishred",
+      "name": "FishRed",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-fishred.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/FishRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-flam",
+      "name": "Flam",
+      "kind": "怪物",
+      "image": "assets/na-monster-flam.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Flam/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-flam2",
+      "name": "Flam2",
+      "kind": "怪物",
+      "image": "assets/na-monster-flam2.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Flam2/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-goldracoon",
+      "name": "GoldRacoon",
+      "kind": "动物",
+      "image": "assets/na-monster-goldracoon.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/GoldRacoon/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-greenoctopus",
+      "name": "GreenOctopus",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-greenoctopus.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/GreenOctopus/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-grey-trex",
+      "name": "Grey Trex",
+      "kind": "恐龙",
+      "image": "assets/na-monster-grey-trex.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Grey Trex/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-heartgreen",
+      "name": "HeartGreen",
+      "kind": "怪物",
+      "image": "assets/na-monster-heartgreen.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/HeartGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-heartred",
+      "name": "HeartRed",
+      "kind": "怪物",
+      "image": "assets/na-monster-heartred.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/HeartRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-kappagreen",
+      "name": "KappaGreen",
+      "kind": "怪物",
+      "image": "assets/na-monster-kappagreen.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/KappaGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-kappared",
+      "name": "KappaRed",
+      "kind": "怪物",
+      "image": "assets/na-monster-kappared.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/KappaRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-lanterngreen",
+      "name": "LanternGreen",
+      "kind": "怪物",
+      "image": "assets/na-monster-lanterngreen.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/LanternGreen/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-lanternred",
+      "name": "LanternRed",
+      "kind": "怪物",
+      "image": "assets/na-monster-lanternred.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/LanternRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-mouse",
+      "name": "Mouse",
+      "kind": "动物",
+      "image": "assets/na-monster-mouse.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Mouse/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-mouseblack",
+      "name": "MouseBlack",
+      "kind": "动物",
+      "image": "assets/na-monster-mouseblack.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/MouseBlack/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-octopus",
+      "name": "Octopus",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-octopus.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Octopus/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-octopus2",
+      "name": "Octopus2",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-octopus2.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Octopus2/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-panda",
+      "name": "Panda",
+      "kind": "动物",
+      "image": "assets/na-monster-panda.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Panda/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-racoon",
+      "name": "Racoon",
+      "kind": "动物",
+      "image": "assets/na-monster-racoon.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Racoon/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-redoctopus",
+      "name": "RedOctopus",
+      "kind": "鱼类 / 水生",
+      "image": "assets/na-monster-redoctopus.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/RedOctopus/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-skull",
+      "name": "Skull",
+      "kind": "怪物",
+      "image": "assets/na-monster-skull.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Skull/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-skullblue",
+      "name": "SkullBlue",
+      "kind": "怪物",
+      "image": "assets/na-monster-skullblue.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/SkullBlue/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-spiderred",
+      "name": "SpiderRed",
+      "kind": "怪物",
+      "image": "assets/na-monster-spiderred.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/SpiderRed/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-spideryellow",
+      "name": "SpiderYellow",
+      "kind": "怪物",
+      "image": "assets/na-monster-spideryellow.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/SpiderYellow/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-spirit",
+      "name": "Spirit",
+      "kind": "怪物",
+      "image": "assets/na-monster-spirit.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Spirit/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-spirit2",
+      "name": "Spirit2",
+      "kind": "怪物",
+      "image": "assets/na-monster-spirit2.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/Spirit2/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-trex",
+      "name": "TRex",
+      "kind": "恐龙",
+      "image": "assets/na-monster-trex.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/TRex/SpriteSheet.png"
+    },
+    {
+      "id": "na-monster-yellowsbat",
+      "name": "YellowsBat",
+      "kind": "飞行生物",
+      "image": "assets/na-monster-yellowsbat.png",
+      "width": 64,
+      "height": 64,
+      "columns": 4,
+      "rows": 4,
+      "directions": {
+        "down": 0,
+        "up": 1,
+        "left": 2,
+        "right": 3
+      },
+      "layout": "direction-columns",
+      "actions": {
+        "idle": [
+          0
+        ],
+        "walk": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "source": "https://pixel-boy.itch.io/ninja-adventure-asset-pack",
+      "license": "CC0",
+      "notes": "四方向4帧走动。",
+      "archivePath": "Ninja Adventure - Asset Pack/Actor/Monster/YellowsBat/SpriteSheet.png"
+    }
+  ]
+}

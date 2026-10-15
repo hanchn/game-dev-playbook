@@ -1,0 +1,101 @@
+{
+  "status": "research-candidates-not-imported",
+  "priority": "high",
+  "userDirection": "以三国题材横版街机清关为重点，增加成熟角色和完整原生动作；三种美术方向均保留",
+  "seriesCandidates": [
+    {
+      "name": "三国战纪",
+      "category": "三国横版清关",
+      "separateSeries": true
+    },
+    {
+      "name": "吞食天地",
+      "category": "三国横版清关",
+      "separateSeries": true
+    },
+    {
+      "name": "圆桌骑士",
+      "category": "兵器横版清关",
+      "separateSeries": true
+    },
+    {
+      "name": "龙与地下城",
+      "category": "魔幻横版清关",
+      "separateSeries": true
+    },
+    {
+      "name": "快打旋风",
+      "category": "都市横版清关",
+      "separateSeries": true
+    },
+    {
+      "name": "恐龙快打",
+      "category": "都市横版清关",
+      "separateSeries": true
+    },
+    {
+      "name": "拳皇 / 街霸",
+      "category": "对战格斗",
+      "separateSeries": true
+    },
+    {
+      "name": "拳皇",
+      "category": "对战格斗",
+      "separateSeries": true
+    },
+    {
+      "name": "街头霸王",
+      "category": "对战格斗",
+      "separateSeries": true
+    },
+    {
+      "name": "魂斗罗",
+      "category": "跑射",
+      "separateSeries": true
+    },
+    {
+      "name": "兰博",
+      "category": "待确认具体版本的动作射击",
+      "separateSeries": true
+    },
+    {
+      "name": "茶杯头",
+      "category": "手绘跑射 / Boss战",
+      "separateSeries": true
+    },
+    {
+      "name": "真人快打",
+      "category": "真人影像对战格斗",
+      "separateSeries": true
+    },
+    {
+      "name": "合金弹头",
+      "category": "精细像素跑射 / 载具 / Boss",
+      "separateSeries": true
+    }
+  ],
+  "acceptance": {
+    "pairing": "同游戏同版本同系列配对；横版清关与对战格斗分别测试",
+    "actions": "按原作实际动作收录待机、移动、连击、武器攻击、跳跃、受击、倒地、抓取、投技、必杀；缺失动作明确标记，不伪造",
+    "metadata": [
+      "原始帧时长",
+      "帧偏移与地面锚点",
+      "原生方向与镜像规则",
+      "攻击与受击框（来源有提供时）",
+      "动作来源与版本"
+    ],
+    "quality": "变色版本不冒充新角色；静态图和未切分图集不计为可用动画；候选不计为已导入"
+  },
+  "verifiedDiscovery": [
+    {
+      "url": "https://www.spriters-resource.com/arcade/knightsofvalour2/page-1/",
+      "type": "三国战纪2图集目录",
+      "status": "搜索命中；直接访问403，未取得素材"
+    },
+    {
+      "url": "https://github.com/DCurrent/openbor",
+      "type": "横版清关引擎与导入格式研究",
+      "status": "引擎来源，不能计为角色素材"
+    }
+  ]
+}
