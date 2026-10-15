@@ -1,0 +1,646 @@
+{
+  "game": "Super Street Fighter II Turbo (World 940223)",
+  "set": "ssf2t",
+  "emulator": "MAME 0.289",
+  "captureMethod": "headless native screen:snapshot + ordinary I/O inputs + read-only RAM",
+  "memoryWrites": false,
+  "nativeViewport": [
+    384,
+    224
+  ],
+  "screenRefreshHz": 59.637405,
+  "phaseScreenTicks": 96,
+  "scriptSHA256": "e9dc9a50592a23a15d6f11eb8ea2282ca30ad5088c9835e71af17f2cf2bc392c",
+  "limitations": [
+    "Only Ryu P1 versus Ken P2; not all sixteen fighters.",
+    "Full viewport observations are not native transparent character frames, original skeletons or authoring canvases.",
+    "State durations include turbo/frameskip/hitstop; they are not startup/active/recovery frame data.",
+    "Debug boxes are reconstructed from community pointer decoding; exact render-to-RAM latency and projectile/throw boxes are not verified.",
+    "KO unsigned life 65535 must not be interpreted as healthy.",
+    "No super capture, all-character fidelity or finished Naifrog art is claimed."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/peon2/fbneo-training-mode/tree/master/games/ssf2t",
+      "role": "RAM address research; raw observed values retained"
+    },
+    {
+      "url": "https://github.com/JordanAnthonyKing/sf2-hitbox-extractor",
+      "commit": "cf65fd8da487affce4b68788c56e0ea3667ed721",
+      "role": "read-only push/hurt/attack pointer and screen-origin reconstruction, original authors Dammit, MZ, Felineki"
+    }
+  ],
+  "runs": [
+    {
+      "id": "motions",
+      "sourceOutput": "output/attack-library/mame-study/reproduction1/motions",
+      "samples": 2112,
+      "snapshots": 691,
+      "phases": [
+        {
+          "id": "idle",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 96
+          },
+          "animationPointers": 6,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "stand-1",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 86,
+            "10": 10
+          },
+          "animationPointers": 10,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "stand-2",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 85,
+            "10": 11
+          },
+          "animationPointers": 11,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "stand-3",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 68,
+            "10": 28
+          },
+          "animationPointers": 12,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "stand-4",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 82,
+            "10": 14
+          },
+          "animationPointers": 11,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "stand-5",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 78,
+            "10": 18
+          },
+          "animationPointers": 10,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "stand-6",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 70,
+            "10": 26
+          },
+          "animationPointers": 12,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "crouch-1",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 17,
+            "2": 69,
+            "10": 10
+          },
+          "animationPointers": 16,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "crouch-2",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 16,
+            "2": 68,
+            "10": 12
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "crouch-3",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 17,
+            "2": 48,
+            "10": 31
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "crouch-4",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 17,
+            "2": 69,
+            "10": 10
+          },
+          "animationPointers": 16,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "crouch-5",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 16,
+            "2": 65,
+            "10": 15
+          },
+          "animationPointers": 17,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "crouch-6",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 16,
+            "2": 52,
+            "10": 28
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "air-1",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 53,
+            "4": 43
+          },
+          "animationPointers": 11,
+          "yRange": [
+            40,
+            117
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "air-2",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 53,
+            "4": 43
+          },
+          "animationPointers": 15,
+          "yRange": [
+            40,
+            117
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "air-3",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 53,
+            "4": 43
+          },
+          "animationPointers": 16,
+          "yRange": [
+            40,
+            118
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "air-4",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 53,
+            "4": 43
+          },
+          "animationPointers": 11,
+          "yRange": [
+            40,
+            118
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "air-5",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 52,
+            "4": 44
+          },
+          "animationPointers": 14,
+          "yRange": [
+            40,
+            118
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "air-6",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 52,
+            "4": 44
+          },
+          "animationPointers": 16,
+          "yRange": [
+            40,
+            118
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "qcf-lp",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 38,
+            "2": 8,
+            "12": 50
+          },
+          "animationPointers": 13,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 128,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "dp-lp",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 57,
+            "2": 4,
+            "12": 35
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            76
+          ],
+          "p2LifeStart": 128,
+          "p2LifeEnd": 128,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "qcb-lk",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 55,
+            "2": 8,
+            "12": 28,
+            "4": 5
+          },
+          "animationPointers": 21,
+          "yRange": [
+            40,
+            63
+          ],
+          "p2LifeStart": 128,
+          "p2LifeEnd": 128,
+          "maxObservedP2Hitfreeze": 0
+        }
+      ],
+      "artifacts": {
+        "motions.png": "9cb24a503a137005782c923f09c854758cdfab30b3973adaf5fd31526a24597f",
+        "motions.json": "ec69dabb96846d5c825ae23ec31fe5d670278f5b99cb7747ed3e4253c09e830b",
+        "motions-actions.csv": "07011a3b2840e3003f0dc76dba5d0ff0fdf4c034b0481f3207bff278b52ecca9",
+        "motions-boxes.csv": "65727408f734eaeeac18322b0d54f3fa52b94d19ec6f34f6072bd01063f10c41",
+        "motions-raw.zip": "02fab5acbc65b9b6b7af3cc78e660ae1b280910db9cfd760247ac6003328ee49"
+      }
+    },
+    {
+      "id": "contact",
+      "sourceOutput": "output/attack-library/mame-study/reproduction1/contact",
+      "samples": 1248,
+      "snapshots": 397,
+      "phases": [
+        {
+          "id": "approach",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 96
+          },
+          "animationPointers": 12,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 144,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "contact-1",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 76,
+            "10": 20
+          },
+          "animationPointers": 12,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 144,
+          "p2LifeEnd": 140,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-2",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 67,
+            "10": 29
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 140,
+          "p2LifeEnd": 122,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-3",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 57,
+            "10": 39
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 122,
+          "p2LifeEnd": 95,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-4",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 71,
+            "10": 25
+          },
+          "animationPointers": 14,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 95,
+          "p2LifeEnd": 83,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-5",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 67,
+            "10": 29
+          },
+          "animationPointers": 16,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 83,
+          "p2LifeEnd": 64,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-6",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 60,
+            "10": 36
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 64,
+          "p2LifeEnd": 38,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-7",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 75,
+            "10": 21
+          },
+          "animationPointers": 13,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 38,
+          "p2LifeEnd": 34,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-8",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 68,
+            "10": 28
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 34,
+          "p2LifeEnd": 13,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-9",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 57,
+            "10": 39
+          },
+          "animationPointers": 18,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 13,
+          "p2LifeEnd": 1,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-10",
+          "samples": 96,
+          "stateHistogram": {
+            "0": 37,
+            "10": 43,
+            "16": 16
+          },
+          "animationPointers": 11,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 1,
+          "p2LifeEnd": 65535,
+          "maxObservedP2Hitfreeze": 14
+        },
+        {
+          "id": "contact-11",
+          "samples": 96,
+          "stateHistogram": {
+            "16": 96
+          },
+          "animationPointers": 1,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 65535,
+          "p2LifeEnd": 65535,
+          "maxObservedP2Hitfreeze": 0
+        },
+        {
+          "id": "contact-12",
+          "samples": 96,
+          "stateHistogram": {
+            "16": 96
+          },
+          "animationPointers": 8,
+          "yRange": [
+            40,
+            40
+          ],
+          "p2LifeStart": 65535,
+          "p2LifeEnd": 65535,
+          "maxObservedP2Hitfreeze": 0
+        }
+      ],
+      "artifacts": {
+        "contact-boxes.csv": "e65b2d0fc34accdbdd3fa007cebf729fb9edd9998f1156808bb2905f797e087d",
+        "contact-raw.zip": "e12f7c88586e6cd0cb75a97bb15a5d850a5b4118cbf53045c2177dd442a3930e",
+        "contact.png": "d242c9ea98ea56415b3685cea2f403f74e6078c72cb0eab4c1e22e731a1627ff",
+        "contact-actions.csv": "ca1fd5895557b5c85395d037d93636a6ba70dc35ba2c802df9b1f9a63ec9f6b2",
+        "contact.json": "73b3c1776dc1fe845625eecdbbb22adb55c448ec3eda7d82bf6825a109274d06"
+      }
+    }
+  ],
+  "browserVerification": {
+    "url": "http://127.0.0.1:4321/original-study.html",
+    "checks": [
+      "22 motion phases loaded",
+      "Hadouken playback advanced; pause stopped",
+      "slider moved to screen frame 4952",
+      "read-only reconstructed boxes toggled",
+      "contact group loaded",
+      "KO phase displayed raw life 65535 as KO",
+      "browser error logs empty"
+    ],
+    "screenshot": "output/attack-library/qa/original-study-ko.png",
+    "screenshotSHA256": "24afdd1fdc1c9bb0731142dc2ef5d2b6d8c73133fddd4a98e20a4f5ff91c7dca"
+  }
+}

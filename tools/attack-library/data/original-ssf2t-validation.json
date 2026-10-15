@@ -154,5 +154,10 @@
   "matched": 23,
   "expected": 24,
   "runtimeStatus": "not tested; encryption key missing",
-  "animationExtractionStatus": "not started; ZIP/CRC verification is not frame or move extraction"
+  "animationExtractionStatus": "not started; ZIP/CRC verification is not frame or move extraction",
+  "subsequentRuntimeStudy": {
+    "note": "This older Kawaks package still lacks its key. A separate complete MAME set now runs; do not overwrite historical package identity.",
+    "packages": "research/mame-0289-packages.json",
+    "runtime": "research/ssf2t-runtime-study.json"
+  }
 }
