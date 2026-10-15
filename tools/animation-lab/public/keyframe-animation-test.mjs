@@ -53,3 +53,14 @@ function renderStoppedSources(){
 }
 stoppedBg.onchange=paintStoppedBackground;const changeAction=$('action').onchange;$('action').onchange=event=>{changeAction(event);renderStoppedSources();};
 fetch(asset('blocked-source-handoff-20261016.json'),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Source status unavailable');return r.json();}).then(data=>{stoppedPreviews=data.previews||[];renderStoppedSources();}).catch(()=>{});
+
+const rosterPanel=document.createElement('details');rosterPanel.className='panel';rosterPanel.style.marginTop='22px';rosterPanel.open=true;
+const rosterTitle=document.createElement('summary');rosterTitle.style.cursor='pointer';rosterTitle.style.fontWeight='700';rosterTitle.textContent='16个角色 · 设定图与动画进度';const rosterNote=document.createElement('p');rosterNote.textContent='设定图已有素材；动画完成数按实际美术验收记录统计。尚未生成的角色不会用奶蛙动画代播。';const rosterGrid=document.createElement('div');rosterGrid.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px';rosterPanel.append(rosterTitle,rosterNote,rosterGrid);document.querySelector('[aria-label="移动动作快捷入口"]').after(rosterPanel);
+let rosterSignature='';async function renderRoster(){
+ try{const responses=await Promise.all(['character-design-references-v1/index.json','production-progress-20261016.json'].map(p=>fetch(asset(p),{cache:'no-store'})));if(responses.some(r=>!r.ok))return;const [designs,ledger]=await Promise.all(responses.map(r=>r.json()));const signature=JSON.stringify([designs,ledger.items]);if(signature===rosterSignature)return;rosterSignature=signature;rosterGrid.replaceChildren();
+ for(const character of designs.characters){const entries=ledger.items.filter(x=>x.character===character.id),passed=entries.filter(x=>x.visualAccepted).length;const card=document.createElement('article');card.style.cssText='border:1px solid #344154;border-radius:10px;padding:10px';const link=document.createElement('a');link.href=asset(character.designImage);link.target='_blank';link.rel='noopener';link.title='查看角色设定原图';const img=new Image();img.alt=character.name+' · 角色设定参考，非动画帧';img.loading='lazy';img.style.cssText='width:100%;aspect-ratio:3/2;object-fit:contain;background:#eee';img.src=link.href;link.append(img);const name=document.createElement('strong');name.textContent=character.name;name.style.display='block';const state=document.createElement('p');state.style.margin='6px 0 0';state.textContent=`动画美术通过 ${passed} / ${ledger.requiredActions.length} · `+(passed===ledger.requiredActions.length?'动作内全部通过，游戏接入另验':passed?'仍有待修/待验项目':entries.some(x=>!x.status.startsWith('queued'))?'制作中，尚未通过':'尚未生成动画');card.append(link,name,state);rosterGrid.append(card);}
+ }catch{rosterNote.textContent='角色进度暂时无法读取，请刷新重试。';}
+}
+renderRoster();setInterval(renderRoster,5000);
+
+const selectAnimationAction=$('action').onchange;$('action').onchange=event=>{rosterPanel.open=false;selectAnimationAction(event);};
