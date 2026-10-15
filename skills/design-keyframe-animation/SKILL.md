@@ -26,7 +26,7 @@ description: 从已确认的角色设计先做四张稳定关键姿势，检查�
 python tools/animation-lab/scripts/rife-four-to-twelve.py --keyframes /absolute/keys --source-gate /absolute/source-gate.json --output /absolute/new-version --clip punch --label 出拳 --asset-prefix relative/new-version
 ```
 
-1/4/7/10为原关键帧，邻帧t=1/3、2/3。倒地等终止动作使用`--terminal`，末段保持最后姿势；不能循环站起。奇数PNG画布仅视频右/下补1px，原PNG坐标不变。RIFE输出为保留暗背景RGB，不能冒称透明游戏精灵。
+RIFE默认1/4/7/10为原关键帧，邻帧t=1/3、2/3。真实绘制中间帧可按动作阶段重新分配时槽：例如回收复杂的踢击用1/4/7/12保留四源，把末尾停留改成半回收、高提膝回收、放脚和落稳，manifest显式写`sourceKeyframePositions:[1,4,7,12]`并保存每帧来源。不得仍声称默认1/4/7/10，也不能把复制帧当新增绘画。倒地等终止动作使用`--terminal`，末段保持最后姿势；不能循环站起。奇数PNG画布仅视频右/下补1px，原PNG坐标不变。RIFE输出为保留暗背景RGB，不能冒称透明游戏精灵。
 
 大位移/遮挡变化易出现缺手脚、熔边、虚化。实际逐帧与慢放找坏帧，必要时用内置imagegen定点绘清晰中间姿势，记录为`generated-inbetween-repair`。不得靠锐化、交叉淡化或复制帧假装修复。用户认可某个补帧版本的效果不代表此算法适用于所有动作。
 
