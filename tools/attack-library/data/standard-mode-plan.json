@@ -1,0 +1,34 @@
+{
+  "epic": "standard-local-original-games",
+  "date": "2026-10-16",
+  "requestedByUser": [
+    "街霸",
+    "拳皇",
+    "合金弹头",
+    "三国战纪",
+    "Empress Pokémon 2D Arena"
+  ],
+  "acceptance": [
+    "原包/ROM及核心身份SHA",
+    "本地断外网可加载",
+    "真实投币/开始/选角或原游戏开始流程",
+    "方向和攻击实际改变原游戏状态",
+    "暂停恢复/重启",
+    "实际对局及输赢或闯关流程",
+    "保留逆向源文件/原时序/已复现与缺失项"
+  ],
+  "status": "in-progress",
+  "scopeNotes": [
+    "MUGEN改编动画演示与原版标准模式分开",
+    "100条目录不代表100款已完成",
+    "模拟器原版可运行不等于完整反编译全部游戏规则",
+    "优先先5类，逐款闭环验收"
+  ],
+  "implementations": {
+    "street_fighter": "SF2CE原ROM+EmulatorJS本地核心候选",
+    "king_of_fighters": "KOF98原ROM/NeoGeo BIOS已存在，待核心验证",
+    "metal_slug": "Metal Slug原ROM已存在，待BIOS/核心验证",
+    "three_kingdoms": "KOV/PGM原包已补齐，待核心验证",
+    "pokemon": "作者Empress1.0.0真实ZIP/ASAR已定位，恢复原server/engine/rules"
+  }
+}
