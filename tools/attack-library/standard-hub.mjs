@@ -23,8 +23,8 @@ export function buildStandardHubModel(manifest, runtime, ranking) {
 const css=`#standard-game-hub{background:linear-gradient(135deg,#152b3b,#202135);border:1px solid #405b75;border-radius:16px;padding:22px;margin:0 0 28px;color:#eef5ff}#standard-game-hub h2{margin:0 0 10px}#standard-game-hub .standard-summary{color:#b8cce0}#standard-game-hub .standard-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}#standard-game-hub article{padding:16px;background:#101b2b;border:1px solid #3b5368;border-radius:12px}#standard-game-hub article h3{margin:0 0 10px;font-size:18px}#standard-game-hub article p{line-height:1.5;font-size:14px}#standard-game-hub .standard-status{color:#ffc976}#standard-game-hub article[data-verified=true] .standard-status{color:#90e8b0}#standard-game-hub a{display:inline-block;background:#255472;color:#fff;padding:9px 14px;border-radius:7px;text-decoration:none}#standard-game-hub code{font-size:11px;overflow-wrap:anywhere;color:#9cb2c8}a[data-standard-hub-nav]{align-self:center;padding:12px;color:#bce9ff;border:1px solid #54728a;border-radius:8px;text-decoration:none}`;
 export function renderStandardHub(model, doc=document) {
   const section=doc.createElement('section');section.id='standard-game-hub';section.setAttribute('aria-label','标准游戏模式');
-  const heading=doc.createElement('h2');heading.textContent='标准游戏模式 · 当前先接前20款';
-  const summary=doc.createElement('p');summary.className='standard-summary';summary.textContent=`目标 ${model.targetGameCount} 款 · 原榜 ${model.rankedEntries} 条 · 原榜已配置 ${model.configuredTargetEntries} 款 · 基础操作实测 ${model.verifiedTargetEntries} 款 · 待操作验收 ${model.remainingTargetEntries} 款`;
+  const heading=doc.createElement('h2');heading.textContent='今天接入的5款游戏';
+  const summary=doc.createElement('p');summary.className='standard-summary';summary.textContent='街霸、拳皇、合金弹头、宝可梦、三国战纪。四款原街机已通过基础操作实测；宝可梦已完成限定操作测试。其余游戏留待后续。';
   const native=doc.createElement('a');native.href='native-play.html';native.textContent='前20款 · 本地窗口标准模式 ↗';
   const note=doc.createElement('p');note.textContent=(model.sets?`原包已取得 ${model.sets.acquired} 款，另有2款无需ROM；本地依赖校验 ${model.sets.setCompatible}/100。`:'')+'以下是原游戏入口。配置或下载完成不等于实际对局通过；宝可梦采用原Web/Node运行，不属于ROM模拟。';
   const grid=doc.createElement('div');grid.className='standard-cards';
@@ -36,7 +36,7 @@ export function renderStandardHub(model, doc=document) {
     if(card.ready){const link=doc.createElement('a');link.href=card.href;link.textContent=card.kind==='original-web-node-game'?'打开原Web游戏 ↗':'打开原标准游戏 ↗';link.target='_blank';link.rel='noopener';article.append(link);}
     grid.append(article);
   }
-  section.append(heading,summary,native,note,grid);return section;
+  section.append(heading,summary,grid);return section;
 }
 export async function mountStandardHub({doc=document,fetcher=fetch}={}) {
   const read=async url=>{const response=await fetcher(url,{cache:'no-store'});if(!response.ok)throw new Error(`标准模式配置读取失败：${url}`);return response.json();};

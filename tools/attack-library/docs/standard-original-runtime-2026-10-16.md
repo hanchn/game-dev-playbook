@@ -54,3 +54,7 @@ python3 -m unittest discover -s tools/attack-library/tests -p 'test_native_runti
 新增原生输入实证：`data/research/native-controls-20261016-v1/v2/v3`。v1投币过早，Pac-Man/Galaga未接收；DonkeyKong控制与开场动画重叠。v2延后自检，Pac-Man信用0→1→真实PLAYER ONE/READY，再见分数70→290及方向移动；Galaga信用0→1→0、真关卡、左右移动和射击分数0→50→210。DonkeyKong投币开局和移动已见，首次跳跃复测仍落在介绍动画，跳跃不计通过。Frogger投币开局/方向动作已见，原生截图224×768含非方形像素，派生审阅图明确缩放到224×256，原PNG保留；不把截图宽高当精灵原生尺寸。上述是引擎真实I/O截图，不是人工桌面窗口测试，也不代表前20款全部验收。
 
 复现：`python3 tools/attack-library/scripts/probe-native-standard-games.py --batch UNIQUE-NAME --control-delay 1440 pacman galaga dkong frogger`；批次不得覆盖，记录源码hash、输入字段、输入事件和原始截图。`native-probe-contact.py BATCH`仅生成标注审阅图。完整动作、通关、音频、多人、长期稳定仍待验。
+
+## 今日最终范围：五款
+
+用户再次明确收敛为街霸、拳皇、合金弹头、宝可梦、三国战纪。今日主入口只展示这五款，停止其他游戏的采集与测试；先前前20/100的资料和未验收探针保留，不再当今日待办。四款原街机基础操作证据见standard-play-qa，Empress限定操作证据见empress-controlled-qa。完整逆向、全部招式与长期稳定性未完成，不宣称百款目标完成。
