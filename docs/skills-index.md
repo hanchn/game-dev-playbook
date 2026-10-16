@@ -26,3 +26,5 @@
 | 技能维护 | skill-creator | 验证发现描述、正文、脚本和参考文档 |
 
 建议组合：生产流程用 `game-production-experience`，具体位图操作用 `imagegen`，动画异常用 `sprite-animation-production`，UI实现用 `game-ui-ux`。性能问题不要靠继续出图解决，先走测量流程。
+
+- [原格斗动作逐帧换图生产](../skills/original-fighter-action-reskin/SKILL.md)：按源独立图、持帧和坐标制作；alpha归属拆帧、逐张接入和原机/美术证据分开验收。
