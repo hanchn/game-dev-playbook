@@ -11,20 +11,21 @@ export function buildStandardHubModel(manifest, runtime, ranking) {
       evidence:originalWeb?item.runtimeEvidence:null};
   });
   const mappings=new Map((manifest.catalogMappings||[]).map(m=>[m.catalogName,m.runtimeGameId]));
-  const entries=(ranking?.games||[]).map(entry=>{
+  const target=manifest.activeBatchCount||manifest.targetGameCount;
+  const entries=(ranking?.games||[]).filter(entry=>entry.rank<=target).map(entry=>{
     const gameId=mappings.get(entry.name),game=configured.get(gameId);
     return {rank:entry.rank,name:entry.name,runtimeGameId:gameId||null,configured:Boolean(game),runtimeVerified:game?.runtimeVerified===true,status:game?.verificationStatus||'not-integrated'};
   });
-  return {targetGameCount:manifest.targetGameCount,rankedEntries:entries.length,configuredTargetEntries:entries.filter(e=>e.configured).length,
-    verifiedTargetEntries:entries.filter(e=>e.runtimeVerified).length,remainingTargetEntries:Math.max(0,manifest.targetGameCount-entries.filter(e=>e.runtimeVerified).length),
+  return {targetGameCount:target,rankedEntries:entries.length,configuredTargetEntries:entries.filter(e=>e.configured).length,
+    verifiedTargetEntries:entries.filter(e=>e.runtimeVerified).length,remainingTargetEntries:Math.max(0,target-entries.filter(e=>e.runtimeVerified).length),
     cards,entries,priorityCardCount:cards.length,priorityRuntimeVerified:cards.filter(c=>c.runtimeVerified).length};
 }
 const css=`#standard-game-hub{background:linear-gradient(135deg,#152b3b,#202135);border:1px solid #405b75;border-radius:16px;padding:22px;margin:0 0 28px;color:#eef5ff}#standard-game-hub h2{margin:0 0 10px}#standard-game-hub .standard-summary{color:#b8cce0}#standard-game-hub .standard-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}#standard-game-hub article{padding:16px;background:#101b2b;border:1px solid #3b5368;border-radius:12px}#standard-game-hub article h3{margin:0 0 10px;font-size:18px}#standard-game-hub article p{line-height:1.5;font-size:14px}#standard-game-hub .standard-status{color:#ffc976}#standard-game-hub article[data-verified=true] .standard-status{color:#90e8b0}#standard-game-hub a{display:inline-block;background:#255472;color:#fff;padding:9px 14px;border-radius:7px;text-decoration:none}#standard-game-hub code{font-size:11px;overflow-wrap:anywhere;color:#9cb2c8}a[data-standard-hub-nav]{align-self:center;padding:12px;color:#bce9ff;border:1px solid #54728a;border-radius:8px;text-decoration:none}`;
 export function renderStandardHub(model, doc=document) {
   const section=doc.createElement('section');section.id='standard-game-hub';section.setAttribute('aria-label','标准游戏模式');
-  const heading=doc.createElement('h2');heading.textContent='标准游戏模式 · 优先五款';
+  const heading=doc.createElement('h2');heading.textContent='标准游戏模式 · 当前先接前20款';
   const summary=doc.createElement('p');summary.className='standard-summary';summary.textContent=`目标 ${model.targetGameCount} 款 · 原榜 ${model.rankedEntries} 条 · 原榜已配置 ${model.configuredTargetEntries} 款 · 基础操作实测 ${model.verifiedTargetEntries} 款 · 待操作验收 ${model.remainingTargetEntries} 款`;
-  const native=doc.createElement('a');native.href='native-play.html';native.textContent='全部街机 · 本地窗口标准模式 ↗';
+  const native=doc.createElement('a');native.href='native-play.html';native.textContent='前20款 · 本地窗口标准模式 ↗';
   const note=doc.createElement('p');note.textContent=(model.sets?`原包已取得 ${model.sets.acquired} 款，另有2款无需ROM；本地依赖校验 ${model.sets.setCompatible}/100。`:'')+'以下是原游戏入口。配置或下载完成不等于实际对局通过；宝可梦采用原Web/Node运行，不属于ROM模拟。';
   const grid=doc.createElement('div');grid.className='standard-cards';
   for(const card of model.cards){const article=doc.createElement('article');article.dataset.game=card.id;article.dataset.verified=String(card.runtimeVerified);
@@ -56,8 +57,8 @@ export async function mountStandardHub({doc=document,fetcher=fetch}={}) {
       table.dataset.runtimeProgress='true';
       for(const label of ['本地原包','标准玩法','逆向解析']){const th=doc.createElement('th');th.textContent=label;table.querySelector('thead tr').append(th);}
       for(const row of table.querySelectorAll('tbody tr')){const item=progressByName.get(row.children[1]?.textContent);if(!item)continue;if(item.acquired&&row.children[2]?.textContent==='待取得')row.children[2].textContent='原生帧/场景待解析';
-        const labels=[item.acquired?'已取得 · CRC/SHA记录':item.relatedVariants?.length?'已有相关版本 · 原版本待核对':'待取得',(item.gameplayVerified||acceptance.games?.[item.standardGameId]?.gameplaySmokeVerified)?'基础操作实测通过':item.bootVerified?'已启动 · 操作待验收':item.standardConfigured?'已配置 · 待验收':'待接入',item.reverseEngineering?.complete?'已完成':item.reverseEngineering?.status==='not-started'?'待解析':'部分解析'];
-        for(const text of labels){const td=doc.createElement('td');td.textContent=text;row.append(td);}
+        const labels=[item.acquired?'已取得 · CRC/SHA记录':item.relatedVariants?.length?'已有相关版本 · 原版本待核对':'待取得',(item.gameplayVerified||acceptance.games?.[item.standardGameId]?.gameplaySmokeVerified)?'基础操作实测通过':item.bootVerified?'已启动 · 操作待验收':(item.standardConfigured||sets?.games?.some(g=>g.id===item.romIdProposal&&g.setCompatible))?'已接本地入口 · 待玩法验收':'待接入',item.reverseEngineering?.complete?'已完成':item.reverseEngineering?.status==='not-started'?'待解析':'部分解析'];
+        for(const [index,text] of labels.entries()){const td=doc.createElement('td');td.textContent=text;if(index===1&&item.rank<=20){const link=doc.createElement('a');link.href='native-play.html?game='+encodeURIComponent(item.romIdProposal);link.textContent=' 打开 ↗';td.append(link);}row.append(td);}
       }
     }
   };attach();

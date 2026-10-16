@@ -1,0 +1,64 @@
+- region "Pokémon arena":
+  - button "Battle menu": ☰
+  - generic: INDIGO STADIUM
+  - generic: QUICK BATTLE
+  - generic: 00:50
+  - generic: PAUSED
+  - generic: Ace sent out Greninja!
+  - generic: ACE
+  - generic: Lv. 50
+  - text: Greninja
+  - generic: Water
+  - generic: Dark
+  - generic: 134 / 147 HP
+  - generic: Torrent
+  - generic: CPU TRAINER
+  - generic: Lv. 50
+  - text: Gimmighoul-Roaming
+  - generic: Ghost
+  - generic: 120 / 120 HP
+  - generic: Run Away · INACTIVE
+  - button "Switch to Pikachu" [disabled]:
+    - generic: "1"
+    - img "Pikachu"
+  - button "Switch to Charizard":
+    - generic: "2"
+    - img "Charizard"
+  - button "Switch to Greninja":
+    - generic: "3"
+    - img "Greninja"
+  - button "Surf":
+    - generic: "1"
+    - generic: WATER
+    - generic: Surf
+    - generic: 14 / 15 PP · SPECIAL
+    - generic: "2.4"
+  - button "Dark Pulse":
+    - generic: "2"
+    - generic: DARK
+    - generic: Dark Pulse
+    - generic: 14 / 15 PP · SPECIAL
+    - generic: "0.2"
+  - button "Ice Beam":
+    - generic: "3"
+    - generic: ICE
+    - generic: Ice Beam
+    - generic: 9 / 10 PP · SPECIAL
+  - button "Protect":
+    - generic: "4"
+    - generic: NORMAL
+    - generic: Protect
+    - generic: 10 / 10 PP · STATUS
+  - text: SPACE
+  - generic: DODGE
+  - generic: W/A/S/D MOVE & FACE · 1/2/3/4 ATTACK · SPACE DODGE · Q/E SWITCH
+- dialog:
+  - generic: ARENA BATTLE
+  - heading "TAKE A BREATH." [level=2]
+  - paragraph: Battle paused. Take your time, adjust your controls, and return when you are ready.
+  - button "RETURN TO BATTLE" [active]
+  - button "SOUND"
+  - button "KEYBINDS"
+  - button "TOUCH LAYOUT"
+  - button "LEAVE MATCH"
+- status: Welcome, Ace. Your journey begins here.

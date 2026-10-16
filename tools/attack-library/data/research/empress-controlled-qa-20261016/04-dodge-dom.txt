@@ -1,0 +1,63 @@
+- region "Pokémon arena":
+  - button "Battle menu": ☰
+  - generic: INDIGO STADIUM
+  - generic: QUICK BATTLE
+  - generic: 00:44
+  - generic: PAUSED
+  - generic: Ace sent out Charizard!
+  - generic: ACE
+  - generic: Lv. 50
+  - text: Charizard
+  - generic: Fire
+  - generic: Flying
+  - generic: 138 / 153 HP
+  - generic: DODGING
+  - generic: Blaze
+  - generic: CPU TRAINER
+  - generic: Lv. 50
+  - text: Gimmighoul-Roaming
+  - generic: Ghost
+  - generic: 120 / 120 HP
+  - generic: Run Away · INACTIVE
+  - button "Switch to Pikachu" [disabled]:
+    - generic: "1"
+    - img "Pikachu"
+  - button "Switch to Charizard":
+    - generic: "2"
+    - img "Charizard"
+  - button "Switch to Greninja":
+    - generic: "3"
+    - img "Greninja"
+  - button "Flamethrower":
+    - generic: "1"
+    - generic: FIRE
+    - generic: Flamethrower
+    - generic: 15 / 15 PP · SPECIAL
+  - button "Air Slash":
+    - generic: "2"
+    - generic: FLYING
+    - generic: Air Slash
+    - generic: 15 / 15 PP · SPECIAL
+  - button "Dragon Claw":
+    - generic: "3"
+    - generic: DRAGON
+    - generic: Dragon Claw
+    - generic: 15 / 15 PP · PHYSICAL
+  - button "Will-O-Wisp":
+    - generic: "4"
+    - generic: FIRE
+    - generic: Will-O-Wisp
+    - generic: 15 / 15 PP · STATUS
+  - text: SPACE
+  - generic: DODGE
+  - generic: W/A/S/D MOVE & FACE · 1/2/3/4 ATTACK · SPACE DODGE · Q/E SWITCH
+- dialog:
+  - generic: ARENA BATTLE
+  - heading "TAKE A BREATH." [level=2]
+  - paragraph: Battle paused. Take your time, adjust your controls, and return when you are ready.
+  - button "RETURN TO BATTLE" [active]
+  - button "SOUND"
+  - button "KEYBINDS"
+  - button "TOUCH LAYOUT"
+  - button "LEAVE MATCH"
+- status: Welcome, Ace. Your journey begins here.

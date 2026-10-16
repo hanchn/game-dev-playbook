@@ -1,0 +1,549 @@
+{
+  "schema": "native-standard-input-probe/v1",
+  "games": [
+    {
+      "id": "pacman",
+      "dependencyCheckPassed": true,
+      "engine": "MAME v0.289 (unknown)",
+      "engineBinarySHA256": "02621c77445ec0934e684d46baaa7731af4dbf50d20476e3c860e2ab40432139",
+      "visualReviewed": false,
+      "gameplayVerified": false,
+      "scope": "Actual native emulator frames and ordinary I/O. Input injection alone is not gameplay acceptance.",
+      "returnCode": 0,
+      "command": [
+        "/opt/homebrew/bin/mame",
+        "pacman",
+        "-rompath",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/pacman",
+        "-noreadconfig",
+        "-video",
+        "none",
+        "-sound",
+        "none",
+        "-nothrottle",
+        "-skip_gameinfo",
+        "-autoboot_delay",
+        "0",
+        "-autoboot_script",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/mame/standard-input-probe.lua",
+        "-seconds_to_run",
+        "240",
+        "-frameskip",
+        "0",
+        "-cfg_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/pacman/cfg",
+        "-nvram_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/pacman/nvram",
+        "-state_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/pacman/state",
+        "-diff_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/pacman/diff"
+      ],
+      "scriptSHA256": "7aabd9712caa7e41cc56d2574e9f3cb49e6888738c122222100bb869fdd93ce7",
+      "bootFrames": 1800,
+      "controlDelay": 1440,
+      "wallSeconds": 2.993,
+      "nativeSnapshots": 12,
+      "files": [
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/cfg/default.cfg",
+          "bytes": 485,
+          "sha256": "f43decff868dc17d3d4ecbcd79667cbad0aa3c705a98cf4341e330c0edca655d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/cfg/pacman.cfg",
+          "bytes": 675,
+          "sha256": "409aa909ddee3eef19270125bca7a8d8bc9a40991e165721d92d639f6c8fc27d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/input-events.tsv",
+          "bytes": 555,
+          "sha256": "9b5b374cb9d82307e0f4af2cef28c493419c75730835a919b59c77069001a9d3"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/input-fields.tsv",
+          "bytes": 382,
+          "sha256": "bd6a26e238580c3f0d3d6a434139481be487ed85392ea1c01374147de5c450e5"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/runtime.log",
+          "bytes": 38,
+          "sha256": "f1437012ac191a06d483bf217ffe8f9d0498f49cceaa781d8a870c8fbc7bcc65"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/00180-boot.png",
+          "bytes": 2581,
+          "sha256": "22784b50f6a6355eb0e6f5d5bfe3f16d083a720d9fa7e39239f10912a008b2a9"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/01980-ready.png",
+          "bytes": 3250,
+          "sha256": "8e791462588613c555c26e03e21ee418d7bf6826231c2b5f5944559756cf2e2b"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/02100-after-coin.png",
+          "bytes": 1547,
+          "sha256": "7e022e71367ba31eea85fb79bafd41c7de28863aa6f9f11d39df180d363eb6a9"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/02220-after-start.png",
+          "bytes": 3123,
+          "sha256": "f8fcb95ee6dea2bac392f9cd8763462dcc90d8fdb937be7ef04919b45199b408"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/03240-before-control.png",
+          "bytes": 2965,
+          "sha256": "2f84f0d3d34f83db885f1b7a30ec0d3447e97cb482ed452080e1fe7307f19935"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/03360-right.png",
+          "bytes": 3012,
+          "sha256": "a14cc6d1960f727f27ea6210d7a4af833da78f0df65031468ca5b6828929dc9b"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/03480-down.png",
+          "bytes": 3217,
+          "sha256": "a13ec550ee6e732741101dceb5f6b1a91cf42cf45d7073f6e83e623edb242a5e"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/03600-left.png",
+          "bytes": 3181,
+          "sha256": "d7bdd52836aaf9e96ee672c76f31b2d7f7530a85534fc7a1d82eec8021b0cea1"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/03720-up.png",
+          "bytes": 3282,
+          "sha256": "22aedcd6996687fa1e57fe9e608fa888c1705a01f68786b4659821f1a8d20902"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/03780-button1.png",
+          "bytes": 3265,
+          "sha256": "1dc4ade076d96963fe432b10a78f27a8cb46ec1514e839f5a5900353f914c3ac"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/03900-after-control.png",
+          "bytes": 3200,
+          "sha256": "984a99040d978bc0506a943c9406dab8a004b3441d52db75ab32ecbdc267f0f6"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/snap/04140-end.png",
+          "bytes": 2923,
+          "sha256": "b02a2e089253eeadfb12d560f773bb9dbbae5278f7b253a0b7e737fe6565b3ee"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/pacman/verifyroms.txt",
+          "bytes": 60,
+          "sha256": "5fcbfc012235c509c428db44ca7f5af541e6473986bbb77f32a17686519d0909"
+        }
+      ]
+    },
+    {
+      "id": "galaga",
+      "dependencyCheckPassed": true,
+      "engine": "MAME v0.289 (unknown)",
+      "engineBinarySHA256": "02621c77445ec0934e684d46baaa7731af4dbf50d20476e3c860e2ab40432139",
+      "visualReviewed": false,
+      "gameplayVerified": false,
+      "scope": "Actual native emulator frames and ordinary I/O. Input injection alone is not gameplay acceptance.",
+      "returnCode": 0,
+      "command": [
+        "/opt/homebrew/bin/mame",
+        "galaga",
+        "-rompath",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/galaga",
+        "-noreadconfig",
+        "-video",
+        "none",
+        "-sound",
+        "none",
+        "-nothrottle",
+        "-skip_gameinfo",
+        "-autoboot_delay",
+        "0",
+        "-autoboot_script",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/mame/standard-input-probe.lua",
+        "-seconds_to_run",
+        "240",
+        "-frameskip",
+        "0",
+        "-cfg_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/galaga/cfg",
+        "-nvram_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/galaga/nvram",
+        "-state_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/galaga/state",
+        "-diff_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/galaga/diff"
+      ],
+      "scriptSHA256": "7aabd9712caa7e41cc56d2574e9f3cb49e6888738c122222100bb869fdd93ce7",
+      "bootFrames": 1800,
+      "controlDelay": 1440,
+      "wallSeconds": 3.497,
+      "nativeSnapshots": 12,
+      "files": [
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/cfg/default.cfg",
+          "bytes": 485,
+          "sha256": "f43decff868dc17d3d4ecbcd79667cbad0aa3c705a98cf4341e330c0edca655d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/cfg/galaga.cfg",
+          "bytes": 675,
+          "sha256": "3da865950c8e095ffba747e2d39277f25340b2a2fa77a919fcb1d9ce36453c7c"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/input-events.tsv",
+          "bytes": 554,
+          "sha256": "36f2b64520a1c4635839b51c55e2ee3edd5a9a19325bf1275d8f72ba04f10077"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/input-fields.tsv",
+          "bytes": 386,
+          "sha256": "a0d78b2b037b5122eae0c7110e6c708c7af9d616bdb15f88a9690801c04e2049"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/runtime.log",
+          "bytes": 37,
+          "sha256": "ca23c84ad0fbaa31333e38eb28cab8084f0c9a324f62b658460b8ad58ff7d97a"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/00180-boot.png",
+          "bytes": 7261,
+          "sha256": "4283dfa221f8b4f6a855f4e07dddc8cfa771d0ebc7353370632ac3037ad41215"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/01980-ready.png",
+          "bytes": 1933,
+          "sha256": "8259bff1479eb411cb52cba71fff5dd521cf0dfcb845713c71b73e8cf0d2d113"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/02100-after-coin.png",
+          "bytes": 2448,
+          "sha256": "a61a1d30a0cc6ede19a2b9b065ca6e53ce57772338278ba206b5164be1493dba"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/02220-after-start.png",
+          "bytes": 1312,
+          "sha256": "2856bc0013c60d81c0de51e9ed7772f64d265811806beae537eea93404edb003"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/03240-before-control.png",
+          "bytes": 2427,
+          "sha256": "ee4dd7b366bee8329f99ea4a81833ce7a7f0c3822825b171e0e0cd9ce37858d3"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/03360-right.png",
+          "bytes": 2662,
+          "sha256": "570b3c6c15ae933bba97c380ec06b7f5d21c7722681e0f73235bff0e3f406fea"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/03480-down.png",
+          "bytes": 2111,
+          "sha256": "8044537fce68a4b0b7cf48b5496acb4cb4a719c0078761edb10543853717fc75"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/03600-left.png",
+          "bytes": 2386,
+          "sha256": "d80823e80e41f005a312e2d79595b24a0a4ce1576296e124aaf89dafe72e03e5"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/03720-up.png",
+          "bytes": 2407,
+          "sha256": "861782b1693f06e002c167d787304b321eb7d68b4bb2bcf167620d7cc645060d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/03780-button1.png",
+          "bytes": 2464,
+          "sha256": "14dc571a3b0b581271500fb5e9ded7a73d3e2f502a6c8588dc39609beca2490f"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/03900-after-control.png",
+          "bytes": 2431,
+          "sha256": "7591481e2c0cf7421cbf309c0a7e231243931899b8266912d8d752be5431099f"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/snap/04140-end.png",
+          "bytes": 2132,
+          "sha256": "46b6f0f19542c2bcbc1d859eb031885a1c46901cdd47079bcf3d0d70ee49dfb9"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/galaga/verifyroms.txt",
+          "bytes": 50,
+          "sha256": "56e50178238124fed7fd17162594e838c7db3be24d63e9ea5f492a10171d30f4"
+        }
+      ]
+    },
+    {
+      "id": "dkong",
+      "dependencyCheckPassed": true,
+      "engine": "MAME v0.289 (unknown)",
+      "engineBinarySHA256": "02621c77445ec0934e684d46baaa7731af4dbf50d20476e3c860e2ab40432139",
+      "visualReviewed": false,
+      "gameplayVerified": false,
+      "scope": "Actual native emulator frames and ordinary I/O. Input injection alone is not gameplay acceptance.",
+      "returnCode": 0,
+      "command": [
+        "/opt/homebrew/bin/mame",
+        "dkong",
+        "-rompath",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/dkong",
+        "-noreadconfig",
+        "-video",
+        "none",
+        "-sound",
+        "none",
+        "-nothrottle",
+        "-skip_gameinfo",
+        "-autoboot_delay",
+        "0",
+        "-autoboot_script",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/mame/standard-input-probe.lua",
+        "-seconds_to_run",
+        "240",
+        "-frameskip",
+        "0",
+        "-cfg_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/dkong/cfg",
+        "-nvram_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/dkong/nvram",
+        "-state_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/dkong/state",
+        "-diff_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/dkong/diff"
+      ],
+      "scriptSHA256": "7aabd9712caa7e41cc56d2574e9f3cb49e6888738c122222100bb869fdd93ce7",
+      "bootFrames": 1800,
+      "controlDelay": 1440,
+      "wallSeconds": 8.612,
+      "nativeSnapshots": 12,
+      "files": [
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/cfg/default.cfg",
+          "bytes": 485,
+          "sha256": "f43decff868dc17d3d4ecbcd79667cbad0aa3c705a98cf4341e330c0edca655d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/cfg/dkong.cfg",
+          "bytes": 674,
+          "sha256": "ee65e721f315c418f7289b826bd11ec6f19061896e0af59ca0e920eb4ef19e5a"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/input-events.tsv",
+          "bytes": 548,
+          "sha256": "54ec420d67d6cba45d7baeb6d8714f3f96dc7781e1e2a86a32f72467c7d695af"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/input-fields.tsv",
+          "bytes": 395,
+          "sha256": "1736665505da21e999d7b0ab212380f383e1140c3279a09cb79d1197aaad3ae1"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/runtime.log",
+          "bytes": 37,
+          "sha256": "1414e6eef0965e583c3fc367616946635254a5b946d50a4a33efe5847f0a545a"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/00180-boot.png",
+          "bytes": 2077,
+          "sha256": "cfbd0c96f18417871526e7a332d2bc1d67c746b8fbc09b7ea0f41b7c3b6ee372"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/01980-ready.png",
+          "bytes": 3879,
+          "sha256": "2d62998f82aeb4f33c1397c33349e2dc2e6c95eb4d8af58676ed955298f47c3f"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/02100-after-coin.png",
+          "bytes": 1958,
+          "sha256": "da7717ca7796486130fcc01caed681be8410e3056c184ac45928c62628fd8f12"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/02220-after-start.png",
+          "bytes": 1850,
+          "sha256": "d2a58baa7fee33e4c748e16e2cf80a29e91cef51826cdaddbd4c0d438ff45718"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/03240-before-control.png",
+          "bytes": 3413,
+          "sha256": "679d9bccfd1757db536270f7242790c04b0889c7db182c425f7c476ab47a9180"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/03360-right.png",
+          "bytes": 3468,
+          "sha256": "8b55460c39293d3fe0121356ce46885f52a642a382b9330de3a9d526dfd80ff1"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/03480-down.png",
+          "bytes": 3673,
+          "sha256": "2de085ff4a5db9a7d674ca90600218a24eb87ad046e0bd1e6e4ba5e95604f9e9"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/03600-left.png",
+          "bytes": 3675,
+          "sha256": "b6aa4da5bfc66a2cd60feb2e111e44ef25781c7ff9a999d71ce43b84f285f8eb"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/03720-up.png",
+          "bytes": 3325,
+          "sha256": "058cf00ccd24fabdd877dfc07161e6390feea0bcc2d3864c9b4853bbf94e2d6d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/03780-button1.png",
+          "bytes": 3329,
+          "sha256": "11275bf02c859f0a1932f8fecf2f8cc2b6dbd395081add944db20b4220fdf291"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/03900-after-control.png",
+          "bytes": 3330,
+          "sha256": "92a23d22ef2c2260bbc992238d3f117f755c0263913a8ed6716e7411d77fd2af"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/snap/04140-end.png",
+          "bytes": 3149,
+          "sha256": "7573c4ec947bdedf75147d383af500a62298a4b4f644668b6f9b7a8c8a2ae3af"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/dkong/verifyroms.txt",
+          "bytes": 49,
+          "sha256": "adcd008a6fda632362ba1b493391d43aecb5d9515ca8de701c2d84e78a88d05c"
+        }
+      ]
+    },
+    {
+      "id": "frogger",
+      "dependencyCheckPassed": true,
+      "engine": "MAME v0.289 (unknown)",
+      "engineBinarySHA256": "02621c77445ec0934e684d46baaa7731af4dbf50d20476e3c860e2ab40432139",
+      "visualReviewed": false,
+      "gameplayVerified": false,
+      "scope": "Actual native emulator frames and ordinary I/O. Input injection alone is not gameplay acceptance.",
+      "returnCode": 0,
+      "command": [
+        "/opt/homebrew/bin/mame",
+        "frogger",
+        "-rompath",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/frogger",
+        "-noreadconfig",
+        "-video",
+        "none",
+        "-sound",
+        "none",
+        "-nothrottle",
+        "-skip_gameinfo",
+        "-autoboot_delay",
+        "0",
+        "-autoboot_script",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/mame/standard-input-probe.lua",
+        "-seconds_to_run",
+        "240",
+        "-frameskip",
+        "0",
+        "-cfg_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/frogger/cfg",
+        "-nvram_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/frogger/nvram",
+        "-state_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/frogger/state",
+        "-diff_directory",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/native-controls-20261016-v2/frogger/diff"
+      ],
+      "scriptSHA256": "7aabd9712caa7e41cc56d2574e9f3cb49e6888738c122222100bb869fdd93ce7",
+      "bootFrames": 1800,
+      "controlDelay": 1440,
+      "wallSeconds": 5.064,
+      "nativeSnapshots": 12,
+      "files": [
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/cfg/default.cfg",
+          "bytes": 485,
+          "sha256": "f43decff868dc17d3d4ecbcd79667cbad0aa3c705a98cf4341e330c0edca655d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/cfg/frogger.cfg",
+          "bytes": 679,
+          "sha256": "29f8d2483d9eb859f4fd41ecf97095b45207fc8b7117b47e84e2547ce7e1b0e5"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/input-events.tsv",
+          "bytes": 555,
+          "sha256": "9b5b374cb9d82307e0f4af2cef28c493419c75730835a919b59c77069001a9d3"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/input-fields.tsv",
+          "bytes": 277,
+          "sha256": "4d56fdec12dc48dc41fbd067e9afdc10b20d8d183fdbdec8611e2f6e83c44a9f"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/runtime.log",
+          "bytes": 37,
+          "sha256": "d558511c92e15e18f31a11b91731d0f44ebf9533ecfae07c7d382b23435c1360"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/00180-boot.png",
+          "bytes": 2570,
+          "sha256": "1bbf3d2e8dbd0dee8b3d1ee47a57bff56beacbf9f105bd86d8691233f2c74de6"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/01980-ready.png",
+          "bytes": 2880,
+          "sha256": "df5b8ed4635cbedd9202ea4eea0634053159bd2d55ef71fc68df5397a2ac53db"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/02100-after-coin.png",
+          "bytes": 3820,
+          "sha256": "d77f0e19068fb06839cb5cfbc218a20e3d41ae1aa68b1af0fb71970f4df57d79"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/02220-after-start.png",
+          "bytes": 5784,
+          "sha256": "2dbf0cb6f87f19e779f74b0912019a5e86ccd0ca8534d698d5d613ab8b7f0272"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/03240-before-control.png",
+          "bytes": 6115,
+          "sha256": "ccf7a8807ffc8a768575d687b8bbd1b06046c109b1172469cb2900180e92173b"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/03360-right.png",
+          "bytes": 6262,
+          "sha256": "97b074cddefe8735d6304b3fe9f9502eb642e16144a720febebc2e6bb515627d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/03480-down.png",
+          "bytes": 6168,
+          "sha256": "309ae8a55c3529bb9051768ac946fe6c72d79c0a59461224200cf3b644c97874"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/03600-left.png",
+          "bytes": 6400,
+          "sha256": "00c735ec48846d55277cb178598d3929dd011dbab4ea4e51d2bdedd27908fc4d"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/03720-up.png",
+          "bytes": 6065,
+          "sha256": "ef9310d28bd33c23b817d128b51acd1d3a5f6bb5f4e63181163c7d11be097de7"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/03780-button1.png",
+          "bytes": 6100,
+          "sha256": "e74aed568d49b05cd8efc4c9d2df7d55d4f45dc6e4ecbd2c388d1b294a010bfd"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/03900-after-control.png",
+          "bytes": 6257,
+          "sha256": "96824dbc0b12ccff85526a2562d5d85f23dfaffdce33e8752c209465ead703e9"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/snap/04140-end.png",
+          "bytes": 6595,
+          "sha256": "aee8ae5f3c364dab58c4b74ddc8c384b522d1843175c1b4a46dae13fcbca8027"
+        },
+        {
+          "path": "data/research/native-controls-20261016-v2/frogger/verifyroms.txt",
+          "bytes": 51,
+          "sha256": "45e646a2c97f844a13ba4ab4eadd414a7017953bb3a2a5df969b5077afa1d18a"
+        }
+      ]
+    }
+  ]
+}

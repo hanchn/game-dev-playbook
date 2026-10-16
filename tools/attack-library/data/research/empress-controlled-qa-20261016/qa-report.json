@@ -1,0 +1,84 @@
+{
+  "target": "http://127.0.0.1:4369/",
+  "mode": "Original Empress 1.0 Quick Battle / PLAY VS CPU / Easy / Indigo Stadium",
+  "demoBattleUsed": false,
+  "health": {
+    "httpStatus": 200,
+    "contentBytes": 5073
+  },
+  "observed": {
+    "movement": {
+      "passed": true,
+      "input": "Native d held600ms",
+      "evidence": [
+        "02-charizard-before-move.png",
+        "03-charizard-after-right.png"
+      ],
+      "detail": "Charizard screen center approximately x550 -> x820 before camera follow shifted later views"
+    },
+    "dodge": {
+      "passed": true,
+      "input": "Native Space80ms",
+      "evidence": [
+        "04-space-dodge.png",
+        "04-dodge-dom.txt"
+      ],
+      "detail": "DODGING HUD, dimmed sprite, motion streaks and dodge meter cooldown; invulnerability against a specific timed projectile not proven"
+    },
+    "manualSwitch": {
+      "passed": true,
+      "input": "Visible Switch to Greninja button",
+      "evidence": [
+        "05-manual-switch-greninja.png",
+        "05-switch-dom.txt"
+      ],
+      "detail": "Charizard -> Greninja, 147/147HP, Surf/DarkPulse/IceBeam/Protect replaced move panel"
+    },
+    "castAndDamage": {
+      "passed": true,
+      "input": "Manual chase with WASD then visible Dark Pulse and Ice Beam buttons",
+      "evidence": [
+        "06-ice-beam-first-attempt.png",
+        "06-cast-pp-dom.txt",
+        "07-dark-pulse-approach.png",
+        "08-surf-attempt.png",
+        "08-surf-dom.txt",
+        "09-cast-chase.png",
+        "09-hit-paused-dom.txt"
+      ],
+      "detail": "Initial Ice Beam and approach casts missed; after southward chase and DarkPulse+IceBeam enemy HP120 ->91, DarkPulse PP14->13 and IceBeam9->8. Purple projectile and ice beam visible. Cannot attribute all29 damage to one exact spell because two manually cast spells were in flight."
+    },
+    "pauseResume": {
+      "passed": true,
+      "evidence": [
+        "09-hit-paused-dom.txt",
+        "10-paused-still-0052.png",
+        "11-resume-protect-dodge.png",
+        "11-resume-dom.txt"
+      ],
+      "detail": "Paused at00:52 across a separate observation; RETURN TO BATTLE + manual d/Protect advanced to00:53. Protect PP10->9, PROTECTED and shield visible; final paused state stored."
+    },
+    "controlledShortSegment": {
+      "passed": true,
+      "gameTime": "00:43 ->00:53",
+      "detail": "Approximately10 seconds accumulated actual controlled actions with menu pause between calls, no demo AI player."
+    }
+  },
+  "failedAttempts": [
+    {
+      "detail": "First unpaused game elapsed43sec during inspection and Pikachu fainted; automatic Charizard entry is not counted as manual switch. Preserved first paused screenshot."
+    },
+    {
+      "detail": "IceBeam north and DarkPulse approach initially showed PP consumption without enemy damage; those do not count as hits."
+    }
+  ],
+  "notVerified": [
+    "Complete match result/win/loss",
+    "All species and all move sets",
+    "Two-player or network mode",
+    "Long-term performance",
+    "Exact dodge invulnerability timing",
+    "Specific single-spell damage attribution"
+  ],
+  "cleanup": "Dedicated Chrome QA tab paused then closed. No shared hub/registry/server/private assets changed."
+}

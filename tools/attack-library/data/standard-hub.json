@@ -5,15 +5,79 @@
   "runtimeSource": "data/standard-games.json",
   "countingPolicy": "Only explicit top100 name mappings count as configured target entries. Extras and browser Web games do not inflate top100 coverage. RuntimeVerified must be true for completed entries.",
   "priorityGames": [
-    {"id":"sf2ce","title":"街霸II 冠军版","kind":"original-arcade-rom","runtimeGameId":"sf2ce","href":"standard-play.html?game=sf2ce","description":"原街机规则 · 投币、选人和对局"},
-    {"id":"kof98","title":"拳皇98","kind":"original-arcade-rom","runtimeGameId":"kof98","href":"standard-play.html?game=kof98","description":"原街机规则 · 队伍选择与格斗"},
-    {"id":"mslug","title":"合金弹头","kind":"original-arcade-rom","runtimeGameId":"mslug","href":"standard-play.html?game=mslug","description":"原街机关卡 · 射击、载具和首领"},
-    {"id":"kov","title":"三国战纪","kind":"original-arcade-rom","runtimeGameId":"kov","href":"standard-play.html?game=kov","description":"原街机关卡 · 角色、道具与招式"},
-    {"id":"empress","title":"宝可梦2D竞技场 · Empress","kind":"original-web-node-game","href":"http://127.0.0.1:4369/","description":"作者原客户端与Node规则 · 不是模拟ROM","runtimeVerified":false,"status":"partial-gameplay-verified-movement-pending","runtimeEvidence":{"source":"root actual browser gameplay 2026-10-16","title":true,"trainer":true,"quickBattle":true,"arena":true,"fullMatchLose":true,"retry":true,"attackPP15to14":true,"pause":true,"movement":false,"dodge":false,"teamSwitch":true},"statusLabel":"原游戏已启动 · 已测攻击/暂停/失败重试；换人已测；移动和闪避待验"}
+    {
+      "id": "sf2ce",
+      "title": "街霸II 冠军版",
+      "kind": "original-arcade-rom",
+      "runtimeGameId": "sf2ce",
+      "href": "standard-play.html?game=sf2ce",
+      "description": "原街机规则 · 投币、选人和对局"
+    },
+    {
+      "id": "kof98",
+      "title": "拳皇98",
+      "kind": "original-arcade-rom",
+      "runtimeGameId": "kof98",
+      "href": "standard-play.html?game=kof98",
+      "description": "原街机规则 · 队伍选择与格斗"
+    },
+    {
+      "id": "mslug",
+      "title": "合金弹头",
+      "kind": "original-arcade-rom",
+      "runtimeGameId": "mslug",
+      "href": "standard-play.html?game=mslug",
+      "description": "原街机关卡 · 射击、载具和首领"
+    },
+    {
+      "id": "kov",
+      "title": "三国战纪",
+      "kind": "original-arcade-rom",
+      "runtimeGameId": "kov",
+      "href": "standard-play.html?game=kov",
+      "description": "原街机关卡 · 角色、道具与招式"
+    },
+    {
+      "id": "empress",
+      "title": "宝可梦2D竞技场 · Empress",
+      "kind": "original-web-node-game",
+      "href": "http://127.0.0.1:4369/",
+      "description": "作者原客户端与Node规则 · 不是模拟ROM",
+      "runtimeVerified": false,
+      "status": "partial-controlled-gameplay-smoke-passed",
+      "runtimeEvidence": {
+        "source": "root actual browser gameplay 2026-10-16",
+        "title": true,
+        "trainer": true,
+        "quickBattle": true,
+        "arena": true,
+        "fullMatchLose": true,
+        "retry": true,
+        "attackPP15to14": true,
+        "pause": true,
+        "movement": true,
+        "dodge": true,
+        "teamSwitch": true,
+        "controlledSpellDamage": true,
+        "pauseResume": true,
+        "evidenceFile": "data/research/empress-controlled-qa-20261016/qa-report.json"
+      },
+      "statusLabel": "已实测移动/闪避/换人/施法命中/暂停恢复；完整验收待补"
+    }
   ],
   "catalogMappings": [
-    {"catalogName":"Street Fighter II","runtimeGameId":"sf2ce"},
-    {"catalogName":"King of Fighters '98","runtimeGameId":"kof98"},
-    {"catalogName":"Metal Slug","runtimeGameId":"mslug"}
-  ]
+    {
+      "catalogName": "Street Fighter II",
+      "runtimeGameId": "sf2ce"
+    },
+    {
+      "catalogName": "King of Fighters '98",
+      "runtimeGameId": "kof98"
+    },
+    {
+      "catalogName": "Metal Slug",
+      "runtimeGameId": "mslug"
+    }
+  ],
+  "activeBatchCount": 20
 }
