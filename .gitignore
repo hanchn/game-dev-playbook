@@ -19,3 +19,28 @@ tools/animation-lab/examples/**/*.wav
 tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/**/*.bin
 tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/**/*.jpg
 tools/animation-lab/public/map-resources/polyhaven-nature-expansion-v1/**/*.png
+# Full per-refresh arcade reconstruction evidence stays local. Compact delivery
+# indexes, source hashes, QA findings, scripts and methods are versioned separately.
+tools/attack-library/data/research/kof98-source-reference-20261016-r1/
+tools/attack-library/data/research/kof98-source-reference-20261016-r2/
+tools/attack-library/data/research/kof98-source-reference-20261016-r3/
+tools/attack-library/data/research/kof98-gap-observations-20261016-r4/
+tools/attack-library/data/research/kof98-gap-observations-20261016-r4-headless/
+tools/attack-library/data/research/kof98-source-reference-20261016-r4/
+tools/attack-library/data/research/kof98-source-reference-20261016-r5/
+tools/attack-library/data/research/kof98-context-observations-20261016-v1/
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/visual/
+# Bulk derived QA dumps from the KOF98 gap continuation. The compact progress
+# counters, calibration audit and methods stay versioned; these regenerable
+# per-pixel review dumps stay local.
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/headless-*-review.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/native-window-index.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/headless-*-review.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/*-triage.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/*-scores.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/*-evidence-index.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/*-group-evidence.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/*-capture-inventory.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/*-examples.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/index-diff.json
+tools/attack-library/data/research/kof98-source-reference-audit-20261016/continuation/body-ownership-reviewed-r4*.json

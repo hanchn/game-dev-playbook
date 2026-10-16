@@ -22,3 +22,5 @@ MAME autoboot可能重复加载同一脚本，注册frame回调前加全局门�
 像素重建通过不等于动作触发：另以实际起跳/腾空/落地、投出/受击或命中状态验动作。跑后短按Up失败时，用站定同长度与长按控制组区分上下文和小跳/大跳，不猜全局最小按压。保留失败窗口；重复绘画的每刷新实体位置不能在合并holds时丢失，归一精灵需显式恢复原viewport坐标或声明为站桩预览。
 
 KOF98批量采样涉及EXTRA自然蓄气、临界血超杀、双236中立间隔、预蹲扫倒或PDF跨行前置条件时，读 [references/kof98-native-sampling.md](references/kof98-native-sampling.md) 的实测对照；这些版本限定的输入修复不能泛化为其他格斗游戏规则。
+
+续跑KOF98源参考缺口流水线、处理body-ownership校准登记、或判断"选中精灵组是否真的是屏幕上的身体"时，读 [references/kof98-source-reference-continuation.md](references/kof98-source-reference-continuation.md)。要点：校准签名必须能从自己冻结的VRAM复现，只改签名让校验通过等于伪造校准；原点约定为`[p1x-cameraX, p1y-16]`；可见像素一致率（真身体>0.94、残影≈0.76、错位<0.5）比哈希更能证明组归属；缺口重观察是独立新抓取，其VRAM/截图哈希不跨批次通用。

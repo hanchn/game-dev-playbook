@@ -1,0 +1,254 @@
+{
+  "schema": "kof98-calibration-recompute/v1",
+  "registry": "tools/attack-library/data/research/kof98-source-reference-audit-20261016/r4-body-ownership-reviewed.json",
+  "registrySHA256": "966e00d4cbe3564b25ff3b4474dd17a562a884f05ceb8d428881eb862d26affb",
+  "signatureScript": {
+    "path": "scripts/kof98-body-ownership-v5.py",
+    "sha256": "9f551a8cf37baaefcc6a780673c23f5b1f53a5854a76b42c511df04f462b433a"
+  },
+  "decoderScript": {
+    "path": "scripts/kof98-source-reference-v5.py",
+    "sha256": "5aaf9f05ad4fe41f4983475ce8acf5b13f21779599af46a78ea13ab47f9580d0"
+  },
+  "originConvention": "origin = [p1x - cameraX, p1y - 16] from the same trace row",
+  "items": [
+    {
+      "sourceCharacter": "mai",
+      "sourceClipID": "actions--guard-cancel-ab-back-charged-v5--natural-special-charge",
+      "sourceFrameImage": "data/research/kof98-actions-20261016/mai/guard-cancel-ab-back-charged-v5/snap/2728.png",
+      "sourceTick": 2728,
+      "selectedGroup": 282,
+      "recordedSignature": "f0e818012bf10e42cdcc673634d8d8ff4f7759e430d8acbcd53e48d27b8057c2",
+      "recordedOffset": [
+        -24,
+        -93
+      ],
+      "cameraSource": "trace.cameraX",
+      "frozenVramSHA256": "07228081e854b397eea487e98520e1ec472ecec8f72d6d84fb96142c76424cb0",
+      "frozenSnapshotSHA256": "a698037109c780ba81fbd888e5420213565d659c9d97e70c905bfa4151452aaa",
+      "frozenTraceSHA256": "06cd150f186e51e7c00f4bf74ae8b1644a16c3c765fa19c0ff7b9aaad1acc31c",
+      "declaredVramMatches": true,
+      "declaredSnapshotMatches": true,
+      "originNativeEntity": [
+        57,
+        200
+      ],
+      "autoAnimationCounter": 1,
+      "candidateGroupCount": 70,
+      "recomputedSignature": "e83f8293de6d52738c31972279a514721da8f865223df6d602aababa2e9d893d",
+      "recomputedOffset": [
+        -24,
+        -93
+      ],
+      "groupMembers": 24,
+      "palettes": [
+        0,
+        16
+      ],
+      "signatureChanged": true,
+      "offsetChanged": false,
+      "visiblePixelCheck": {
+        "opaquePixels": 2272,
+        "exactPixels": 2153,
+        "exactRatio": 0.947623
+      },
+      "visiblePixelPassed": true,
+      "reviewSheet": "tools/attack-library/data/research/kof98-source-reference-audit-20261016/calibration-audit/mai-2728-group282.png",
+      "reviewSheetSHA256": "8e8010d0c4764d0d1bfa997f6cabc56fdeb3ae2b8c583ab631541b4ab5599f3f",
+      "status": "recomputed",
+      "trustedRewritten": true
+    },
+    {
+      "sourceCharacter": "mai",
+      "sourceClipID": "actions--guard-cancel-ab-forward-charged-v7--natural-special-charge",
+      "sourceFrameImage": "data/research/kof98-actions-20261016/mai/guard-cancel-ab-forward-charged-v7/snap/2728.png",
+      "sourceTick": 2728,
+      "selectedGroup": 282,
+      "recordedSignature": "f0e818012bf10e42cdcc673634d8d8ff4f7759e430d8acbcd53e48d27b8057c2",
+      "recordedOffset": [
+        -24,
+        -93
+      ],
+      "cameraSource": "trace.cameraX",
+      "frozenVramSHA256": "07228081e854b397eea487e98520e1ec472ecec8f72d6d84fb96142c76424cb0",
+      "frozenSnapshotSHA256": "a698037109c780ba81fbd888e5420213565d659c9d97e70c905bfa4151452aaa",
+      "frozenTraceSHA256": "9ccde012d713ff0ef6bb8bfcf5ae0f57797f39ed4e99648c73165d14c863a1ad",
+      "declaredVramMatches": true,
+      "declaredSnapshotMatches": true,
+      "originNativeEntity": [
+        57,
+        200
+      ],
+      "autoAnimationCounter": 1,
+      "candidateGroupCount": 70,
+      "recomputedSignature": "e83f8293de6d52738c31972279a514721da8f865223df6d602aababa2e9d893d",
+      "recomputedOffset": [
+        -24,
+        -93
+      ],
+      "groupMembers": 24,
+      "palettes": [
+        0,
+        16
+      ],
+      "signatureChanged": true,
+      "offsetChanged": false,
+      "visiblePixelCheck": {
+        "opaquePixels": 2272,
+        "exactPixels": 2153,
+        "exactRatio": 0.947623
+      },
+      "visiblePixelPassed": true,
+      "reviewSheet": "tools/attack-library/data/research/kof98-source-reference-audit-20261016/calibration-audit/mai-2728-group282.png",
+      "reviewSheetSHA256": "8e8010d0c4764d0d1bfa997f6cabc56fdeb3ae2b8c583ab631541b4ab5599f3f",
+      "status": "recomputed",
+      "trustedRewritten": true
+    },
+    {
+      "sourceCharacter": "mai",
+      "sourceClipID": "actions--guard-cancel-cd-charged-v5--natural-special-charge",
+      "sourceFrameImage": "data/research/kof98-actions-20261016/mai/guard-cancel-cd-charged-v5/snap/2728.png",
+      "sourceTick": 2728,
+      "selectedGroup": 282,
+      "recordedSignature": "f0e818012bf10e42cdcc673634d8d8ff4f7759e430d8acbcd53e48d27b8057c2",
+      "recordedOffset": [
+        -24,
+        -93
+      ],
+      "cameraSource": "trace.cameraX",
+      "frozenVramSHA256": "07228081e854b397eea487e98520e1ec472ecec8f72d6d84fb96142c76424cb0",
+      "frozenSnapshotSHA256": "a698037109c780ba81fbd888e5420213565d659c9d97e70c905bfa4151452aaa",
+      "frozenTraceSHA256": "7b8ba55e14333fa7f844540c592d3739a634ae84e20ec633c2d3c1f7419dc185",
+      "declaredVramMatches": true,
+      "declaredSnapshotMatches": true,
+      "originNativeEntity": [
+        57,
+        200
+      ],
+      "autoAnimationCounter": 1,
+      "candidateGroupCount": 70,
+      "recomputedSignature": "e83f8293de6d52738c31972279a514721da8f865223df6d602aababa2e9d893d",
+      "recomputedOffset": [
+        -24,
+        -93
+      ],
+      "groupMembers": 24,
+      "palettes": [
+        0,
+        16
+      ],
+      "signatureChanged": true,
+      "offsetChanged": false,
+      "visiblePixelCheck": {
+        "opaquePixels": 2272,
+        "exactPixels": 2153,
+        "exactRatio": 0.947623
+      },
+      "visiblePixelPassed": true,
+      "reviewSheet": "tools/attack-library/data/research/kof98-source-reference-audit-20261016/calibration-audit/mai-2728-group282.png",
+      "reviewSheetSHA256": "8e8010d0c4764d0d1bfa997f6cabc56fdeb3ae2b8c583ab631541b4ab5599f3f",
+      "status": "recomputed",
+      "trustedRewritten": true
+    },
+    {
+      "sourceCharacter": "mai",
+      "sourceClipID": "author--mai-06-236-A-p210",
+      "sourceFrameImage": "data/research/kof98-author-20261016/mai/batch-003/snap/003280.png",
+      "sourceTick": 3280,
+      "selectedGroup": 282,
+      "recordedSignature": "f0e818012bf10e42cdcc673634d8d8ff4f7759e430d8acbcd53e48d27b8057c2",
+      "recordedOffset": [
+        -24,
+        -93
+      ],
+      "cameraSource": "box-observations.cameraX",
+      "frozenVramSHA256": "f657eeeeb83bad3c1ddaf3ae4df09ae8e2d3c56c0150eb19d766371c43fd02e4",
+      "frozenSnapshotSHA256": "15c0f3ee04d7913f9fba5942f0ce45a581401cbb1b28c38d94faa8b7abc0a7a0",
+      "frozenTraceSHA256": "dbd2dccfa11f5d399ae6c51156db06f138c22b6d03f285dec72432c46acf598c",
+      "declaredVramMatches": true,
+      "declaredSnapshotMatches": true,
+      "originNativeEntity": [
+        85,
+        200
+      ],
+      "autoAnimationCounter": null,
+      "candidateGroupCount": 71,
+      "recomputedSignature": "e83f8293de6d52738c31972279a514721da8f865223df6d602aababa2e9d893d",
+      "recomputedOffset": [
+        -24,
+        -93
+      ],
+      "groupMembers": 24,
+      "palettes": [
+        0,
+        16
+      ],
+      "signatureChanged": true,
+      "offsetChanged": false,
+      "visiblePixelCheck": {
+        "opaquePixels": 2272,
+        "exactPixels": 2243,
+        "exactRatio": 0.987236
+      },
+      "visiblePixelPassed": true,
+      "reviewSheet": "tools/attack-library/data/research/kof98-source-reference-audit-20261016/calibration-audit/mai-3280-group282.png",
+      "reviewSheetSHA256": "db300be4043016ce0c790c03b194312a8987fe9a7a0ef1c3222526eb6be883cb",
+      "status": "recomputed",
+      "trustedRewritten": true
+    },
+    {
+      "sourceCharacter": "mai",
+      "sourceClipID": "author--mai-06-236-C-p211",
+      "sourceFrameImage": "data/research/kof98-author-20261016/mai/batch-003/snap/003625.png",
+      "sourceTick": 3625,
+      "selectedGroup": 193,
+      "recordedSignature": "f0e818012bf10e42cdcc673634d8d8ff4f7759e430d8acbcd53e48d27b8057c2",
+      "recordedOffset": [
+        -24,
+        -93
+      ],
+      "cameraSource": "box-observations.cameraX",
+      "frozenVramSHA256": "3bc0a6bf853ba9f8bee20bb9077db2e43a9697728ac46bdc0fa0dca0d8f9c6ed",
+      "frozenSnapshotSHA256": "5c3fa1352ee34f08eebd90df669525863eaa22a85bb75f0495d62394bbaf454b",
+      "frozenTraceSHA256": "dbd2dccfa11f5d399ae6c51156db06f138c22b6d03f285dec72432c46acf598c",
+      "declaredVramMatches": true,
+      "declaredSnapshotMatches": true,
+      "originNativeEntity": [
+        84,
+        200
+      ],
+      "autoAnimationCounter": null,
+      "candidateGroupCount": 72,
+      "recomputedSignature": "e83f8293de6d52738c31972279a514721da8f865223df6d602aababa2e9d893d",
+      "recomputedOffset": [
+        -24,
+        -93
+      ],
+      "groupMembers": 24,
+      "palettes": [
+        0,
+        16
+      ],
+      "signatureChanged": true,
+      "offsetChanged": false,
+      "visiblePixelCheck": {
+        "opaquePixels": 2272,
+        "exactPixels": 2268,
+        "exactRatio": 0.998239
+      },
+      "visiblePixelPassed": true,
+      "reviewSheet": "tools/attack-library/data/research/kof98-source-reference-audit-20261016/calibration-audit/mai-3625-group193.png",
+      "reviewSheetSHA256": "280527d72da11426d2c88967973f74c278c2ac3dfad021608915bb32c46be186",
+      "status": "recomputed",
+      "trustedRewritten": true
+    }
+  ],
+  "summary": {
+    "items": 5,
+    "trustedConsidered": 5,
+    "recomputed": 5,
+    "visiblePixelPassed": 5,
+    "trustedRewritten": 5,
+    "failed": 0
+  }
+}
