@@ -1,0 +1,1 @@
+return {["route"]={"Right","Right"},["directions"]={"6","3","2","1","4","6","3","2","1","4"},["button"]="A",["max"]=true,["close"]=true,["air"]=false}

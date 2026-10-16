@@ -1,0 +1,42 @@
+[
+  {
+    "character": "athena",
+    "sourceRow": 2,
+    "label": "Psychic Shoot",
+    "sourcePage": 7,
+    "sourceRawRow": "jump close [4] [or] [2] [or] [6] [C/D] Psychic Shoot",
+    "conditionRaw": "jump close",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "athena-02-2-C-p230",
+    "motion": "2",
+    "button": "C",
+    "chain": [
+      {
+        "name": "Psychic Shoot",
+        "motion": "2",
+        "button": "C",
+        "charge": false,
+        "condition": "jump close"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": true,
+    "air": true,
+    "airThrow": true,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "character": "ryo",
+    "sourceRow": 8,
+    "label": "KyokugenRyu Ranbu Ken",
+    "sourcePage": 5,
+    "sourceRawRow": "close [A/C] KyokugenRyu Ranbu Ken",
+    "conditionRaw": "close",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "ryo-08-41236-C-p161",
+    "motion": "41236",
+    "button": "C",
+    "chain": [
+      {
+        "name": "KyokugenRyu Ranbu Ken",
+        "motion": "41236",
+        "button": "C",
+        "charge": false,
+        "condition": "close"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "1",
+        "fields": [
+          "Down",
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": "rendered original PDF row manually inspected"
+  }
+]

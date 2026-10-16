@@ -1,0 +1,61 @@
+{
+  "character": "mai",
+  "batch": "batch-005",
+  "traceValid": true,
+  "fieldErrors": [],
+  "rows": 1456,
+  "frames": 600,
+  "returnCode": 0,
+  "wallSeconds": 18.9711697101593,
+  "scriptSHA256": "4c7626cbd83048b2d28de3d2b50867d36a7018137b8de6f52dcc5fceb0285fec",
+  "ordinaryInputOnly": true,
+  "memoryWrites": false,
+  "attempts": [
+    {
+      "id": "mai-09-623-D-p217",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "mai-10-41236-B-p218",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "mai-10-41236-D-p219",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "mai-11-28-A-p220",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    }
+  ],
+  "nativeMovesVerified": false,
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/mai/batch-005/capture-script.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/mai/batch-005/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/mai/batch-005/nvram",
+    "-seconds_to_run",
+    "110",
+    "-frameskip",
+    "0"
+  ]
+}

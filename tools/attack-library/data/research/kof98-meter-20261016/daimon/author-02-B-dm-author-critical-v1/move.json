@@ -1,0 +1,47 @@
+{
+  "configuration": {
+    "route": [
+      "Right",
+      "Right"
+    ],
+    "directions": [
+      "4",
+      "1",
+      "2",
+      "3",
+      "6",
+      "5",
+      "4",
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "button": "B",
+    "max": false,
+    "close": true,
+    "air": false
+  },
+  "officialSource": {
+    "name": "ArashiNoYama-NekkoNuki",
+    "conditions": [
+      "super: real meter",
+      "close range"
+    ],
+    "directionNotation": "4123641236",
+    "adaptedNeoGeoButton": "B",
+    "authorEvidence": {
+      "character": "daimon",
+      "id": "author-02-B",
+      "name": "ArashiNoYama-NekkoNuki",
+      "motion": "4123641236",
+      "button": "B",
+      "close": true,
+      "air": false,
+      "source": "../kof98-move-research-20261016/author-guide-extended-checklist.json",
+      "sourceType": "original author guide, nonofficial research, not ROM recovered command",
+      "runtimeVerified": false,
+      "MAXIdentityRule": "Benimaru C changes Taikuu(DM) to Raiko(SDM); others must inspect actual visual difference; lowHP+fullgauge alone does not auto-prove SDM"
+    }
+  }
+}

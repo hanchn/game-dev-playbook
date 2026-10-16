@@ -1,0 +1,83 @@
+{
+  "sourcePDF": "tools/attack-library/data/research/kof98-move-research-20261016/neo-encyclopedia-kof98-moves.pdf",
+  "sourceSHA256": "c79120de84e5a51911f71c887429c0d57ce1f575e0bf7e6322bab935bd45ac89",
+  "method": "Actual complete original PDF pages3,6,9 rendered with pdftoppm and visually reviewed; frozen original extraction retained",
+  "corrections": [
+    {
+      "character": "terry",
+      "name": "Power Charge",
+      "page": 3,
+      "originalY": 743.41,
+      "commandTokens": [
+        "41236",
+        "B/D"
+      ],
+      "conditionRaw": "",
+      "reason": "Motion image was grouped into a nameless overflow row; source visibly places half-circle forward before B/D"
+    },
+    {
+      "character": "leona",
+      "name": "Gliding Buster",
+      "page": 6,
+      "originalY": 225.76,
+      "commandTokens": [
+        "6",
+        "D"
+      ],
+      "conditionRaw": "Ground Saber using D",
+      "requiredParent": {
+        "name": "Ground Saber",
+        "button": "D"
+      },
+      "reason": "Two lines occupy one bordered move cell; upper line is prerequisite, not independent action"
+    },
+    {
+      "character": "kim",
+      "name": "Ten Sou Zan",
+      "page": 9,
+      "originalY": 735.45,
+      "commandTokens": [
+        "2",
+        "D"
+      ],
+      "conditionRaw": "Hi En Zan using D",
+      "requiredParent": {
+        "name": "Hi En Zan",
+        "button": "D"
+      },
+      "reason": "Two-line cell: strong Hi En Zan precedes Down+D"
+    }
+  ],
+  "nonMoveFragments": [
+    {
+      "character": "terry",
+      "page": 3,
+      "sourceY": 760.69
+    },
+    {
+      "character": "leona",
+      "page": 6,
+      "sourceY": 213.01
+    },
+    {
+      "character": "kim",
+      "page": 9,
+      "sourceY": 722.62
+    }
+  ],
+  "runtimeAccepted": false,
+  "images": [
+    {
+      "file": "page-03.png",
+      "sha256": "ca2834a3de1196467b55626d2adb8fa9381e2f0998f1e91aba7419c836c0dcbc"
+    },
+    {
+      "file": "page-06.png",
+      "sha256": "2fc2e60aad96bbcaa191a2c1d0a4b074631917bc11b51a27680824d5ad56611e"
+    },
+    {
+      "file": "page-09.png",
+      "sha256": "d12f34eba6f8e9b487dce0515da89ec65cd667537e1c5956edf1963f58b331dc"
+    }
+  ]
+}

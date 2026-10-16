@@ -1,0 +1,61 @@
+{
+  "character": "athena",
+  "batch": "batch-000",
+  "traceValid": true,
+  "fieldErrors": [],
+  "rows": 1356,
+  "frames": 500,
+  "returnCode": 0,
+  "wallSeconds": 18.128087759017944,
+  "scriptSHA256": "4c7626cbd83048b2d28de3d2b50867d36a7018137b8de6f52dcc5fceb0285fec",
+  "ordinaryInputOnly": true,
+  "memoryWrites": false,
+  "attempts": [
+    {
+      "id": "athena-00-4-C-p224",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "athena-00-6-C-p225",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "athena-01-4-D-p226",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "athena-01-6-D-p227",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    }
+  ],
+  "nativeMovesVerified": false,
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/athena/batch-000/capture-script.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/athena/batch-000/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/athena/batch-000/nvram",
+    "-seconds_to_run",
+    "110",
+    "-frameskip",
+    "0"
+  ]
+}

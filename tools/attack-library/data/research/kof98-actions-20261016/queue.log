@@ -1,0 +1,170 @@
+kyo locomotion 1343 True
+{'joe': 46, 'kyo': 18}
+kyo normals 1540 True
+{'joe': 46, 'kyo': 32}
+kyo air 550 True
+{'joe': 46, 'kyo': 37}
+kyo reactions 1669 True
+{'joe': 46, 'kyo': 44}
+kyo victory 978 True
+{'joe': 44, 'kyo': 46}
+benimaru locomotion 1343 True
+{'benimaru': 18, 'joe': 46, 'kyo': 46}
+benimaru normals 1540 True
+{'benimaru': 32, 'joe': 46, 'kyo': 46}
+benimaru air 550 True
+{'benimaru': 37, 'joe': 46, 'kyo': 46}
+benimaru reactions 1669 True
+{'benimaru': 44, 'joe': 46, 'kyo': 46}
+benimaru victory 1195 True
+{'benimaru': 46, 'joe': 46, 'kyo': 46}
+kim locomotion 1343 True
+{'benimaru': 46, 'joe': 46, 'kim': 18, 'kyo': 46}
+kim normals 1540 True
+{'benimaru': 46, 'joe': 46, 'kim': 32, 'kyo': 46}
+kim air 550 True
+{'benimaru': 46, 'joe': 46, 'kim': 37, 'kyo': 46}
+kim reactions 1762 True
+{'benimaru': 46, 'joe': 46, 'kim': 44, 'kyo': 46}
+kim victory 1521 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'kyo': 46}
+king locomotion 1343 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 18, 'kyo': 46}
+king normals 1540 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 32, 'kyo': 46}
+king air 550 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 37, 'kyo': 46}
+king reactions 1717 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 44, 'kyo': 46}
+king victory 1251 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46}
+ryo locomotion 1343 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 18}
+ryo normals 1540 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 32}
+ryo air 550 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 37}
+ryo reactions 1762 True
+Traceback (most recent call last):
+  File "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-actions-index.py", line 8, in <module>
+    j=json.loads(p.read_text());name=j['characterIntended'];batch=j['batch'];entry=result['characters'].setdefault(name,{'clips':[],'blocked':[]})
+                 ~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-actions-20261016/kyo/victory/capture.json'
+Traceback (most recent call last):
+  File "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-actions-run.py", line 25, in <module>
+    (out/'capture.json').write_text(json.dumps(result,indent=2)+'\n');print(name,batch,len(rows),valid,flush=True);subprocess.run(['python3',str(R/'scripts/kof98-actions-index.py')],check=True)
+                                                                                                                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python3', '/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-actions-index.py']' returned non-zero exit status 1.
+kim victory 1703 False
+{'benimaru': 46, 'joe': 46, 'kim': 44, 'king': 46, 'kyo': 46, 'ryo': 44}
+ryo victory 1153 True
+{'benimaru': 46, 'joe': 46, 'kim': 44, 'king': 46, 'kyo': 46, 'ryo': 46}
+vice locomotion 1343 True
+{'benimaru': 46, 'joe': 46, 'kim': 44, 'king': 46, 'kyo': 46, 'ryo': 46, 'vice': 18}
+vice normals 1540 True
+{'benimaru': 46, 'joe': 46, 'kim': 44, 'king': 46, 'kyo': 44, 'ryo': 46, 'vice': 32}
+vice air 550 True
+{'benimaru': 46, 'joe': 46, 'kim': 44, 'king': 46, 'kyo': 46, 'ryo': 46, 'vice': 37}
+vice reactions 1682 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'vice': 44}
+vice victory 1290 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'vice': 46}
+shingo locomotion 1343 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 18, 'vice': 46}
+shingo normals 1540 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 32, 'vice': 46}
+shingo air 550 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 37, 'vice': 46}
+shingo reactions 1669 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 44, 'vice': 46}
+shingo victory 1084 True
+{'benimaru': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'vice': 46}
+iori locomotion 1343 True
+{'benimaru': 46, 'iori': 18, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'vice': 46}
+iori normals 1540 True
+{'benimaru': 46, 'iori': 32, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'vice': 46}
+iori air 550 True
+{'benimaru': 46, 'iori': 37, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'vice': 46}
+iori reactions 1862 True
+{'benimaru': 46, 'iori': 44, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'vice': 46}
+iori victory 1379 True
+{'benimaru': 46, 'iori': 46, 'joe': 46, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'vice': 46}
+terry locomotion 1343 True
+{'benimaru': 46, 'iori': 46, 'joe': 48, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'terry': 18, 'vice': 46}
+terry normals 1540 True
+{'benimaru': 46, 'iori': 46, 'joe': 48, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'terry': 32, 'vice': 46}
+terry air 550 True
+{'benimaru': 46, 'iori': 46, 'joe': 48, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'terry': 37, 'vice': 46}
+terry reactions 1627 True
+{'benimaru': 46, 'iori': 46, 'joe': 48, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'terry': 44, 'vice': 46}
+terry victory 1106 True
+{'benimaru': 46, 'iori': 46, 'joe': 48, 'kim': 46, 'king': 46, 'kyo': 46, 'ryo': 46, 'shingo': 46, 'terry': 46, 'vice': 46}
+mai locomotion 1343 True
+{'benimaru': 46, 'iori': 46, 'joe': 48, 'kim': 46, 'king': 46, 'kyo': 48, 'mai': 18, 'ryo': 46, 'shingo': 46, 'terry': 46, 'vice': 46}
+mai normals 1540 True
+{'benimaru': 48, 'iori': 46, 'joe': 48, 'kim': 48, 'king': 48, 'kyo': 48, 'mai': 32, 'ryo': 46, 'shingo': 46, 'terry': 46, 'vice': 46}
+mai air 550 True
+{'benimaru': 48, 'iori': 46, 'joe': 48, 'kim': 48, 'king': 48, 'kyo': 48, 'mai': 37, 'ryo': 48, 'shingo': 46, 'terry': 46, 'vice': 46}
+mai reactions 1669 True
+{'benimaru': 48, 'iori': 46, 'joe': 48, 'kim': 48, 'king': 48, 'kyo': 48, 'mai': 44, 'ryo': 48, 'shingo': 48, 'terry': 46, 'vice': 48}
+mai victory 1563 True
+{'benimaru': 48, 'iori': 48, 'joe': 48, 'kim': 48, 'king': 48, 'kyo': 48, 'mai': 46, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+athena locomotion 1343 True
+{'athena': 20, 'benimaru': 48, 'iori': 48, 'joe': 48, 'kim': 48, 'king': 48, 'kyo': 48, 'mai': 48, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+athena normals 1540 True
+{'andy': 2, 'athena': 34, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 50, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 2, 'mai': 48, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+athena air 550 True
+{'andy': 2, 'athena': 39, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 50, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 2, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+athena reactions 1669 True
+{'andy': 2, 'athena': 46, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 50, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 2, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+athena victory 1329 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 50, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 2, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+leona locomotion 1343 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 54, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 20, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+leona normals 1540 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 58, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 34, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+leona air 550 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 60, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 39, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+leona reactions 1862 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 60, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 46, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+leona victory 1345 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 2, 'iori': 48, 'joe': 60, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+daimon locomotion 1343 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 20, 'iori': 48, 'joe': 60, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+daimon normals 1540 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 34, 'iori': 48, 'joe': 60, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+daimon air 550 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 39, 'iori': 48, 'joe': 60, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+daimon reactions 1762 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 46, 'iori': 48, 'joe': 60, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+daimon victory 1650 True
+{'andy': 2, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 62, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+andy locomotion 1343 True
+{'andy': 20, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 66, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+andy normals 1540 True
+{'andy': 34, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+andy air 550 True
+{'andy': 39, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+andy reactions 1862 True
+{'andy': 46, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+andy victory 1288 True
+{'andy': 48, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 2, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+robert locomotion 1343 True
+{'andy': 48, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 20, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+robert normals 1540 True
+{'andy': 48, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 34, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+robert air 550 True
+{'andy': 48, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 39, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+robert reactions 1669 True
+{'andy': 48, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 46, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}
+robert victory 1347 True
+{'andy': 48, 'athena': 48, 'benimaru': 48, 'daimon': 48, 'iori': 48, 'joe': 70, 'kim': 48, 'king': 48, 'kyo': 48, 'leona': 48, 'mai': 48, 'robert': 48, 'ryo': 48, 'shingo': 48, 'terry': 48, 'vice': 48}

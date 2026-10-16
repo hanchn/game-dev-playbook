@@ -1,0 +1,46 @@
+{
+  "character": "king",
+  "batch": "fresh-fast-v3-001",
+  "traceValid": true,
+  "fieldErrors": [],
+  "rows": 468,
+  "frames": 254,
+  "returnCode": 0,
+  "wallSeconds": 12.766515016555786,
+  "scriptSHA256": "bae7e97a2fadaf80ebdcb9306585661c5efe92cd74752f8aabef30143dec61a7",
+  "ordinaryInputOnly": true,
+  "memoryWrites": false,
+  "attempts": [
+    {
+      "id": "king-04-236236-D-p188",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    }
+  ],
+  "nativeMovesVerified": false,
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/king/fresh-fast-v3-001/capture-script.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/king/fresh-fast-v3-001/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/king/fresh-fast-v3-001/nvram",
+    "-seconds_to_run",
+    "110",
+    "-frameskip",
+    "0"
+  ]
+}

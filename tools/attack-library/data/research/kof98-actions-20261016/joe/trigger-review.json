@@ -1,0 +1,106 @@
+{
+  "scope": "Specific visual endpoint reviews; no other action acceptance implied.",
+  "clips": {
+    "victory--p1-round-win-attempt": {
+      "triggerStatus": "observed",
+      "reason": "Actual native winner gesture and round-loss/WINNER presentation visually inspected; see pilot-visual-review.json."
+    },
+    "reactions--guard-high": {
+      "triggerStatus": "observed",
+      "reason": "Blue native guard spark at phaseTick70, raised standing defense pose; P1 life stays103."
+    },
+    "reactions--guard-low": {
+      "triggerStatus": "observed",
+      "reason": "Blue native guard spark at phaseTick55 in crouched pose; P1 life stays103."
+    },
+    "reactions--receive-sweep-knockdown-rise": {
+      "triggerStatus": "not_observed",
+      "reason": "Damage 89\u219280 and standing hit reaction occur, but reviewed sequence never falls or rises. Down+D input window is not a verified sweep."
+    },
+    "sweep-recovery--receive-sweep-preconditioned": {
+      "triggerStatus": "observed",
+      "reason": "Actual reviewed sixteen-role native boards show original prone state at2920 and standing recovery at2980.",
+      "evidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ]
+    },
+    "ground-recovery-ab-v2--receive-sweep-recovery-AB": {
+      "triggerStatus": "observed",
+      "reason": "Native comparison: AB pulses110..136 after verified sweep; at2920 actual backward recovery roll with upturned legs replaces baseline prone body; by2940 guard recovered while baseline is still rising.",
+      "evidence": "review/recovery-ab-v2.jpg",
+      "comparison": "review/recovery-ab-comparison.jpg"
+    },
+    "guard-cancel-cd-charged-v5--guard-cancel-CD": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "joe/guard-cancel-cd-charged-v5/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "4927b32123eae0dc3b1d5d96c442404859f2e1d5b107e58587a205dae4debb49"
+      }
+    },
+    "guard-cancel-ab-back-charged-v5--guard-cancel-AB-back": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "joe/guard-cancel-ab-back-charged-v5/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "a399215714f258d9235c7818ae3044bbbc589215a674397585b22ee9c611e3fb"
+      }
+    },
+    "guard-cancel-ab-forward-charged-v7--guard-cancel-AB-neutral": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "joe/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "01012e9fd21d96a5ef921f3e512d608c0a9e5ca5d707a368d382d48fab856e4e"
+      }
+    },
+    "guard-cancel-cd--guard-cancel-CD": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-ab-forward--guard-cancel-AB-forward": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-ab-back--guard-cancel-AB-back": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-cd-v2--guard-cancel-CD": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-ab-forward-v2--guard-cancel-AB-forward": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-ab-back-v2--guard-cancel-AB-back": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-cd-charged-v3--guard-cancel-CD": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-cd-charged-v4--guard-cancel-CD": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-ab-forward-charged-v5--guard-cancel-AB-forward": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "guard-cancel-ab-forward-charged-v6--guard-cancel-AB-forward": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    },
+    "ground-recovery-ab--receive-sweep-recovery-AB": {
+      "triggerStatus": "not_observed",
+      "reason": "Preserved failed ordinary-I/O attempt. Cancel versions before special-charge lacked real stock; forced-forward AB versions did not consume stock; original early AB did not alter native recovery. See README and pilot comparison."
+    }
+  }
+}

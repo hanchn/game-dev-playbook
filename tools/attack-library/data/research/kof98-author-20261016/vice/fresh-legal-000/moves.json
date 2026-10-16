@@ -1,0 +1,109 @@
+[
+  {
+    "character": "vice",
+    "sourceRow": 9,
+    "label": "Mithan's Robe",
+    "sourcePage": 14,
+    "sourceRawRow": "[236] [A/C]",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "vice-09-236-C-p312",
+    "motion": "236",
+    "button": "C",
+    "chain": [
+      {
+        "name": "Black End",
+        "motion": "41236",
+        "button": "C",
+        "charge": false,
+        "condition": "close"
+      },
+      {
+        "name": "Mithan's Robe",
+        "motion": "236",
+        "button": "C",
+        "charge": false,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "1",
+        "fields": [
+          "Down",
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      },
+      {
+        "direction": "5",
+        "fields": [],
+        "frames": 10
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  }
+]

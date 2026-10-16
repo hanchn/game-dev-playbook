@@ -1,0 +1,61 @@
+{
+  "character": "shingo",
+  "batch": "batch-003",
+  "traceValid": true,
+  "fieldErrors": [],
+  "rows": 1386,
+  "frames": 530,
+  "returnCode": 0,
+  "wallSeconds": 17.81095290184021,
+  "scriptSHA256": "8525273f96ca8524f375be2b31fb7d7f93b4392383751912f6849f133ff3f697",
+  "ordinaryInputOnly": true,
+  "memoryWrites": false,
+  "attempts": [
+    {
+      "id": "shingo-07-214-C-p326",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "shingo-08-214-B-p327",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "shingo-08-214-D-p328",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    },
+    {
+      "id": "shingo-09-41236-B-p329",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    }
+  ],
+  "nativeMovesVerified": false,
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/shingo/batch-003/capture-script.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/shingo/batch-003/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/shingo/batch-003/nvram",
+    "-seconds_to_run",
+    "110",
+    "-frameskip",
+    "0"
+  ]
+}

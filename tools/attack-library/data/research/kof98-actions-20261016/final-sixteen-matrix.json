@@ -1,0 +1,2842 @@
+{
+  "scope": "Original MAME 0.289 ordinary-I/O capture windows; NOT all original moves complete.",
+  "allMovesComplete": false,
+  "requiredBatches": [
+    "locomotion",
+    "normals",
+    "air",
+    "reactions",
+    "victory",
+    "sweep-recovery",
+    "ground-recovery-ab-v2",
+    "guard-cancel-cd-charged-v5",
+    "guard-cancel-ab-back-charged-v5",
+    "guard-cancel-ab-forward-charged-v7"
+  ],
+  "characters": {
+    "kyo": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d4b193720bff2630abe0867cfe7b89c803ea998af0052d8b5bf05bab8971cec7",
+          "traceSHA256": "e26f3d40e3b162fff4793c213161433ae111451dfdb916c87a3080291e5e486b",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "03f00bfc0163fc51a1ad26e34f847dcee22fcc50053fe7ddadb8d41ce1a4d399"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d4b193720bff2630abe0867cfe7b89c803ea998af0052d8b5bf05bab8971cec7",
+          "traceSHA256": "9cdec00b4a8c5f09f5136c7adbf0ca79faa3722e3e9bcfb1524c370b7299a30f",
+          "inputsSHA256": "b3649bb9304896acd969d2b5a72dc9ccbe55b5c38ee9ed7d0340cfca192800ad",
+          "captureSHA256": "591f779c15d2bf5aa5e3123432dbd881b387a2a867c87c9fff73d63d7749b97d"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d4b193720bff2630abe0867cfe7b89c803ea998af0052d8b5bf05bab8971cec7",
+          "traceSHA256": "7d95aa10ef1492f3e3ab0da5653d5ff3c98f7baa2a0bc7377102a3859d8ff5c2",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "d54db6ee54313ef4505aad730295d09930add592fd6e119e113b95d49e897845"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1669,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d4b193720bff2630abe0867cfe7b89c803ea998af0052d8b5bf05bab8971cec7",
+          "traceSHA256": "5090f7845d0954dc6a191336942b214910c3312f13c438a9f82f9b650f547eb6",
+          "inputsSHA256": "b66e479ac4ba575498bdc92aa527e5fd9bbd4b8e4e79d8df841fda7166688fb4",
+          "captureSHA256": "09f5545ccd2e94cfe3ce17b3e5009b6df476587f6e9e6dd6ec20069963046723"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1358,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "704a475fb6857eba70842c3ce7d8e5c39c01ea0aa796657c2d91891c268492a3",
+          "inputsSHA256": "808991a9998127b56380b5f4efffcfc0667fe734117f7fdb4e137060374f71b7",
+          "captureSHA256": "3d4bed9882c1a5f311dbf99e5b0b56133e93297ed78764e2e523823430ef2f78"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "f207dfce8def50c7df07c6ee3c3ad68a90a9ab4e55bfe254496ee3b0ca6b2ff4",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "d81693cf62b712c8fc39713c4217f7ed006745c9986eb4bb29f6a034fda95726"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "80a34c55a1e9899f7cf01bf14b991f9be5cedbfa03dbc177e8e277e6fcb7c7a1",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "6f83e2d1bf9ec9ebb4ed9a11ff1c8748dc593343c654ee94d1a94eccc3f12373"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "2c918e7624c41f3e799aeda3b072d56f3816861e36e3901bcdd7b55afab353bc",
+          "inputsSHA256": "fe1542366a096800f3f2758c3bc0b57446570f327777094283a546e3dcebbc5b",
+          "captureSHA256": "b5a6c425464cf55360c67480a9d651d5cd0181b73c22533f943e00a3a16ecd8d",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "kyo/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "89b3d2842e43ff76c03705a7895aad98c3550df7426741f75237ddbd89b34f5a"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "7d612a961b79887cc87205c8168a3caf6ff8fe5e637aa8c337ddcc16217d7ed7",
+          "inputsSHA256": "8055149f20a10c332a8499b4981d0bbac3f37e0073ae36864e68615f1b936758",
+          "captureSHA256": "4f7f9dcbe906fbf48190404215831df124b585ff7e2fee3eb177d539d9b80f50",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "kyo/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "b855723a394252a24221af231e9bdb7e25e0512f0370d69e3ab9c900b9ed9271"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "34892f7b50ef34695aee2e8eca95a3e4d84e5813eb38305eef1f00b6fff4f813",
+          "inputsSHA256": "c6bfeff6bf9a26dc954e594aa4b236cc2a8bf864d0ee1d561c4a145223f13370",
+          "captureSHA256": "2ae6330c820c1a6ea6b539475acbf6f3eab1321e02d351776d9c6d0cb093465d",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "kyo/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "cfa4447e0b1c4a8d24a558bd7adb79ef7011d30f2e3e3d5c0e53cd5a49f3ea3b"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "benimaru": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "df4fab83fa4dbcb36fab587b3c59e903f01fc3c935db59283ee5070d1d230fc6",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "f690836c90a7f16e064ca04ae77f5a9afe4a01576ce13ccb22817849f24a300d"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "772498c506d69ca5eaf39752d7bec0183bca5a3d2f9b91180f0de4eff2a916d8",
+          "inputsSHA256": "02685da8c711566e369ca73ef8ecb22661634f7a765c905c533caf6fcad04aec",
+          "captureSHA256": "3770290b5f3a4b1b39bbe51c4231b0cabc78ab934327d7a9e7e703ec1db8150c"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "cbced0435fe742b6ddb0e373b160e6c75f3365c2a687697c3de0a49b0768acec",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "f5eaf30941cd683d85ee38ac2c1d8f67a07c3bdfc511f4c3f2063eb3e2163831"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1669,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "a807be5493c2655ef9ce3d1624278cc830a8315fcaa2c3a5590094703e6382b4",
+          "inputsSHA256": "b66e479ac4ba575498bdc92aa527e5fd9bbd4b8e4e79d8df841fda7166688fb4",
+          "captureSHA256": "22e8342d62ccc37a5b75f2cff052df71fef28a61a4cfbd7cd298383f127e0720"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1195,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "977c04089a7bac30c5fabcad2a1da19b3cabe7840b8d4a1f8f0ec105753c99ec",
+          "inputsSHA256": "599c0b7420a863496b29ee28cf8939c6b9e7a06d87ad40dde94d84e954363f2b",
+          "captureSHA256": "fa96cdb7c730592200e81c5ae7a3b0dc56f8600a43e1761df0f504009e057f49"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "7b25bb12dc2aa2b798fe64b1a1791b8ecbe2514ce6c300bd37ca10c8d7265300"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "8c7909d8e85de56b784f662304273309f2bcbbbdb5702c875f8db1ab40597b1c",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "70c7c16fd3842df7345deeed4db260e1aa2cfb0fb3719f895fc0b4bc774c7dcf"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "9edd54a7f06245a9cca33aa6c27ca02a037cde82ef26219578735c3d8b4544fb",
+          "inputsSHA256": "67dfa9c3c062b1f4bf00ea27544ca8d0156e3139da3f0baddb637adba93dd8eb",
+          "captureSHA256": "861e275e6338f37c981ce144ad4ce4b8e98fd8ee93f71b8f97085aa409801ea6",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "benimaru/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "e8bf28a8630596384559ef433abed1597bc11739c036bea8adb6964cd9962714"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "bb48fd9abb9a9e6d21af103995e4a4fc0578dd6a3d09f62cf91a76f760867b52",
+          "inputsSHA256": "0cd498fa48e2cd7c84046fefcd87a5955fcaa19bf8649ab506ffd28f1cf4f38f",
+          "captureSHA256": "4519a5d8c78cb1c08423445417c189e6b11d7ed929591f3a4dc5f997cbfafa92",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "benimaru/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "a172fe29885194eb1103e934d1d7536256dc55b6daa7452d6dd260bb5b08d3c3"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "c8588b6a061896ee65194f95a25a40caa1d251386f8643eb442f21e4886d757d",
+          "inputsSHA256": "4fe484891bcb856d3f392d917c7cabd25cd7c6e18029bd76e3e34a0959b8603f",
+          "captureSHA256": "4dafc3a2b7e40afcdb23450798d15393ab14535424bad76379cf28827b99a45e",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "benimaru/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "9ae1653efcd1ef447531f3cc16ba43f0bd517821a5aaad6c09e729381355498f"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "joe": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dad34a1aad88cdfb76278f14b433a569f853a362329d214d5a3e593c167fe1d7",
+          "traceSHA256": "c89ed4b61a86100c5c3cb64dfc1ffffd5e47683cdb6232b6c376b840789ca05a",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "3835f88018044c0af17b3f1916f87778876ac8259e2d7704f78af153870ce165"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "805425db75e84aad8f892c6ee78a7f379a03204a2b06fabaa016b85fc829b9aa",
+          "traceSHA256": "8d23d20d6b8e7059d3cd9c113b5e04477dd10b52abd1f5ce2c384b5cc6b2c65d",
+          "inputsSHA256": "795fa3051b5f22701a679a6a3452544bb7a6fd16057a0e7bd01c60eac60fd440",
+          "captureSHA256": "3aedf4e5c9ba9a3a04a15d0e863d55d69e17f5d46d0f532bbbfcde23c7780583"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "805425db75e84aad8f892c6ee78a7f379a03204a2b06fabaa016b85fc829b9aa",
+          "traceSHA256": "d6f9e0b0863bfa04276c75280b40e09aa87e3488c5fb9616220010ac0e214fe5",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "72da4b5b50fe7cebbfbea7422b3a7e8c1b9b83e3eb52a17ecdd8287e95548684"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1627,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "764adb61466d1cf7aa2d2178e27b93485bbaef20dd1f275f9bd04f1017d2822d",
+          "traceSHA256": "64252ab86e79a53cd3845d8f470ff15e1ecb7bcef448d9899a525109d2a09587",
+          "inputsSHA256": "4f0995d193d4f541d4b76cc1d872c91a3ddfabc049be28d31b780405fd55088f",
+          "captureSHA256": "592decfddee88f3d408a72834a978b3a336abd9d30598df799cccc19de641cfe"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1513,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "3a48b93471d24e1651e23893bd8b3198844e18f65e48c07947d690b0542206e7",
+          "inputsSHA256": "b1756075fd1340ee25a9212d10e9c6f9ebb70497d7404b13ccaa80021499b726",
+          "captureSHA256": "4157eade1577b22865857598aca6ef28b2dc87fc979b7798d1a875244a84ecd2"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "5e72d7fa8f3789e9c82d646dea30789a6c20751b2b7238c98f289185c1b84085"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "69b26a1f793c176eca2709d133306e9312560d076625d24dcc6efae1ea3c4297",
+          "traceSHA256": "705083c70348dff05f444284b7ab4a5a6123d129036f65397a216a651ef2e041",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "566d80046150bfe8e8d0027888bd4a047e0b6c7cec5603b0319a285456a8b7f0"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "5e3c4915c44c45837976094e644f67f94edf18b79a8219f970f84136ec1f5c6f",
+          "traceSHA256": "4eb5581983265f57fbbddf78da70c62e70d4d1205d75fd7c55a8fe109565b6b4",
+          "inputsSHA256": "704a27fb46229f6f82f8a09798af9d5920891b11ccccfd621b764983deb3fd20",
+          "captureSHA256": "3480c333d1b2edc29f7ee194bff91df54a4833fdca6ccb470dbfe6a83cdb56c7",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "joe/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "4927b32123eae0dc3b1d5d96c442404859f2e1d5b107e58587a205dae4debb49"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "5e3c4915c44c45837976094e644f67f94edf18b79a8219f970f84136ec1f5c6f",
+          "traceSHA256": "18b8d6bb42e4b8b32a0d4f65e55444b4e8eb49869d91a1aaf991dda67f236cc8",
+          "inputsSHA256": "6c04ee6d9f6e0ebac42aa5060a8e27fd85dc5b2c08e1bb29b457af05e3a2e466",
+          "captureSHA256": "0aa8e6fe3bd18ea3f708f09e5b921f19355ef219e33b9507b60f3c5e7e062db3",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "joe/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "a399215714f258d9235c7818ae3044bbbc589215a674397585b22ee9c611e3fb"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "f050abb3c73c2fb025ace43fe6d3565ffeaf9d5ed7c08bb4cb385fc2725ef565",
+          "inputsSHA256": "eb006bd3d9dae599bff1cea488610408b3eaf8c18b6396feb0ee2e944f46b971",
+          "captureSHA256": "34c15cce956cce9c9b1500a51bc78aa7007edb9a90aceec7dc2bfbf4ab0a228a",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "joe/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "01012e9fd21d96a5ef921f3e512d608c0a9e5ca5d707a368d382d48fab856e4e"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "kim": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "905501d2106b382d0a3670f0100daddaaa917a5e3098e682c918eedf15b5688f",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "42d6670cc6e4413343141ce3133e6968d8f6c2c338400579f829c86306a42daf"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "44bca43b6cfce5fbb622104bd439fe8d00c3e325f51f21beca5384651becf131",
+          "inputsSHA256": "35d1279c5fc185740291f4206be80215962898ef64fb8e20b51a6938c42490bb",
+          "captureSHA256": "0f387189068fd4a333c694716fd8fa0ee95299e1e2256284fabd7df6844a362e"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "8a25ee5fe341cfaf38012f1144c337c76ded0c4b1602239b01574c5eeb47a51f",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "4d06dcbd5f4811a3bfe53d2daba5c9fd400483117a950423cb28c7669e3625e2"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1762,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "ef80033fafeaab69defbaeb42c4cb65f6b28ed42acc55db666ecd573c90ed973",
+          "inputsSHA256": "b443d08daf7cb77f9a51b4702d622ab010375c85e0dc801a9f09112e6a85e313",
+          "captureSHA256": "e311c956b2f6bd0d8fdb2519e0b9b64b4de1a237fe30c94ffe5207fb628c008c"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1721,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "92f7a8da1355d80720b4bd7fa12b672d8ddcf5c1ba6ac2c688ab5fb39520c04f",
+          "inputsSHA256": "d265335f8e3b154d4b8f81866f70fd7060efa28f9d38b6730e4bb19226141789",
+          "captureSHA256": "bc2c71f48105f24a8c16b309e1c3019823e519fa171d6b41a023984264e20869"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "30517dd5ee63dfe610b4635652973e4c90a1147a426860b7c8e383192fd52d1c"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "8c7909d8e85de56b784f662304273309f2bcbbbdb5702c875f8db1ab40597b1c",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "e0b958571002781bf5c418a416fdf03bfdecd41d9f3b0ea1d69d8b43ecbe75e9"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "ac7d49ddfeee5b04065ffe32a951096fc936c2f2dc04e59a17d2f560d7535200",
+          "inputsSHA256": "50bdeb54fc7a8c9da9db398348cf42d312c7fe3ed53f87daea4d843afc4ce994",
+          "captureSHA256": "1382ae43be37c7b18b10e3aeae71d62369867143ae941f0bd1ef2b29214d51e0",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "kim/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "93980b033de985ae6db90bae3c40fad73188b7297c0c06ea20ff6b7bda0d86ee"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "7f3df06f093a89a6beee454ddcf0fba700e6b02eaa65b569850e3d29b4b129ed",
+          "inputsSHA256": "899b4881144bc916406ca415ea37326b2ee55bcac96d977306713f2b876c7036",
+          "captureSHA256": "986b19c1c1e8e28995c44f8c7da0fc327b12534b9982676fa3addc31a6bc16ab",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "kim/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "372f2b745012febd587387455cbd76c82934b84edc4422f7cf9fd7fcb082cc18"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "ae80bff09a026ec7d6011862ad3aedcbe5c7ebdfcb235ceab2108fa0084247cf",
+          "inputsSHA256": "6177e8cb44a5e88afbbadeb4c7617046f67dfddc78d055c17a1197174fb27e19",
+          "captureSHA256": "770b6e84147df1572835920bf189b915550c2c0538222caab349b32c6d50020c",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "kim/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "de2d7919a69e80a69271ce8c87cec622973b27d712fc7e66e39480dbf6982ea9"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "king": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "7aa3ed532a5fd14f3e35738abfd45d244a3ec6ee651670ecc302ddcbece27591",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "774b4c53ae5379b53b659116c8a41dbe139919adfcf9d699ede6717809f344e0"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "83664d7d7db9a316c3cc585816315ed07aad95abcb821201cae05192f298272c",
+          "inputsSHA256": "35d1279c5fc185740291f4206be80215962898ef64fb8e20b51a6938c42490bb",
+          "captureSHA256": "24fc164a41098eaed92e50b5ee310282ff2c5a02eb502b1b62b6fba0da5c6de9"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "0845fb9b04819490e6ebac2f923f28fa985c4ef62e4f63af21909d5d7bdc484b",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "e5065ad52a73790b35fac5ea190711943e0ec82826395b0aaa840f709eb65faf"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1717,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "f4a627a4694c340df6e38a71b8f553b0cc963a9f7801fb51b00814bf9736750b",
+          "inputsSHA256": "820ccd9a2803c71c108f8e755253c8c2ac7b9e238cf846c938d54324f87535b2",
+          "captureSHA256": "bb97f2d3785f1ed1bd75732c1ab50ef9bae1a5b21d8b340485bbf2362fadc029"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1251,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "9bb4b6cc16a4d6fcc9750e5a1ee268bad9d50cc2ad0b6554a5bcb4da1674e433",
+          "inputsSHA256": "0281e1370252a044b1f46c1462ccfbc657eaadee3863c0f10bb6385d32abf201",
+          "captureSHA256": "732b8fb572788c0e25a6f3142b27c4dbef16d2b8281f5a7a0d8e3d2e78117198"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "cf8d83f78671dec860362e8438a1cd2c266e0f6c4fa69a95b5a503686c92931a"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "8c7909d8e85de56b784f662304273309f2bcbbbdb5702c875f8db1ab40597b1c",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "f3f6c0a44201697e7dc8322ce68e579e5d8c3bd77b232f66928fc8c8c1320a1a"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "f305253f8ad65bb09fbc200d1b8de25ee529390a34004b89825964a428533b0d",
+          "inputsSHA256": "5d9da91d2420ee22f03355eb20d0303e3debe54b02207d3d15d555c39c511896",
+          "captureSHA256": "4e146c869234ad24f28cf2fc47ac7b8812d11a2fcef93a2d98a82d59fcbe7a06",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "king/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "b21a8f8c6adf454e6812ecf35d9737c1f8a7f3089ee54aa965e25c8719105343"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "c86a7f1699d7238c2ead3d4deced326e64a2eeecfc2061aabeb4a5e5b265466a",
+          "inputsSHA256": "516f1dbfbded528e952f2524b3ef8e7fd3fc6c9eca041443d9745d73fdac55c6",
+          "captureSHA256": "60516bf999637a54eec913d3a172bdd7f9bfc7e3c64fc9931b00c48b06c9b039",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "king/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "5d8738ea64b149d638cdd0bf0e413f69a7a02b88bff4dd8d4ad678d1c7cdd142"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "d5c67a5351ce16be65346354dbf5105e44c43962c0ad9e50421dc7453b561060",
+          "inputsSHA256": "aae20219c0848202dd7c0bd02b346aaa15d16f06b047124bce7ef60cf5a04c3c",
+          "captureSHA256": "1f228379e294c25e6ceab317b629397ab5c80cf22e2848c1fb03833c5a60d63a",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "king/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "1d9d38189d87eda2fd63a52fb9231b4109a201c14f326464a3016412236f3f78"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "ryo": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "7753ca5b597e822bd9a0b1eefa163612d146f5922f396c6f85848d66862eebd3",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "e769120f1771025e801ed75a780b92a60d03689a315a05a7fa8843a10413a66a"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "0d0227627808e694bb59c6284a6e479fd9033d2ce91c41a64a1131f6d7105680",
+          "inputsSHA256": "c35a9525008cb4dfd6ea51d675947ca3ed6ab89dd48d66840d5c20721746c252",
+          "captureSHA256": "abf7fcb411fb8284c351333d1c74b484b1e599e7614c8eb405da81cfab3502d1"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "2d2ac05528f89e9255561d21c35acab661430c9c8f0ee9a43d8f31879180f018",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "d46c2c93cf975363d57f9c8f54c70127e63ea43c898e73ed10ac50ba398bcdee"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1762,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dd2000c52ca32327ddd01bbd974a3c483fd252361933d3f367c657c2cc2012df",
+          "traceSHA256": "48636444662eafb552a6dae173a3a70bbb03189d83d579991a8206c92226d9de",
+          "inputsSHA256": "b443d08daf7cb77f9a51b4702d622ab010375c85e0dc801a9f09112e6a85e313",
+          "captureSHA256": "cef60cc7acfbe346a13fbc7c64e8983726d1681aa252f3757bfb83a905309c73"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1153,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "69320b83de2c89e27f56ac4c19b73ab47d4ecb64ecd8b05d1e300be7029b6a94",
+          "inputsSHA256": "4fb31f256245a6b21b9848a67361d1b057de4a86ff87c5dff226fa5674386ffd",
+          "captureSHA256": "64f1dc3e9b60ef312b51c730e95da79c1f55739ea6faf0b7dfa4e54d5032ac6e"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "c7df8d9f65bf4e2e148ca117cf83cb009203505d2b81ef48f42c590f0a2ef571"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "8c7909d8e85de56b784f662304273309f2bcbbbdb5702c875f8db1ab40597b1c",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "12190f123f69d6a6833f4823fb335fa478e2838432f3c28e28a5e20db7653e67"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "0edfb01878994deec24f78bbb8bdf716c163164d38a2021ad95e99b6ff01b132",
+          "inputsSHA256": "b9f0a17880fce0ccae067903d93ef62576f0d4c9c9099819286a3edf40523464",
+          "captureSHA256": "3382a61e06d6851af394f10676c099003f71af8b6dcb09be9dcd0477c980dc38",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "ryo/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "5dd68651f4e646d47d5d77bcdc08062b0b3574a992b106953c9541cff9c4d8b1"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "4a8df2a030f0ea89a8a17745b2d0e7137926909d5e63a2d95a79248a6143b668",
+          "inputsSHA256": "826ef3b5326d48b4d4a6cb3be3beb827005975181e145555cda684fc6aefbc93",
+          "captureSHA256": "a153ea4d5b65607050096859d8b1afbc2d980c65f45ea838d524f37b7d3840c2",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "ryo/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "c4c3d149f1562072e8d8d043bbb33dbde1bd2cbfcf668af5a492a1ed5eea6c0d"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "27f8023ad3855e7db3655aa1e3be304cb75e4994815bc259a6ded38f7e302fc1",
+          "inputsSHA256": "3fd7f161342082ad4bba0abcfff3a93ef837cf0fa3a3981bc3be56bbfb4d5c06",
+          "captureSHA256": "569ad4760aec322136e95b5c839539d12bb2c855efbe828964719c8ce74e858e",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "ryo/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "0035692492ae747b72ce17e9563b3da4a5a3a9a8410b6727c5c6172bb3de9faa"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "vice": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "e7da0df1ef312d3b206c68d976c93e3fd093291febf8625a4f895c672e8ecdfb",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "433aa930a51ff1d1b0a6ea61607d885a0e44d4016551603b0ec9166e7ca809d0"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "7aee4e0cdb1f5244098838a5d25c157ca3b1e699d482d043997efa80f40ff199",
+          "inputsSHA256": "4e24847407af9515cab849a49ed564c8158e6c1ba6f411dfbdbe51ac1d25fa81",
+          "captureSHA256": "b3562426587d4cdd79582c76ac6abc6db650f421900f5ffe3a3f590545dceb60"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "4089b391959b15c052e8f21dc78d3716c59eb2a88a1ebc818431d78b04198ede",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "246678f19286d790fd35505d1ef10097a2a1c6e79f4e8cfbce1a2f7617f177d9"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1682,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "4f9119c031426ba7f39e85050cf3b92c03fc28415789c8f6c2e4041fde9c5067",
+          "inputsSHA256": "3b506304e425ee53df30d4ee2b0e722a8b9de93e0884e9f9a4982933322b08b8",
+          "captureSHA256": "7b5767f705ffe728672b6d7826a694e1ed07e536be1e8dbd0414ec62f6a13a1d"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1290,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "88a505254b2b04b0429e56d8acb991aa1e2687f005aff2a9bf5c219fd69e60d6",
+          "inputsSHA256": "979ab695f972213822b9ed1db0b5c022914301745afe2566109c2587094ed970",
+          "captureSHA256": "e3d695c1ed719facc76202be22d674fff02761544bcbc2aee8940a649c4a3ad5"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "db8ff297f0038ed18610640beac2adbb9634c149fde5746031bbbf3f40a75e76"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "2b7fbb3551eec0e8708b72da2e8ced83178f12be40b1e374758e21535d5e37f6",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "6ac7bfad395258916c8d1a1d7e01b82593e47dad8090641e52d269c74b3051ed"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "dc106501771be1f162e0de4c95a87aadb6fd5488e86bf8e9298b1b84d48fffe6",
+          "traceSHA256": "542ad6a6f4e0d2f381684354345ff93fcf842edc476c6c89bf6123647e4cc790",
+          "inputsSHA256": "b0a680510e5974cd3d0fac7d900abe43586fbdde18f0f6de9b6810c89124e19e",
+          "captureSHA256": "f04178b20f90f2d9519f69d21b9aed13c00bcbcc8a45cbd4f72aae539a70eaad",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "vice/guard-cancel-cd-charged-v5/snap/4787.png",
+            "sourceTick": 4787,
+            "sha256": "9a4e21c06d5b66bc0e73fe5cb2ec5e622d25fd3d2cb771c81a69c828b664e7b1"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "0c9fcab90a26e55e72abf08b8a09d1ac41e3aaed1ea983946cae7e18e9646564",
+          "traceSHA256": "5b9699bfca93947e6f28d8152be54880356a0993ead3ab9f7897917b947cf5e8",
+          "inputsSHA256": "edbd2aa09c9fca8682a3cb6842a670f36e3b4e0e192b67dc01b1f049ff159b63",
+          "captureSHA256": "5cc1afb63f23a09ca49dfef2598fab4bac880f7380c038ede3ac0e4442e717d0",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "vice/guard-cancel-ab-back-charged-v5/snap/4787.png",
+            "sourceTick": 4787,
+            "sha256": "59f471bc6622afb679dbfbe4ebb42f78dee315e830d903fd8734b2cb5668b754"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "3b5dee3edf98cd392652bbb73c3c7e305a922f1f07c55809f5e22aeafc205b51",
+          "inputsSHA256": "bb0647f9f5c716b9e8a781a06a60e426c0fa59b39049e5648783437cb80b5b71",
+          "captureSHA256": "93e5a817a8eb6e06d9cef352754124c1312362b023a988d14dccae4544d27128",
+          "stockBeforeAfter": [
+            1,
+            1
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": false,
+          "triggerStatus": "not_observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "vice/guard-cancel-ab-forward-charged-v7/snap/4879.png",
+            "sourceTick": 4879,
+            "sha256": "f601a0e14793004e260c927c223b206903491c3346672cd521909ed3b3c0b408"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "shingo": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "fdab7e55aa8ec08fb6550a58f48ff23b878dc60000fefda20e85bf0b8311d8d4",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "1b8285e516d70cd7a6408aafe52b2b4149a8e600e1a8f44ce24295fc8994592a"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "1b0254989f20020c67db9978bab37a1ec819ce6ae2343175bc3987784c7cbc8c",
+          "inputsSHA256": "8d1c0f5180663b10b73143bcc71a6830da85f2c629d463dd3baabd97e8bdd993",
+          "captureSHA256": "3cc89bf5a42c4b35c8bcd1c491949ed3b972270d8864749b05465b9de5e2643f"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "cf55f96159a808ccea9e757f47bf7323e0d4928b6091d70ed229c863bddc38ed",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "c780efc71e8f3dd179a0a64094fda162df457c700482ed7bfa6e63f6de188bfc"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1669,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "5616d28f16f52cccd201e59e453f5f89c2933ca1a662b7c8b3504f4c62a95e47",
+          "inputsSHA256": "b66e479ac4ba575498bdc92aa527e5fd9bbd4b8e4e79d8df841fda7166688fb4",
+          "captureSHA256": "2fe7890f0f6a7cdda3076b9b0bf12a01f7e5687e0b105fb7d84641b44fa0b777"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1284,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "2eb21e6501b27b3599279c2194ba45ba37fe3a5ec2be3765ca4eec72fe384b09",
+          "traceSHA256": "a7d0944a8cefb0ab2ea2ba33d5bde7c0af6f94e99b08b6768e3863edf701e127",
+          "inputsSHA256": "739354c0a7d9f8cf1a8883584111eca526db3a0e5236e2f2f8e110436a9ad4df",
+          "captureSHA256": "9c7f30e9f5fafcc37e678252ee231c82ce5c6c2b7d6353475ffae2dd30d867d4"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "d5d9459678923dbebf2f7f521794fe995d1525730712284bbbc876b212add690",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "e7823c818f9c6c121b774d6bc0a91973bd284bf583907e1cbeb01bcbd0eaca15"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "31aefd9ce8d1ee157d6297af1d3bad2848204258cd34cf58472d4977b3b09723",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "a7b9035372c1bca4238314ba7ca91e4eb7d158a4da62efe7bd62048ed3653f1b"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "0c9fcab90a26e55e72abf08b8a09d1ac41e3aaed1ea983946cae7e18e9646564",
+          "traceSHA256": "69694d9a23ae5e5912c62d1f165641ba76645eed9d7b0ba417276e7bd0125590",
+          "inputsSHA256": "508f9290d96324a4d05dd101275ba19fc8fad02cc61152642eaaded89a987e63",
+          "captureSHA256": "25e32449a5e1a692db3c7411fc40086ceec52c11cdd4d08273e479d4585326f7",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "shingo/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "9399c7a2a7262c332fc1cef177313527539d98cb45b097218d89b13a30e938b0"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "0c9fcab90a26e55e72abf08b8a09d1ac41e3aaed1ea983946cae7e18e9646564",
+          "traceSHA256": "d1e056280bfa70cca7f8a23ca760c456ff96df2433128857803d16fab67c4098",
+          "inputsSHA256": "5af7ac0fc868826750f5db935fff169c6704be39911eb425f383103f4be3d3f7",
+          "captureSHA256": "54c0f873a6683047056a895ed7eeeb3e003b86b3ce8ae4992bf10875df44c9af",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "shingo/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "aa2cb6072c4f46fe3e2258d7f63b853a2cd8ea86dafadc8d6a0d4495af60c0a1"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "523771d66c32e64c89c5af8d7535fce09904090092603db040de613990b79085",
+          "inputsSHA256": "d087a4c04cbadef87576f106bd856707f915e65679103c3bbbaa0792c9a02986",
+          "captureSHA256": "5d77b33abc5cf9f9c5707b44ea2b953b9e6c385b28e574e91c865789149c8d16",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "shingo/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "15dd2ec8d32528ddafda50472eacffef9252ce5aa9fbba3c990f24a20ecb4fb6"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "iori": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "b8cb2e3bb7d5e32a907e614af7aa68505bbc08d279a67734c9be082b7b9c7804",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "b7d6b7d85c6cfaaf627591508a95e0fabd1931eae39c97cc0d08f9048d1130d9"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "02630c7a4d835c65e3f0406bffaf3f84ab79def5c1116bf03928c25006c9e2eb",
+          "inputsSHA256": "6aa4df4602c1e1b11b59a0e795cf4f8fe095949b54a456514b6f708d378acbd1",
+          "captureSHA256": "f15ea2f38382fb37b3268e9c58f2b72fe92224c02fef0f6c66e67ec39591e380"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "6bb3464a24200520c0638e426cf84d8a90d885a135b13c327214de5d43fb26f5",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "e8ca76bcdca8b504e6958fe0e609812f25b2a4235279c43cd6b518e2f2193d40"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1862,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "9d8f7faa1c881f38274bb94a01ed31114c2f419121b0ce9ca8f63fc70010a533",
+          "inputsSHA256": "47272433f82cfb4e05c92b3cdc99e13e57e9327c7cfddba324f2137fa01b34cd",
+          "captureSHA256": "4dbef8fbb2ae89033805a7f8762e060821dbe7ab157db35986be3a09860657a3"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1379,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+          "traceSHA256": "93414d2ce0712efffcf00f518c71ce9a9c5c895d842e8729b980ea99d6f1c21a",
+          "inputsSHA256": "b8286b957f480e011189792df234774493932b4f856f230428a9a7af2dfa91fa",
+          "captureSHA256": "b6a64acbe80b9dd794d548df0c882745bddb7e4a28d17f20518add70ffee1692"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "c47631bdf5aaea5417a5fbf9b3ad63650c65d08558ea895fffff3c8c22c6c408"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "2b7fbb3551eec0e8708b72da2e8ced83178f12be40b1e374758e21535d5e37f6",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "53e372450dd4867ce232ca5caab0c31e43c9b6fa6f8d66a1706b01bbe7146a54"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "0c9fcab90a26e55e72abf08b8a09d1ac41e3aaed1ea983946cae7e18e9646564",
+          "traceSHA256": "ba5050e9f914aabd4ec9592a7f1cd226be1533e625ed3dced4832dba521e3f18",
+          "inputsSHA256": "27456433637e1a66c1d89bbb99e3b18e4005ea4a0a3a11d73e5f7a71c8fe769e",
+          "captureSHA256": "4051995ad0b640fd3f237da40b595dd50a7bf5d4abcedf24541aed3c2a82a8cf",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "iori/guard-cancel-cd-charged-v5/snap/4787.png",
+            "sourceTick": 4787,
+            "sha256": "2347627a924e131c5c76ae6aa4b1f73115ab7d67e5d034e5bfa630118e85dd07"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "5abb76073d4ed935c2fd7ff3e8fb24016fe4400c963f2f8832fc36d8a1d8e59a",
+          "inputsSHA256": "ac7dcb26f4b58600f0fc3792328983fe5ed67c0fd34f363d7b0137fa42a5ab32",
+          "captureSHA256": "8ff32faf7f1bba658d73f4fda4c5d747524192bf9c4fac7d86361b973b23af6d",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "iori/guard-cancel-ab-back-charged-v5/snap/4787.png",
+            "sourceTick": 4787,
+            "sha256": "01a80d235aa7aa7923d5ee25c73caa1a99ff678a479d9d5dfe4ae9a713a24921"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "866bec1ac25719d094e878917f6ac17d09473e75e3fa1eb56843bdcbac788298",
+          "inputsSHA256": "73383b270d5e013b029623d50bb14b5de6b541c5ed3e2a9a7dcb74ce555a8571",
+          "captureSHA256": "2b85c0996030fa7e3625c1304be07075e3e91c688de92ae6e33aadf49321fb0c",
+          "stockBeforeAfter": [
+            1,
+            1
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": false,
+          "triggerStatus": "not_observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "iori/guard-cancel-ab-forward-charged-v7/snap/4879.png",
+            "sourceTick": 4879,
+            "sha256": "13a7921d4b87eaa321e280c4ef8d8a9eceb7a80b13f03623adac027ba5e5c71d"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "terry": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "7817f2f7dd30994909a20553758c4e56c345825d77191cefcdf58acaa7da12dc",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "85f93cf9e90f920e62770af38083299dc6ef52745872c3b270574a141446c66b"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "3e44ab2a945a088916ba134a1b9ad1defca0f9865dadb3e86d74a3a57447d51e",
+          "inputsSHA256": "6aa4df4602c1e1b11b59a0e795cf4f8fe095949b54a456514b6f708d378acbd1",
+          "captureSHA256": "916e70293f40a48c93d18e46077a45c4119c85416677e5fb760c00372b04000d"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "2c94d04bb0fea25614ddaa17c02828dc492033ccded622a27c42bb3f31179606",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "098db00d480c34962f144d2b940aaaf4ae0cc3405b4fc3a9c8bb5a19b0505969"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1627,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "762f7e18df973516be4783f138ad52c29099193298dd7822b5d1e4adf258a1c6",
+          "inputsSHA256": "4f0995d193d4f541d4b76cc1d872c91a3ddfabc049be28d31b780405fd55088f",
+          "captureSHA256": "507943debd7a0d34e856f80ba2bf94c136f725d2ab7939dffe0518bdbd57a589"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1106,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "cc637ec8922059dd14bbc2653da897c421d99f12281160642155e9157ebecd5a",
+          "inputsSHA256": "97c8ccd135ac92ffcbcd77ac6bba13593dc65605db398b87682a7ebc13656803",
+          "captureSHA256": "9bf0e54b8c780562c23d2cb14588d73ddd0c5ede794eb9fcc4752ccacc11298f"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "300b261d4aab2f4f170ea7158d58b9f76e47e12aab96608bf3cd1d7a26ddc8f3"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "8c7909d8e85de56b784f662304273309f2bcbbbdb5702c875f8db1ab40597b1c",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "b06165cd18f7fd74b4256f8c0ebf69f35439179a406ddc24ffae0ee74539a7c0"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "32926bc3cf12d2fcfe14ef03b8813e4bd969b19fd166fd9301336cfbad981ab1",
+          "inputsSHA256": "e20db1326722fec7d988ee8ff0303cdcfc661b056281bbfdcb0f84a9685e8ee0",
+          "captureSHA256": "b02e72c696e745cc9bd1cb6f70924fd45e4ae04742a8bceb57a0a882bf7f86ae",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "terry/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "6ee24d3d508349bbd662104dd1334744c15746d6f60258f6e4e8fd44b0dd9b51"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "468adc0245eeca264c4872540709f9ab98cbb0c86c86b9263d825c8e746b858a",
+          "inputsSHA256": "2d69451912756bb07efec1eb10d3a31e843714dd5b9e1a36181c08ef67e72f1d",
+          "captureSHA256": "73aba3e72f6d4336e8a9be4d75eaffc589dc05c5b8998c162f1f5a29a2ddaec2",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "terry/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "429a8f4c42726319e7f3ac058daf12ab8e15fd71bfa8203ad6cc31ac1768febb"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "6746399647b314a2a4c2689bfe54f083800487393c26942d57022fe67f56ab38",
+          "inputsSHA256": "dca2bd19becbbe0507ffd5f9b7fcb9f93669236a40a1643a011041e47c3257de",
+          "captureSHA256": "3b176a132cac1db3e2d4ceb6c911ed1e188cf9ff0c768e284c7530a33d831019",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "terry/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "d7be093982ecef23b5c7fa36e71d087a818b926ca42fa9aba7d1fa4cb8a7cca7"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "mai": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "ba2f30bc4e15fe51d857cb7df8b1780d8179261c47e8f1468161b6d92afba02c",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "961d15bc7323a6a8f52b039cd4cdeb3266c8a57695e45e2599889ea26d9d3421"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "0ac03c9058fd33651d9bc35e8f10c0c7ec756d56091ca466a1d654b28195c4ba",
+          "inputsSHA256": "35d1279c5fc185740291f4206be80215962898ef64fb8e20b51a6938c42490bb",
+          "captureSHA256": "f05537c2defbd7ac19c17e8b927dc92b0a4ff90a30cad8d1ed6227e6e6e99e0c"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "8208ad87696cc9bc2280da969cb62ed878869ae53e35a86d655107ebd90acc65",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "de6982597b1c3a0aad1d15f8f504f3f475cbda95636551dca1fe05b113c0b18f"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1669,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "c0014f15f7bcb128e823373db0f6dcb6e2d4f6b2734d9251c603912973578452",
+          "inputsSHA256": "9d8ff816392a1affeadba71932fb0f13f887cb8176fe73733164652234da4b56",
+          "captureSHA256": "82db33d65702cead1483274fbf6ea9f071d470374e3ccbe32462c3c21e0bff71"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1563,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "e654c63308b614ff8b058c69fca9ac64d98e85d27f1d4fe64ffab2182c0963a6",
+          "inputsSHA256": "a4aab73fcbc72e53fcfc0866ed6514b0dd035a4f8800ef11f7cc3f7e6e85c7e9",
+          "captureSHA256": "6378ce9eb5d3ff9dec44c69c39694a76ad66416d12e00b8a24929c113e171caf"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "e904ee11c24a2062a55b72d4b7203f5dffbc5d5dfabd82841463c152c628d24b",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "c4951b9b9a0f18bc93e4ea9e8f8edbb6ff3dd3be0cd341743c77ed9505122b32"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "0984ad000eb8e67af6623dab3160b030e6f99e74be571cdd7609383dde5b04d2",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "86239f05722c5d946bb6be746c63b92987890d1704eac15d3997425b4ab6bda9"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "7b8ba55e14333fa7f844540c592d3739a634ae84e20ec633c2d3c1f7419dc185",
+          "inputsSHA256": "3c421172d2f17044bcf7a245ce3923fe67ed60b5917e33b69900df0649814ff1",
+          "captureSHA256": "c194064b334ea192a3ae83d8cc2e3bc8c81e9973baf91d9deffed936eb5b14a9",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "mai/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "c8cc136c86fded33a0385e6bbc7d8b94f6dfaa9dc63b9d7de66c66fe80bfe20c"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "06cd150f186e51e7c00f4bf74ae8b1644a16c3c765fa19c0ff7b9aaad1acc31c",
+          "inputsSHA256": "c299f05fd54e22d57b79293b2261226a1cc964000f9590ddebc00409368c6a10",
+          "captureSHA256": "c73e1ca7cd2884c2879093b614f76dfd111eb2825711ed3370943ba6c72b8e8d",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "mai/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "995c7a6edc5ad78afc96c17fa51a0865df5bc19442247feb497269a4a42cf952"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "9ccde012d713ff0ef6bb8bfcf5ae0f57797f39ed4e99648c73165d14c863a1ad",
+          "inputsSHA256": "a8672533519e0282cdd66da4a251270dc085dd1d04a780c608555dce5e4d78e2",
+          "captureSHA256": "d743457452783265aa1f4d5ef3fd1c13a9e02d6c0a1d6ec0ebfe922a5978eabc",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "mai/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "bba5a648387085eb8f5468370aeed2ebfa2f6b98cc1aa942950b3e8a60313701"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "athena": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "a0dfdecbb4c9012fbe265348141f820e8a2d22d7edf258fccded949b53d83b0c",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "4013c01cacd8bf038fc8a0c93bcbae40f24f1ee4ab279888038e25a1856a9341"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "2e94811871fc144894f2c2661320000518198024bfe2467a4e0de7d7fdc9173d",
+          "inputsSHA256": "38e3bdcf31d434ca45c6179816e3decf9237a4a7d5c1560a2b0db59db3dc9f13",
+          "captureSHA256": "2322ad4acb7afa5353d9c9362ec5d9fa666b77db7325624d37c318d96906b365"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "b0bcc0c7a72e2fd8d21c1419d1cf715ead0e8db1c10b2f406e977b7a77a3ae96",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "fbbba11e38cd84fffb4155d7165a0bd348c4555fe33de511b9bea437b395f055"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1669,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "c4bab161e4ee8ce712ffbd6ff9d5e3c3264335caec40290197b96b6d6632b2dd",
+          "inputsSHA256": "bdce67ba220cc46e9e80117dcb076b618d1d6369207bf9f34bcd223012024150",
+          "captureSHA256": "adab52ec7691f591c35c8271463f0e8af80d06254eef6960525d1438ece8b022"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1329,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "ec682fb93a809c2eeb909108013bb10be7274ab1a3d53c8b455a15de9b2f60aa",
+          "inputsSHA256": "8f4fd8f8c7fc218c53eb70ce4aa70711b9837d4d19dcb52128f42fdb7e8bc38d",
+          "captureSHA256": "692941c31795203b363a8b41aaaa550f5ace1f4c1b0b24fda4993f4d54449d46"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "feedc732fc3684e8084850f87bb0f9c79eaa5d2304ee2987f02caef995de43df",
+          "traceSHA256": "f207dfce8def50c7df07c6ee3c3ad68a90a9ab4e55bfe254496ee3b0ca6b2ff4",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "f6c3050f21b8703f8311631aadc3dc5f19d5cac374aacded0b106f51200a625b"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "7ce3c397284c9bfcb48aed97e452eed5e0e2c1c7197e004edd940235c373aaa5",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "75eeb981871d4c5ab5d53687b8771d45b95e231cd91d0ab347ed97f1050c4a2a"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "ecb60e9b1f1ce76afb988228806622b6ab3eded4e533104415a3bff0992632f8",
+          "inputsSHA256": "43d01e1bee9831f14dc9dd4032ca04c3a010c5ea88923f434074322c0cfd8b2e",
+          "captureSHA256": "ac170c6f547ce1ac2dec6b34c996e74a44ae4bf087b9c19e7bcade0226cf6380",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "athena/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "1db87cfb094fc5acada92d02bc3d93e833008877bd2cde885c8f3bd7243e3d3f"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "db37f07f3f11981812e267bb3d39e24fb39bc6e2ebdc319055c3d40aa1e13772",
+          "inputsSHA256": "917cc48021e5d69065ba0dc297d309867439a620c82baa694060908603bcf30d",
+          "captureSHA256": "bc2b010b028fdde9ebd62cc1e9a3062015c16d6cb09144c2172824f966bfd0b5",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "athena/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "4543a94c58c5f5359781125b3abbda53c772ef595734769efc4c82a2621e6248"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "4aa1540156677e54978c2054111ae15c73f3af9d68b3db2be432317009a6058a",
+          "inputsSHA256": "0cdb7cc6912a5e97958348b2d3868baaefa6888386ce97ed263dd5357753cd0a",
+          "captureSHA256": "35103b36fd35c0d65a8bda4de321cdba2d6811b58f891163195c3ee5695dd97d",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "athena/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "5776190eb7d2de4ef5a18594960f9a7f561a02ddf63c4a0737b446671e99f2df"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "leona": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "51132f643e11558cf1d1d2207b388d2251dbd3a9e0307adc2d41316c51a58fbb",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "452334e3ffeb45e45dbad3096c9a79e88a5f25fb955624bbcad8231386c1db4d"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "2596ec2800ac55a461c8c9966c7c1ba429339e81c588bb0822661e76571358fd",
+          "inputsSHA256": "8c8c29d75b2d2829d011b6f170c4a03213676bc3de0f1fa70c93312b70c13174",
+          "captureSHA256": "ef5bf3fe2b0c5bfc6fa1755e4828b1cc138ce6b47fa81d460bfb3b30262fb12b"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "b80336981dcf474dba33e19d83f5d1b5c5372ba6b9670d9b61c7ffbacc296685",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "84fb1ec3adfd545232a753d15fe5da45d10e03454a7a6a63577545f4db6a1425"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1862,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "7a8c8fc3f102b705535051a50583e3a8a140f53138370b3071286bd648ceae0f",
+          "inputsSHA256": "47272433f82cfb4e05c92b3cdc99e13e57e9327c7cfddba324f2137fa01b34cd",
+          "captureSHA256": "cb27db1700328236e8432212a941a37ef148f1e7ba0c918c7d61616234501b17"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1345,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "11b1600a3b609dec62880c9f5c2efd464d71ef390b7318344cbcdc888bc59457",
+          "inputsSHA256": "c65e8fb040266718535362833afc7809d1d77a1789b246c7b4cf1170672d4736",
+          "captureSHA256": "38d2ddb1f94b9f84aff08b7825ffb0b6b50993ac0ef9c1b9ac4e1801e01d08e9"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "b0d7ed8837fa204434012d3e476ed3ee56f141eab9f4c0a96a558effba42b4af"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "46348289729c58509807addd9db36d15351885647c3fb10a37f4e0ad44f874f2",
+          "traceSHA256": "2b7fbb3551eec0e8708b72da2e8ced83178f12be40b1e374758e21535d5e37f6",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "f0fffe48d13fd7cabfd7fd3b6cb21f970ada87660ea72bad2885140f58dc36e5"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "49997ca75a1cfd852397fd4eac4b8d7c71d0ba5bc29ccd1c2a559e5f15893b17",
+          "inputsSHA256": "ea7418c841ece4fc37177f98070429f8544f48ae21c6d76b673034e59cc36c35",
+          "captureSHA256": "434d3e879fc38d985e0b64e720301dadba5ebc3ed506cc8ec00c6fe9711d66f4",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "leona/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "3df5c928c527b91ecffe1cfb92dda7bb69231fec79a1cd111fefeb7e00346679"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "3124e9561dc2f9c87c013a5300f2864ed23e18d5bf677bcad8170790615333c9",
+          "inputsSHA256": "1b314c01d5c1eda6d7c31102148e45d3cd7b2098df75d3504dbc1670dde74f2e",
+          "captureSHA256": "698d966b5c69dc5c2f475a8e355075302cfff1f98d83b19f234708d2e8ea2112",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "leona/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "326bd2c3cae57e4d5720ef24cbd0010a450a5d37f975ac847c40bccf6fa603ba"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "669aa245d044efcdd1f6f2f585897393710d57e5fda0bbd810a05559d0ce05be",
+          "inputsSHA256": "1d04f0ac954e8cd51b24980d0a41fe9eb538898319e946db8614ed1dbaa9a244",
+          "captureSHA256": "6887e8c947174a946d51a9719b91ddb1e3b12cea818b5bf84e85881c4eb433b1",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "leona/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "8022b8632e59546ad47bff190443f237bf20f3a8fb56387abb7e38b531ff333c"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "daimon": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "dd62f6344aad87403726f9187c840324d00ddb5c3d4468b8fd5fa59e3d3ff2b1",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "a0f5a653382d2b9961f39c69b905c6d8ab4077f9024fdebe489949a4d804c98e"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "52e6eafac77ef941d6417915fe518e1cb74dd2b5ff4ce78b57f8d8a6b1d52742",
+          "inputsSHA256": "c35a9525008cb4dfd6ea51d675947ca3ed6ab89dd48d66840d5c20721746c252",
+          "captureSHA256": "2ff081400d574ab660730038b3bc9f61354806b0474be333991945930c4e75dc"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "610e8e154f00fef35321a2feaef0ce159238a28cd4c522c2b6296624e735c34d",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "2ddc7ac8f39e48030f412acda04364254aeb5b7f46ced5e2ab4485a0b58d3c74"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1762,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "9040e7db40d439bbefa87b82e8235e70c86ac6a3e2759d0a9c308e5b01235312",
+          "inputsSHA256": "b443d08daf7cb77f9a51b4702d622ab010375c85e0dc801a9f09112e6a85e313",
+          "captureSHA256": "8a68028ad32e6c1bd68fcd54c40dd28a702371ee7821d8a29715303b309f7131"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1650,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "c86512f5399caa99a76cffd7e90f87d4f347902780eeaf2704c6a0a2bb1ad8cf",
+          "traceSHA256": "831772ac97776c60ecfa5884665189f37a8663a0f51cc46da8c604731167ddd0",
+          "inputsSHA256": "23f372a896e67bdfac6eb6c090bdd3fe91b6e22ab384da6b097e6917e6f96225",
+          "captureSHA256": "fec3bbd14d19d07402b47eda992a26325a145bf7cfcc111dbb226e9f15706729"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "dec3eaa25e09781ef5f398eaacaf94b7cab502b7caf663b4172f0aacd06427c1"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9063830b0895a8c86ecac184ae58b5a4379dda5fc82a4da251dcb4694f18c38e",
+          "traceSHA256": "8c7909d8e85de56b784f662304273309f2bcbbbdb5702c875f8db1ab40597b1c",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "df96c1537f557da4567878db2ec81c80113a203d82cf86f2269b605817de4966"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-daimon-a-v6",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "5b04927cbf2dd03ac8369e6bc57730ec739a717c26e51133780751a4dda13b37",
+          "traceSHA256": "350258bfa5f77796d5f00d9453b4693fab68310457a42a9e8c55f335f5b1699f",
+          "inputsSHA256": "9fda4c06429def62d1627fa11f065015e2aa44db1d1e17375f93ee20a511e6cf",
+          "captureSHA256": "6ce9a4b1e8030c516dcae17893a2adbfa774f6d147e7c5156acdc58fdbb94529",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "daimon/guard-cancel-cd-charged-daimon-a-v6/snap/4787.png",
+            "sourceTick": 4787,
+            "sha256": "cd9a66d28f7f22143d016eeb29fd45bc84440f0b2330beae5bcbdcd25bb0458f"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-daimon-a-v6",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "5b04927cbf2dd03ac8369e6bc57730ec739a717c26e51133780751a4dda13b37",
+          "traceSHA256": "b00059350e63f12d6e8719e5b37e1a41e083657bd6cadc9121395fe99a160656",
+          "inputsSHA256": "4462fd9c344999ec76f896b1ec98e1408e7a6cb85e68a729ceaf638cf871a4c3",
+          "captureSHA256": "e6b8f4a55a069cd6bac4d1c901107fdf99f50fb43b01025363979219be1da612",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "daimon/guard-cancel-ab-back-charged-daimon-a-v6/snap/4787.png",
+            "sourceTick": 4787,
+            "sha256": "d45c5261fd55c5adf487dafd2353b67a63dfa97136d67a444ddcab898bfe10a4"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-daimon-a-v8",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "5b04927cbf2dd03ac8369e6bc57730ec739a717c26e51133780751a4dda13b37",
+          "traceSHA256": "fc59088da9176f37ec4f47e677557d7bb5a99b5d0127da1c50294245ea9fbb79",
+          "inputsSHA256": "23790f888b38bd70e66f903eb3bc89d019a914157e11e14eaaf60f72a2b6cd3a",
+          "captureSHA256": "c4162acc2e0dcdbbcec28eb03572f0ed8fd7f843d950f6961c9ceeff7854bcd2",
+          "stockBeforeAfter": [
+            1,
+            1
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": false,
+          "triggerStatus": "not_observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "daimon/guard-cancel-ab-forward-charged-daimon-a-v8/snap/4879.png",
+            "sourceTick": 4879,
+            "sha256": "796729f7811252941ca01306df35299ab6f1d4d4c5f029764b9045d00d911617"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "andy": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "69b26a1f793c176eca2709d133306e9312560d076625d24dcc6efae1ea3c4297",
+          "traceSHA256": "9a5a8a498a58a89d39ac0dbcc33cfae58bf8d7efe1ec5c94a2e8388a319bf7c9",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "8e76553d321af25392e9286228caaaa4507c0861ad62fbe0d071b1a214f91c10"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "69b26a1f793c176eca2709d133306e9312560d076625d24dcc6efae1ea3c4297",
+          "traceSHA256": "50ece218745774a69f3bcd427d47e2ebdbe46b000882f5d9a3e41e8cd4c17e59",
+          "inputsSHA256": "6aa4df4602c1e1b11b59a0e795cf4f8fe095949b54a456514b6f708d378acbd1",
+          "captureSHA256": "7784d7fdf09aa1f1b73a927b9561b519d6b0626e9b987641b3b6ba541d547615"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "69b26a1f793c176eca2709d133306e9312560d076625d24dcc6efae1ea3c4297",
+          "traceSHA256": "7ec1c9228176f805cbfe500baa49db403fc939a9fb783e82ab7bb8a3983ca105",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "41b449ec9f14f17687a1519d8142b76445181eae9641040952e2bba1d24252c1"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1862,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "69b26a1f793c176eca2709d133306e9312560d076625d24dcc6efae1ea3c4297",
+          "traceSHA256": "b4d1d59029f8ff49f11ddf413371c3053025d331305de4506480dbe3fb814930",
+          "inputsSHA256": "47272433f82cfb4e05c92b3cdc99e13e57e9327c7cfddba324f2137fa01b34cd",
+          "captureSHA256": "335f9b6ca94ee70b76da04168c4299eaa247d8573dccd618dbcb1036cdb57ce7"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1288,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "69b26a1f793c176eca2709d133306e9312560d076625d24dcc6efae1ea3c4297",
+          "traceSHA256": "2116758990e92a52d4834ad4bbac271e6a096a5047fdc054c66a480729b948f0",
+          "inputsSHA256": "2560815d00988e834ed1257c5b69c380c8c4cdeac2a593eab0d4b60f5d16c415",
+          "captureSHA256": "d6c2c0e4a1bae061c057f851a80ce8a35f7a81acdfc645919a1ef3d81b11dd12"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "f207dfce8def50c7df07c6ee3c3ad68a90a9ab4e55bfe254496ee3b0ca6b2ff4",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "c34f48e5a4cf117f69035a1197361bacdc9f3359e057cf99cb318025d72d2b75"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9063830b0895a8c86ecac184ae58b5a4379dda5fc82a4da251dcb4694f18c38e",
+          "traceSHA256": "7ce3c397284c9bfcb48aed97e452eed5e0e2c1c7197e004edd940235c373aaa5",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "ccb9c5750dbcb7129142124e2dfc9ab432007950bad970c508ba95ee64a7a766"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "44fa280101c6145433243e6fee50915993b5b799ceb1ee8a9655a5ef836b2cb5",
+          "inputsSHA256": "b3071e06bd19d892b9a607bc6ff723efcebd5a02ba6c0bf73a5be36703d69603",
+          "captureSHA256": "eacd3b908ef0c69d9d30b19a3b9f441e728cda6b6a820c1cd24f2f5403a213f9",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "andy/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "77a2f6d8adfda9ea125ac242bf2781d490d3080b350dcc879646f3c1248917a2"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "97022b1e739570b5ddf5029cf5441dd4e3123b441b41fe5b11e8772f63e34355",
+          "inputsSHA256": "7de9aae76f37bdcf4a79123e6d4a581e586bb9d6c4c7d9de00fd7d48250713e4",
+          "captureSHA256": "3a582cc89a0b1c23dbbdd2d4983963f02f3335f03865a3b6eabc26d274926118",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "andy/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "ec44f38d7cc742d5c98ef975694fb6e43dbd92295371b7f3002b83aaaea68fb1"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "ba25c15188da93af5814d1883aebcf3cfae0d949c1b6d33282a95c28dfc9b15e",
+          "inputsSHA256": "98179eae91142b78f0011d3338f7f7d6ae7da769ce739e766db72905b2529b33",
+          "captureSHA256": "a36ec981dec222d303d1b188b37ece67f7a8116e0df5b532031fd9822e261e23",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "andy/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "b45efde10f24b30696420dcf5c0310bbe3e3734b826adc2464cc125c44a2eb7f"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    },
+    "robert": {
+      "batches": {
+        "locomotion": {
+          "actualBatch": "locomotion",
+          "rawFrames": 1343,
+          "inputWindows": 18,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "69b26a1f793c176eca2709d133306e9312560d076625d24dcc6efae1ea3c4297",
+          "traceSHA256": "5a043694453c5bdb4a2436a974e9c4f1a235fa2e163bd337f56919dcf81e6da8",
+          "inputsSHA256": "ab30935c587968532088e0c675f7c2b9e4698305c29515bfb63184dfcc9246a8",
+          "captureSHA256": "f5e32a1d74416125cabea56fa6dedc6eb0eec8ee098f513f28539e7cdb545b08"
+        },
+        "normals": {
+          "actualBatch": "normals",
+          "rawFrames": 1540,
+          "inputWindows": 14,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d194e5f1db2fad3454974a473c272d417ec93af01df5c73970c318da960c95c3",
+          "traceSHA256": "2087e4976e0c10ab53fe41cc6e0b225ffc99af435b4b6493c2f21433cdbf3531",
+          "inputsSHA256": "c35a9525008cb4dfd6ea51d675947ca3ed6ab89dd48d66840d5c20721746c252",
+          "captureSHA256": "c5b5791919fbd52d790032ac8647855210d389b0279b2c70152a00cb6aaac53c"
+        },
+        "air": {
+          "actualBatch": "air",
+          "rawFrames": 550,
+          "inputWindows": 5,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d194e5f1db2fad3454974a473c272d417ec93af01df5c73970c318da960c95c3",
+          "traceSHA256": "f61ebb6250513e25c77a6ab996517dd621d8b2f03a5e2c4b9f690e4b3a45228e",
+          "inputsSHA256": "c851168087bf53f22062d50fa014cee3c83f74cbb509f1ffce345134c30cd96a",
+          "captureSHA256": "f31b56e1f434b0e97f1f03b00bbbb113d31f9d314a4749c68e4a9e8ac47c40a8"
+        },
+        "reactions": {
+          "actualBatch": "reactions",
+          "rawFrames": 1669,
+          "inputWindows": 7,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d194e5f1db2fad3454974a473c272d417ec93af01df5c73970c318da960c95c3",
+          "traceSHA256": "3e64926f4d1e1ecb3c90aa224010ef2e268a205d593d334fad87b975a2cf4b4a",
+          "inputsSHA256": "c32dbbc0f0e7ea88227cb7843be4ced58fe091a33f209af2fdfbe3b1c5ef2e29",
+          "captureSHA256": "11d2731888e9e3492f18420cd12759d8692faf92d493cad67a98c550f4a75cd5"
+        },
+        "victory": {
+          "actualBatch": "victory",
+          "rawFrames": 1347,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "d194e5f1db2fad3454974a473c272d417ec93af01df5c73970c318da960c95c3",
+          "traceSHA256": "5df934d58cc41bad2b2820219f0c96fb4a0321b73ee6972b7ac2f07f48b787fb",
+          "inputsSHA256": "48c0705043d11e25f1510c5bcc7969f2cbb8711a5f47b03c1ba09107f0763cd0",
+          "captureSHA256": "22d52e4c3d7f01e4430eba4c81bfdc87d309860e1a1d1cd9a4381dc27adf26cd"
+        },
+        "sweep-recovery": {
+          "actualBatch": "sweep-recovery",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "e8d79554193c2f3df57b769e803f49b948b88155b360299f5b6347a63d7d0a8c",
+          "traceSHA256": "1e8651dca8cea0ae1009678f3559b014be149a042ea5752ddb932b73a85ef412",
+          "inputsSHA256": "5ea8ae74eabcba1bc5f213de875ea54fabb3e4c4c8eac2919fb22cd1ae720e03",
+          "captureSHA256": "45d6c44aecd2dbfd33869def0e1cf10da268b4d7c1c9e2286a24c6c100f7a7e2"
+        },
+        "ground-recovery-ab-v2": {
+          "actualBatch": "ground-recovery-ab-v2",
+          "rawFrames": 340,
+          "inputWindows": 2,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9063830b0895a8c86ecac184ae58b5a4379dda5fc82a4da251dcb4694f18c38e",
+          "traceSHA256": "8c7909d8e85de56b784f662304273309f2bcbbbdb5702c875f8db1ab40597b1c",
+          "inputsSHA256": "8a7fc3dbfa249e42889e950748f8c67907bf13f6854fac276bed60a02c5815e8",
+          "captureSHA256": "4726ceec4637657945ff486d2bbaee40799ee827f11a2e0d9bfc6bb42939d35c"
+        },
+        "guard-cancel-cd-charged-v5": {
+          "actualBatch": "guard-cancel-cd-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "ad1a61ff8d1ed1bd23760b67ba6fad8baf5526690e4539d4e74638c45d85d640",
+          "inputsSHA256": "b519d70e8eaaf109e2bffe2af5ea6b8a34511a1625158ef226c58b2fbaf3cc38",
+          "captureSHA256": "1036e248eb9a8a984af32176fefc84264e542879523b7427624c43d6311ddf5b",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "robert/guard-cancel-cd-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "8e5a9d0b783796e011507cc451ee4d5f5431081d80e0fc9ba115bde862599d59"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-back-charged-v5": {
+          "actualBatch": "guard-cancel-ab-back-charged-v5",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "60dd2d661117f39414604b228b222d225b8c4702ccad1a14bfd34d8f07f0b937",
+          "inputsSHA256": "c33df0e48aedcf56316dc6ddc486ba28c36fe418b1fa899bfe99f46c6c6f54cf",
+          "captureSHA256": "714999f5738517cff2b866825877938827f271a6f187da1d255d5c91e8ec33f0",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "robert/guard-cancel-ab-back-charged-v5/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "0bc5b01f99b1fcaaee048768773bd0c6da4d5c9f1b0781ac87758a9679751976"
+          },
+          "nativeVisualReviewed": true
+        },
+        "guard-cancel-ab-forward-charged-v7": {
+          "actualBatch": "guard-cancel-ab-forward-charged-v7",
+          "rawFrames": 2180,
+          "inputWindows": 3,
+          "captureReady": true,
+          "memoryWrites": false,
+          "visualAccepted": false,
+          "sourceSHA256": "9c18504aa7484afd07d48d39b10035ca319382b2907d50e35af0e327829d9207",
+          "traceSHA256": "d3b9818bd93198babc7939db21d166abebd4a071cecba239738d4835a1b9c8a4",
+          "inputsSHA256": "85e8081207ce216dc90916ef0776b2fa2e8f2d550b8e8de54c2b594a2313dc0d",
+          "captureSHA256": "66af00b52a49a2cc92dc6ddf58c84a3070f997d2e262274ff308864ebddd1f14",
+          "stockBeforeAfter": [
+            1,
+            0
+          ],
+          "stockConditionEstablished": true,
+          "actualStockConsumed": true,
+          "triggerStatus": "observed",
+          "failureReason": null,
+          "nativeEvidence": {
+            "image": "robert/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+            "sourceTick": 4790,
+            "sha256": "71ddd5d6758dffc9276581e69cf765d19ffc49876892bc7272fc4d1c864da6b5"
+          },
+          "nativeVisualReviewed": true
+        }
+      },
+      "allMovesComplete": false,
+      "identityVisualVerified": true,
+      "identityEvidence": "identity-sixteen.jpg",
+      "sweepKnockdownRecoveryVisualVerified": true,
+      "sweepEvidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ],
+      "missingBatches": [],
+      "requiredCapturesComplete": true
+    }
+  },
+  "remainingGaps": [
+    "Actual dizzy not established by light-A, heavy-C or repeated Yuri623C probes; do not treat KO as dizzy.",
+    "Guard crush, teammate assist and remaining conditional system derivatives not established by this branch.",
+    "Near/far normal variant identity and every individual attack transition still require move-level native review.",
+    "Turn crossover and directional/conditioned airborne work belongs to the separate root edge branch and is not counted here."
+  ],
+  "allRequiredCapturesComplete": true,
+  "rawFrameCount": 219759
+}

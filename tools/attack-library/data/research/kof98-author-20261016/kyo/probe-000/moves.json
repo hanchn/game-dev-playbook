@@ -1,0 +1,348 @@
+[
+  {
+    "character": "kyo",
+    "sourceRow": 5,
+    "label": "114 Shiki Ara Kami",
+    "sourcePage": 2,
+    "sourceRawRow": "[236] [A] 114 Shiki Ara Kami",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kyo-05-236-A-p007",
+    "motion": "236",
+    "button": "A",
+    "chain": [
+      {
+        "name": "114 Shiki Ara Kami",
+        "motion": "236",
+        "button": "A",
+        "charge": false,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      }
+    ],
+    "close": false,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "kyo",
+    "sourceRow": 6,
+    "label": "128 Shiki Kono Kizu",
+    "sourcePage": 2,
+    "sourceRawRow": "114 Shiki Ara Kami [236] [A/C] 128 Shiki Kono Kizu",
+    "conditionRaw": "114 Shiki Ara Kami",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kyo-06-236-A-p008",
+    "motion": "236",
+    "button": "A",
+    "chain": [
+      {
+        "name": "114 Shiki Ara Kami",
+        "motion": "236",
+        "button": "A",
+        "charge": false,
+        "condition": ""
+      },
+      {
+        "name": "128 Shiki Kono Kizu",
+        "motion": "236",
+        "button": "A",
+        "charge": false,
+        "condition": "114 Shiki Ara Kami"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      },
+      {
+        "direction": "5",
+        "fields": [],
+        "frames": 10
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "kyo",
+    "sourceRow": 6,
+    "label": "128 Shiki Kono Kizu",
+    "sourcePage": 2,
+    "sourceRawRow": "114 Shiki Ara Kami [236] [A/C] 128 Shiki Kono Kizu",
+    "conditionRaw": "114 Shiki Ara Kami",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kyo-06-236-C-p009",
+    "motion": "236",
+    "button": "C",
+    "chain": [
+      {
+        "name": "114 Shiki Ara Kami",
+        "motion": "236",
+        "button": "A",
+        "charge": false,
+        "condition": ""
+      },
+      {
+        "name": "128 Shiki Kono Kizu",
+        "motion": "236",
+        "button": "C",
+        "charge": false,
+        "condition": "114 Shiki Ara Kami"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      },
+      {
+        "direction": "5",
+        "fields": [],
+        "frames": 10
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "kyo",
+    "sourceRow": 7,
+    "label": "127 Shiki Yano Sabi",
+    "sourcePage": 2,
+    "sourceRawRow": "114 Shiki Ara Kami [63214] [A/C] 127 Shiki Yano Sabi",
+    "conditionRaw": "114 Shiki Ara Kami",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kyo-07-63214-A-p010",
+    "motion": "63214",
+    "button": "A",
+    "chain": [
+      {
+        "name": "114 Shiki Ara Kami",
+        "motion": "236",
+        "button": "A",
+        "charge": false,
+        "condition": ""
+      },
+      {
+        "name": "127 Shiki Yano Sabi",
+        "motion": "63214",
+        "button": "A",
+        "charge": false,
+        "condition": "114 Shiki Ara Kami"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      },
+      {
+        "direction": "5",
+        "fields": [],
+        "frames": 10
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "1",
+        "fields": [
+          "Down",
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  }
+]

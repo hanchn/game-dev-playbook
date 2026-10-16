@@ -1,0 +1,11 @@
+# KOF98 first16 natural meter sampling
+
+Completed 72 official-condition captures + 76 author-condition captures, 14 critical-health repairs, 40 specialized branch attempts (202 batches audited). Every audited action range is consecutive, every action PNG exists, immutable source SHA matches its capture receipt. Conditions use original menu/ordinary inputs only; RAM reads observe health/meter/position, never write them.
+
+188 batch triggers observed in actual native MAME contact views, 4 branch triggers unverified, 10 branch attempts not observed. These counts include prior failed/superseded attempts, not 202 unique moves. Playback index contains 187 current clips, separates weak/strong buttons, mode/health conditions and specialized close-air captures. This is native scene evidence; not bone recovery, command-table recovery, exhaustive all-state coverage or all-frame UI acceptance.
+
+Athena close-air Shining/ Phoenix now actually hits (Phoenix RUSH10 normal /24 critical). ABCD cancellation visibly ends orbit early. QCB+P55 candidate still resembles persistent orbit: four exact IDs remain unverified. Kyo/Iori hold90 then release visibly charges/releases. Leona close-air full V-hit / critical explosion observed. Kim close-air normal D and critical B connect; normal B and critical D fail at this timing.
+
+Daimon chain: first version incorrectly tried HCF second step; actual author guide says neutral K. Corrected v2 K105 then DP165 still produces only first grab/slam (HP103→92/93), so all eight chain attempts remain not_observed for requested full chain. Original first grab activation does not count full chain. Exact IDs/inputs/source/trace hashes and reasons are in final-receipt.json.
+
+Reproduction: run scripts/kof98-meter-run.py with explicit character/condition/version; original EXTRA selection skips P1A900 then Down960/A1020. ABC240 ordinary charge; natural P2 attacks bring HP≤9 before MAX attempts. Repeated236 sampler inserts neutral3 ticks; HP19/21 vs6–9 observations retained in README. All raw images/VRAM/palette remain local under gitignored raw folders; source/capture/trace and contact evidence retained for audit. No new characters or experiments started after scope narrowed.

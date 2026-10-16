@@ -1,0 +1,38 @@
+{
+  "method": "Root independently viewed native PNG contact at actual source ticks; state observations are not all move acceptance.",
+  "character": "joe",
+  "observations": [
+    {
+      "phase": "crouch-hurt-light",
+      "status": "observed",
+      "evidence": "P1 crouched contact pose plus HP 103 to100; P2 pre-crouched before attack."
+    },
+    {
+      "phase": "crouch-hurt-heavy",
+      "status": "observed",
+      "evidence": "P1 crouched hit recoil plus HP100 to90."
+    },
+    {
+      "phase": "air-hurt-light",
+      "status": "observed",
+      "evidence": "P1 airborne impact pose then descending; HP90 to85."
+    },
+    {
+      "phase": "air-hurt-heavy",
+      "status": "observed",
+      "evidence": "P1 airborne recoil; HP85 to76."
+    },
+    {
+      "phase": "air-guard-attempt",
+      "status": "observed",
+      "sourceTicks": [
+        3555,
+        3570
+      ],
+      "evidence": "Original blue defensive circle around airborne P1 while P2 attacks; HP76 unchanged."
+    }
+  ],
+  "contact": "joe/extra-reactions-v2/review/contact.jpg",
+  "contactSHA256": "0e192d11ac45a685195a8474f65b6ee51cbed7ff1c5e2e28aba5b407b7ac65ac",
+  "noAutomaticGeneralization": true
+}

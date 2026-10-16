@@ -1,0 +1,212 @@
+[
+  {
+    "character": "kim",
+    "sourceRow": 5,
+    "label": "Hi En Zan",
+    "sourcePage": 9,
+    "sourceRawRow": "[[2-charge]] [8] [B/D] Hi En Zan",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kim-05-28-B-p280",
+    "motion": "28",
+    "button": "B",
+    "chain": [
+      {
+        "name": "Hi En Zan",
+        "motion": "28",
+        "button": "B",
+        "charge": true,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 70
+      },
+      {
+        "direction": "8",
+        "fields": [
+          "Up"
+        ],
+        "frames": 3,
+        "buttons": [
+          "B"
+        ]
+      }
+    ],
+    "close": false,
+    "air": false,
+    "airThrow": false,
+    "charge": true,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "kim",
+    "sourceRow": 5,
+    "label": "Hi En Zan",
+    "sourcePage": 9,
+    "sourceRawRow": "[[2-charge]] [8] [B/D] Hi En Zan",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kim-05-28-D-p281",
+    "motion": "28",
+    "button": "D",
+    "chain": [
+      {
+        "name": "Hi En Zan",
+        "motion": "28",
+        "button": "D",
+        "charge": true,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 70
+      },
+      {
+        "direction": "8",
+        "fields": [
+          "Up"
+        ],
+        "frames": 3,
+        "buttons": [
+          "D"
+        ]
+      }
+    ],
+    "close": false,
+    "air": false,
+    "airThrow": false,
+    "charge": true,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "kim",
+    "sourceRow": 7,
+    "label": "Ten Sou Zan",
+    "sourcePage": 9,
+    "sourceRawRow": "[2] [D]",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kim-07-2-D-p282",
+    "motion": "2",
+    "button": "D",
+    "chain": [
+      {
+        "name": "Hi En Zan",
+        "motion": "28",
+        "button": "D",
+        "charge": true,
+        "condition": ""
+      },
+      {
+        "name": "Ten Sou Zan",
+        "motion": "2",
+        "button": "D",
+        "charge": false,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 70
+      },
+      {
+        "direction": "8",
+        "fields": [
+          "Up"
+        ],
+        "frames": 3,
+        "buttons": [
+          "D"
+        ]
+      },
+      {
+        "direction": "5",
+        "fields": [],
+        "frames": 10
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3,
+        "buttons": [
+          "D"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": true,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "kim",
+    "sourceRow": 8,
+    "label": "Ryuusei Raku",
+    "sourcePage": 9,
+    "sourceRawRow": "[[4-charge]] [6] [B/D] Ryuusei Raku",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kim-08-46-B-p283",
+    "motion": "46",
+    "button": "B",
+    "chain": [
+      {
+        "name": "Ryuusei Raku",
+        "motion": "46",
+        "button": "B",
+        "charge": true,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 70
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "B"
+        ]
+      }
+    ],
+    "close": false,
+    "air": false,
+    "airThrow": false,
+    "charge": true,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  }
+]

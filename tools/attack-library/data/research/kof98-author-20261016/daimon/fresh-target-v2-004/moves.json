@@ -1,0 +1,74 @@
+[
+  {
+    "character": "daimon",
+    "sourceRow": 10,
+    "label": "Kumo Tsukami Nage",
+    "sourcePage": 3,
+    "sourceRawRow": "[A] Kumo Tsukami Nage",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "daimon-10-41236-A-p079",
+    "motion": "41236",
+    "button": "A",
+    "chain": [
+      {
+        "name": "Kumo Tsukami Nage",
+        "motion": "41236",
+        "button": "A",
+        "charge": false,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "1",
+        "fields": [
+          "Down",
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "3",
+        "fields": [
+          "Down",
+          "Right"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window; fresh target-cooperation probe: close opponent; Kumo target ordinary jump, Nekko target crouching kick",
+    "sourceCorrection": "rendered original PDF row manually inspected",
+    "opponentJump": true,
+    "opponentLowAttack": false
+  }
+]

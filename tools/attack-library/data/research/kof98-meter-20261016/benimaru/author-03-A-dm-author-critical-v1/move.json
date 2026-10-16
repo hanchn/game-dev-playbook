@@ -1,0 +1,46 @@
+{
+  "configuration": {
+    "route": [
+      "Right"
+    ],
+    "directions": [
+      "6",
+      "3",
+      "2",
+      "1",
+      "4",
+      "5",
+      "6",
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "button": "A",
+    "max": false,
+    "close": true,
+    "air": false
+  },
+  "officialSource": {
+    "name": "ElectroTrigger",
+    "conditions": [
+      "super: real meter",
+      "close range"
+    ],
+    "directionNotation": "6321463214",
+    "adaptedNeoGeoButton": "A",
+    "authorEvidence": {
+      "character": "benimaru",
+      "id": "author-03-A",
+      "name": "ElectroTrigger",
+      "motion": "6321463214",
+      "button": "A",
+      "close": true,
+      "air": false,
+      "source": "../kof98-move-research-20261016/author-guide-extended-checklist.json",
+      "sourceType": "original author guide, nonofficial research, not ROM recovered command",
+      "runtimeVerified": false,
+      "MAXIdentityRule": "Benimaru C changes Taikuu(DM) to Raiko(SDM); others must inspect actual visual difference; lowHP+fullgauge alone does not auto-prove SDM"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "character": "kyo",
+    "sourceRow": 15,
+    "label": "Ge Shiki Ryuu Iri",
+    "sourcePage": 2,
+    "sourceRawRow": "[214] [A/C]",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "kyo-15-214-C-p030",
+    "motion": "214",
+    "button": "C",
+    "chain": [
+      {
+        "name": "Ge Shiki Ryuu Iri",
+        "motion": "214",
+        "button": "C",
+        "charge": false,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "1",
+        "fields": [
+          "Down",
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": true,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": true,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window; corrected counter probe establishes close opponent for ordinary attack",
+    "sourceCorrection": null
+  }
+]

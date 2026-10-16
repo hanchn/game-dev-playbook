@@ -1,0 +1,44 @@
+{
+  "scope": "Specific visual endpoint reviews; no other action acceptance implied.",
+  "clips": {
+    "victory--p1-round-win-attempt": {
+      "triggerStatus": "observed",
+      "reason": "Actual native winner gesture and round-loss/WINNER presentation visually inspected; see pilot-visual-review.json."
+    },
+    "sweep-recovery--receive-sweep-preconditioned": {
+      "triggerStatus": "observed",
+      "reason": "Actual reviewed sixteen-role native boards show original prone state at2920 and standing recovery at2980.",
+      "evidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ]
+    },
+    "guard-cancel-cd-charged-v5--guard-cancel-CD": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "kim/guard-cancel-cd-charged-v5/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "93980b033de985ae6db90bae3c40fad73188b7297c0c06ea20ff6b7bda0d86ee"
+      }
+    },
+    "guard-cancel-ab-back-charged-v5--guard-cancel-AB-back": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "kim/guard-cancel-ab-back-charged-v5/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "372f2b745012febd587387455cbd76c82934b84edc4422f7cf9fd7fcb082cc18"
+      }
+    },
+    "guard-cancel-ab-forward-charged-v7--guard-cancel-AB-neutral": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "kim/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "de2d7919a69e80a69271ce8c87cec622973b27d712fc7e66e39480dbf6982ea9"
+      }
+    }
+  }
+}

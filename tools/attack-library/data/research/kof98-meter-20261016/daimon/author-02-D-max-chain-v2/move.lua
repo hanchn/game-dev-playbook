@@ -1,0 +1,1 @@
+return {["route"]={"Right","Right"},["directions"]={"4","1","2","3","6","5","4","1","2","3","6"},["button"]="D",["max"]=true,["close"]=true,["air"]=false,["followup"]="arashi-chain"}

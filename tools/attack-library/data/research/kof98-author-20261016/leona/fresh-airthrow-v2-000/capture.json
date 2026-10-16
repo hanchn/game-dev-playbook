@@ -1,0 +1,46 @@
+{
+  "character": "leona",
+  "batch": "fresh-airthrow-v2-000",
+  "traceValid": true,
+  "fieldErrors": [],
+  "rows": 337,
+  "frames": 136,
+  "returnCode": 0,
+  "wallSeconds": 10.713318109512329,
+  "scriptSHA256": "bae7e97a2fadaf80ebdcb9306585661c5efe92cd74752f8aabef30143dec61a7",
+  "ordinaryInputOnly": true,
+  "memoryWrites": false,
+  "attempts": [
+    {
+      "id": "leona-02-4-C-p252",
+      "status": "attempted",
+      "reason": "ordinary command chain delivered; parent/cancel/throw result needs visual review"
+    }
+  ],
+  "nativeMovesVerified": false,
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/leona/fresh-airthrow-v2-000/capture-script.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/leona/fresh-airthrow-v2-000/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-author-20261016/leona/fresh-airthrow-v2-000/nvram",
+    "-seconds_to_run",
+    "110",
+    "-frameskip",
+    "0"
+  ]
+}

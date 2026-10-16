@@ -1,0 +1,40 @@
+{
+  "scope": "Specific native contact/endpoint reviews only; no full move-list acceptance.",
+  "clips": {
+    "sweep-recovery--receive-sweep-preconditioned": {
+      "triggerStatus": "observed",
+      "reason": "Actual reviewed sixteen-role native boards show original prone state at2920 and standing recovery at2980.",
+      "evidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ]
+    },
+    "guard-cancel-cd-charged-v5--guard-cancel-CD": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "vice/guard-cancel-cd-charged-v5/snap/4787.png",
+        "sourceTick": 4787,
+        "sha256": "9a4e21c06d5b66bc0e73fe5cb2ec5e622d25fd3d2cb771c81a69c828b664e7b1"
+      }
+    },
+    "guard-cancel-ab-back-charged-v5--guard-cancel-AB-back": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "vice/guard-cancel-ab-back-charged-v5/snap/4787.png",
+        "sourceTick": 4787,
+        "sha256": "59f471bc6622afb679dbfbe4ebb42f78dee315e830d903fd8734b2cb5668b754"
+      }
+    },
+    "guard-cancel-ab-forward-charged-v7--guard-cancel-AB-neutral": {
+      "triggerStatus": "not_observed",
+      "reason": null,
+      "evidence": {
+        "image": "vice/guard-cancel-ab-forward-charged-v7/snap/4879.png",
+        "sourceTick": 4879,
+        "sha256": "f601a0e14793004e260c927c223b206903491c3346672cd521909ed3b3c0b408"
+      }
+    }
+  }
+}

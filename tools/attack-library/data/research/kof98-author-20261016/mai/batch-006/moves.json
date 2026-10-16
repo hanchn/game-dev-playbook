@@ -1,0 +1,159 @@
+[
+  {
+    "character": "mai",
+    "sourceRow": 11,
+    "label": "Chijou Musasabi no Mai",
+    "sourcePage": 9,
+    "sourceRawRow": "[[2-charge]] [8] [A/C]",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "mai-11-28-C-p221",
+    "motion": "28",
+    "button": "C",
+    "chain": [
+      {
+        "name": "Chijou Musasabi no Mai",
+        "motion": "28",
+        "button": "C",
+        "charge": true,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 70
+      },
+      {
+        "direction": "8",
+        "fields": [
+          "Up"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": false,
+    "air": false,
+    "airThrow": false,
+    "charge": true,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "mai",
+    "sourceRow": 13,
+    "label": "Kuuchuu Musasabi no Mai",
+    "sourcePage": 9,
+    "sourceRawRow": "jump [214] [A/C] Kuuchuu Musasabi no Mai",
+    "conditionRaw": "jump",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "mai-13-214-A-p222",
+    "motion": "214",
+    "button": "A",
+    "chain": [
+      {
+        "name": "Kuuchuu Musasabi no Mai",
+        "motion": "214",
+        "button": "A",
+        "charge": false,
+        "condition": "jump"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "1",
+        "fields": [
+          "Down",
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3,
+        "buttons": [
+          "A"
+        ]
+      }
+    ],
+    "close": false,
+    "air": true,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "mai",
+    "sourceRow": 13,
+    "label": "Kuuchuu Musasabi no Mai",
+    "sourcePage": 9,
+    "sourceRawRow": "jump [214] [A/C] Kuuchuu Musasabi no Mai",
+    "conditionRaw": "jump",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "mai-13-214-C-p223",
+    "motion": "214",
+    "button": "C",
+    "chain": [
+      {
+        "name": "Kuuchuu Musasabi no Mai",
+        "motion": "214",
+        "button": "C",
+        "charge": false,
+        "condition": "jump"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "1",
+        "fields": [
+          "Down",
+          "Left"
+        ],
+        "frames": 3
+      },
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": false,
+    "air": true,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  }
+]

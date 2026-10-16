@@ -1,0 +1,93 @@
+{
+  "configuration": {
+    "route": [
+      "Right",
+      "Right",
+      "Right",
+      "Right",
+      "Right"
+    ],
+    "directions": [
+      "2",
+      "3",
+      "6",
+      "2",
+      "3",
+      "6"
+    ],
+    "button": "A",
+    "max": false,
+    "close": true,
+    "air": false
+  },
+  "officialSource": {
+    "name": "★スクリューアッパー",
+    "source": "snk-official-chara1.html",
+    "rawCommandImageText": "[image:images/directionkey_2.gif]  [image:images/directionkey_3.gif]  [image:images/directionkey_6.gif]  [image:images/directionkey_2.gif]  [image:images/directionkey_3.gif]  [image:images/directionkey_6.gif]  ＋  [image:images/1_remote_text.gif]  または  [image:images/A_remote_text.gif]",
+    "directionNotation": "236236",
+    "sourceWiiButton": "1",
+    "adaptedNeoGeoButton": "A",
+    "conditions": [
+      "super: real meter availability required; do not write power/health RAM"
+    ],
+    "ordinaryInputProposal": {
+      "facing": "right",
+      "p1FieldPrefix": "P1 ",
+      "neutralBeforeFrames": 12,
+      "steps": [
+        {
+          "direction": "2",
+          "fields": [
+            "Down"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "3",
+          "fields": [
+            "Down",
+            "Right"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "6",
+          "fields": [
+            "Right"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "2",
+          "fields": [
+            "Down"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "3",
+          "fields": [
+            "Down",
+            "Right"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "6",
+          "fields": [
+            "Right"
+          ],
+          "frames": 3,
+          "buttons": [
+            "A"
+          ]
+        }
+      ],
+      "releaseAllAfter": true,
+      "observeFrames": 90
+    },
+    "commandSourceVerified": true,
+    "runtimeExecutionVerified": false,
+    "nativeTimingRecovered": false
+  }
+}

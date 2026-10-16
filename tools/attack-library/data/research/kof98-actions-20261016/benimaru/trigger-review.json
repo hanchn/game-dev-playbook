@@ -1,0 +1,44 @@
+{
+  "scope": "Specific visual endpoint reviews; no other action acceptance implied.",
+  "clips": {
+    "victory--p1-round-win-attempt": {
+      "triggerStatus": "observed",
+      "reason": "Actual native winner gesture and round-loss/WINNER presentation visually inspected; see pilot-visual-review.json."
+    },
+    "sweep-recovery--receive-sweep-preconditioned": {
+      "triggerStatus": "observed",
+      "reason": "Actual reviewed sixteen-role native boards show original prone state at2920 and standing recovery at2980.",
+      "evidence": [
+        "sweep-sixteen.jpg",
+        "sweep-recovery-sixteen.jpg"
+      ]
+    },
+    "guard-cancel-cd-charged-v5--guard-cancel-CD": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "benimaru/guard-cancel-cd-charged-v5/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "e8bf28a8630596384559ef433abed1597bc11739c036bea8adb6964cd9962714"
+      }
+    },
+    "guard-cancel-ab-back-charged-v5--guard-cancel-AB-back": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "benimaru/guard-cancel-ab-back-charged-v5/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "a172fe29885194eb1103e934d1d7536256dc55b6daa7452d6dd260bb5b08d3c3"
+      }
+    },
+    "guard-cancel-ab-forward-charged-v7--guard-cancel-AB-neutral": {
+      "triggerStatus": "observed",
+      "reason": "Real special earned ADV stock; actual original guard-cancel stock1\u21920 and native cancel action reviewed in sixteen-role contact.",
+      "evidence": {
+        "image": "benimaru/guard-cancel-ab-forward-charged-v7/snap/4790.png",
+        "sourceTick": 4790,
+        "sha256": "9ae1653efcd1ef447531f3cc16ba43f0bd517821a5aaad6c09e729381355498f"
+      }
+    }
+  }
+}

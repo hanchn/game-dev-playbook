@@ -1,0 +1,42 @@
+[
+  {
+    "character": "mai",
+    "sourceRow": 2,
+    "label": "Yume Zakura",
+    "sourcePage": 9,
+    "sourceRawRow": "jump close [4] [or] [2] [or] [6] [C/D] Yume Zakura",
+    "conditionRaw": "jump close",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "mai-02-4-C-p201",
+    "motion": "4",
+    "button": "C",
+    "chain": [
+      {
+        "name": "Yume Zakura",
+        "motion": "4",
+        "button": "C",
+        "charge": false,
+        "condition": "jump close"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "4",
+        "fields": [
+          "Left"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": true,
+    "air": true,
+    "airThrow": true,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  }
+]

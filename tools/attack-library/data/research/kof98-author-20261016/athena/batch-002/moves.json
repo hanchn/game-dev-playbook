@@ -1,0 +1,162 @@
+[
+  {
+    "character": "athena",
+    "sourceRow": 2,
+    "label": "Psychic Shoot",
+    "sourcePage": 7,
+    "sourceRawRow": "jump close [4] [or] [2] [or] [6] [C/D] Psychic Shoot",
+    "conditionRaw": "jump close",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "athena-02-6-C-p232",
+    "motion": "6",
+    "button": "C",
+    "chain": [
+      {
+        "name": "Psychic Shoot",
+        "motion": "6",
+        "button": "C",
+        "charge": false,
+        "condition": "jump close"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "C"
+        ]
+      }
+    ],
+    "close": true,
+    "air": true,
+    "airThrow": true,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "athena",
+    "sourceRow": 2,
+    "label": "Psychic Shoot",
+    "sourcePage": 7,
+    "sourceRawRow": "jump close [4] [or] [2] [or] [6] [C/D] Psychic Shoot",
+    "conditionRaw": "jump close",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "athena-02-6-D-p233",
+    "motion": "6",
+    "button": "D",
+    "chain": [
+      {
+        "name": "Psychic Shoot",
+        "motion": "6",
+        "button": "D",
+        "charge": false,
+        "condition": "jump close"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "D"
+        ]
+      }
+    ],
+    "close": true,
+    "air": true,
+    "airThrow": true,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "athena",
+    "sourceRow": 3,
+    "label": "Renkan Tai",
+    "sourcePage": 7,
+    "sourceRawRow": "[6] [B] Renkan Tai",
+    "conditionRaw": "",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "athena-03-6-B-p234",
+    "motion": "6",
+    "button": "B",
+    "chain": [
+      {
+        "name": "Renkan Tai",
+        "motion": "6",
+        "button": "B",
+        "charge": false,
+        "condition": ""
+      }
+    ],
+    "steps": [
+      {
+        "direction": "6",
+        "fields": [
+          "Right"
+        ],
+        "frames": 3,
+        "buttons": [
+          "B"
+        ]
+      }
+    ],
+    "close": false,
+    "air": false,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  },
+  {
+    "character": "athena",
+    "sourceRow": 4,
+    "label": "Phoenix Bomb",
+    "sourcePage": 7,
+    "sourceRawRow": "jump [2] [B] Phoenix Bomb",
+    "conditionRaw": "jump",
+    "sourceKind": "nonofficial original author guide, NEO Encyclopedia Moves & Codes, printed2004; exact original KOF98 title, notUM",
+    "id": "athena-04-2-B-p235",
+    "motion": "2",
+    "button": "B",
+    "chain": [
+      {
+        "name": "Phoenix Bomb",
+        "motion": "2",
+        "button": "B",
+        "charge": false,
+        "condition": "jump"
+      }
+    ],
+    "steps": [
+      {
+        "direction": "2",
+        "fields": [
+          "Down"
+        ],
+        "frames": 3,
+        "buttons": [
+          "B"
+        ]
+      }
+    ],
+    "close": false,
+    "air": true,
+    "airThrow": false,
+    "charge": false,
+    "counter": false,
+    "conditionNotes": "Parent chain 10-frame handoff is probe timing, not recovered native cancel window",
+    "sourceCorrection": null
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "characterIntended": "kim",
+  "batch": "victory",
+  "returnCode": 0,
+  "rawFrames": 1703,
+  "traceValid": false,
+  "contiguous": false,
+  "scriptSHA256": "b8b73091a1b99947247d659c441740eded16d645f6ba452b042ba6ad690ebc77",
+  "route": [
+    "Down",
+    "Down"
+  ],
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-actions-20261016/kim/victory/source.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-actions-20261016/kim/victory/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-actions-20261016/kim/victory/nvram",
+    "-seconds_to_run",
+    "120",
+    "-frameskip",
+    "0"
+  ],
+  "seconds": 35.95541787147522,
+  "memoryWrites": false,
+  "visualAccepted": false,
+  "allMovesComplete": false,
+  "capturePolicy": {
+    "victoryHoldTicks": 300,
+    "reactionHoldTicks": 120
+  },
+  "clips": []
+}

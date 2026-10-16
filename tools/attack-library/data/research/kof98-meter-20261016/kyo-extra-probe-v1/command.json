@@ -1,0 +1,30 @@
+{
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-meter-probe.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-meter-20261016/kyo-extra-probe-v1/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-meter-20261016/kyo-extra-probe-v1/nvram",
+    "-seconds_to_run",
+    "80",
+    "-frameskip",
+    "0"
+  ],
+  "sourceSHA": "d9a17b9a53d4d0d2cf628b0824a93ff28ea5743165a820d5ec2b64ccd5d80d99",
+  "ordinaryInputOnly": true,
+  "memoryWrites": false
+}

@@ -1,0 +1,45 @@
+{
+  "configuration": {
+    "route": [
+      "Right",
+      "Right",
+      "Right",
+      "Down"
+    ],
+    "directions": [
+      "2",
+      "3",
+      "6",
+      "5",
+      "2",
+      "3",
+      "6"
+    ],
+    "button": "B",
+    "max": true,
+    "close": true,
+    "air": true
+  },
+  "officialSource": {
+    "name": "PhoenixFangArrow",
+    "conditions": [
+      "super: real meter",
+      "airborne"
+    ],
+    "directionNotation": "236236",
+    "adaptedNeoGeoButton": "B",
+    "authorEvidence": {
+      "character": "athena",
+      "id": "author-03-B",
+      "name": "PhoenixFangArrow",
+      "motion": "236236",
+      "button": "B",
+      "close": false,
+      "air": true,
+      "source": "../kof98-move-research-20261016/author-guide-extended-checklist.json",
+      "sourceType": "original author guide, nonofficial research, not ROM recovered command",
+      "runtimeVerified": false,
+      "MAXIdentityRule": "Benimaru C changes Taikuu(DM) to Raiko(SDM); others must inspect actual visual difference; lowHP+fullgauge alone does not auto-prove SDM"
+    }
+  }
+}

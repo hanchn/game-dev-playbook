@@ -1,0 +1,129 @@
+{
+  "configuration": {
+    "route": [
+      "Down",
+      "Down",
+      "Down",
+      "Right",
+      "Right"
+    ],
+    "directions": [
+      "6",
+      "3",
+      "2",
+      "1",
+      "4",
+      "5",
+      "6",
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "button": "B",
+    "max": false,
+    "close": true,
+    "air": false
+  },
+  "officialSource": {
+    "name": "★ネガティブゲイン：(接近して)",
+    "source": "snk-official-chara2.html",
+    "rawCommandImageText": "[image:images/directionkey_6.gif]  [image:images/directionkey_3.gif]  [image:images/directionkey_2.gif]  [image:images/directionkey_1.gif]  [image:images/directionkey_4.gif]  [image:images/directionkey_6.gif]  [image:images/directionkey_3.gif]  [image:images/directionkey_2.gif]  [image:images/directionkey_1.gif]  [image:images/directionkey_4.gif]  ＋  [image:images/2_remote_text.gif]  または  [image:images/B_remote_text.gif]",
+    "directionNotation": "6321463214",
+    "sourceWiiButton": "2",
+    "adaptedNeoGeoButton": "B",
+    "conditions": [
+      "close range; spacing must be established with ordinary walk inputs",
+      "super: real meter availability required; do not write power/health RAM"
+    ],
+    "ordinaryInputProposal": {
+      "facing": "right",
+      "p1FieldPrefix": "P1 ",
+      "neutralBeforeFrames": 12,
+      "steps": [
+        {
+          "direction": "6",
+          "fields": [
+            "Right"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "3",
+          "fields": [
+            "Down",
+            "Right"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "2",
+          "fields": [
+            "Down"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "1",
+          "fields": [
+            "Down",
+            "Left"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "4",
+          "fields": [
+            "Left"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "6",
+          "fields": [
+            "Right"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "3",
+          "fields": [
+            "Down",
+            "Right"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "2",
+          "fields": [
+            "Down"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "1",
+          "fields": [
+            "Down",
+            "Left"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "4",
+          "fields": [
+            "Left"
+          ],
+          "frames": 3,
+          "buttons": [
+            "B"
+          ]
+        }
+      ],
+      "releaseAllAfter": true,
+      "observeFrames": 90
+    },
+    "commandSourceVerified": true,
+    "runtimeExecutionVerified": false,
+    "nativeTimingRecovered": false
+  }
+}

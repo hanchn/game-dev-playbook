@@ -1,0 +1,83 @@
+{
+  "configuration": {
+    "route": [
+      "Right",
+      "Right",
+      "Right"
+    ],
+    "directions": [
+      "2",
+      "1",
+      "4",
+      "1",
+      "6"
+    ],
+    "button": "C",
+    "max": true,
+    "close": true,
+    "air": false
+  },
+  "officialSource": {
+    "name": "★パワーゲイザー",
+    "source": "snk-official-chara1.html",
+    "rawCommandImageText": "[image:images/directionkey_2.gif]  [image:images/directionkey_1.gif]  [image:images/directionkey_4.gif]  [image:images/directionkey_1.gif]  [image:images/directionkey_6.gif]  ＋  [image:images/1_remote_text.gif]  または  [image:images/A_remote_text.gif]",
+    "directionNotation": "21416",
+    "sourceWiiButton": "A",
+    "adaptedNeoGeoButton": "C",
+    "conditions": [
+      "super: real meter availability required; do not write power/health RAM"
+    ],
+    "ordinaryInputProposal": {
+      "facing": "right",
+      "p1FieldPrefix": "P1 ",
+      "neutralBeforeFrames": 12,
+      "steps": [
+        {
+          "direction": "2",
+          "fields": [
+            "Down"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "1",
+          "fields": [
+            "Down",
+            "Left"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "4",
+          "fields": [
+            "Left"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "1",
+          "fields": [
+            "Down",
+            "Left"
+          ],
+          "frames": 3
+        },
+        {
+          "direction": "6",
+          "fields": [
+            "Right"
+          ],
+          "frames": 3,
+          "buttons": [
+            "C"
+          ]
+        }
+      ],
+      "releaseAllAfter": true,
+      "observeFrames": 90
+    },
+    "commandSourceVerified": true,
+    "runtimeExecutionVerified": false,
+    "nativeTimingRecovered": false
+  }
+}

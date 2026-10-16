@@ -1,0 +1,14 @@
+kim victory 181 False
+Traceback (most recent call last):
+  File "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-actions-index.py", line 10, in <module>
+    for x in rs:ph.setdefault(x['phase'],[]).append(x)
+                              ~^^^^^^^^^
+KeyError: 'phase'
+Traceback (most recent call last):
+  File "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-actions-run.py", line 25, in <module>
+    (out/'capture.json').write_text(json.dumps(result,indent=2)+'\n');print(name,batch,len(rows),valid,flush=True);subprocess.run(['python3',str(R/'scripts/kof98-actions-index.py')],check=True)
+                                                                                                                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python3', '/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-actions-index.py']' returned non-zero exit status 1.
