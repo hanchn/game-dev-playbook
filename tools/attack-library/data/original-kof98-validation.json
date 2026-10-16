@@ -1,7 +1,7 @@
 {
   "game": "kof98",
   "name": "The King of Fighters 98 (NGM-2420)",
-  "status": "ROM CRC validated; runtime not yet tested",
+  "status": "ROM CRC validated; basic original gameplay smoke verified; full move extraction incomplete",
   "source": "https://www.kawaks.org/roms/neogeo/kof98-download.htm",
   "driver": "https://github.com/finalburnneo/FBNeo/blob/master/src/burn/drv/neogeo/d_neogeo.cpp",
   "sha256": "e5ef8ca6e72f364c227aeafacb04f7b9abc4d3dcc8123eaabeef2a603ff7e64b",
@@ -10,5 +10,8 @@
   "rom": "assets/original-games/kof98/kof98.zip",
   "bios": "assets/original-games/kof98/neogeo.zip",
   "biosSource": "https://github.com/Abdess/retrobios/tree/main/bios/Arcade/Arcade",
-  "biosSha256": "bf05cc848e403f8ae457bfe26faa8135cf4725cfff956fa030f5c0a00a26adcc"
+  "biosSha256": "bf05cc848e403f8ae457bfe26faa8135cf4725cfff956fa030f5c0a00a26adcc",
+  "runtimeSmokeEvidence": "data/research/standard-play-qa-20261016/qa-summary.json",
+  "moveExtractionCoverage": "data/kof16-coverage.json",
+  "fullReverseEngineeringComplete": false
 }

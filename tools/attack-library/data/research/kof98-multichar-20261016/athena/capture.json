@@ -1,0 +1,57 @@
+{
+  "characterIntended": "athena",
+  "route": [
+    "Right",
+    "Right",
+    "Right",
+    "Down"
+  ],
+  "engine": "MAME0.289",
+  "scriptSHA256": "745ec62faa80259fc5e8b2739c631dddb877ed0c3cfa638da65ef03e61f54d69",
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-multichar-capture.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-multichar-20261016/athena/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-multichar-20261016/athena/nvram",
+    "-seconds_to_run",
+    "100",
+    "-frameskip",
+    "0"
+  ],
+  "wallSeconds": 32.69,
+  "returnCode": 0,
+  "capturedFrames": 1330,
+  "selectionScreens": 70,
+  "memoryWrites": false,
+  "ordinaryIO": true,
+  "identityVisualVerified": false,
+  "allMovesComplete": false,
+  "specialLabels": "input attempts until visual and timing validation",
+  "sourceROMs": [
+    {
+      "file": "kof98.zip",
+      "bytes": 40445959,
+      "sha256": "e5ef8ca6e72f364c227aeafacb04f7b9abc4d3dcc8123eaabeef2a603ff7e64b"
+    },
+    {
+      "file": "neogeo.zip",
+      "bytes": 1859335,
+      "sha256": "bf05cc848e403f8ae457bfe26faa8135cf4725cfff956fa030f5c0a00a26adcc"
+    }
+  ]
+}

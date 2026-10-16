@@ -1,0 +1,702 @@
+{
+  "characterIntended": "vice",
+  "allMovesComplete": false,
+  "automaticVisualAcceptance": false,
+  "phases": [
+    {
+      "id": "idle",
+      "samples": 60,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "walk-forward",
+      "samples": 24,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "walk-back",
+      "samples": 24,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "run-forward-attempt",
+      "samples": 32,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "jump-neutral",
+      "samples": 65,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "crouch",
+      "samples": 35,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "far-A",
+      "samples": 60,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "far-B",
+      "samples": 60,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "far-C",
+      "samples": 70,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "far-D",
+      "samples": 70,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "qcf-A-attempt",
+      "samples": 90,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "qcb-A-attempt",
+      "samples": 90,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "dp-A-attempt",
+      "samples": 90,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "qcf-B-attempt",
+      "samples": 90,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "approach",
+      "samples": 80,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "close-A-attempt",
+      "samples": 60,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "close-C-attempt",
+      "samples": 70,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "crouch-A",
+      "samples": 60,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "crouch-B",
+      "samples": 60,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "crouch-C",
+      "samples": 70,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    },
+    {
+      "id": "crouch-D",
+      "samples": 70,
+      "lifeStart": "103",
+      "lifeEnd": "103",
+      "framesUniqueNotYetAudited": true,
+      "triggerVerified": false
+    }
+  ],
+  "nativeScreens": [
+    {
+      "file": "idle-0.png",
+      "tick": "2700",
+      "sha256": "bb55dddad05c81234004086160031150eaded3107fe11c5f888e92a7e15203dd"
+    },
+    {
+      "file": "idle-10.png",
+      "tick": "2710",
+      "sha256": "4c7d7480cedb33b0acf16d3fd475e11123be4d9c14958e88fb5f5a5dabd57f89"
+    },
+    {
+      "file": "idle-20.png",
+      "tick": "2720",
+      "sha256": "862f80ec30703adaf53281747102f1fb2615e0a725d869903539a22d64bb6b6b"
+    },
+    {
+      "file": "idle-35.png",
+      "tick": "2735",
+      "sha256": "b7a4c9924128afa39c6b9462300f7294d716cf617b4cd8c72be042d0c3309373"
+    },
+    {
+      "file": "idle-59.png",
+      "tick": "2759",
+      "sha256": "ab90e2fcdfc0358991403bc47165b228a5ca087c37d35c3b40e31c920594f5f4"
+    },
+    {
+      "file": "walk-forward-0.png",
+      "tick": "2760",
+      "sha256": "6abb20052c16c35f4b93289bb37f41ba0446a96342994407103fc4d2b886a25f"
+    },
+    {
+      "file": "walk-forward-10.png",
+      "tick": "2770",
+      "sha256": "7451b11288e6298a5a0b1c7fb222bb0eee57981f003b08511a360156eaa972f9"
+    },
+    {
+      "file": "walk-forward-20.png",
+      "tick": "2780",
+      "sha256": "fce57ec01f4c71d35b9fc2a6676790d9087ee0262382df3718f3990e6c361d67"
+    },
+    {
+      "file": "walk-forward-23.png",
+      "tick": "2783",
+      "sha256": "7f6f8fe3403dfaf1724ba3bfaa2e7ad955373ff64748b70391dc6d8b1ac330ea"
+    },
+    {
+      "file": "walk-forward-23.png",
+      "tick": "2783",
+      "sha256": "7f6f8fe3403dfaf1724ba3bfaa2e7ad955373ff64748b70391dc6d8b1ac330ea"
+    },
+    {
+      "file": "walk-back-0.png",
+      "tick": "2784",
+      "sha256": "e2805a62cb2e849e01e2f6f59d8028aa40307f7f633573c5cadb090316a858d0"
+    },
+    {
+      "file": "walk-back-10.png",
+      "tick": "2794",
+      "sha256": "ab7f8eeaf4dd425857c5260222c6f269ccb978125231ca8c5f7c75a351982365"
+    },
+    {
+      "file": "walk-back-20.png",
+      "tick": "2804",
+      "sha256": "fa320bf5ced5d315f873b8a782dfb667e1e243bc3763d646eb8ba403e5d6d0a5"
+    },
+    {
+      "file": "walk-back-23.png",
+      "tick": "2807",
+      "sha256": "59dc8f53388b2cbccaba9c627155e27e14a3e1719d13c8029622cd26cf4154a5"
+    },
+    {
+      "file": "walk-back-23.png",
+      "tick": "2807",
+      "sha256": "59dc8f53388b2cbccaba9c627155e27e14a3e1719d13c8029622cd26cf4154a5"
+    },
+    {
+      "file": "run-forward-attempt-0.png",
+      "tick": "2808",
+      "sha256": "f4b2e75d21841b8e2905a7c297d690cd5902787b98f21d354c1d4a08e9b0e404"
+    },
+    {
+      "file": "run-forward-attempt-10.png",
+      "tick": "2818",
+      "sha256": "fc7c2fc6fb8b39e9abe93c46829528d9e27096fc5068932a47ffe7ed46cf0ac0"
+    },
+    {
+      "file": "run-forward-attempt-20.png",
+      "tick": "2828",
+      "sha256": "867bbbeb86907383b86c8be07c9cc14a23ed5327d905a0d8988d34d51486988b"
+    },
+    {
+      "file": "run-forward-attempt-31.png",
+      "tick": "2839",
+      "sha256": "3f7dce696ae57e1d0dd53a9994ae40591b0d80a9a54e7c9f144437e162a57076"
+    },
+    {
+      "file": "run-forward-attempt-31.png",
+      "tick": "2839",
+      "sha256": "3f7dce696ae57e1d0dd53a9994ae40591b0d80a9a54e7c9f144437e162a57076"
+    },
+    {
+      "file": "jump-neutral-0.png",
+      "tick": "2840",
+      "sha256": "44dd66ab70ea90e7c36bbdb65b4c35c2d51368e97466aba8711cd9489ffbe3bf"
+    },
+    {
+      "file": "jump-neutral-10.png",
+      "tick": "2850",
+      "sha256": "5dc54f16155f35aa6bcf10ab586c5a4f94ffae684fa0798553e3f231e4221caa"
+    },
+    {
+      "file": "jump-neutral-20.png",
+      "tick": "2860",
+      "sha256": "d17e7436339587f3f62cc9d9f3f954d6102b16503030cfc9681a99dee6bf35ed"
+    },
+    {
+      "file": "jump-neutral-35.png",
+      "tick": "2875",
+      "sha256": "81155ca4f62774b06bd4c53acf5d0a7a66a963f2d2bd7bce5ed649103c03a52e"
+    },
+    {
+      "file": "jump-neutral-64.png",
+      "tick": "2904",
+      "sha256": "ac2d96f8d0b3e2c6efe4b95aa9d8347a2b8d22bba6ae312bc31e552efa956ad4"
+    },
+    {
+      "file": "crouch-0.png",
+      "tick": "2905",
+      "sha256": "226960fe93efd9f4fe4f27b944be2a34a9fc410b2ff9a2f78f5ff1cf0aef928d"
+    },
+    {
+      "file": "crouch-10.png",
+      "tick": "2915",
+      "sha256": "68b0b33fd2ecaad065033b4ba85040bdab21062cc7f27ca0b571d4a8918cab45"
+    },
+    {
+      "file": "crouch-20.png",
+      "tick": "2925",
+      "sha256": "651c5f757a72c58011e91357c82c7bf3790c14d5790d0691dca8505e69e5c7be"
+    },
+    {
+      "file": "crouch-34.png",
+      "tick": "2939",
+      "sha256": "27bef0f8a93a0dd074d5618bdd6d23558a7cfd490daf3707dae679c9da75fef2"
+    },
+    {
+      "file": "crouch-34.png",
+      "tick": "2939",
+      "sha256": "27bef0f8a93a0dd074d5618bdd6d23558a7cfd490daf3707dae679c9da75fef2"
+    },
+    {
+      "file": "far-A-0.png",
+      "tick": "2940",
+      "sha256": "1afbc9461dc93d5458f5116863426a2badb0b34804e358fa030196d7e550abe9"
+    },
+    {
+      "file": "far-A-10.png",
+      "tick": "2950",
+      "sha256": "0ae5522a8839278a5f57cae6f3ab22e4754b2e32c880d60c312bae1f3f2f3f98"
+    },
+    {
+      "file": "far-A-20.png",
+      "tick": "2960",
+      "sha256": "55521daadfad0d82d8b2cf8dfe6e6dcc448e7c9a9f6dbcd616afc7c8896fe160"
+    },
+    {
+      "file": "far-A-35.png",
+      "tick": "2975",
+      "sha256": "65353862e4a8cb2e5a90124cce78a9f947ff6a3547824e8ac8669fa25a38ece1"
+    },
+    {
+      "file": "far-A-59.png",
+      "tick": "2999",
+      "sha256": "a853590988c4f955f1b06e62c0421555294e2036bc836b418906269899a14129"
+    },
+    {
+      "file": "far-B-0.png",
+      "tick": "3000",
+      "sha256": "acee26bf68784e76da38d058f416cf9639deca443068a881cd9b40dde31450dc"
+    },
+    {
+      "file": "far-B-10.png",
+      "tick": "3010",
+      "sha256": "a1e4106eb0eaa613b8c6f6251898fedd32f4b5f06856e7be236ee2043a791175"
+    },
+    {
+      "file": "far-B-20.png",
+      "tick": "3020",
+      "sha256": "bf113860d02bfb08b5a1b045440c54efd37d7b036a18ecf382aa0ad70bdc62b1"
+    },
+    {
+      "file": "far-B-35.png",
+      "tick": "3035",
+      "sha256": "c0221d967965ad39206c600ff322bcd2ef28b636e3bf4c1d5928ae6632986c47"
+    },
+    {
+      "file": "far-B-59.png",
+      "tick": "3059",
+      "sha256": "e90238cf037b72217bf2f2e52201ce55bfecfdc007d5977120f3128af660ca15"
+    },
+    {
+      "file": "far-C-0.png",
+      "tick": "3060",
+      "sha256": "394354bdca87d94e6e71a404a0444602e49ab194e65a3e5de7c0ee8609518374"
+    },
+    {
+      "file": "far-C-10.png",
+      "tick": "3070",
+      "sha256": "cde653470f4fc3bc09a6d6d759f771a2f6a9c773166093e13e7368505334395c"
+    },
+    {
+      "file": "far-C-20.png",
+      "tick": "3080",
+      "sha256": "b0de75ca9b61d86aab68292747b10d96836c56ac3473ad8686ada607553954a8"
+    },
+    {
+      "file": "far-C-35.png",
+      "tick": "3095",
+      "sha256": "c14f341233f589d96743782f34e46309ec91c95ebe8e79091238a18335aae8f0"
+    },
+    {
+      "file": "far-C-69.png",
+      "tick": "3129",
+      "sha256": "e86f2fb37fbcad24405aa58bc0abb33221d2d573e98a224a9d3507819ca92b8a"
+    },
+    {
+      "file": "far-D-0.png",
+      "tick": "3130",
+      "sha256": "196bc03bbb3cd1730e8196e7b932bd349ef5b89af272c75eeb5dcf572c9a0121"
+    },
+    {
+      "file": "far-D-10.png",
+      "tick": "3140",
+      "sha256": "65b1a067d88165397ba47d66f7509ace3da31eb284e75afa35e99d750d07553a"
+    },
+    {
+      "file": "far-D-20.png",
+      "tick": "3150",
+      "sha256": "a036a7fd84b072ce528bf95d25244ebe50214e7f20c7aadc1dfc8d48f91c28ef"
+    },
+    {
+      "file": "far-D-35.png",
+      "tick": "3165",
+      "sha256": "4c7ee46ad95460aa54493cff359fc975464cb3dc142719dd7795d2dfd3c12865"
+    },
+    {
+      "file": "far-D-69.png",
+      "tick": "3199",
+      "sha256": "61897f6038c21765ab5d8aa3501a4f6b047b4108f238f0698235250dc8f61b16"
+    },
+    {
+      "file": "qcf-A-attempt-0.png",
+      "tick": "3200",
+      "sha256": "b37fd0021d46b7102f65eeedca5adb01da3bfc3b8f0706b29246246e79be36ba"
+    },
+    {
+      "file": "qcf-A-attempt-10.png",
+      "tick": "3210",
+      "sha256": "f83c8aec5c1ecfe9f6e88ae95eebbcb29dfaf954ca53191a331a9df05d5675a7"
+    },
+    {
+      "file": "qcf-A-attempt-20.png",
+      "tick": "3220",
+      "sha256": "a08ff85fdeab6e64e10cbcdc37348d7e293856a545eda1e18b10f282cbd255ae"
+    },
+    {
+      "file": "qcf-A-attempt-35.png",
+      "tick": "3235",
+      "sha256": "cf74a07178833f3a6b2106e0112face732b498c54b57fd8c34fb504c74cd0b63"
+    },
+    {
+      "file": "qcf-A-attempt-89.png",
+      "tick": "3289",
+      "sha256": "1a6c64fef53bdc3a812559f3d49796ce3c00c4e9869ad829024c4069373f2a7e"
+    },
+    {
+      "file": "qcb-A-attempt-0.png",
+      "tick": "3290",
+      "sha256": "e79fbf68291ca2e0ca9cbc4b1e8ba399d5dfc110304f807521dc50f0c7c35128"
+    },
+    {
+      "file": "qcb-A-attempt-10.png",
+      "tick": "3300",
+      "sha256": "b2466ce6ff81fb8c4c74c0a93d88f339d30b421d4c6e27c16d26bb7f35a0bb21"
+    },
+    {
+      "file": "qcb-A-attempt-20.png",
+      "tick": "3310",
+      "sha256": "2bec4165a19299f86ec90d7c703453506e0abfd3bb90a661048a23eb01ab42e4"
+    },
+    {
+      "file": "qcb-A-attempt-35.png",
+      "tick": "3325",
+      "sha256": "a04c882cfec25f7612597aceac82c36909ec02d2ad15a6b178a456d208b78447"
+    },
+    {
+      "file": "qcb-A-attempt-89.png",
+      "tick": "3379",
+      "sha256": "19c846ee6484fe175b6dd38b416796862ad2da2edc0ac51fde904cdab6076a66"
+    },
+    {
+      "file": "dp-A-attempt-0.png",
+      "tick": "3380",
+      "sha256": "792bbc5fcf7c88f88f19fbf4ae50a3390c7160a6be458de02fa92ddccd594e23"
+    },
+    {
+      "file": "dp-A-attempt-10.png",
+      "tick": "3390",
+      "sha256": "867bb9d4d31218c0613821211b740e0a429ec0cc3b241e337ba75d11a77404ee"
+    },
+    {
+      "file": "dp-A-attempt-20.png",
+      "tick": "3400",
+      "sha256": "be1497d5c714649fb9ab0c3d9513b2a7f5495a780866cb3dc98fbb344de60299"
+    },
+    {
+      "file": "dp-A-attempt-35.png",
+      "tick": "3415",
+      "sha256": "a451f6c6510457da2e78512cac7b6e06138e4f2061a2a308ba68dd3410fb5805"
+    },
+    {
+      "file": "dp-A-attempt-89.png",
+      "tick": "3469",
+      "sha256": "bc99be0be5ba140183007ce938343cb68216c82588bf848be5b521b4c8df22d6"
+    },
+    {
+      "file": "qcf-B-attempt-0.png",
+      "tick": "3470",
+      "sha256": "26c48e0d6a0fb636a249a127fb5c25114ae9956ffbb3eca231559d8f8fdc7b5c"
+    },
+    {
+      "file": "qcf-B-attempt-10.png",
+      "tick": "3480",
+      "sha256": "58d533f267f4edc15a7d25ce1672dfd48de1d3ab9a7c2f1b568d4b2b9447523c"
+    },
+    {
+      "file": "qcf-B-attempt-20.png",
+      "tick": "3490",
+      "sha256": "9a4309a1fe05e28e9e07b33477a44c6ca2d478b5683ee3c61352e8bddbdec420"
+    },
+    {
+      "file": "qcf-B-attempt-35.png",
+      "tick": "3505",
+      "sha256": "2d5ec71edd8ec4babcf9d7565ebba7263db7da858ee92b87853b3de5b0ca0bb3"
+    },
+    {
+      "file": "qcf-B-attempt-89.png",
+      "tick": "3559",
+      "sha256": "703f7fbc29931032872e800e576feaf8c6d3f8033e4d6fffe91fca8a49622bf2"
+    },
+    {
+      "file": "approach-0.png",
+      "tick": "3560",
+      "sha256": "c50f2e378157d7ab76a844a1f0a28208d4827e3991f11aaf7ae25f5a9e353017"
+    },
+    {
+      "file": "approach-10.png",
+      "tick": "3570",
+      "sha256": "9708a8f9add4d27d040f230c6a8821c76b704e4bde78416fea71da32136716b9"
+    },
+    {
+      "file": "approach-20.png",
+      "tick": "3580",
+      "sha256": "559e60e7b64059b0d8f1e992f7041e21dee3ced7fc45d2e010bf4eade7696403"
+    },
+    {
+      "file": "approach-35.png",
+      "tick": "3595",
+      "sha256": "c5b541d6cf2709c2e7d5da503cf3c5f125c3d6fe9341d6360fdcb60e1e566711"
+    },
+    {
+      "file": "approach-79.png",
+      "tick": "3639",
+      "sha256": "308ea6e454c3dbbd12fe6dcbdb46ea97ed708ef16ffc7c15f631ebd71d067d72"
+    },
+    {
+      "file": "close-A-attempt-0.png",
+      "tick": "3640",
+      "sha256": "afed265b6ff96cc68c455d15b27d2df4a20d6a5133a6407836025f1d494c6d85"
+    },
+    {
+      "file": "close-A-attempt-10.png",
+      "tick": "3650",
+      "sha256": "0d967f87d47adb71812479feca6f39a24caaabf273e863526b5bc4900fc71514"
+    },
+    {
+      "file": "close-A-attempt-20.png",
+      "tick": "3660",
+      "sha256": "1a139c7a931d6934218f77b08086af31195323b68a15b26f2643ff5602a713a0"
+    },
+    {
+      "file": "close-A-attempt-35.png",
+      "tick": "3675",
+      "sha256": "7eb41fe635ebecdadeb49bc96db36da5ae00e001d17fd2114111f7d059538e19"
+    },
+    {
+      "file": "close-A-attempt-59.png",
+      "tick": "3699",
+      "sha256": "981e72773de62008d87411574693007a1c1269ee4d0753e9d280ece6fd80f16c"
+    },
+    {
+      "file": "close-C-attempt-0.png",
+      "tick": "3700",
+      "sha256": "5ff99f27c683585a81e96313425be4e815a8a2c7304c42f4976a93d7341d8b0e"
+    },
+    {
+      "file": "close-C-attempt-10.png",
+      "tick": "3710",
+      "sha256": "30e7782adcb3b14855c22795ccb0f3b5272e01798d093b94b977a0c3942ba700"
+    },
+    {
+      "file": "close-C-attempt-20.png",
+      "tick": "3720",
+      "sha256": "95c80504a36e295d91cd69e1ca54b4c35b9fd61e58a33f995e4ec2413d7cdfd4"
+    },
+    {
+      "file": "close-C-attempt-35.png",
+      "tick": "3735",
+      "sha256": "623ad3756a43d5ba88718923baec7dc01f6ac82a434449d5baacaa43a2513b01"
+    },
+    {
+      "file": "close-C-attempt-69.png",
+      "tick": "3769",
+      "sha256": "0cc1549b9de48a1411bcf21b6b45025f1facdcc058f78a6dfad18e3c96939127"
+    },
+    {
+      "file": "crouch-A-0.png",
+      "tick": "3770",
+      "sha256": "5e0ad157a80cad7b2fb48e3d5fe8ab57df1341684970c1211331a5ba47cd7220"
+    },
+    {
+      "file": "crouch-A-10.png",
+      "tick": "3780",
+      "sha256": "2b8d7e4eadb0d79e34a06ca0f75e172700cbc2faa2b9ae19ddb8e1fb2c17974e"
+    },
+    {
+      "file": "crouch-A-20.png",
+      "tick": "3790",
+      "sha256": "1e34d5796d5205fb37b95fda667a22cef87b09e6c8ed3f5536862e1009ac6181"
+    },
+    {
+      "file": "crouch-A-35.png",
+      "tick": "3805",
+      "sha256": "d3cd3e5b822e8ac40635eef9cb0425134124e0bd2bd39fcd14bd19732df468b3"
+    },
+    {
+      "file": "crouch-A-59.png",
+      "tick": "3829",
+      "sha256": "4b2de3da85d6ac1c9f77be135cc146e02326f6220df3eaea3cc4ccac364e1c9b"
+    },
+    {
+      "file": "crouch-B-0.png",
+      "tick": "3830",
+      "sha256": "0da1048c60a393fc5308b80e577f62a8bf16484e3bff727d9cf8ddb977b6d495"
+    },
+    {
+      "file": "crouch-B-10.png",
+      "tick": "3840",
+      "sha256": "913e16da1e3b779aa063d77948d32fb934d64bf17a245197810968f36509add1"
+    },
+    {
+      "file": "crouch-B-20.png",
+      "tick": "3850",
+      "sha256": "ceba6eecba859c219fe8b5933f2f8499f07c8e865db29cf91d3c7f0fc4c35f49"
+    },
+    {
+      "file": "crouch-B-35.png",
+      "tick": "3865",
+      "sha256": "d158e8cf878e169393edc3b2268310ea63933b7631c9a9b7d744d7661d5afab3"
+    },
+    {
+      "file": "crouch-B-59.png",
+      "tick": "3889",
+      "sha256": "17ae17f9e87a2f3a01665e83bc5de6384fda4ef2a967713c4ae94e1973518a87"
+    },
+    {
+      "file": "crouch-C-0.png",
+      "tick": "3890",
+      "sha256": "ac4194ab1ca18eaeda8ab18006b4994c1c6a83cd2667f222a67049d93e4dc6ae"
+    },
+    {
+      "file": "crouch-C-10.png",
+      "tick": "3900",
+      "sha256": "7f862e7d91337a925e60da6b9aaa0783eb80a3c8421ffc1f741abf4d929fa3ca"
+    },
+    {
+      "file": "crouch-C-20.png",
+      "tick": "3910",
+      "sha256": "5e735e5f33c78fa0bc2b4eca665d0928b13e36d4920e8453b07476e60da06e77"
+    },
+    {
+      "file": "crouch-C-35.png",
+      "tick": "3925",
+      "sha256": "4e0ec2acbb029b92e52f4073431efbe57463bdc781c5d5130037a6e80eabf731"
+    },
+    {
+      "file": "crouch-C-69.png",
+      "tick": "3959",
+      "sha256": "61b0dda322c6c3d463e73a868336b3cd6074ea3d9856153053672e386ad5a212"
+    },
+    {
+      "file": "crouch-D-0.png",
+      "tick": "3960",
+      "sha256": "0b23c4893c38fe66bc1a128992069b564586d75ac798cbf7b29f4573f19b693d"
+    },
+    {
+      "file": "crouch-D-10.png",
+      "tick": "3970",
+      "sha256": "0fee5ac01a0047505054b8a88a1c3a9800460ae22a566d417a2cc29da18228e8"
+    },
+    {
+      "file": "crouch-D-20.png",
+      "tick": "3980",
+      "sha256": "3203e5443d45b519d0e608ffaeaf3ae27dea2b8e47087844f8711bb3c73f68fc"
+    },
+    {
+      "file": "crouch-D-35.png",
+      "tick": "3995",
+      "sha256": "104acaf2447957069a1877c47a7fed9a1505461c13c8afd0f7db5ab5dc6e62cd"
+    },
+    {
+      "file": "crouch-D-69.png",
+      "tick": "4029",
+      "sha256": "4d07ddbacb62852feb49f519349dfcfd56bf30b7ae8c869b9f9c435230302afc"
+    }
+  ]
+}

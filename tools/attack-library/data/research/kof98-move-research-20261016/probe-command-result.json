@@ -1,0 +1,29 @@
+{
+  "args": [
+    "/opt/homebrew/bin/mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-seconds_to_run",
+    "10",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-move-research-20261016/kof98-readonly-box-recorder.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-move-research-20261016/probe-no-input",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-move-research-20261016/probe-no-input",
+    "-skip_gameinfo"
+  ],
+  "exit": 0,
+  "stdout": "Average speed: 1143.05% (9 seconds)\n",
+  "stderr": "",
+  "scope": "no-input-startup-field-probe-not-move-or-gameplay-test"
+}

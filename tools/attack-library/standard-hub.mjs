@@ -34,6 +34,7 @@ export function renderStandardHub(model, doc=document) {
     const raw=doc.createElement('details');const summary=doc.createElement('summary');summary.textContent='验收记录';const code=doc.createElement('code');code.textContent=card.status;raw.append(summary,code);
     article.append(title,body,status,raw);
     if(card.ready){const link=doc.createElement('a');link.href=card.href;link.textContent=card.kind==='original-web-node-game'?'打开原Web游戏 ↗':'打开原标准游戏 ↗';link.target='_blank';link.rel='noopener';article.append(link);}
+    if(card.id==='kof98'){const coverage=doc.createElement('a');coverage.href='kof-coverage.html';coverage.textContent='16人原版拆解进度 ↗';article.append(coverage);}
     grid.append(article);
   }
   section.append(heading,summary,grid);return section;

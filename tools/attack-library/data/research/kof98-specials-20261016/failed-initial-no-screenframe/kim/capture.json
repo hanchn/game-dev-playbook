@@ -1,0 +1,42 @@
+{
+  "characterIntended": "kim",
+  "route": [
+    "Down",
+    "Down"
+  ],
+  "command": [
+    "mame",
+    "kof98",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/scripts/kof98-special-capture.lua",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-specials-20261016/kim/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/kof98-specials-20261016/kim/nvram",
+    "-seconds_to_run",
+    "120",
+    "-frameskip",
+    "0"
+  ],
+  "returnCode": 0,
+  "wallSeconds": 16.71,
+  "frames": 848,
+  "scriptSHA256": "df37106645814d4f1f24fd564a4a3adbf7c5fe317ebb2586fe99e940c7851e0c",
+  "checklistSHA256": "54452c513b95630f2212034c617e2c06299a505763949af29a5710a1a0d2019d",
+  "ordinaryInputOnly": true,
+  "memoryWrites": false,
+  "runtimeExecutionVerified": false,
+  "identityVisualVerified": false,
+  "scope": "official partial subset; attempted inputs are not verified specials"
+}
