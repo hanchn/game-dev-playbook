@@ -1,0 +1,90 @@
+{
+  "scope": "Original arcade standard runtime actual Chrome UI QA; no sprite preview substitutes",
+  "date": "2026-10-16",
+  "games": {
+    "mslug": {
+      "originalBoot": true,
+      "coinCreditObserved": true,
+      "startConsumedCredit": true,
+      "realStageObserved": true,
+      "controlledMovement": true,
+      "attackObserved": "J caused visible thrown bomb candidate; U fire not yet proven",
+      "screens": [
+        "mslug-credit01.png",
+        "mslug-before-right.png",
+        "mslug-after-right.png",
+        "mslug-after-attack.png"
+      ],
+      "limitation": "Latest per-title labels applied after tab closed; generic fighter labels were misleading"
+    },
+    "kov": {
+      "originalBoot": true,
+      "coinRule": "3 coins per 1 credit observed 1/3 -> 2/3 -> 1",
+      "coinCreditObserved": true,
+      "startConsumedCredit": true,
+      "manualCharacterConfirm": "Outer U confirmed Guan Yu at countdown6",
+      "realStageObserved": "截江救阿斗",
+      "controlledMovement": true,
+      "attackObserved": "Outer U plus native U captured weapon strike; character flashed under incoming enemy hit",
+      "screens": [
+        "kov-credit-fraction-1of3.png",
+        "kov-credit-fraction-2of3.png",
+        "kov-credit1.png",
+        "kov-gameplay-before.png",
+        "kov-gameplay-after-right.png",
+        "kov-gameplay-attack.png"
+      ],
+      "currentState": "QA tab paused then closed"
+    },
+    "kof98": {
+      "originalBoot": true,
+      "coinCreditObserved": true,
+      "startConsumedCredit": true,
+      "realMatchObserved": true,
+      "controlledMovement": true,
+      "attackObserved": "Outer U light punch captured extended fist + hit spark on Chris face and score100; timer60 initial real round",
+      "limitation": "Full move set and long session not tested. Prior generic fighter labels failed; final per-title mapping used",
+      "manualCharacterConfirm": "Outer U confirmed ADV and Kyo/Benimaru/Terry before selection timeout; U/I order",
+      "screens": [
+        "kof98-manual-three-choice.png",
+        "kof98-controlled-before.png",
+        "kof98-controlled-after-right.png",
+        "kof98-controlled-punch.png"
+      ],
+      "currentState": "Wrapper paused, logs saved, QA tab closed"
+    },
+    "sf2ce": {
+      "originalBoot": true,
+      "coinCreditObserved": true,
+      "startConsumedCredit": true,
+      "manualCharacterConfirm": "Outer J confirmed RYU; Ryu vs Zangief first round",
+      "realMatchObserved": true,
+      "controlledMovement": true,
+      "attackObserved": "Outer J light punch captured full extended straight fist at timer98 after outer Right1.2sec moved Ryu and scrolled stage",
+      "screens": [
+        "sf2ce-credit1.png",
+        "sf2ce-select-ryu.png",
+        "sf2ce-fight-ready.png",
+        "sf2ce-controlled-after-right.png",
+        "sf2ce-controlled-punch.png"
+      ],
+      "currentState": "Wrapper paused, logs saved, QA tab closed",
+      "limitations": [
+        "Only initial real match input smoke test",
+        "Not every strength/button or special motion verified",
+        "No full match, two-player, controller or long session stability test"
+      ]
+    }
+  },
+  "runtimeVerifiedRegistryChanged": false,
+  "reviewScope": "Four priority original games can boot, accept coin/start, reach original gameplay, respond to movement + at least one attack. Full gameplay coverage not claimed.",
+  "browser": "Chrome extension browser 1, dedicated ephemeral QA tabs; all closed",
+  "method": "CUA visible UI only, per-title official simulateInput outer controls, native held keys, screenshot then wrapper pause to avoid CPU time advancing between calls",
+  "runtimeVerifiedRecommendation": true,
+  "knownIssues": [
+    "Original EJS toolbar pause unreliable under keyboard focus; root wrapper pause/play fixed final KOF/SF tests",
+    "Generic fighting labels incorrect for NeoGeo/PGM; root per-title mappings corrected",
+    "KOV default requires3coinspercredit; do not change original rules",
+    "MSlug U shooting not visually confirmed; J throw plus movement verified"
+  ]
+}

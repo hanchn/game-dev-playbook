@@ -39,3 +39,8 @@
 原作研究包新增SSF2T World 940223和SF2CE World 920513。SSF2T对照FBNeo有23/24项匹配，密钥缺失，尚未启动或提取招式动画。SF2CE经sf2-lineage身份门控与两项字节检查通过；保守复现提取448条几何记录，覆盖10个角色，两个非标准表头跳过。几何记录没有招式关联和起手/有效/收招时序，不能标作完整frame data，更不能直接套用到SSF2T。报告见 data/research 和 data/original-ssf2t-validation.json。
 
 已按固定提交归档sf2-lineage、sf2-hitbox-extractor和sf2-recompile源码研究快照，见 data/research/street-fighter-sources.json；其中原作运行时和逐帧追踪均尚未验证。奶蛙研发与外部研究并行，每项移植须记录版本、来源、已复现证据和缺口。
+
+
+## 原游戏标准模式（2026-10-16）
+
+[本地入口](http://127.0.0.1:4321/?tab=catalog)新增四款真实原街机基础游玩验收与全100本地MAME启动器。98款ROM及依赖已采集，Pong/Breakout无需ROM；版本匹配、基础玩法、素材逆向分别记录。当前范围与复现见[验收知识记录](docs/standard-original-runtime-2026-10-16.md)。

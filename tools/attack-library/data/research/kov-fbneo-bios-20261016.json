@@ -1,0 +1,46 @@
+{
+  "sourceUrl": "https://raw.githubusercontent.com/Abdess/retrobios/a3941e843c3637228b0fa2869d8683e29a96daac/bios/Arcade/Arcade/pgm.zip",
+  "upstreamCommit": "a3941e843c3637228b0fa2869d8683e29a96daac",
+  "sourceBytes": 2240738,
+  "sha256": "5582eae58a8f23b7e203f01b56e26e0450e7bab0ceb01bc65b151df6bf532555",
+  "crcValid": true,
+  "runtimeVerified": false,
+  "members": [
+    {
+      "name": "pgm_m01s.rom",
+      "crc32": "45ae7159",
+      "bytes": 2097152
+    },
+    {
+      "name": "pgm_p01s.u20",
+      "crc32": "e42b166e",
+      "bytes": 131072
+    },
+    {
+      "name": "pgm_p02s.u20",
+      "crc32": "78c15fa2",
+      "bytes": 131072
+    },
+    {
+      "name": "pgm_t01s.rom",
+      "crc32": "1a7123a0",
+      "bytes": 2097152
+    },
+    {
+      "name": "ddp3_bios.u37",
+      "crc32": "b3cc5c8f",
+      "bytes": 524288
+    },
+    {
+      "name": "bios.u42",
+      "crc32": "517cf7a2",
+      "bytes": 131072
+    },
+    {
+      "name": "svg_bios.u49",
+      "crc32": "3346401f",
+      "bytes": 131072
+    }
+  ],
+  "reason": "MAME pgm.zip lacks two BIOS revisions required by pinned FBNeo core; original MAME archive preserved."
+}

@@ -1,0 +1,65 @@
+- main:
+  - link "← 返回资源库":
+    - /url: /
+  - heading "拳皇98 · 标准街机" [level=1]
+  - paragraph: 真实原游戏ROM与模拟器核心。点击加载后在画面中启动，投币、开始、选人进入标准对局；此页独立于角色动画与招式预览。
+  - text: 游戏
+  - combobox "标准街机游戏" [disabled]:
+    - option "街霸II 冠军版 · SF2CE"
+    - option "超级街霸II Turbo"
+    - option "拳皇98" [selected]
+    - option "合金弹头"
+    - option "三国战纪"
+  - text: 核心
+  - combobox "原游戏模拟核心" [disabled]:
+    - option "fbneo" [selected]
+  - button "加载标准游戏" [disabled]
+  - button "重新启动"
+  - status: 核心运行中 · 点击画面，按5投币、1开始，再选人进入对局。标准模式验收仍待实际确认。
+  - generic "原街机游戏画面" [active]:
+    - button "重新开始":
+      - generic: 重新开始
+    - button "暂停":
+      - generic: 暂停
+    - button "保存状态":
+      - generic: 保存状态
+    - button "加载状态":
+      - generic: 加载状态
+    - button "控制设置":
+      - generic: 控制设置
+    - button "秘籍":
+      - generic: 秘籍
+    - button "静音":
+      - generic: 静音
+    - slider "Volume": "0.6"
+    - button "菜单":
+      - generic: 菜单
+    - button "设置":
+      - generic: 设置
+    - button "进入全屏":
+      - generic: 进入全屏
+    - button "退出模拟器":
+      - generic: 退出模拟器
+  - text: 点按时长
+  - combobox "点按时长":
+    - option "短按"
+    - option "0.6秒"
+    - option "1.2秒" [selected]
+  - button "投币 · 5"
+  - button "1P开始 · 1"
+  - button "←"
+  - button "↑"
+  - button "↓"
+  - button "→"
+  - button "轻拳 · J"
+  - button "中拳 · K"
+  - button "重拳 · L"
+  - button "轻脚 · U"
+  - button "中脚 · I"
+  - button "重脚 · O"
+  - paragraph: 方向键移动/选人，5投币，1开始，J K L拳 / U I O脚。先点一下游戏画面再用键盘；核心自带菜单可改键、接手柄及全屏。不同游戏的按钮用途以原游戏及核心映射为准。
+  - generic "运行证据与配置"
+  - paragraph: local-ROM/core-package-ready-browser-coin-start-select-match-pending
+  - link "官方固定版本与逐文件SHA":
+    - /url: http://127.0.0.1:4321/vendor/emulatorjs-4.2.3/source-receipt.json
+  - generic: "{ \"game\": \"kof98\", \"core\": \"fbneo\", \"events\": [ { \"at\": \"2026-10-16T02:19:43.528Z\", \"type\": \"game-configured\", \"detail\": \"kof98\" }, { \"at\": \"2026-10-16T02:19:43.649Z\", \"type\": \"boot-requested\", \"detail\": { \"game\": \"kof98\", \"core\": \"fbneo\" } }, { \"at\": \"2026-10-16T02:19:43.737Z\", \"type\": \"emulator-ready\", \"detail\": \"\" }, { \"at\": \"2026-10-16T02:19:48.748Z\", \"type\": \"core-started-not-proof-of-match\", \"detail\": \"\" }, { \"at\": \"2026-10-16T02:19:48.748Z\", \"type\": \"rom-filesystem\", \"detail\": [ { \"name\": \".\", \"size\": 4096 }, { \"name\": \"..\", \"size\": 4096 }, { \"name\": \"tmp\", \"size\": 4096 }, { \"name\": \"home\", \"size\": 4096 }, { \"name\": \"dev\", \"size\": 4096 }, { \"name\": \"proc\", \"size\": 4096 }, { \"name\": \"shader\", \"size\": 4096 }, { \"name\": \"neogeo.zip\", \"size\": 1859335 }, { \"name\": \"data\", \"size\": 4096 }, { \"name\": \"kof98.zip\", \"size\": 40445959 } ] }, { \"at\": \"2026-10-16T02:22:21.445Z\", \"type\": \"player-input\", \"detail\": { \"key\": \"5\", \"index\": 2 } }, { \"at\": \"2026-10-16T02:23:21.864Z\", \"type\": \"player-input\", \"detail\": { \"key\": \"1\", \"index\": 3 } }, { \"at\": \"2026-10-16T02:25:09.340Z\", \"type\": \"player-input\", \"detail\": { \"key\": \"1\", \"index\": 3 } }, { \"at\": \"2026-10-16T02:34:36.185Z\", \"type\": \"player-input\", \"detail\": { \"key\": \"u\", \"index\": 0 } }, { \"at\": \"2026-10-16T02:35:13.851Z\", \"type\": \"player-input\", \"detail\": { \"key\": \"j\", \"index\": 1 } }, { \"at\": \"2026-10-16T02:36:51.298Z\", \"type\": \"player-input\", \"detail\": { \"key\": \"j\", \"index\": 1 } } ] }"

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<meta name="keywords" content="mame roms, arcade roms, download mame roms, download arcade roms, roms, mame, mame32, mame4droid, arcade, emulation, download, arcade, 0.289, split, merged, nonmerged, non-merged">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence:SCAN@-25&display=swap');</style>
+    <link rel="canonical" href="https://mdk.cab">
+    <title>[mdk] arcade rom and information repository for mame 0.289</title>
+    <meta name="description" content="download mame roms for 0.289">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5TK8P516S"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-F5TK8P516S');
+	</script>
+</head>
+<body>
+	<nav>
+	<div class="centernav">
+		<div class="header">
+			<ul>
+				<li><span class="mdk"><a href="/">MDK</a></span></li>
+				<li>[<a href="/news">news</a>]</li>
+				<li class="dropdown">
+					[<a href="#" class="dropbtn">browse</a>]
+					<div class="dropdown-content">
+						<p><a href="/browse">letter</a></p>
+						<p><a href="/series">series</a></p>
+						<p><a href="/manufacturer">manufacturer</a></p>
+						<p><a href="/driver">driver</a></p>
+						<p><a href="/year">year</a></p>
+						<p><a href="/genre">genre</a></p>
+					</div>
+				</li>
+				<li>[<a href="/changed">changed</a>]</li>
+				<li>[<a href="#">links</a>]</li>
+			</ul>
+		</div>
+	</div>
+	<div class="centernav">
+		<div class="search">
+			<div>
+				<form action="/search.php" method="post">
+					<span>
+						<input type="text" name="search" class="button" size="15" placeholder="search">
+					</span>
+					<span>
+						<select name="what" class="button">
+							<option value="description" selected>game name</option>
+							<option value="name">file name</option>
+							<option value="series">series</option>
+							<option value="manufacturer">manufacturer</option>
+							<option value="driver">driver</option>
+						</select>
+					</span>
+					<span>
+						<input type="submit" value="find" class="button">
+					</span>
+					<br>
+					<span>
+						<select name="year" class="button">
+							<option value="" selected>any year</option>
+							<option value="1966">1966</option>
+							<option value="1971">1971</option>
+							<option value="1972">1972</option>
+							<option value="1973">1973</option>
+							<option value="1973?">1973?</option>
+							<option value="1974">1974</option>
+							<option value="1974?">1974?</option>
+							<option value="1975">1975</option>
+							<option value="1975?">1975?</option>
+							<option value="1976">1976</option>
+							<option value="1977">1977</option>
+							<option value="1978">1978</option>
+							<option value="1978?">1978?</option>
+							<option value="1979">1979</option>
+							<option value="1979?">1979?</option>
+							<option value="197?">197?</option>
+							<option value="1980">1980</option>
+							<option value="1980?">1980?</option>
+							<option value="1981">1981</option>
+							<option value="1981?">1981?</option>
+							<option value="1982">1982</option>
+							<option value="1982?">1982?</option>
+							<option value="1983">1983</option>
+							<option value="1983?">1983?</option>
+							<option value="1984">1984</option>
+							<option value="1984?">1984?</option>
+							<option value="1985">1985</option>
+							<option value="1985?">1985?</option>
+							<option value="1986">1986</option>
+							<option value="1986?">1986?</option>
+							<option value="1987">1987</option>
+							<option value="1987?">1987?</option>
+							<option value="1988">1988</option>
+							<option value="1988?">1988?</option>
+							<option value="1989">1989</option>
+							<option value="1989?">1989?</option>
+							<option value="198?">198?</option>
+							<option value="1990">1990</option>
+							<option value="1990?">1990?</option>
+							<option value="1991">1991</option>
+							<option value="1991?">1991?</option>
+							<option value="1992">1992</option>
+							<option value="1992?">1992?</option>
+							<option value="1993">1993</option>
+							<option value="1993?">1993?</option>
+							<option value="1994">1994</option>
+							<option value="1994?">1994?</option>
+							<option value="1995">1995</option>
+							<option value="1995?">1995?</option>
+							<option value="1996">1996</option>
+							<option value="1996?">1996?</option>
+							<option value="1997">1997</option>
+							<option value="1997?">1997?</option>
+							<option value="1998">1998</option>
+							<option value="1998?">1998?</option>
+							<option value="1999">1999</option>
+							<option value="1999?">1999?</option>
+							<option value="199?">199?</option>
+							<option value="19??">19??</option>
+							<option value="2000">2000</option>
+							<option value="2000?">2000?</option>
+							<option value="2001">2001</option>
+							<option value="2001?">2001?</option>
+							<option value="2002">2002</option>
+							<option value="2002?">2002?</option>
+							<option value="2003">2003</option>
+							<option value="2003?">2003?</option>
+							<option value="2004">2004</option>
+							<option value="2004?">2004?</option>
+							<option value="2005">2005</option>
+							<option value="2005?">2005?</option>
+							<option value="2006">2006</option>
+							<option value="2006?">2006?</option>
+							<option value="2007">2007</option>
+							<option value="2007?">2007?</option>
+							<option value="2008">2008</option>
+							<option value="2009">2009</option>
+							<option value="200?">200?</option>
+							<option value="2010">2010</option>
+							<option value="2011">2011</option>
+							<option value="2011?">2011?</option>
+							<option value="2012">2012</option>
+							<option value="2013">2013</option>
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="201?">201?</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+							<option value="2025">2025</option>
+							<option value="202?">202?</option>
+							<option value="20??">20??</option>
+							<option value="????">????</option>
+						</select>
+					</span>
+					<span>
+						<select name="genre" class="button">
+							<option value="" selected>any genre</option>
+							<option value="Adventure">Adventure</option>
+							<option value="Ball+%26amp%3B+Paddle">Ball &amp; Paddle</option>
+							<option value="Baseball">Baseball</option>
+							<option value="Basketball">Basketball</option>
+							<option value="Beat-%26apos%3BEm-Up">Beat-&apos;Em-Up</option>
+							<option value="Bowling">Bowling</option>
+							<option value="Boxing">Boxing</option>
+							<option value="Card+Battle">Card Battle</option>
+							<option value="Casino">Casino</option>
+							<option value="Climbing">Climbing</option>
+							<option value="Compilation">Compilation</option>
+							<option value="Driving">Driving</option>
+							<option value="Fighter">Fighter</option>
+							<option value="Fishing">Fishing</option>
+							<option value="Flying">Flying</option>
+							<option value="Football">Football</option>
+							<option value="Fruit+Machines">Fruit Machines</option>
+							<option value="Golf">Golf</option>
+							<option value="Gun">Gun</option>
+							<option value="Horse+Racing">Horse Racing</option>
+							<option value="Mahjong">Mahjong</option>
+							<option value="Mature">Mature</option>
+							<option value="Maze">Maze</option>
+							<option value="Mini-Games">Mini-Games</option>
+							<option value="Miscellaneous">Miscellaneous</option>
+							<option value="Motorcycle">Motorcycle</option>
+							<option value="Pinball">Pinball</option>
+							<option value="Platform">Platform</option>
+							<option value="Pool+and+Dart">Pool and Dart</option>
+							<option value="Puzzle">Puzzle</option>
+							<option value="Quiz">Quiz</option>
+							<option value="Rhythm">Rhythm</option>
+							<option value="Shoot-%26apos%3BEm-Up">Shoot-&apos;Em-Up</option>
+							<option value="Shoot-%27Em-Up">Shoot-'Em-Up</option>
+							<option value="Shooter">Shooter</option>
+							<option value="Skateboarding">Skateboarding</option>
+							<option value="Skiing">Skiing</option>
+							<option value="Soccer">Soccer</option>
+							<option value="Sports">Sports</option>
+							<option value="Tabletop">Tabletop</option>
+							<option value="Tennis">Tennis</option>
+							<option value="Track+%26amp%3B+Field">Track &amp; Field</option>
+							<option value="Volleyball">Volleyball</option>
+							<option value="Wrestling">Wrestling</option>
+						</select>
+					</span>
+					<span>
+						<select name="show" class="button">
+							<option value="" selected>all</option>
+							<option value="originals">originals</option>
+							<option value="clones">clones</option>
+						</select>
+					</span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "WebSite",
+			"name": "mdk",
+			"url": "https://mdk.cab",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://mdk.cab/search.php?search={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}
+	</script>
+	</nav>	<div class="content">
+		<h1>news</h1>
+		<details open data-name="20260801">
+			<summary>2026/08/01</summary>
+			<div class="randomentry">
+					<div class="details">
+						updated to <b>mame 0.289</b>!
+					</div>
+			</div>
+		</details>
+		<div class="padleft">
+			<a href="/news">more news...</a>
+		</div>
+		<h2>top 25 downloads</h2>
+		<details open data-name="sengoku3">
+			<summary>Sengoku 3 / Sengoku Densho 2001 (set 1)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/sengoku3">sengoku3</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Noise+Factory+%252F+SNK">Noise Factory / SNK</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2001">2001</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Beat-%26apos%3BEm-Up">Beat-&apos;Em-Up</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>306088</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/sengoku3.png" tabindex="0" alt="sengoku3 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="dlair">
+			<summary>Dragon's Lair (US Rev. F2)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/dlair">dlair</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Cinematronics">Cinematronics</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1983">1983</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Platform">Platform</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>172030</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/dlair.png" tabindex="0" alt="dlair snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="tektagt">
+			<summary>Tekken Tag Tournament (World, TEG2/VER.C1, set 1)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/tektagt">tektagt</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Namco">Namco</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1999">1999</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>imperfect</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>64856</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/tektagt.png" tabindex="0" alt="tektagt snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kof98umh">
+			<summary>The King of Fighters '98: Ultimate Match HERO (China, V100, 09-08-23)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kof98umh">kof98umh</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/IGS+%252F+SNK+Playmore+%252F+New+Channel">IGS / SNK Playmore / ...</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2009">2009</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>58844</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kof98umh.png" tabindex="0" alt="kof98umh snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="mslug3">
+			<summary>Metal Slug 3 (NGM-2560)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/mslug3">mslug3</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/SNK">SNK</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2000">2000</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Platform">Platform</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>53011</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/mslug3.png" tabindex="0" alt="mslug3 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kof97oro">
+			<summary>The King of Fighters '97 Chongchu Jianghu Plus 2003 (bootleg)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kof97oro">kof97oro</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/bootleg">bootleg</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1997">1997</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>50080</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kof97oro.png" tabindex="0" alt="kof97oro snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kov3">
+			<summary>Knights of Valour 3 / Sanguo Zhan Ji 3 (V104, China, Hong Kong, Taiwan)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kov3">kov3</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/IGS+%28Huatong+license%29">IGS (Huatong license)</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2011">2011</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Beat-%26apos%3BEm-Up">Beat-&apos;Em-Up</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>44643</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kov3.png" tabindex="0" alt="kov3 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kof2002">
+			<summary>The King of Fighters 2002 (NGM-2650 ~ NGH-2650)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kof2002">kof2002</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Eolith+%252F+Playmore">Eolith / Playmore</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2002">2002</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>39029</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kof2002.png" tabindex="0" alt="kof2002 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kinst">
+			<summary>Killer Instinct</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kinst">kinst</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Rare+%252F+Nintendo+%28Midway+license%29">Rare / Nintendo (Midw...</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1994">1994</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>38552</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kinst.png" tabindex="0" alt="kinst snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="dino">
+			<summary>Cadillacs and Dinosaurs (World 930201)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/dino">dino</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Capcom">Capcom</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1993">1993</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>37368</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/dino.png" tabindex="0" alt="dino snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="sfiii3">
+			<summary>Street Fighter III 3rd Strike: Fight for the Future (Europe 990608)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/sfiii3">sfiii3</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Capcom">Capcom</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1999">1999</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>35349</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/sfiii3.png" tabindex="0" alt="sfiii3 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="tekken3">
+			<summary>Tekken 3 (World, TET2/VER.E1)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/tekken3">tekken3</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Namco">Namco</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1997">1997</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>imperfect</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>32221</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/tekken3.png" tabindex="0" alt="tekken3 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="narc1">
+			<summary>Narc (rev 1.80)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/narc1">narc1</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Williams">Williams</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1988">1988</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>29497</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/narc1.png" tabindex="0" alt="narc1 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="mslug5">
+			<summary>Metal Slug 5 (NGM-2680)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/mslug5">mslug5</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/SNK+Playmore">SNK Playmore</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2003">2003</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Platform">Platform</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>29425</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/mslug5.png" tabindex="0" alt="mslug5 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="mslug4">
+			<summary>Metal Slug 4 (NGM-2630)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/mslug4">mslug4</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Mega+%252F+Noise+Factory+%252F+Playmore">Mega / Noise Factory ...</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2002">2002</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Platform">Platform</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>28980</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/mslug4.png" tabindex="0" alt="mslug4 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="jojoba">
+			<summary>JoJo's Bizarre Adventure (Europe 991015, NO CD)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/jojoba">jojoba</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Capcom">Capcom</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1999">1999</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>28620</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/jojoba.png" tabindex="0" alt="jojoba snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kinst2">
+			<summary>Killer Instinct 2</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kinst2">kinst2</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Rare+%252F+Nintendo+%28Midway+license%29">Rare / Nintendo (Midw...</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1996">1996</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>26551</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kinst2.png" tabindex="0" alt="kinst2 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kof98">
+			<summary>The King of Fighters '98 - The Slugfest / King of Fighters '98 - Dream Match Never Ends (NGM-2420)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kof98">kof98</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/SNK">SNK</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1998">1998</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>26339</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kof98.png" tabindex="0" alt="kof98 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="orleg2">
+			<summary>Oriental Legend 2 (V104, Oversea)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/orleg2">orleg2</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/IGS">IGS</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/2007">2007</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Beat-%26apos%3BEm-Up">Beat-&apos;Em-Up</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>25887</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/orleg2.png" tabindex="0" alt="orleg2 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="area51mx">
+			<summary>Area 51 / Maximum Force Duo v2.0</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/area51mx">area51mx</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Atari+Games">Atari Games</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1998">1998</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Gun">Gun</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>23143</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/area51mx.png" tabindex="0" alt="area51mx snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="mslug2">
+			<summary>Metal Slug 2 - Super Vehicle-001/II (NGM-2410 ~ NGH-2410)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/mslug2">mslug2</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/SNK">SNK</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1998">1998</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Platform">Platform</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>23078</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/mslug2.png" tabindex="0" alt="mslug2 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="narc">
+			<summary>Narc (rev 7.00)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/narc">narc</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Williams">Williams</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1988">1988</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>22770</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/narc.png" tabindex="0" alt="narc snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="vaportrx">
+			<summary>Vapor TRX (GUTS Jul 2 1998 / MAIN Jul 18 1998)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/vaportrx">vaportrx</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Atari+Games">Atari Games</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1998">1998</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>22719</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/vaportrx.png" tabindex="0" alt="vaportrx snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="mslug">
+			<summary>Metal Slug - Super Vehicle-001</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/mslug">mslug</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/Nazca">Nazca</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1996">1996</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Platform">Platform</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>22000</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/mslug.png" tabindex="0" alt="mslug snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		<details open data-name="kof97">
+			<summary>The King of Fighters '97 (NGM-2320)</summary>
+			<div class="randomentry">
+				<div class="details">
+					<table class="detailstable" style="white-space: nowrap;"><tbody>
+						<tr>
+							<td>Name</td>
+							<td><a href="/game/kof97">kof97</a></td>
+						</tr>
+						<tr>
+							<td>Mfr</td>
+							<td><a href="/manufacturer/SNK">SNK</a></td>
+		
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><a href="/year/1997">1997</a></td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td><a href="/genre/Fighter">Fighter</a></td>
+						</tr>
+						<tr>
+							<td>Players</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>good</td>
+						</tr>
+						<tr>
+							<td>DLs</td>
+							<td>21082</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="randomscreenshot">
+					<img class="screenshot" loading="lazy" src="/img/snap/kof97.png" tabindex="0" alt="kof97 snap" height=' . $height . ' width=' . $width . '>
+				</div>
+			</div>
+		</details>
+		
+	</div>
+</body>
+</html>

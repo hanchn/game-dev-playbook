@@ -1,0 +1,151 @@
+{
+  "sourcePage": "https://omniscye.itch.io/empress-pokemon-2d-arena",
+  "archive": "/Users/lemon/Downloads/Empress-Pokemon-Arena-2D-1.0.0-Windows.zip",
+  "archiveSHA256": "9d1a756fabac7249f3eba6a1f372bb4ffbe3e12c2152ee91f3d6092b845044c9",
+  "asarSHA256": "97a09a00d79eff243993537acd6a2953cfd57bd8f0bbd2c01ca6f1e506ac0e3f",
+  "asarBytes": 296630642,
+  "extractedFiles": 12144,
+  "nodeModuleFiles": 539,
+  "version": "1.0.0",
+  "runtimeURL": "http://127.0.0.1:4369/",
+  "runCommand": "python3 tools/animation-lab/scripts/run-empress-original-20261016.py --port 4369",
+  "bind": "127.0.0.1",
+  "rulesModified": false,
+  "clientModified": false,
+  "engineReimplemented": false,
+  "electronRequiredForLocalBrowserGame": false,
+  "electronOptionalBridge": [
+    "getInfo",
+    "copyText",
+    "setFullscreen"
+  ],
+  "missingRuntimeDependencies": [],
+  "dependencyInstallationPerformed": false,
+  "originalEntry": "node server/index.cjs --port4369 --host127.0.0.1 --save-dir isolated-output-save",
+  "keyFiles": [
+    {
+      "path": "server/index.cjs",
+      "sha256": "1ab9f469b66a4d387c912ab34c6bc9dcd75a5fad3e56a1c4f1d2ed8817456aed",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "server/engine.cjs",
+      "sha256": "49ce3391d4cf14c54b44527c65c57e59fc98a5fa3eefe4578c36dc4d05070780",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "server/rules.cjs",
+      "sha256": "bb4b35901853cfd0a02c9b357224ebf1473c765d292b06ec9039a278c79683d6",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "server/campaign.cjs",
+      "sha256": "48905cb9e1311455c947881a98a1ba4a7b8d3ca246bd793aa4ab9d61a39d83df",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "server/story.cjs",
+      "sha256": "5176945ec9e2756d31b990764e00de3439d685231a20fb5f4997187835d5ee05",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "client/index.html",
+      "sha256": "6ab350d0cdeb95ebe0ddfd1f4f9d329f1ad32ff1d71e20478af21795092884b1",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "client/app.js",
+      "sha256": "de26f0744fdfeaae7313b9c5b4e840248c2db4cd59bfd7ed40e02386e63db7e2",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "desktop/preload.cjs",
+      "sha256": "eca8812f9651619618159f612ccc910a96fc182051e90e575df52bc10f7b373c",
+      "unchangedFromASAR": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "3dcb1a5a42fd3f896358765ac4a4dc60d695187b2f7541feadbee7b0b527875d",
+      "unchangedFromASAR": true
+    }
+  ],
+  "httpChecks": [
+    {
+      "route": "/",
+      "status": 200,
+      "bytes": 5073,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "6ab350d0cdeb95ebe0ddfd1f4f9d329f1ad32ff1d71e20478af21795092884b1"
+    },
+    {
+      "route": "/api/health",
+      "status": 200,
+      "bytes": 59,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "a43fb96c04cd7e6130f63c501b5859a2c9b6673cf70b13eec20323b575af2b5d"
+    },
+    {
+      "route": "/api/rules",
+      "status": 200,
+      "bytes": 2086,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "bcdcaf40d2f11ac55eb2c5f5e15a2556cc7dd04f6066d6953defa9a640cc7727"
+    },
+    {
+      "route": "/api/campaign",
+      "status": 200,
+      "bytes": 3029,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "94d3bb1388b5cc24a1d2abf606f7a2338466255314aaa363a2f9c39014cec1b8"
+    },
+    {
+      "route": "/api/story",
+      "status": 200,
+      "bytes": 36415,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "5eb8daec2ffd13a9fb3dd7c66ee0733879a97a6f39f537ac0a75967404eb01a8"
+    },
+    {
+      "route": "/data/movement.json",
+      "status": 200,
+      "bytes": 18874840,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "366a083b14b9af1f209cd112f8a96247851339cc07f91fc72a5dbb4c8db479f7"
+    },
+    {
+      "route": "/api/catalog",
+      "status": 200,
+      "bytes": 1677699,
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "2d1c1ba229a79afb2403307fd5976ba76e9f77e85f5626abe81f887d9cb396a7"
+    },
+    {
+      "route": "/combat.mjs",
+      "status": 200,
+      "bytes": 40203,
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "98815821285292fb9553e235e43ab3c9159a7d8a5ab757638b01d3b14169a63a"
+    }
+  ],
+  "protocolSmoke": {
+    "passed": true,
+    "counts": {
+      "hello": 1,
+      "battleStart": 1,
+      "state": 52,
+      "result": 1,
+      "left": 1
+    },
+    "mode": "original local CPUvsCPU exhibition via watchDemo",
+    "scope": "originalserver realbattleStart/52state updates; leave endsprobe notgamevictory",
+    "sourceMessageSchema": "battleStart/state; earlier tester wrong assumed start/snapshot recorded separately"
+  },
+  "browserPlayVerified": false,
+  "scope": "backend originalgame started, root owns realbrowserplay validation",
+  "fullLocalReceipts": "/Users/lemon/Desktop/game-dev-playbook/output/local-original-games/empress-1.0.0",
+  "limitations": [
+    "Original optional online/private room networking not tested",
+    "Desktop fullscreen/clipboard/info IPC not available in browser; app source guards these accesses",
+    "Keyboard/attack/cpu visual test delegated root; protocol smoke alone notusergameplaypass"
+  ]
+}

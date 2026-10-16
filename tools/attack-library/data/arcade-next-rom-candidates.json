@@ -1,0 +1,3644 @@
+{
+  "schema": "arcade-ROM-static-candidates/v1",
+  "date": "2026-10-16",
+  "source": "https://mdk.cab/",
+  "setVersion": "MAME 0.289",
+  "policy": "Page-link probe plus separate ZIP acquisition inventory. acquired/localZIPs reflect actual later downloads; no executable launched and no promised core compatibility.",
+  "candidates": [
+    {
+      "rank": 1,
+      "title": "Pac-Man",
+      "romId": "pacman",
+      "sourcePage": "https://mdk.cab/game/pacman",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/pacman",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "57ceab22688f320532cdb4ffbd30b49c2bc54a487690d63e25accd446c145da8",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/pacman.html",
+      "observedPageTitle": "[mdk] Pac-Man (Midway) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/pacman.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/pacman.zip",
+        "https://mdk.cab/download/split/puckman.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "puckman",
+          "observedURL": "https://mdk.cab/download/split/puckman.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": "puckman",
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/pacman/pacman.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 2,
+      "title": "Donkey Kong",
+      "romId": "dkong",
+      "sourcePage": "https://mdk.cab/game/dkong",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/dkong",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "fe74f7d6580b331e8aa8e2c6deeaaf8776571b5ec1643d5be1233a32d4c1429b",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/dkong.html",
+      "observedPageTitle": "[mdk] Donkey Kong (US set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/dkong.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/dkong.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/dkong/dkong.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 3,
+      "title": "Space Invaders",
+      "romId": "invaders",
+      "sourcePage": "https://mdk.cab/game/invaders",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/invaders",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "8c0d0d594f35d3c1c623a381ad6cd6076405a3a098b1db64c344b8e101d520f5",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/invaders.html",
+      "observedPageTitle": "[mdk] Space Invaders / Space Invaders M download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/invaders.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/invaders.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/invaders/invaders.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 4,
+      "title": "Galaga",
+      "romId": "galaga",
+      "sourcePage": "https://mdk.cab/game/galaga",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/galaga",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "2f0c2a0d47e5d33f9cd2cc7569eeb20880f83e9c23a73a430aa5549e7c95af6a",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/galaga.html",
+      "observedPageTitle": "[mdk] Galaga (Namco rev. B) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/galaga.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/galaga.zip",
+        "https://mdk.cab/download/split/namco51.zip",
+        "https://mdk.cab/download/split/namco54.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "namco51",
+          "observedURL": "https://mdk.cab/download/split/namco51.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namco54",
+          "observedURL": "https://mdk.cab/download/split/namco54.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/galaga/galaga.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 5,
+      "title": "Street Fighter II",
+      "romId": "sf2",
+      "sourcePage": "https://mdk.cab/game/sf2",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/sf2",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "385cdd945f1d3b42b7221a59b1a134eae265672d135a04207cb67995a77cfb0c",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/sf2.html",
+      "observedPageTitle": "[mdk] Street Fighter II: The World Warrior (World 910522) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/sf2.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/sf2.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/sf2/sf2.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 6,
+      "title": "Centipede",
+      "romId": "centiped",
+      "sourcePage": "https://mdk.cab/game/centiped",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/centiped",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "6c072d347548e596d1df2721565b0d5df44946ebe48152d41f8ead769e50105e",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/centiped.html",
+      "observedPageTitle": "[mdk] Centipede (revision 4) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/centiped.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/centiped.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/centiped/centiped.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 7,
+      "title": "Asteroids",
+      "romId": "asteroid",
+      "sourcePage": "https://mdk.cab/game/asteroid",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/asteroid",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "760f82ce5a43ee1fd8fefd24e87d8f3f8f31afd05fb8167bb0d4c3757f9f3969",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/asteroid.html",
+      "observedPageTitle": "[mdk] Asteroids (rev 4) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/asteroid.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/asteroid.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/asteroid/asteroid.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 8,
+      "title": "Ms. Pac-Man",
+      "romId": "mspacman",
+      "sourcePage": "https://mdk.cab/game/mspacman",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/mspacman",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "90133635bc9f409640e8d97766fcf8de873c69387ad9a680033b6c54e854241c",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/mspacman.html",
+      "observedPageTitle": "[mdk] Ms. Pac-Man download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/mspacman.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/mspacman.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mspacman/mspacman.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 9,
+      "title": "Defender",
+      "romId": "defender",
+      "sourcePage": "https://mdk.cab/game/defender",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/defender",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "7b641b57d5d6dc27f4d3e9d5f713cb7737a1bae9c1944e6be77ed0e226e47b84",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/defender.html",
+      "observedPageTitle": "[mdk] Defender (Red label) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/defender.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/defender.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/defender/defender.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 10,
+      "title": "Teenage Mutant Ninja Turtles",
+      "romId": "tmnt",
+      "sourcePage": "https://mdk.cab/game/tmnt",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/tmnt",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "b2a18ac1c85aaed206fb8b0030d7522dfb90f4de10aaa3811cefcab2a7c17b76",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/tmnt.html",
+      "observedPageTitle": "[mdk] Teenage Mutant Ninja Turtles (World 4 Players, version X) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/tmnt.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/tmnt.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/tmnt/tmnt.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 11,
+      "title": "The Simpsons",
+      "romId": "simpsons",
+      "sourcePage": "https://mdk.cab/game/simpsons",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/simpsons",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "8d7f8bf6494134d2875c40bd7fea228c7bf5410711571507c827a47b63acf50b",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/simpsons.html",
+      "observedPageTitle": "[mdk] The Simpsons (4 Players World, set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/simpsons.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/simpsons.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/simpsons/simpsons.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 12,
+      "title": "Mortal Kombat II",
+      "romId": "mk2",
+      "sourcePage": "https://mdk.cab/game/mk2",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/mk2",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "b70b4274fadf6a6fee044dcd7ec0da4b2126c3b43b10b87caa464e9e7217714f",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/mk2.html",
+      "observedPageTitle": "[mdk] Mortal Kombat II (rev L3.1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/mk2.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/mk2.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mk2/mk2.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 13,
+      "title": "Frogger",
+      "romId": "frogger",
+      "sourcePage": "https://mdk.cab/game/frogger",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/frogger",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "a9eb70b814789637fa81708ee52982930d3656cb3edfc9e832b96c32d22dd291",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/frogger.html",
+      "observedPageTitle": "[mdk] Frogger download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/frogger.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/frogger.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/frogger/frogger.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 14,
+      "title": "NBA Jam",
+      "romId": "nbajam",
+      "sourcePage": "https://mdk.cab/game/nbajam",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/nbajam",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "872e2dd1a1e001af7c2cac31d1f75b31c67fa06eb5e3d1fea1ab573355927e5a",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/nbajam.html",
+      "observedPageTitle": "[mdk] NBA Jam (rev 3.01 4/07/93) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/nbajam.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/nbajam.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/nbajam/nbajam.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 15,
+      "title": "Bubble Bobble",
+      "romId": "bublbobl",
+      "sourcePage": "https://mdk.cab/game/bublbobl",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/bublbobl",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "dd7a8232a354514442dfe27a67b8a7912df478fc6473e9dbb57a7a2fdf8f1335",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/bublbobl.html",
+      "observedPageTitle": "[mdk] Bubble Bobble (Japan, Ver 0.1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/bublbobl.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/bublbobl.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/bublbobl/bublbobl.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 16,
+      "title": "Q*bert",
+      "romId": "qbert",
+      "sourcePage": "https://mdk.cab/game/qbert",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/qbert",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "1282c8d36da78b0bf2d023286dcaaf13431cf83d6155c0648786e7960fdea178",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/qbert.html",
+      "observedPageTitle": "[mdk] Q*bert (US set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/qbert.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/qbert.zip",
+        "https://mdk.cab/download/split/votrsc01a.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "votrsc01a",
+          "observedURL": "https://mdk.cab/download/split/votrsc01a.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/qbert/qbert.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 17,
+      "title": "Gauntlet",
+      "romId": "gauntlet",
+      "sourcePage": "https://mdk.cab/game/gauntlet",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/gauntlet",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "f4448391c9f401ebd8af9285ba514e3770f62421db087caf5c6b3700f30576fb",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/gauntlet.html",
+      "observedPageTitle": "[mdk] Gauntlet (rev 14) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/gauntlet.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/gauntlet.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/gauntlet/gauntlet.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 18,
+      "title": "Robotron: 2084",
+      "romId": "robotron",
+      "sourcePage": "https://mdk.cab/game/robotron",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/robotron",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "9d4b7b2eb7a3647479a9c9b3c353bb3b34234c1b77669555c171d5c84f15e3bc",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/robotron.html",
+      "observedPageTitle": "[mdk] Robotron: 2084 (Release 5, solid blue label) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/robotron.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/robotron.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/robotron/robotron.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 19,
+      "title": "Golden Axe",
+      "romId": "goldnaxe",
+      "sourcePage": "https://mdk.cab/game/goldnaxe",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/goldnaxe",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "6f061520d43530e55b67e6add2060bf52d3fcbe0909e0a040f63d693e35a809e",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/goldnaxe.html",
+      "observedPageTitle": "[mdk] Golden Axe (set 6, US) (8751 317-123A) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/goldnaxe.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/goldnaxe.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/goldnaxe/goldnaxe.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 20,
+      "title": "Joust",
+      "romId": "joust",
+      "sourcePage": "https://mdk.cab/game/joust",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/joust",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "d0652aaf2e50e25eaeae2ab6d2a58bd03a6461f80d9f320ccb9456844a333e53",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/joust.html",
+      "observedPageTitle": "[mdk] Joust (Green label) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/joust.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/joust.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/joust/joust.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 21,
+      "title": "Metal Slug",
+      "romId": "mslug",
+      "sourcePage": "https://mdk.cab/game/mslug",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/mslug",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "54db333b208006e43599a3db00009b13211d9dab51879b3766651edd45800bcd",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/mslug.html",
+      "observedPageTitle": "[mdk] Metal Slug - Super Vehicle-001 download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/mslug.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/mslug.zip",
+        "https://mdk.cab/download/split/neogeo.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "neogeo",
+          "observedURL": "https://mdk.cab/download/split/neogeo.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mslug/mslug.zip",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mslug/mdk-0289/mslug.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 22,
+      "title": "Tron",
+      "romId": "tron",
+      "sourcePage": "https://mdk.cab/game/tron",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/tron",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "30c1631544d7c320d05c3858b97afa50b199666ede562fe9005385f1fa135f4d",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/tron.html",
+      "observedPageTitle": "[mdk] Tron (8/9) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/tron.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/midssio.zip",
+        "https://mdk.cab/download/split/tron.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "midssio",
+          "observedURL": "https://mdk.cab/download/split/midssio.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/tron/tron.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 23,
+      "title": "Missile Command",
+      "romId": "missile",
+      "sourcePage": "https://mdk.cab/game/missile",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/missile",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "d3236eaad5b50aab6f2208ebc637d352ca90f31c26a65380f494070c8043a999",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/missile.html",
+      "observedPageTitle": "[mdk] Missile Command (rev 3, A035467-02/04 PCBs) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/missile.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/missile.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/missile/missile.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 24,
+      "title": "Dig Dug",
+      "romId": "digdug",
+      "sourcePage": "https://mdk.cab/game/digdug",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/digdug",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "1ca2e56c614e587cb7501eaf20861c9fb05cdf2a3d237fc59742cdf2a19b5a39",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/digdug.html",
+      "observedPageTitle": "[mdk] Dig Dug (rev 2) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/digdug.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/digdug.zip",
+        "https://mdk.cab/download/split/namco51.zip",
+        "https://mdk.cab/download/split/namco53.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "namco51",
+          "observedURL": "https://mdk.cab/download/split/namco51.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namco53",
+          "observedURL": "https://mdk.cab/download/split/namco53.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/digdug/digdug.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 25,
+      "title": "Double Dragon",
+      "romId": "ddragon",
+      "sourcePage": "https://mdk.cab/game/ddragon",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/ddragon",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "96805236ec03a8277a0f8f993cf5efc29c27975b779c9b48d196121eec81c9f5",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/ddragon.html",
+      "observedPageTitle": "[mdk] Double Dragon (World set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/ddragon.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/ddragon.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/ddragon/ddragon.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 26,
+      "title": "Tempest",
+      "romId": "tempest",
+      "sourcePage": "https://mdk.cab/game/tempest",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/tempest",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "f01ef02a8e0e9a269d913ae22a5b221ea4f112102ea0d8a682894cb52488a41f",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/tempest.html",
+      "observedPageTitle": "[mdk] Tempest (rev 3, Revised Hardware) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/tempest.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/tempest.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/tempest/tempest.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 27,
+      "title": "Track & Field",
+      "romId": "trackfld",
+      "sourcePage": "https://mdk.cab/game/trackfld",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/trackfld",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "3afdc5dd65aaabfa52a46e15b7d5cfaefba3f104d438b6f02294aeff3a105ad6",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/trackfld.html",
+      "observedPageTitle": "[mdk] Track & Field download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/trackfld.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/trackfld.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/trackfld/trackfld.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 28,
+      "title": "Altered Beast",
+      "romId": "altbeast",
+      "sourcePage": "https://mdk.cab/game/altbeast",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/altbeast",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "421351246f49ff778c2c2f9253fd307cbb304eb7a4aaee7ac2833f2fd940fb70",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/altbeast.html",
+      "observedPageTitle": "[mdk] Altered Beast (set 8) (8751 317-0078) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/altbeast.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/altbeast.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/altbeast/altbeast.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 29,
+      "title": "Tetris",
+      "romId": "atetris",
+      "sourcePage": "https://mdk.cab/game/atetris",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/atetris",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "d0b4c808ebda098ace438878a0c40a681820350a5cf01fd123c284ad67f87e0a",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/atetris.html",
+      "observedPageTitle": "[mdk] Tetris (set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/atetris.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/atetris.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/atetris/atetris.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 30,
+      "title": "Out Run",
+      "romId": "outrun",
+      "sourcePage": "https://mdk.cab/game/outrun",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/outrun",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "294bee2d3ac7ba8d6f74d334666e37e7547c3d6f8293a00e5417e94938230d4e",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/outrun.html",
+      "observedPageTitle": "[mdk] Out Run (sitdown/upright, Rev B) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/outrun.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/outrun.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/outrun/outrun.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 31,
+      "title": "Ghosts'n Goblins",
+      "romId": "gng",
+      "sourcePage": "https://mdk.cab/game/gng",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/gng",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "291bb1dd9dfeb9d72c1f870caf655a575ccfe24a3c934e9dd6c89401f7fb5443",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/gng.html",
+      "observedPageTitle": "[mdk] Ghosts'n Goblins (World? set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/gng.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/gng.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/gng/gng.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 32,
+      "title": "Final Fight",
+      "romId": "ffight",
+      "sourcePage": "https://mdk.cab/game/ffight",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/ffight",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "e40181f37c7b91c6c46c4d1ff9c10db7e717e6ec19f322c0d06eb2972aeb90b2",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/ffight.html",
+      "observedPageTitle": "[mdk] Final Fight (World, set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/ffight.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/ffight.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/ffight/ffight.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 33,
+      "title": "King of Fighters '98",
+      "romId": "kof98",
+      "sourcePage": "https://mdk.cab/game/kof98",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/kof98",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "3b6759328d590f93fd4d3cd4583db884598fc3b0fb0e1507b3aff20770cafe47",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/kof98.html",
+      "observedPageTitle": "[mdk] The King of Fighters '98 - The Slugfest / King of Fighters '98 - Dream Match Never Ends (NGM-2420) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/kof98.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/kof98.zip",
+        "https://mdk.cab/download/split/neogeo.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "neogeo",
+          "observedURL": "https://mdk.cab/download/split/neogeo.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98/kof98.zip",
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98/mdk-0289/kof98.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 34,
+      "title": "Galaxian",
+      "romId": "galaxian",
+      "sourcePage": "https://mdk.cab/game/galaxian",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/galaxian",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "d2267287636cef44feb1b577a53f61128c2ec735ed058118251f4f1ef87cd141",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/galaxian.html",
+      "observedPageTitle": "[mdk] Galaxian (Namco set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/galaxian.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/galaxian.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/galaxian/galaxian.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 35,
+      "title": "Arkanoid",
+      "romId": "arkanoid",
+      "sourcePage": "https://mdk.cab/game/arkanoid",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/arkanoid",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "c14c0f492ae346e09a149e55ebbf7b0e25fbfe6da4f94c16d467fd7a90bf4c5b",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/arkanoid.html",
+      "observedPageTitle": "[mdk] Arkanoid (World, older) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/arkanoid.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/arkanoid.zip",
+        "https://mdk.cab/download/split/m68705p5.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "m68705p5",
+          "observedURL": "https://mdk.cab/download/split/m68705p5.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/arkanoid/arkanoid.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 36,
+      "title": "Mortal Kombat",
+      "romId": "mk",
+      "sourcePage": "https://mdk.cab/game/mk",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/mk",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "4a2727f6a51b32471f1b1a52189f421dd7f2026255fbe5944b5624a35a656404",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/mk.html",
+      "observedPageTitle": "[mdk] Mortal Kombat (rev 5.0 T-Unit 03/19/93) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/mk.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/mk.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mk/mk.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 37,
+      "title": "Berzerk",
+      "romId": "berzerk",
+      "sourcePage": "https://mdk.cab/game/berzerk",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/berzerk",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "67cfecbb1daa1867a8c02abc21308c2d727065410a60b74a0c60dd5955045d03",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/berzerk.html",
+      "observedPageTitle": "[mdk] Berzerk (revision RC31A) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/berzerk.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/berzerk.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/berzerk/berzerk.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 38,
+      "title": "Sinistar",
+      "romId": "sinistar",
+      "sourcePage": "https://mdk.cab/game/sinistar",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/sinistar",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "e4d64cd4bb2aa45e6a5d2a730b4c4a3ca88c079d808d207a35544f2c870beb5f",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/sinistar.html",
+      "observedPageTitle": "[mdk] Sinistar (revision 3, upright) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/sinistar.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/sinistar.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/sinistar/sinistar.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 39,
+      "title": "X-Men",
+      "romId": "xmen",
+      "sourcePage": "https://mdk.cab/game/xmen",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/xmen",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "69362560196f6acfa113897a2b1dc5f050646811f1f46d9259049fa7046dc240",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/xmen.html",
+      "observedPageTitle": "[mdk] X-Men (4 Players ver EBA) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/xmen.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/xmen.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/xmen/xmen.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 40,
+      "title": "Star Wars",
+      "romId": "starwars",
+      "sourcePage": "https://mdk.cab/game/starwars",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/starwars",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "60527708560d192a640cd827c0271aa7c928fb2aa3ecf0521ee118aeece60cda",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/starwars.html",
+      "observedPageTitle": "[mdk] Star Wars (Atari, set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/starwars.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/starwars.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/starwars/starwars.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 41,
+      "title": "Contra",
+      "romId": "contra",
+      "sourcePage": "https://mdk.cab/game/contra",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/contra",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "45f16796cd096f11c8d386a56087c2a34f517c2eed629aa9354fa545e99b5634",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/contra.html",
+      "observedPageTitle": "[mdk] Contra (US / Asia, set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/contra.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/contra.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/contra/contra.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 42,
+      "title": "BurgerTime",
+      "romId": "btime",
+      "sourcePage": "https://mdk.cab/game/btime",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/btime",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "8f69c0178bbeba425188611f1b8a3c9368da6d313e92ae992e820781420c5d50",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/btime.html",
+      "observedPageTitle": "[mdk] Burger Time (Data East set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/btime.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/btime.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/btime/btime.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 43,
+      "title": "Gradius",
+      "romId": "gradius",
+      "sourcePage": "https://mdk.cab/game/gradius",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/gradius",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "91ac2f894ad83c1de1fa391441eabe7b1570eedfbe752e6cbe0d5d5cce04e2a3",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/gradius.html",
+      "observedPageTitle": "[mdk] Gradius (Japan, ROM version) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/gradius.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/gradius.zip",
+        "https://mdk.cab/download/split/nemesis.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "nemesis",
+          "observedURL": "https://mdk.cab/download/split/nemesis.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": "nemesis",
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/gradius/gradius.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 44,
+      "title": "1943",
+      "romId": "1943",
+      "sourcePage": "https://mdk.cab/game/1943",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/1943",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "63eacf3608697091e3f2bb91fc88a27d139e518f4a2d55209d5e222d4472cece",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/1943.html",
+      "observedPageTitle": "[mdk] 1943: The Battle of Midway (Euro) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/1943.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/1943.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/1943/1943.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 45,
+      "title": "Paperboy",
+      "romId": "paperboy",
+      "sourcePage": "https://mdk.cab/game/paperboy",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/paperboy",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "1b4362364c19d28656b470dcac0bae452235563ade579e72b6001ec93740c94f",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/paperboy.html",
+      "observedPageTitle": "[mdk] Paperboy (rev 3) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/paperboy.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/paperboy.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/paperboy/paperboy.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 46,
+      "title": "R-Type",
+      "romId": "rtype",
+      "sourcePage": "https://mdk.cab/game/rtype",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/rtype",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "184b9540e5be91692f0d192efd1c40473cf3816fddd2b517b4417954094b7cf5",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/rtype.html",
+      "observedPageTitle": "[mdk] R-Type (World) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/rtype.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/rtype.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/rtype/rtype.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 47,
+      "title": "Pong",
+      "romId": "pong",
+      "sourcePage": "https://mdk.cab/game/pong",
+      "acquired": false,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/pong",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "912a177f63d0675b489972c7754ab5eb7297e17cb039247477f81fc993a635a7",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/pong.html",
+      "observedPageTitle": "[mdk] arcade rom and information repository for mame 0.289",
+      "downloadURL": null,
+      "observedSplitDownloadLinks": [],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "blocked-no-observed-ROM-link",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [],
+      "acquisitionReceipt": null
+    },
+    {
+      "rank": 48,
+      "title": "Battletoads",
+      "romId": "btoads",
+      "sourcePage": "https://mdk.cab/game/btoads",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/btoads",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "3a9947340d04fa3177795eab716f9c44bd93939bcfe504cfb6fda0e30ff744eb",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/btoads.html",
+      "observedPageTitle": "[mdk] Battletoads download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/btoads.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/bsmt2000.zip",
+        "https://mdk.cab/download/split/btoads.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "bsmt2000",
+          "observedURL": "https://mdk.cab/download/split/bsmt2000.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/btoads/btoads.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 49,
+      "title": "Moon Patrol",
+      "romId": "mpatrol",
+      "sourcePage": "https://mdk.cab/game/mpatrol",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/mpatrol",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "33d5df57b664876d33e936f06f72be20b925ada96e49add3656c8e0ccb055e34",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/mpatrol.html",
+      "observedPageTitle": "[mdk] Moon Patrol download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/mpatrol.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/mpatrol.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mpatrol/mpatrol.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 50,
+      "title": "Dragon's Lair",
+      "romId": "dlair",
+      "sourcePage": "https://mdk.cab/game/dlair",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/dlair",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "07ea63a53d09cfc9cf3f531803a82331616e5a5c345667fc1046f48f9c0948db",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/dlair.html",
+      "observedPageTitle": "[mdk] Dragon's Lair (US Rev. F2) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/dlair.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/dlair.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [
+        {
+          "url": "https://mdk.cab/download/chd/dlair/dlair.chd",
+          "acquired": false,
+          "status": "separate-large-disk-dependency-pending"
+        }
+      ],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/dlair/dlair.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 51,
+      "title": "Ghouls'n Ghosts",
+      "romId": "ghouls",
+      "sourcePage": "https://mdk.cab/game/ghouls",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/ghouls",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "7f4ee830f7a2c41e47b415132c4c2765503c1a52732a5399ed1f5cfdc51f9f6f",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/ghouls.html",
+      "observedPageTitle": "[mdk] Ghouls'n Ghosts (World) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/ghouls.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/ghouls.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/ghouls/ghouls.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 52,
+      "title": "Time Crisis",
+      "romId": "timecris",
+      "sourcePage": "https://mdk.cab/game/timecris",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/timecris",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "bf4b7b5938b5bb8516ab0bf53963127671e0a0d6df2e44128fa09e3b3fcdca09",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/timecris.html",
+      "observedPageTitle": "[mdk] Time Crisis (World, TS2 Ver.B) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/timecris.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/namcoc71.zip",
+        "https://mdk.cab/download/split/timecris.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "namcoc71",
+          "observedURL": "https://mdk.cab/download/split/namcoc71.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/timecris/timecris.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 53,
+      "title": "Tekken 3",
+      "romId": "tekken3",
+      "sourcePage": "https://mdk.cab/game/tekken3",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/tekken3",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "e71a0e78c386a4523e6b0b2965acd3732771417ae0e9dfb7baf6dfad042609f6",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/tekken3.html",
+      "observedPageTitle": "[mdk] Tekken 3 (World, TET2/VER.E1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/tekken3.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/tekken3.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/tekken3/tekken3.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 54,
+      "title": "Smash T.V.",
+      "romId": "smashtv",
+      "sourcePage": "https://mdk.cab/game/smashtv",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/smashtv",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "775d383f77ebba89d24eb99c9e3f81ebdb211667aa749a45e1ef037267423f43",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/smashtv.html",
+      "observedPageTitle": "[mdk] Smash T.V. (rev 8.00) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/smashtv.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/smashtv.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/smashtv/smashtv.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 55,
+      "title": "Karate Champ",
+      "romId": "kchamp",
+      "sourcePage": "https://mdk.cab/game/kchamp",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/kchamp",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "a5396548c02275d943e93e0e5e1ed60bcf576dd1b165bfa553e14c19591bf423",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/kchamp.html",
+      "observedPageTitle": "[mdk] Karate Champ (US) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/kchamp.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/kchamp.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kchamp/kchamp.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 56,
+      "title": "Elevator Action",
+      "romId": "elevator",
+      "sourcePage": "https://mdk.cab/game/elevator",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/elevator",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "bbba076b7f521ffef61c7470f5ef7c7591fe5f4772c9116a5c5b511a7ccb6235",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/elevator.html",
+      "observedPageTitle": "[mdk] Elevator Action (BA3, 4 PCB version, 1.1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/elevator.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/elevator.zip",
+        "https://mdk.cab/download/split/m68705p5.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "m68705p5",
+          "observedURL": "https://mdk.cab/download/split/m68705p5.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/elevator/elevator.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 57,
+      "title": "Rolling Thunder",
+      "romId": "rthunder",
+      "sourcePage": "https://mdk.cab/game/rthunder",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/rthunder",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "f2e0f38af6d2465eb1e51f628e504034ee8660454664ac13ff1751e60c0cd60e",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/rthunder.html",
+      "observedPageTitle": "[mdk] Rolling Thunder (rev 3) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/rthunder.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/rthunder.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/rthunder/rthunder.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 58,
+      "title": "Breakout",
+      "romId": "breakout",
+      "sourcePage": "https://mdk.cab/game/breakout",
+      "acquired": false,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/breakout",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "9eabe8886cb95a2466d4521a5d20585c0ffddfe3d45c0d9ac92ca77424e59788",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/breakout.html",
+      "observedPageTitle": "[mdk] arcade rom and information repository for mame 0.289",
+      "downloadURL": null,
+      "observedSplitDownloadLinks": [],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "blocked-no-observed-ROM-link",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [],
+      "acquisitionReceipt": null
+    },
+    {
+      "rank": 59,
+      "title": "Spy Hunter",
+      "romId": "spyhunt",
+      "sourcePage": "https://mdk.cab/game/spyhunt",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/spyhunt",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "fa5d322378aeb5e2fd2ffc9a9e977a40eff6589ecaccee53d1511d3c41007fd4",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/spyhunt.html",
+      "observedPageTitle": "[mdk] Spy Hunter download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/spyhunt.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/midcsd.zip",
+        "https://mdk.cab/download/split/midssio.zip",
+        "https://mdk.cab/download/split/spyhunt.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "midcsd",
+          "observedURL": "https://mdk.cab/download/split/midcsd.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "midssio",
+          "observedURL": "https://mdk.cab/download/split/midssio.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/spyhunt/spyhunt.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 60,
+      "title": "Pole Position",
+      "romId": "polepos",
+      "sourcePage": "https://mdk.cab/game/polepos",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/polepos",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "80cbdc32cb031e61930bc1654ba3c6f12469a2ddc6a61569df7f35d74ff17a0c",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/polepos.html",
+      "observedPageTitle": "[mdk] Pole Position (World) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/polepos.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/namco51.zip",
+        "https://mdk.cab/download/split/namco52.zip",
+        "https://mdk.cab/download/split/namco53.zip",
+        "https://mdk.cab/download/split/namco54.zip",
+        "https://mdk.cab/download/split/polepos.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "namco51",
+          "observedURL": "https://mdk.cab/download/split/namco51.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namco52",
+          "observedURL": "https://mdk.cab/download/split/namco52.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namco53",
+          "observedURL": "https://mdk.cab/download/split/namco53.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namco54",
+          "observedURL": "https://mdk.cab/download/split/namco54.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/polepos/polepos.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 61,
+      "title": "Cadillacs & Dinosaurs",
+      "romId": "dino",
+      "sourcePage": "https://mdk.cab/game/dino",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/dino",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "f011fcf7325c5ef78fb95a748f3fe6bb06d712386a01b8e900f8b1cc58b02566",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/dino.html",
+      "observedPageTitle": "[mdk] Cadillacs and Dinosaurs (World 930201) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/dino.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/dino.zip",
+        "https://mdk.cab/download/split/qsound_hle.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "qsound_hle",
+          "observedURL": "https://mdk.cab/download/split/qsound_hle.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/dino/dino.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 62,
+      "title": "Raiden",
+      "romId": "raiden",
+      "sourcePage": "https://mdk.cab/game/raiden",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/raiden",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "9273710e0094e935055f38d37b393da50dd7a2fdb2a1c7ca360578a860890e61",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/raiden.html",
+      "observedPageTitle": "[mdk] Raiden (World set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/raiden.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/raiden.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/raiden/raiden.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 63,
+      "title": "Yie Ar Kung-Fu",
+      "romId": "yiear",
+      "sourcePage": "https://mdk.cab/game/yiear",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/yiear",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "9520edd8b9ea8e758e7cea59096f9fb24e3dce56cb08aebef583111ead49d103",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/yiear.html",
+      "observedPageTitle": "[mdk] Yie Ar Kung-Fu (version I) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/yiear.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/yiear.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/yiear/yiear.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 64,
+      "title": "Toki",
+      "romId": "toki",
+      "sourcePage": "https://mdk.cab/game/toki",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/toki",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "394833e82d14011224c3a7e9b8d51ccf75bed1edcacc8afc2488981f07842ea0",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/toki.html",
+      "observedPageTitle": "[mdk] Toki (World, set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/toki.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/toki.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/toki/toki.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 65,
+      "title": "Shinobi",
+      "romId": "shinobi",
+      "sourcePage": "https://mdk.cab/game/shinobi",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/shinobi",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "3b7702fda90c4ff9ce02199553ae300d3c45a44f251a95d5e74b1e0239e7238e",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/shinobi.html",
+      "observedPageTitle": "[mdk] Shinobi (set 6, System 16A) (unprotected) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/shinobi.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/shinobi.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/shinobi/shinobi.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 66,
+      "title": "Black Tiger",
+      "romId": "blktiger",
+      "sourcePage": "https://mdk.cab/game/blktiger",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/blktiger",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "726f252752ae971328464074c68ed1e6ad4b4b94f98798ad0224ffa40aec88e1",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/blktiger.html",
+      "observedPageTitle": "[mdk] Black Tiger (US) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/blktiger.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/blktiger.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/blktiger/blktiger.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 67,
+      "title": "Gyruss",
+      "romId": "gyruss",
+      "sourcePage": "https://mdk.cab/game/gyruss",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/gyruss",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "71839ea9d6153e09dbf8addb31fdc5dfcc460f0b2b7dc61a152ddcc590f27088",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/gyruss.html",
+      "observedPageTitle": "[mdk] Gyruss download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/gyruss.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/gyruss.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/gyruss/gyruss.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 68,
+      "title": "Rampage",
+      "romId": "rampage",
+      "sourcePage": "https://mdk.cab/game/rampage",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/rampage",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "72b1ce209a2040f9c7b6efecf74d4f6b9bf85f53036bf7b79e6b536db794729c",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/rampage.html",
+      "observedPageTitle": "[mdk] Rampage (Rev 3, 8/27/86) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/rampage.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/rampage.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/rampage/rampage.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 69,
+      "title": "Battlezone",
+      "romId": "bzone",
+      "sourcePage": "https://mdk.cab/game/bzone",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/bzone",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "6810853bb5307f70ecb6e9128e1ce535324fc7f633bd73305cc37d6fd8ee32d1",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/bzone.html",
+      "observedPageTitle": "[mdk] Battlezone (rev 2) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/bzone.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/bzone.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/bzone/bzone.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 70,
+      "title": "Sunset Riders",
+      "romId": "ssriders",
+      "sourcePage": "https://mdk.cab/game/ssriders",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/ssriders",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "905c7e94502d503886cc228774bddd9f6db241cad51f8f7d2e14c292b572871b",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/ssriders.html",
+      "observedPageTitle": "[mdk] Sunset Riders (4 Players ver EAC) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/ssriders.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/ssriders.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/ssriders/ssriders.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 71,
+      "title": "Phoenix",
+      "romId": "phoenix",
+      "sourcePage": "https://mdk.cab/game/phoenix",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/phoenix",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "8bb60893fad68fd6347f60adcd8964508f9be12c884074ab49f1094b3a99f714",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/phoenix.html",
+      "observedPageTitle": "[mdk] Phoenix (Amstar, set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/phoenix.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/phoenix.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/phoenix/phoenix.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 72,
+      "title": "Splatterhouse",
+      "romId": "splatter",
+      "sourcePage": "https://mdk.cab/game/splatter",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/splatter",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "0e89a4651253291cbaff5f51d05ffeff7019e8c2c43d5affcd6ef20e0ff43baf",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/splatter.html",
+      "observedPageTitle": "[mdk] Splatterhouse (World, new version (SH3)) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/splatter.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/splatter.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/splatter/splatter.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 73,
+      "title": "Moon Cresta",
+      "romId": "mooncrst",
+      "sourcePage": "https://mdk.cab/game/mooncrst",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/mooncrst",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "f22616aaacc29ed3c1922df596f68275e648164e1b5c438311c87bd2449f851a",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/mooncrst.html",
+      "observedPageTitle": "[mdk] Moon Cresta (Nichibutsu) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/mooncrst.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/mooncrst.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mooncrst/mooncrst.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 74,
+      "title": "Mr. Do!",
+      "romId": "mrdo",
+      "sourcePage": "https://mdk.cab/game/mrdo",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/mrdo",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "62d69c5097dc01eaefacfb80c8ee6a883e5f77cc7dfb85c2b99004f73e41e6b1",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/mrdo.html",
+      "observedPageTitle": "[mdk] Mr. Do! download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/mrdo.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/mrdo.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mrdo/mrdo.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 75,
+      "title": "Scramble",
+      "romId": "scramble",
+      "sourcePage": "https://mdk.cab/game/scramble",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/scramble",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "a495b02b99ac9741b401853c8628c7e867da1e289a1e2a1d52cf416fcca8a680",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/scramble.html",
+      "observedPageTitle": "[mdk] Scramble download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/scramble.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/scramble.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/scramble/scramble.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 76,
+      "title": "Punch-Out!!",
+      "romId": "punchout",
+      "sourcePage": "https://mdk.cab/game/punchout",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/punchout",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "7de649a02d35f6f918c2ff6002849f3e1110d87840ca88c3aabe894d8ea12fc9",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/punchout.html",
+      "observedPageTitle": "[mdk] Punch-Out!! (Rev B) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/punchout.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/punchout.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/punchout/punchout.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 77,
+      "title": "Zaxxon",
+      "romId": "zaxxon",
+      "sourcePage": "https://mdk.cab/game/zaxxon",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/zaxxon",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "876f9898a2c2b4cdad72be397909a66cff198cf1b300441891e7c9ddd8ab6526",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/zaxxon.html",
+      "observedPageTitle": "[mdk] Zaxxon (set 1, rev D) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/zaxxon.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/zaxxon.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/zaxxon/zaxxon.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 78,
+      "title": "Commando",
+      "romId": "commando",
+      "sourcePage": "https://mdk.cab/game/commando",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/commando",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "30c7bd7a48ccbfa92ee63acca8474bb197299b09c27ebe573c58cab5c0c81143",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/commando.html",
+      "observedPageTitle": "[mdk] Commando (World) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/commando.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/commando.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/commando/commando.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 79,
+      "title": "WWF WrestleFest",
+      "romId": "wwfwfest",
+      "sourcePage": "https://mdk.cab/game/wwfwfest",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/wwfwfest",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "abf88841530b5912c8ebe680e9933b366d22aa612570d786813bf4595640944c",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/wwfwfest.html",
+      "observedPageTitle": "[mdk] WWF WrestleFest (World) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/wwfwfest.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/wwfwfest.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/wwfwfest/wwfwfest.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 80,
+      "title": "1942",
+      "romId": "1942",
+      "sourcePage": "https://mdk.cab/game/1942",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/1942",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "4e6072d9fe06b8cff52473d825448aa7786613eb853bfc0321b1885808315cd4",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/1942.html",
+      "observedPageTitle": "[mdk] 1942 (Revision B) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/1942.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/1942.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/1942/1942.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 81,
+      "title": "Wonder Boy",
+      "romId": "wboy",
+      "sourcePage": "https://mdk.cab/game/wboy",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/wboy",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "18a9513ea8183717bc06cfcdf4551563364b91ab259ebbe3a5a90fb3afdf2c51",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/wboy.html",
+      "observedPageTitle": "[mdk] Wonder Boy (set 1, 315-5177) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/wboy.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/wboy.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/wboy/wboy.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 82,
+      "title": "Donkey Kong Jr.",
+      "romId": "dkongjr",
+      "sourcePage": "https://mdk.cab/game/dkongjr",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/dkongjr",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "1119aea0a2257b2e329af8a0f6f71bc33774fd738c4c0de5713d4018f68cc84b",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/dkongjr.html",
+      "observedPageTitle": "[mdk] Donkey Kong Junior (US set F-2) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/dkongjr.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/dkongjr.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/dkongjr/dkongjr.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 83,
+      "title": "Pengo",
+      "romId": "pengo",
+      "sourcePage": "https://mdk.cab/game/pengo",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/pengo",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "3d1d4ff89236a2b5b02cd7e833400e1bbb10c818311cafa4387d935e57dab494",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/pengo.html",
+      "observedPageTitle": "[mdk] Pengo (World, not encrypted, rev A) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/pengo.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/pengo.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/pengo/pengo.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 84,
+      "title": "The Outfoxies",
+      "romId": "outfxies",
+      "sourcePage": "https://mdk.cab/game/outfxies",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/outfxies",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "a0201037f694427ea8d565dda91f987ad30221fb0b0af0cded966f25b71d0d18",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/outfxies.html",
+      "observedPageTitle": "[mdk] The Outfoxies (World, OU2) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/outfxies.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/namcoc75.zip",
+        "https://mdk.cab/download/split/outfxies.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "namcoc75",
+          "observedURL": "https://mdk.cab/download/split/namcoc75.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/outfxies/outfxies.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 85,
+      "title": "In the Hunt",
+      "romId": "inthunt",
+      "sourcePage": "https://mdk.cab/game/inthunt",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/inthunt",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "15e14621cbc0c1f2cccd66c90c1f94ad558457adfaac4d16b3804ee67ed8ada3",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/inthunt.html",
+      "observedPageTitle": "[mdk] In The Hunt (World) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/inthunt.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/inthunt.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/inthunt/inthunt.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 86,
+      "title": "Operation Wolf",
+      "romId": "opwolf",
+      "sourcePage": "https://mdk.cab/game/opwolf",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/opwolf",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "28edaeaa73afee7715cdd409790cd0ab7bc1b91d73b94e8795a2366f41294008",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/opwolf.html",
+      "observedPageTitle": "[mdk] Operation Wolf (World, rev 2, set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/opwolf.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/cchip.zip",
+        "https://mdk.cab/download/split/opwolf.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "cchip",
+          "observedURL": "https://mdk.cab/download/split/cchip.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/opwolf/opwolf.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 87,
+      "title": "Time Pilot",
+      "romId": "timeplt",
+      "sourcePage": "https://mdk.cab/game/timeplt",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/timeplt",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "5fca3a3a2efbfc9a0ce65f0bf41fba76a5a3959c89ec8d5dae730c0cc179cc59",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/timeplt.html",
+      "observedPageTitle": "[mdk] Time Pilot download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/timeplt.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/timeplt.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/timeplt/timeplt.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 88,
+      "title": "Xevious",
+      "romId": "xevious",
+      "sourcePage": "https://mdk.cab/game/xevious",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/xevious",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "19062705bcaf4185cab17c9f14b1b03dc01f95971fd4ea15c210e3f4d920bade",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/xevious.html",
+      "observedPageTitle": "[mdk] Xevious (Namco) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/xevious.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/namco50.zip",
+        "https://mdk.cab/download/split/namco51.zip",
+        "https://mdk.cab/download/split/namco54.zip",
+        "https://mdk.cab/download/split/xevious.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "namco50",
+          "observedURL": "https://mdk.cab/download/split/namco50.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namco51",
+          "observedURL": "https://mdk.cab/download/split/namco51.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namco54",
+          "observedURL": "https://mdk.cab/download/split/namco54.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/xevious/xevious.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 89,
+      "title": "Robocop",
+      "romId": "robocop",
+      "sourcePage": "https://mdk.cab/game/robocop",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/robocop",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "48deea1721685e0c095845d9407357838ebdbe813bd4fb1f08c566596ca4add2",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/robocop.html",
+      "observedPageTitle": "[mdk] Robocop (World, revision 4) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/robocop.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/robocop.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/robocop/robocop.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 90,
+      "title": "Cruis'n USA",
+      "romId": "crusnusa",
+      "sourcePage": "https://mdk.cab/game/crusnusa",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/crusnusa",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "8456bee3a253ac5a4a451baa495d32f70b0f9ed67779cd84e22f479ab2977df8",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/crusnusa.html",
+      "observedPageTitle": "[mdk] Cruis'n USA (v4.5) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/crusnusa.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/crusnusa.zip",
+        "https://mdk.cab/download/split/tms320c31.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "tms320c31",
+          "observedURL": "https://mdk.cab/download/split/tms320c31.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/crusnusa/crusnusa.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 91,
+      "title": "Tapper",
+      "romId": "tapper",
+      "sourcePage": "https://mdk.cab/game/tapper",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/tapper",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "544409f1e08ea29c51709429c99db28acf8cf906e150ab9de94b6946b2a445a8",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/tapper.html",
+      "observedPageTitle": "[mdk] Tapper (Budweiser, 1/27/84) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/tapper.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/midssio.zip",
+        "https://mdk.cab/download/split/tapper.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "midssio",
+          "observedURL": "https://mdk.cab/download/split/midssio.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/tapper/tapper.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 92,
+      "title": "Alien vs. Predator",
+      "romId": "avsp",
+      "sourcePage": "https://mdk.cab/game/avsp",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/avsp",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "9c6bb82ead57f0fe043082c8e7621bc2fadf6f3ea6fe63ac3bf416621adb32b0",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/avsp.html",
+      "observedPageTitle": "[mdk] Alien vs. Predator (Europe 940520) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/avsp.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/avsp.zip",
+        "https://mdk.cab/download/split/qsound_hle.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "qsound_hle",
+          "observedURL": "https://mdk.cab/download/split/qsound_hle.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/avsp/avsp.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 93,
+      "title": "Choplifter",
+      "romId": "choplift",
+      "sourcePage": "https://mdk.cab/game/choplift",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/choplift",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "ef8c04f0a3f1d404a19659e03850b0ad0015bad410db9787fc8c2c6e8820c7f9",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/choplift.html",
+      "observedPageTitle": "[mdk] Choplifter (8751 315-5151) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/choplift.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/choplift.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/choplift/choplift.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 94,
+      "title": "Marble Madness",
+      "romId": "marble",
+      "sourcePage": "https://mdk.cab/game/marble",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/marble",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "441502fbc67ebaf7c7463bd1b9766fecedb62f6b688fb770e74319a8fad37777",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/marble.html",
+      "observedPageTitle": "[mdk] Marble Madness (set 1) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/marble.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/atarisy1.zip",
+        "https://mdk.cab/download/split/marble.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "atarisy1",
+          "observedURL": "https://mdk.cab/download/split/atarisy1.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/marble/marble.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 95,
+      "title": "Donkey Kong 3",
+      "romId": "dkong3",
+      "sourcePage": "https://mdk.cab/game/dkong3",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/dkong3",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "921469ac41e01a82888a949c06bcc8d2663b4881608a25b5cbda0f66ca8dcf64",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/dkong3.html",
+      "observedPageTitle": "[mdk] Donkey Kong 3 (US) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/dkong3.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/dkong3.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/dkong3/dkong3.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 96,
+      "title": "DoDonPachi",
+      "romId": "ddonpach",
+      "sourcePage": "https://mdk.cab/game/ddonpach",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/ddonpach",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "3d8c58a47cde388644a9152ee3d6166216d47d37e6282802b495b023199d43a8",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/ddonpach.html",
+      "observedPageTitle": "[mdk] DoDonPachi (World, 1997 2/ 5 Master Ver.) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/ddonpach.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/ddonpach.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/ddonpach/ddonpach.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 97,
+      "title": "NARC",
+      "romId": "narc",
+      "sourcePage": "https://mdk.cab/game/narc",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/narc",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "34bc566612775c205bd29b1e5b2f89da1dff45bb56cb36de69c26b652e86f2bc",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/narc.html",
+      "observedPageTitle": "[mdk] Narc (rev 7.00) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/narc.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/narc.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/narc/narc.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 98,
+      "title": "Popeye",
+      "romId": "popeye",
+      "sourcePage": "https://mdk.cab/game/popeye",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/popeye",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "c4c7aa736b69435b44d74f87dd53ff0389b99784b0b8168530b415cec5143260",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/popeye.html",
+      "observedPageTitle": "[mdk] Popeye (revision D) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/popeye.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/popeye.zip"
+      ],
+      "dependencies": [],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/popeye/popeye.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 99,
+      "title": "Gorf",
+      "romId": "gorf",
+      "sourcePage": "https://mdk.cab/game/gorf",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/gorf",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "d701e85afb670ab24d2101bc1d7bee20ad26795fb34bc14f836584390a144ee6",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/gorf.html",
+      "observedPageTitle": "[mdk] Gorf download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/gorf.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/gorf.zip",
+        "https://mdk.cab/download/split/votrsc01.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "votrsc01",
+          "observedURL": "https://mdk.cab/download/split/votrsc01.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/gorf/gorf.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    },
+    {
+      "rank": 100,
+      "title": "Ridge Racer",
+      "romId": "ridgerac",
+      "sourcePage": "https://mdk.cab/game/ridgerac",
+      "acquired": true,
+      "bootVerified": false,
+      "gameplayVerified": false,
+      "coreCompatibilityVerified": false,
+      "pageHTTPStatus": 200,
+      "pageFinalURL": "https://mdk.cab/game/ridgerac",
+      "pageReadMode": "retained-20261016-static-HTTP-evidence",
+      "pageSHA256": "f44a657d62c9650cfea1caa700298b7323ec05c678949652958327ef9c7b9d18",
+      "pageEvidence": "data/research/arcade-runtime-candidates-20261016/ridgerac.html",
+      "observedPageTitle": "[mdk] Ridge Racer (World, RR2 Ver.B) download for mame 0.289",
+      "downloadURL": "https://mdk.cab/download/split/ridgerac.zip",
+      "observedSplitDownloadLinks": [
+        "https://mdk.cab/download/split/namcoc71.zip",
+        "https://mdk.cab/download/split/namcoc74.zip",
+        "https://mdk.cab/download/split/ridgerac.zip"
+      ],
+      "dependencies": [
+        {
+          "romId": "namcoc71",
+          "observedURL": "https://mdk.cab/download/split/namcoc71.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        },
+        {
+          "romId": "namcoc74",
+          "observedURL": "https://mdk.cab/download/split/namcoc74.zip",
+          "relationship": "page-listed-parent-BIOS-or-device; retain full listed split dependency set"
+        }
+      ],
+      "observedCHDDependencies": [],
+      "completeMediaAcquired": false,
+      "cloneOf": null,
+      "status": "local-ZIP-CRC-verified-runtime-pending",
+      "runtimeRequirements": [
+        "MAME 0.289 (MDK set version) with ROM ZIP and every listed parent/BIOS/device; actual boot not tested.",
+        "Browser FBNeo/MAME core requires independent DAT/set compatibility audit; current core presence alone does not verify this ROM.",
+        "Static page probe and later acquisition are separate stages; see acquired/localZIPs and acquisitionReceipt for downloaded ZIPs. No executable launched."
+      ],
+      "localZIPs": [
+        "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/ridgerac/ridgerac.zip"
+      ],
+      "acquisitionReceipt": "data/research/arcade-runtime-candidates-20261016/acquisition-receipt.json"
+    }
+  ],
+  "stages": {
+    "discovery": {
+      "requestedRanks": 100,
+      "observedROMPageLinks": 98
+    },
+    "acquisition": {
+      "acquiredGameROMs": 98,
+      "acquiredDependencies": 33,
+      "failedArchives": 0
+    },
+    "diskMedia": "CHD/Laserdisc links retained separately, no large disk media downloaded. ZIP presence alone does not establish complete media.",
+    "runtime": "Independent MAME/FBNeo boot/input evidence maintained by root; this static inventory never authorizes a runtime PASS."
+  }
+}

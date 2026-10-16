@@ -1,0 +1,522 @@
+{
+  "schema": "original-arcade-preflight/v1",
+  "dependenciesPassed": true,
+  "runtimeVerified": false,
+  "scope": "Local SHA, ZIP CRC, embedded WASM binary/header and required runtime members only; not ROM-set compatibility, boot, input, selection or actual match verification",
+  "runtimeFiles": [
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/compression/README.md",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/compression/extract7z.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/compression/extractzip.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/compression/libunrar.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/compression/libunrar.wasm",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/core-README.md",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/cores.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps1-legacy-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps1-thread-legacy-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps1-thread-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps1-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps2-legacy-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps2-thread-legacy-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps2-thread-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps2-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbneo-legacy-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbneo-thread-legacy-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbneo-thread-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/fbneo-wasm.data",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/reports/fbalpha2012_cps1.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/reports/fbalpha2012_cps2.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/cores/reports/fbneo.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/emulator.css",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/emulator.min.css",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/emulator.min.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/loader.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/README.md",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/af-FR.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/ar-AR.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/ben-BEN.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/de-GER.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/el-GR.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/en-US.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/es-ES.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/fa-AF.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/hi-HI.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/it-IT.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/ja-JA.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/jv-JV.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/ko-KO.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/pt-BR.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/retroarch.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/ro-RO.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/ru-RU.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/tr-TR.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/vi-VN.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/localization/zh-CN.json",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/GameManager.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/compression.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/emulator.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/gamepad.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/nipplejs.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/shaders.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/socket.io.min.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/src/storage.js",
+      "exists": true,
+      "shaMatches": true
+    },
+    {
+      "file": "vendor/emulatorjs-4.2.3/data/version.json",
+      "exists": true,
+      "shaMatches": true
+    }
+  ],
+  "cores": [
+    {
+      "core": "fbalpha2012_cps1",
+      "variant": "modern",
+      "archive": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps1-wasm.data",
+      "members": [
+        "fbalpha2012_cps1_libretro.js",
+        "fbalpha2012_cps1_libretro.wasm",
+        "build.json",
+        "core.json"
+      ],
+      "wasmBytes": 5143206,
+      "wasmSHA256": "0f62f8ad8313590aea3ae7d5022374374a09e93ebd3d8e479a050310147fc540",
+      "wasmMagicValid": true,
+      "javascriptMember": "fbalpha2012_cps1_libretro.js"
+    },
+    {
+      "core": "fbalpha2012_cps1",
+      "variant": "-legacy",
+      "archive": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps1-legacy-wasm.data",
+      "members": [
+        "fbalpha2012_cps1_libretro.js",
+        "fbalpha2012_cps1_libretro.wasm",
+        "build.json",
+        "core.json"
+      ],
+      "wasmBytes": 5141861,
+      "wasmSHA256": "b86da96379bad122f3f8d45ecc5d5594e752a95a17321f5f8b8ea7d3609e3d29",
+      "wasmMagicValid": true,
+      "javascriptMember": "fbalpha2012_cps1_libretro.js"
+    },
+    {
+      "core": "fbalpha2012_cps2",
+      "variant": "modern",
+      "archive": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps2-wasm.data",
+      "members": [
+        "fbalpha2012_cps2_libretro.js",
+        "fbalpha2012_cps2_libretro.wasm",
+        "build.json",
+        "core.json"
+      ],
+      "wasmBytes": 4975846,
+      "wasmSHA256": "fe726d7fd27f7b34973d73cac38a9ad8ad57346004d78cf01f32f143c0193943",
+      "wasmMagicValid": true,
+      "javascriptMember": "fbalpha2012_cps2_libretro.js"
+    },
+    {
+      "core": "fbalpha2012_cps2",
+      "variant": "-legacy",
+      "archive": "vendor/emulatorjs-4.2.3/data/cores/fbalpha2012_cps2-legacy-wasm.data",
+      "members": [
+        "fbalpha2012_cps2_libretro.js",
+        "fbalpha2012_cps2_libretro.wasm",
+        "build.json",
+        "core.json"
+      ],
+      "wasmBytes": 4974503,
+      "wasmSHA256": "6508fb0600ec6179c2ced5265e7dfd14627aa367a19fd0b9b89aacb9228333a2",
+      "wasmMagicValid": true,
+      "javascriptMember": "fbalpha2012_cps2_libretro.js"
+    },
+    {
+      "core": "fbneo",
+      "variant": "modern",
+      "archive": "vendor/emulatorjs-4.2.3/data/cores/fbneo-wasm.data",
+      "members": [
+        "fbneo_libretro.js",
+        "fbneo_libretro.wasm",
+        "build.json",
+        "core.json",
+        "license.txt"
+      ],
+      "wasmBytes": 43095367,
+      "wasmSHA256": "b8dd796759baa6df66801602ca5fc55d3389c9da34408246d306c63f55283516",
+      "wasmMagicValid": true,
+      "javascriptMember": "fbneo_libretro.js"
+    },
+    {
+      "core": "fbneo",
+      "variant": "-legacy",
+      "archive": "vendor/emulatorjs-4.2.3/data/cores/fbneo-legacy-wasm.data",
+      "members": [
+        "fbneo_libretro.js",
+        "fbneo_libretro.wasm",
+        "build.json",
+        "core.json",
+        "license.txt"
+      ],
+      "wasmBytes": 43093990,
+      "wasmSHA256": "9a2da7dc2f4f19f36b4984b0b3e9ac73bc205e41a98f0cf449e2f0a3a6c8b689",
+      "wasmMagicValid": true,
+      "javascriptMember": "fbneo_libretro.js"
+    }
+  ],
+  "games": [
+    {
+      "game": "sf2ce",
+      "core": "fbalpha2012_cps1",
+      "dependencies": [
+        {
+          "kind": "rom",
+          "file": "assets/original-games/mame-0289/sf2ce.zip",
+          "sha256": "934a64cb81871d271a369dc4e1edf535ab0a3af7c60c59be2a366fd1eacbef7c",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 28
+        }
+      ],
+      "runtimeVerified": false
+    },
+    {
+      "game": "ssf2t",
+      "core": "fbalpha2012_cps2",
+      "dependencies": [
+        {
+          "kind": "rom",
+          "file": "assets/original-games/mame-0289/ssf2t.zip",
+          "sha256": "359337a89e7ed65b63424dd3e90281db8b73db7add3d24278ec9918de449435e",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 24
+        }
+      ],
+      "runtimeVerified": false
+    },
+    {
+      "game": "kof98",
+      "core": "fbneo",
+      "dependencies": [
+        {
+          "kind": "rom",
+          "file": "assets/original-games/kof98/kof98.zip",
+          "sha256": "e5ef8ca6e72f364c227aeafacb04f7b9abc4d3dcc8123eaabeef2a603ff7e64b",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 16
+        },
+        {
+          "kind": "bios",
+          "file": "assets/original-games/kof98/neogeo.zip",
+          "sha256": "bf05cc848e403f8ae457bfe26faa8135cf4725cfff956fa030f5c0a00a26adcc",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 34
+        },
+        {
+          "kind": "biosContainer",
+          "file": "assets/original-games/kof98/bios-runtime-wrapper.zip",
+          "sha256": "23d98720de0fd47e6d813a471bc4ae41cf073e82d2bd0b0a91962051ddfbdc77",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 1
+        },
+        {
+          "kind": "nested-bios-original-byte-identity",
+          "shaMatches": true,
+          "zipCRCValid": true
+        }
+      ],
+      "runtimeVerified": false
+    },
+    {
+      "game": "mslug",
+      "core": "fbneo",
+      "dependencies": [
+        {
+          "kind": "rom",
+          "file": "assets/original-games/mslug/mslug.zip",
+          "sha256": "ccb7ea9029db1cdbcbc1aaca389722ab5a40a30dc799fe4ec743fa0cd68e5dd5",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 9
+        },
+        {
+          "kind": "bios",
+          "file": "assets/original-games/kof98/neogeo.zip",
+          "sha256": "bf05cc848e403f8ae457bfe26faa8135cf4725cfff956fa030f5c0a00a26adcc",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 34
+        },
+        {
+          "kind": "biosContainer",
+          "file": "assets/original-games/kof98/bios-runtime-wrapper.zip",
+          "sha256": "23d98720de0fd47e6d813a471bc4ae41cf073e82d2bd0b0a91962051ddfbdc77",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 1
+        },
+        {
+          "kind": "nested-bios-original-byte-identity",
+          "shaMatches": true,
+          "zipCRCValid": true
+        }
+      ],
+      "runtimeVerified": false
+    },
+    {
+      "game": "kov",
+      "core": "fbneo",
+      "dependencies": [
+        {
+          "kind": "rom",
+          "file": "assets/original-games/kov/kov.zip",
+          "sha256": "efe316dcd29c87f750b44ed40b4121d75bef5a4140d87cc1d2b806868274744d",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 9
+        },
+        {
+          "kind": "bios",
+          "file": "assets/original-games/kov/fbneo/pgm.zip",
+          "sha256": "5582eae58a8f23b7e203f01b56e26e0450e7bab0ceb01bc65b151df6bf532555",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 7
+        },
+        {
+          "kind": "biosContainer",
+          "file": "assets/original-games/kov/fbneo/bios-runtime-wrapper.zip",
+          "sha256": "6711869f09801f429f44114a94e78af55669f1d4e9f957af13163c67fe16edbe",
+          "shaMatches": true,
+          "zipCRCValid": true,
+          "files": 1
+        },
+        {
+          "kind": "nested-bios-original-byte-identity",
+          "shaMatches": true,
+          "zipCRCValid": true
+        }
+      ],
+      "runtimeVerified": false
+    }
+  ]
+}

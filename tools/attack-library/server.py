@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 import pathlib,json,io,zipfile,urllib.parse,gzip
+from native_runtime import handle as handle_native
 ROOT=pathlib.Path(__file__).resolve().parent
 class Handler(SimpleHTTPRequestHandler):
  def __init__(self,*args,**kwargs):super().__init__(*args,directory=str(ROOT),**kwargs)
@@ -8,6 +9,7 @@ class Handler(SimpleHTTPRequestHandler):
   self.send_header("Cache-Control","no-store")
   super().end_headers()
  def do_GET(self):
+  if handle_native(self):return
   u=urllib.parse.urlsplit(self.path)
   if u.path=='/export':
    key=urllib.parse.parse_qs(u.query).get('character',[''])[0];c=next((c for c in json.loads((ROOT/'data/characters.json').read_text()) if c['id']==key),None)
@@ -32,6 +34,8 @@ class Handler(SimpleHTTPRequestHandler):
    if p.is_relative_to(ROOT/'data') and p.is_file():
     data=gzip.compress(p.read_bytes(),compresslevel=3);self.send_response(200);self.send_header('Content-Type','application/json');self.send_header('Content-Encoding','gzip');self.send_header('Content-Length',str(len(data)));self.send_header('Vary','Accept-Encoding');self.end_headers();self.wfile.write(data);return
   super().do_GET()
+ def do_POST(self):
+  if not handle_native(self):self.send_error(404)
  def log_message(self,*args):pass
 if __name__=='__main__':
  import os
