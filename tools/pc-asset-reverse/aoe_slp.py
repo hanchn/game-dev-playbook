@@ -80,87 +80,94 @@ def decode_slp(data, frame_index=0, palette=None, player=1):
     width, height = info['width'], info['height']
     img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
     px = img.load()
-    pos = info['cmd']
-    x = y = 0
 
     def color(index):
+        # Palette index 0 is the transparent colour in AoE1 SLPs; drawing it as
+        # opaque would fill the whole frame and hide the real silhouette.
+        if index == 0:
+            return (0, 0, 0, 0)
         if palette and 0 <= index < len(palette):
             r, g, b = palette[index]
             return (r, g, b, 255)
         return (index, index, index, 255)
 
-    while pos < len(data) and y < height:
-        cmd = data[pos]
-        pos += 1
-        if cmd == 0x0F:
-            x = 0
-            y += 1
-            continue
-        low4 = cmd & 0x0F
-        low2 = cmd & 0x03
-        if cmd == 0x0F:
-            x = 0
-            y += 1
-        elif low4 == 0x06:            # player colour draw
-            count = cmd >> 4
-            if count == 0:
-                count = data[pos]; pos += 1
-            base = 16 + player * 16
-            for _ in range(count):
-                if x < width and y < height:
-                    px[x, y] = color(base + data[pos])
-                pos += 1
-                x += 1
-        elif low4 == 0x07:            # fill
-            count = cmd >> 4
-            if count == 0:
-                count = data[pos]; pos += 1
-            c = color(data[pos]); pos += 1
-            for _ in range(count):
-                if x < width and y < height:
-                    px[x, y] = c
-                x += 1
-        elif low4 == 0x0A:            # fill player colour
-            count = cmd >> 4
-            if count == 0:
-                count = data[pos]; pos += 1
-            c = color(16 + player * 16 + data[pos]); pos += 1
-            for _ in range(count):
-                if x < width and y < height:
-                    px[x, y] = c
-                x += 1
-        elif low4 == 0x0B:            # shadow draw
-            count = cmd >> 4
-            if count == 0:
-                count = data[pos]; pos += 1
-            for _ in range(count):
-                if x < width and y < height:
-                    px[x, y] = (0, 0, 0, 96)
-                x += 1
-        elif low4 == 0x0E:
-            raise ValueError('extended command %#04x' % cmd)
-        elif low2 == 0x00:            # lesser draw
-            count = cmd >> 2
-            for _ in range(count):
-                if x < width and y < height:
-                    px[x, y] = color(data[pos])
-                pos += 1
-                x += 1
-        elif low2 == 0x01:            # lesser skip
-            count = cmd >> 2
-            if count == 0:
-                count = data[pos]; pos += 1
-            x += count
-        elif low2 == 0x02:            # greater draw
-            count = ((cmd & 0xF0) << 4) + data[pos]; pos += 1
-            for _ in range(count):
-                if x < width and y < height:
-                    px[x, y] = color(data[pos])
-                pos += 1
-                x += 1
-        else:                         # greater skip
-            count = ((cmd & 0xF0) << 4) + data[pos]; pos += 1
-            x += count
+    # One command-stream offset per row; the commands themselves follow the table.
+    row_offsets = []
+    for row in range(height):
+        at = info['cmd'] + row * 4
+        if at + 4 > len(data):
+            break
+        row_offsets.append(struct.unpack_from('<I', data, at)[0])
+
+    for y, pos in enumerate(row_offsets):
+        x = 0
+        while pos < len(data):
+            cmd = data[pos]
+            pos += 1
+            low4 = cmd & 0x0F
+            low2 = cmd & 0x03
+            if cmd == 0x0F:
+                break
+            if low4 == 0x06:            # player colour draw
+                count = cmd >> 4
+                if count == 0:
+                    count = data[pos]; pos += 1
+                base = 16 + player * 16
+                for _ in range(count):
+                    if x < width:
+                        px[x, y] = color(base + data[pos])
+                    pos += 1
+                    x += 1
+            elif low4 == 0x07:          # fill
+                count = cmd >> 4
+                if count == 0:
+                    count = data[pos]; pos += 1
+                c = color(data[pos]); pos += 1
+                for _ in range(count):
+                    if x < width:
+                        px[x, y] = c
+                    x += 1
+            elif low4 == 0x0A:          # fill player colour
+                count = cmd >> 4
+                if count == 0:
+                    count = data[pos]; pos += 1
+                c = color(16 + player * 16 + data[pos]); pos += 1
+                for _ in range(count):
+                    if x < width:
+                        px[x, y] = c
+                    x += 1
+            elif low4 == 0x0B:          # shadow draw
+                count = cmd >> 4
+                if count == 0:
+                    count = data[pos]; pos += 1
+                for _ in range(count):
+                    if x < width:
+                        px[x, y] = (0, 0, 0, 96)
+                    x += 1
+            elif low4 == 0x0E:
+                raise ValueError('extended command %#04x' % cmd)
+            elif low2 == 0x00:          # lesser draw
+                count = cmd >> 2
+                for _ in range(count):
+                    if x < width:
+                        px[x, y] = color(data[pos])
+                    pos += 1
+                    x += 1
+            elif low2 == 0x01:          # lesser skip
+                count = cmd >> 2
+                if count == 0:
+                    count = data[pos]; pos += 1
+                x += count
+            elif low2 == 0x02:          # greater draw
+                count = ((cmd & 0xF0) << 4) + data[pos]; pos += 1
+                for _ in range(count):
+                    if x < width:
+                        px[x, y] = color(data[pos])
+                    pos += 1
+                    x += 1
+            else:                       # greater skip
+                count = ((cmd & 0xF0) << 4) + data[pos]; pos += 1
+                x += count
     return img, frames, version
 
 
@@ -173,6 +180,8 @@ def main():
     parser.add_argument('--render-ids', default='0,1,2')
     parser.add_argument('--frame', type=int, default=0)
     parser.add_argument('--palette', type=Path, default=None)
+    parser.add_argument('--flat', action='store_true',
+                        help='render every drawn pixel as opaque white to inspect the silhouette')
     args = parser.parse_args()
     data = args.drs.read_bytes()
     tables = read_tables(data)
@@ -192,7 +201,9 @@ def main():
                 (args.extract / f"{table['ext'].strip()}-{entry['id']}.bin").write_bytes(blob)
     if args.render:
         palette = None
-        if args.palette:
+        if args.flat:
+            palette = [(0, 0, 0)] * 256
+        elif args.palette:
             raw = args.palette.read_bytes()
             palette = [(raw[i * 3], raw[i * 3 + 1], raw[i * 3 + 2]) for i in range(256)]
         args.render.mkdir(parents=True, exist_ok=True)

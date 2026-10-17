@@ -15,8 +15,10 @@
 - 来源：Internet Archive `Microsoft_Age_of_Empires_Gold_Edition_Windows_1999_Eng`，ISO 282,060,800 字节，SHA256 `ea597eccd30cbc9ad600a8f91f516c0a6a5474bfe0f945726bd2028fd3d3bbab`。
 - 解包后 `GAME/DATA/GRAPHICS.DRS` 16,871,914 字节，表结构：表头 `ext="slp "`、76 个条目；条目为 `(id, offset, size)`，偏移单调、全部落在文件内。
 - 已实现 `tools/pc-asset-reverse/aoe_slp.py`：DRS 表链解析 + 资源清单；SLP 命令流按 openage 文档实现（lesser/greater draw/skip、fill、player color、shadow）。
-- **失败保留**：SLP 0 的首帧渲染出来是噪声（116×67），说明命令处理仍有错（扩展指令 `0x1E/0xAE/0xFE` 未覆盖，行命令边界也可疑）。这一步**不算通过**，不能拿去当 AoE 素材或动作帧。
-- 下一步：按 openage `slp.pyx` 对照逐条修命令；找 AoE1 调色板（`INTERFAC.DRS`/调色板资源）后做颜色还原；再解析 DAT 里的单位→SLP 映射与动作表。
+- 第一次渲染是噪声，根因已定位：AoE1 SLP 帧内**先放一张"每行命令偏移"表**（height 个 u32），命令流从这些偏移开始；之前把偏移表当成命令解析。修正后 SLP 0/2/3 能解出连续形状（116×67、137×104、116×63），轮廓见 `tools/pc-asset-reverse/previews/aoe-slp*-silhouette-unverified.png`。
+- 另一个已修的错误：调色板索引 0 在 AoE1 SLP 里是透明色；当成不透明会把整幅填满，掩盖真实轮廓。
+- **仍未验收**：还没有 AoE1 原始调色板，剪影呈黑白；轮廓边缘有大量孔洞，不能确认是"树叶间隙"还是"仍漏画/错画"。扩展指令 `0x1E/0xAE/0xFE` 仍未覆盖。因此**不把这批图当已验收的 AoE 素材**。
+- 下一步：找 AoE1 调色板做颜色还原；与已知单位的官方截图逐帧对照；再解析 DAT 里的单位→SLP 映射与动作表。
 
 ## 2. 热血传奇（Legend of Mir 2）
 
