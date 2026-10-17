@@ -24,3 +24,6 @@ MAME autoboot可能重复加载同一脚本，注册frame回调前加全局门�
 KOF98批量采样涉及EXTRA自然蓄气、临界血超杀、双236中立间隔、预蹲扫倒或PDF跨行前置条件时，读 [references/kof98-native-sampling.md](references/kof98-native-sampling.md) 的实测对照；这些版本限定的输入修复不能泛化为其他格斗游戏规则。
 
 续跑KOF98源参考缺口流水线、处理body-ownership校准登记、或判断"选中精灵组是否真的是屏幕上的身体"时，读 [references/kof98-source-reference-continuation.md](references/kof98-source-reference-continuation.md)。要点：校准签名必须能从自己冻结的VRAM复现，只改签名让校验通过等于伪造校准；原点约定为`[p1x-cameraX, p1y-16]`；可见像素一致率（真身体>0.94、残影≈0.76、错位<0.5）比哈希更能证明组归属；缺口重观察是独立新抓取，其VRAM/截图哈希不跨批次通用。
+
+
+对CPS1、PGM等非NeoGeo原机按计划做动作窗口采集时，读 [references/multi-game-native-actions.md](references/multi-game-native-actions.md)。要点：生成式Lua必须是Lua字面量而不是JSON；`:spritegen`只有NeoGeo有，其他机种跳过VRAM导出；`snapshot()`要用绝对路径；标准模式id要从`data/standard-games.json`解析ROM；开局时序按作品实测（合金弹头有1分钟How to Play、三国战纪有剧情字幕）；CPU/敌兵会打断窗口，不能把"输入发出"记成"招式成功"。

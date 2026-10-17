@@ -1,0 +1,239 @@
+{
+  "schema": "native-action-plan/v1",
+  "game": "sf2ce",
+  "title": "Street Fighter II' - Champion Edition",
+  "screenSize": [
+    384,
+    224
+  ],
+  "timings": {
+    "coin": 600,
+    "start": 900,
+    "playBegin": 2000
+  },
+  "fields": {
+    "coin": "Coin 1",
+    "start": "1 Player Start",
+    "dirs": {
+      "up": "P1 Up",
+      "down": "P1 Down",
+      "left": "P1 Left",
+      "right": "P1 Right"
+    },
+    "dirOrder": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "buttons": {
+      "jab": "P1 Jab Punch",
+      "strong": "P1 Strong Punch",
+      "fierce": "P1 Fierce Punch",
+      "short": "P1 Short Kick",
+      "forward": "P1 Forward Kick",
+      "roundhouse": "P1 Roundhouse Kick"
+    },
+    "buttonOrder": [
+      "jab",
+      "strong",
+      "fierce",
+      "short",
+      "forward",
+      "roundhouse"
+    ]
+  },
+  "prelude": [
+    {
+      "field": "Coin 2",
+      "from": 600,
+      "to": 606
+    },
+    {
+      "field": "2 Players Start",
+      "from": 950,
+      "to": 956
+    },
+    {
+      "field": "P1 Jab Punch",
+      "from": 1200,
+      "to": 1206
+    },
+    {
+      "field": "P2 Jab Punch",
+      "from": 1210,
+      "to": 1216
+    }
+  ],
+  "phases": [
+    {
+      "id": "idle",
+      "frames": 60
+    },
+    {
+      "id": "crouch",
+      "frames": 60,
+      "hold": [
+        "down"
+      ]
+    },
+    {
+      "id": "jab",
+      "frames": 60,
+      "repeat": {
+        "period": 24,
+        "width": 4,
+        "keys": [
+          "jab"
+        ]
+      }
+    },
+    {
+      "id": "strong",
+      "frames": 60,
+      "repeat": {
+        "period": 24,
+        "width": 4,
+        "keys": [
+          "strong"
+        ]
+      }
+    },
+    {
+      "id": "fierce",
+      "frames": 60,
+      "repeat": {
+        "period": 24,
+        "width": 4,
+        "keys": [
+          "fierce"
+        ]
+      }
+    },
+    {
+      "id": "short",
+      "frames": 60,
+      "repeat": {
+        "period": 24,
+        "width": 4,
+        "keys": [
+          "short"
+        ]
+      }
+    },
+    {
+      "id": "forward-kick",
+      "frames": 60,
+      "repeat": {
+        "period": 24,
+        "width": 4,
+        "keys": [
+          "forward"
+        ]
+      }
+    },
+    {
+      "id": "roundhouse",
+      "frames": 60,
+      "repeat": {
+        "period": 24,
+        "width": 4,
+        "keys": [
+          "roundhouse"
+        ]
+      }
+    },
+    {
+      "id": "walk-right",
+      "frames": 120,
+      "hold": [
+        "right"
+      ]
+    },
+    {
+      "id": "walk-back",
+      "frames": 120,
+      "hold": [
+        "left"
+      ]
+    },
+    {
+      "id": "jump",
+      "frames": 90,
+      "press": {
+        "from": 15,
+        "to": 33,
+        "keys": [
+          "up"
+        ]
+      }
+    },
+    {
+      "id": "fireball-motion",
+      "frames": 120,
+      "motion": [
+        {
+          "frames": 8,
+          "keys": [
+            "down"
+          ]
+        },
+        {
+          "frames": 8,
+          "keys": [
+            "down",
+            "right"
+          ]
+        },
+        {
+          "frames": 6,
+          "keys": [
+            "right"
+          ]
+        },
+        {
+          "frames": 6,
+          "keys": [
+            "fierce"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon-punch-motion",
+      "frames": 120,
+      "motion": [
+        {
+          "frames": 8,
+          "keys": [
+            "right"
+          ]
+        },
+        {
+          "frames": 8,
+          "keys": [
+            "down"
+          ]
+        },
+        {
+          "frames": 8,
+          "keys": [
+            "down",
+            "right"
+          ]
+        },
+        {
+          "frames": 6,
+          "keys": [
+            "fierce"
+          ]
+        }
+      ]
+    }
+  ],
+  "capture": {
+    "snapshotEvery": 1,
+    "dumpEvery": 5
+  },
+  "scope": "Player 1 confirmed as Ryu; an ordinary 2P start is attempted so the opponent is a passive second player instead of the CPU. If the 2P join fails the capture shows CPU interference and no move is accepted from it."
+}

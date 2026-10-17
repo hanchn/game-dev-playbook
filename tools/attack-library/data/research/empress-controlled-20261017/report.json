@@ -1,0 +1,321 @@
+{
+  "schema": "empress-controlled-session/v1",
+  "target": "http://127.0.0.1:4369/",
+  "engine": "author Empress 1.0.0 server (original ASAR runtime, rulesModified=false)",
+  "mode": "original startCpu solo battle, easy CPU, stadium arena",
+  "team": [
+    "charizard",
+    "greninja",
+    "pikachu"
+  ],
+  "protocolSummary": {
+    "hello": {
+      "local": true,
+      "playerId": "cd81350511a8b2176dd66da5",
+      "catalogVersion": "1.0.0"
+    },
+    "battleStart": {
+      "id": "dcf259df0adf1d6bd1d8",
+      "mode": "cpu",
+      "difficulty": "easy",
+      "arena": {
+        "id": "stadium",
+        "width": 1200,
+        "height": 760,
+        "obstacles": [
+          {
+            "x": 465,
+            "y": 225,
+            "w": 90,
+            "h": 105,
+            "id": "stadium-0",
+            "material": "metal",
+            "hp": 160,
+            "maxHp": 160,
+            "destroyed": false,
+            "lastHitAt": -10
+          },
+          {
+            "x": 645,
+            "y": 430,
+            "w": 90,
+            "h": 105,
+            "id": "stadium-1",
+            "material": "metal",
+            "hp": 160,
+            "maxHp": 160,
+            "destroyed": false,
+            "lastHitAt": -10
+          }
+        ]
+      },
+      "selfTeam": 0
+    },
+    "errors": [],
+    "finished": null,
+    "idle": {
+      "startedAtMs": 17
+    },
+    "move-right": {
+      "startedAtMs": 705
+    },
+    "move-left": {
+      "startedAtMs": 1703
+    },
+    "dodge": {
+      "startedAtMs": 2715
+    },
+    "cast-slot-0": {
+      "startedAtMs": 3000
+    },
+    "move-up-right": {
+      "startedAtMs": 3912
+    },
+    "switch-slot-1": {
+      "startedAtMs": 4704
+    },
+    "cast-after-switch": {
+      "startedAtMs": 4807
+    },
+    "move-and-cast": {
+      "startedAtMs": 5602
+    }
+  },
+  "inputSchedule": [
+    {
+      "id": "idle",
+      "until": 700,
+      "dx": 0,
+      "dy": 0
+    },
+    {
+      "id": "move-right",
+      "until": 1700,
+      "dx": 1,
+      "dy": 0
+    },
+    {
+      "id": "move-left",
+      "until": 2700,
+      "dx": -1,
+      "dy": 0
+    },
+    {
+      "id": "dodge",
+      "until": 3000,
+      "dx": 0,
+      "dy": 0,
+      "dodgeAt": 2750
+    },
+    {
+      "id": "cast-slot-0",
+      "until": 3900,
+      "dx": 0,
+      "dy": 0,
+      "castAt": [
+        3050,
+        3600
+      ],
+      "castSlot": 0
+    },
+    {
+      "id": "move-up-right",
+      "until": 4700,
+      "dx": 1,
+      "dy": -1
+    },
+    {
+      "id": "switch-slot-1",
+      "until": 4800,
+      "dx": 0,
+      "dy": 0,
+      "switchAt": 4720,
+      "switchSlot": 1
+    },
+    {
+      "id": "cast-after-switch",
+      "until": 5600,
+      "dx": 0,
+      "dy": 0,
+      "castAt": [
+        5000,
+        5450
+      ],
+      "castSlot": 0
+    },
+    {
+      "id": "move-and-cast",
+      "until": 6400,
+      "dx": 1,
+      "dy": 0,
+      "castAt": [
+        5750,
+        6200
+      ],
+      "castSlot": 0
+    }
+  ],
+  "phases": {
+    "waiting": {
+      "samples": 1,
+      "speciesSeen": [
+        "charizard"
+      ],
+      "displacement": {
+        "dx": 0,
+        "dy": 0
+      },
+      "hpAtStart": 153,
+      "hpAtEnd": 153,
+      "minHp": 153,
+      "nonZeroCooldownsSeen": [],
+      "opponentHpAtEnd": 135
+    },
+    "idle": {
+      "samples": 7,
+      "speciesSeen": [
+        "charizard"
+      ],
+      "displacement": {
+        "dx": 0,
+        "dy": 0
+      },
+      "hpAtStart": 153,
+      "hpAtEnd": 153,
+      "minHp": 153,
+      "nonZeroCooldownsSeen": [],
+      "opponentHpAtEnd": 135
+    },
+    "move-right": {
+      "samples": 10,
+      "speciesSeen": [
+        "charizard"
+      ],
+      "displacement": {
+        "dx": 119.02,
+        "dy": 0
+      },
+      "hpAtStart": 153,
+      "hpAtEnd": 153,
+      "minHp": 153,
+      "nonZeroCooldownsSeen": [],
+      "opponentHpAtEnd": 135
+    },
+    "move-left": {
+      "samples": 10,
+      "speciesSeen": [
+        "charizard"
+      ],
+      "displacement": {
+        "dx": -173.7,
+        "dy": 0
+      },
+      "hpAtStart": 153,
+      "hpAtEnd": 153,
+      "minHp": 153,
+      "nonZeroCooldownsSeen": [],
+      "opponentHpAtEnd": 135
+    },
+    "dodge": {
+      "samples": 3,
+      "speciesSeen": [
+        "charizard"
+      ],
+      "displacement": {
+        "dx": -92,
+        "dy": 0
+      },
+      "hpAtStart": 153,
+      "hpAtEnd": 153,
+      "minHp": 153,
+      "nonZeroCooldownsSeen": [],
+      "opponentHpAtEnd": 135
+    },
+    "cast-slot-0": {
+      "samples": 9,
+      "speciesSeen": [
+        "charizard"
+      ],
+      "displacement": {
+        "dx": 0,
+        "dy": 0
+      },
+      "hpAtStart": 153,
+      "hpAtEnd": 153,
+      "minHp": 153,
+      "nonZeroCooldownsSeen": [
+        "0"
+      ],
+      "opponentHpAtEnd": 135
+    },
+    "move-up-right": {
+      "samples": 8,
+      "speciesSeen": [
+        "charizard"
+      ],
+      "displacement": {
+        "dx": 95.53,
+        "dy": -95.53
+      },
+      "hpAtStart": 153,
+      "hpAtEnd": 153,
+      "minHp": 153,
+      "nonZeroCooldownsSeen": [
+        "0"
+      ],
+      "opponentHpAtEnd": 135
+    },
+    "switch-slot-1": {
+      "samples": 1,
+      "speciesSeen": [
+        "greninja"
+      ],
+      "displacement": {
+        "dx": 0,
+        "dy": 0
+      },
+      "hpAtStart": 147,
+      "hpAtEnd": 147,
+      "minHp": 147,
+      "nonZeroCooldownsSeen": [],
+      "opponentHpAtEnd": 135
+    },
+    "cast-after-switch": {
+      "samples": 8,
+      "speciesSeen": [
+        "greninja"
+      ],
+      "displacement": {
+        "dx": 0,
+        "dy": 0
+      },
+      "hpAtStart": 147,
+      "hpAtEnd": 147,
+      "minHp": 147,
+      "nonZeroCooldownsSeen": [],
+      "opponentHpAtEnd": 135
+    },
+    "move-and-cast": {
+      "samples": 9,
+      "speciesSeen": [
+        "greninja"
+      ],
+      "displacement": {
+        "dx": 89.48,
+        "dy": 0
+      },
+      "hpAtStart": 147,
+      "hpAtEnd": 147,
+      "minHp": 147,
+      "nonZeroCooldownsSeen": [
+        "0"
+      ],
+      "opponentHpAtEnd": 135
+    }
+  },
+  "samples": 66,
+  "scope": "Protocol-level controlled session on the original engine: ordinary movement, dodge, cast and switch inputs with authoritative state captured from the server. No damage, cooldown, PP or position writes. A cast that appears on cooldown is evidence that the input was accepted, not proof of a hit or of native frame timing. Visual screenshots from 2026-10-16 browser QA are separate evidence.",
+  "visualEvidence": "data/research/empress-controlled-qa-20261016/qa-report.json (2026-10-16, browser, separate run)",
+  "moveHitVerified": false,
+  "nativeTimingVerified": false
+}

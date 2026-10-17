@@ -1,0 +1,32 @@
+{
+  "schema": "native-action-plan/v1",
+  "game": "mslug",
+  "title": "Metal Slug - Super Vehicle-001",
+  "screenSize": [320, 224],
+  "timings": {"coin": 600, "start": 900, "playBegin": 4900},
+  "fields": {
+    "coin": "Coin 1",
+    "start": "1 Player Start",
+    "dirs": {"up": "P1 Up", "down": "P1 Down", "left": "P1 Left", "right": "P1 Right"},
+    "dirOrder": ["up", "down", "left", "right"],
+    "buttons": {"a": "P1 A", "b": "P1 B", "c": "P1 C", "d": "P1 D"},
+    "buttonOrder": ["a", "b", "c", "d"]
+  },
+  "prelude": [],
+  "phases": [
+    {"id": "idle", "frames": 90},
+    {"id": "walk-right", "frames": 150, "hold": ["right"]},
+    {"id": "idle-2", "frames": 45},
+    {"id": "walk-back", "frames": 150, "hold": ["left"]},
+    {"id": "idle-3", "frames": 45},
+    {"id": "crouch", "frames": 60, "hold": ["down"]},
+    {"id": "jump", "frames": 90, "press": {"from": 20, "to": 32, "keys": ["up"]}},
+    {"id": "shoot-pistol", "frames": 90, "repeat": {"period": 20, "width": 4, "keys": ["a"]}},
+    {"id": "grenade", "frames": 90, "repeat": {"period": 30, "width": 5, "keys": ["d"]}},
+    {"id": "jump-shoot", "frames": 90, "press": {"from": 15, "to": 27, "keys": ["up"]},
+     "repeat": {"period": 20, "width": 4, "keys": ["a"]}},
+    {"id": "shoot-held", "frames": 90, "hold": ["a"]}
+  ],
+  "capture": {"snapshotEvery": 1, "dumpEvery": 5},
+  "scope": "Marco default P1 (Metal Slug 1 has no character select). Tutorial intro runs before mission 1; playBegin is after it. Enemy activity is part of the original game and is not suppressed."
+}

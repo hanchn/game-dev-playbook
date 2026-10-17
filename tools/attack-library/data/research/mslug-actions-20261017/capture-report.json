@@ -1,0 +1,99 @@
+{
+  "schema": "native-action-capture/v1",
+  "game": "mslug",
+  "engines": {
+    "mame": "MAME v0.289 (unknown)",
+    "binarySHA256": "02621c77445ec0934e684d46baaa7731af4dbf50d20476e3c860e2ab40432139"
+  },
+  "plan": {
+    "path": "tools/attack-library/data/native-action-plans/mslug-20261017.json",
+    "sha256": "858d518cd552c9b6ab51496a09a8a5336f1485ed6aff86c6b3f3eeccba1d6014"
+  },
+  "autobootScript": {
+    "path": "tools/attack-library/data/research/mslug-actions-20261017/autoboot.lua",
+    "sha256": "c9c7336d35dc992bf2dcee1291fbdf245926c105c7141e91c35434a4a91c68e3"
+  },
+  "romVerify": {
+    "ok": true,
+    "archiveSHA256": "ccb7ea9029db1cdbcbc1aaca389722ab5a40a30dc799fe4ec743fa0cd68e5dd5"
+  },
+  "command": [
+    "/opt/homebrew/bin/mame",
+    "mslug",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/mslug;/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/kof98",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/mslug-actions-20261017/autoboot.lua",
+    "-seconds_to_run",
+    "118",
+    "-frameskip",
+    "0",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/mslug-actions-20261017/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/mslug-actions-20261017/nvram"
+  ],
+  "returnCode": 0,
+  "wallSeconds": 15.962,
+  "scope": "Actual native frames and ordinary input only. A window is an observation; it is not proof that the intended move triggered, hit, or matches native timing. RAM writes are absent.",
+  "timings": {
+    "coin": 600,
+    "start": 900,
+    "playBegin": 4900
+  },
+  "phaseFrames": {
+    "idle": 90,
+    "walk-right": 150,
+    "idle-2": 45,
+    "walk-back": 150,
+    "idle-3": 45,
+    "crouch": 60,
+    "jump": 90,
+    "shoot-pistol": 90,
+    "grenade": 90,
+    "jump-shoot": 90,
+    "shoot-held": 90,
+    "end": 1
+  },
+  "expectedPhaseFrames": {
+    "idle": 90,
+    "walk-right": 150,
+    "idle-2": 45,
+    "walk-back": 150,
+    "idle-3": 45,
+    "crouch": 60,
+    "jump": 90,
+    "shoot-pistol": 90,
+    "grenade": 90,
+    "jump-shoot": 90,
+    "shoot-held": 90
+  },
+  "trace": {
+    "rows": 991,
+    "contiguous": true,
+    "firstTick": 4900,
+    "lastTick": 5890
+  },
+  "captures": {
+    "snapshots": 991,
+    "geometry": {
+      "320x224": 200
+    },
+    "geometryMatchesPlan": true,
+    "vramDumps": 199,
+    "paletteDumps": 199
+  },
+  "completed": true,
+  "visualReviewed": false,
+  "moveTriggerVerified": false,
+  "nativeTimingVerified": false
+}
