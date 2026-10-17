@@ -1,0 +1,81 @@
+{
+  "schema": "native-action-capture/v1",
+  "game": "suprmrio",
+  "engines": {
+    "mame": "MAME v0.289 (unknown)",
+    "binarySHA256": "02621c77445ec0934e684d46baaa7731af4dbf50d20476e3c860e2ab40432139"
+  },
+  "plan": {
+    "path": "tools/attack-library/data/native-action-plans/suprmrio-timing-20261017.json",
+    "sha256": "00413bcc1d339e17a004e3dee621866968fa0537b860308375faafe2abebe6c1"
+  },
+  "autobootScript": {
+    "path": "tools/attack-library/data/research/suprmrio-timing-20261017/autoboot.lua",
+    "sha256": "d41c864c234740dc71db6afe86db002cdd5944b110e57b5bc4a20d7f9f44a840"
+  },
+  "romVerify": {
+    "ok": true,
+    "rompath": "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/suprmrio",
+    "archive": "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/suprmrio/suprmrio.zip",
+    "archiveSHA256": "e4589eead7c435abeaf69e0c8e5ff94087d88e10cb02b6182cd7d0db038aa631"
+  },
+  "command": [
+    "/opt/homebrew/bin/mame",
+    "suprmrio",
+    "-rompath",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/assets/original-games/suprmrio",
+    "-noreadconfig",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-skip_gameinfo",
+    "-autoboot_delay",
+    "0",
+    "-autoboot_script",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/suprmrio-timing-20261017/autoboot.lua",
+    "-seconds_to_run",
+    "38",
+    "-frameskip",
+    "0",
+    "-cfg_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/suprmrio-timing-20261017/cfg",
+    "-nvram_directory",
+    "/Users/lemon/Desktop/game-dev-playbook/tools/attack-library/data/research/suprmrio-timing-20261017/nvram"
+  ],
+  "returnCode": 0,
+  "wallSeconds": 2.322,
+  "scope": "Actual native frames and ordinary input only. A window is an observation; it is not proof that the intended move triggered, hit, or matches native timing. RAM writes are absent.",
+  "timings": {
+    "coin": 300,
+    "start": 420,
+    "playBegin": 900
+  },
+  "phaseFrames": {
+    "idle": 180,
+    "end": 1
+  },
+  "expectedPhaseFrames": {
+    "idle": 180
+  },
+  "trace": {
+    "rows": 181,
+    "contiguous": true,
+    "firstTick": 900,
+    "lastTick": 1080
+  },
+  "captures": {
+    "snapshots": 181,
+    "geometry": {
+      "256x240": 181
+    },
+    "geometryMatchesPlan": true,
+    "vramDumps": 0,
+    "paletteDumps": 19
+  },
+  "completed": true,
+  "visualReviewed": false,
+  "moveTriggerVerified": false,
+  "nativeTimingVerified": false
+}

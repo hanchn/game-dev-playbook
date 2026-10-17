@@ -1,0 +1,102 @@
+{
+  "schema": "native-action-plan/v1",
+  "game": "suprmrio",
+  "title": "VS. Super Mario Bros. (tight action battery)",
+  "screenSize": [
+    256,
+    240
+  ],
+  "timings": {
+    "coin": 300,
+    "start": 420,
+    "playBegin": 900
+  },
+  "fields": {
+    "coin": "Coin 1",
+    "start": "Select 1 (Blue)",
+    "dirs": {
+      "up": "P1 Up",
+      "down": "P1 Down",
+      "left": "P1 Left",
+      "right": "P1 Right"
+    },
+    "dirOrder": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "buttons": {
+      "a": "P1 A",
+      "b": "P1 B"
+    },
+    "buttonOrder": [
+      "a",
+      "b"
+    ]
+  },
+  "prelude": [],
+  "phases": [
+    {
+      "id": "idle",
+      "frames": 60
+    },
+    {
+      "id": "walk-right",
+      "frames": 110,
+      "hold": [
+        "right"
+      ]
+    },
+    {
+      "id": "jump",
+      "frames": 60,
+      "press": {
+        "from": 10,
+        "to": 22,
+        "keys": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "run-right",
+      "frames": 90,
+      "hold": [
+        "right",
+        "b"
+      ]
+    },
+    {
+      "id": "crouch",
+      "frames": 45,
+      "hold": [
+        "down"
+      ]
+    },
+    {
+      "id": "jump-run",
+      "frames": 70,
+      "hold": [
+        "right",
+        "b"
+      ],
+      "press": {
+        "from": 20,
+        "to": 34,
+        "keys": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "idle-2",
+      "frames": 40
+    }
+  ],
+  "capture": {
+    "snapshotEvery": 1,
+    "dumpEvery": 10
+  },
+  "scope": "Tight battery kept inside the first screen section so the first Goomba encounter does not dominate the windows. Ordinary VS System input only."
+}

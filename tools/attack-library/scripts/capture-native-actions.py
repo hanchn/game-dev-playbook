@@ -42,10 +42,13 @@ LUA_TEMPLATE = r'''
 local out = assert(os.getenv('ARCADE_ACTIONS_OUT'))
 local m = manager.machine
 local s = m.screens[':screen']
+if not s then for _, candidate in pairs(m.screens) do s = candidate; break end end
+assert(s, 'no emulated screen')
 local sg = m.devices[':spritegen']
 local vr = sg and emu.item(sg.items['0/m_videoram'])
 local auto = sg and emu.item(sg.items['0/m_auto_animation_counter'])
 local pal = m.palettes[':palette']
+if not pal then for _, candidate in pairs(m.palettes) do pal = candidate; break end end
 local HAVE_VRAM = (vr ~= nil)
 local HAVE_PALETTE = false
 if pal then local ok = pcall(function() return pal:pen_color(0) end); HAVE_PALETTE = ok end
@@ -233,7 +236,16 @@ def main():
             if entry.get('id') == game:
                 standard = entry
                 break
-    if standard:
+    asset_dir = ROOT / 'assets/original-games' / game
+    if (asset_dir / f'{game}.zip').is_file():
+        # ROM acquired under the project's asset root but not yet registered in
+        # the Top100 or standard-mode lists (e.g. an explicitly requested extra).
+        rompath = str(asset_dir)
+        check = subprocess.run([binary, game, '-rompath', rompath, '-verifyroms', '-noreadconfig'],
+                               capture_output=True, text=True, timeout=120)
+        verify = {'ok': check.returncode == 0, 'output': (check.stdout + check.stderr)[-4000:]}
+        rom_file = asset_dir / f'{game}.zip'
+    elif standard:
         rom_file = ROOT.parent.parent / standard['rom'] if not (ROOT / standard['rom']).exists() else ROOT / standard['rom']
         if not rom_file.exists():
             rom_file = Path(standard['rom'])

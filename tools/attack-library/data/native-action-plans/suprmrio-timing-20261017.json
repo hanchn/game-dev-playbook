@@ -1,0 +1,50 @@
+{
+  "schema": "native-action-plan/v1",
+  "game": "suprmrio",
+  "title": "VS. Super Mario Bros.",
+  "screenSize": [
+    256,
+    240
+  ],
+  "timings": {
+    "coin": 300,
+    "start": 420,
+    "playBegin": 900
+  },
+  "fields": {
+    "coin": "Coin 1",
+    "start": "Select 1 (Blue)",
+    "dirs": {
+      "up": "P1 Up",
+      "down": "P1 Down",
+      "left": "P1 Left",
+      "right": "P1 Right"
+    },
+    "dirOrder": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "buttons": {
+      "a": "P1 A",
+      "b": "P1 B"
+    },
+    "buttonOrder": [
+      "a",
+      "b"
+    ]
+  },
+  "prelude": [],
+  "phases": [
+    {
+      "id": "idle",
+      "frames": 180
+    }
+  ],
+  "capture": {
+    "snapshotEvery": 1,
+    "dumpEvery": 10
+  },
+  "scope": "Timing probe only: verify the VS System select/start timing before scripting actions."
+}

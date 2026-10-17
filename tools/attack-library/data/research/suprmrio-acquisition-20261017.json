@@ -1,0 +1,63 @@
+{
+  "schema": "observed-ROM-acquisition/v1",
+  "date": "2026-10-17",
+  "title": "VS. Super Mario Bros.",
+  "romId": "suprmrio",
+  "requestedBy": "user follow-up after the five priority games",
+  "sourcePage": "https://mdk.cab/game/suprmrio",
+  "sourcePageRetained": {
+    "path": "tools/attack-library/assets/original-games/suprmrio/mdk-0289/page.html",
+    "bytes": 17946,
+    "sha256": "08f015fcd2c574b7bba9bb685bc35a5e94a7f608f43ac930ea695cb24c2a0902"
+  },
+  "downloadURL": "https://mdk.cab/download/split/suprmrio.zip",
+  "archive": {
+    "path": "tools/attack-library/assets/original-games/suprmrio/suprmrio.zip",
+    "bytes": 37327,
+    "sha256": "e4589eead7c435abeaf69e0c8e5ff94087d88e10cb02b6182cd7d0db038aa631",
+    "zipCRCOK": true
+  },
+  "members": [
+    {
+      "name": "mds-sm4-4__1aor6a_e.1a or 6a",
+      "bytes": 8192,
+      "crc32": "1abf053c"
+    },
+    {
+      "name": "mds-sm4-4__1bor6b_e.1b or 6b",
+      "bytes": 8192,
+      "crc32": "b1b87893"
+    },
+    {
+      "name": "mds-sm4-4__1cor6c_e.1c or 6c",
+      "bytes": 8192,
+      "crc32": "5e3fb550"
+    },
+    {
+      "name": "mds-sm4-4__1dor6d_e.1d or 6d",
+      "bytes": 8192,
+      "crc32": "be4d5436"
+    },
+    {
+      "name": "mds-sm4-4__2aor8a_e.2a or 8a",
+      "bytes": 8192,
+      "crc32": "15506b86"
+    },
+    {
+      "name": "mds-sm4-4__2bor8b_e.2b or 8b",
+      "bytes": 8192,
+      "crc32": "42418d40"
+    },
+    {
+      "name": "rp2c04-0004.pal",
+      "bytes": 192,
+      "crc32": "0c2e8e4d"
+    }
+  ],
+  "setVersion": "MAME 0.289",
+  "verifyroms": {
+    "returnCode": 0,
+    "output": "romset suprmrio is good\n1 romsets found, 1 were OK.\n"
+  },
+  "note": "Acquired on explicit user request through the same MDK split-link path used for the Top100 work. Acquisition and set verification do not imply gameplay or reverse-engineering acceptance."
+}

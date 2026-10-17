@@ -1,0 +1,124 @@
+{
+  "schema": "native-action-plan/v1",
+  "game": "suprmrio",
+  "title": "VS. Super Mario Bros.",
+  "screenSize": [
+    256,
+    240
+  ],
+  "timings": {
+    "coin": 300,
+    "start": 420,
+    "playBegin": 900
+  },
+  "fields": {
+    "coin": "Coin 1",
+    "start": "Select 1 (Blue)",
+    "dirs": {
+      "up": "P1 Up",
+      "down": "P1 Down",
+      "left": "P1 Left",
+      "right": "P1 Right"
+    },
+    "dirOrder": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "buttons": {
+      "a": "P1 A",
+      "b": "P1 B"
+    },
+    "buttonOrder": [
+      "a",
+      "b"
+    ]
+  },
+  "prelude": [],
+  "phases": [
+    {
+      "id": "idle",
+      "frames": 90
+    },
+    {
+      "id": "walk-right",
+      "frames": 150,
+      "hold": [
+        "right"
+      ]
+    },
+    {
+      "id": "walk-back",
+      "frames": 120,
+      "hold": [
+        "left"
+      ]
+    },
+    {
+      "id": "run-right",
+      "frames": 150,
+      "hold": [
+        "right",
+        "b"
+      ]
+    },
+    {
+      "id": "jump",
+      "frames": 90,
+      "press": {
+        "from": 15,
+        "to": 27,
+        "keys": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "run-jump",
+      "frames": 120,
+      "hold": [
+        "right",
+        "b"
+      ],
+      "press": {
+        "from": 30,
+        "to": 44,
+        "keys": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "crouch",
+      "frames": 60,
+      "hold": [
+        "down"
+      ]
+    },
+    {
+      "id": "run-hold",
+      "frames": 90,
+      "hold": [
+        "b"
+      ]
+    },
+    {
+      "id": "jump-b",
+      "frames": 90,
+      "press": {
+        "from": 15,
+        "to": 30,
+        "keys": [
+          "a",
+          "b"
+        ]
+      }
+    }
+  ],
+  "capture": {
+    "snapshotEvery": 1,
+    "dumpEvery": 10
+  },
+  "scope": "VS. Super Mario Bros. arcade original. Mario starts small (no fire flower); B is run/fire, A is jump. Ordinary VS System inputs only; no RAM writes."
+}
