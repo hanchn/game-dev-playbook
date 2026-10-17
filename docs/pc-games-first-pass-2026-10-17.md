@@ -43,8 +43,9 @@
 
 - 另有 38 张 `TMonsterAction` 表（MA9…MA46），字段同为 stand/walk/attack/critical/struck/die/death。
 - 客户端注释给出方向步长：每个方向每动作预留 600 帧，`start = layer*600 + direction*600`。
-- **阻塞**：没有 WIL/WIX 图像。官方 `mir2.sdo.com` 完整端是 15 个 2GiB 的 7z 分卷（扩展名写成 `.cab`，头是 `37 7a bc af 27 1c`），约 30GiB；39MB 的 `legendofmirsetup2.0.10.20.exe` 只是下载桩。
-- 下一步：要么接受 30GiB 官方完整端，要么用经典 1.76 客户端（约 600MB–1GB，第三方镜像）——需要你确认取哪条。
+- **素材获取（用户已选经典 1.76 路线）**：官方 30GiB 分卷不取；改用盛趣官方**热血传奇怀旧版**客户端 `Legendofmirtfull7.exe`（1,848,627,400 字节），这是官方 1.76 怀旧客户端，比第三方镜像可控。直链需要 `secauth` 网关 + 同源 referer + cookie，直接请求会 403。
+- 已写好 `tools/pc-asset-reverse/mir2_wil.py`：按原客户端 `WIL.pas`/`wmUtil.pas` 实现 WIL/WIX 读取（shortstring 标题、ImageCount/ColorCount/PaletteSize/VerFlag、1024 字节调色板、每图 i16 宽高+px/py+裸 8-bit 索引、索引 0 透明），并用合成数据做了往返测试。
+- **尚未验收**：客户端仍在下载（约 1.72GiB），还没对真实 WIL 跑过；解析器对 v1/v2 头部的判定依据 Delphi 逻辑与 ColorCount/PaletteSize 校验，需用真实库确认。
 
 ## 3. 传奇世界（Woool）
 
