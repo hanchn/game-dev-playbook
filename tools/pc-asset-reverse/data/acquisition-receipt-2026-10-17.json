@@ -1,0 +1,68 @@
+{
+  "schema": "pc-original-acquisition/v1",
+  "date": "2026-10-17",
+  "games": {
+    "aoe-gold": {
+      "title": "Microsoft Age of Empires Gold Edition (Windows)(1999)(Eng)",
+      "source": "https://archive.org/details/Microsoft_Age_of_Empires_Gold_Edition_Windows_1999_Eng",
+      "iso": {
+        "bytes": 282060800,
+        "sha256": "ea597eccd30cbc9ad600a8f91f516c0a6a5474bfe0f945726bd2028fd3d3bbab"
+      },
+      "extractedTo": "output/pc-original-games/aoe-gold/iso",
+      "evidence": "iso/GAME/DATA/GRAPHICS.DRS + DATA2 (Rise of Rome)",
+      "status": "original data acquired and DRS parsed; SLP pixel decode not yet accepted"
+    },
+    "mir2": {
+      "title": "热血传奇 / Legend of Mir 2 (Mir 1.5/1.7.6 client+server source)",
+      "source": "https://github.com/lzxsz/MIR2",
+      "commit": "98711dad31567d9a7e272956f6c5a2487000848b",
+      "officialClientAttempt": {
+        "page": "https://mir2.sdo.com/web7/download.html",
+        "installer": "legendofmirsetup2.0.10.20.exe",
+        "installerBytes": 40976760,
+        "installerSHA256": "12438772e8a08e1409306323b0ef441114ac044c4ab43fa47e6c5ad0a056f434",
+        "fullClientParts": 15,
+        "fullClientPartBytes": 2147483648,
+        "fullClientPartHeader": "7z (37 7a bc af 27 1c) despite .cab extension",
+        "note": "15 x 2 GiB = ~30 GiB, not downloaded; the 39 MB setup is a downloader stub"
+      },
+      "status": "original client source acquired; action tables extracted; no WIL/WIX asset bytes yet"
+    },
+    "woool": {
+      "title": "传奇世界 / The World of Legend (Woool) client data",
+      "source": "https://github.com/JevLOMCN/Woool-C-",
+      "commit": "e6010db5cbc5cd3902abb64095bb986ebc72c9b5",
+      "clientRoot": "output/pc-original-games/woool-server/Legendary World Client",
+      "packages": {
+        "Data1.wpf": {
+          "bytes": 29366648,
+          "sha256": "2ec813b35900aa2c7377164c6d6bd8cc517b43c3df33c107deb08891613bbaff"
+        },
+        "Texture1.wpf": {
+          "bytes": 12190120,
+          "sha256": "137efb2c367925ae5a4a0dbdc0bb6a2eb4032a7e7b4ae98005ccb0c09764e788"
+        },
+        "Texture3.wpf": {
+          "bytes": 1118128,
+          "sha256": "77bee1fbc34577416654cbe31d50ce1d33a9eba35b24880246bb3d8322bf222e"
+        }
+      },
+      "formatReferences": {
+        "WoOOLToOOLsSharp": {
+          "source": "https://github.com/AndrewChien/WoOOLToOOLsSharp",
+          "commit": "47e2c29f8fde6e7bd600450d7a0e3cb45c2aef3e"
+        },
+        "WoOOL-docs": {
+          "source": "https://github.com/NixieProject/WoOOL-docs",
+          "commit": "beca623a9b3d6686732e7fc20797936a60f7ed78"
+        }
+      },
+      "status": "client data acquired; WPF parser implemented and 4490 TEX entries enumerated; TEX pixel decode pending"
+    }
+  },
+  "notes": [
+    "Large game data stays under output/ which is gitignored; only scripts, inventories and documents are versioned.",
+    "No game executable was run for these three titles in this pass."
+  ]
+}
